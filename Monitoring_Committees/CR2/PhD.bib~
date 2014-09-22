@@ -1,0 +1,82 @@
+
+
+@article{baldocchi2008turner,
+  title="TURNER REVIEW No. 15.`Breathing'of the terrestrial biosphere: lessons learned from a global network of carbon dioxide flux measurement systems",
+  author="Baldocchi, Dennis",
+  journal={Australian Journal of Botany},
+  volume={56},
+  number={1},
+  pages={1--26},
+  year={2008},
+  publisher={CSIRO}
+}
+
+@article{williams2005improved,
+  title={An improved analysis of forest carbon dynamics using data assimilation},
+  author={Williams, Mathew and Schwarz, Paul A and Law, Beverly E and Irvine, James and Kurpius, Meredith R},
+  journal={Global Change Biology},
+  volume={11},
+  number={1},
+  pages={89--105},
+  year={2005},
+  publisher={Wiley Online Library}
+}
+
+@article{stewart2008correlated,
+  title={Correlated observation errors in data assimilation},
+  author={Stewart, Laura M and Dance, SL and Nichols, NK},
+  journal={International journal for numerical methods in fluids},
+  volume={56},
+  number={8},
+  pages={1521--1527},
+  year={2008},
+  publisher={Wiley Online Library}
+}
+
+@article{fox2009reflex,
+  title={The REFLEX project: comparing different algorithms and implementations for the inversion of a terrestrial ecosystem model against eddy covariance data},
+  author={Fox, Andrew and Williams, Mathew and Richardson, Andrew D and Cameron, David and Gove, Jeffrey H and Quaife, Tristan and Ricciuto, Daniel and Reichstein, Markus and Tomelleri, Enrico and Trudinger, Cathy M and others},
+  journal={Agricultural and Forest Meteorology},
+  volume={149},
+  number={10},
+  pages={1597--1615},
+  year={2009},
+  publisher={Elsevier}
+}
+
+@article{tiedeman2013effect,
+  title={Effect of correlated observation error on parameters, predictions, and uncertainty},
+  author={Tiedeman, Claire R and Green, Christopher T},
+  journal={Water Resources Research},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{delahaies2013regularization,
+  title={A regularization of the carbon cycle data-fusion problem},
+  author={Delahaies, Sylvain and Roulstone, Ian and Nichols, Nancy},
+  booktitle={EGU General Assembly Conference Abstracts},
+  volume={15},
+  pages={4087},
+  year={2013}
+}
+
+@article{desroziers2005diagnosis,
+  title={Diagnosis of observation, background and analysis-error statistics in observation space},
+  author={Desroziers, G{\'e}rald and Berre, Loic and Chapnik, Bernard and Poli, Paul},
+  journal={Quarterly Journal of the Royal Meteorological Society},
+  volume={131},
+  number={613},
+  pages={3385--3396},
+  year={2005},
+  publisher={Wiley Online Library}
+}
+
+@book{rodgers2000inverse,
+  title={Inverse methods for atmospheric sounding: Theory and practice},
+  author={Rodgers, Clive D and others},
+  volume={2},
+  year={2000},
+  publisher={World scientific Singapore}
+}
+

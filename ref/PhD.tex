@@ -1,0 +1,116 @@
+\documentclass[11pt]{article}
+\usepackage[sort]{natbib}
+\usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx}
+\usepackage{fancyhdr}
+\usepackage[margin=1.0in]{geometry}
+
+\title{List of Papers}
+\author{Ewan Pinnington}
+\date{Today}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{defn}{Definition}
+
+\begin{document}
+
+\maketitle
+
+
+\subsection*{First paper `Breathing of the terestrial biosphere' \cite{baldocchi2008turner}}
+\noindent
+\begin{itemize}
+\item Eddy covariance - measures the covariance between fluctuations in verticle velocity and the mixing ratio of trace gases of interest. Seasonal C flux.
+\item -ve values of $F_{n}$ represent a loss of $CO_{2}$ from the atmos. and a gain by the surface. $F_{n}$ - net ecosystem exchange, $F_{a}$ - Gross canopy assimilation, $F_{r}$ - ecosystem respiration.
+\item Hard to find natural stands of vegetation that meet the right standards for good eddy covariance measurement. Problems with night time measurement. EC not able to measure fluxes of complex terrain.
+\item Disturbance (fire, drought) needs to be incorporated into models. Annual variability in carbon fluxes. 
+\item Mid aged forests (50-100 years) are best carbon sinks.
+\item Network now contains more variaties of forest and vegetation so PD has shifted towards zero (fig. 4).
+\end{itemize}
+
+\subsection*{Second paper `An Improved analysis of forest carbon dynamics using data assimilation' \cite{williams2005improved}}
+
+\begin{itemize}
+\item Measurements from young pine stand in ponderossa oregon (warm dry summers wet cool winters).
+\item DA combining mments of C stocks made over times and m/ments of C flux made directly (EC), along with model.
+\item Ensemble Kalman filter being used.
+\item Results show significantly more accurate analysis when using DA than model alone.
+\item Monte-Carlo technique?
+\item dynamics of soil C and WD pools an area of uncertainty.
+\item No energy balance? lack of models to describe photosynthesis and plant growth.
+\end{itemize}
+
+\subsection*{Thesis Laura `Correlated observation errors in data assimilation' \cite{stewart2008correlated}}
+
+\begin{itemize}
+\item Chapter 2: Different methods of DA and approximations. Error covariances and correlations, Desroziers method?
+\item Chapter 3: Matrix approximations to include some correlations for $R$ and avoid the need to explicitly calculate $R^{-1}$ (computationally taxing). Calculate trace of analysis error covariance matrix, $S_{a}$, to understand how useful an observation set is to the DA scheme (smaller trace $S_{a}$ $\implies$ better reduction of error variance). May have to calculate $S_{a}^{*}$ if $R$ known to be specified incorrectly. Look at vector and matrix norms.
+\end{itemize}
+
+\subsection*{The REFLEX project: comparing different algorithms and implementations for the inversion of a terrestrial ecosystem model against eddy covariance data \cite{fox2009reflex}}
+
+\begin{itemize}
+\item Data given to participants to use with DALEC and DALEC-D and their choice of MDF algorithm. Tristan's results not used?
+\end{itemize}
+
+\subsection*{Effect of correlated observation error on parameters, predictions, and uncertainty \cite{tiedeman2013effect}}
+
+\begin{itemize}
+\item Hydrology, Considering a denitrification model with diagonal and then full weight $\textbf{R}$ matrix.
+\end{itemize}
+
+\subsection*{A regularization of the carbon cycle data-fusion problem \cite{delahaies2013regularization}}
+
+\begin{itemize}
+\item Sensitivity testing of DALEC model with 4D-VAR. 
+\end{itemize}
+
+\subsection*{Diagnosis of obs, background and analysis-error statistics in obs space \cite{desroziers2005diagnosis}}
+
+\begin{itemize}
+\item Looking at $d_o^b = y^o-H(x^b)$ and $d_o^a = y^o-H(x^a)$ for finding $R$ and $B$ with covariances.
+\end{itemize}
+
+\subsection*{Dynamic Data Assimilation: a least squares approach \cite{lewis2006dynamic}}
+
+\begin{itemize}
+\item Model adjoint Linear 4DVAR observation operators good fundamental DA reference.
+\end{itemize}
+
+\subsection*{SiPNET paper Braswell 2005 \cite{braswell2005estimating}}
+
+\begin{itemize}
+\item More complicated Carbon balance model to look at and understand!
+\end{itemize}
+
+
+\subsection*{E                                                                                                                                                                                                stimating parameters of a forest ecosystem C model with measurements of stocks and fluxes as joint constraints \cite{richardson2010estimating}}
+
+\begin{itemize}
+\item Reason Tristan wrote this project, can do better?
+\item Parameter estimation for DALEC using MC procedures.
+\item Woody biomass increment and to a lesser degree soil respiration measurements give marked reductions in uncertainties in parameter estimates and model predictions as they are `orthogonal' constraints to NEE measurements.
+\item None of the data good at constraining fine root or soil C pool dynamics, need new measurements? 
+\end{itemize}
+
+\subsection*{Observation error correlations in IASI radiance data \cite{stewart2009observation}}
+
+\begin{itemize}
+\item Satellite takes same obs. every time step, Flux tower variable? Mainly temporal correlations possible!
+\end{itemize}
+
+\subsection*{Data assimilation with correlated observation errors: experiments with a 1-D shallow water model \cite{stewart2013data}}
+
+\begin{itemize}
+\item Use an idealised perfect model and approximate forms of R to include correlations.
+\end{itemize}
+
+\subsection*{Where does the carbon go? A model--data intercomparison of vegetation carbon allocation and turnover processes at two temperate forest free-air CO2 enrichment sites \cite{de2014does}}
+
+\begin{itemize}
+\item Use temperate forest free-air CO2 enrichment (FACE) to test. How better to control allocation parameters, allocation should be controlled by functions rather than parameters.
+\end{itemize}
+
+
+\bibliography{../PhD}{}
+\bibliographystyle{plain}
+\end{document}

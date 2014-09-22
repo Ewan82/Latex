@@ -1,0 +1,134 @@
+\documentclass [11pt,a4paper,twosided] {report}
+
+
+\usepackage{amsmath}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{subfigure}
+
+
+% Page setup
+\topmargin=-15mm
+\leftmargin=-15mm
+\rightmargin=-15mm
+\marginparwidth=-0mm
+\marginparsep=-0mm
+\textwidth=184mm
+\textheight=269mm
+\headsep=0mm
+\oddsidemargin=-12.5mm
+\evensidemargin=-12.5mm
+\parskip=-1.75mm
+
+
+% 1.5 line spacing so my supervisor can scrawl all over it
+\renewcommand{\baselinestretch}{1.2}
+
+% Tell latex not to mind if 0.75 of a page is full of floats
+\renewcommand{\floatpagefraction}{1.25}
+
+%   END OF PREAMBLE   %
+%=====================% 
+
+\begin{document}
+%\linenumbers
+	\begin{center}
+		\Large{\textbf{Monitoring Committee Report 2}}\\[0.15cm]
+		\large{Caroline Ruth Ely}\\
+                \large{(Working Title): The Response of the Northern Hemisphere Jet Streams to Sea Ice Changes}\\
+		\normalsize{1530 on 21 June  in 1L36}\\[0.15cm]		
+		\begin{tabular}{lll}
+			\multicolumn{1}{l}{\textbf{Monitoring Committee}}	&	\multicolumn{2}{c}{ \textbf{Supervisors}}	\\
+			Dr. Maarten Ambaum		&	Dr. Tim Woollings	& \\
+			Dr. Mike Blackburn			&	Dr. David Brayshaw	\\
+		\end{tabular}
+	\end{center}
+	\rule{\textwidth}{0.2mm}
+
+\section*{Project Background}
+The existence of the atmospheric jet streams is {\bf attributable} to two mechanisms; the westerly deflection of air in the upper branches of the Hadley Cell as it moves poleward (the `subtropical' jet) and baroclinicity in the midlatitudes (the `eddy-driven' jet). The latter in particular is intrinsically related to other atmospheric circulation features such as storm tracks and, in the North Atlantic, the NAO. Its position and variability is crucial for determining the climate of much of the midlatitude northern hemisphere, particularly in areas such as western Europe. While the IPCC fourth assessment report reported a predicted poleward shift of the atmospheric jets \citep{AR4WG1} this does not necessarily hold in the North Atlantic, where many features contribute to behaviour of the jets and storm tracks \citep[e.g.][]{Brayshaw_tracks1, Brayshaw_tracks2}.\\
+A more certain component of anthropogenic climate change is the retreat of Arctic sea ice, with models agreeing on retreat though disagreeing both on the control state and on the extent of change. It is highly likely that the change in sea ice extent will be one of the mechanisms through which behaviour of the jet could change and so the chief part of this project will investigate the response of the jet to sea ice anomalies. This will be done in a semi-idealised modelling framework so as to better understand the physical processes contributing to the change.
+
+\section*{Variability}
+As discussed above, the jet streams are crucial for the climate of the northern hemisphere, particularly in winter, and so a preliminary investigation designed partly to understand such impacts has been carried out. Temperature variability is projected to change under anthropogenic climate change, but the sign and cause of such change is less certain than that for mean temperature, although some regions have a robust signal, especially in winter (figure \ref{fig:SDch_CMIP}). At the time of my previous report, the broad signal in the northern hemisphere winter in ESSENCE \footnote{Ensemble SimulationS of Extreme weather events under Nonlinear {\bf Climate} changE, a 17 member ensemble of the ECHAM5/MPI-OM coupled model \citep{Sterl08}}  and in the available CMIP5 models had been investigated for the northern hemisphere winter. Since then this investigation has been extended to JJA and to both hemispheres. The broad pattern of variability and change found for the CMIP5 models (figure \ref{fig:SDch_CMIP}) is also found in the ESSENCE ensemble; variability rises over northern hemisphere land in the summer, but falls in the winter, with the opposite signal found in the Arctic (a result attributable to sea ice retreat).\\
+% FIGURE
+\begin{figure}[!t]
+\centering
+\includegraphics[trim=1cm 11cm 1cm 7cm, clip=true, width=1.0\textwidth]{/home/xc020992/PhD/Writing/SD_CMIP5rcp45_WS.eps}
+\caption{Monthly variability in 21 CMIP5 models for 20th century control (1950-1989) and RCP4.5 forcing (2061-2100) and the proportional change between the two. Stippling indicates regions where more than two-thirds of the models agree on the sign of the change. The ESSENCE pattern of variability is very similar to that shown here, except south of 60S in summer.}\label{fig:SDch_CMIP}
+\end{figure}
+% FIGURE
+Changing variability may be due to thermodynamic or dynamic effects. One dynamical mechanism is as follows; mean state meridional temperature gradients are decreasing due to polar amplification of the warming signal, and land-sea gradients change depending on the season as the land warms faster than the sea due to its lower thermal capacity \citep{Boer11}. Through the mechanism of thermal advection, this can lead to changes in variability of the same sign as the change in magnitude of the temperature gradients, as anomalous winds blow across these gradients. \citet{deVries} investigated this mechanism for Western Europe, conducting a cross-member regression in ESSENCE and ascertaining that the change in zonal temperature gradient was a key factor in determining the change in standard deviation, while circulation changes were less important. \\
+To extend this investigation, a multiple linear regression model has been built to understand how much of the variability is attributable to thermal advection and how much the relationship with thermal advection can explain future changes. Daily temperature anomalies T' in each gridpoint are related to the climatological mean temperature gradient components $\frac{\partial \bar{T}}{\partial x}$ and $\frac{\partial \bar{T}}{\partial y}$ and the daily geostrophic wind anomalies u$_{g}$' and v$_{g}$' (constructed from ESSENCE sea level pressure) using the regression model
+%
+\begin{equation}
+{T}'=A{u_{g}}'\frac{\partial T}{\partial x}+B{v_{g}}'\frac{\partial T}{\partial y}+\text{residual}.
+\end{equation}\label{eq:reg}
+Equatorward of 15$^{\circ}$ geostrophic balance is not a valid approximation, so analysis is restricted to outside these latitude bands.\\
+%
+Three variables are computed from this regression model; firstly, the correlation coefficient of the regression in the control, to determine where this model best fits the data; secondly, the change in temperature variability predicted in the future by this model, by retaining the control period regression coefficients but applying them to future $\bar{T}$ and {\bf u$_{g}$}; thirdly, as in the second stage but with decomposition into the changes attributable to only $\bar{T}$ or {\bf u$_{g}$}. \\
+\begin{figure}[!b]
+\centering
+\includegraphics[trim=1cm 10cm 1cm 7cm, clip=true, width=1.0\textwidth]{/home/xc020992/PhD/ESSENCE/Spring12/PLOTS/Reconstruction/MC2.eps}
+\caption{The regression process for daily temperature data across 17 ESSENCE ensemble members, NH winter. All changes are proportional. a) The change in $T'$ as output from ESSENCE. b) The multilinear correlation coefficient between $T'_{fit}=A{u_{g}}'\frac{\partial T}{\partial x}+B{v_{g}}'\frac{\partial T}{\partial y}$ and $T'$ in the control period. c) The change in $T'_{fit}$, using the same regression coefficients but $\bar{T}$ and {\bf u$_{g}$} from the relevant period. d) As c) but with regression only applied in given direction at a gridpoint where that component of gradT exceeds 1.0K/1000km. e), f) As d) but with only $\bar{T}$ and {\bf u$_{g}$} respectively changed to their future values. Both SLP and temperature gradients are calculated over 10 gridpoints in the y-direction (18.75$^{\circ}$ longitude) and 6 gridpoints in the x-direction (11.25 $^{\circ}$latitude). }\label{fig:SDrecon_ESS}
+\end{figure}
+The results of these stages of analysis are shown in figure \ref{fig:SDrecon_ESS} for northern hemisphere (NH) winter only. Panel b) shows the correlation coefficients for the regression; the correlations are strongest on high latitude western seaboards and low latitude eastern seaboards, which is as may be expected based on the mean climatological winds in these areas. The maximum correlations for southern hemisphere (SH) winter are of similar magnitude but extend across the oceans, while correlations in summer are in general much lower. Again, this may be expected as in the summer thermodynamic mechanisms such as land-atmosphere coupling and soil moisture constraints are the dominant drivers of variability \citep{FischerSchar}.\\
+Panel c) shows the change in standard deviation of daily temperatures as constructed by the regression model, and can be compared to panel a) which shows the equivalent change taken directly from temperature anomalies in the output ESSENCE data. The broad features are recreated between 40 and 80N, but there are points where nonphysical increases of several orders of magnitude are produced (shown by bright purple spots). This was found to be related to $\bar{T}$ gradients; points with very low values in either direction in either the control or the future run produce changes in $\bar{T}$ gradient of several orders of magnitude which then imprints on the SD change. This can be removed by restricting the regression at each point to the direction(s) in which the gradient exceeds 1K/1000km, the results of which are shown in panel d). The rank correlation of this pattern, over the points with regression applied, with that found in ESSENCE $T'$ data is 0.44.\\
+Finally, panel e) and f) show the breakdown of the reconstruction such that, in e), future T anomalies are computed using future temperature gradients and control wind anomalies, and vice versa in f). This demonstrates that while the broad spatial pattern is recreated by circulation changes north of 40N, the magnitude of the changes and their sign south of 40N can only be explained by looking at the changing temperature gradient. This is in some way encouraging since changes in gradients of $\bar{T}$ are more robust in climate models than circulation changes. \\ 
+The same analysis has been completed for the other seasons and, as discussed above, the winter signature is far stronger than that in summer, for both hemispheres. As well as the land surface processes mentioned above, retreating sea ice impacts on temperature variability in high latitudes. Sea ice serves to decouple the atmosphere from the high thermal capacity of the ocean, meaning that variability above ice, particularly thick ice, is higher than above open ocean, such that ice retreat would cause decreased variability. Plots of the winter sea ice extent boundary (0.15 concentration contour) in the control and future for both hemispheres reflect this relationship. However, since this study considers daily variability, a changing seasonal cycle in sea ice extent may complicate this response, possibly explaining the increasing variability at very high northern latitudes in DJF. \\
+
+\section*{Jets}
+The work above is reaching its conclusion and so the next stage in the project will be to begin modelling work on the large scale {\bf atmospheric} response to sea ice changes. Two scientific questions this modelling aims to address are:
+\begin{itemize}
+\item Is the response of the large scale circulation in the extratropical North Atlantic sensitive to the initial state of the circulation, and if so how? (Indications that this may be the case are given by the seasonality of the response in previous modeling studies \citep{SeierstadBader09}. An understanding of the processes leading to such sensitivity would aid understanding of the spread in CMIP model responses and in previous modelling studies). 
+\item Can responses be explained in terms of changing wave breaking behaviours between LC1 and LC2 types \citep{THM93}?
+\end{itemize}
+These questions will be addressed using a fixed-SST configuration of the UM, most likely HadGAM1. The first stage will be to configure sea ice in an aquaplanet and to investigate the interaction between different SST patterns and a possibly seasonally varying ice cap in forcing jet responses. When this is sufficiently understood, a semi-idealised framework following \citet{Brayshaw_tracks1}, with the height of the Rockies and SST gradients input as tunable parameters to adjust the basic atmospheric state, may be used to investigate the effect of sea ice anomalies. Sea ice fields may be taken from observed fields, projections from GCMs, extrapolated trends, or exaggerated versions of any from this list \citep{Deser:part1, Deser:part2, SeierstadBader09}; this study will use simplified distributions informed by previous studies. \\
+
+
+
+\section*{Future Plans}
+My plans for the future are 
+\begin{itemize}
+\item Short term (to end July); Check sensitivity of regression results to changing calculation method of winds and temperature gradients, incorporating discussion with Hylke de Vries on Monday 18th June, and finish writing a paper for submission to Journal of Climate by 31st July (the deadline for consideration for IPCC AR5.)
+\item Mid term (August/September); Write a review of the literature regarding possible responses to sea ice forcing as well as related mechanisms; obtain some trial runs from David Brayshaw in order to formulate diagnostics for semi-realistic experiments; run first stages of sea ice models (I have obtained and read notes from a course on the UM from Dr. Grenville Lister in preparation for this.)
+\item Long term; develop and conduct sea ice modelling experiments to answer the questions above. 
+\end{itemize}
+
+\section*{Professional and Academic development}
+
+\subsection*{Paper from MSc dissertation}
+A paper based on my MSc dissertation is ready for submission to the Elsevier journal ‘Energy Policy’.
+
+\subsection*{Masters courses}
+I attended the masters course on extra-tropical weather systems (MTMW15) since, having not attended it during my masters year, I felt it would be useful for consolidating my knowledge of the dynamics important in midlatitudes.
+
+\subsection*{{\bf Transferable} Skills}
+As part of the university regulation that students attend at least six Reading Researcher Development Program (RRDP) courses in their first year, I have attended the following courses:
+\begin{itemize}
+\item Ensuring Confirmation of Registration 29/05/12
+\item Preparing Posters 15/05/12
+\item Making the best of conferences and networks 14/03/12
+\item How to Write a Paper 13/03/12
+\item How to Write a Literature Review 28/02/12
+\item Writing Up your Data Analysis 21/02/12
+\item Managing Your Research Project 14/02/12
+\end{itemize}
+Many of these courses prove to be a valuable resource. In particular, courses on 'Managing your Research Project' and 'How to Write a Literature Review' have provided valuable guidance on how to structure both my approach to work and writing it up. Whilst the two attended in the summer term differ from those I suggested in my previous report, further investigation revealed these to be more immediately relevant as well as more relevant to my subject area.
+
+\subsection*{E2SCMS Summer School}
+From the 1st to 11th June I attended the European Earth System and Climate Modelling School (`E2SCMS') in Kos, Greece, as one of 32 delegates. This was led jointly by NCAS and MPI-M as a merger of the schools previously run by these two modelling centres. The school included lectures both on the processes which need to be represented in earth system models and on how they are incorporated in FAMOUS and the MPI-ESM, the two models used at the school. These lectures incorporated atmospheric and oceanic physics and the cryosphere but also ocean biogeochemistry and vegetation. In addition, four experiments were run on the two models; students were assigned the model they were likely to be least familiar with so I was using MPI-ESM, and the experiment we ran involved dropping all orography to sea level in the atmospheric component (`Flat Earth'). The lectures were particularly useful as I consider the design of modelling experiments for my PhD, and the analysis done will be a valuable experience both in analyzing output from the ECHAM5/MPI-OM coupled model and from the experiments I conduct during my PhD.\\
+I also developed my UNIX and scripting skills, and {\bf transferable} skills such as prioritization of analysis and communicating effectively with people in different fields (both on a personal level and in presentations).\\
+
+\subsection*{Demonstrating}
+Although formal demonstrating opportunities are not available to first years, I have covered two demonstrating slots, one for the laboratory assessments in the undergraduate course `Atmospheric Analogues' (MT26F) and one for the M.Sc. Module `Numerical Modelling of the Atmosphere and Oceans' (MTMW14). I intend to demonstrate for at least one course next academic year.
+
+\subsection*{Conferences}
+I will present the variability work presented above at the RMetS student conference in Leeds, in July, and have submitted an abstract for an oral presentation to the Bjerknes Centre 10 years anniversary conference `Climate Change in High Latitudes' in Bergen in September. This conference will also be highly relevant to the rest of my PhD.
+
+\clearpage
+\bibliographystyle{natbib}
+\bibliography{PhDrefs.bib}
+
+\end{document}

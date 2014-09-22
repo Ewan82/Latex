@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{baldocchi2008turner}
+Dennis Baldocchi.
+\newblock Turner review no. 15.'breathing'of the terrestrial biosphere: lessons
+  learned from a global network of carbon dioxide flux measurement systems.
+\newblock {\em Australian Journal of Botany}, 56(1):1--26, 2008.
+
+\bibitem{delahaies2013regularization}
+Sylvain Delahaies, Ian Roulstone, and Nancy Nichols.
+\newblock A regularization of the carbon cycle data-fusion problem.
+\newblock In {\em EGU General Assembly Conference Abstracts}, volume~15, page
+  4087, 2013.
+
+\bibitem{fox2009reflex}
+Andrew Fox, Mathew Williams, Andrew~D Richardson, David Cameron, Jeffrey~H
+  Gove, Tristan Quaife, Daniel Ricciuto, Markus Reichstein, Enrico Tomelleri,
+  Cathy~M Trudinger, et~al.
+\newblock The reflex project: comparing different algorithms and
+  implementations for the inversion of a terrestrial ecosystem model against
+  eddy covariance data.
+\newblock {\em Agricultural and Forest Meteorology}, 149(10):1597--1615, 2009.
+
+\bibitem{stewart2008correlated}
+Laura~M Stewart, SL~Dance, and NK~Nichols.
+\newblock Correlated observation errors in data assimilation.
+\newblock {\em International journal for numerical methods in fluids},
+  56(8):1521--1527, 2008.
+
+\bibitem{tiedeman2013effect}
+Claire~R Tiedeman and Christopher~T Green.
+\newblock Effect of correlated observation error on parameters, predictions,
+  and uncertainty.
+\newblock {\em Water Resources Research}, 2013.
+
+\bibitem{williams2005improved}
+Mathew Williams, Paul~A Schwarz, Beverly~E Law, James Irvine, and Meredith~R
+  Kurpius.
+\newblock An improved analysis of forest carbon dynamics using data
+  assimilation.
+\newblock {\em Global Change Biology}, 11(1):89--105, 2005.
+
+\end{thebibliography}

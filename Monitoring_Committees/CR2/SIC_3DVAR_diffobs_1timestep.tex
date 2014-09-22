@@ -1,0 +1,221 @@
+\documentclass[11pt]{article}
+
+\usepackage[sort]{natbib}
+\usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx}
+\usepackage{fancyhdr}
+\usepackage[margin=0.5in]{geometry}
+%\pagestyle{fancy}
+
+
+\title{Comparison of Shannon Information Content values for 3D-Var Dalec when different observations are available at one time step}
+\author{E. Pinnington}
+
+
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem*{defn}{Definition}
+
+
+
+\begin{document}
+
+\maketitle
+
+For all different observation sets we have the same background error covariance matrix,
+\[
+B = \begin{pmatrix} 
+\sigma_{cf,b}^{2} & 0 & 0 & 0 & 0 \\
+0 & \sigma_{cr,b}^{2} & 0 & 0 & 0 \\
+0 & 0 & \sigma_{cw,b}^{2} & 0 & 0 \\
+0 & 0 & 0 & \sigma_{cl,b}^{2} & 0 \\
+0 & 0 & 0 & 0 & \sigma_{cs,b}^{2} \\
+\end{pmatrix}.
+\]
+
+\section*{Observations of NEE only}
+	
+First we consider the case where we have an observation of Net Ecosystem Exchange (NEE) only. From the equation for NEE we have observability matrix, at our initial and only time step,
+\[
+H_{0} = \begin{pmatrix}
+(1-p_{2})\zeta_0 & 0 & 0 & p_{8}T_{0} & p_{9}T_{0}
+\end{pmatrix},\text{where} \hspace{2mm} \zeta_0 = GPP'(c_f(t_0), p_{11}, \phi). 
+\]
+Here our error covariance matrix, R, is a scalar,
+\[
+R=\sigma_{nee,o}^{2}.
+\]
+We can now find the Hessian,
+\[
+\begin{array} {lcl}
+J'' &=& B^{-1}+H^{T}R^{-1}H \\
+&=& \begin{pmatrix} 
+\sigma_{cf,b}^{-2}+\sigma_{nee,o}^{-2}(1-p_{2})^{2}\zeta_0^{2} & 0 & 0 & \sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{8}T_0 & \sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{9}T_0 \\
+0 & \sigma_{cr,b}^{-2} & 0 & 0 & 0 \\
+0 & 0 & \sigma_{cw,b}^{-2} & 0 & 0 \\
+\sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{8}T_0 & 0 & 0 & \sigma_{cl,b}^{-2}+\sigma_{nee,o}^{-2}p_{8}^2 T_0^2 & \sigma_{nee,o}^{-2}p_{8}p_{9} T_0^2 \\
+\sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{9}T_0 & 0 & 0 & \sigma_{nee,o}^{-2}p_{8}p_{9} T_0^2 & \sigma_{cs,b}^{-2}+\sigma_{nee,o}^{-2}p_{9}^2 T_0^2 \\
+\end{pmatrix}.
+\end{array}
+\] 
+We then have our Shannon Information Content (SIC),
+\[
+SIC=\frac{1}{2}ln\frac{\begin{vmatrix} B \end{vmatrix}}{\begin{vmatrix} A \end{vmatrix}} = \frac{1}{2}ln\begin{vmatrix} B \end{vmatrix}\begin{vmatrix} J'' \end{vmatrix}
+\]
+as
+\[
+ \begin{vmatrix} A \end{vmatrix} = \frac{1}{\begin{vmatrix} J'' \end{vmatrix}}.
+\]
+So that,
+\[
+SIC = \frac{1}{2}ln\frac{(p_{2}-1)^{2}\zeta_0^{2}\sigma_{cf,b}^{2}+\sigma_{nee,o}^{2}+T_{0}^2(p_{9}^2\sigma_{cs,b}^2+p_8^2\sigma_{cl,b}^2)}{\sigma_{nee,o}^{2}}.
+\]
+
+\section*{Observations of NEE and C$_\text{f}$}
+We now have observability matrix,
+\[
+H_{0} = \begin{pmatrix}
+(1-p_{2})\zeta_0 & 0 & 0 & p_{8}T_{0} & p_{9}T_{0}\\
+1 & 0 & 0 & 0 & 0
+\end{pmatrix}
+\]
+and 
+\[
+R= \begin{pmatrix}
+\sigma_{nee,o}^{2} & 0 \\
+0 & \sigma_{cf,o}^{2}
+\end{pmatrix}.
+\]
+Then,
+\[
+J'' = \begin{pmatrix}
+\sigma_{cf,b}^{-2}+\sigma_{nee,o}^{-2}(1-p_{2})^{2}\zeta_0^{2}+\sigma_{cf,o}^{-2} & 0 & 0 & \sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{8}T_0 & \sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{9}T_0 \\
+0 & \sigma_{cr,b}^{-2} & 0 & 0 & 0 \\
+0 & 0 & \sigma_{cw,b}^{-2} & 0 & 0 \\
+\sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{8}T_0 & 0 & 0 & \sigma_{cl,b}^{-2}+\sigma_{nee,o}^{-2}p_{8}^2 T_0^2 & \sigma_{nee,o}^{-2}p_{8}p_{9} T_0^2 \\
+\sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{9}T_0 & 0 & 0 & \sigma_{nee,o}^{-2}p_{8}p_{9} T_0^2 & \sigma_{cs,b}^{-2}+\sigma_{nee,o}^{-2}p_{9}^2 T_0^2 \\
+\end{pmatrix}.
+\]
+So then we have,
+\[
+SIC = \frac{1}{2}ln\frac{\sigma_{cf,o}^2\big((p_{2}-1)^{2}\zeta_0^{2}\sigma_{cf,b}^{2}+\sigma_{nee,o}^{2}+T_{0}^2(p_{9}^2\sigma_{cs,b}^2+p_8^2\sigma_{cl,b}^2)\big)+\sigma_{cf,b}^2\big(\sigma_{nee,o}^{2}+T_{0}^2(p_{9}^2\sigma_{cs,b}^2+p_8^2\sigma_{cl,b}^2)\big)}{\sigma_{nee,o}^{2}\sigma_{cf,o}^2}.
+\]
+
+\section*{Observations of NEE and C$_\text{r}$}
+We now have observability matrix,
+\[
+H_{0} = \begin{pmatrix}
+(1-p_{2})\zeta_0 & 0 & 0 & p_{8}T_{0} & p_{9}T_{0}\\
+0 & 1 & 0 & 0 & 0
+\end{pmatrix}
+\]
+and 
+\[
+R= \begin{pmatrix}
+\sigma_{nee,o}^{2} & 0 \\
+0 & \sigma_{cr,o}^{2}
+\end{pmatrix}.
+\]
+Then,
+\[
+J'' = \begin{pmatrix}
+\sigma_{cf,b}^{-2}+\sigma_{nee,o}^{-2}(1-p_{2})^{2}\zeta_0^{2} & 0 & 0 & \sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{8}T_0 & \sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{9}T_0 \\
+0 & \sigma_{cr,b}^{-2}+\sigma_{cr,o}^{-2} & 0 & 0 & 0 \\
+0 & 0 & \sigma_{cw,b}^{-2} & 0 & 0 \\
+\sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{8}T_0 & 0 & 0 & \sigma_{cl,b}^{-2}+\sigma_{nee,o}^{-2}p_{8}^2 T_0^2 & \sigma_{nee,o}^{-2}p_{8}p_{9} T_0^2 \\
+\sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{9}T_0 & 0 & 0 & \sigma_{nee,o}^{-2}p_{8}p_{9} T_0^2 & \sigma_{cs,b}^{-2}+\sigma_{nee,o}^{-2}p_{9}^2 T_0^2 \\
+\end{pmatrix}.
+\]
+So then we have,
+\[
+SIC = \frac{1}{2}ln\frac{(\sigma_{cr,o}^2+\sigma_{cr,b}^{-2})\big((p_{2}-1)^{2}\zeta_0^{2}\sigma_{cf,b}^{2}+\sigma_{nee,o}^{2}+T_{0}^2(p_{9}^2\sigma_{cs,b}^2+p_8^2\sigma_{cl,b}^2)\big)}{\sigma_{nee,o}^{2}\sigma_{cr,o}^2}.
+\]
+
+\section*{Observations of NEE and C$_\text{w}$}
+We now have observability matrix,
+\[
+H_{0} = \begin{pmatrix}
+(1-p_{2})\zeta_0 & 0 & 0 & p_{8}T_{0} & p_{9}T_{0}\\
+0 & 0 & 1 & 0 & 0
+\end{pmatrix}
+\]
+and 
+\[
+R= \begin{pmatrix}
+\sigma_{nee,o}^{2} & 0 \\
+0 & \sigma_{cw,o}^{2}
+\end{pmatrix}.
+\]
+Then,
+\[
+J'' = \begin{pmatrix}
+\sigma_{cf,b}^{-2}+\sigma_{nee,o}^{-2}(1-p_{2})^{2}\zeta_0^{2} & 0 & 0 & \sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{8}T_0 & \sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{9}T_0 \\
+0 & \sigma_{cr,b}^{-2} & 0 & 0 & 0 \\
+0 & 0 & \sigma_{cw,b}^{-2}+\sigma_{cw,o}^{-2} & 0 & 0 \\
+\sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{8}T_0 & 0 & 0 & \sigma_{cl,b}^{-2}+\sigma_{nee,o}^{-2}p_{8}^2 T_0^2 & \sigma_{nee,o}^{-2}p_{8}p_{9} T_0^2 \\
+\sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{9}T_0 & 0 & 0 & \sigma_{nee,o}^{-2}p_{8}p_{9} T_0^2 & \sigma_{cs,b}^{-2}+\sigma_{nee,o}^{-2}p_{9}^2 T_0^2 \\
+\end{pmatrix}.
+\]
+So then we have,
+\[
+SIC = \frac{1}{2}ln\frac{(\sigma_{cw,o}^2+\sigma_{cw,b}^{-2})\big((p_{2}-1)^{2}\zeta_0^{2}\sigma_{cf,b}^{2}+\sigma_{nee,o}^{2}+T_{0}^2(p_{9}^2\sigma_{cs,b}^2+p_8^2\sigma_{cl,b}^2)\big)}{\sigma_{nee,o}^{2}\sigma_{cw,o}^2}.
+\]
+
+\section*{Observations of NEE and C$_\text{l}$}
+We now have observability matrix,
+\[
+H_{0} = \begin{pmatrix}
+(1-p_{2})\zeta_0 & 0 & 0 & p_{8}T_{0} & p_{9}T_{0}\\
+0 & 0 & 0 & 1 & 0
+\end{pmatrix}
+\]
+and 
+\[
+R= \begin{pmatrix}
+\sigma_{nee,o}^{2} & 0 \\
+0 & \sigma_{cl,o}^{2}
+\end{pmatrix}.
+\]
+Then,
+\[
+J'' = \begin{pmatrix}
+\sigma_{cf,b}^{-2}+\sigma_{nee,o}^{-2}(1-p_{2})^{2}\zeta_0^{2} & 0 & 0 & \sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{8}T_0 & \sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{9}T_0 \\
+0 & \sigma_{cr,b}^{-2} & 0 & 0 & 0 \\
+0 & 0 & \sigma_{cw,b}^{-2} & 0 & 0 \\
+\sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{8}T_0 & 0 & 0 & \sigma_{cl,b}^{-2}+\sigma_{nee,o}^{-2}p_{8}^2 T_0^2+\sigma_{cl,o}^{-2} & \sigma_{nee,o}^{-2}p_{8}p_{9} T_0^2 \\
+\sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{9}T_0 & 0 & 0 & \sigma_{nee,o}^{-2}p_{8}p_{9} T_0^2 & \sigma_{cs,b}^{-2}+\sigma_{nee,o}^{-2}p_{9}^2 T_0^2 \\
+\end{pmatrix}.
+\]
+So then we have,
+\[
+SIC = \frac{1}{2}ln\frac{\sigma_{cl,o}^2\big((p_{2}-1)^{2}\zeta_0^{2}\sigma_{cf,b}^{2}+\sigma_{nee,o}^{2}+T_{0}^2(p_{9}^2\sigma_{cs,b}^2+p_8^2\sigma_{cl,b}^2)\big)+\sigma_{cl,b}^2\big((p_{2}-1)^{2}\zeta_0^{2}\sigma_{cf,b}^{2}+\sigma_{nee,o}^{2}+T_{0}^2 p_{9}^2\sigma_{cs,b}^2\big)}{\sigma_{nee,o}^{2}\sigma_{cl,o}^2}.
+\]
+
+\section*{Observations of NEE and C$_\text{s}$}
+We now have observability matrix,
+\[
+H_{0} = \begin{pmatrix}
+(1-p_{2})\zeta_0 & 0 & 0 & p_{8}T_{0} & p_{9}T_{0}\\
+0 & 0 & 0 & 0 & 1
+\end{pmatrix}
+\]
+and 
+\[
+R= \begin{pmatrix}
+\sigma_{nee,o}^{2} & 0 \\
+0 & \sigma_{cs,o}^{2}
+\end{pmatrix}.
+\]
+Then,
+\[
+J'' = \begin{pmatrix}
+\sigma_{cf,b}^{-2}+\sigma_{nee,o}^{-2}(1-p_{2})^{2}\zeta_0^{2} & 0 & 0 & \sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{8}T_0 & \sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{9}T_0 \\
+0 & \sigma_{cr,b}^{-2} & 0 & 0 & 0 \\
+0 & 0 & \sigma_{cw,b}^{-2} & 0 & 0 \\
+\sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{8}T_0 & 0 & 0 & \sigma_{cl,b}^{-2}+\sigma_{nee,o}^{-2}p_{8}^2 T_0^2 & \sigma_{nee,o}^{-2}p_{8}p_{9} T_0^2 \\
+\sigma_{nee,o}^{-2}(1-p_{2})\zeta_0 p_{9}T_0 & 0 & 0 & \sigma_{nee,o}^{-2}p_{8}p_{9} T_0^2 & \sigma_{cs,b}^{-2}+\sigma_{nee,o}^{-2}p_{9}^2 T_0^2+\sigma_{cs,o}^{-2} \\
+\end{pmatrix}.
+\]
+So then we have,
+\[
+SIC = \frac{1}{2}ln\frac{\sigma_{cs,o}^2\big((p_{2}-1)^{2}\zeta_0^{2}\sigma_{cf,b}^{2}+\sigma_{nee,o}^{2}+T_{0}^2(p_{9}^2\sigma_{cs,b}^2+p_8^2\sigma_{cl,b}^2)\big)+\sigma_{cs,b}^2\big((p_{2}-1)^{2}\zeta_0^{2}\sigma_{cf,b}^{2}+\sigma_{nee,o}^{2}+T_{0}^2 p_{8}^2\sigma_{cl,b}^2\big)}{\sigma_{nee,o}^{2}\sigma_{cs,o}^2}.
+\]
+\end{document}
