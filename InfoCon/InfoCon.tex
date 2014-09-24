@@ -22,7 +22,7 @@
 
 \maketitle
 
-\section*{Section One}
+\section*{Shannon Information Content}
 
 In DA Shannon Information Content ($SIC$) is a measure of the reduction in entropy given a set of observations. Entropy physically corresponds to the volume in state space taken up by the probability density function (pdf) describing the knowledge of the state \cite{rodgers2000inverse}. Assuming all pdfs are Gaussian we have,
 \[
@@ -44,7 +44,11 @@ here we assume a diagonal background error covariance matrix. In order to calcul
 \[
 \textbf{A}^{-1}=\textbf{J}'' = \textbf{B}^{-1}+\textbf{H}^{T}\textbf{R}^{-1}\bf{H}, 
 \]
-where $\textbf{J}''$ is the Hessian of $\bf{J}$, the cost function to be minimized in Three-Dimensional Variational Data Assimilation (3D-Var), and $\bf{H}$ is the linearized observation operator. If we first consider one observation of $C_f$ (the first element of our state vector $\underline{x}$) an analytical expression for the $SIC$ can be derived using,
+where $\textbf{J}''$ is the Hessian of $\bf{J}$, the cost function to be minimized in Three-Dimensional Variational Data Assimilation (3D-Var), and $\bf{H}$ is the linearized observation operator. 
+
+\subsection*{$SIC$ for a single observation at one time}
+
+If we first consider one observation of $C_f$ (the first element of our state vector $\underline{x}$) an analytical expression for the $SIC$ can be derived using,
 \[
 \textbf{H}_{0} = \begin{pmatrix}
 1 & 0 & 0 & 0 & 0
@@ -113,7 +117,7 @@ Hence,
 \[
 SIC = \frac{1}{2}ln\frac{(p_{2}-1)^{2}\zeta_0^{2}\sigma_{cf,b}^{2}+\sigma_{nee,0}^{2}+T_{0}^2(p_{9}^2\sigma_{cs,b}^2+p_8^2\sigma_{cl,b}^2)}{\sigma_{nee,0}^{2}}.
 \]
-If we assume that the variances and parameters here are fixed we can see that the size of the $SIC$ is dependent on the temperature term, $T_0$, and the square of the first derivative of $GPP$, $\zeta_0^{2}$. Generally, the value of $GPP$ (and its first derivative) is highest in summer with higher total daily irradiance and higher temperatures. We therefore have that there will be more information content in observations that are taken when temperatures are higher. ***Physically this makes sense as more NEE takes place when temperatures are higher (to a point) so measurements are of greater magnitude and give us more information of carbon fluxes***. By plotting the SIC for a single observation of NEE varying with three years of meteorological driving data and the temperature term for the same period of the same data we can see that both are closely linked.
+If we assume that the variances and parameters here are fixed we can see that the size of the $SIC$ is dependent on the temperature term, $T_0$, and the square of the first derivative of $GPP$, $\zeta_0^{2}$. Generally, the value of $GPP$ (and its first derivative) is highest in summer with higher total daily irradiance and higher temperatures. We therefore have that there will be more information content in observations that are taken when temperatures are higher. ***Physically this makes sense as more NEE takes place when temperatures are higher (to a point) so measurements are of greater magnitude and give us more information of carbon fluxes***. By plotting the SIC for a single observation of NEE varying with three years of meteorological driving data and the temperature term for the same period of the same data we can see that both are closely linked \ref{fig:SICNEET}.
 
 \begin{figure}
 \centering
@@ -130,10 +134,53 @@ If we assume that the variances and parameters here are fixed we can see that th
   \label{fig:sub2}
 \end{subfigure}
 \caption{$SIC$ and temperature varying over three years using driving data from Oregon pine forest.}
-\label{fig:test}
+\label{fig:SICNEET}
 \end{figure}
 
-We can see that these quantities are closely correlated although the relationship is not linear as the magnitude of $GPP$'s first derivative is also dependent on daily irradiance and the value of the foliar carbon pool ($C_f$). 
+However the relationship is not linear as the magnitude of $GPP$'s first derivative is also dependent on daily irradiance and the value of the foliar carbon pool ($C_f$). This show that observations of $NEE$ made in the summer are much more valuable than those made in the winter assuming warmer temperatures, higher daily irradiance and a higher amount of foliar carbon in the summer.
+
+\subsection*{$SIC$ for successive observations over a time window}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{SIC_0_1090.png}
+\caption{$SIC$ varying as successive observations of $NEE$ are added using driving data from Oregon pine forest.}
+\label{fig:SIC_subplot}
+\end{figure} 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{SIC_200_1090.png}
+\caption{$SIC$ varying as successive observations of $NEE$ are added using driving data from Oregon pine forest. Starting at day 200.}
+\label{fig:SIC_subplot}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{SIC_0_1090Cf.png}
+\caption{$SIC$ varying as successive observations of $Cf$ are added using driving data from Oregon pine forest.}
+\label{fig:SIC_subplot}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{SIC_0_1090CfNEE.png}
+\caption{$SIC$ varying as successive observations of $NEE$ and $Cf$ are added using driving data from Oregon pine forest.}
+\label{fig:SIC_subplot}
+\end{figure}
+
+\section*{Degrees of freedom for signal}
+
+\[
+DOFS==n-trace(\textbf{B}^{-1}\textbf{A})
+\]
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{DOFS_0_1090Cf_Cpoolsconst.png}
+\caption{$DOFS$ varying as successive observations of $NEE$ are added using driving data from Oregon pine forest.}
+\label{fig:SIC_subplot}
+\end{figure}
 
 \bibliography{../PhD}{}
 \bibliographystyle{plain}
