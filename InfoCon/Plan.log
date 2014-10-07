@@ -1,6 +1,6 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2012.6.12)  25 SEP 2014 12:17
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2013.5.17)  7 OCT 2014 10:07
 entering extended mode
-**Plan
+**Plan.tex
 (./Plan.tex
 LaTeX2e <2003/12/01>
 Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
@@ -191,13 +191,17 @@ File: pdftex.def 2002/06/19 v0.03k graphics/color for pdftex
 \f@ncyO@orf=\skip62
 )
 (/usr/share/texmf/tex/latex/caption/caption.sty
-Package: caption 2004/07/16 v3.0c Customising captions (AS)
+Package: caption 2006/01/12 v3.0i Customising captions (AR)
+
+(/usr/share/texmf/tex/latex/caption/caption3.sty
+Package: caption3 2006/01/12 v3.0i caption3 kernel (AR)
 \captionmargin=\dimen117
-\captionwidth=\dimen118
-\captionindent=\dimen119
-\captionparindent=\dimen120
-\captionhangindent=\dimen121
-)
+\captionmarginx=\dimen118
+\captionwidth=\dimen119
+\captionindent=\dimen120
+\captionparindent=\dimen121
+\captionhangindent=\dimen122
+))
 
 ! LaTeX Error: File `subcaption.sty' not found.
 
@@ -210,10 +214,10 @@ Package: geometry 2002/07/08 v3.2 Page Geometry
 \Gm@cnth=\count101
 \Gm@cntv=\count102
 \c@Gm@tempcnt=\count103
-\Gm@bindingoffset=\dimen122
-\Gm@wd@mp=\dimen123
-\Gm@odd@mp=\dimen124
-\Gm@even@mp=\dimen125
+\Gm@bindingoffset=\dimen123
+\Gm@wd@mp=\dimen124
+\Gm@odd@mp=\dimen125
+\Gm@even@mp=\dimen126
 \Gm@dimlist=\toks27
 
 (/usr/share/texmf/tex/latex/geometry/geometry.cfg))
@@ -234,27 +238,60 @@ LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 
-(/usr/share/texmf/tex/latex/ms/ragged2e.sty
+(/usr/share/texmf/tex/context/base/supp-pdf.tex
+(/usr/share/texmf/tex/context/base/supp-mis.tex
+loading : Context Support Macros / Miscellaneous (2004.10.26)
+\protectiondepth=\count105
+\scratchcounter=\count106
+\scratchtoks=\toks28
+\scratchdimen=\dimen127
+\scratchskip=\skip63
+\scratchmuskip=\muskip11
+\scratchbox=\box28
+\scratchread=\read1
+\scratchwrite=\write3
+\zeropoint=\dimen128
+\onepoint=\dimen129
+\onebasepoint=\dimen130
+\minusone=\count107
+\thousandpoint=\dimen131
+\onerealpoint=\dimen132
+\emptytoks=\toks29
+\nextbox=\box29
+\nextdepth=\dimen133
+\everyline=\toks30
+\!!counta=\count108
+\!!countb=\count109
+\recursecounter=\count110
+)
+loading : Context Support Macros / PDF (2004.03.26)
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen134
+\MPnumerator=\count114
+\everyMPtoPDFconversion=\toks31
+) (/usr/share/texmf/tex/latex/ms/ragged2e.sty
 Package: ragged2e 2003/03/25 v2.04 ragged2e Package (MS)
 
 (/usr/share/texmf/tex/latex/ms/everysel.sty
 Package: everysel 1999/06/08 v1.03 EverySelectfont Package (MS)
 LaTeX Info: Redefining \selectfont on input line 125.
 )
-\CenteringLeftskip=\skip63
-\RaggedLeftLeftskip=\skip64
-\RaggedRightLeftskip=\skip65
-\CenteringRightskip=\skip66
-\RaggedLeftRightskip=\skip67
-\RaggedRightRightskip=\skip68
-\CenteringParfillskip=\skip69
-\RaggedLeftParfillskip=\skip70
-\RaggedRightParfillskip=\skip71
-\JustifyingParfillskip=\skip72
-\CenteringParindent=\skip73
-\RaggedLeftParindent=\skip74
-\RaggedRightParindent=\skip75
-\JustifyingParindent=\skip76
+\CenteringLeftskip=\skip64
+\RaggedLeftLeftskip=\skip65
+\RaggedRightLeftskip=\skip66
+\CenteringRightskip=\skip67
+\RaggedLeftRightskip=\skip68
+\RaggedRightRightskip=\skip69
+\CenteringParfillskip=\skip70
+\RaggedLeftParfillskip=\skip71
+\RaggedRightParfillskip=\skip72
+\JustifyingParfillskip=\skip73
+\CenteringParindent=\skip74
+\RaggedLeftParindent=\skip75
+\RaggedRightParindent=\skip76
+\JustifyingParindent=\skip77
 )
 -------------------- Geometry parameters
 paper: class default
@@ -317,17 +354,17 @@ onal as-sim-i-la-tion frame-work. 3DVAR/4DVAR.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 No file Plan.bbl.
 [2] (./Plan.aux) ) 
 Here is how much of TeX's memory you used:
- 2855 strings out of 94499
- 36311 string characters out of 1176746
- 93939 words of memory out of 3500000
- 5973 multiletter control sequences out of 10000+50000
+ 3272 strings out of 94500
+ 41961 string characters out of 1176766
+ 96925 words of memory out of 1000000
+ 6381 multiletter control sequences out of 10000+50000
  14860 words of font info for 57 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 1000
- 27i,7n,43p,474b,223s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 35i,7n,43p,478b,223s stack positions out of 1500i,500n,5000p,200000b,5000s
 PDF statistics:
  25 PDF objects out of 300000
  0 named destinations out of 131072
@@ -337,4 +374,4 @@ re/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesk
 y/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/
 texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm
 /cmr17.pfb>
-Output written on Plan.pdf (2 pages, 42994 bytes).
+Output written on Plan.pdf (2 pages, 42865 bytes).
