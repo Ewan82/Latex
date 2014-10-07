@@ -1,0 +1,50 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdftex 2013.10.26)  30 SEP 2014 20:54
+entering extended mode
+**C:/Users/Ewan/Latex/PhD.bib
+(C:/Users/Ewan/Latex/PhD.bib
+Overfull \hbox (1.57924pt too wide) in paragraph at lines 27--37
+[]\tenrm @articlestewart2008correlated, ti-tle=Correlated ob-ser-va-tion er-ror
+s in data as-sim-i-la-tion, au-thor=Stewart,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm a
+.\tenrm r
+.\tenrm t
+.etc.
+
+
+Overfull \hbox (39.6896pt too wide) in paragraph at lines 91--98
+\tenrm John M and Lak-sh-mi-vara-han, Sivara-makr-ish-nan and Dhall, Su-dar-sha
+n, vol-ume=13, year=2006, pub-lisher=Cambridge|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\tenrm J
+.\tenrm o
+.\tenrm h
+.\tenrm n
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+
+Overfull \hbox (18.74486pt too wide) in paragraph at lines 112--119
+[]\tenrm @articlestewart2009observation, ti-tle=Observation er-ror cor-re-la-ti
+ons in IASI ra-di-ance data, au-thor=Stewart,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm a
+.\tenrm r
+.\tenrm t
+.etc.
+
+)
+*
+! Emergency stop.
+<*> C:/Users/Ewan/Latex/PhD.bib
+                               
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!
