@@ -22,7 +22,39 @@
 
 \maketitle
 
-\section*{Shannon Information Content}
+\section{Introduction}
+
+A large amount of data is currently being gathered that is relevant to the carbon balance of forests, with much of this data coming from Eddy covariance flux towers \cite{baldocchi2008turner}. Attempts are also being made to combine this data with models of forest carbon stocks and fluxes, such as the Data Assimilation Linked Ecosystem Carbon model (DALEC) \cite{williams2005improved}, in a data assimilation scheme. Currently, however, there are limitations with such schemes as there is a lack of understanding about the additional information provided by different observations. Better understanding of the information content of carbon balance observations will help inform measurement campaigns of when and which observations to take in order to gain the most possible information about the system. We begin by introducing the DALEC model which will initially be used to look at the information content in different observations.
+
+\section{The DALEC Model}
+
+The DALEC model is a simple process-based model describing the carbon balance of an evergreen forest ecosystem \cite{williams2005improved}. The model is constructed of five carbon pools (foliage ($C_f$), fine roots ($C_r$), woody stems and coarse roots ($C_w$), fresh leaf and fine root litter ($C_l$) and soil organic matter and coarse woody debris ($C_s$)) linked via fluxes. The gross primary production function ($GPP$) uses meteorological driving data and the site's leaf area index (a function of $C_f$) to calculate the total amount of carbon to be allocated at a daily time step.   
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{DALECpic.png}
+    \caption{Representation of the carbon fluxes in the DALEC carbon balance model. Green arrows represent C allocation, dark red and black arrows represent litterfall and decomposition fluxes, blue arrows represent respiration fluxes and the light red arrow represents the feedback of foliar carbon to the $GPP$ function.  \cite{delahaies2013regularization}}
+    \label{fig:DALEC_mod}
+\end{figure}
+
+The model equations for the carbon pools at day $t+1$ are as follows:
+
+\begin{align}
+C_f(t+1)&=(1-p_5)C_f(t)+p_3(1-p_2)GPP(C_f(t),\phi),
+\\C_r(t+1)&=(1-p_7)C_r(t)+p_4(1-p_3)(1-p_2)GPP(C_f(t),\phi), 
+\\C_w(t+1)&=(1-p_6)C_w(t)+(1-p_4)(1-p_3)(1-p_2)GPP(C_f(t),\phi), 
+\\C_l(t+1)&=(1-(p_1+p_8)T(t))C_l(t)+p_5C_f(t)+p_7C_r(t), 
+\\C_s(t+1)&=(1-p_9T(t))C_s+p_6C_w(t)+p_1T(t)C_l(t),
+\end{align}
+
+where $T(t)=\frac{1}{2}exp(p_{10}T_m(t))$, $T_m$ is daily mean temperature, $p_1,\ldots,p_{10}$ are rate parameters and $\phi$ represents the meteorological driving data used in the $GPP$ function. The full details of this version of DALEC can be found in \cite{williams2005improved}. We now introduce Shannon Information Content as one method to assess the information content in different carbon balance observations. 
+
+\section{Introduction to Variational Assimilation}
+
+\subsection{Baye's Theorem and 3D-Var}
+
+\subsection{4D-Var}
+
+\section{Shannon Information Content}
 
 In DA Shannon Information Content ($SIC$) is a measure of the reduction in entropy given a set of observations. Entropy physically corresponds to the volume in state space taken up by the probability density function (pdf) describing the knowledge of the state \cite{rodgers2000inverse}. Assuming all pdfs are Gaussian we have,
 \[
@@ -46,7 +78,7 @@ here we assume a diagonal background error covariance matrix. In order to calcul
 \]
 where $\textbf{J}''$ is the Hessian of $\bf{J}$, the cost function to be minimized in Three-Dimensional Variational Data Assimilation (3D-Var), and $\bf{H}$ is the linearized observation operator. 
 
-\subsection*{$SIC$ for a single observation at one time}
+\subsection{$SIC$ for a single observation at one time}
 
 If we first consider one observation of $C_f$ (the first element of our state vector $\underline{x}$) an analytical expression for the $SIC$ can be derived using,
 \[
@@ -117,9 +149,9 @@ Hence,
 \[
 SIC = \frac{1}{2}ln\frac{(p_{2}-1)^{2}\zeta_0^{2}\sigma_{cf,b}^{2}+\sigma_{nee,0}^{2}+T_{0}^2(p_{9}^2\sigma_{cs,b}^2+p_8^2\sigma_{cl,b}^2)}{\sigma_{nee,0}^{2}}.
 \]
-If we assume that the variances and parameters here are fixed we can see that the size of the $SIC$ is dependent on the temperature term, $T_0$, and the square of the first derivative of $GPP$, $\zeta_0^{2}$. Generally, the value of $GPP$ (and its first derivative) is highest in summer with higher total daily irradiance and higher temperatures. We therefore have that there will be more information content in observations that are taken when temperatures are higher. ***Physically this makes sense as more NEE takes place when temperatures are higher (to a point) so measurements are of greater magnitude and give us more information of carbon fluxes***. By plotting the SIC for a single observation of NEE varying with three years of meteorological driving data and the temperature term for the same period of the same data we can see that both are closely linked \ref{fig:SICNEET}.
+If we assume that the variances and parameters here are fixed we can see that the size of the $SIC$ is dependent on the temperature term, $T_0$, and the square of the first derivative of $GPP$, $\zeta_0^{2}$. Generally, the value of $GPP$ (and its first derivative) is highest in summer with higher total daily irradiance and higher temperatures. We therefore have that there will be more information content in observations that are taken when temperatures are higher. ***Physically this makes sense as more NEE takes place when temperatures are higher (to a point) so measurements are of greater magnitude and give us more information of carbon fluxes***. By plotting the SIC for a single observation of NEE varying with three years of meteorological driving data and the temperature term for the same period of the same data we can see that both are closely linked in figure \ref{fig:SICNEET}.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
@@ -130,7 +162,7 @@ If we assume that the variances and parameters here are fixed we can see that th
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[width=.9\linewidth]{Temp_0_1095.png}
-  \caption{Temperature term, $0.5exp(\Theta T_{mean})$.}
+  \caption{Temperature term, $0.5exp(\Theta * T_{mean})$.}
   \label{fig:sub2}
 \end{subfigure}
 \caption{$SIC$ and temperature varying over three years using driving data from Oregon pine forest.}
@@ -139,48 +171,131 @@ If we assume that the variances and parameters here are fixed we can see that th
 
 However the relationship is not linear as the magnitude of $GPP$'s first derivative is also dependent on daily irradiance and the value of the foliar carbon pool ($C_f$). This show that observations of $NEE$ made in the summer are much more valuable than those made in the winter assuming warmer temperatures, higher daily irradiance and a higher amount of foliar carbon in the summer.
 
-\subsection*{$SIC$ for successive observations over a time window}
+\subsection{$SIC$ for successive observations over a time window}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{SIC_0_1090.png}
-\caption{$SIC$ varying as successive observations of $NEE$ are added using driving data from Oregon pine forest.}
-\label{fig:SIC_subplot}
-\end{figure} 
+Following the results for $SIC$ based at a single time, we now consider the $SIC$ when successive observations are added over a period of time. The DALEC model is now built into a Four-Dimensional Variational Data Assimilation (4D-Var) framework where our observation operator, $\textbf{H}$, and observation error covariance matrix, $\textbf{R}$, are now,
+\[ 
+\textbf{H}=
+\begin{pmatrix}
+\textbf{H}_0 \\
+\textbf{H}_1\textbf{M}_0\\
+\vdots \\
+\textbf{H}_n\textbf{M}_{n,0}
+\end{pmatrix}
+\hspace{5mm} \text{and} \hspace{5mm}
+\textbf{R}=
+\begin{pmatrix}
+\textbf{R}_0 & 0 & 0 & 0 \\
+0 & \textbf{R}_1 & 0 & 0 \\
+0 & 0 & \ddots & 0 \\
+0 & 0 & 0 & \textbf{R}_n
+\end{pmatrix},
+\]
+where $\textbf{H}_i$ is our linearized observation operator at time $t_i$, $\textbf{M}_{i,0}=\textbf{M}_{i-1}\textbf{M}_{i-2}\cdots\textbf{M}_0$ is our linearized model evolving the state vector, $\underline{x}_b$, at time $t_0$ to time $t_i$ and $\textbf{R}_i$ is the observation error covariance matrix corresponding to $\textbf{H}_i$ at time $t_i$ \cite{lewis2006dynamic}. Firstly the tangent linear model for DALEC was calculated analytically as $\textbf{M}_i=\frac{\delta \underline{m}_i}{\delta \underline{x}_i}$.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{SIC_200_1090.png}
-\caption{$SIC$ varying as successive observations of $NEE$ are added using driving data from Oregon pine forest. Starting at day 200.}
-\label{fig:SIC_subplot}
-\end{figure}
+We begin by considering successive observations of $Cf$ in time. Here we again have,
+\[
+\textbf{H}_{i} = \begin{pmatrix}
+1 & 0 & 0 & 0 & 0
+\end{pmatrix}
+\hspace{5mm} \text{and} \hspace{5mm}
+\textbf{R}_i=\sigma_{cf,o}^{2}.
+\] 
+The linearized model at time $t_i$ is given as,
+\[
+\textbf{M}_{i}=
+\begin{pmatrix} 
+(1-p_5)+p_3(1-p_2)GPP'(C_f(t_i),\phi) & 0 & 0 & 0 & 0 \\
+p_4(1-p_3)(1-p_2)GPP'(C_f(t_i),\phi) & (1-p_7) & 0 & 0 & 0 \\
+(1-p_4)(1-p_3)(1-p_2)GPP'(C_f(t_i),\phi) & 0 & (1-p_6) & 0 & 0 \\
+p_5 & p_7 & 0 & (1-(p_1+p_8)T(t_i)) & 0 \\
+0 & 0 & p_6 & p_1T(t_i) & (1-p_9T(t_i)) \\
+\end{pmatrix}.
+\]
+Then for two successive observations of $Cf$ we have,
+\[ 
+\textbf{H}=
+\begin{pmatrix}
+\textbf{H}_0 \\
+\textbf{H}_1\textbf{M}_0\\
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & 0 & 0 & 0 & 0 \\
+(1-p_5)+p_3(1-p_2)GPP'(C_f(t_0),\phi) & 0 & 0 & 0 & 0\\
+\end{pmatrix}
+\]
+and
+\[
+\textbf{R}=
+\begin{pmatrix}
+\textbf{R}_0 & 0  \\
+0 & \textbf{R}_1  \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+\sigma_{cf,o}^{2} & 0  \\
+0 & \sigma_{cf,o}^{2}  \\
+\end{pmatrix}.
+\]
+We then have,
+\[
+SIC = \frac{1}{2}ln\begin{vmatrix} \textbf{B} \end{vmatrix}\begin{vmatrix} \textbf{J}'' \end{vmatrix} =\frac{1}{2}ln \bigg(1+\frac{\sigma_{cf,b}^{2}}{\sigma_{cf,o}^{2}}+\frac{\sigma_{cf,b}^{2}\eta_0^{2}}{\sigma_{cf,o}^{2}} \bigg),
+\]
+where $\eta_i=(1-p_5)+p_3(1-p_2)GPP'(C_f(t_i),\phi)$. We can continue adding more observations at successive times and we start to see a pattern. For three observations at successive times we have,
+\[
+SIC =\frac{1}{2}ln \bigg(1+\frac{\sigma_{cf,b}^{2}}{\sigma_{cf,o}^{2}}+\frac{\sigma_{cf,b}^{2}\eta_0^{2}}{\sigma_{cf,o}^{2}}+\frac{\sigma_{cf,b}^{2}\eta_0^{2}\eta_1^{2}}{\sigma_{cf,o}^{2}} \bigg),
+\]
+for four,
+\[
+SIC =\frac{1}{2}ln \bigg(1+\frac{\sigma_{cf,b}^{2}}{\sigma_{cf,o}^{2}}+\frac{\sigma_{cf,b}^{2}\eta_0^{2}}{\sigma_{cf,o}^{2}}+\frac{\sigma_{cf,b}^{2}\eta_0^{2}\eta_1^{2}}{\sigma_{cf,o}^{2}}+\frac{\sigma_{cf,b}^{2}\eta_0^{2}\eta_1^{2}\eta_2^{2}}{\sigma_{cf,o}^{2}} \bigg).
+\]
+Using a simple proof by induction we find that for $n$ observations we have,
 
-\begin{figure}[ht]
+\begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth]{SIC_0_1090Cf.png}
+\includegraphics[width=.9\textwidth]{SIC_0_1090Cf.png}
 \caption{$SIC$ varying as successive observations of $Cf$ are added using driving data from Oregon pine forest.}
 \label{fig:SIC_subplot}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth]{SIC_0_1090CfNEE.png}
+\includegraphics[width=.9\textwidth]{SIC_0_1090.png}
+\caption{$SIC$ varying as successive observations of $NEE$ are added using driving data from Oregon pine forest.}
+\label{fig:SIC_subplot}
+\end{figure} 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.9\textwidth]{SIC_200_1090.png}
+\caption{$SIC$ varying as successive observations of $NEE$ are added using driving data from Oregon pine forest. Starting at day 200.}
+\label{fig:SIC_subplot}
+\end{figure}
+
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.9\textwidth]{SIC_0_1090CfNEE.png}
 \caption{$SIC$ varying as successive observations of $NEE$ and $Cf$ are added using driving data from Oregon pine forest.}
 \label{fig:SIC_subplot}
 \end{figure}
 
-\section*{Degrees of freedom for signal}
+\section{Degrees of freedom for signal}
 
 \[
-DOFS==n-trace(\textbf{B}^{-1}\textbf{A})
+DOFS=n-trace(\textbf{B}^{-1}\textbf{A})
 \]
 
-\begin{figure}[ht]
+\begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth]{DOFS_0_1090Cf_Cpoolsconst.png}
+\includegraphics[width=.9\textwidth]{DOFS_0_1090Cf_Cpoolsconst.png}
 \caption{$DOFS$ varying as successive observations of $NEE$ are added using driving data from Oregon pine forest.}
 \label{fig:SIC_subplot}
 \end{figure}
+
+
 
 \bibliography{../PhD}{}
 \bibliographystyle{plain}
