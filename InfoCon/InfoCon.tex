@@ -56,7 +56,7 @@ where $T(t)=\frac{1}{2}exp(p_{10}T_m(t))$, $T_m$ is daily mean temperature, $p_1
 
 \section{Information Content Measures}
 
-Information content measures are already being used to quantify the different levels of information provided by observations in the development of satellite instruments \cite{stewart2008correlated, engelen2004information} and in operational data assimilation schemes \cite{trove22713308, fisher2003estimation, sandu2012practical}. In these fields two of the more widely used measures are Shannon Information Content (also known as entropy reduction) and the degrees of freedom for signal. We will apply both methods for observations assimilated with DALEC. 
+Information content measures are already being used to quantify the different levels of information provided by observations in the development of satellite instruments \cite{stewart2008correlated, engelen2004information} and in operational data assimilation schemes \cite{fisher2003estimation, sandu2012practical}. In these fields two of the more widely used measures are Shannon Information Content (also known as entropy reduction) and the degrees of freedom for signal. We will apply both methods for observations assimilated with DALEC. 
 
 \subsection{Shannon Information Content}
 
@@ -70,7 +70,7 @@ The entropy reduction, or $SIC$, due to the observation is then,
 \begin{equation} \label{shaic}
 SIC =  S[P_b(x)]-S[P_o(x|y)].
 \end{equation}
-If we assume all $pdf's$ are Gaussian and use the natural logarithm as opposed to $\text{log}_2$ (for algebraic convenience) \cite{rodgers2000inverse} the entropy of a multivariate Gaussian distruibution for a vector $\underline{x}$ with $n$ elements (before and after observations) can be derived as,
+If we assume all $pdfs$ are Gaussian and use the natural logarithm as opposed to $\text{log}_2$ (for algebraic convenience) \cite{rodgers2000inverse} the entropy of a multivariate Gaussian distruibution for a vector $\underline{x}$ with $n$ elements (before and after observations) can be derived as,
 \begin{equation} \label{SB}
  S[P_b(\underline{x})] = n\text{ln}(2\pi e)^{\frac{1}{2}}+\frac{1}{2}\text{ln}\begin{vmatrix}\bf{B}\end{vmatrix}
 \end{equation}
