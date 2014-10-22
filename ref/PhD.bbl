@@ -2,7 +2,7 @@
 
 \bibitem{baldocchi2008turner}
 Dennis Baldocchi.
-\newblock Turner review no. 15.'breathing'of the terrestrial biosphere: lessons
+\newblock Turner review no. 15.`breathing'of the terrestrial biosphere: lessons
   learned from a global network of carbon dioxide flux measurement systems.
 \newblock {\em Australian Journal of Botany}, 56(1):1--26, 2008.
 
@@ -34,6 +34,31 @@ G{\'e}rald Desroziers, Loic Berre, Bernard Chapnik, and Paul Poli.
 \newblock {\em Quarterly Journal of the Royal Meteorological Society},
   131(613):3385--3396, 2005.
 
+\bibitem{engelen2004information}
+RJ~Engelen and GL~Stephens.
+\newblock Information content of infrared satellite sounding measurements with
+  respect to co2.
+\newblock {\em Journal of Applied Meteorology}, 43(2):373--378, 2004.
+
+\bibitem{fisher2003estimation}
+Michael Fisher.
+\newblock {\em Estimation of entropy reduction and degrees of freedom for
+  signal for large variational analysis systems}.
+\newblock European Centre for Medium-Range Weather Forecasts, 2003.
+
+\bibitem{trove22713308}
+Michael Fisher and European~Centre for Medium Range Weather~Forecasts.
+\newblock {\em Estimation of entropy reduction and degrees of freedom for
+  signal for large variational analysis systems}.
+\newblock Reading, England : European Centre for Medium-Range Weather
+  Forecasts, 2003.
+\newblock Cover title.
+
+\bibitem{fowler2011measures}
+Alison Fowler and Peter~Jan van Leeuwen.
+\newblock Measures of observation impact in gaussian data assimilation.
+\newblock 2011.
+
 \bibitem{fox2009reflex}
 Andrew Fox, Mathew Williams, Andrew~D Richardson, David Cameron, Jeffrey~H
   Gove, Tristan Quaife, Daniel Ricciuto, Markus Reichstein, Enrico Tomelleri,
@@ -55,6 +80,12 @@ Andrew~D Richardson, Mathew Williams, David~Y Hollinger, David~JP Moore,
 \newblock Estimating parameters of a forest ecosystem c model with measurements
   of stocks and fluxes as joint constraints.
 \newblock {\em Oecologia}, 164(1):25--40, 2010.
+
+\bibitem{sandu2012practical}
+Adrian Sandu, Kumaresh Singh, Mohamed Jardak, Kevin Bowman, and Meemong Lee.
+\newblock A practical method to estimate information content in the context of
+  4d-var data assimilation. i: Methodology.
+\newblock 2012.
 
 \bibitem{stewart2013data}
 Laura~M Stewart, Sarah Dance, and Nancy~K Nichols.

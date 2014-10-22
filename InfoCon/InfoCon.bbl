@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{baldocchi2008turner}
 Dennis Baldocchi.
@@ -12,6 +12,31 @@ Sylvain Delahaies, Ian Roulstone, and Nancy Nichols.
 \newblock In {\em EGU General Assembly Conference Abstracts}, volume~15, page
   4087, 2013.
 
+\bibitem{engelen2004information}
+RJ~Engelen and GL~Stephens.
+\newblock Information content of infrared satellite sounding measurements with
+  respect to co2.
+\newblock {\em Journal of Applied Meteorology}, 43(2):373--378, 2004.
+
+\bibitem{fisher2003estimation}
+Michael Fisher.
+\newblock {\em Estimation of entropy reduction and degrees of freedom for
+  signal for large variational analysis systems}.
+\newblock European Centre for Medium-Range Weather Forecasts, 2003.
+
+\bibitem{trove22713308}
+Michael Fisher and European~Centre for Medium Range Weather~Forecasts.
+\newblock {\em Estimation of entropy reduction and degrees of freedom for
+  signal for large variational analysis systems}.
+\newblock Reading, England : European Centre for Medium-Range Weather
+  Forecasts, 2003.
+\newblock Cover title.
+
+\bibitem{fowler2011measures}
+Alison Fowler and Peter~Jan van Leeuwen.
+\newblock Measures of observation impact in gaussian data assimilation.
+\newblock 2011.
+
 \bibitem{lewis2006dynamic}
 John~M Lewis, Sivaramakrishnan Lakshmivarahan, and Sudarshan Dhall.
 \newblock {\em Dynamic data assimilation: a least squares approach}, volume~13.
@@ -22,6 +47,18 @@ Clive~D Rodgers et~al.
 \newblock {\em Inverse methods for atmospheric sounding: Theory and practice},
   volume~2.
 \newblock World scientific Singapore, 2000.
+
+\bibitem{sandu2012practical}
+Adrian Sandu, Kumaresh Singh, Mohamed Jardak, Kevin Bowman, and Meemong Lee.
+\newblock A practical method to estimate information content in the context of
+  4d-var data assimilation. i: Methodology.
+\newblock 2012.
+
+\bibitem{stewart2008correlated}
+Laura~M Stewart, SL~Dance, and NK~Nichols.
+\newblock Correlated observation errors in data assimilation.
+\newblock {\em International journal for numerical methods in fluids},
+  56(8):1521--1527, 2008.
 
 \bibitem{williams2005improved}
 Mathew Williams, Paul~A Schwarz, Beverly~E Law, James Irvine, and Meredith~R

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.10.19)  30 SEP 2014 20:54
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.10.19)  21 OCT 2014 15:52
 entering extended mode
 **C:/Users/Ewan/Latex/ref/PhD.tex
 (C:/Users/Ewan/Latex/ref/PhD.tex
@@ -310,27 +310,27 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 [1
 
 {C:/Users/Ewan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-(C:\Users\Ewan\Latex\ref\PhD.bbl [3]) [4] (C:\Users\Ewan\Latex\ref\PhD.aux) ) 
+(C:\Users\Ewan\Latex\ref\PhD.bbl [3] [4]) [5] (C:\Users\Ewan\Latex\ref\PhD.aux)
+ ) 
 Here is how much of TeX's memory you used:
- 3340 strings out of 494045
- 41125 string characters out of 3155643
- 107722 words of memory out of 3000000
- 6567 multiletter control sequences out of 15000+200000
+ 3355 strings out of 494045
+ 41518 string characters out of 3155643
+ 107802 words of memory out of 3000000
+ 6582 multiletter control sequences out of 15000+200000
  15197 words of font info for 58 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,6n,43p,511b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D
-:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr8.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmti10.pfb>
-Output written on PhD.pdf (4 pages, 144036 bytes).
+ 27i,6n,43p,511b,261s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb
+><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmti10.pfb>
+Output written on PhD.pdf (5 pages, 147916 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
