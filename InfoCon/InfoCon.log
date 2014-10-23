@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.10.19)  22 OCT 2014 09:35
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.10.19)  23 OCT 2014 17:00
 entering extended mode
 **C:/Users/Ewan/Latex/InfoCon/InfoCon.tex
 (C:/Users/Ewan/Latex/InfoCon/InfoCon.tex
@@ -217,7 +217,13 @@ Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count102
 \c@subtable=\count103
 )
-(D:\MiKTeX\tex\latex\geometry\geometry.sty
+(D:\MiKTeX\tex\latex\graphics\color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+ (D:\MiKTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+) (D:\MiKTeX\tex\latex\geometry\geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (D:\MiKTeX\tex\generic\oberdiek\ifpdf.sty
@@ -248,18 +254,18 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \c@theorem=\count107
 
 (C:\Users\Ewan\Latex\InfoCon\InfoCon.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 (D:\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -312,15 +318,15 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
 (D:\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
  (D:\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 23.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 24.
 
 (D:\MiKTeX\tex\latex\base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -328,16 +334,26 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 File: DALECpic.png Graphic file (type png)
 
 <use DALECpic.png>
-Package pdftex.def Info: DALECpic.png used on input line 34.
+Package pdftex.def Info: DALECpic.png used on input line 36.
 (pdftex.def)             Requested size: 234.8775pt x 134.80186pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [1
 
-{C:/Users/Ewan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <C:/Users
-/Ewan/Latex/InfoCon/DALECpic.png>]
+{C:/Users/Ewan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+ [2 <C:/Users/Ewan/Latex/InfoCon/DALECpic.png>]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+ [3]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
@@ -347,79 +363,86 @@ Missing character: There is no ¢ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
- [3] [4]
-<SIC1Obs_0_1095.png, id=32, 578.16pt x 433.62pt>
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+ [4] [5]
+<SIC1Obs_0_1095.png, id=36, 578.16pt x 433.62pt>
 File: SIC1Obs_0_1095.png Graphic file (type png)
  <use SIC1Obs_0_1095.png>
-Package pdftex.def Info: SIC1Obs_0_1095.png used on input line 207.
+Package pdftex.def Info: SIC1Obs_0_1095.png used on input line 242.
 (pdftex.def)             Requested size: 211.3883pt x 158.53795pt.
 
-<Temp_0_1095.png, id=33, 578.16pt x 433.62pt>
+<Temp_0_1095.png, id=37, 578.16pt x 433.62pt>
 File: Temp_0_1095.png Graphic file (type png)
  <use Temp_0_1095.png>
-Package pdftex.def Info: Temp_0_1095.png used on input line 213.
+Package pdftex.def Info: Temp_0_1095.png used on input line 248.
 (pdftex.def)             Requested size: 211.3883pt x 158.53795pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5]
-Overfull \hbox (44.97063pt too wide) detected at line 263
+[6]
+Overfull \hbox (44.97063pt too wide) detected at line 298
 \OT1/cmr/bx/n/10.95 M[] \OT1/cmr/m/n/10.95 = [] \OML/cmm/m/it/10.95 :
  []
 
-[6 <C:/Users/Ewan/Latex/InfoCon/SIC1Obs_0_1095.png> <C:/Users/Ewan/Latex/InfoCo
-n/Temp_0_1095.png>] <SIC_0_1090Cf.png, id=44, 578.16pt x 433.62pt>
+[7 <C:/Users/Ewan/Latex/InfoCon/SIC1Obs_0_1095.png> <C:/Users/Ewan/Latex/InfoCo
+n/Temp_0_1095.png>] <SIC_0_1090Cf.png, id=49, 578.16pt x 433.62pt>
 File: SIC_0_1090Cf.png Graphic file (type png)
 
 <use SIC_0_1090Cf.png>
-Package pdftex.def Info: SIC_0_1090Cf.png used on input line 310.
-(pdftex.def)             Requested size: 422.77664pt x 317.08252pt.
- <SIC_0_1090.png, id=45, 578.16pt x 433.62pt>
-File: SIC_0_1090.png Graphic file (type png)
-
-<use SIC_0_1090.png>
-Package pdftex.def Info: SIC_0_1090.png used on input line 319.
-(pdftex.def)             Requested size: 422.77664pt x 317.08252pt.
-
-<DOFS_0_1090Cf_Cpoolsconst.png, id=46, 578.16pt x 433.62pt>
-File: DOFS_0_1090Cf_Cpoolsconst.png Graphic file (type png)
-
-<use DOFS_0_1090Cf_Cpoolsconst.png>
-Package pdftex.def Info: DOFS_0_1090Cf_Cpoolsconst.png used on input line 345.
+Package pdftex.def Info: SIC_0_1090Cf.png used on input line 345.
 (pdftex.def)             Requested size: 422.77664pt x 317.08252pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(C:\Users\Ewan\Latex\InfoCon\InfoCon.bbl [7 <C:/Users/Ewan/Latex/InfoCon/SIC_0_
-1090Cf.png>] [8 <C:/Users/Ewan/Latex/InfoCon/SIC_0_1090.png>]) [9 <C:/Users/Ewa
-n/Latex/InfoCon/DOFS_0_1090Cf_Cpoolsconst.png>]
+<SIC_0_1090.png, id=50, 578.16pt x 433.62pt>
+File: SIC_0_1090.png Graphic file (type png)
+ <use SIC_0_1090.png>
+Package pdftex.def Info: SIC_0_1090.png used on input line 354.
+(pdftex.def)             Requested size: 422.77664pt x 317.08252pt.
+
+<DOFS_0_1090Cf_Cpoolsconst.png, id=51, 578.16pt x 433.62pt>
+File: DOFS_0_1090Cf_Cpoolsconst.png Graphic file (type png)
+
+<use DOFS_0_1090Cf_Cpoolsconst.png>
+Package pdftex.def Info: DOFS_0_1090Cf_Cpoolsconst.png used on input line 380.
+(pdftex.def)             Requested size: 422.77664pt x 317.08252pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(C:\Users\Ewan\Latex\InfoCon\InfoCon.bbl [8] [9 <C:/Users/Ewan/Latex/InfoCon/SI
+C_0_1090Cf.png>]) [10 <C:/Users/Ewan/Latex/InfoCon/SIC_0_1090.png>] [11 <C:/Use
+rs/Ewan/Latex/InfoCon/DOFS_0_1090Cf_Cpoolsconst.png>]
 (C:\Users\Ewan\Latex\InfoCon\InfoCon.aux) ) 
 Here is how much of TeX's memory you used:
- 4484 strings out of 494045
- 61505 string characters out of 3155643
- 132001 words of memory out of 3000000
- 7689 multiletter control sequences out of 15000+200000
+ 4541 strings out of 494045
+ 62406 string characters out of 3155643
+ 130956 words of memory out of 3000000
+ 7742 multiletter control sequences out of 15000+200000
  19971 words of font info for 78 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,18n,43p,1267b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,43p,1496b,509s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi7.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr12.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr6.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr7.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/c
-msy6.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmti10.pfb>
-Output written on InfoCon.pdf (9 pages, 605826 bytes).
+X/fonts/type1/public/amsfonts/cm/cmbx8.pfb><D:/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi6.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr17.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr6.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr8.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb>
+Output written on InfoCon.pdf (11 pages, 624206 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
+ 127 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

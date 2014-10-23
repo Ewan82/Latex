@@ -6,6 +6,14 @@ Dennis Baldocchi.
   learned from a global network of carbon dioxide flux measurement systems.
 \newblock {\em Australian Journal of Botany}, 56(1):1--26, 2008.
 
+\bibitem{baldocchi2001fluxnet}
+Dennis Baldocchi, Eva Falge, Lianhong Gu, Richard Olson, David Hollinger, Steve
+  Running, Peter Anthoni, Ch~Bernhofer, Kenneth Davis, Robert Evans, et~al.
+\newblock Fluxnet: A new tool to study the temporal and spatial variability of
+  ecosystem-scale carbon dioxide, water vapor, and energy flux densities.
+\newblock {\em Bulletin of the American Meteorological Society},
+  82(11):2415--2434, 2001.
+
 \bibitem{delahaies2013regularization}
 Sylvain Delahaies, Ian Roulstone, and Nancy Nichols.
 \newblock A regularization of the carbon cycle data-fusion problem.
@@ -24,18 +32,19 @@ Michael Fisher.
   signal for large variational analysis systems}.
 \newblock European Centre for Medium-Range Weather Forecasts, 2003.
 
-\bibitem{trove22713308}
-Michael Fisher and European~Centre for Medium Range Weather~Forecasts.
-\newblock {\em Estimation of entropy reduction and degrees of freedom for
-  signal for large variational analysis systems}.
-\newblock Reading, England : European Centre for Medium-Range Weather
-  Forecasts, 2003.
-\newblock Cover title.
-
 \bibitem{fowler2011measures}
 Alison Fowler and Peter~Jan van Leeuwen.
 \newblock Measures of observation impact in gaussian data assimilation.
 \newblock 2011.
+
+\bibitem{fox2009reflex}
+Andrew Fox, Mathew Williams, Andrew~D Richardson, David Cameron, Jeffrey~H
+  Gove, Tristan Quaife, Daniel Ricciuto, Markus Reichstein, Enrico Tomelleri,
+  Cathy~M Trudinger, et~al.
+\newblock The reflex project: comparing different algorithms and
+  implementations for the inversion of a terrestrial ecosystem model against
+  eddy covariance data.
+\newblock {\em Agricultural and Forest Meteorology}, 149(10):1597--1615, 2009.
 
 \bibitem{lewis2006dynamic}
 John~M Lewis, Sivaramakrishnan Lakshmivarahan, and Sudarshan Dhall.
@@ -48,6 +57,12 @@ Clive~D Rodgers et~al.
   volume~2.
 \newblock World scientific Singapore, 2000.
 
+\bibitem{running1999global}
+SW~Running, DD~Baldocchi, DP~Turner, ST~Gower, PS~Bakwin, and KA~Hibbard.
+\newblock A global terrestrial monitoring network integrating tower fluxes,
+  flask sampling, ecosystem modeling and eos satellite data.
+\newblock {\em Remote Sensing of Environment}, 70(1):108--127, 1999.
+
 \bibitem{sandu2012practical}
 Adrian Sandu, Kumaresh Singh, Mohamed Jardak, Kevin Bowman, and Meemong Lee.
 \newblock A practical method to estimate information content in the context of
@@ -59,6 +74,13 @@ Laura~M Stewart, SL~Dance, and NK~Nichols.
 \newblock Correlated observation errors in data assimilation.
 \newblock {\em International journal for numerical methods in fluids},
   56(8):1521--1527, 2008.
+
+\bibitem{valentini2000respiration}
+R~Valentini, G~Matteucci, AJ~Dolman, E-D Schulze, CJMEAG Rebmann, EJ~Moors,
+  A~Granier, P~Gross, NO~Jensen, K~Pilegaard, et~al.
+\newblock Respiration as the main determinant of carbon balance in european
+  forests.
+\newblock {\em Nature}, 404(6780):861--865, 2000.
 
 \bibitem{williams2005improved}
 Mathew Williams, Paul~A Schwarz, Beverly~E Law, James Irvine, and Meredith~R
