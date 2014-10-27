@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.10.19)  23 OCT 2014 17:00
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.10.19)  27 OCT 2014 21:31
 entering extended mode
 **C:/Users/Ewan/Latex/InfoCon/InfoCon.tex
 (C:/Users/Ewan/Latex/InfoCon/InfoCon.tex
@@ -370,62 +370,84 @@ Missing character: There is no ¢ in font cmr10!
 <SIC1Obs_0_1095.png, id=36, 578.16pt x 433.62pt>
 File: SIC1Obs_0_1095.png Graphic file (type png)
  <use SIC1Obs_0_1095.png>
-Package pdftex.def Info: SIC1Obs_0_1095.png used on input line 242.
+Package pdftex.def Info: SIC1Obs_0_1095.png used on input line 245.
 (pdftex.def)             Requested size: 211.3883pt x 158.53795pt.
 
 <Temp_0_1095.png, id=37, 578.16pt x 433.62pt>
 File: Temp_0_1095.png Graphic file (type png)
  <use Temp_0_1095.png>
-Package pdftex.def Info: Temp_0_1095.png used on input line 248.
+Package pdftex.def Info: Temp_0_1095.png used on input line 251.
 (pdftex.def)             Requested size: 211.3883pt x 158.53795pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6]
-Overfull \hbox (44.97063pt too wide) detected at line 298
-\OT1/cmr/bx/n/10.95 M[] \OT1/cmr/m/n/10.95 = [] \OML/cmm/m/it/10.95 :
- []
+[6] [7 <C:/Users/Ewan/Latex/InfoCon/SIC1Obs_0_1095.png> <C:/Users/Ewan/Latex/In
+foCon/Temp_0_1095.png>] <SIC0_1090cf.png, id=49, 578.16pt x 433.62pt>
+File: SIC0_1090cf.png Graphic file (type png)
 
-[7 <C:/Users/Ewan/Latex/InfoCon/SIC1Obs_0_1095.png> <C:/Users/Ewan/Latex/InfoCo
-n/Temp_0_1095.png>] <SIC_0_1090Cf.png, id=49, 578.16pt x 433.62pt>
-File: SIC_0_1090Cf.png Graphic file (type png)
+<use SIC0_1090cf.png>
+Package pdftex.def Info: SIC0_1090cf.png used on input line 316.
+(pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
+ <SIC0_1090nee.png, id=50, 578.16pt x 433.62pt>
+File: SIC0_1090nee.png Graphic file (type png)
 
-<use SIC_0_1090Cf.png>
-Package pdftex.def Info: SIC_0_1090Cf.png used on input line 345.
-(pdftex.def)             Requested size: 422.77664pt x 317.08252pt.
+<use SIC0_1090nee.png>
+Package pdftex.def Info: SIC0_1090nee.png used on input line 327.
+(pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
+ [8 <C:/Users/Ewan/Latex/InfoCon/SIC0_1090cf.png> <C:/Users/Ewan/Latex/InfoCon/
+SIC0_1090nee.png>]
+<SIC0_1090cfnee.png, id=56, 578.16pt x 433.62pt>
+File: SIC0_1090cfnee.png Graphic file (type png)
+ <use SIC0_1090cfnee.png>
+Package pdftex.def Info: SIC0_1090cfnee.png used on input line 336.
+(pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
 
+<succwinter_singlesummer.png, id=57, 578.16pt x 433.62pt>
+File: succwinter_singlesummer.png Graphic file (type png)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<use succwinter_singlesummer.png>
+Package pdftex.def Info: succwinter_singlesummer.png used on input line 345.
+(pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
+ [9 <C:/Users/Ewan/Latex/InfoCon/SIC0_1090cfnee.png> <C:/Users/Ewan/Latex/InfoC
+on/succwinter_singlesummer.png>]
+<DFS1Obs_0_1095.png, id=63, 578.16pt x 433.62pt>
+File: DFS1Obs_0_1095.png Graphic file (type png)
+ <use DFS1Obs_0_1095.png>
+Package pdftex.def Info: DFS1Obs_0_1095.png used on input line 358.
+(pdftex.def)             Requested size: 206.69063pt x 155.02pt.
 
-<SIC_0_1090.png, id=50, 578.16pt x 433.62pt>
-File: SIC_0_1090.png Graphic file (type png)
- <use SIC_0_1090.png>
-Package pdftex.def Info: SIC_0_1090.png used on input line 354.
-(pdftex.def)             Requested size: 422.77664pt x 317.08252pt.
+<succwinter_singlesummerdofs.png, id=64, 578.16pt x 433.62pt>
+File: succwinter_singlesummerdofs.png Graphic file (type png)
 
-<DOFS_0_1090Cf_Cpoolsconst.png, id=51, 578.16pt x 433.62pt>
-File: DOFS_0_1090Cf_Cpoolsconst.png Graphic file (type png)
+<use succwinter_singlesummerdofs.png>
+Package pdftex.def Info: succwinter_singlesummerdofs.png used on input line 367
+.
+(pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
+ [10 <C:/Users/Ewan/Latex/InfoCon/DFS1Obs_0_1095.png> <C:/Users/Ewan/Latex/Info
+Con/succwinter_singlesummerdofs.png>]
+<dfssubplt.png, id=70, 1233.6489pt x 589.7232pt>
+File: dfssubplt.png Graphic file (type png)
+ <use dfssubplt.png>
+Package pdftex.def Info: dfssubplt.png used on input line 376.
+(pdftex.def)             Requested size: 412.71494pt x 197.29623pt.
 
-<use DOFS_0_1090Cf_Cpoolsconst.png>
-Package pdftex.def Info: DOFS_0_1090Cf_Cpoolsconst.png used on input line 380.
-(pdftex.def)             Requested size: 422.77664pt x 317.08252pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-(C:\Users\Ewan\Latex\InfoCon\InfoCon.bbl [8] [9 <C:/Users/Ewan/Latex/InfoCon/SI
-C_0_1090Cf.png>]) [10 <C:/Users/Ewan/Latex/InfoCon/SIC_0_1090.png>] [11 <C:/Use
-rs/Ewan/Latex/InfoCon/DOFS_0_1090Cf_Cpoolsconst.png>]
+<DFS0_1090nee.png, id=71, 578.16pt x 433.62pt>
+File: DFS0_1090nee.png Graphic file (type png)
+ <use DFS0_1090nee.png>
+Package pdftex.def Info: DFS0_1090nee.png used on input line 385.
+(pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
+ [11 <C:/Users/Ewan/Latex/InfoCon/dfssubplt.png> <C:/Users/Ewan/Latex/InfoCon/D
+FS0_1090nee.png>] (C:\Users\Ewan\Latex\InfoCon\InfoCon.bbl [12]) [13]
 (C:\Users\Ewan\Latex\InfoCon\InfoCon.aux) ) 
 Here is how much of TeX's memory you used:
- 4541 strings out of 494045
- 62406 string characters out of 3155643
- 130956 words of memory out of 3000000
- 7742 multiletter control sequences out of 15000+200000
+ 4578 strings out of 494045
+ 63097 string characters out of 3155643
+ 131065 words of memory out of 3000000
+ 7774 multiletter control sequences out of 15000+200000
  19971 words of font info for 78 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,18n,43p,1496b,509s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,43p,1498b,513s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmbx8.pfb><D:/MiKTeX/fonts/type1/public/amsfon
@@ -440,9 +462,9 @@ cm/cmr6.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/MiKTeX/fonts
 sy10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmsy8.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb>
-Output written on InfoCon.pdf (11 pages, 624206 bytes).
+Output written on InfoCon.pdf (13 pages, 940504 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
+ 144 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
