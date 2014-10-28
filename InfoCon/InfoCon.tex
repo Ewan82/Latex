@@ -2,12 +2,13 @@
 
 
 \usepackage[sort]{natbib}
-\usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx}
+\usepackage{bm,amsmath,bbm,amsfonts,caption, nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx}
 \usepackage{fancyhdr}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{color}
 \usepackage[margin=1.0in]{geometry}
+\usepackage[english]{babel}
 
 
 \title{Information content for observations of forest carbon stocks and fluxes when assimilated with the DALEC carbon balance model}
@@ -52,7 +53,7 @@ where $T(t)=\frac{1}{2}exp(p_{10}T_m(t))$, $T_m$ is daily mean temperature, $p_1
 
 \subsection{DALEC in a variational assimilation framework}\label{4dvardalec}%%%%%%%%%%%%%%%%%%%%%% 
 
-In 4D-Var we aim to maximise the probability of our initial state $\textbf{x}_0$ (for DALEC our state $\textbf{x}_0$ corresponds to the initial values of the five carbon pools,  $\textbf{x}_0 = (C_f(t_0), C_r(t_0), C_w(t_0), C_l(t_0), C_s(t_0))^T$) given a set of observations $\textbf{y}$, $P(\textbf{x}_0|\textbf{y})$, over some time window, $N$. We do this by minimising a cost function $J(\textbf{x})$ derived from Baye's Theorem \cite{lewis2006dynamic}. The cost function is given as,
+In 4D-Var we aim to maximise the probability of our initial state $\textbf{x}_0$ given a set of observations $\textbf{y}$, $P(\textbf{x}_0|\textbf{y})$, over some time window, $N$. For DALEC our state $\textbf{x}_0$ corresponds to the initial values of the five carbon pools,  $\textbf{x}_0 = (C_f(t_0), C_r(t_0), C_w(t_0), C_l(t_0), C_s(t_0))^T$. $P(\textbf{x}_0|\textbf{y})$ is maximised by minimising a cost function $J(\textbf{x})$ derived from Baye's Theorem \cite{lewis2006dynamic}. The cost function is given as,
 
 \begin{equation}
 J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}_b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}_b)+\frac{1}{2}\sum_{i=0}^{N}(\textbf{y}_i-h_i(\textbf{x}_i))^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-h_i(\textbf{x}_i)),
@@ -400,4 +401,94 @@ We have also found that $NEE$ observations made in summer are much more valuable
 
 \bibliography{../PhD}{}
 \bibliographystyle{plain}
+
+\section*{Appendix}
+
+\subsection*{The Aggregated Canopy Model}
+The aggregated canopy model (ACM) is used in DALEC to calculate $GPP$. The ACM uses the following equations (for more detail please see \cite{williams1997predicting}),
+\begin{equation} 
+g_c = \frac{|\psi_d|^{a_{10}}}{\frac{1}{2}T_r + a_6 R_{tot}},
+\end{equation}
+\begin{equation}
+p = \frac{a_1NL}{g_c}\text{exp}(T_{max}a_8),
+\end{equation}•
+\begin{equation}
+q = a_3 - a_4,
+\end{equation}•
+\begin{equation}
+C_i = \frac{1}{2}\bigg[C_a + q - p + \sqrt{(C_a + q + p)^{2} - 4(C_aq - pa_3)} \bigg],
+\end{equation}•
+\begin{equation}
+E_0 = \frac{a_7L^2}{L^2 + a_9},
+\end{equation}•
+\begin{equation}
+\delta = -0.408\arccos\bigg(\frac{360(D+10)}{365}\frac{\pi}{180}\bigg),
+\end{equation}•
+\begin{equation}
+s = 24\arccos(-\tan(lat)\tan(\delta))/\pi,
+\end{equation}•
+\begin{equation}
+GPP = \frac{E_0Ig_c(C_a-C_i)}{E_0I + g_c(C_a-C_i)}(a_2s + a_5).
+\end{equation}•
+The symbols have the following meanings ($a_1,\dots ,a_{10}$ set parameters),
+\begin{center}
+\begin{tabular}{| l | l |}
+\hline
+Symbol & Description \\ \hline
+$g_c$ & Canopy conductance $(gCm^{-2}day^{-1})$ \\ \hline
+$\psi_d$ & Max soil-leaf water potential difference $(MPa)$ \\ \hline
+$T_r$ & Daily temperature range $( ^{o}C)$ \\ \hline
+$R_{tot}$ & Total plant-soil hydraulic resistance $(MPa m^2s mmol^{-1})$ \\ \hline
+$N$ & Foliar nitrogen $(gNm^{-2} \text{ leaf area})$  \\ \hline
+$L$ & Leaf area index $(m^2 m^{-2})$ \\ \hline
+$T_{max}$ & Maximum daily temperature $( ^{o}C)$  \\ \hline
+$C_a$ & Atmospheric $CO_2$ concentration $(\mu mol mol^{-1})$ \\ \hline
+$C_i$ & $CO_2$ concentration at site of carboxylation $(\mu mol mol^{-1})$ \\ \hline
+$E_0$ & Canopy level quantum yield $(gCMJ^{-1}m^{-2}day^{-1})$ \\ \hline
+$\delta$ & Solar declination $(rads)$ \\ \hline
+$D$ & Day of year \\ \hline
+$s$ & Day length $(hrs)$ \\  \hline  
+$lat$ & Site latitude $( ^{o})$ \\ \hline
+$I$ & Irradiance $(MJm^{-2}day^{-1})$ \\ 
+\hline
+\end{tabular}    
+\captionof{table}{Symbols used in ACM.}
+\end{center}
+
+\subsection*{DALEC rate parameters and initial pool values}
+
+\begin{center}
+\begin{tabular}{| l | l | l |}
+\hline
+Carbon pool & Initial value & Background standard deviation (as a \% of initial pool) \\ \hline
+$C_f$ & 58 & 20\% \\ \hline
+$C_r$ & 102 & 20\% \\ \hline
+$C_w$ & 770 & 20\% \\ \hline
+$C_l$ & 40 & 20\% \\ \hline
+$C_s$ & 9897 & 20\% \\ 
+\hline
+\end{tabular}    
+\captionof{table}{Inital carbon pool values for the DALEC model and the standard deviations expressed as a percentage of the initial value. }
+\end{center}
+
+\begin{center}
+\begin{tabular}{| l | l | l |}
+\hline
+Parameter & Description & Value \\ \hline
+$p_1 $ & decomposition rate & $4.41*10^{-6}$ \\ \hline
+$p_2 $ & fraction of $GPP$ respired & $0.47$ \\ \hline
+$p_3 $ & fraction of $GPP$ allocated to foliage & $0.31$ \\ \hline
+$p_4 $ & fraction of $GPP$ allocated to roots & $0.43$ \\ \hline
+$p_5 $ & turnover rate of foliage & $2.7*10^{-3}$ \\ \hline
+$p_6 $ & turnover rate of woods & $2.06*10^{-6}$ \\ \hline
+$p_7 $ & turnover rate of roots & $2.48*10^{-3}$ \\ \hline
+$p_8 $ & mineralisation rate of $C_l$ & $2.28*10^{-2}$ \\ \hline
+$p_9 $ & mineralisation rate of $C_s$ & $2.65*10^{-6}$ \\ 
+\hline
+\end{tabular}    
+\captionof{table}{Parameters for evergreen DALEC.}
+\end{center}
+
+
+
 \end{document}
