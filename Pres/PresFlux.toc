@@ -1,0 +1,2 @@
+\beamer@endinputifotherversion {3.26pt}
+\beamer@sectionintoc {1}{DALEC 4DVAR}{2}{0}{1}

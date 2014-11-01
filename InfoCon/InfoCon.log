@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.10.19)  28 OCT 2014 11:23
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.10.19)  31 OCT 2014 12:46
 entering extended mode
 **C:/Users/Ewan/Latex/InfoCon/InfoCon.tex
 (C:/Users/Ewan/Latex/InfoCon/InfoCon.tex
@@ -213,10 +213,18 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 \f@ncyO@olf=\skip61
 \f@ncyO@orf=\skip62
 )
+(D:\MiKTeX\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count102
+\float@exts=\toks27
+\float@box=\box28
+\@float@everytoks=\toks28
+\@floatcapt=\box29
+)
 (D:\MiKTeX\tex\latex\caption\subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count102
-\c@subtable=\count103
+\c@subfigure=\count103
+\c@subtable=\count104
 )
 (D:\MiKTeX\tex\latex\graphics\color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
@@ -238,9 +246,9 @@ Package ifvtex Info: VTeX not detected.
 (D:\MiKTeX\tex\generic\ifxetex\ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count104
-\Gm@cntv=\count105
-\c@Gm@tempcnt=\count106
+\Gm@cnth=\count105
+\Gm@cntv=\count106
+\c@Gm@tempcnt=\count107
 \Gm@bindingoffset=\dimen124
 \Gm@wd@mp=\dimen125
 \Gm@odd@mp=\dimen126
@@ -249,7 +257,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen129
 \Gm@layouthoffset=\dimen130
 \Gm@layoutvoffset=\dimen131
-\Gm@dimlist=\toks27
+\Gm@dimlist=\toks29
 
 (D:\MiKTeX\tex\latex\geometry\geometry.cfg))
 (D:\MiKTeX\tex\generic\babel\babel.sty
@@ -265,14 +273,14 @@ File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 Language: english 2005/03/30 v3.3o English support from the babel system
  (D:\MiKTeX\tex\generic\babel\babel.def
 File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count107
+\babel@savecnt=\count108
 \U@D=\dimen132
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-\c@theorem=\count108
+\c@theorem=\count109
  (C:\Users\Ewan\Latex\InfoCon\InfoCon.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
@@ -287,21 +295,22 @@ LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 (D:\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
+\scratchcounter=\count110
 \scratchdimen=\dimen133
-\scratchbox=\box28
-\nofMPsegments=\count110
-\nofMParguments=\count111
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count112
+\scratchbox=\box30
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count113
 \MPscratchDim=\dimen134
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
-\everyMPtoPDFconversion=\toks29
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks31
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -355,11 +364,7 @@ File: DALECpic.png Graphic file (type png)
 <use DALECpic.png>
 Package pdftex.def Info: DALECpic.png used on input line 37.
 (pdftex.def)             Requested size: 234.8775pt x 134.80186pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[1
+ [1
 
 {C:/Users/Ewan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Missing character: There is no â in font cmr10!
@@ -372,99 +377,107 @@ Missing character: There is no ¢ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
- [3]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+
+<Sub_linerr.png, id=24, 659.1024pt x 468.3096pt>
+File: Sub_linerr.png Graphic file (type png)
+ <use Sub_linerr.png>
+Package pdftex.def Info: Sub_linerr.png used on input line 88.
+(pdftex.def)             Requested size: 264.45091pt x 187.89914pt.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+ [3 <C:/Users/Ewan/Latex/InfoCon/Sub_linerr.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
+ [4]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
- [4] [5]
-<SIC1Obs_0_1095.png, id=36, 578.16pt x 433.62pt>
+ [5] [6]
+<SIC1Obs_0_1095.png, id=41, 578.16pt x 433.62pt>
 File: SIC1Obs_0_1095.png Graphic file (type png)
  <use SIC1Obs_0_1095.png>
-Package pdftex.def Info: SIC1Obs_0_1095.png used on input line 246.
+Package pdftex.def Info: SIC1Obs_0_1095.png used on input line 261.
 (pdftex.def)             Requested size: 211.3883pt x 158.53795pt.
 
-<Temp_0_1095.png, id=37, 578.16pt x 433.62pt>
+<Temp_0_1095.png, id=42, 578.16pt x 433.62pt>
 File: Temp_0_1095.png Graphic file (type png)
  <use Temp_0_1095.png>
-Package pdftex.def Info: Temp_0_1095.png used on input line 252.
+Package pdftex.def Info: Temp_0_1095.png used on input line 267.
 (pdftex.def)             Requested size: 211.3883pt x 158.53795pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6] [7 <C:/Users/Ewan/Latex/InfoCon/SIC1Obs_0_1095.png> <C:/Users/Ewan/Latex/In
-foCon/Temp_0_1095.png>] <SIC0_1090cf.png, id=49, 578.16pt x 433.62pt>
+ [7 <C:/Users/Ewan/Latex/InfoCon/SIC1Obs_0_1095.png> <C:/Users/Ewan/Latex/InfoC
+on/Temp_0_1095.png>] <SIC0_1090cf.png, id=51, 578.16pt x 433.62pt>
 File: SIC0_1090cf.png Graphic file (type png)
-
-<use SIC0_1090cf.png>
-Package pdftex.def Info: SIC0_1090cf.png used on input line 317.
+ <use SIC0_1090cf.png>
+Package pdftex.def Info: SIC0_1090cf.png used on input line 332.
 (pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
- <SIC0_1090nee.png, id=50, 578.16pt x 433.62pt>
+
+[8] <SIC0_1090nee.png, id=55, 578.16pt x 433.62pt>
 File: SIC0_1090nee.png Graphic file (type png)
-
-<use SIC0_1090nee.png>
-Package pdftex.def Info: SIC0_1090nee.png used on input line 328.
+ <use SIC0_1090nee.png>
+Package pdftex.def Info: SIC0_1090nee.png used on input line 343.
 (pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
- [8 <C:/Users/Ewan/Latex/InfoCon/SIC0_1090cf.png> <C:/Users/Ewan/Latex/InfoCon/
-SIC0_1090nee.png>]
+
 <SIC0_1090cfnee.png, id=56, 578.16pt x 433.62pt>
 File: SIC0_1090cfnee.png Graphic file (type png)
  <use SIC0_1090cfnee.png>
-Package pdftex.def Info: SIC0_1090cfnee.png used on input line 337.
+Package pdftex.def Info: SIC0_1090cfnee.png used on input line 352.
 (pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
 
-<succwinter_singlesummer.png, id=57, 578.16pt x 433.62pt>
+[9 <C:/Users/Ewan/Latex/InfoCon/SIC0_1090cf.png> <C:/Users/Ewan/Latex/InfoCon/S
+IC0_1090nee.png>] <succwinter_singlesummer.png, id=62, 578.16pt x 433.62pt>
 File: succwinter_singlesummer.png Graphic file (type png)
 
 <use succwinter_singlesummer.png>
-Package pdftex.def Info: succwinter_singlesummer.png used on input line 346.
+Package pdftex.def Info: succwinter_singlesummer.png used on input line 361.
 (pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
- [9 <C:/Users/Ewan/Latex/InfoCon/SIC0_1090cfnee.png> <C:/Users/Ewan/Latex/InfoC
-on/succwinter_singlesummer.png>]
-<DFS1Obs_0_1095.png, id=63, 578.16pt x 433.62pt>
+ [10 <C:/Users/Ewan/Latex/InfoCon/SIC0_1090cfnee.png> <C:/Users/Ewan/Latex/Info
+Con/succwinter_singlesummer.png>]
+<DFS1Obs_0_1095.png, id=68, 578.16pt x 433.62pt>
 File: DFS1Obs_0_1095.png Graphic file (type png)
  <use DFS1Obs_0_1095.png>
-Package pdftex.def Info: DFS1Obs_0_1095.png used on input line 359.
+Package pdftex.def Info: DFS1Obs_0_1095.png used on input line 374.
 (pdftex.def)             Requested size: 206.69063pt x 155.02pt.
 
-<succwinter_singlesummerdofs.png, id=64, 578.16pt x 433.62pt>
+<succwinter_singlesummerdofs.png, id=69, 578.16pt x 433.62pt>
 File: succwinter_singlesummerdofs.png Graphic file (type png)
 
 <use succwinter_singlesummerdofs.png>
-Package pdftex.def Info: succwinter_singlesummerdofs.png used on input line 368
+Package pdftex.def Info: succwinter_singlesummerdofs.png used on input line 383
 .
 (pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
- [10 <C:/Users/Ewan/Latex/InfoCon/DFS1Obs_0_1095.png> <C:/Users/Ewan/Latex/Info
+ [11 <C:/Users/Ewan/Latex/InfoCon/DFS1Obs_0_1095.png> <C:/Users/Ewan/Latex/Info
 Con/succwinter_singlesummerdofs.png>]
-<dfssubplt.png, id=70, 1233.6489pt x 589.7232pt>
+<dfssubplt.png, id=75, 1233.6489pt x 589.7232pt>
 File: dfssubplt.png Graphic file (type png)
  <use dfssubplt.png>
-Package pdftex.def Info: dfssubplt.png used on input line 377.
+Package pdftex.def Info: dfssubplt.png used on input line 392.
 (pdftex.def)             Requested size: 412.71494pt x 197.29623pt.
 
-<DFS0_1090nee.png, id=71, 578.16pt x 433.62pt>
+<DFS0_1090nee.png, id=76, 578.16pt x 433.62pt>
 File: DFS0_1090nee.png Graphic file (type png)
  <use DFS0_1090nee.png>
-Package pdftex.def Info: DFS0_1090nee.png used on input line 386.
+Package pdftex.def Info: DFS0_1090nee.png used on input line 401.
 (pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
- [11 <C:/Users/Ewan/Latex/InfoCon/dfssubplt.png> <C:/Users/Ewan/Latex/InfoCon/D
-FS0_1090nee.png>] (C:\Users\Ewan\Latex\InfoCon\InfoCon.bbl [12])
+ [12 <C:/Users/Ewan/Latex/InfoCon/dfssubplt.png> <C:/Users/Ewan/Latex/InfoCon/D
+FS0_1090nee.png>] (C:\Users\Ewan\Latex\InfoCon\InfoCon.bbl [13])
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
- [13]
+ [14]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
@@ -480,16 +493,16 @@ Missing character: There is no ¢ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
- [14] [15]
+ [15] [16]
 (C:\Users\Ewan\Latex\InfoCon\InfoCon.aux) ) 
 Here is how much of TeX's memory you used:
- 4881 strings out of 494045
- 66704 string characters out of 3155643
- 138865 words of memory out of 3000000
- 8065 multiletter control sequences out of 15000+200000
+ 4938 strings out of 494045
+ 67410 string characters out of 3155643
+ 141232 words of memory out of 3000000
+ 8117 multiletter control sequences out of 15000+200000
  19971 words of font info for 78 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,18n,43p,1498b,513s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,17n,43p,1498b,509s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmbx8.pfb><D:/MiKTeX/fonts/type1/public/amsfon
@@ -504,9 +517,9 @@ cm/cmr6.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/MiKTeX/fonts
 sy10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmsy8.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb>
-Output written on InfoCon.pdf (15 pages, 952046 bytes).
+Output written on InfoCon.pdf (16 pages, 1021955 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
+ 155 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

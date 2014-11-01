@@ -3,7 +3,7 @@
 
 \usepackage[sort]{natbib}
 \usepackage{bm,amsmath,bbm,amsfonts,caption, nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx}
-\usepackage{fancyhdr}
+\usepackage{fancyhdr, float}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{color}
@@ -32,7 +32,7 @@ A large amount of data is currently being gathered that is relevant to the carbo
 
 The DALEC model is a simple process-based model describing the carbon balance of an evergreen forest ecosystem \cite{williams2005improved}. The model is constructed of five carbon pools (foliage ($C_f$), fine roots ($C_r$), woody stems and coarse roots ($C_w$), fresh leaf and fine root litter ($C_l$) and soil organic matter and coarse woody debris ($C_s$)) linked via fluxes. The gross primary production function ($GPP$) uses meteorological driving data and the site's leaf area index (a function of $C_f$) to calculate the total amount of carbon to be allocated at a daily time step.   
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.5\textwidth]{DALECpic.png}
     \caption{Representation of the carbon fluxes in the DALEC carbon balance model. Green arrows represent C allocation, dark red and black arrows represent litterfall and decomposition fluxes, blue arrows represent respiration fluxes and the light red arrow represents the feedback of foliar carbon to the $GPP$ function. \cite{delahaies2013regularization}}
@@ -58,12 +58,12 @@ In 4D-Var we aim to maximise the probability of our initial state $\textbf{x}_0$
 \begin{equation}
 J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}_b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}_b)+\frac{1}{2}\sum_{i=0}^{N}(\textbf{y}_i-h_i(\textbf{x}_i))^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-h_i(\textbf{x}_i)),
 \end{equation}•
-where $\textbf{x}_b$ is our background and acts as our initial guess to our state $\textbf{x}_0$, $\textbf{B}$ is the background error covariance matrix and quantifies our knowledge of the error in our background, $h_i$ is our observation operator at time $t_i$ and maps our state vector evolved by our nonlinear model ($\textbf{x}_i$) to the observations at this time $\textbf{y}_i$ and $\textbf{R}_i$ is the observation error covariance matrix and represents our knowledge of the uncertainty in the observations. The state that minimises the cost function is called the analysis and is denoted as $\textbf{x}_a$, this state is found using a minimisation routine that takes the cost function, our initial guess ($\textbf{x}_b$) and also the gradient of the cost function defined as,
+where $\textbf{x}_b$ is our background and acts as our initial guess to our state $\textbf{x}_0$, $\textbf{B}$ is the background error covariance matrix and quantifies our knowledge of the error in our background, $h_i$ is our observation operator at time $t_i$ and maps our state vector evolved by our nonlinear model ($m_{0\rightarrow i}(\mathbf{x}_{0})=\textbf{x}_i$) to the observations at this time $\textbf{y}_i$ and $\textbf{R}_i$ is the observation error covariance matrix and represents our knowledge of the uncertainty in the observations. The state that minimises the cost function is called the analysis and is denoted as $\textbf{x}_a$, this state is found using a minimisation routine that takes the cost function, our initial guess ($\textbf{x}_b$) and also the gradient of the cost function defined as,
 
 \begin{equation}
 \nabla J(\textbf{x}_0) = \textbf{B}^{-1}(\textbf{x}_0-\textbf{x}_b)-\sum_{i=0}^{N}\textbf{M}_{i,0}^{T}\textbf{H}_i^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-h_i(\textbf{x}_i)),
 \end{equation}•
-where $\textbf{H}_i = \frac{\delta h_i(\textbf{x}_i)}{\delta\textbf{x}_i}$ is our linearized observation operator and $\mathbf{M}_{i,0}=\mathbf{M}_{i-1}\mathbf{M}_{i-2}\cdots\mathbf{M}_0$ is our tangent linear model with $\mathbf{M}_i=\frac{\delta \textbf{m}_i(\textbf{x}_i)}{\delta \textbf{x}_i}$. We can calculate the linearized model for DALEC from equations \ref{dalec1} to \ref{dalec5} as,
+where $\textbf{H}_i = \frac{\delta h_i(\textbf{x}_i)}{\delta\textbf{x}_i}$ is our linearized observation operator and $\mathbf{M}_{i,0}=\mathbf{M}_{i-1}\mathbf{M}_{i-2}\cdots\mathbf{M}_0$ is our tangent linear model with $\mathbf{M}_i=\frac{\delta m_{i}(\textbf{x}_{i})}{\delta \textbf{x}_{i}}$. We can calculate the linearized model for DALEC from equations \ref{dalec1} to \ref{dalec5} as,
 \begin{equation}
 \mathbf{M}_{i}= 
 \begin{pmatrix} 
@@ -74,7 +74,22 @@ p_5 & p_7 & 0 & (1-(p_1+p_8)T_i) & 0 \\
 0 & 0 & p_6 & p_1T_i & (1-p_9T_i) \\
 \end{pmatrix}, \label{linmod}
 \end{equation}
-where $\zeta_i = GPP'(C_f(t_i), \phi)$ and $T_{i}=T(t_i)$. {\color{red} Maybe include TLH and error in linear model here?}
+where $\zeta_i = GPP'(C_f(t_i), \phi)$ and $T_{i}=T(t_i)$. In 4D-Var we assume the tangent linear hypothesis,
+\begin{equation}
+m_{0\rightarrow i}(\mathbf{x}_0+\delta\mathbf{x}_0) \approx m_{0 \rightarrow i}(\mathbf{x}_0) + \mathbf{M}_{i,0}\delta\mathbf{x}_0. \label{TLH}
+\end{equation}•
+The validity of this assumption depends on how nonlinear the model is, the length of the assimilation window and the size of the perturbation $\delta\mathbf{x}_0$. We can test the validity for DALEC by taking our initial states from the appendix for $\mathbf{x}_0$ and a $5\%$ perturbation for $\delta\mathbf{x}_0$. We then rearrange equation \ref{TLH} to find, 
+\begin{equation}
+\text{Percentage error in tangent linear model} = \begin{vmatrix} \frac{m_{0\rightarrow i}(\mathbf{x}_0+\delta\mathbf{x}_0) - m_{0 \rightarrow i}(\mathbf{x}_0)}{ \mathbf{M}_{i,0}\delta\mathbf{x}_0} - 1 \end{vmatrix} \times 100.
+\end{equation}• 
+The percentage error in our approximation at each time step for each carbon pool when the model is run forward for 1000 days is shown in figure \ref{linerr}.
+\begin{figure}[H]
+\centering
+\includegraphics[height=.4\textwidth]{Sub_linerr.png}
+\caption{Percentage error in linear model for each carbon pool when run forward for 1000 days.}
+\label{linerr}
+\end{figure}
+We see that the error grows as we get further away from the start of our run. We also see that the carbon pools with the most error ($C_f$, $C_r$ and $C_l$) are the ones most dependent on $GPP$, the only nonlinear term in our model. Figure \ref{linerr} shows us that for DALEC the tangent linear hypothesis is not a bad approximation.
 
 Once we have performed the minimisation of the cost function and determined $\textbf{x}_a$, we can also calculate the analysis error covariance matrix, $\textbf{A}$, to quantify the uncertainty in our new estimate of the state. We define the analysis error covariance matrix as,
 \begin{equation}
@@ -144,12 +159,12 @@ In order to do this we take $\mathbf{B}^{\frac{-1}{2}}$ such that $\mathbf{B}^{-
 \mathbf{Q}^{T}\bigg(\mathbf{B}^{\frac{-1}{2}}\mathbf{A}\mathbf{B}^{\frac{-1}{2}}\bigg)\mathbf{Q} = \bf{\Lambda},
 \end{equation}• 
 \begin{equation}
-\mathbf{Q}^{T}\bigg(\mathbf{B}^{\frac{-1}{2}}\mathbf{B}\mathbf{B}^{\frac{-1}{2}}\bigg)\mathbf{Q} = \mathbf{I}_{n\text{x}n}
+\mathbf{Q}^{T}\bigg(\mathbf{B}^{\frac{-1}{2}}\mathbf{B}\mathbf{B}^{\frac{-1}{2}}\bigg)\mathbf{Q} = \mathbf{I}_{n\times n}
 \end{equation}•
 where $\bf{\Lambda}$ is a diagonal matrix. Each diagonal element of our transformed $\bf{B}$ is equal to one and corresponds to one degree of freedom. The diagonal elements of $\bf{\Lambda}$ correspond to the matrix's eigenvalues and can be interpreted as the relative reduction in variance for each of the $n$ degrees of freedom \cite{sandu2012practical}. We can then define the $DFS$ as,
 \begin{equation}
 \begin{split}
-DFS & = \text{trace}(\mathbf{I}_{n\text{x}n} - \mathbf{\Lambda}) \\
+DFS & = \text{trace}(\mathbf{I}_{n\times n} - \mathbf{\Lambda}) \\
        & = n - \text{trace}(\mathbf{\Lambda}) \\
        & = n - \text{trace}(\mathbf{B}^{\frac{-1}{2}}\mathbf{A}\mathbf{B}^{\frac{-1}{2}}) \\
        & = n - \text{trace}(\mathbf{B}^{-1}\mathbf{A}).
@@ -236,10 +251,10 @@ We then have,
 SIC = \frac{1}{2}\text{ln}\begin{vmatrix} \mathbf{B} \end{vmatrix}\begin{vmatrix} \mathbf{J}'' \end{vmatrix} = \frac{1}{2}\text{ln}\frac{(p_{2}-1)^{2}\zeta_0^{2}\sigma_{cf,b}^{2}+\sigma_{nee,o}^{2}+T_{0}^2(p_{9}^2\sigma_{cs,b}^2+p_8^2\sigma_{cl,b}^2)}{\sigma_{nee,o}^{2}}.
 \end{equation}
 
-If we assume that the variances and parameters here are fixed, we can see that the size of the $SIC$ is dependent on the temperature term, $T_0$, and the square of the first derivative of $GPP$, $\zeta_0^{2}$. Generally, the value of $GPP$ (and its first derivative) is highest in summer with higher temperatures and higher total daily irradiance. We therefore have that there will be more information content in observations that are taken when temperatures are higher. Physically this makes sense as more $NEE$ takes place when temperatures are higher (to a point), so measurements are of greater magnitude and give us more information about carbon fluxes. {\color{red} We have also conducted further experiments with different sets of observations at one time (and over a time window) should I include these?}
+If we assume that the variances and parameters here are fixed, we can see that the size of the $SIC$ is dependent on the temperature term, $T_0$, and the square of the first derivative of $GPP$, $\zeta_0^{2}$. Generally, the value of $GPP$ (and its first derivative) is highest in summer with higher temperatures and higher total daily irradiance. We therefore have that there will be more information content in observations that are taken when temperatures are higher. Physically this makes sense as more $NEE$ takes place when temperatures are higher (to a point), so measurements are of greater magnitude and give us more information about carbon fluxes. 
 
 By plotting the $SIC$ for a single observation of $NEE$, varying with three years of meteorological driving data, next to the temperature term ($T(t_i)$) for the same data we can see that both are closely linked, figure \ref{fig:SICNEET}.
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
@@ -312,7 +327,7 @@ SIC\text{ for }n\text{ observations of }C_f = \frac{1}{2}\text{ln}\bigg(1+\frac{
 \end{equation}
 We have plotted the $SIC$ for increasing numbers of observations of $C_f$, using three years of meteorological driving data from the Oregan pine forest, as seen in figure \ref{Cf_succ}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[height=.34\textwidth]{SIC0_1090cf.png}
 \caption{$SIC$ varying as successive observations of $Cf$ are added using driving data from Oregon pine forest.}
@@ -323,7 +338,7 @@ We can see after around 250 observations of $C_f$ have been made, our $SIC$ star
 
 As before with a single observation at one time we can repeat this with successive observations of $NEE$ instead of $C_f$, this is plotted in figure \ref{SIC_succ}. Here we see a similar levelling off in $SIC$ as in figure \ref{Cf_succ}, we can also see the seasonal cycle of information content in $NEE$ as in figure \ref{fig:SICNEET}. Once the $SIC$ has levelled off no information is added during the winter months and the $SIC$ is only increased with observations made during the summer.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[height=.34\textwidth]{SIC0_1090nee.png}
 \caption{$SIC$ varying as successive observations of $NEE$ are added using driving data from Oregon pine forest.}
@@ -332,7 +347,7 @@ As before with a single observation at one time we can repeat this with successi
 
 We can also repeat this with successive observations of both $NEE$ and $C_f$, this can be seen in figure \ref{fig:SIC_neecfsubplot}. We attain a higher value of $SIC$ more quickly than before and reach a higher overall value of $SIC$ than in figure \ref{SIC_succ} or \ref{Cf_succ}. We reduce the entropy of our system very little when adding extra observations of $C_f$ and $NEE$ by day 600.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[height=.34\textwidth]{SIC0_1090cfnee.png}
 \caption{$SIC$ varying as successive observations of $NEE$ and $Cf$ are added using driving data from Oregon pine forest.}
@@ -341,7 +356,7 @@ We can also repeat this with successive observations of both $NEE$ and $C_f$, th
 
 In order to see the difference in information content between $NEE$ observations made in the summer and those made in the winter, we have plotted the increasing $SIC$ for 50 observations made from December $21^{\text{st}}$ onwards and also the the constant line of $SIC$ for one observation of $NEE$ made in summer at a mean daily temperature of $26^{o}\text{C}$ on July $12^{\text{th}}$. This is shown in figure \ref{summwintsic}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[height=.34\textwidth]{succwinter_singlesummer.png}
 \caption{$SIC$ varying as successive observations of $NEE$ are added during winter using driving data from Oregon pine forest. The dashed line shows the $SIC$ for a single observation of $NEE$ made in summer.}
@@ -354,7 +369,7 @@ Figure \ref{summwintsic} shows us that, for the driver data used in this experim
 
 In this section we repeat some of the experiments from sections \ref{sic1time} and \ref{SICsucc} using the degrees of freedom for signal as a  measure for information content, as described in section \ref{DFSintro}. We use the same $\mathbf{B}$ as in equation \ref{Bmat} and calculate $\mathbf{A}$ by finding and inverting $\mathbf{J}''$ (as in section \ref{sic1time} and \ref{SICsucc}). We begin by plotting the $DFS$ for a single observation of $NEE$ varying with the three years of driving data as in figure \ref{fig:SICNEET} for $SIC$.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[height=.33\textwidth]{DFS1Obs_0_1095.png}
 \caption{$DFS$ varying for a single observation of $NEE$ over three years of driving data from Oregon pine forest.}
@@ -363,7 +378,7 @@ In this section we repeat some of the experiments from sections \ref{sic1time} a
 
 We see in figure \ref{DFS1nee} a very similar result as found in figure \ref{fig:SICNEET} with much higher values for the $DFS$ of $NEE$ observations in the summer months, with higher temperatures and higher daily net irradiances. We can repeat the experiment from figure \ref{summwintsic} to show that even when successive observations of $NEE$ are added to our data assimilation window in winter it takes 30 daily winter $NEE$ observations to get the same $DFS$ as 1 observation of $NEE$ made in the summer.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[height=.34\textwidth]{succwinter_singlesummerdofs.png}
 \caption{$DFS$ varying as successive observations of $NEE$ are added during winter using driving data from Oregon pine forest. The dashed line shows the $DFS$ for a single observation of $NEE$ made in summer.}
@@ -372,7 +387,7 @@ We see in figure \ref{DFS1nee} a very similar result as found in figure \ref{fig
 
 The value for the $DFS$ corresponds to the number of state elements deemed measured by the observations. Hence when we make a single observation of any of the carbon pools, our $DFS$ value is close to 1 (it is not 1 however as our observations have error) and as successive observations of the same carbon pool are added our $DFS$ value starts tending to 1. However with enough observations over a time window of a single carbon pool we can get a $DFS$ value of greater than 1. This is because the model propagates the state forward in time and we start gaining information about the other connected carbon pools from just observing a single carbon pool. The amount of observations it takes to achieve a $DFS$ of more than 1 corresponds to how dependent the observed carbon pool is on other carbon pools. We can see this effect in figure \ref{dfsobs} where we have plotted the $DFS$ when observing each carbon pool and also $NEE$ for 100 days of observations.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[height=.42\textwidth]{dfssubplt.png}
 \caption{$DFS$ varying as successive observations added using 100 days of driving data from Oregon pine forest. Legend in bottom right corner of each plot denotes which observation is being made.}
@@ -381,7 +396,7 @@ The value for the $DFS$ corresponds to the number of state elements deemed measu
 
 In order to get a higher $DFS$ it is best to observe a variety of different quantities related to different members of the state. We next repeat the experiment from figure \ref{SIC_succ} again for $DFS$ instead of $SIC$.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[height=.34\textwidth]{DFS0_1090nee.png}
 \caption{$DFS$ varying as successive observations of $NEE$ are added using three years of driving data from Oregon pine forest.}
@@ -460,7 +475,7 @@ $I$ & Irradiance $(MJm^{-2}day^{-1})$ \\
 \begin{center}
 \begin{tabular}{| l | l | l |}
 \hline
-Carbon pool & Initial value & Background standard deviation (as a \% of initial pool) \\ \hline
+Carbon pool & Initial value $(gCm^{-2})$ & Background standard deviation (as a \% of initial pool) \\ \hline
 $C_f$ & 58 & 20\% \\ \hline
 $C_r$ & 102 & 20\% \\ \hline
 $C_w$ & 770 & 20\% \\ \hline
@@ -475,15 +490,15 @@ $C_s$ & 9897 & 20\% \\
 \begin{tabular}{| l | l | l |}
 \hline
 Parameter & Description & Value \\ \hline
-$p_1 $ & decomposition rate & $4.41*10^{-6}$ \\ \hline
+$p_1 $ & decomposition rate & $4.41\times 10^{-6}$ \\ \hline
 $p_2 $ & fraction of $GPP$ respired & $0.47$ \\ \hline
 $p_3 $ & fraction of $GPP$ allocated to foliage & $0.31$ \\ \hline
 $p_4 $ & fraction of $GPP$ allocated to roots & $0.43$ \\ \hline
-$p_5 $ & turnover rate of foliage & $2.7*10^{-3}$ \\ \hline
-$p_6 $ & turnover rate of woods & $2.06*10^{-6}$ \\ \hline
-$p_7 $ & turnover rate of roots & $2.48*10^{-3}$ \\ \hline
-$p_8 $ & mineralisation rate of $C_l$ & $2.28*10^{-2}$ \\ \hline
-$p_9 $ & mineralisation rate of $C_s$ & $2.65*10^{-6}$ \\ 
+$p_5 $ & turnover rate of foliage & $2.7\times 10^{-3}$ \\ \hline
+$p_6 $ & turnover rate of woods & $2.06\times 10^{-6}$ \\ \hline
+$p_7 $ & turnover rate of roots & $2.48\times 10^{-3}$ \\ \hline
+$p_8 $ & mineralisation rate of $C_l$ & $2.28\times 10^{-2}$ \\ \hline
+$p_9 $ & mineralisation rate of $C_s$ & $2.65\times 10^{-6}$ \\ 
 \hline
 \end{tabular}    
 \captionof{table}{Parameters for evergreen DALEC.}
