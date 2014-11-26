@@ -1,21 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.10.19)  31 OCT 2014 12:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.31)  2 NOV 2014 18:22
 entering extended mode
-**C:/Users/Ewan/Latex/InfoCon/InfoCon.tex
-(C:/Users/Ewan/Latex/InfoCon/InfoCon.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
-vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
-an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
-romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
-sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
-senglishmax, welsh, loaded.
-(D:\MiKTeX\tex\latex\base\article.cls
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**InfoCon.tex
+(./InfoCon.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 21 languages loaded.
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(D:\MiKTeX\tex\latex\base\size11.clo
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -29,56 +22,58 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (D:\MiKTeX\tex\latex\natbib\natbib.sty
+)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count87
 )
-(D:\MiKTeX\tex\latex\tools\bm.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
 \symboldsymbols=\mathgroup6
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
-LaTeX Info: Redefining \bm on input line 204.
-) (D:\MiKTeX\tex\latex\ams\math\amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
+LaTeX Info: Redefining \bm on input line 203.
+)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
-(D:\MiKTeX\tex\latex\ams\math\amstext.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(D:\MiKTeX\tex\latex\ams\math\amsgen.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-(D:\MiKTeX\tex\latex\ams\math\amsbsy.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-LaTeX Info: Redefining \boldsymbol on input line 54.
+LaTeX Info: Redefining \boldsymbol on input line 39.
 \pmbraise@=\dimen104
 )
-(D:\MiKTeX\tex\latex\ams\math\amsopn.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count88
-LaTeX Info: Redefining \frac on input line 211.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count89
 \leftroot@=\count90
-LaTeX Info: Redefining \overline on input line 307.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count91
 \DOTSCASE@=\count92
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count93
 \c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
@@ -99,31 +94,32 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \multlinegap=\skip46
 \multlinetaggap=\skip47
 \mathdisplay@stack=\toks18
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
-) (D:\MiKTeX\tex\latex\bbm\bbm.sty
-Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
-LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
-(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
-LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
-(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
-(D:\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+
+! LaTeX Error: File `bbm.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup7
 \symAMSb=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(D:\MiKTeX\tex\latex\caption\caption.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(D:\MiKTeX\tex\latex\caption\caption3.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 
-(D:\MiKTeX\tex\latex\graphics\keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
 \captionmargin=\dimen112
@@ -136,84 +132,85 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 )
 \c@ContinuedFloat=\count100
 )
-(D:\MiKTeX\tex\latex\units\nicefrac.sty
-Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip48
-\L@UnitsRaiseTextstyle=\skip49
-\L@UnitsRaiseScriptstyle=\skip50
- (D:\MiKTeX\tex\latex\base\ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-))
-(D:\MiKTeX\tex\latex\base\latexsym.sty
+
+! LaTeX Error: File `nicefrac.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
-) (D:\MiKTeX\tex\latex\ams\math\amscd.sty
+)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amscd.sty
 Package: amscd 1999/11/29 v2.0
 \athelp@=\toks20
 \minaw@=\dimen119
 \bigaw@=\dimen120
 \minCDarrowwidth=\dimen121
-) (D:\MiKTeX\tex\latex\ams\math\amsxtra.sty
-Package: amsxtra 1999/11/15 v1.2c
-LaTeX Info: Redefining \nobreakspace on input line 77.
 )
-(D:\MiKTeX\tex\latex\ams\classes\amsthm.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsxtra.sty
+Package: amsxtra 1999/11/15 v1.2c
+LaTeX Info: Redefining \nobreakspace on input line 65.
+)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks21
 \thm@bodyfont=\toks22
 \thm@headfont=\toks23
 \thm@notefont=\toks24
 \thm@headpunct=\toks25
-\thm@preskip=\skip51
-\thm@postskip=\skip52
-\thm@headsep=\skip53
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
 \dth@everypar=\toks26
 )
-(D:\MiKTeX\tex\latex\amsfonts\amssymb.sty
-Package: amssymb 2009/06/22 v3.00
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(D:\MiKTeX\tex\latex\graphics\graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(D:\MiKTeX\tex\latex\graphics\graphics.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(D:\MiKTeX\tex\latex\graphics\trig.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(D:\MiKTeX\tex\latex\00miktex\graphics.cfg
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(D:\MiKTeX\tex\latex\pdftex-def\pdftex.def
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(D:\MiKTeX\tex\generic\oberdiek\infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(D:\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
-Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count101
 ))
 \Gin@req@height=\dimen122
 \Gin@req@width=\dimen123
 )
-(D:\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-\fancy@headwidth=\skip54
-\f@ncyO@elh=\skip55
-\f@ncyO@erh=\skip56
-\f@ncyO@olh=\skip57
-\f@ncyO@orh=\skip58
-\f@ncyO@elf=\skip59
-\f@ncyO@erf=\skip60
-\f@ncyO@olf=\skip61
-\f@ncyO@orf=\skip62
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip51
+\f@ncyO@elh=\skip52
+\f@ncyO@erh=\skip53
+\f@ncyO@olh=\skip54
+\f@ncyO@orh=\skip55
+\f@ncyO@elf=\skip56
+\f@ncyO@erf=\skip57
+\f@ncyO@olf=\skip58
+\f@ncyO@orf=\skip59
 )
-(D:\MiKTeX\tex\latex\float\float.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count102
 \float@exts=\toks27
@@ -221,29 +218,31 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks28
 \@floatcapt=\box29
 )
-(D:\MiKTeX\tex\latex\caption\subcaption.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count103
 \c@subtable=\count104
 )
-(D:\MiKTeX\tex\latex\graphics\color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
- (D:\MiKTeX\tex\latex\00miktex\color.cfg
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
-) (D:\MiKTeX\tex\latex\geometry\geometry.sty
+Package color Info: Driver file: pdftex.def on input line 137.
+)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(D:\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(D:\MiKTeX\tex\generic\oberdiek\ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(D:\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count105
@@ -258,21 +257,15 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen130
 \Gm@layoutvoffset=\dimen131
 \Gm@dimlist=\toks29
-
-(D:\MiKTeX\tex\latex\geometry\geometry.cfg))
-(D:\MiKTeX\tex\generic\babel\babel.sty
-Package: babel 2008/07/08 v3.8m The Babel package
-
-*************************************
-* Local config file bblopts.cfg used
-*
-(D:\MiKTeX\tex\latex\00miktex\bblopts.cfg
-File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-(D:\MiKTeX\tex\generic\babel\english.ldf
-Language: english 2005/03/30 v3.3o English support from the babel system
- (D:\MiKTeX\tex\generic\babel\babel.def
-File: babel.def 2008/07/08 v3.8m Babel common definitions
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/03/24 3.9k The Babel package
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/03/24 3.9k Babel common definitions
 \babel@savecnt=\count108
 \U@D=\dimen132
 )
@@ -281,7 +274,10 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \l@newzealand = a dialect from \language\l@british 
 ))
 \c@theorem=\count109
- (C:\Users\Ewan\Latex\InfoCon\InfoCon.aux)
+
+(./InfoCon.aux)
+\openout1 = `InfoCon.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
@@ -298,7 +294,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-(D:\MiKTeX\tex\context\base\supp-pdf.mkii
+(/usr/local/texlive/2014basic/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count110
 \scratchdimen=\dimen133
@@ -311,7 +307,49 @@ Package caption Info: End \AtBeginDocument code.
 \MPnumerator=\count114
 \makeMPintoPDFobject=\count115
 \everyMPtoPDFconversion=\toks31
+) (/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+)) (/usr/local/texlive/2014basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -347,41 +385,41 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 25.
-(D:\MiKTeX\tex\latex\amsfonts\umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 25.
- (D:\MiKTeX\tex\latex\amsfonts\umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+lasy on input line 25.
 
-(D:\MiKTeX\tex\latex\base\ulasy.fd
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) <DALECpic.png, id=1, 1357.07pt x 778.91pt>
+)
+<DALECpic.png, id=1, 1357.07pt x 778.91pt>
 File: DALECpic.png Graphic file (type png)
-
-<use DALECpic.png>
+ <use DALECpic.png>
 Package pdftex.def Info: DALECpic.png used on input line 37.
 (pdftex.def)             Requested size: 234.8775pt x 134.80186pt.
  [1
 
-{C:/Users/Ewan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{/usr/local/texlive/2014basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
- [2 <C:/Users/Ewan/Latex/InfoCon/DALECpic.png>]
+ [2 <./DALECpic.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
-
-<Sub_linerr.png, id=24, 659.1024pt x 468.3096pt>
+ <Sub_linerr.png, id=25, 659.1024pt x 468.3096pt>
 File: Sub_linerr.png Graphic file (type png)
  <use Sub_linerr.png>
 Package pdftex.def Info: Sub_linerr.png used on input line 88.
@@ -389,7 +427,8 @@ Package pdftex.def Info: Sub_linerr.png used on input line 88.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
- [3 <C:/Users/Ewan/Latex/InfoCon/Sub_linerr.png>]
+
+[3 <./Sub_linerr.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
@@ -404,73 +443,73 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
  [5] [6]
-<SIC1Obs_0_1095.png, id=41, 578.16pt x 433.62pt>
+<SIC1Obs_0_1095.png, id=42, 578.16pt x 433.62pt>
 File: SIC1Obs_0_1095.png Graphic file (type png)
  <use SIC1Obs_0_1095.png>
 Package pdftex.def Info: SIC1Obs_0_1095.png used on input line 261.
 (pdftex.def)             Requested size: 211.3883pt x 158.53795pt.
 
-<Temp_0_1095.png, id=42, 578.16pt x 433.62pt>
+<Temp_0_1095.png, id=43, 578.16pt x 433.62pt>
 File: Temp_0_1095.png Graphic file (type png)
  <use Temp_0_1095.png>
 Package pdftex.def Info: Temp_0_1095.png used on input line 267.
 (pdftex.def)             Requested size: 211.3883pt x 158.53795pt.
- [7 <C:/Users/Ewan/Latex/InfoCon/SIC1Obs_0_1095.png> <C:/Users/Ewan/Latex/InfoC
-on/Temp_0_1095.png>] <SIC0_1090cf.png, id=51, 578.16pt x 433.62pt>
+ [7 <./SIC1Obs_0_1095.png> <./Temp_0_1095.png>]
+<SIC0_1090cf.png, id=52, 578.16pt x 433.62pt>
 File: SIC0_1090cf.png Graphic file (type png)
  <use SIC0_1090cf.png>
 Package pdftex.def Info: SIC0_1090cf.png used on input line 332.
 (pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
-
-[8] <SIC0_1090nee.png, id=55, 578.16pt x 433.62pt>
+ [8]
+<SIC0_1090nee.png, id=56, 578.16pt x 433.62pt>
 File: SIC0_1090nee.png Graphic file (type png)
  <use SIC0_1090nee.png>
 Package pdftex.def Info: SIC0_1090nee.png used on input line 343.
 (pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
 
-<SIC0_1090cfnee.png, id=56, 578.16pt x 433.62pt>
+<SIC0_1090cfnee.png, id=57, 578.16pt x 433.62pt>
 File: SIC0_1090cfnee.png Graphic file (type png)
  <use SIC0_1090cfnee.png>
 Package pdftex.def Info: SIC0_1090cfnee.png used on input line 352.
 (pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
 
-[9 <C:/Users/Ewan/Latex/InfoCon/SIC0_1090cf.png> <C:/Users/Ewan/Latex/InfoCon/S
-IC0_1090nee.png>] <succwinter_singlesummer.png, id=62, 578.16pt x 433.62pt>
+[9 <./SIC0_1090cf.png> <./SIC0_1090nee.png>]
+<succwinter_singlesummer.png, id=63, 578.16pt x 433.62pt>
 File: succwinter_singlesummer.png Graphic file (type png)
 
 <use succwinter_singlesummer.png>
 Package pdftex.def Info: succwinter_singlesummer.png used on input line 361.
 (pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
- [10 <C:/Users/Ewan/Latex/InfoCon/SIC0_1090cfnee.png> <C:/Users/Ewan/Latex/Info
-Con/succwinter_singlesummer.png>]
-<DFS1Obs_0_1095.png, id=68, 578.16pt x 433.62pt>
+ [10 <./SIC0_1090cfnee.png> <./succwinter_singlesummer.png>] <DFS1Obs_0_1095.pn
+g, id=69, 578.16pt x 433.62pt>
 File: DFS1Obs_0_1095.png Graphic file (type png)
- <use DFS1Obs_0_1095.png>
+
+<use DFS1Obs_0_1095.png>
 Package pdftex.def Info: DFS1Obs_0_1095.png used on input line 374.
 (pdftex.def)             Requested size: 206.69063pt x 155.02pt.
 
-<succwinter_singlesummerdofs.png, id=69, 578.16pt x 433.62pt>
+<succwinter_singlesummerdofs.png, id=70, 578.16pt x 433.62pt>
 File: succwinter_singlesummerdofs.png Graphic file (type png)
 
 <use succwinter_singlesummerdofs.png>
 Package pdftex.def Info: succwinter_singlesummerdofs.png used on input line 383
 .
 (pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
- [11 <C:/Users/Ewan/Latex/InfoCon/DFS1Obs_0_1095.png> <C:/Users/Ewan/Latex/Info
-Con/succwinter_singlesummerdofs.png>]
-<dfssubplt.png, id=75, 1233.6489pt x 589.7232pt>
+ [11 <./DFS1Obs_0_1095.png> <./succwinter_singlesummerdofs.png>] <dfssubplt.png
+, id=76, 1233.6489pt x 589.7232pt>
 File: dfssubplt.png Graphic file (type png)
- <use dfssubplt.png>
+
+<use dfssubplt.png>
 Package pdftex.def Info: dfssubplt.png used on input line 392.
 (pdftex.def)             Requested size: 412.71494pt x 197.29623pt.
-
-<DFS0_1090nee.png, id=76, 578.16pt x 433.62pt>
+ <DFS0_1090nee.png, id=77, 578.16pt x 433.62pt>
 File: DFS0_1090nee.png Graphic file (type png)
- <use DFS0_1090nee.png>
+
+<use DFS0_1090nee.png>
 Package pdftex.def Info: DFS0_1090nee.png used on input line 401.
 (pdftex.def)             Requested size: 212.95425pt x 159.71498pt.
- [12 <C:/Users/Ewan/Latex/InfoCon/dfssubplt.png> <C:/Users/Ewan/Latex/InfoCon/D
-FS0_1090nee.png>] (C:\Users\Ewan\Latex\InfoCon\InfoCon.bbl [13])
+ [12 <./dfssubplt.png> <./DFS0_1090nee.png>]
+(./InfoCon.bbl [13])
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
@@ -493,33 +532,40 @@ Missing character: There is no ¢ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¢ in font cmr10!
- [15] [16]
-(C:\Users\Ewan\Latex\InfoCon\InfoCon.aux) ) 
+ [15] [16] (./InfoCon.aux) ) 
 Here is how much of TeX's memory you used:
- 4938 strings out of 494045
- 67410 string characters out of 3155643
- 141232 words of memory out of 3000000
- 8117 multiletter control sequences out of 15000+200000
- 19971 words of font info for 78 fonts, out of 3000000 for 9000
- 715 hyphenation exceptions out of 8191
- 36i,17n,43p,1498b,509s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmbx8.pfb><D:/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmex10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi6.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr17.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmr6.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr8.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
-i10.pfb>
-Output written on InfoCon.pdf (16 pages, 1021955 bytes).
+ 5306 strings out of 494522
+ 77061 string characters out of 6167204
+ 148703 words of memory out of 5000000
+ 8436 multiletter control sequences out of 15000+600000
+ 19971 words of font info for 78 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 38i,17n,43p,1470b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014basic/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014basic/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2014basic/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014basic/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014basic/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2014basi
+c/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014b
+asic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/20
+14basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive
+/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
+exlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
+l/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
+cal/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
+r/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
+fb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+8.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti10.pfb>
+Output written on InfoCon.pdf (16 pages, 1003406 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

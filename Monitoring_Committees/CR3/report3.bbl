@@ -1,0 +1,51 @@
+\begin{thebibliography}{1}
+
+\bibitem{Bloom2014}
+a.~a. Bloom and M.~Williams.
+\newblock {Constraining ecosystem carbon dynamics in a data-limited world:
+  integrating ecological "common sense" in a model-data-fusion framework.}
+\newblock {\em Biogeosciences Discussions}, 11(8):12733--12772, August 2014.
+
+\bibitem{braswell2005estimating}
+Bobby~H Braswell, William~J Sacks, Ernst Linder, and David~S Schimel.
+\newblock {Estimating diurnal to annual ecosystem parameters by synthesis of a
+  carbon flux model with eddy covariance net ecosystem exchange observations}.
+\newblock {\em Global Change Biology}, 11(2):335--355, 2005.
+
+\bibitem{desroziers2005diagnosis}
+G\'{e}rald Desroziers, Loic Berre, Bernard Chapnik, and Paul Poli.
+\newblock {Diagnosis of observation, background and analysis-error statistics
+  in observation space}.
+\newblock {\em Quarterly Journal of the Royal Meteorological Society},
+  131(613):3385--3396, 2005.
+
+\bibitem{fowler2011measures}
+Alison Fowler and Peter~Jan van Leeuwen.
+\newblock {Measures of observation impact in Gaussian data assimilation}.
+\newblock 2011.
+
+\bibitem{lewis2006dynamic}
+John~M Lewis, Sivaramakrishnan Lakshmivarahan, and Sudarshan Dhall.
+\newblock {\em {Dynamic data assimilation: a least squares approach}},
+  volume~13.
+\newblock Cambridge University Press, 2006.
+
+\bibitem{Nocedal1999}
+Jorge Nocedal and Stephen~J Wright.
+\newblock {\em {Numerical Optimization}}.
+\newblock Springer Science \& Business Media, 1999.
+
+\bibitem{rodgers2000inverse}
+Clive~D Rodgers and Others.
+\newblock {\em {Inverse methods for atmospheric sounding: Theory and
+  practice}}, volume~2.
+\newblock World scientific Singapore, 2000.
+
+\bibitem{williams2005improved}
+Mathew Williams, Paul~A Schwarz, Beverly~E Law, James Irvine, and Meredith~R
+  Kurpius.
+\newblock {An improved analysis of forest carbon dynamics using data
+  assimilation}.
+\newblock {\em Global Change Biology}, 11(1):89--105, 2005.
+
+\end{thebibliography}
