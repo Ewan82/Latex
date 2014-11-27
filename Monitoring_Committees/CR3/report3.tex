@@ -27,13 +27,13 @@
 
 \section{Introduction}
 
-In our last monitoring committee the Data Assimilation Linked Ecosystem Carbon model (DALEC) \cite{williams2005improved} was introduced and we showed how this model could be implemented in a variational data assimilation (DA) framework in order to look at the information content of different forest carbon balance observations. In particular Shannon Information Content \cite{rodgers2000inverse} was used to investigate the level of information provided by single and successive observations of Net Ecosystem Exchange (NEE) and it was shown that observations of NEE taken in summer with warmer temperatures and higher daily irradiances had a higher information content than those taken in winter with lower temperatures and lower daily irradiance. This makes physical sense as observations of NEE in the summer are of greater magnitude and give more information about the fluxes of carbon throughout the forest. The error in our linearized version of DALEC was also considered in the last report, this is important as in four-dimensional variational data assimilation (4D-Var) the linearized model is used in the tangent linear hypothesis, the results from this experiment showed the linearized DALEC to perform poorly. However since the last report I have found that the linear DALEC was not derived correctly and repeating these experiments shows the tangent linear hypothesis to be a good approximation for DALEC. 
+In our last monitoring committee the Data Assimilation Linked Ecosystem Carbon model (DALEC) \cite{williams2005improved} was introduced and we showed how this model could be implemented in a variational data assimilation (DA) framework in order to look at the information content of different forest carbon balance observations. In particular, Shannon Information Content \cite{rodgers2000inverse} was used to investigate the level of information provided by single and successive observations of Net Ecosystem Exchange (NEE) and it was shown that observations of NEE taken in summer with warmer temperatures and higher daily irradiances had a higher information content than those taken in winter with lower temperatures and lower daily irradiance. This makes physical sense as observations of NEE in the summer are of greater magnitude and give more information about the fluxes of carbon throughout the forest. The error in our linearized version of DALEC was also considered in the last report, this is important as in four-dimensional variational data assimilation (4D-Var) the linearized model is used in the tangent linear hypothesis, the results from this experiment showed the linearized DALEC to perform poorly. However since the last report I have found that the linear DALEC was not derived correctly and repeating these experiments shows the tangent linear hypothesis to be a good approximation for DALEC. 
 
-Since our last meeting I have continued the work on the information content of forest carbon balance observations. I have looked at the degrees of freedom for signal as another measure for information content and have written a first draft of a report on my findings (I have included this alongside my monitoring report). I have built DALEC into a 4D-Var scheme assimilating data from a young pine stand in Oregon in order to estimate the five carbon pools which make up the state vector for DALEC. I have started visiting the Forest Research site at Alice Holt on a weekly basis and am helping with current measurement campaigns. A new version of the DALEC model has been released since our last meeting (DALECV2 \cite{Bloom2014}) which can be parameterized for both evergreen and deciduous forests, I have started working with this model now as the research site at Alice Holt is largely deciduous and the previous DALEC with which I have been working only models evergreen forests. Currently I have coded my own version of DALECV2 in Python and have built this into a 4D-Var scheme similar to that which I had written for the state estimation with DALEC but now estimating the 17 model parameters aswell as the initial value for the carbon pools. I hope this will allow me to parameterize DALECV2 for the Alce Holt research site. In this report we begin by showing some of the results from the information content experiments.
+Since our last meeting I have continued the work on the information content of forest carbon balance observations. I have looked at the degrees of freedom for signal as another measure for information content and have written a first draft of a report on my findings (I have included this alongside my monitoring report). I have built DALEC into a 4D-Var scheme assimilating data from a young pine stand in Oregon in order to estimate the five carbon pools which make up the state vector for DALEC. I have started visiting the Forest Research site at Alice Holt on a weekly basis and am helping with current measurement campaigns. A new version of the DALEC model has been released since our last meeting (DALECV2 \cite{Bloom2014}) which can be parameterized for both evergreen and deciduous forests, I have started working with this model now as the research site at Alice Holt is largely deciduous and the previous DALEC with which I have been working only models evergreen forests. Currently, I have coded my own version of DALECV2 in Python and have built this into a 4D-Var scheme similar to that which I had written for the state estimation with DALEC but now estimating the 17 model parameters as well as the initial value for the carbon pools. I hope this will allow me to parameterize DALECV2 for the Alce Holt research site. In this report we begin by showing some of the results from the information content experiments.
 
 \section{Information Content}
 
-In the last monitoring report the Shannon Information Content (SIC) was used as a measure of the reduction in entropy of a system given a set of observations. The SIC can be derived as,
+In the last monitoring report the Shannon Information Content (SIC) was used as a measure of the reduction in entropy of a system given a set of observations \cite{stewart2008correlated}. The SIC can be derived as,
 \begin{equation} \label{sic}
 \text{SIC}=\frac{1}{2}\text{ln}\frac{\begin{vmatrix} \textbf{B} \end{vmatrix}}{\begin{vmatrix} \textbf{A} \end{vmatrix}},
 \end{equation}
@@ -70,7 +70,7 @@ In the report this idea is also explored for the degrees of freedom for signal (
 \text{DFS} = n - \text{trace}(\mathbf{B}^{-1}\mathbf{A}).
 \end{equation}
 
-The result in figure \ref{fig:SICNEET} can reproduced using the DFS showing that we measure more elements of our state with observations of NEE made in summer than observations made in winter. To understand how much more value the summer observations of NEE have compared to the winter observations we have plotted the increasing SIC and DFS for 50 observations made from December $21^{\text{st}}$ onwards and also the the constant line of SIC and DFS for one observation of $NEE$ made in summer at a mean daily temperature of $26^{o}\text{C}$ on July $12^{\text{th}}$. This is shown in figure \ref{sicdfs}.
+The result in figure \ref{fig:SICNEET} can be reproduced using the DFS showing that we measure more elements of our state with observations of NEE made in summer than observations made in winter. To understand how much more value the summer observations of NEE have compared to the winter observations we have plotted the increasing SIC and DFS for 50 observations made from December $21^{\text{st}}$ onwards and also the the constant line of SIC and DFS for one observation of $NEE$ made in summer at a mean daily temperature of $26^{o}\text{C}$ on July $12^{\text{th}}$. This is shown in figure \ref{sicdfs}.
 
 \begin{figure}[ht]
 \centering
@@ -87,7 +87,7 @@ The result in figure \ref{fig:SICNEET} can reproduced using the DFS showing that
 \caption{SIC (left) and DFS (right) for a single summer observation of NEE and successive winter observations of NEE using driving data from Oregon pine forest.}
 \label{sicdfs}
 \end{figure}
-Figure \ref{sicdfs} shows us that, for the driver data used in this experiment, we require 31 days of NEE observations to gain the same reduction in entropy for our analysis as 1 observation made in the summer and 30 days of NEE observations to achieve the same DFS as 1 observation made in the summer. For more detail on the information content experiments with DALEC please see the attached report.
+Figure \ref{sicdfs} shows us that, for the driver data used in this experiment, we require 31 days of NEE observations to gain the same reduction in entropy for our analysis as 1 observation made in the summer and 30 days of NEE observations to achieve the same DFS as 1 observation made in the summer. For more detail on the information content experiments with DALEC please see the attached report \cite{pinningtoninfocon}.
 
 \section{4D-Var with DALEC}
 
@@ -124,11 +124,11 @@ where $\zeta_i = \text{GPP}'(C_f(t_i), \phi)$ and $T_{i}=T(t_i)$. The cost funct
 \end{figure}
 In figure \ref{4dvardalec} we can see a better fit to the observations after assimilation of the NEE observations when our $\textbf{x}_a$ is run forward in figure \ref{4dvardalec}. Assimilating the NEE data not only improves the fit of the model trajectory to the observations of NEE but also to the observations of GPP and total respiration (RT). This shows that by assimilating NEE observations we are also gaining information about GPP and RT. This is expected as NEE is a product of RT and GPP (NEE = RT - GPP) so improving our estimate of NEE should also improve our estimate of RT and GPP. We can also see how simple the DALEC model is in some areas by looking at its prediction of litter fall (LF) which is just modelled as a constant multiplied by $C_f$ in this evergreen version of DALEC.
 
-More experiements had been planned with DALEC in a 4D-Var scheme however with the release of DALECV2 \cite{Bloom2014} it was decided that it would be best to begin working with this new model. This new model DALECV2 can be paramterized for either deciduous or evergreen forests where as the DALEC being used for previous experiments only models evergreen forests. Paramterizing the model for a deciduous forest is important as the Forest Research site at Alice Holt forest is mainly decidous and this is where I will be based for my field work.
+More experiments had been planned with DALEC in a 4D-Var scheme however with the release of DALECV2 \cite{Bloom2014} it was decided that it would be best to begin working with this new model. This new model DALECV2 can be paramterized for either deciduous or evergreen forests where as the DALEC being used for previous experiments only models evergreen forests. Paramterizing the model for a deciduous forest is important as the Forest Research site at Alice Holt forest is mainly decidous and this is where I will be based for my field work.
 
 \section{Current Work}
 \begin{wrapfigure}{R}{0.25\textwidth}
-    \includegraphics[width=0.3\textwidth]{treechamber.png}
+    \includegraphics[width=0.25\textwidth]{treechamber.png}
   \caption{Tree respiration chamber used at Alice Holt research site.}
 \label{stem}
 \end{wrapfigure}
@@ -137,18 +137,19 @@ I have started to work with meteorological driving data and forest carbon balanc
 
 I have recently started working at Forest Research once a week on Tuesdays. I am currently helping out conducting stem and soil respiration measurements, the equipment used for the stem respiration measurements can be seen in figure \ref{stem}. These measurements form part of an existing measurement campaign that Forest Research are conducting. The measurements of stem respiration may not be directly used in my own work, however they are valuable for my understanding of conducting fieldwork measurements and learning my way around the Straits enclosure where the bulk of the carbon balance measurements are made at the Alice Holt site.
 
+
+
+
+
 \section{Future Plans}
 
-My plans for the future are as follows:
+I shall continue to work on parameterizing DALECV2 for the Alice Holt research site. I also plan on repeating the information content experiments with DALECV2 to see if we have similar results as achieved with the original DALEC model.
 
-\begin{itemize}
-\item Write some future plans.
-\end{itemize}
 
 \section{Professional and Academic Development}
 
 \subsection{Masters Courses}
-Since our last meeting I have now recieved the grades for my final three assessed modules:
+Since our last meeting I have now received the grades for my final three assessed modules:
 \begin{itemize}
 \item MTMG49 (Boundary Layer) - 72\%
 \item MTMD01 (Environmental Data Visualization) - 78\%
@@ -169,15 +170,22 @@ During my PhD I have taken part in the following courses:
 
 \item 29/05/2014 - How to Write a Paper - RRDP
 
-\item 21/07/2014-01/08/2014 - Fluxcourse - University of Colorado
-
 \item 25/06/2014-26/06/2014 - Software Carpentry - Git and Python
 
 \item 10/07/2014-11/07/2014 - Forest Research - Helped with field work LiDAR 
 
 \item 29/09/2014-03/10/2014 - NERC course - Software Developement for Environmental Scientists
+
+\item 08/10/2014-10/10/2014 - Environment YES - NERC competition at Syngenta, Jesops Hill
 \end{itemize}
-I have also demonstrated on a data assimilation course (15/09/2014-19-/09/2014) for PhD students and postdocs organised by Dr. Amos Lawless.
+
+I have also demonstrated on the NERC 'Data assimilation and visualization for environmental sciences' course held from 15/09/2014 to 19/09/2014 organised by Dr. Amos Lawless.
+
+On 17/12/14 I will be giving a presentation at the Mathematics for Planet Earth industry day at Imperial College about my project and working with a case partner.
+
+\subsection{Summer School}
+I attended the Fluxcourse summer school held at the University of Colorado from 21/07/2014 to 01/08/2014. During the course we stayed at the University's mountain research station near Boulder, Colorado. The course covered many different aspects of measuring and modelling the CO$_2$ flux of forests and plants. I found spending time with other early career scientists studying similar problems very helpful in the understanding of my own research topic. At the end of the course we had to present a piece of group work using a carbon balance model with a data assimilation scheme.
+
 
 \bibliography{../../phdref}{}
 \bibliographystyle{plain}

@@ -4,26 +4,27 @@ The top-level auxiliary file: report3.aux
 The style file: plain.bst
 Database file #1: ../../phdref.bib
 Warning--empty journal in fowler2011measures
+Warning--empty journal in pinningtoninfocon
 You've used 8 entries,
             2118 wiz_defined-function locations,
-            546 strings with 5533 characters,
-and the built_in function-call counts, 2661 in all, are:
-= -- 251
-> -- 144
+            545 strings with 5373 characters,
+and the built_in function-call counts, 2438 in all, are:
+= -- 229
+> -- 123
 < -- 2
-+ -- 56
-- -- 48
-* -- 203
-:= -- 460
++ -- 48
+- -- 40
+* -- 172
+:= -- 425
 add.period$ -- 24
 call.type$ -- 8
-change.case$ -- 45
+change.case$ -- 41
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 90
-empty$ -- 197
-format.name$ -- 48
-if$ -- 533
+cite$ -- 10
+duplicate$ -- 89
+empty$ -- 187
+format.name$ -- 40
+if$ -- 490
 int.to.chr$ -- 0
 int.to.str$ -- 8
 missing$ -- 11
@@ -31,18 +32,18 @@ newline$ -- 43
 num.names$ -- 16
 pop$ -- 52
 preamble$ -- 1
-purify$ -- 40
+purify$ -- 36
 quote$ -- 0
 skip$ -- 59
 stack$ -- 0
-substring$ -- 155
-swap$ -- 9
+substring$ -- 130
+swap$ -- 8
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 26
-warning$ -- 1
-while$ -- 24
+warning$ -- 2
+while$ -- 22
 width$ -- 9
-write$ -- 87
-(There was 1 warning)
+write$ -- 85
+(There were 2 warnings)
