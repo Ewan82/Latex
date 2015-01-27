@@ -1,0 +1,50 @@
+\documentclass[11pt]{article}
+\usepackage[sort]{natbib}
+\usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx}
+\usepackage{fancyhdr}
+\usepackage[margin=1.0in]{geometry}
+
+\title{Plans}
+\author{Ewan Pinnington}
+\date
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{defn}{Definition}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{Current Work}
+\begin{itemize}
+\item Finish report on information content once comments received.
+
+\item Begin writing up 4D-Var implementation of DALECV1 and DALECV2.
+
+\item Use 4D-Var twin experiments to further explore information content concepts that have already been developed in the report. Also use the twin experiments to understand which parameters we can be constrained with which observations.
+
+Run the twin experiments as an ensemble of 4D-Vars. We will also consider giving different amounts of error to the synthetically generated observations. 
+
+\item With DALECV2 4D-Var assimilate historic Alice Holt NEE observations and run forecasts to assess performance against observations (try this with cycled 4D-Var windows). When more observations available this can then be repeated to see the effect of introducing new data streams. 
+
+More testing of DALECV2 and its implementation in the 4D-Var routine are also required.
+
+\item Attempt to specify a more realistic $\textbf{B}$ and initial $\underline{x}_{b}$ for Alice Holt in order to better constrain the cost function and stop parameters reaching unrealistic values.
+
+\item Look at data processing of Alice Holt NEE observations and how best to deduce averaged daily NEE observations from the half-hourly flux data.
+\end{itemize}
+
+
+\section*{Future Work}
+\begin{itemize}
+\item Use Eric's version of SPA (calibrated for Alice Holt) to parameterize the aggregated canopy model (used in DALEC to calculate daily GPP) for DALECV2.
+
+\item Parameterize DALECV2 for both thinned and unthinned sections of the FR site.
+
+\item Meet again with FR to further discuss the plans for me to begin taking measurements of LAI.
+
+\item Investigate correlated errors in $\textbf{R}$ for DALEC when we have different sets of observations in time.
+\end{itemize}
+
+\end{document}
