@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.31)  27 JAN 2015 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.31)  19 FEB 2015 08:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**phd_plans.tex
-(./phd_plans.tex
+**4dvar.tex
+(./4dvar.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 21 languages loaded.
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/article.cls
@@ -220,29 +220,23 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen124
 \Gm@dimlist=\toks27
 )
-Runaway argument?
-! Paragraph ended before \date was complete.
-<to be read again> 
-                   \par 
-l.10 
-     
-? 
 \c@theorem=\count104
-(./phd_plans.aux)
-\openout1 = `phd_plans.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+(./4dvar.aux)
+\openout1 = `4dvar.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 (/usr/local/texlive/2014basic/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -334,49 +328,54 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+LaTeX Font Info:    Try loading font information for U+msa on input line 16.
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 17.
+LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 17.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 16.
 
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 21.
-
-(/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
- [1
+! Missing $ inserted.
+<inserted text> 
+                $
+l.24 ...}$, http://en.wikipedia.org/wiki/Forecast_
+                                                  skill
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.25 
+     
+? 
+[1
 
 {/usr/local/texlive/2014basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./phd_plans.aux) ) 
+(./4dvar.aux) ) 
 Here is how much of TeX's memory you used:
- 3568 strings out of 494522
- 47817 string characters out of 6167204
- 114047 words of memory out of 5000000
- 6750 multiletter control sequences out of 15000+600000
+ 3552 strings out of 494522
+ 47472 string characters out of 6167204
+ 112170 words of memory out of 5000000
+ 6737 multiletter control sequences out of 15000+600000
  14851 words of font info for 57 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 38i,6n,43p,323b,210s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014basic/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014basic/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014basic/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014basic/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on phd_plans.pdf (1 page, 80302 bytes).
+ 38i,6n,43p,579b,210s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx12.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014basic/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014basic/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on 4dvar.pdf (1 page, 85561 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream
