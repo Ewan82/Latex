@@ -1,0 +1,39 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bloom and Williams(2014)]{Bloom2014}
+Anthony Bloom and Mathew Williams.
+\newblock {Constraining ecosystem carbon dynamics in a data-limited world:
+  integrating ecological ``common sense" in a model-data-fusion framework.}
+\newblock \emph{Biogeosciences Discussions}, 11\penalty0 (8):\penalty0
+  12733--12772, 2014.
+\newblock URL \url{http://www.biogeosciences-discuss.net/11/12733/2014/}.
+
+\bibitem[Lewis et~al.(2006)Lewis, Lakshmivarahan, and Dhall]{lewis2006dynamic}
+John~M Lewis, Sivaramakrishnan Lakshmivarahan, and Sudarshan Dhall.
+\newblock \emph{Dynamic data assimilation: a least squares approach},
+  volume~13.
+\newblock Cambridge University Press, 2006.
+
+\bibitem[Williams et~al.(1997)Williams, Rastetter, Fernandes, Goulden, Shaver,
+  and Johnson]{williams1997predicting}
+Mathew Williams, Edward~B Rastetter, David~N Fernandes, Michael~L Goulden,
+  Gaius~R Shaver, and Loretta~C Johnson.
+\newblock Predicting gross primary productivity in terrestrial ecosystems.
+\newblock \emph{Ecological Applications}, 7\penalty0 (3):\penalty0 882--894,
+  1997.
+
+\bibitem[Williams et~al.(2005)Williams, Schwarz, Law, Irvine, and
+  Kurpius]{williams2005improved}
+Mathew Williams, Paul~A Schwarz, Beverly~E Law, James Irvine, and Meredith~R
+  Kurpius.
+\newblock An improved analysis of forest carbon dynamics using data
+  assimilation.
+\newblock \emph{Global Change Biology}, 11\penalty0 (1):\penalty0 89--105,
+  2005.
+
+\end{thebibliography}
