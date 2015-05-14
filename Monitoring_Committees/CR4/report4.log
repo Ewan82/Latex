@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  14 MAY 2015 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  14 MAY 2015 16:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -401,14 +401,14 @@ File: ah_assim_edinpvals.png Graphic file (type png)
 Package pdftex.def Info: ah_assim_edinpvals.png used on input line 136.
 (pdftex.def)             Requested size: 422.77664pt x 232.22125pt.
  [4 <./tlm_error.png> <./ah_assim_edinpvals.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 165.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 162.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 165.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 162.
  [5]
 (./report4.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 9--15
@@ -453,7 +453,7 @@ Here is how much of TeX's memory you used:
  8210 multiletter control sequences out of 15000+600000
  15365 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,43p,1110b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,9n,43p,1122b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
@@ -471,7 +471,7 @@ pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
 r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
 /local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report4.pdf (7 pages, 694153 bytes).
+Output written on report4.pdf (7 pages, 694013 bytes).
 PDF statistics:
  103 PDF objects out of 1000 (max. 8388607)
  70 compressed objects within 1 object stream
