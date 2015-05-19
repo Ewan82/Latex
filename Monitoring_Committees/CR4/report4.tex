@@ -10,7 +10,7 @@
 
 
 
-\title{Fourth Monitoring Committee Meeting\\\vspace{4mm} \normalsize{Understanding the Information Content in Diverse Observations of Forest Carbon Stocks and Fluxes for Data Assimilation and Ecological Modeling\\ NERC case partnership with Forest Research}}
+\title{Fourth Monitoring Committee Meeting DRAFT\\\vspace{4mm} \normalsize{Understanding the Information Content in Diverse Observations of Forest Carbon Stocks and Fluxes for Data Assimilation and Ecological Modeling\\ NERC case partnership with Forest Research}}
 \author{\normalsize{E. Pinnington}}
 
 
@@ -32,7 +32,7 @@ In our last monitoring committee we saw the results of some information content 
 
 In the last report DALEC was also implemented in a Four-Dimensional Variational assimilation (4D-Var) scheme for state estimation, where our state corresponded to the 5 initial carbon pool values in DALEC. We used this scheme to assimilate observations of NEE with DALEC using data from an evergreen forest in Oregon. It was shown that assimilating NEE observations not only improved our models estimate of NEE but also improved modelled Gross Primary Production (GPP) and Total ecosystem Respiration (RT). The field work I had been doing at the Alice Holt research forest with my case partner Forest Research was also outlined in the last report.
 
-Since completing the last report a new version of the DALEC model was released (DALECV2 \citep{Bloom2014}) and I have built this into a 4D-Var scheme for parameter and state estimation. It was decided to begin work on DALECV2 as it can be parameterised for both deciduous and evergreen forests and the Alice Holt research site is a mainly deciduous forest. Whereas the version of DALEC previously used was a model of  evergreen forests only. We are currently using data acquired from Alice Holt to run DALECV2 and I have worked on getting the driving data and NEE observations into the right format for use with DALECV2.
+Since completing the last report, a new version of the DALEC model was released (DALECV2 \citep{Bloom2014}) and I have built this into a 4D-Var scheme for parameter and state estimation. It was decided to begin work on DALECV2 as it can be parameterised for both deciduous and evergreen forests and the Alice Holt research site is a mainly deciduous forest; whereas the version of DALEC previously used was a model of  evergreen forests only. We are currently using data acquired from Alice Holt to run DALECV2 and I have worked on getting the driving data and NEE observations into the right format for use with DALECV2.
 
 I have also now completed taking a set of stem and soil respiration observations for Forest Research at the Alice Holt flux site and am now in the early stages of planning a campaign to take leaf area index measurements at the Alice Holt flux site. I have completed a thesis outline which is included along with the monitoring report.            
 
@@ -127,7 +127,7 @@ The validity of this assumption depends on how nonlinear the model is, the lengt
     \label{fig:tlm_error}
 \end{figure}
 
-In figure \ref{fig:tlm_error} we can see that our TLM for DALECV2 performs very well after being run forward a year with less than a $1\%$ error. By the second year we see some peaks in our error in spring and autumn, this is where functions controlling leaf on and leaf off in the nonlinear DALECV2 have gone out of phase with the TLM. Even at these peaks our error is still reasonable reaching a maximum at $7\%$ and then coming back to around $1\%$. 
+In figure \ref{fig:tlm_error} we can see that our TLM for DALECV2 performs very well after being run forward a year with less than a $1\%$ error. By the second year, we see some peaks in our error in spring and autumn, this is where functions controlling leaf on and leaf off in the nonlinear DALECV2 have gone out of phase with the TLM. Even at these peaks our error is still reasonable, reaching a maximum at $7\%$ and then coming back to around $1\%$. 
 
 In figure~\ref{fig:4dvar} we see a 4D-Var run using NEE observations and meteorological driving data from Alice Holt. Here we are using a truncated Newton method \citep{Nocedal1999} from the Python package Scipy.optimize to find the minimum of our 4D-Var cost function. Our $\textbf{x}_b$ is a parameter set found by the University of Edinburgh using the CARbon DAta-MOdel fraMework (CARDAMOM) \citep{Exbrayat2015}. This used Harmonised World Soil Database $C_{s}$ observations as initial conditions, meteorological driving data from ERA-interim and Markov chain Monte Carlo techniques to assimilate MODIS leaf area index observations over a 10 year period. 
 
@@ -138,18 +138,18 @@ In figure~\ref{fig:4dvar} we see a 4D-Var run using NEE observations and meteoro
     \label{fig:4dvar}
 \end{figure}
 
-From figure~\ref{fig:4dvar} we can see that after assimilating NEE observations from 1999-2001 and then running our analysis forward from 2001-2006 we have a much better forecast of NEE than we did from our initial background guess (when judging against observations). 
+From figure~\ref{fig:4dvar} we can see that after assimilating NEE observations from 1999-2001 and then running our analysis forward from 2001-2006, we have a much better forecast of NEE than we did from our initial background guess (when judging against observations). 
 
 \section{Current Work and Future Plans}
 
-I am currently repeating the information content experiments conducted with DALECV2. While applying the measures previously used (SIC and DFS) I am also starting to work with the influence matrix \citep{Cardinali2004} and the adjoint technique proposed by \cite{Langland2004}. The influence matrix is defined as,
+I am currently repeating the information content experiments conducted with DALECV2. While applying the measures previously used (SIC and DFS), I am also starting to work with the influence matrix \citep{Cardinali2004} and the adjoint technique proposed by \cite{Langland2004}. The influence matrix is defined as,
 \begin{equation}
 \textbf{S} = \frac{\delta \hat{\mathbf{H}}\textbf{x}_a}{\delta \hat{\textbf{y}}} = \hat{\textbf{R}}^{-1}\hat{\mathbf{H}}\textbf{A}\hat{\mathbf{H}}^{T},
 \end{equation}
 
-where $\textbf{A}$ is our analysis error covariance matrix. Using these measures and an observing system simulation experiment, that I have developed, I will produce another report investigating the best set of observations for understanding the carbon balance of a forest and apply the results to the available data from Alice Holt. 
+where $\textbf{A}$ is our analysis error covariance matrix. Using these measures and an observing system simulation experiment that I have developed, I will produce another report investigating the best set of observations for understanding the carbon balance of a forest and apply the results to the available data from Alice Holt. 
 
-I am also in the very early stages of planning a fieldwork campaign at Alice Holt. In this campaign I will be taking measurements of leaf area index using a ceptometer and hemispherical photographs. Tristan and I have meeting with Forest Research on the $28^{th}$ May to further plan the fieldwork. These measurements will be used in the information content experiments but also to address site specific science questions. Half of the Alice Holt forest has been thinned and the other half left unmanaged.  The flux tower measuring NEE is placed directly on the boundary of the two halves. The leaf area index measurements will allow us to compare the difference between the two sides and also evaluate DALECV2's estimate of leaf area index. We will also parameterise two versions of DALECV2 for the thinned/unthinned forest using NEE observations and a tower foot print model to split the NEE observations when the signal is coming from the thinned or unthinned side of the forest. We will then be able to see if by just assimilating NEE we can pick out a difference in leaf area index between the two sides.
+I am also in the very early stages of planning a fieldwork campaign at Alice Holt. In this campaign I will be taking measurements of leaf area index using a ceptometer and hemispherical photographs. Tristan and I have a meeting with Forest Research on the $28^{th}$ May to further plan the fieldwork. These measurements will be used in the information content experiments but also to address site specific science questions. Half of the Alice Holt forest has been thinned and the other half left unmanaged.  The flux tower measuring NEE is placed directly on the boundary of the two halves. The leaf area index measurements will allow us to compare the difference between the two sides and also evaluate DALECV2's estimate of leaf area index. We will also parameterise two versions of DALECV2 for the thinned/unthinned forest using NEE observations and a tower foot print model to split the NEE observations when the signal is coming from the thinned or unthinned side of the forest. We will then be able to see if by just assimilating NEE we can pick out a difference in leaf area index between the two sides.
 
 Other future work will be based on the attached thesis outline. This includes attempting to improve the representation of background and observational error covariance matrices in DALECV2. This is important as improving our representation of these matrices could lead to different results in the information content experiments.  
 

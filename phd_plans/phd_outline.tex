@@ -2,10 +2,10 @@
 \usepackage[sort]{natbib}
 \usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx}
 \usepackage{fancyhdr}
-\usepackage[margin=1.0in]{geometry}
+\usepackage[margin=.8in]{geometry}
 \bibliographystyle{plainnat}
 
-\title{PhD Outline}
+\title{Thesis Outline DRAFT}
 \author{Ewan Pinnington}
 
 \newtheorem{theorem}{Theorem}[section]
@@ -24,11 +24,11 @@
 \end{itemize}
 
 
-\section{Literature Review}
+\section{Literature Review and Background}
 \begin{itemize}
 \item Variational data assimilation, in particular 4D-Var. Possibly also touch on MCMC techniques. Automatic differentiation for TLM and minimisation routines in Python.
 \item DALEC2 and the processes it models.
-\item Information content measures.
+\item Information Content (IC) measures.
 \item Desroziers and how to represent B and R.
 \item NEE measurements, error and footprint model.
 \end{itemize}
@@ -36,38 +36,39 @@
 
 \section{Methods}
 \begin{itemize}
-\item Outline of LAI measurement campaign.
+\item Outline of Leaf Area Index (LAI) measurement campaign and other work at Forest Research.
 \end{itemize}
 
 
-\section{Chapter one: 4D-Var and information content in carbon balance observations with DALEC2}
+\section{4D-Var and information content in carbon balance observations with DALEC2}
 \begin{itemize}
+\item Implementation of DALEC2 in a 4D-Var scheme for parameter and state estimation. 
 \item Introduce explicit expressions for information content for observations relating to DALEC2 at a single time.
 \item Results from IC experiments.
-\item Begin by considering information content in the context of a set of twin experiments using DALEC2.
-\item Measures: SIC, DOFS, Adjoint Sensitivity, Forecast Sensitivity to obs.
+\item Begin by considering IC in the context of a set of twin experiments using DALEC2.
+\item Measures: Shannon information content, degrees of freedom for signal, influence matrix and adjoint Sensitivity.
 \item Apply results to actual data acquired from Alice Holt.
 \item Results: temporal information content in observations. What set of observations is best?
 \item Investigate effect of data drop out, miss-specification of errors (twin experiments), quantity and time of sampling.
-\item Possibility of using SiPNET model to repeat IC experiments (only if not a huge task).
+\item Future work: Use SiPNET model to repeat IC experiments.
 \end{itemize}
 
 
-\section{Chapter two: Improving the representation of background and observational error covariance matrices in carbon balance models} 
+\section{Improving the representation of background and observational error covariance matrices in carbon balance models} 
 \begin{itemize}
-\item Following on from chapter one (IC in Cpool obs $>$ IC in NEE obs, no. of Cpool obs $<<$ no. of NEE obs). Spread info in NEE obs by moving away from a diagonal representation of R.
-\item Hopefully use a method such as Deroziers to improve our estimates of B and R. Does this improve our results from the data assimilation experiments? Could use twin experiments here.
+\item Following on from chapter one (IC in Carbon pool obs. $>$ IC in NEE obs., no. of Carbon pool obs. $<<$ no. of NEE obs.). Spread info in NEE obs. by moving away from a diagonal representation of the observation error covariance matrix, R.
+\item Hopefully use a method such as Deroziers to improve our estimates of both B and R. Does this improve our results from the data assimilation experiments? Could use twin experiments here.
 \item Apply this to 4D-Var and MCMC techniques to compare effect on both.
-\item If this method is effective and JULES 4D-En-Var is easily runnable with parameter estimation, we could attempt to apply techniques to JULES. 
+\item Future work: If method effective apply to JULES 4D-En-Var with empire.
 \end{itemize}
 
 
-\section{Chapter three: Effect of disturbance on the Alice Holt research forest}
+\section{Effect of disturbance on the Alice Holt research forest}
 \begin{itemize}
-\item Split NEE data into multiple data sets using footprint model, then parameterise DALEC2 for each data set. Compare the differences between the parameterisations with particular focus on the thinned/unthinned halves of the forest.
-\item Compare the model parameters for LAI to observations taken in a planned field work campaign.
-\item Any changes to model (variable time step, phenology)? Could implementing a better phenology model in DALEC2 improve our LAI estimates and maybe capture litter fall more accurately?
-\item Possibility of including understory hazel in DALEC2, does this improve our estimates? Comparison with Eric's SPA which includes understory.
+\item Split NEE data into multiple data sets using flux tower footprint model, then parameterise DALEC2 for each data set. Compare the differences between the parameterisations with particular focus on the thinned/unthinned halves of the forest.
+\item Compare the model parameters for LAI to observations taken in a planned field work campaign. From the field work is there a distinct difference between thinned/unthinned sides of the forest.
+\item Any changes to model (variable time step, phenology)? Could implementing a better phenology model in DALEC2 improve our LAI estimates and maybe capture litter fall more accurately? (More thought need here)
+\item Inclusion of understory hazel in DALEC2, does this improve our estimates? Comparison with Eric's SPA which includes understory.
 \end{itemize}
 
 
