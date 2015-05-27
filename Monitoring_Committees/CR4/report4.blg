@@ -1,48 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: report4.aux
-The style file: plainnat.bst
+The style file: abbrvnat.bst
 Database file #1: ../../PhD.bib
 Warning--empty journal in Cardinali2004
-You've used 10 entries,
+You've used 12 entries,
             2773 wiz_defined-function locations,
-            669 strings with 7065 characters,
-and the built_in function-call counts, 4982 in all, are:
-= -- 445
-> -- 308
+            687 strings with 7554 characters,
+and the built_in function-call counts, 6471 in all, are:
+= -- 570
+> -- 437
 < -- 8
-+ -- 103
-- -- 93
-* -- 418
-:= -- 779
-add.period$ -- 38
-call.type$ -- 10
-change.case$ -- 57
-chr.to.int$ -- 10
-cite$ -- 21
-duplicate$ -- 215
-empty$ -- 379
-format.name$ -- 112
-if$ -- 1033
++ -- 147
+- -- 135
+* -- 573
+:= -- 1016
+add.period$ -- 44
+call.type$ -- 12
+change.case$ -- 76
+chr.to.int$ -- 12
+cite$ -- 25
+duplicate$ -- 258
+empty$ -- 472
+format.name$ -- 154
+if$ -- 1328
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 13
-newline$ -- 66
-num.names$ -- 40
-pop$ -- 112
+missing$ -- 15
+newline$ -- 76
+num.names$ -- 48
+pop$ -- 145
 preamble$ -- 1
-purify$ -- 50
+purify$ -- 67
 quote$ -- 0
-skip$ -- 175
+skip$ -- 211
 stack$ -- 0
-substring$ -- 181
-swap$ -- 22
+substring$ -- 263
+swap$ -- 24
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 95
+type$ -- 117
 warning$ -- 1
-while$ -- 42
+while$ -- 54
 width$ -- 0
-write$ -- 150
+write$ -- 177
 (There was 1 warning)

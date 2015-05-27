@@ -18,7 +18,7 @@
 
 \section{Introdution}
 
-Four-dimensional variational data assimilation (4D-Var) has been used extensively in numerical weather prediction to improve forecasts REF. Currently efforts to use variational assimilation with carbon balance models have been limited REF, with sequential and Markov Chain Monte Carlo methods being more prevalent REF. In this report we will paramterize a model of forest carbon balance (DALEC2) using a 4D-Var scheme in order to produce better forecasts of forest carbon balance. We will use data from the research site at Alice Holt forest run by Forest Research.  
+Four-dimensional variational data assimilation (4D-Var) has been used extensively in numerical weather prediction to improve forecasts. Currently efforts to use variational assimilation with carbon balance models have been limited, with sequential and Markov Chain Monte Carlo methods being more prevalent. In this report we will paramterize a model of forest carbon balance (DALEC2) using a 4D-Var scheme in order to produce better forecasts of forest carbon balance. We will use data from the research site at Alice Holt forest run by Forest Research.  
 
 \section{Methods}
 
@@ -162,7 +162,16 @@ For our cost function $J$ and its gradient $\nabla J$ we can check that we have 
 \begin{equation}
 f(\alpha)=\frac{J( \textbf{x}_0 + \alpha \textbf{h}) - J(\textbf{x}_0)}{\alpha \textbf{h}^{T} \nabla J(\textbf{x}_0)} = 1 + O(\alpha),
 \end{equation}
-where $\textbf{h}$ is a vector of unit length, which we can take to be $\nabla J(\textbf{x}_0)||\nabla J(\textbf{x}_0)||^{-1}$. Maybe also consider $\textbf{h}=\textbf{x}_0||\textbf{x}_0||^{-1}$?? In plot REF we can see that as $\alpha \rightarrow 0$ we have $f(\alpha) \rightarrow 1$ before $\alpha$ gets too close to machine zero. This gives us confidence that the gradient of our cost function is behaving as expected.
+where $\textbf{h}$ is a vector of unit length, which we can take to be $\nabla J(\textbf{x}_0)||\nabla J(\textbf{x}_0)||^{-1}$. Maybe also consider $\textbf{h}=\textbf{x}_0||\textbf{x}_0||^{-1}$?? In plot REF we can see that as $\alpha \rightarrow 0$ we have $f(\alpha) - 1 \rightarrow 1$ before $\alpha$ gets too close to machine zero. This gives us confidence that the gradient of our cost function is behaving as expected.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{testgradcost.png}
+    \caption{Test of the gradient of the cost function. As $\alpha \rightarrow 0$ we have $abs(1 - f(\alpha)) \rightarrow 0$ up to $O(\alpha) = 10^{-4}$ where we have gone past the precision of the computer.}
+    \label{fig:testgradcost}
+\end{figure}
+
+
 \bibliography{../PhD}{}
 %\bibliographystyle{plain}
 
