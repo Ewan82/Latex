@@ -36,7 +36,7 @@ Forest ecosystems play an important role in sequestering human emitted carbon-di
 
 Currently we have conducted information content experiments using the Data Assimilation Linked Ecosystem Carbon model (DALEC) \citep{williams2005improved} which have been written up as a report. The report had focused mainly on Shannon Information Content (SIC) and the Degrees of Freedom for Signal (DFS) \citep{rodgers2000inverse} as measures for information content in carbon balance observations. We showed previously that a single observation of the Net Ecosystem Exchange (NEE) of CO$_2$ taken in summer with warmer temperatures and higher daily irradiances had a higher information content than those taken in winter. This made physical sense as in the summer we have more fluxes of carbon through the forest ecosystem, with more photosynthesis and respiration occurring, giving us more information about the fluxes of carbon through our system in summer observations of NEE. In the report on information content this was explored further and it was shown that it would take 30 days of successive NEE observations in winter to give the same amount of information as a single NEE observation made in summer.
 
-DALEC was also implemented in a Four-Dimensional Variational assimilation (4D-Var) scheme for state estimation, where our state corresponded to the 5 initial carbon pool values in DALEC. We used this scheme to assimilate observations of NEE with DALEC using data from an evergreen forest in Oregon. It was shown that assimilating NEE observations not only improved our model's estimate of NEE but also improved modelled Gross Primary Production (GPP) and Total ecosystem Respiration (RT). This can be expected as NEE is a product of GPP and RT (NEE = RT - GPP). However often we see our data assimilation scheme overestimate either GPP or RT and therefore underestimate the other flux when only assimilating NEE. 
+DALEC was also implemented in a Four-Dimensional Variational assimilation (4D-Var) scheme and an adjoint model built for state estimation, where our state corresponded to the 5 initial carbon pool values in DALEC. We used this scheme to assimilate observations of NEE with DALEC using data from an evergreen forest in Oregon. It was shown that assimilating NEE observations not only improved our model's estimate of NEE but also improved modelled Gross Primary Production (GPP) and Total ecosystem Respiration (RT). This can be expected as NEE is a product of GPP and RT (NEE = RT - GPP). However often we see our data assimilation scheme overestimate either GPP or RT and therefore underestimate the other flux when only assimilating NEE. 
 
 Since completing the last report, a new version of the DALEC model was released (DALECV2 \citep{Bloom2014}) and I have built this into a 4D-Var scheme for parameter and state estimation. It was decided to begin work on DALECV2 as it can be parameterised for both deciduous and evergreen forests and the Alice Holt research site is a mainly deciduous forest, whereas the version of DALEC previously used was a model of evergreen forests only. We are currently using data acquired from Alice Holt to run DALECV2 and I have worked on getting the driving data and NEE observations into the right format for use with DALECV2.
 
@@ -67,7 +67,7 @@ where $\textbf{x}_b$ is the background and acts as the initial guess to the stat
 \nabla J(\textbf{x}_0) = \textbf{B}^{-1}(\textbf{x}_0-\textbf{x}_b)-\sum_{i=0}^{N}\textbf{M}_{i,0}^{T}\textbf{H}_i^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-h_i(\textbf{x}_i)),
 \end{equation}
 
-where $\textbf{H}_i = \frac{\delta h_i(\textbf{x}_i)}{\delta\textbf{x}_i}$ is our linearized observation operator and $\mathbf{M}_{i,0}=\mathbf{M}_{i-1}\mathbf{M}_{i-2}\cdots\mathbf{M}_0$ is our tangent linear model with $\mathbf{M}_i=\frac{\delta m_{i}(\textbf{x}_{i})}{\delta \textbf{x}_{i}}$. We can rewrite the cost function and its gradient to avoid the sum notation as,
+where $\textbf{H}_i = \frac{\partial h_i(\textbf{x}_i)}{\partial\textbf{x}_i}$ is our linearized observation operator and $\mathbf{M}_{i,0}=\mathbf{M}_{i-1}\mathbf{M}_{i-2}\cdots\mathbf{M}_0$ is our tangent linear model with $\mathbf{M}_i=\frac{\partial m_{i}(\textbf{x}_{i})}{\partial \textbf{x}_{i}}$. We can rewrite the cost function and its gradient to avoid the sum notation as,
 
 \begin{equation}
 J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}_b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}_b)+\frac{1}{2}(\hat{\textbf{y}}-\hat{h}(\textbf{x}_0))^{T}\hat{\textbf{R}}^{-1}(\hat{\textbf{y}}-\hat{h}(\textbf{x}_0)) \label{costfn}
@@ -123,7 +123,7 @@ m_{0\rightarrow i}(\mathbf{x}_0+\delta\mathbf{x}_0) \approx m_{0 \rightarrow i}(
 \end{equation}
 The validity of this assumption depends on how nonlinear the model is, the length of the assimilation window and the size of the perturbation $\delta\mathbf{x}_0$. We can test the validity for DALECV2 by taking an initial state $\mathbf{x}_0$ and a $5\%$ perturbation for $\delta\mathbf{x}_0$. We then rearrange equation \ref{TLH} to find, 
 \begin{equation}
-\text{percentage error in TLM} = \begin{vmatrix} \frac{m_{0\rightarrow i}(\mathbf{x}_0+\delta\mathbf{x}_0) - m_{0 \rightarrow i}(\mathbf{x}_0)}{ \mathbf{M}_{i,0}\delta\mathbf{x}_0} - 1 \end{vmatrix} \times 100.
+\text{percentage error in TLM} = \begin{vmatrix} \frac{|| m_{0\rightarrow i}(\mathbf{x}_0+\delta\mathbf{x}_0) - m_{0 \rightarrow i}(\mathbf{x}_0) ||}{|| \mathbf{M}_{i,0}\delta\mathbf{x}_0||} - 1 \end{vmatrix} \times 100.
 \end{equation}
 
 \begin{figure}[ht]
@@ -133,7 +133,11 @@ The validity of this assumption depends on how nonlinear the model is, the lengt
     \label{fig:tlm_error}
 \end{figure}
 
-In figure \ref{fig:tlm_error} we can see that our TLM for DALECV2 performs very well after being run forward a year with less than a $1\%$ error. By the second year, we see some peaks in our error in spring and autumn; this is where functions controlling leaf on and leaf off in the nonlinear DALECV2 have gone out of phase with the TLM, as the TLM diverges from the nonlinear model. Even at these peaks our error is still reasonable, reaching a maximum at $7\%$ and then coming back to around $1\%$. 
+In figure \ref{fig:tlm_error} we can see that our TLM for DALECV2 performs very well after being run forward a year with less than a $1\%$ error. By the second year, we see some peaks in our error in spring and autumn; this is where functions controlling leaf on and leaf off in the nonlinear DALECV2 have gone out of phase with the TLM, as the TLM diverges from the nonlinear model. Even at these peaks our error is still reasonable, reaching a maximum at $7\%$ and then coming back to around $1\%$. It was also shown that for the relative error,
+\begin{equation}
+E_r = \frac{|| m_{0\rightarrow i}(\mathbf{x}_0+\gamma\delta\mathbf{x}_0) - m_{0 \rightarrow i}(\mathbf{x}_0) ||}{|| \mathbf{M}_{i,0}\gamma\delta\mathbf{x}_0||},
+\end{equation}
+$E_r \rightarrow 0$ as $\gamma \rightarrow 0$. We also performed tests for the gradient of the cost function and for the adjoint model.
 
 In figure~\ref{fig:4dvar} we see a 4D-Var run using NEE observations and meteorological driving data from Alice Holt. Here we are using a truncated Newton method \citep{Nocedal1999} from the Python package Scipy.optimize to find the minimum of our 4D-Var cost function. Our $\textbf{x}_b$ is a parameter set found by the University of Edinburgh using the CARbon DAta-MOdel fraMework (CARDAMOM) \citep{Exbrayat2015}. This used Harmonised World Soil Database $C_{s}$ observations as initial conditions, meteorological driving data from ERA-interim and Markov chain Monte Carlo techniques to assimilate MODIS leaf area index observations over a 10 year period. 
 
@@ -166,7 +170,9 @@ From figure~\ref{fig:4dvar} we can see that after assimilating NEE observations 
 
 \section{Current Work and Future Plans}
 
-I am currently repeating the information content experiments conducted with DALECV2. While applying the measures previously used (SIC and DFS), I am also starting to work with the influence matrix, which measures the sensitivity of the analysis in observation space to the observations \citep{Cardinali2004}, and the adjoint technique proposed by \cite{Langland2004}, which approximates the sensitivity of a scalar forecast error norm to the observations. In \cite{Cardinali2004} the data assimilation problem is assumed to be Gaussian with a linear function mapping the state to observation space (\textbf{H}), such that,
+I am currently writing a report on 4D-Var with DALECV2 using the Alice Holt observations and driving data with a view to produce a paper on the subject.
+
+I am also repeating the information content experiments now using DALECV2. While applying the measures previously used (SIC and DFS), I am also starting to work with the influence matrix, which measures the sensitivity of the analysis in observation space to the observations \citep{Cardinali2004}, and the adjoint technique proposed by \cite{Langland2004}, which approximates the sensitivity of a scalar forecast error norm to the observations. In \cite{Cardinali2004} the data assimilation problem is assumed to be Gaussian with a linear function mapping the state to observation space (\textbf{H}), such that,
 \begin{equation}
 \textbf{x}_{a} = \textbf{x}_{b} + \textbf{K}(\textbf{y} - \textbf{H}\textbf{x}_{b}), \label{daupdate}
 \end{equation}
