@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  1 JUN 2015 11:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  8 JUN 2015 09:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -258,18 +258,18 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (./report4.aux)
 \openout1 = `report4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -365,71 +365,71 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 25.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 26.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 33.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
  [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Dalecdiagram.png, id=12, 705.63625pt x 410.53375pt>
+<Dalecdiagram.png, id=11, 705.63625pt x 410.53375pt>
 File: Dalecdiagram.png Graphic file (type png)
  <use Dalecdiagram.png>
-Package pdftex.def Info: Dalecdiagram.png used on input line 51.
+Package pdftex.def Info: Dalecdiagram.png used on input line 52.
 (pdftex.def)             Requested size: 234.8775pt x 136.64796pt.
 
-[2 <./Dalecdiagram.png>] [3] <tlm_error.png, id=28, 1300.86pt x 667.0521pt>
+[2 <./Dalecdiagram.png>] [3] <tlm_error.png, id=27, 1300.86pt x 667.0521pt>
 File: tlm_error.png Graphic file (type png)
 
 <use tlm_error.png>
-Package pdftex.def Info: tlm_error.png used on input line 131.
+Package pdftex.def Info: tlm_error.png used on input line 132.
 (pdftex.def)             Requested size: 281.85587pt x 144.52284pt.
- <ah_assim_edinpvals.png, id=29, 1495.989pt x 821.7099pt>
+ <ah_assim_edinpvals.png, id=28, 1495.989pt x 821.7099pt>
 File: ah_assim_edinpvals.png Graphic file (type png)
 
 <use ah_assim_edinpvals.png>
-Package pdftex.def Info: ah_assim_edinpvals.png used on input line 146.
+Package pdftex.def Info: ah_assim_edinpvals.png used on input line 147.
 (pdftex.def)             Requested size: 422.77664pt x 232.22125pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./tlm_error.png>] <scatterobsvsmodfb.png, id=36, 578.16pt x 433.62pt>
+[4 <./tlm_error.png>] <scatterobsvsmodfb.png, id=35, 578.16pt x 433.62pt>
 File: scatterobsvsmodfb.png Graphic file (type png)
 
 <use scatterobsvsmodfb.png>
-Package pdftex.def Info: scatterobsvsmodfb.png used on input line 157.
+Package pdftex.def Info: scatterobsvsmodfb.png used on input line 158.
 (pdftex.def)             Requested size: 164.41353pt x 123.30508pt.
 
-<scatterobsvsmodfa.png, id=37, 578.16pt x 433.62pt>
+<scatterobsvsmodfa.png, id=36, 578.16pt x 433.62pt>
 File: scatterobsvsmodfa.png Graphic file (type png)
 
 <use scatterobsvsmodfa.png>
-Package pdftex.def Info: scatterobsvsmodfa.png used on input line 163.
+Package pdftex.def Info: scatterobsvsmodfa.png used on input line 164.
 (pdftex.def)             Requested size: 164.41353pt x 123.30508pt.
  [5 <./ah_assim_edinpvals.png> <./scatterobsvsmodfb.png> <./scatterobsvsmodfa.p
 ng>]
-<365days_nee.png, id=46, 771.8436pt x 625.8582pt>
+<365days_nee.png, id=45, 771.8436pt x 625.8582pt>
 File: 365days_nee.png Graphic file (type png)
  <use 365days_nee.png>
-Package pdftex.def Info: 365days_nee.png used on input line 197.
+Package pdftex.def Info: 365days_nee.png used on input line 198.
 (pdftex.def)             Requested size: 234.8775pt x 190.45195pt.
 
 [6] [7 <./365days_nee.png>] (./report4.bbl
@@ -469,13 +469,13 @@ on.html?id=epc5fX0lqRIC&pgis=1\OT1/cmr/m/n/10.95 .
 
 ) [9] (./report4.aux) ) 
 Here is how much of TeX's memory you used:
- 4933 strings out of 493117
- 71368 string characters out of 6135433
- 146124 words of memory out of 5000000
- 8275 multiletter control sequences out of 15000+600000
- 22412 words of font info for 88 fonts, out of 8000000 for 9000
+ 4924 strings out of 493117
+ 71214 string characters out of 6135433
+ 146138 words of memory out of 5000000
+ 8266 multiletter control sequences out of 15000+600000
+ 20139 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,43p,1511b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,9n,43p,1511b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
@@ -485,20 +485,19 @@ ts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report4.pdf (9 pages, 1013181 bytes).
+mr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on report4.pdf (9 pages, 1003522 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -24,7 +24,7 @@ Four-dimensional variational data assimilation (4D-Var) has been used extensivel
 
 \subsection{4D-Var}
 
-In 4D-Var we aim to maximise the probability of our initial state $\textbf{x}_0$ given a set of observations $\textbf{y}$, $P(\textbf{x}_0|\textbf{y})$, over some time window, $N$. $P(\textbf{x}_0|\textbf{y})$ is maximised by minimising a cost function $J(\textbf{x})$ derived from Baye's Theorem \citep{lewis2006dynamic}. The cost function is given as,
+In 4D-Var we aim to maximise the probability of our initial state $\textbf{x}_0$ given a set of observations $\textbf{y}$, $P(\textbf{x}_0|\textbf{y})$, over some time window, $N$. $P(\textbf{x}_0|\textbf{y})$ is maximised by minimising a cost function $J(\textbf{x})$ derived from Bayes Theorem \citep{lewis2006dynamic}. The cost function is given as,
 
 \begin{equation}
 J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}_b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}_b)+\frac{1}{2}\sum_{i=0}^{N}(\textbf{y}_i-h_i(\textbf{x}_i))^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-h_i(\textbf{x}_i)),
@@ -36,7 +36,7 @@ where $\textbf{x}_b$ is our background and acts as our initial guess to our stat
 \nabla J(\textbf{x}_0) = \textbf{B}^{-1}(\textbf{x}_0-\textbf{x}_b)-\sum_{i=0}^{N}\textbf{M}_{i,0}^{T}\textbf{H}_i^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-h_i(\textbf{x}_i)),
 \end{equation}
 
-where $\textbf{H}_i = \frac{\delta h_i(\textbf{x}_i)}{\delta\textbf{x}_i}$ is our linearized observation operator and $\mathbf{M}_{i,0}=\mathbf{M}_{i-1}\mathbf{M}_{i-2}\cdots\mathbf{M}_0$ is our tangent linear model with $\mathbf{M}_i=\frac{\delta m_{i}(\textbf{x}_{i})}{\delta \textbf{x}_{i}}$. We can rewrite the cost function and its gradient to avoid the sum notation as,
+where $\textbf{H}_i = \frac{\partial h_i(\textbf{x}_i)}{\partial\textbf{x}_i}$ is our linearized observation operator and $\mathbf{M}_{i,0}=\mathbf{M}_{i-1}\mathbf{M}_{i-2}\cdots\mathbf{M}_0$ is our tangent linear model with $\mathbf{M}_i=\frac{\partial m_{i}(\textbf{x}_{i})}{\partial \textbf{x}_{i}}$. We can rewrite the cost function and its gradient to avoid the sum notation as,
 
 \begin{equation}
 J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}_b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}_b)+\frac{1}{2}(\hat{\textbf{y}}-\hat{h}(\textbf{x}_0))^{T}\hat{\textbf{R}}^{-1}(\hat{\textbf{y}}-\hat{h}(\textbf{x}_0)) \label{costfn}
@@ -120,33 +120,35 @@ In order to find the tangent linear model (TLM) for DALEC2 we need to find the d
 
 In 4D-Var we assume the tangent linear hypothesis,
 \begin{equation}
-m_{0\rightarrow i}(\mathbf{x}_0+\delta\mathbf{x}_0) \approx m_{0 \rightarrow i}(\mathbf{x}_0) + \mathbf{M}_{i,0}\delta\mathbf{x}_0. \label{TLH}
+m_{0\rightarrow i}(\mathbf{x}_0+\gamma \delta\mathbf{x}_0) \approx m_{0 \rightarrow i}(\mathbf{x}_0) + \mathbf{M}_{i,0}\gamma \delta\mathbf{x}_0. \label{TLH}
 \end{equation}
-The validity of this assumption depends on how nonlinear the model is, the length of the assimilation window and the size of the perturbation $\delta\mathbf{x}_0$. We can test the validity for DALEC by taking our initial states from the appendix for $\mathbf{x}_0$ and a $5\%$ perturbation for $\delta\mathbf{x}_0$. We then rearrange equation \ref{TLH} to find, 
+The validity of this assumption depends on how nonlinear the model is, the length of the assimilation window and the size of the perturbation $\delta\mathbf{x}_0$. We can test this by rearranging equation~\ref{TLH} to find the relative error,
 \begin{equation}
-\text{percentage error in TLM} = \begin{vmatrix} \frac{m_{0\rightarrow i}(\mathbf{x}_0+\delta\mathbf{x}_0) - m_{0 \rightarrow i}(\mathbf{x}_0)}{ \mathbf{M}_{i,0}\delta\mathbf{x}_0} - 1 \end{vmatrix} \times 100.
+E_R=\frac{||m_{0\rightarrow i}(\mathbf{x}_0+\gamma \delta\mathbf{x}_0) - m_{0 \rightarrow i}(\mathbf{x}_0)||}{||\mathbf{M}_{i,0}\gamma\delta\mathbf{x}_0||}, \label{tlmtest}
+\end{equation}
+where we should have $E_R \rightarrow 0$ as $\gamma \rightarrow 0$. In figure~\ref{fig:tlm} we have plotted equation~\ref{tlmtest} for DALEC2 with a TLM evolving our state 731 days forward in time for a $5\%$ perturbation $\delta \textbf{x}_0$. Figure~\ref{fig:tlm} shows that our TLM behaves as expected for values of $\gamma$ approaching $0$.
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{testtlmer.png}
+    \caption{Plot of the tangent linear model test function for DALEC2, for a TLM evolving our state 731 days forward in time and a $5\%$ perturbation, $\delta \textbf{x}_0$.}
+    \label{fig:tlm}
+\end{figure}
+
+It is also useful to show how our TLM behaves over a time window to see how the error in our TLM grows as we evolve our state further forward in time. We again rearrange equation \ref{TLH} to find, 
+\begin{equation}
+\text{percentage error in TLM} = \begin{vmatrix} \frac{||m_{0\rightarrow i}(\mathbf{x}_0+\delta\mathbf{x}_0) - m_{0 \rightarrow i}(\mathbf{x}_0)||}{|| \mathbf{M}_{i,0}\delta\mathbf{x}_0||} - 1 \end{vmatrix} \times 100.
 \end{equation}
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{tlm_error.png}
-    \caption{Plot of the percentage error in our tangent linear model for DALEC2 when evolving our state forward over a period of two years.}
+    \caption{Plot of the percentage error in our tangent linear model for DALEC2 when evolving our state forward over a period of two years with a $5\%$ perturbation, $\delta \textbf{x}_0$.}
     \label{fig:tlm_error}
 \end{figure}
 
 In figure \ref{fig:tlm_error} we can see that our TLM for DALEC2 performs very well after being run forward a year with less than a $1\%$ error. By the second year we see some peaks in our error in spring and autumn, this is where our leaf on and leaf off functions in the TLM have gone out of phase with the nonlinear DALEC2. Even at these peaks our error is still reasonable reaching a maximum at $7\%$ and then coming back to around $1\%$. 
-
-Maybe also show tangent linear model behaves as we expect with, for small perturbations $\gamma\delta\textbf{x}_0$ we have
-\begin{equation}
-m_{0\rightarrow i}(\mathbf{x}_0+\gamma \delta\mathbf{x}_0) - m_{0 \rightarrow i}(\mathbf{x}_0) \approx\mathbf{M}_{i,0}\gamma\delta\mathbf{x}_0.
-\end{equation}
-If we then plot the relative error
-\begin{equation}
-E_R=\frac{m_{0\rightarrow i}(\mathbf{x}_0+\gamma \delta\mathbf{x}_0) - m_{0 \rightarrow i}(\mathbf{x}_0)}{\mathbf{M}_{i,0}\gamma\delta\mathbf{x}_0}
-\end{equation}
-as $\gamma \rightarrow 0$ we should have that $E_R \rightarrow 0$.
-
-PLOT
 
 \subsubsection{Test of adjoint model} 
 
@@ -158,18 +160,37 @@ for any inner product $<, >$ and perturbation $\delta \textbf{x}_0$. We can use 
 
 \subsubsection{Gradient test} \label{sec:testgrad}
 
-For our cost function $J$ and its gradient $\nabla J$ we can check that we have coded the $\nabla J$ correctly using the identity
+For our cost function $J$ and its gradient $\nabla J$ we can check that we have coded $\nabla J$ correctly using the identity,
 \begin{equation}
 f(\alpha)=\frac{J( \textbf{x}_0 + \alpha \textbf{h}) - J(\textbf{x}_0)}{\alpha \textbf{h}^{T} \nabla J(\textbf{x}_0)} = 1 + O(\alpha),
 \end{equation}
-where $\textbf{h}$ is a vector of unit length, which we can take to be $\nabla J(\textbf{x}_0)||\nabla J(\textbf{x}_0)||^{-1}$. Maybe also consider $\textbf{h}=\textbf{x}_0||\textbf{x}_0||^{-1}$?? In plot REF we can see that as $\alpha \rightarrow 0$ we have $f(\alpha) - 1 \rightarrow 1$ before $\alpha$ gets too close to machine zero. This gives us confidence that the gradient of our cost function is behaving as expected.
+where $\textbf{h}$ is a vector of unit length. For small values of $\alpha$ not too close to machine zero we should have $f(\alpha)$ close to 1. In figure~\ref{fig:testgradcostone} we have plotted $f(\alpha)$ for a 731 day assimilation window with $\textbf{h}=\textbf{x}_0||\textbf{x}_0||^{-1}$, we can see that $f(\alpha) \rightarrow 1$ as $\alpha \rightarrow 0$, as expected.
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{testgradcost.png}
-    \caption{Test of the gradient of the cost function. As $\alpha \rightarrow 0$ we have $abs(1 - f(\alpha)) \rightarrow 0$ up to $O(\alpha) = 10^{-4}$ where we have gone past the precision of the computer.}
+    \includegraphics[width=0.8\textwidth]{gradtestone.png}
+    \caption{Test of the gradient of the cost function for a 731 day assimilation window with $\textbf{h}=\textbf{x}_0||\textbf{x}_0||^{-1}$.}
+    \label{fig:testgradcostone}
+\end{figure}
+
+We can also plot $|f(\alpha)-1|$, where we expect $|f(\alpha)-1| \rightarrow 0$ as $\alpha \rightarrow 0$.  In figure~\ref{fig:testgradcost} we have plotted $|f(\alpha)-1|$ for the same conditions as in figure~\ref{fig:testgradcostone}, we can see that $|f(\alpha) - 1| \rightarrow 0$ as $\alpha \rightarrow 0$, as expected (before $|f(\alpha)-1|$ gets too close to machine zero at $O(\alpha) = 10^{-5}$). This gives us confidence that the gradient of our cost function is behaving as expected.
+
+
+%$\nabla J(\textbf{x}_0)||\nabla J(\textbf{x}_0)||^{-1}$. 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{testgradcost1.png}
+    \caption{Test of the gradient of the cost function, $|f(\alpha) -1|$. As $\alpha \rightarrow 0$ we have $abs(1 - f(\alpha)) \rightarrow 0$ up to $O(\alpha) = 10^{-4}$ where we have gone past the precision of the computer.}
     \label{fig:testgradcost}
 \end{figure}
+
+\section{Results}
+
+
+\section{Discussion}
+
+
+\section{Conclusion}
 
 
 \bibliography{../PhD}{}
