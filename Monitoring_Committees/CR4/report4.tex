@@ -134,11 +134,11 @@ The validity of this assumption depends on how nonlinear the model is, the lengt
     \label{fig:tlm_error}
 \end{figure}
 
-In figure \ref{fig:tlm_error} we can see that our TLM for DALECV2 performs very well after being run forward a year with less than a $1\%$ error. By the second year, we see some peaks in our error in spring and autumn; this is where functions controlling leaf on and leaf off in the nonlinear DALECV2 have gone out of phase with the TLM, as the TLM diverges from the nonlinear model. Even at these peaks our error is still reasonable, reaching a maximum at $7\%$ and then coming back to around $1\%$. It was also shown that for the relative error,
+In figure \ref{fig:tlm_error} we can see that our TLM for DALECV2 performs very well after being run forward a year with less than a $1\%$ error. By the second year, we see some peaks in our error in spring and autumn; this is where functions controlling leaf on and leaf off in the nonlinear DALECV2 have gone out of phase with the TLM, as the TLM diverges from the nonlinear model. Even at these peaks our error is still reasonable, reaching a maximum at $7\%$ and then coming back to around $1\%$. It was also shown for the relative error,
 \begin{equation}
 E_r = \frac{|| m_{0\rightarrow i}(\mathbf{x}_0+\gamma\delta\mathbf{x}_0) - m_{0 \rightarrow i}(\mathbf{x}_0) ||}{|| \mathbf{M}_{i,0}\gamma\delta\mathbf{x}_0||},
 \end{equation}
-$E_r \rightarrow 0$ as $\gamma \rightarrow 0$. We also performed tests for the gradient of the cost function and for the adjoint model.
+that $E_r \rightarrow 0$ as $\gamma \rightarrow 0$, as expected. We also performed tests for the gradient of the cost function and for the adjoint model.
 
 In figure~\ref{fig:4dvar} we see a 4D-Var run using NEE observations and meteorological driving data from Alice Holt. Here we are using a truncated Newton method \citep{Nocedal1999} from the Python package Scipy.optimize to find the minimum of our 4D-Var cost function. Our $\textbf{x}_b$ is a parameter set found by the University of Edinburgh using the CARbon DAta-MOdel fraMework (CARDAMOM) \citep{Exbrayat2015}. This used Harmonised World Soil Database $C_{s}$ observations as initial conditions, meteorological driving data from ERA-interim and Markov chain Monte Carlo techniques to assimilate MODIS leaf area index observations over a 10 year period. 
 

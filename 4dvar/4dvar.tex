@@ -18,9 +18,40 @@
 
 \section{Introdution}
 
+Terrestrial ecosystems and oceans are responsible for removing around half of all human emitted carbon-dioxide from the atmosphere and therefore greatly reduce the effect of anthropogenic induced climate change. Terrestrial ecosystem carbon uptake is the least understood process in the global carbon cycle. It is vital that we improve understanding in order to better constrain predictions of future carbon budgets
+
 Four-dimensional variational data assimilation (4D-Var) has been used extensively in numerical weather prediction to improve forecasts. Currently efforts to use variational assimilation with carbon balance models have been limited, with sequential and Markov Chain Monte Carlo methods being more prevalent. In this report we will paramterize a model of forest carbon balance (DALEC2) using a 4D-Var scheme in order to produce better forecasts of forest carbon balance. We will use data from the research site at Alice Holt forest run by Forest Research.  
 
-\section{Methods}
+\section{Model and Data Assimilation Methods}
+
+\subsection{Alice Holt research forest}
+
+Alice Holt is a well established research forest located in Hampshire, England with observational data spanning 50 years, the site is managed by Forest Research. The flux tower site is situated in the Straits Inclosure which is a mainly deciduous part of the forest comprising of mostly oak trees with a hazel understory, although there is a bank of conifer approximately 1km north west of the flux tower site. Flux tower records of Net Ecosystem Exchange (NEE) are available from 1999 up to present day, meaning that Alice Holt has one of the longest records of flux tower data in the UK.  
+
+\subsection{The DALEC2 model}
+
+The DALEC2 model is a simple process-based model describing the carbon balance of a forest ecosystem \citep{Bloom2014} and is the new version of the original DALEC \citep{williams2005improved}. The model is constructed of six carbon pools (labile ($C_{lab}$), foliage ($C_f$), fine roots ($C_r$), woody stems and coarse roots ($C_w$), fresh leaf and fine root litter ($C_l$) and soil organic matter and coarse woody debris ($C_s$)) linked via fluxes. The aggregated canopy model (ACM) \citep{williams1997predicting} is used to calculate daily gross primary production ($GPP$) of the forest, taking meteorological driving data and the site's leaf area index (a function of $C_f$) as arguments.   
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Dalecdiagram.png}
+    \caption{Representation of the fluxes in the DALEC2 carbon balance model. Green arrows represent C allocation, purple arrows represent litter fall and decomposition fluxes, blue arrows represent respiration fluxes and the red arrow represents the feedback of foliar carbon to the $GPP$ function.}
+    \label{fig:DALEC_mod}
+\end{figure}
+
+The model equations for the carbon pools at day $t+1$ are as follows:
+
+\begin{align}
+GPP^{t} &= ACM(C_f^{t}, c_{lma}, c_{eff}, \Psi) \label{GPP}
+\\C_{lab}^{t+1}&=(1-\Phi _{on})C_{lab}^{t}+(1-f_{auto})(1-f_{fol})f_{lab}GPP^{t}, \label{daleclab}
+\\C_f^{t+1}&=(1-\Phi_{off})C_f^{t}+\Phi_{on}C_{lab}^{t}+(1-f_{auto})f_{fol}GPP^{t}, \label{dalec1}
+\\C_r^{t+1}&=(1-\theta_{roo})C_r^{t}+(1-f_{auto})(1-f_{fol})(1-f_{lab})f_{roo}GPP^{t}, 
+\\C_w^{t+1}&=(1-\theta_{woo})C_w^{t}+(1-f_{auto})(1-f_{fol})(1-f_{lab})(1-f_{roo})GPP^{t}, 
+\\C_l^{t+1}&=(1-(\theta_{lit}+\theta_{min})e^{\Theta T^{t}})C_l^{t}+\theta_{roo}C_r^{t}+\Phi_{off}C_f^{t}, 
+\\C_s^{t+1}&=(1-\theta_{som}e^{\Theta T^{t}})C_s^{t}+\theta_{woo}C_w^{t}+\theta_{min}e^{\Theta T^{t}}C_l^{t}, \label{dalec5}
+\end{align}
+
+where $T^{t}$ is the daily mean temperature, $\Psi$ represents the meteorological driving data used in the $GPP$ function and $\Phi_{on} / \Phi_{off}$ are functions controlling leaf on and leaf off. The model parameters used in equations \ref{GPP} to \ref{dalec5} and the equations used to calculate $GPP$, $\Phi_{on}$ and $\Phi_{off}$ are included in the appendix. The full details of this version of DALEC can be found in \cite{Bloom2014}.
 
 \subsection{4D-Var}
 
@@ -81,44 +112,19 @@ h_N(m_{0\rightarrow N}(\mathbf{x}_{0}))
 \end{equation}
 
 
-\subsection{The DALEC2 model}
-
-The DALEC2 model is a simple process-based model describing the carbon balance of a forest ecosystem \citep{Bloom2014} and is the new version of the original DALEC \citep{williams2005improved}. The model is constructed of six carbon pools (labile ($C_{lab}$), foliage ($C_f$), fine roots ($C_r$), woody stems and coarse roots ($C_w$), fresh leaf and fine root litter ($C_l$) and soil organic matter and coarse woody debris ($C_s$)) linked via fluxes. The aggregated canopy model (ACM) \citep{williams1997predicting} is used to calculate daily gross primary production ($GPP$) of the forest, taking meteorological driving data and the site's leaf area index (a function of $C_f$) as arguments.   
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.5\textwidth]{Dalecdiagram.png}
-    \caption{Representation of the fluxes in the DALEC2 carbon balance model. Green arrows represent C allocation, purple arrows represent litter fall and decomposition fluxes, blue arrows represent respiration fluxes and the red arrow represents the feedback of foliar carbon to the $GPP$ function.}
-    \label{fig:DALEC_mod}
-\end{figure}
-
-The model equations for the carbon pools at day $t+1$ are as follows:
-
-\begin{align}
-GPP^{t} &= ACM(C_f^{t}, c_{lma}, c_{eff}, \Psi) \label{GPP}
-\\C_{lab}^{t+1}&=(1-\Phi _{on})C_{lab}^{t}+(1-f_{auto})(1-f_{fol})f_{lab}GPP^{t}, \label{daleclab}
-\\C_f^{t+1}&=(1-\Phi_{off})C_f^{t}+\Phi_{on}C_{lab}^{t}+(1-f_{auto})f_{fol}GPP^{t}, \label{dalec1}
-\\C_r^{t+1}&=(1-\theta_{roo})C_r^{t}+(1-f_{auto})(1-f_{fol})(1-f_{lab})f_{roo}GPP^{t}, 
-\\C_w^{t+1}&=(1-\theta_{woo})C_w^{t}+(1-f_{auto})(1-f_{fol})(1-f_{lab})(1-f_{roo})GPP^{t}, 
-\\C_l^{t+1}&=(1-(\theta_{lit}+\theta_{min})e^{\Theta T^{t}})C_l^{t}+\theta_{roo}C_r^{t}+\Phi_{off}C_f^{t}, 
-\\C_s^{t+1}&=(1-\theta_{som}e^{\Theta T^{t}})C_s^{t}+\theta_{woo}C_w^{t}+\theta_{min}e^{\Theta T^{t}}C_l^{t}, \label{dalec5}
-\end{align}
-
-where $T^{t}$ is the daily mean temperature, $\Psi$ represents the meteorological driving data used in the $GPP$ function and $\Phi_{on} / \Phi_{off}$ are functions controlling leaf on and leaf off. The model parameters used in equations \ref{GPP} to \ref{dalec5} and the equations used to calculate $GPP$, $\Phi_{on}$ and $\Phi_{off}$ are included in the appendix. The full details of this version of DALEC can be found in \cite{Bloom2014}. We now see how DALEC2 can be implemented in a 4D-Var framework.
-
 %Forecast skill score, $SS = 1 - \frac{MSE_{forecast}}{MSE_{ref}}$, http://en.wikipedia.org/wiki/Forecast_skill
 
-\subsection{DALEC2 4D-Var scheme}
+\section{Testing of 4D-Var system}
 
-In our DALEC2 4D-Var scheme the state vector, $\textbf{x}_0$, corresponds to the vector of the 17 model parameters and 6 initial carbon pool values defined in the appendix. We use a diagonal approximation to our background and observational error covariance matrices so that, 
-$\textbf{B}=\underline{\sigma}_b^2 \textbf{I}$ and $\hat{\textbf{R}}=\underline{\sigma}_o^2 \textbf{I}$,
-where $\underline{\sigma}_b$ and $\underline{\sigma}_o$ are the vectors of the background and observational standard deviations respectively, these values can be found in the appendix.
+In our DALECV2 4D-Var scheme the state vector, $\textbf{x}_0$, corresponds to the vector of the 17 model parameters and 6 initial carbon pool values. We use a diagonal approximation to our background and observational error covariance matrices so that, 
+$\textbf{B}=\text{diag}(\underline{\sigma}_b^2)$ and $\hat{\textbf{R}}=\text{diag}(\underline{\sigma}_o^2 )$,
+where $\underline{\sigma}_b$ and $\underline{\sigma}_o$ are the vectors of the background and observational standard deviations respectively.
 
-In order to find the tangent linear model (TLM) for DALEC2 we need to find the derivative of the model at each time step with respect to the 17 model parameters and the 6 carbon pools. To do this we use the AlgoPy automatic differentiation package in Python REF. For our $\textbf{x}_b$ we use a parameter set found by the University of Edinburgh using the CARbon DAta-MOdel fraMework (CARDAMOM) REF. This used Harmonized World Soil Database (HWSD) $C_{s}$ observations as initial conditions, meteorological driving data from ERA-interim and Markov chain Monte Carlo (MCMC) techniques to assimilate MODIS leaf area index (LAI) observations over a 10 year period. We now have all the tools to create our 4D-Var scheme which is implemented in Python. In sections \ref{sec:testtlm} to \ref{sec:testgrad} we will show some tests of our scheme.
+In order to find the tangent linear model (TLM) for DALECV2 we need to find the derivative of the model at each time step with respect to the 17 model parameters and the 6 carbon pools. We use the AlgoPy automatic differentiation package in Python to calculate the TLM at each time step. This package uses forward mode automatic differentiation to calculate the derivative of our model. AlgoPy was selected after testing other automatic differentiation packages (PyAutoDiff and ad.py) and finding that AlgoPy could compute the TLM in the fastest time. We now have all the tools to create our 4D-Var scheme. In sections \ref{sec:testtlm} to \ref{sec:testgrad} we will show some tests of our scheme.
 
-\subsubsection{Test of tangent linear model} \label{sec:testtlm}
+\subsection{Test of tangent linear model} \label{sec:testtlm}
 
-In 4D-Var we assume the tangent linear hypothesis,
+We can have confidence that our implementation of the TLM for DALEC2 is correct as it passes relevant tests. In 4D-Var we assume the tangent linear hypothesis,
 \begin{equation}
 m_{0\rightarrow i}(\mathbf{x}_0+\gamma \delta\mathbf{x}_0) \approx m_{0 \rightarrow i}(\mathbf{x}_0) + \mathbf{M}_{i,0}\gamma \delta\mathbf{x}_0. \label{TLH}
 \end{equation}
@@ -150,17 +156,17 @@ It is also useful to show how our TLM behaves over a time window to see how the 
 
 In figure \ref{fig:tlm_error} we can see that our TLM for DALEC2 performs very well after being run forward a year with less than a $1\%$ error. By the second year we see some peaks in our error in spring and autumn, this is where our leaf on and leaf off functions in the TLM have gone out of phase with the nonlinear DALEC2. Even at these peaks our error is still reasonable reaching a maximum at $7\%$ and then coming back to around $1\%$. 
 
-\subsubsection{Test of adjoint model} 
+\subsection{Test of adjoint model} 
 
-For our TLM $\mathbf{M}_{i,0}$ and its adjoint $\mathbf{M}_{i,0}^{T}$ we have the identity
+The adjoint model we have implemented for DALEC2 passes correctness tests. For our TLM $\mathbf{M}_{i,0}$ and its adjoint $\mathbf{M}_{i,0}^{T}$ we have the identity
 \begin{equation}
 <\mathbf{M}_{i,0}\delta\textbf{x}_0, \mathbf{M}_{i,0}\delta\textbf{x}_0> = <\delta\textbf{x}_0, \mathbf{M}_{i,0}^{T}\mathbf{M}_{i,0}\delta\textbf{x}_0>
 \end{equation}
-for any inner product $<, >$ and perturbation $\delta \textbf{x}_0$. We can use this to check that our adjoint is coded correctly. 
+for any inner product $<, >$ and perturbation $\delta \textbf{x}_0$. We can use this to show that our adjoint is implemented correctly. 
 
-\subsubsection{Gradient test} \label{sec:testgrad}
+\subsection{Gradient test} \label{sec:testgrad}
 
-For our cost function $J$ and its gradient $\nabla J$ we can check that we have coded $\nabla J$ correctly using the identity,
+The 4D-Var system we have developed passes tests for the gradient of the cost function. For our cost function $J$ and its gradient $\nabla J$ we can show that we have implemented $\nabla J$ correctly using the identity,
 \begin{equation}
 f(\alpha)=\frac{J( \textbf{x}_0 + \alpha \textbf{h}) - J(\textbf{x}_0)}{\alpha \textbf{h}^{T} \nabla J(\textbf{x}_0)} = 1 + O(\alpha),
 \end{equation}
@@ -173,9 +179,7 @@ where $\textbf{h}$ is a vector of unit length. For small values of $\alpha$ not 
     \label{fig:testgradcostone}
 \end{figure}
 
-We can also plot $|f(\alpha)-1|$, where we expect $|f(\alpha)-1| \rightarrow 0$ as $\alpha \rightarrow 0$.  In figure~\ref{fig:testgradcost} we have plotted $|f(\alpha)-1|$ for the same conditions as in figure~\ref{fig:testgradcostone}, we can see that $|f(\alpha) - 1| \rightarrow 0$ as $\alpha \rightarrow 0$, as expected (before $|f(\alpha)-1|$ gets too close to machine zero at $O(\alpha) = 10^{-5}$). This gives us confidence that the gradient of our cost function is behaving as expected.
-
-
+We can also plot $|f(\alpha)-1|$, where we expect $|f(\alpha)-1| \rightarrow 0$ as $\alpha \rightarrow 0$.  In figure~\ref{fig:testgradcost} we have plotted $|f(\alpha)-1|$ for the same conditions as in figure~\ref{fig:testgradcostone}, we can see that $|f(\alpha) - 1| \rightarrow 0$ as $\alpha \rightarrow 0$, as expected (before $|f(\alpha)-1|$ gets too close to machine zero at $O(\alpha) = 10^{-5}$). This gives us confidence that the gradient of our cost function is implemented correctly.
 %$\nabla J(\textbf{x}_0)||\nabla J(\textbf{x}_0)||^{-1}$. 
 \begin{figure}[ht]
     \centering
