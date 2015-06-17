@@ -150,11 +150,11 @@ It is also useful to show how our TLM behaves over a time window to see how the 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{tlm_error.png}
-    \caption{Plot of the percentage error in our tangent linear model for DALEC2 when evolving our state forward over a period of two years with a $5\%$ perturbation, $\delta \textbf{x}_0$.}
+    \caption{Plot of the percentage error in our tangent linear model for DALEC2 when evolving our state forward over a period of two years with three differing values of perturbation, $\delta \textbf{x}_0$.}
     \label{fig:tlm_error}
 \end{figure}
 
-In figure \ref{fig:tlm_error} we can see that our TLM for DALEC2 performs very well after being run forward a year with less than a $1\%$ error. By the second year we see some peaks in our error in spring and autumn, this is where our leaf on and leaf off functions in the TLM have gone out of phase with the nonlinear DALEC2. Even at these peaks our error is still reasonable reaching a maximum at $7\%$ and then coming back to around $1\%$. 
+In figure \ref{fig:tlm_error} we can see that our TLM for DALEC2 performs very well after being run forward a year with less than a $3\%$ error for all values of $\delta \textbf{x}_0$. By the second year we see some peaks in our error in spring and autumn, this is where our leaf on and leaf off functions in the TLM have gone out of phase with the nonlinear DALEC2. Even at these peaks our error is still reasonable reaching a maximum at $7\%$ and then coming back to around $1\%$. 
 
 \subsection{Test of adjoint model} 
 
@@ -162,7 +162,7 @@ The adjoint model we have implemented for DALEC2 passes correctness tests. For o
 \begin{equation}
 <\mathbf{M}_{i,0}\delta\textbf{x}_0, \mathbf{M}_{i,0}\delta\textbf{x}_0> = <\delta\textbf{x}_0, \mathbf{M}_{i,0}^{T}\mathbf{M}_{i,0}\delta\textbf{x}_0>
 \end{equation}
-for any inner product $<, >$ and perturbation $\delta \textbf{x}_0$. We can use this to show that our adjoint is implemented correctly. 
+for any inner product $<, >$ and perturbation $\delta \textbf{x}_0$. This identity has been used with differing values of $\delta \textbf{x}_0$ and $i$ to show that our adjoint model is implemented correctly.
 
 \subsection{Gradient test} \label{sec:testgrad}
 
