@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  17 JUN 2015 12:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  9 SEP 2015 15:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -223,36 +223,49 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen124
 \Gm@dimlist=\toks27
 )
-\c@theorem=\count104
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/03/24 3.9k The Babel package
 
-(./4dvar.aux)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/03/24 3.9k Babel common definitions
+\babel@savecnt=\count104
+\U@D=\dimen125
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+\c@theorem=\count105
+ (./4dvar.aux)
 \openout1 = `4dvar.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+ (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
-\scratchdimen=\dimen125
+\scratchcounter=\count106
+\scratchdimen=\dimen126
 \scratchbox=\box28
-\nofMPsegments=\count106
-\nofMParguments=\count107
+\nofMPsegments=\count107
+\nofMParguments=\count108
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count108
-\MPscratchDim=\dimen126
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen127
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
 \everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -332,103 +345,110 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+LaTeX Font Info:    Try loading font information for U+msa on input line 18.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 17.
+LaTeX Font Info:    Try loading font information for U+msb on input line 18.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 17.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 18.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-<Dalecdiagram.png, id=1, 705.63625pt x 410.53375pt>
-File: Dalecdiagram.png Graphic file (type png)
- <use Dalecdiagram.png>
-Package pdftex.def Info: Dalecdiagram.png used on input line 37.
-(pdftex.def)             Requested size: 234.8775pt x 136.64796pt.
-
-[1
+) [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2 <./Dalecdiagram.png>] [3] <testtlmer.png, id=28, 1300.86pt x 669.9429pt>
+<Dalecdiagram.png, id=12, 705.63625pt x 410.53375pt>
+File: Dalecdiagram.png Graphic file (type png)
+ <use Dalecdiagram.png>
+Package pdftex.def Info: Dalecdiagram.png used on input line 61.
+(pdftex.def)             Requested size: 234.8775pt x 136.64796pt.
+
+[2] [3 <./Dalecdiagram.png>] <testtlmer.png, id=27, 1300.86pt x 669.9429pt>
 File: testtlmer.png Graphic file (type png)
 
 <use testtlmer.png>
-Package pdftex.def Info: testtlmer.png used on input line 140.
+Package pdftex.def Info: testtlmer.png used on input line 164.
 (pdftex.def)             Requested size: 375.80544pt x 193.53221pt.
- <tlm_error.png, id=29, 1300.86pt x 672.8337pt>
+ [4] <tlm_error.png, id=32, 1300.86pt x 672.8337pt>
 File: tlm_error.png Graphic file (type png)
 
 <use tlm_error.png>
-Package pdftex.def Info: tlm_error.png used on input line 152.
+Package pdftex.def Info: tlm_error.png used on input line 176.
 (pdftex.def)             Requested size: 375.80544pt x 194.36731pt.
- [4 <./testtlmer.png> <./tlm_error.png>]
-<gradtestone.png, id=37, 1300.86pt x 669.9429pt>
+ [5 <./testtlmer.png> <./tlm_error.png>]
+<gradtestone.png, id=40, 1300.86pt x 669.9429pt>
 File: gradtestone.png Graphic file (type png)
  <use gradtestone.png>
-Package pdftex.def Info: gradtestone.png used on input line 177.
+Package pdftex.def Info: gradtestone.png used on input line 201.
 (pdftex.def)             Requested size: 375.80544pt x 193.53221pt.
 
-<testgradcost1.png, id=38, 1300.86pt x 669.9429pt>
+<testgradcost1.png, id=41, 1300.86pt x 669.9429pt>
 File: testgradcost1.png Graphic file (type png)
  <use testgradcost1.png>
-Package pdftex.def Info: testgradcost1.png used on input line 186.
+Package pdftex.def Info: testgradcost1.png used on input line 210.
 (pdftex.def)             Requested size: 375.80544pt x 193.53221pt.
 
-(./4dvar.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 9--15
+[6 <./gradtestone.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 244.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 244.
+ [7 <./testgradcost1.png>] (./4dvar.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 16--22
 []\OT1/cmr/m/n/10.95 Anthony Bloom and Mathew Williams.  Con-strain-ing ecosys-
 tem car-bon dy-nam-
  []
 
 
-Underfull \hbox (badness 5302) in paragraph at lines 9--15
+Underfull \hbox (badness 5302) in paragraph at lines 16--22
 \OT1/cmr/m/n/10.95 ics in a data-limited world: in-te-grat-ing eco-log-i-cal ``
 com-mon sense" in a model-
  []
 
 
-Underfull \hbox (badness 3250) in paragraph at lines 9--15
+Underfull \hbox (badness 3250) in paragraph at lines 16--22
 \OT1/cmr/m/n/10.95 data-fusion frame-work.  \OT1/cmr/m/it/10.95 Bio-geo-science
 s Dis-cus-sions\OT1/cmr/m/n/10.95 , 11(8):12733--12772, 2014.  URL
  []
 
-[5 <./gradtestone.png>]) [6 <./testgradcost1.png>] (./4dvar.aux) ) 
+) [8] [9] (./4dvar.aux) ) 
 Here is how much of TeX's memory you used:
- 3694 strings out of 493117
- 49218 string characters out of 6135433
- 125498 words of memory out of 5000000
- 7062 multiletter control sequences out of 15000+600000
- 15365 words of font info for 59 fonts, out of 8000000 for 9000
+ 4127 strings out of 493117
+ 55116 string characters out of 6135433
+ 136008 words of memory out of 5000000
+ 7480 multiletter control sequences out of 15000+600000
+ 15672 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,43p,865b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 4dvar.pdf (6 pages, 492037 bytes).
+ 38i,12n,43p,1515b,253s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmbx8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on 4dvar.pdf (9 pages, 510138 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 113 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
