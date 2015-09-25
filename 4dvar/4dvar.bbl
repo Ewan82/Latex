@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -25,6 +25,18 @@ Dennis Baldocchi.
   learned from a global network of carbon dioxide flux measurement systems.
 \newblock \emph{Australian Journal of Botany}, 56\penalty0 (1):\penalty0 1--26,
   2008.
+
+\bibitem[Baldocchi et~al.(2015)Baldocchi, Sturtevant, and
+  Contributors]{Baldocchi2015}
+Dennis Baldocchi, Cove Sturtevant, and Fluxnet Contributors.
+\newblock {Does day and night sampling reduce spurious correlation between
+  canopy photosynthesis and ecosystem respiration?}
+\newblock \emph{Agricultural and Forest Meteorology}, 207:\penalty0 117--126,
+  2015.
+\newblock ISSN 01681923.
+\newblock \doi{10.1016/j.agrformet.2015.03.010}.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S016819231500088X}.
 
 \bibitem[Bloom and Williams(2015)]{Bloom2015}
 A.~A. Bloom and M.~Williams.

@@ -294,7 +294,7 @@ In figur~\ref{fig:4dvardiagBR} we have plotted assimilation and forecast results
     \label{fig:forecastscatBR}
 \end{figure}
 
-To see how well our forecast performs after assimilation we show a scatter plot of modelled NEE against observed NEE in figure~\ref{fig:forecastscatBR}. Here we have a Root-Mean-Square Error (RMSE) of $4.22 \text{gCm}^{-2}$ and a bias of $-0.3 \text{gCm}^{-2}$ for our forecast of NEE, whereas our analysis (1999-2000) has a RMSE of $1.36 \text{gCm}^{-2}$ and a bias of $-0.03 \text{gCm}^{-2}$. The background trajectory meanwhile has a RMSE of $3.86 \text{gCm}^{-2}$ and a bias of $-1.60 \text{gCm}^{-2}$ in the analysis window (1999-2000) and the same RMSE of $3.86 \text{gCm}^{-2}$ but a bias of $-1.36 \text{gCm}^{-2}$ during the forecast period (2000-2014). So we see that although using $\textbf{B}_{diag}$ and $\hat{\textbf{R}}_{diag}$ in our assimilation has considerably reduced the RMSE in our analysis period, it has also increased the RMSE in our forecast of NEE. However it has reduced the bias in the models forecast considerably from $-1.36 \text{gCm}^{-2}$ to $-0.3 \text{gCm}^{-2}$.
+To see how well our forecast performs after assimilation we show a scatter plot of modelled NEE against observed NEE in figure~\ref{fig:forecastscatBR}. Here we have a Root-Mean-Square Error (RMSE) of $4.22 \text{gCm}^{-2}$ and a bias of $-0.3 \text{gCm}^{-2}$ for our forecast of NEE, whereas our analysis (1999-2000) has a RMSE of $1.36 \text{gCm}^{-2}$ and a bias of $-0.03 \text{gCm}^{-2}$. The background trajectory meanwhile has a RMSE of $3.86 \text{gCm}^{-2}$ and a bias of $-1.60 \text{gCm}^{-2}$ in the analysis window (1999-2000) and the same RMSE of $3.86 \text{gCm}^{-2}$ but a bias of $-1.36 \text{gCm}^{-2}$ during the forecast period (2000-2014). So we see that although using $\textbf{B}_{diag}$ and $\hat{\textbf{R}}_{diag}$ in our assimilation has considerably reduced the RMSE in our analysis period, it has also increased the RMSE in our forecast of NEE. However it has reduced the bias in the models forecast considerably from $-1.36 \text{gCm}^{-2}$ to $-0.3 \text{gCm}^{-2}$. The bias in our background comes from a constant under prediction of the more extreme negative values of NEE and this leads to considerably worse results than our analysis and its forecast for total forest carbon uptake. 
 
 {\color{red} **Maybe include something about the estimated reduction in error for parameter and state variables using the diagonal terms of \textbf{B} and \textbf{A} (analysis error covariance matrix). How best to compare and present these?}
 
@@ -337,8 +337,10 @@ Here we use $\textbf{B}_{diag}$ and $\hat{\textbf{R}}_{corr}$ (as defined in sec
 \subsection{Experiment D}
 
 In the final experiment we use $\textbf{B}_{corr}$ and $\hat{\textbf{R}}_{corr}$ in our assimilation. From figure~\ref{fig:4dvaredcBcorR} we see that using both correlated matrices gives similar results as experiment B when $\textbf{B}_{corr}$ is used with $\hat{\textbf{R}}_{diag}$. However using $\hat{\textbf{R}}_{corr}$ in addition to $\textbf{B}_{corr}$ provides similar improvements as in experiment C. The number of function evaluations taken for our minimisation routine to converge is the lowest yet at 316. Also our forecast RMSE is reduced again still from results in experiment B to $2.38 \text{gCm}^{-2}$. Using both matrices appears to combine the beneficial effects described in both section~\ref{sec:expb} and section~\ref{sec:expc}.
+ 
+From our results in experiment D the forecasted (2000-2014) total carbon uptake for our research site is $5.04\times 10^6 \text{kgC}$ ({\color{red} try to find better units for this?}). In comparison our less accurate results from experiment A (using $\textbf{B}_{diag}$ and $\hat{\textbf{R}}_{diag}$) predict a total carbon uptake of $5.26 \times 10^6\text{kgC}$, a difference of $2.25 \times 10^5\text{kgC}$. This is quite a substantial difference as we are considering the carbon uptake of a small ($\sim 0.93\text{km}^2$) research site only.
 
-\begin{figure}[ht]
+ \begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth]{b_edcr_corr_cor03_tau4_cutoff4_var05_4dvar.png}
     \caption{One year assimilation and fourteen year forecast of Alice Holt NEE with DALEC2, blue dotted line: background model trajectory, green line: analysis and forecast after assimilation, red dots: observations from Alice Holt flux site with error bars. Number of function evaluations needed for minimisation to converge: 316.}
@@ -357,23 +359,29 @@ In the final experiment we use $\textbf{B}_{corr}$ and $\hat{\textbf{R}}_{corr}$
 \section{Discussion}
 
 \begin{itemize}
-\item Improving B improves forecast for 1 year window. What is the effect on the analysis, if any?
-\item Using correlated B improves convergence time (check this with new experiments and maybe also CVT)
-\item Using correlated R improves forecast both for diagonal and correlated B but change is not significant 
-\item Include sum of NEE forecast as a way to see the difference that the correlated matrices give us!
-\item Include estimate of variances in parameters and state (at least try to see results).
-\item Here the $\hat{\mathbf{R}}_{corr}$ used in our experiments has improved our forecast of NEE, however many other choices of $\hat{\mathbf{R}}_{corr}$ tested for this paper degrade the forecast. This suggests a more diagnostic approach is needed for the calculation of serial correlations in $\hat{\mathbf{R}}$. One option would be to adapt the Deroziers diagnostic \citep{desroziers2005diagnosis}, which has been used successfully in NWP for diagnosing observation error correlations at the same time, and extending this technique to diagnose serial correlations.
+\item In this paper we have implemented the DALEC2 functional ecology model in a 4D-Var data assimilation scheme, building an adjoint of the DALEC2 model and applying rigorous tests to our scheme. Using 4D-Var can provide much quicker assimilation results than MCMC techniques as we have knowledge of the derivative of the model, however we do also assume that the problem is Gaussian whereas MCMC techniques do not. We have shown that 4D-Var is a valid tool for improving the DALEC2 model estimate of NEE.
+
+\item We then considered the nature of background and observational errors. The effect of specifying parameter-state correlations in our background information and serial correlations between our observation errors was explored.
+
+\item The technique presented here to specify ${\mathbf{B}}_{corr}$ has been shown to significantly improve forecasts of NEE. Other techniques were also tested to create a correlated $\textbf{B}$, one of which added correlations to $\textbf{B}$ using the DALEC2 model. Here we evolved an ensemble of state vectors over the length of the chosen assimilation window, then taking the covariance of the evolved ensemble. This gave us a \textbf{B} with parameter-state and state-state correlations, but no parameter-parameter correlations as the parameters are not updated by the model. Using the $\textbf{B}$ created with this method also improved assimilation results considerably in some cases. Many different tests were run using different background vectors and variances and it was found that specifying some form of correlations in $\textbf{B}$ always made some improvement to the results of our assimilation.
+
+\item Here the $\hat{\mathbf{R}}_{corr}$ used in our experiments has improved our forecast of NEE, however many other choices of $\hat{\mathbf{R}}_{corr}$ tested for this paper degraded the forecast. This is probably due to specifying unrealistic correlations and suggests a more diagnostic approach is needed for the calculation of serial correlations in $\hat{\mathbf{R}}$. One option would be to adapt the Deroziers diagnostic \citep{desroziers2005diagnosis}, which has been used successfully in NWP for diagnosing observation error correlations for observations taken at the same time, and extending this technique to diagnose serial correlations.
+
 \item Using the form of $\hat{\mathbf{R}}$ given in this paper will allow us to address the problem of some data streams with a much higher number of observations having a higher weight in the assimilation scheme as specifying serial correlations has been shown to reduce the weight given to the mean of the observations \citep{jarvinen1999variational}.
 
-This method of specifying $\hat{\mathbf{R}}$ will also allow us to include correlations between other variables and build in correlations as shown in Baldocchi Reco paper!
+\item Specifying serial correlations also allows us to address the issues discussed by \citet{richardson2010estimating}, that when assimilating multiple data streams more frequently sampled observation types (such as NEE) have much more impact on our assimilation than data streams sampled less frequently. Specifying serial correlations between observations of the same type has the effect of reducing the weight given to the mean of the observations \citep{jarvinen1999variational}, thus allowing less frequent data streams to have more impact on the assimilation. 
+
+Using the form of $\hat{\mathbf{R}}$ given in this paper for specifying serial correlations will also allow us to specify serial correlations between different observation types. When running the model with a day-night time step this will allow us to build in the type of correlations investigated by \citet{Baldocchi2015} between ecosystem respiration and canopy photosynthesis.
+
+\item We have also seen an improvement in convergence times for our minimisation routine when specifying correlations in our $\textbf{B}$ and $\hat{\mathbf{R}}$ matrices, this has been the case in most other tests not presented here. This is due to the correlated matrices constraining our assimilation more and making the problem less ill-posed.
 \end{itemize} 
 
 \section{Conclusion}
 
 \begin{itemize}
-\item 4DVar is a valid tool for improving our DALEC2 model estimate of NEE.
-\item Using B created with ecological dynamical constraints improves our forecast after assimilation (sometimes greatly) in comparison to using diagonal B.
-\item Using a correlated R improves our forecast, not as much as using the EDCB but this is expected as we are not adding as much information with our correlations in R.
+\item 4DVar is a valid tool for improving the DALEC2 model estimate of NEE.
+\item Including correlations in the background error covariance matrix improves our forecast after assimilation (sometimes greatly) in comparison to using a diagonal representation of $\textbf{B}$.
+\item Specifying serial correlations between observation errors in $\hat{\textbf{R}}$ can improve our forecast, however more work is needed to find a way to properly diagnose these correlations.
 \end{itemize}
 
 \bibliography{../PhD}{}
