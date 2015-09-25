@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  25 SEP 2015 11:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  25 SEP 2015 13:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -427,14 +427,14 @@ input line 245.
 File: bdiagNone_4dvar.png Graphic file (type png)
 
 <use bdiagNone_4dvar.png>
-Package pdftex.def Info: bdiagNone_4dvar.png used on input line 283.
+Package pdftex.def Info: bdiagNone_4dvar.png used on input line 284.
 (pdftex.def)             Requested size: 281.85587pt x 153.39471pt.
 
 <bdiagNone_forecast_scatter.png, id=62, 622.2447pt x 640.3122pt>
 File: bdiagNone_forecast_scatter.png Graphic file (type png)
 
 <use bdiagNone_forecast_scatter.png>
-Package pdftex.def Info: bdiagNone_forecast_scatter.png used on input line 292.
+Package pdftex.def Info: bdiagNone_forecast_scatter.png used on input line 293.
 
 (pdftex.def)             Requested size: 140.92793pt x 145.02151pt.
  [10] [11 <./bdiagNone_4dvar.png> <./bdiagNone_forecast_scatter.png>]
@@ -442,14 +442,14 @@ Package pdftex.def Info: bdiagNone_forecast_scatter.png used on input line 292.
 File: b_edcNone_4dvar.png Graphic file (type png)
 
 <use b_edcNone_4dvar.png>
-Package pdftex.def Info: b_edcNone_4dvar.png used on input line 307.
+Package pdftex.def Info: b_edcNone_4dvar.png used on input line 308.
 (pdftex.def)             Requested size: 281.85587pt x 153.39471pt.
 
 <b_edcNone_forecast_scatter.png, id=72, 622.2447pt x 640.3122pt>
 File: b_edcNone_forecast_scatter.png Graphic file (type png)
 
 <use b_edcNone_forecast_scatter.png>
-Package pdftex.def Info: b_edcNone_forecast_scatter.png used on input line 314.
+Package pdftex.def Info: b_edcNone_forecast_scatter.png used on input line 315.
 
 (pdftex.def)             Requested size: 140.92793pt x 145.02151pt.
  [12 <./b_edcNone_4dvar.png> <./b_edcNone_forecast_scatter.png>]
@@ -458,7 +458,7 @@ t>
 File: bdiagr_corr_cor03_tau4_cutoff4_var05_4dvar.png Graphic file (type png)
  <use bdiagr_corr_cor03_tau4_cutoff4_var05_4dvar.png>
 Package pdftex.def Info: bdiagr_corr_cor03_tau4_cutoff4_var05_4dvar.png used on
- input line 325.
+ input line 326.
 (pdftex.def)             Requested size: 281.85587pt x 153.39471pt.
 
 <bdiagr_corr_cor03_tau4_cutoff4_var05_forecast_scatter.png, id=79, 622.2447pt x
@@ -467,7 +467,7 @@ File: bdiagr_corr_cor03_tau4_cutoff4_var05_forecast_scatter.png Graphic file (t
 ype png)
  <use bdiagr_corr_cor03_tau4_cutoff4_var05_forecast_scatter.png>
 Package pdftex.def Info: bdiagr_corr_cor03_tau4_cutoff4_var05_forecast_scatter.
-png used on input line 332.
+png used on input line 333.
 (pdftex.def)             Requested size: 140.92793pt x 145.02151pt.
 
 [13 <./bdiagr_corr_cor03_tau4_cutoff4_var05_4dvar.png> <./bdiagr_corr_cor03_tau
@@ -477,7 +477,7 @@ t>
 File: b_edcr_corr_cor03_tau4_cutoff4_var05_4dvar.png Graphic file (type png)
  <use b_edcr_corr_cor03_tau4_cutoff4_var05_4dvar.png>
 Package pdftex.def Info: b_edcr_corr_cor03_tau4_cutoff4_var05_4dvar.png used on
- input line 345.
+ input line 346.
 (pdftex.def)             Requested size: 281.85587pt x 153.39471pt.
 
 <b_edcr_corr_cor03_tau4_cutoff4_var05_forecast_scatter.png, id=87, 622.2447pt x
@@ -486,18 +486,18 @@ File: b_edcr_corr_cor03_tau4_cutoff4_var05_forecast_scatter.png Graphic file (t
 ype png)
  <use b_edcr_corr_cor03_tau4_cutoff4_var05_forecast_scatter.png>
 Package pdftex.def Info: b_edcr_corr_cor03_tau4_cutoff4_var05_forecast_scatter.
-png used on input line 352.
+png used on input line 353.
 (pdftex.def)             Requested size: 140.92793pt x 145.02151pt.
 
 [14 <./b_edcr_corr_cor03_tau4_cutoff4_var05_4dvar.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 362.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 363.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 362.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 363.
  [15 <./b_edcr_corr_cor03_tau4_cutoff4_var05_forecast_scatter.png>] (./4dvar.bb
 l
 Underfull \hbox (badness 1178) in paragraph at lines 11--21
@@ -525,7 +525,7 @@ Overfull \hbox (48.51157pt too wide) in paragraph at lines 170--176
 on.html?id=epc5fX0lqRIC&pgis=1\OT1/cmr/m/n/10.95 . 
  []
 
-) [18] [19] (./4dvar.aux)
+) [18] (./4dvar.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -533,11 +533,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4312 strings out of 493117
  59687 string characters out of 6135433
- 138944 words of memory out of 5000000
+ 138945 words of memory out of 5000000
  7646 multiletter control sequences out of 15000+600000
  15672 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,43p,1651b,258s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,43p,1704b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
@@ -555,10 +555,10 @@ ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 4dvar.pdf (19 pages, 1670475 bytes).
+Output written on 4dvar.pdf (18 pages, 1670026 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 161 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
