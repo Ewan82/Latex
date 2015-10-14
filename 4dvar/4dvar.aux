@@ -11,7 +11,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introdution}{1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Tree blurb}{1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2}DA paragraph}{1}}
-\citation{zobitz2011primer,fox2009reflex}
+\citation{zobitz2011primer,fox2009reflex,richardson2010estimating,Quaife2008,Zobitz2014,Niu2014}
 \citation{williams2005improved}
 \citation{braswell2005estimating}
 \citation{delahaies2013regularization}
@@ -30,7 +30,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {2}Model and Data Assimilation Methods}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Alice Holt research forest}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}The DALEC2 model}{3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Representation of the fluxes in the DALEC2 carbon balance model. Green arrows represent C allocation, purple arrows represent litter fall and decomposition fluxes, blue arrows represent respiration fluxes and the red arrow represents the feedback of foliar carbon to the $GPP$ function.\relax }}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Representation of the fluxes in the DALEC2 carbon balance model. Green arrows represent C allocation, purple arrows represent litter fall and decomposition fluxes, blue arrows represent respiration fluxes and the red arrow represents the influence of leaf area index in the $GPP$ function.\relax }}{3}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:DALEC_mod}{{1}{3}}
 \citation{Bloom2015}
@@ -52,7 +52,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Plot of the tangent linear model test function for DALEC2, for a TLM evolving our state 731 days forward in time and a $5\%$ perturbation, $\delta \textbf  {x}_0$.\relax }}{5}}
 \newlabel{fig:tlm}{{2}{5}}
 \citation{Exbrayat2015}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Plot of the percentage error in our tangent linear model for DALEC2 when evolving our state forward over a period of two years with three differing values of perturbation, $\delta \textbf  {x}_0$.\relax }}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Plot of the percentage error in the tangent linear model for DALEC2 when evolving the model state forward over a period of two years with three differing values of perturbation, $\delta \textbf  {x}_0$.\relax }}{6}}
 \newlabel{fig:tlm_error}{{3}{6}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Test of adjoint model}{6}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Gradient test}{6}}
@@ -67,84 +67,63 @@
 \newlabel{sec:corB}{{2.5}{7}}
 \citation{Papale2006}
 \citation{Daley1992}
-\citation{jarvinen1999variational}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Background error correlation matrix created using method in section \ref  {sec:corB}\relax }}{8}}
 \newlabel{fig:Bcorr}{{6}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Specifying serial correlations in the observational error covariance matrix}{8}}
-\newlabel{sec:corR}{{2.6}{8}}
-\newlabel{eqn:corr_fn}{{18}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Observation error covariance matrix created using method in section \ref  {sec:corR} with $\tau = 4$, $a=0.3$ and $\eta =4$.\relax }}{9}}
-\newlabel{fig:Rcorr}{{7}{9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.7}Experiments}{9}}
-\newlabel{sec:exps}{{2.7}{9}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces The combination of error covariance matrices used in each data assimilation experiment.\relax }}{9}}
-\newlabel{table:exps_tab}{{1}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Background error correlation matrix created using method in section \ref  {sec:corB}\relax }}{8}}
+\newlabel{fig:Bcorr}{{7}{8}}
+\citation{jarvinen1999variational}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Specifying serial correlations in the observational error covariance matrix}{9}}
+\newlabel{sec:corR}{{2.6}{9}}
+\newlabel{eqn:corr_fn}{{18}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Observation error covariance matrix for the 67 observations used in assimilation created using method in section \ref  {sec:corR} with $\tau = 4$, $a=0.3$ and $\eta =4$.\relax }}{9}}
+\newlabel{fig:Rcorr}{{8}{9}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Results}{10}}
 \newlabel{sec:results}{{3}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Experiment A}{10}}
-\newlabel{sec:expa}{{3.1}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces One year assimilation and fourteen year forecast of Alice Holt NEE with DALEC2, blue dotted line: background model trajectory, green line: analysis and forecast after assimilation, red dots: observations from Alice Holt flux site with error bars. Number of function evaluations needed for minimisation to converge: 571.\relax }}{10}}
-\newlabel{fig:4dvardiagBR}{{8}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Experiments}{10}}
+\newlabel{sec:exps}{{3.1}{10}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces The combination of error covariance matrices used in each data assimilation experiment.\relax }}{10}}
+\newlabel{table:exps_tab}{{1}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Experiment A}{10}}
+\newlabel{sec:expa}{{3.2}{10}}
 \citation{jarvinen1999variational,Daley1992}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Forecast scatter plot of modelled NEE vs. observations for 2000-2014 (green dots), forecasted NEE has a root-mean squared error of $4.22 \text  {gCm}^{-2}$ between model and observations. Blue line represents 1-1 line where all green dots would lie if the model predicted the observations perfectly.\relax }}{11}}
-\newlabel{fig:forecastscatBR}{{9}{11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Experiment B}{11}}
-\newlabel{sec:expb}{{3.2}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces One year assimilation and fourteen year forecast of Alice Holt NEE with DALEC2, blue dotted line: background model trajectory, green line: analysis and forecast after assimilation, red dots: observations from Alice Holt flux site with error bars.Number of function evaluations needed for minimisation to converge: 353.\relax }}{11}}
-\newlabel{fig:4dvaredcBR}{{10}{11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Experiment C}{11}}
-\newlabel{sec:expc}{{3.3}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Forecast scatter plot of modelled NEE vs. observations for 2000-2014 (green dots), forecasted NEE has a root-mean squared error of $2.56 \text  {gCm}^{-2}$ between model and observations. Blue line represents 1-1 line where all green dots would lie if the model predicted the observations perfectly.\relax }}{12}}
-\newlabel{fig:forecastscatedcBR}{{11}{12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces One year assimilation and fourteen year forecast of Alice Holt NEE with DALEC2, blue dotted line: background model trajectory, green line: analysis and forecast after assimilation, red dots: observations from Alice Holt flux site with error bars. Number of function evaluations needed for minimisation to converge: 444.\relax }}{12}}
-\newlabel{fig:4dvardiagBcorR}{{12}{12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Forecast scatter plot of modelled NEE vs. observations for 2000-2014 (green dots), forecasted NEE has a root-mean squared error of $4.09 \text  {gCm}^{-2}$ between model and observations. Blue line represents 1-1 line where all green dots would lie if the model predicted the observations perfectly.\relax }}{13}}
-\newlabel{fig:forecastscatBR}{{13}{13}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Experiment D}{13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces One year assimilation and fourteen year forecast of Alice Holt NEE with DALEC2, blue dotted line: background model trajectory, green line: analysis and forecast after assimilation, red dots: observations from Alice Holt flux site with error bars. Number of function evaluations needed for minimisation to converge: 316.\relax }}{13}}
-\newlabel{fig:4dvaredcBcorR}{{14}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Experiment B}{11}}
+\newlabel{sec:expb}{{3.3}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Experiment C}{11}}
+\newlabel{sec:expc}{{3.4}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Experiment D}{11}}
+\newlabel{fig:4dvardiagBR}{{9a}{12}}
+\newlabel{sub@fig:4dvardiagBR}{{a}{12}}
+\newlabel{fig:4dvaredcBR}{{9b}{12}}
+\newlabel{sub@fig:4dvaredcBR}{{b}{12}}
+\newlabel{fig:4dvarBcorR}{{9c}{12}}
+\newlabel{sub@fig:4dvarBcorR}{{c}{12}}
+\newlabel{fig:4dvaredcBcorR}{{9d}{12}}
+\newlabel{sub@fig:4dvaredcBcorR}{{d}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces One year assimilation and fourteen year forecast of Alice Holt NEE with DALEC2, blue dotted line: background model trajectory, green line: analysis and forecast after assimilation, red dots: observations from Alice Holt flux site with error bars.\relax }}{12}}
+\newlabel{fig:4dvar}{{9}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Taylor diagram displaying statistical comparison of the four experiment and background forecast (2000-2014) results with observations of NEE $( \text  {gCm}^{-2})$.\relax }}{13}}
+\newlabel{fig:taylordiag}{{10}{13}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Analysis (1999-2000) results for experiments and background when judged against observed NEE.\relax }}{13}}
+\newlabel{table:exps_tab}{{2}{13}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Forecast (2000-2014) results for experiments and background when judged against observed NEE.\relax }}{13}}
+\newlabel{table:exps_tab}{{3}{13}}
+\newlabel{fig:forecastscatBR}{{11a}{14}}
+\newlabel{sub@fig:forecastscatBR}{{a}{14}}
+\newlabel{fig:forecastscatedcBR}{{11b}{14}}
+\newlabel{sub@fig:forecastscatedcBR}{{b}{14}}
+\newlabel{fig:forecastscatBcorR}{{11c}{14}}
+\newlabel{sub@fig:forecastscatBcorR}{{c}{14}}
+\newlabel{fig:forecastscatedcBcorR}{{11d}{14}}
+\newlabel{sub@fig:forecastscatedcBcorR}{{d}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Forecast scatter plot of modelled NEE vs. observations for 2000-2014 (green dots). Blue line represents the 1-1 line.\relax }}{14}}
+\newlabel{fig:animals}{{11}{14}}
 \citation{desroziers2005diagnosis}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Forecast scatter plot of modelled NEE vs. observations for 2000-2014 (green dots), forecasted NEE has a root-mean squared error of $2.38 \text  {gCm}^{-2}$ between model and observations. Blue line represents 1-1 line where all green dots would lie if the model predicted the observations perfectly.\relax }}{14}}
-\newlabel{fig:forecastscatedcBcorR}{{15}{14}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Results from experiments outlined in section \ref  {sec:exps}\relax }}{14}}
-\newlabel{table:exps_tab}{{2}{14}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{14}}
 \citation{richardson2010estimating}
 \citation{jarvinen1999variational}
 \citation{Baldocchi2015}
-\bibdata{../PhD}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{15}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{15}}
-\newlabel{RF1}{16}
-\newlabel{fig:gull}{{16a}{16}}
-\newlabel{sub@fig:gull}{{a}{16}}
-\newlabel{fig:tiger}{{16b}{16}}
-\newlabel{sub@fig:tiger}{{b}{16}}
-\newlabel{fig:mouse}{{16c}{16}}
-\newlabel{sub@fig:mouse}{{c}{16}}
-\newlabel{fig:mouse}{{16d}{16}}
-\newlabel{sub@fig:mouse}{{d}{16}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces One year assimilation and fourteen year forecast of Alice Holt NEE with DALEC2, blue dotted line: background model trajectory, green line: analysis and forecast after assimilation, red dots: observations from Alice Holt flux site with error bars.\relax }}{16}}
-\newlabel{fig:animals}{{16}{16}}
-\newlabel{fig:gull}{{17a}{17}}
-\newlabel{sub@fig:gull}{{a}{17}}
-\newlabel{fig:tiger}{{17b}{17}}
-\newlabel{sub@fig:tiger}{{b}{17}}
-\newlabel{fig:mouse}{{17c}{17}}
-\newlabel{sub@fig:mouse}{{c}{17}}
-\newlabel{fig:mouse}{{17d}{17}}
-\newlabel{sub@fig:mouse}{{d}{17}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces One year assimilation and fourteen year forecast of Alice Holt NEE with DALEC2, blue dotted line: background model trajectory, green line: analysis and forecast after assimilation, red dots: observations from Alice Holt flux site with error bars.\relax }}{17}}
-\newlabel{fig:animals}{{17}{17}}
-\newlabel{fig:gull}{{18a}{18}}
-\newlabel{sub@fig:gull}{{a}{18}}
-\newlabel{fig:tiger}{{18b}{18}}
-\newlabel{sub@fig:tiger}{{b}{18}}
-\newlabel{fig:mouse}{{18c}{18}}
-\newlabel{sub@fig:mouse}{{c}{18}}
-\newlabel{fig:mouse}{{18d}{18}}
-\newlabel{sub@fig:mouse}{{d}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Forecast scatter plot of modelled NEE vs. observations for 2000-2014 (green dots). Blue line represents the 1-1 line.\relax }}{18}}
-\newlabel{fig:animals}{{18}{18}}
+\bibdata{../PhD}
 \bibcite{Bacour2015}{{1}{2015}{{Bacour et~al.}}{{Bacour, Peylin, MacBean, Rayner, Delage, Chevallier, Weiss, Demarty, Santaren, Baret, Berveiller, Dufr\^{e}ne, and Prunet}}}
 \bibcite{baldocchi2008turner}{{2}{2008}{{Baldocchi}}{{}}}
 \bibcite{Baldocchi2015}{{3}{2015}{{Baldocchi et~al.}}{{Baldocchi, Sturtevant, and Contributors}}}
@@ -156,6 +135,7 @@
 \bibcite{desroziers2005diagnosis}{{9}{2005}{{Desroziers et~al.}}{{Desroziers, Berre, Chapnik, and Poli}}}
 \bibcite{Exbrayat2015}{{10}{2015}{{Exbrayat et~al.}}{{Exbrayat, Smallman, Bloom, and Williams}}}
 \bibcite{fisher2003background}{{11}{2003}{{Fisher}}{{}}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Acknowledgements}{16}}
 \bibcite{fox2009reflex}{{12}{2009}{{Fox et~al.}}{{Fox, Williams, Richardson, Cameron, Gove, Quaife, Ricciuto, Reichstein, Tomelleri, Trudinger, et~al.}}}
 \bibcite{jarvinen1999variational}{{13}{1999}{{J{\"a}rvinen et~al.}}{{J{\"a}rvinen, Andersson, and Bouttier}}}
 \bibcite{kalnay2003atmospheric}{{14}{2003}{{Kalnay}}{{}}}
@@ -163,13 +143,18 @@
 \bibcite{Krinner2005}{{16}{2005}{{Krinner et~al.}}{{Krinner, Viovy, de~Noblet-Ducoudr\'{e}, Og\'{e}e, Polcher, Friedlingstein, Ciais, Sitch, and Prentice}}}
 \bibcite{lewis2006dynamic}{{17}{2006}{{Lewis et~al.}}{{Lewis, Lakshmivarahan, and Dhall}}}
 \bibcite{lorenc2005does}{{18}{2005}{{Lorenc and Rawlins}}{{}}}
-\bibcite{Nocedal1999}{{19}{1999}{{Nocedal and Wright}}{{}}}
-\bibcite{Papale2006}{{20}{2006}{{Papale et~al.}}{{Papale, Reichstein, Aubinet, Canfora, Bernhofer, Kutsch, Longdoz, Rambal, Valentini, Vesala, and Yakir}}}
-\bibcite{rabier2005overview}{{21}{2005}{{Rabier}}{{}}}
-\bibcite{richardson2010estimating}{{22}{2010}{{Richardson et~al.}}{{Richardson, Williams, Hollinger, Moore, Dail, Davidson, Scott, Evans, Hughes, Lee, et~al.}}}
-\bibcite{Singh2011}{{23}{2011}{{Singh et~al.}}{{Singh, Jardak, Sandu, Bowman, Lee, and Jones}}}
-\bibcite{Stewart2013}{{24}{2013}{{Stewart et~al.}}{{Stewart, Dance, and Nichols}}}
-\bibcite{Verbeeck2011}{{25}{2011}{{Verbeeck et~al.}}{{Verbeeck, Peylin, Bacour, Bonal, Steppe, and Ciais}}}
-\bibcite{williams1997predicting}{{26}{1997}{{Williams et~al.}}{{Williams, Rastetter, Fernandes, Goulden, Shaver, and Johnson}}}
-\bibcite{williams2005improved}{{27}{2005}{{Williams et~al.}}{{Williams, Schwarz, Law, Irvine, and Kurpius}}}
-\bibcite{zobitz2011primer}{{28}{2011}{{Zobitz et~al.}}{{Zobitz, Desai, Moore, and Chadwick}}}
+\bibcite{Niu2014}{{19}{2014}{{Niu et~al.}}{{Niu, Luo, Dietze, Keenan, Shi, Li, and Iii}}}
+\bibcite{Nocedal1999}{{20}{1999}{{Nocedal and Wright}}{{}}}
+\bibcite{Papale2006}{{21}{2006}{{Papale et~al.}}{{Papale, Reichstein, Aubinet, Canfora, Bernhofer, Kutsch, Longdoz, Rambal, Valentini, Vesala, and Yakir}}}
+\bibcite{Quaife2008}{{22}{2008}{{Quaife et~al.}}{{Quaife, Lewis, {De Kauwe}, Williams, Law, Disney, and Bowyer}}}
+\bibcite{rabier2005overview}{{23}{2005}{{Rabier}}{{}}}
+\bibcite{richardson2010estimating}{{24}{2010}{{Richardson et~al.}}{{Richardson, Williams, Hollinger, Moore, Dail, Davidson, Scott, Evans, Hughes, Lee, et~al.}}}
+\bibcite{Singh2011}{{25}{2011}{{Singh et~al.}}{{Singh, Jardak, Sandu, Bowman, Lee, and Jones}}}
+\bibcite{Stewart2013}{{26}{2013}{{Stewart et~al.}}{{Stewart, Dance, and Nichols}}}
+\bibcite{Verbeeck2011}{{27}{2011}{{Verbeeck et~al.}}{{Verbeeck, Peylin, Bacour, Bonal, Steppe, and Ciais}}}
+\bibcite{williams1997predicting}{{28}{1997}{{Williams et~al.}}{{Williams, Rastetter, Fernandes, Goulden, Shaver, and Johnson}}}
+\bibcite{williams2005improved}{{29}{2005}{{Williams et~al.}}{{Williams, Schwarz, Law, Irvine, and Kurpius}}}
+\bibcite{Zobitz2014}{{30}{2014}{{Zobitz et~al.}}{{Zobitz, Moore, Quaife, Braswell, Bergeson, Anthony, and Monson}}}
+\bibcite{zobitz2011primer}{{31}{2011}{{Zobitz et~al.}}{{Zobitz, Desai, Moore, and Chadwick}}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Parameter values for background and difference experiments analysis vectors.\relax }}{19}}
+\newlabel{table:exps_tab}{{4}{19}}
