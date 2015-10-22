@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -38,6 +38,19 @@ Dennis Baldocchi, Cove Sturtevant, and Fluxnet Contributors.
 \newblock URL
   \url{http://linkinghub.elsevier.com/retrieve/pii/S016819231500088X}.
 
+\bibitem[Bannister(2008)]{bannister2008review}
+Ross~N Bannister.
+\newblock A review of forecast error covariance statistics in atmospheric
+  variational data assimilation. i: Characteristics and measurements of
+  forecast error covariances.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  134\penalty0 (637):\penalty0 1951--1970, 2008.
+
+\bibitem[Bauer et~al.(2015)Bauer, Thorpe, and Brunet]{bauer2015quiet}
+Peter Bauer, Alan Thorpe, and Gilbert Brunet.
+\newblock The quiet revolution of numerical weather prediction.
+\newblock \emph{Nature}, 525\penalty0 (7567):\penalty0 47--55, 2015.
+
 \bibitem[Bloom and Williams(2015)]{Bloom2015}
 A.~A. Bloom and M.~Williams.
 \newblock {Constraining ecosystem carbon dynamics in a data-limited world:
@@ -72,6 +85,15 @@ Roger Daley.
   Atmospheric Data Assimilation}, 1992.
 \newblock ISSN 0027-0644.
 
+\bibitem[Dee et~al.(2011)Dee, Uppala, Simmons, Berrisford, Poli, Kobayashi,
+  Andrae, Balmaseda, Balsamo, Bauer, et~al.]{dee2011era}
+DP~Dee, SM~Uppala, AJ~Simmons, Paul Berrisford, P~Poli, S~Kobayashi, U~Andrae,
+  MA~Balmaseda, G~Balsamo, P~Bauer, et~al.
+\newblock The era-interim reanalysis: Configuration and performance of the data
+  assimilation system.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  137\penalty0 (656):\penalty0 553--597, 2011.
+
 \bibitem[Delahaies et~al.(2013)Delahaies, Roulstone, and
   Nichols]{delahaies2013regularization}
 Sylvain Delahaies, Ian Roulstone, and Nancy Nichols.
@@ -94,12 +116,6 @@ Jean-fran\c{c}ois Exbrayat, T~Luke Smallman, A~Anthony Bloom, and Mathew
 \newblock {Using a data-assimilation system to assess the influence of fire on
   simulated carbon fluxes and plant traits for the Australian continent}.
 \newblock \emph{EGU General Assembly}, 17:\penalty0 6421, 2015.
-
-\bibitem[Fisher(2003)]{fisher2003background}
-Mike Fisher.
-\newblock Background error covariance modelling.
-\newblock In \emph{Seminar on Recent Development in Data Assimilation for
-  Atmosphere and Ocean}, pages 45--63, 2003.
 
 \bibitem[Fox et~al.(2009)Fox, Williams, Richardson, Cameron, Gove, Quaife,
   Ricciuto, Reichstein, Tomelleri, Trudinger, et~al.]{fox2009reflex}
@@ -154,17 +170,26 @@ G.~Krinner, Nicolas Viovy, Nathalie de~Noblet-Ducoudr\'{e}, J\'{e}r\^{o}me
 \newblock ISSN 08866236.
 \newblock \doi{10.1029/2003GB002199}.
 
-\bibitem[Lewis et~al.(2006)Lewis, Lakshmivarahan, and Dhall]{lewis2006dynamic}
-John~M Lewis, Sivaramakrishnan Lakshmivarahan, and Sudarshan Dhall.
-\newblock \emph{Dynamic data assimilation: a least squares approach},
-  volume~13.
-\newblock Cambridge University Press, 2006.
+\bibitem[Lawless et~al.(2013)Lawless, Cullen, Freitag, Kindermann, and
+  Scheichl]{lawless2013}
+A.~S. Lawless, M.J.P. Cullen, M.~A. Freitag, S.~Kindermann, and R.~Scheichl.
+\newblock \emph{Variational data assimilation for very large environmental
+  problems. In Large Scale Inverse Problems: Computational Methods and
+  Applications in the Earth Sciences}.
+\newblock De Gruyter, 2013.
 
 \bibitem[Lorenc and Rawlins(2005)]{lorenc2005does}
 Andrew~C Lorenc and F~Rawlins.
 \newblock Why does 4d-var beat 3d-var?
 \newblock \emph{Quarterly Journal of the Royal Meteorological Society},
   131\penalty0 (613):\penalty0 3247--3257, 2005.
+
+\bibitem[Navon(1998)]{navon1998practical}
+IM~Navon.
+\newblock Practical and theoretical aspects of adjoint parameter estimation and
+  identifiability in meteorology and oceanography.
+\newblock \emph{Dynamics of Atmospheres and Oceans}, 27\penalty0 (1):\penalty0
+  55--79, 1998.
 
 \bibitem[Niu et~al.(2014)Niu, Luo, Dietze, Keenan, Shi, Li, and Iii]{Niu2014}
 Shuli Niu, Yiqi Luo, Michael~C. Dietze, Trevor~F. Keenan, Zheng Shi, Jianwei
@@ -193,6 +218,12 @@ D.~Papale, M.~Reichstein, M.~Aubinet, E.~Canfora, C.~Bernhofer, W.~Kutsch,
 \newblock ISSN 1726-4189.
 \newblock \doi{10.5194/bg-3-571-2006}.
 
+\bibitem[Pitman and Broadmeadow(2001)]{pitman2001leaf}
+Rona Pitman and Mark Broadmeadow.
+\newblock Leaf area, biomass and physiological parameterisation of ground
+  vegetation of lowland oak woodland.
+\newblock \emph{Forestry Commission, Edinburgh}, 2001.
+
 \bibitem[Quaife et~al.(2008)Quaife, Lewis, {De Kauwe}, Williams, Law, Disney,
   and Bowyer]{Quaife2008}
 Tristan Quaife, Philip Lewis, Martin {De Kauwe}, Mathew Williams, Beverly~E.
@@ -204,12 +235,22 @@ Tristan Quaife, Philip Lewis, Martin {De Kauwe}, Mathew Williams, Beverly~E.
 \newblock ISSN 00344257.
 \newblock \doi{10.1016/j.rse.2007.05.020}.
 
-\bibitem[Rabier(2005)]{rabier2005overview}
-Florence Rabier.
-\newblock Overview of global data assimilation developments in numerical
-  weather-prediction centres.
+\bibitem[Rabier et~al.(2000)Rabier, J{\"a}rvinen, Klinker, Mahfouf, and
+  Simmons]{rabier2000ecmwf}
+Florence Rabier, H~J{\"a}rvinen, E~Klinker, J-F Mahfouf, and A~Simmons.
+\newblock The ecmwf operational implementation of four-dimensional variational
+  assimilation. i: Experimental results with simplified physics.
 \newblock \emph{Quarterly Journal of the Royal Meteorological Society},
-  131\penalty0 (613):\penalty0 3215--3233, 2005.
+  126\penalty0 (564):\penalty0 1143--1170, 2000.
+
+\bibitem[Rawlins et~al.(2007)Rawlins, Ballard, Bovis, Clayton, Li, Inverarity,
+  Lorenc, and Payne]{rawlins2007met}
+F~Rawlins, SP~Ballard, KJ~Bovis, AM~Clayton, D~Li, GW~Inverarity, AC~Lorenc,
+  and TJ~Payne.
+\newblock The met office global four-dimensional variational data assimilation
+  scheme.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  133\penalty0 (623):\penalty0 347--362, 2007.
 
 \bibitem[Richardson et~al.(2010)Richardson, Williams, Hollinger, Moore, Dail,
   Davidson, Scott, Evans, Hughes, Lee, et~al.]{richardson2010estimating}
@@ -230,6 +271,14 @@ K.~Singh, M.~Jardak, a.~Sandu, K.~Bowman, M.~Lee, and D.~Jones.
 \newblock ISSN 1991959X.
 \newblock \doi{10.5194/gmd-4-299-2011}.
 
+\bibitem[Smith et~al.(2009)Smith, Dance, Baines, Nichols, and
+  Scott]{smith2009variational}
+Polly~J Smith, Sarah~L Dance, Michael~J Baines, Nancy~K Nichols, and Tania~R
+  Scott.
+\newblock Variational data assimilation for parameter estimation: application
+  to a simple morphodynamic model.
+\newblock \emph{Ocean Dynamics}, 59\penalty0 (5):\penalty0 697--708, 2009.
+
 \bibitem[Stewart et~al.(2013)Stewart, Dance, and Nichols]{Stewart2013}
 Laura~M. Stewart, Sarah~L. Dance, and Nancy~K. Nichols.
 \newblock {Data assimilation with correlated observation errors: Experiments
@@ -249,6 +298,20 @@ Hans Verbeeck, Philippe Peylin, C\'{e}dric Bacour, Damien Bonal, Kathy Steppe,
   1--19, 2011.
 \newblock ISSN 0148-0227.
 \newblock \doi{10.1029/2010JG001544}.
+
+\bibitem[Weston et~al.(2014)Weston, Bell, and Eyre]{weston2014accounting}
+PP~Weston, W~Bell, and JR~Eyre.
+\newblock Accounting for correlated error in the assimilation of
+  high-resolution sounder data.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  140\penalty0 (685):\penalty0 2420--2429, 2014.
+
+\bibitem[Wilkinson et~al.(2012)Wilkinson, Eaton, Broadmeadow, and
+  Morison]{wilkinson2012inter}
+M~Wilkinson, EL~Eaton, MSJ Broadmeadow, and JIL Morison.
+\newblock Inter-annual variation of carbon uptake by a plantation oak woodland
+  in south-eastern england.
+\newblock \emph{Biogeosciences}, 9\penalty0 (12):\penalty0 5373--5389, 2012.
 
 \bibitem[Williams et~al.(1997)Williams, Rastetter, Fernandes, Goulden, Shaver,
   and Johnson]{williams1997predicting}
