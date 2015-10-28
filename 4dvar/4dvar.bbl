@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -178,11 +178,40 @@ A.~S. Lawless, M.J.P. Cullen, M.~A. Freitag, S.~Kindermann, and R.~Scheichl.
   Applications in the Earth Sciences}.
 \newblock De Gruyter, 2013.
 
+\bibitem[Li et~al.(1994)Li, Navon, Yang, Zou, Bates, Moorthi, and
+  Higgins]{Li1994}
+Yong Li, I.~Michael Navon, Weiyu Yang, Xiaolei Zou, J.~R. Bates, S.~Moorthi,
+  and R.~W. Higgins.
+\newblock {Four-Dimensional Variational Data Assimilation Experiments with a
+  Multilevel Semi-Lagrangian Semi-Implicit General Circulation Model}.
+\newblock \emph{Monthly Weather Review}, 122\penalty0 (5):\penalty0 966--983,
+  may 1994.
+\newblock ISSN 0027-0644.
+\newblock \doi{10.1175/1520-0493(1994)122<0966:FDVDAE>2.0.CO;2}.
+\newblock URL
+  \url{http://journals.ametsoc.org/doi/abs/10.1175/1520-0493(1994)122{\%}3C0966:FDVDAE{\%}3E2.0.CO{\%}3B2}.
+
+\bibitem[{LI-COR, Inc.}(2015)]{eddypro}
+{LI-COR, Inc.}
+\newblock \emph{EddyPro® 6 Help and User's Guide}.
+\newblock LI-COR, Inc. Lincoln, NE., 2015.
+
 \bibitem[Lorenc and Rawlins(2005)]{lorenc2005does}
 Andrew~C Lorenc and F~Rawlins.
 \newblock Why does 4d-var beat 3d-var?
 \newblock \emph{Quarterly Journal of the Royal Meteorological Society},
   131\penalty0 (613):\penalty0 3247--3257, 2005.
+
+\bibitem[Navon et~al.(1992)Navon, Zou, Derber, and Sela]{Navon1992}
+I.~M. Navon, X.~Zou, J.~Derber, and J.~Sela.
+\newblock {Variational Data Assimilation with an Adiabatic Version of the NMC
+  Spectral Model}.
+\newblock \emph{Monthly Weather Review}, 120\penalty0 (7):\penalty0 1433--1446,
+  jul 1992.
+\newblock ISSN 0027-0644.
+\newblock \doi{10.1175/1520-0493(1992)120<1433:VDAWAA>2.0.CO;2}.
+\newblock URL
+  \url{http://journals.ametsoc.org/doi/abs/10.1175/1520-0493(1992)120{\%}3C1433{\%}3AVDAWAA{\%}3E2.0.CO{\%}3B2}.
 
 \bibitem[Navon(1998)]{navon1998practical}
 IM~Navon.
@@ -261,16 +290,6 @@ Andrew~D Richardson, Mathew Williams, David~Y Hollinger, David~JP Moore,
   of stocks and fluxes as joint constraints.
 \newblock \emph{Oecologia}, 164\penalty0 (1):\penalty0 25--40, 2010.
 
-\bibitem[Singh et~al.(2011)Singh, Jardak, Sandu, Bowman, Lee, and
-  Jones]{Singh2011}
-K.~Singh, M.~Jardak, a.~Sandu, K.~Bowman, M.~Lee, and D.~Jones.
-\newblock {Construction of non-diagonal background error covariance matrices
-  for global chemical data assimilation}.
-\newblock \emph{Geoscientific Model Development}, 4\penalty0 (2):\penalty0
-  299--316, 2011.
-\newblock ISSN 1991959X.
-\newblock \doi{10.5194/gmd-4-299-2011}.
-
 \bibitem[Smith et~al.(2009)Smith, Dance, Baines, Nichols, and
   Scott]{smith2009variational}
 Polly~J Smith, Sarah~L Dance, Michael~J Baines, Nancy~K Nichols, and Tania~R
@@ -298,6 +317,16 @@ Hans Verbeeck, Philippe Peylin, C\'{e}dric Bacour, Damien Bonal, Kathy Steppe,
   1--19, 2011.
 \newblock ISSN 0148-0227.
 \newblock \doi{10.1029/2010JG001544}.
+
+\bibitem[Walter and Lehmann(2013)]{Walter2013}
+Sebastian~F. Walter and Lutz Lehmann.
+\newblock {Algorithmic differentiation in Python with AlgoPy}.
+\newblock \emph{Journal of Computational Science}, 4\penalty0 (5):\penalty0
+  334--344, sep 2013.
+\newblock ISSN 18777503.
+\newblock \doi{10.1016/j.jocs.2011.10.007}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S1877750311001013}.
 
 \bibitem[Weston et~al.(2014)Weston, Bell, and Eyre]{weston2014accounting}
 PP~Weston, W~Bell, and JR~Eyre.
