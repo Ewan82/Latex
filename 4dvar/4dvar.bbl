@@ -1,4 +1,4 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{45}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -127,6 +127,24 @@ Andrew Fox, Mathew Williams, Andrew~D Richardson, David Cameron, Jeffrey~H
   eddy covariance data.
 \newblock \emph{Agricultural and Forest Meteorology}, 149\penalty0
   (10):\penalty0 1597--1615, 2009.
+
+\bibitem[Freitag et~al.(2010)Freitag, Nichols, and Budd]{Freitag2010}
+Melina~A. Freitag, Nancy~K. Nichols, and Chris~J. Budd.
+\newblock {L1-regularisation for ill-posed problems in variational data
+  assimilation}.
+\newblock \emph{Pamm}, 10\penalty0 (1):\penalty0 665--668, 2010.
+\newblock ISSN 16177061.
+\newblock \doi{10.1002/pamm.201010324}.
+\newblock URL \url{http://doi.wiley.com/10.1002/pamm.201010324}.
+
+\bibitem[Healy and White(2005)]{Healy2005}
+S.B. Healy and A.A. White.
+\newblock {Use of discrete Fourier transforms in the 1D-Var retrieval problem}.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  131\penalty0 (605):\penalty0 63--72, jan 2005.
+\newblock ISSN 00359009.
+\newblock \doi{10.1256/qj.03.193}.
+\newblock URL \url{http://doi.wiley.com/10.1256/qj.03.193}.
 
 \bibitem[J{\"a}rvinen et~al.(1999)J{\"a}rvinen, Andersson, and
   Bouttier]{jarvinen1999variational}
@@ -317,6 +335,17 @@ Hans Verbeeck, Philippe Peylin, C\'{e}dric Bacour, Damien Bonal, Kathy Steppe,
   1--19, 2011.
 \newblock ISSN 0148-0227.
 \newblock \doi{10.1029/2010JG001544}.
+
+\bibitem[Waller et~al.(2014)Waller, Dance, Lawless, Nichols, and
+  Eyre]{Waller2014}
+J.~A. Waller, S.~L. Dance, A.~S. Lawless, N.~K. Nichols, and J.~R. Eyre.
+\newblock {Representativity error for temperature and humidity using the Met
+  Office high-resolution model†}.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  140\penalty0 (681):\penalty0 1189--1197, apr 2014.
+\newblock ISSN 00359009.
+\newblock \doi{10.1002/qj.2207}.
+\newblock URL \url{http://doi.wiley.com/10.1002/qj.2207}.
 
 \bibitem[Walter and Lehmann(2013)]{Walter2013}
 Sebastian~F. Walter and Lutz Lehmann.

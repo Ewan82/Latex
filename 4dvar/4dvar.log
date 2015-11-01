@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  26 OCT 2015 15:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  1 NOV 2015 20:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -358,16 +358,7 @@ e
 
 (./4dvar.aux
 
-LaTeX Warning: Label `fig:Bcorr' multiply defined.
-
-
-LaTeX Warning: Label `table:exps_tab' multiply defined.
-
-
-LaTeX Warning: Label `table:exps_tab' multiply defined.
-
-
-LaTeX Warning: Label `table:exps_tab' multiply defined.
+LaTeX Warning: Label `fig:4dvar' multiply defined.
 
 )
 \openout1 = `4dvar.aux'.
@@ -453,252 +444,398 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<Dalecdiagram.png, id=17, 705.63625pt x 410.53375pt>
-File: Dalecdiagram.png Graphic file (type png)
- <use Dalecdiagram.png>
-Package pdftex.def Info: Dalecdiagram.png used on input line 59.
-(pdftex.def)             Requested size: 249.33128pt x 145.06082pt.
+<DALECdiagram.pdf, id=17, 707.64375pt x 403.5075pt>
+File: DALECdiagram.pdf Graphic file (type pdf)
+ <use DALECdiagram.pdf>
+Package pdftex.def Info: DALECdiagram.pdf used on input line 59.
+(pdftex.def)             Requested size: 249.33128pt x 142.17175pt.
 
-[3] [4 <./Dalecdiagram.png>] [5]
-<testtlmer.png, id=35, 1300.86pt x 669.9429pt>
-File: testtlmer.png Graphic file (type png)
- <use testtlmer.png>
-Package pdftex.def Info: testtlmer.png used on input line 163.
-(pdftex.def)             Requested size: 299.20059pt x 154.08362pt.
+[3] [4 <./DALECdiagram.pdf>] [5]
+Package epstopdf Info: Source file: <linmoderr.eps>
+(epstopdf)                    date: 2015-11-01 11:22:54
+(epstopdf)                    size: 54564 bytes
+(epstopdf)             Output file: <linmoderr-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-11-01 11:56:36
+(epstopdf)                    size: 16823 bytes
+(epstopdf)             Command: <repstopdf --outfile=linmoderr-eps-converted-to
+.pdf linmoderr.eps>
+(epstopdf)             \includegraphics on input line 163.
+Package epstopdf Info: Output file is already uptodate.
 
-<tlm_error.png, id=36, 1300.86pt x 672.8337pt>
-File: tlm_error.png Graphic file (type png)
- <use tlm_error.png>
-Package pdftex.def Info: tlm_error.png used on input line 175.
-(pdftex.def)             Requested size: 299.20059pt x 154.74849pt.
- [6 <./testtlmer.png>] <gradtestone.png, id=43, 1300.86pt x 669.9429pt>
-File: gradtestone.png Graphic file (type png)
+<linmoderr-eps-converted-to.pdf, id=36, 847.165pt x 609.27625pt>
+File: linmoderr-eps-converted-to.pdf Graphic file (type pdf)
 
-<use gradtestone.png>
-Package pdftex.def Info: gradtestone.png used on input line 200.
-(pdftex.def)             Requested size: 299.20059pt x 154.08362pt.
- <testgradcost1.png, id=44, 1300.86pt x 669.9429pt>
-File: testgradcost1.png Graphic file (type png)
+<use linmoderr-eps-converted-to.pdf>
+Package pdftex.def Info: linmoderr-eps-converted-to.pdf used on input line 163.
 
-<use testgradcost1.png>
-Package pdftex.def Info: testgradcost1.png used on input line 209.
-(pdftex.def)             Requested size: 299.20059pt x 154.08362pt.
- [7 <./tlm_error.png> <./gradtestone.png>]
-<b_edcNone_corrmat.png, id=51, 651.8754pt x 579.6054pt>
-File: b_edcNone_corrmat.png Graphic file (type png)
+(pdftex.def)             Requested size: 249.33128pt x 179.31657pt.
+Package epstopdf Info: Source file: <percenterrlinmod.eps>
+(epstopdf)                    date: 2015-11-01 11:55:03
+(epstopdf)                    size: 53004 bytes
+(epstopdf)             Output file: <percenterrlinmod-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-11-01 11:56:37
+(epstopdf)                    size: 32678 bytes
+(epstopdf)             Command: <repstopdf --outfile=percenterrlinmod-eps-conve
+rted-to.pdf percenterrlinmod.eps>
+(epstopdf)             \includegraphics on input line 175.
+Package epstopdf Info: Output file is already uptodate.
 
-<use b_edcNone_corrmat.png>
-Package pdftex.def Info: b_edcNone_corrmat.png used on input line 228.
-(pdftex.def)             Requested size: 249.33128pt x 221.69391pt.
-Package epstopdf Info: Source file: <edccorb.eps>
-(epstopdf)                    date: 2015-10-12 12:08:34
-(epstopdf)                    size: 175508 bytes
-(epstopdf)             Output file: <edccorb-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-12 12:11:31
-(epstopdf)                    size: 29354 bytes
-(epstopdf)             Command: <repstopdf --outfile=edccorb-eps-converted-to.p
-df edccorb.eps>
+<percenterrlinmod-eps-converted-to.pdf, id=37, 827.09pt x 585.18625pt>
+File: percenterrlinmod-eps-converted-to.pdf Graphic file (type pdf)
+
+<use percenterrlinmod-eps-converted-to.pdf>
+Package pdftex.def Info: percenterrlinmod-eps-converted-to.pdf used on input li
+ne 175.
+(pdftex.def)             Requested size: 249.33128pt x 176.4055pt.
+ [6 <./linmoderr-eps-converted-to.pdf> <./percenterrlinmod-eps-converted-to.pdf
+>]
+Package epstopdf Info: Source file: <costone_cvt.eps>
+(epstopdf)                    date: 2015-11-01 13:31:01
+(epstopdf)                    size: 34160 bytes
+(epstopdf)             Output file: <costone_cvt-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-11-01 13:31:15
+(epstopdf)                    size: 14842 bytes
+(epstopdf)             Command: <repstopdf --outfile=costone_cvt-eps-converted-
+to.pdf costone_cvt.eps>
+(epstopdf)             \includegraphics on input line 208.
+Package epstopdf Info: Output file is already uptodate.
+
+<costone_cvt-eps-converted-to.pdf, id=120, 861.2175pt x 607.26875pt>
+File: costone_cvt-eps-converted-to.pdf Graphic file (type pdf)
+
+<use costone_cvt-eps-converted-to.pdf>
+Package pdftex.def Info: costone_cvt-eps-converted-to.pdf used on input line 20
+8.
+(pdftex.def)             Requested size: 244.3474pt x 172.29503pt.
+Package epstopdf Info: Source file: <cost_cvt.eps>
+(epstopdf)                    date: 2015-11-01 13:27:54
+(epstopdf)                    size: 50108 bytes
+(epstopdf)             Output file: <cost_cvt-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-11-01 13:31:16
+(epstopdf)                    size: 17146 bytes
+(epstopdf)             Command: <repstopdf --outfile=cost_cvt-eps-converted-to.
+pdf cost_cvt.eps>
+(epstopdf)             \includegraphics on input line 213.
+Package epstopdf Info: Output file is already uptodate.
+
+<cost_cvt-eps-converted-to.pdf, id=121, 851.18pt x 609.27625pt>
+File: cost_cvt-eps-converted-to.pdf Graphic file (type pdf)
+
+<use cost_cvt-eps-converted-to.pdf>
+Package pdftex.def Info: cost_cvt-eps-converted-to.pdf used on input line 213.
+(pdftex.def)             Requested size: 244.3474pt x 174.90059pt.
+ [7 <./costone_cvt-eps-converted-to.pdf> <./cost_cvt-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <bedccor.eps>
+(epstopdf)                    date: 2015-10-31 19:17:41
+(epstopdf)                    size: 175516 bytes
+(epstopdf)             Output file: <bedccor-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-31 19:19:07
+(epstopdf)                    size: 30326 bytes
+(epstopdf)             Command: <repstopdf --outfile=bedccor-eps-converted-to.p
+df bedccor.eps>
 (epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
 
-<edccorb-eps-converted-to.pdf, id=52, 740.7675pt x 631.35875pt>
-File: edccorb-eps-converted-to.pdf Graphic file (type pdf)
+<bedccor-eps-converted-to.pdf, id=181, 734.745pt x 621.32124pt>
+File: bedccor-eps-converted-to.pdf Graphic file (type pdf)
 
-<use edccorb-eps-converted-to.pdf>
-Package pdftex.def Info: edccorb-eps-converted-to.pdf used on input line 235.
-(pdftex.def)             Requested size: 274.26593pt x 233.75322pt.
- [8 <./testgradcost1.png>]
-Package epstopdf Info: Source file: <rcorb.eps>
-(epstopdf)                    date: 2015-10-12 12:08:34
-(epstopdf)                    size: 939141 bytes
-(epstopdf)             Output file: <rcorb-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-12 12:11:33
-(epstopdf)                    size: 76275 bytes
-(epstopdf)             Command: <repstopdf --outfile=rcorb-eps-converted-to.pdf
- rcorb.eps>
+<use bedccor-eps-converted-to.pdf>
+Package pdftex.def Info: bedccor-eps-converted-to.pdf used on input line 235.
+(pdftex.def)             Requested size: 274.26593pt x 231.93306pt.
+ [8 <./bedccor-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <rcorcor.eps>
+(epstopdf)                    date: 2015-10-31 15:43:06
+(epstopdf)                    size: 943341 bytes
+(epstopdf)             Output file: <rcorcor-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-31 19:19:08
+(epstopdf)                    size: 79942 bytes
+(epstopdf)             Command: <repstopdf --outfile=rcorcor-eps-converted-to.p
+df rcorcor.eps>
 (epstopdf)             \includegraphics on input line 257.
 Package epstopdf Info: Output file is already uptodate.
 
-<rcorb-eps-converted-to.pdf, id=57, 603.25375pt x 553.06625pt>
-File: rcorb-eps-converted-to.pdf Graphic file (type pdf)
+<rcorcor-eps-converted-to.pdf, id=216, 628.3475pt x 553.06625pt>
+File: rcorcor-eps-converted-to.pdf Graphic file (type pdf)
 
-<use rcorb-eps-converted-to.pdf>
-Package pdftex.def Info: rcorb-eps-converted-to.pdf used on input line 257.
-(pdftex.def)             Requested size: 249.33128pt x 228.58147pt.
- [9 <./b_edcNone_corrmat.png>] [10 <./edccorb-eps-converted-to.pdf> <./rcorb-ep
-s-converted-to.pdf>] [11
-
-]
-
-LaTeX Warning: Reference `fig:4dvardiagBcorR' on page 12 undefined on input lin
-e 304.
-
+<use rcorcor-eps-converted-to.pdf>
+Package pdftex.def Info: rcorcor-eps-converted-to.pdf used on input line 257.
+(pdftex.def)             Requested size: 249.33128pt x 219.4588pt.
+ [9] [10 <./rcorcor-eps-converted-to.pdf>]
+[11]
 Package epstopdf Info: Source file: <A4dvar.eps>
-(epstopdf)                    date: 2015-10-09 15:49:28
-(epstopdf)                    size: 569929 bytes
+(epstopdf)                    date: 2015-10-31 20:09:28
+(epstopdf)                    size: 569954 bytes
 (epstopdf)             Output file: <A4dvar-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-09 15:54:05
-(epstopdf)                    size: 251104 bytes
+(epstopdf)                    date: 2015-10-31 20:14:36
+(epstopdf)                    size: 251144 bytes
 (epstopdf)             Command: <repstopdf --outfile=A4dvar-eps-converted-to.pd
 f A4dvar.eps>
-(epstopdf)             \includegraphics on input line 315.
+(epstopdf)             \includegraphics on input line 319.
 Package epstopdf Info: Output file is already uptodate.
-<A4dvar-eps-converted-to.pdf, id=110, 815.045pt x 603.25375pt>
+ <A4dvar-eps-converted-to.pdf, id=246, 815.045pt x 603.25375pt>
 File: A4dvar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use A4dvar-eps-converted-to.pdf>
-Package pdftex.def Info: A4dvar-eps-converted-to.pdf used on input line 315.
+Package pdftex.def Info: A4dvar-eps-converted-to.pdf used on input line 319.
 (pdftex.def)             Requested size: 244.3474pt x 180.84865pt.
 Package epstopdf Info: Source file: <B4dvar.eps>
-(epstopdf)                    date: 2015-10-09 15:49:55
-(epstopdf)                    size: 570941 bytes
+(epstopdf)                    date: 2015-10-31 20:09:42
+(epstopdf)                    size: 570935 bytes
 (epstopdf)             Output file: <B4dvar-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-09 15:54:06
-(epstopdf)                    size: 251222 bytes
+(epstopdf)                    date: 2015-10-31 20:14:37
+(epstopdf)                    size: 251110 bytes
 (epstopdf)             Command: <repstopdf --outfile=B4dvar-eps-converted-to.pd
 f B4dvar.eps>
-(epstopdf)             \includegraphics on input line 320.
+(epstopdf)             \includegraphics on input line 324.
 Package epstopdf Info: Output file is already uptodate.
 
-<B4dvar-eps-converted-to.pdf, id=111, 815.045pt x 603.25375pt>
+<B4dvar-eps-converted-to.pdf, id=247, 815.045pt x 603.25375pt>
 File: B4dvar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use B4dvar-eps-converted-to.pdf>
-Package pdftex.def Info: B4dvar-eps-converted-to.pdf used on input line 320.
+Package pdftex.def Info: B4dvar-eps-converted-to.pdf used on input line 324.
 (pdftex.def)             Requested size: 244.3474pt x 180.84865pt.
 Package epstopdf Info: Source file: <C4dvar.eps>
-(epstopdf)                    date: 2015-10-09 15:50:22
-(epstopdf)                    size: 570120 bytes
+(epstopdf)                    date: 2015-10-31 20:09:54
+(epstopdf)                    size: 570094 bytes
 (epstopdf)             Output file: <C4dvar-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-09 15:54:08
-(epstopdf)                    size: 251244 bytes
+(epstopdf)                    date: 2015-10-31 20:14:38
+(epstopdf)                    size: 251221 bytes
 (epstopdf)             Command: <repstopdf --outfile=C4dvar-eps-converted-to.pd
 f C4dvar.eps>
-(epstopdf)             \includegraphics on input line 325.
+(epstopdf)             \includegraphics on input line 329.
 Package epstopdf Info: Output file is already uptodate.
 
-<C4dvar-eps-converted-to.pdf, id=112, 815.045pt x 603.25375pt>
+<C4dvar-eps-converted-to.pdf, id=248, 815.045pt x 603.25375pt>
 File: C4dvar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use C4dvar-eps-converted-to.pdf>
-Package pdftex.def Info: C4dvar-eps-converted-to.pdf used on input line 325.
+Package pdftex.def Info: C4dvar-eps-converted-to.pdf used on input line 329.
 (pdftex.def)             Requested size: 244.3474pt x 180.84865pt.
 Package epstopdf Info: Source file: <D4dvar.eps>
-(epstopdf)                    date: 2015-10-09 15:50:47
-(epstopdf)                    size: 570728 bytes
+(epstopdf)                    date: 2015-10-31 20:10:08
+(epstopdf)                    size: 570771 bytes
 (epstopdf)             Output file: <D4dvar-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-09 15:54:10
-(epstopdf)                    size: 251017 bytes
+(epstopdf)                    date: 2015-10-31 20:14:40
+(epstopdf)                    size: 251097 bytes
 (epstopdf)             Command: <repstopdf --outfile=D4dvar-eps-converted-to.pd
 f D4dvar.eps>
-(epstopdf)             \includegraphics on input line 330.
+(epstopdf)             \includegraphics on input line 334.
 Package epstopdf Info: Output file is already uptodate.
 
-<D4dvar-eps-converted-to.pdf, id=113, 815.045pt x 603.25375pt>
+<D4dvar-eps-converted-to.pdf, id=249, 815.045pt x 603.25375pt>
 File: D4dvar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use D4dvar-eps-converted-to.pdf>
-Package pdftex.def Info: D4dvar-eps-converted-to.pdf used on input line 330.
+Package pdftex.def Info: D4dvar-eps-converted-to.pdf used on input line 334.
 (pdftex.def)             Requested size: 244.3474pt x 180.84865pt.
-Package epstopdf Info: Source file: <taylordiag.eps>
-(epstopdf)                    date: 2015-10-12 15:58:10
-(epstopdf)                    size: 58199 bytes
-(epstopdf)             Output file: <taylordiag-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-12 16:18:42
-(epstopdf)                    size: 26092 bytes
-(epstopdf)             Command: <repstopdf --outfile=taylordiag-eps-converted-t
-o.pdf taylordiag.eps>
-(epstopdf)             \includegraphics on input line 339.
+Package epstopdf Info: Source file: <Abroke4dvar.eps>
+(epstopdf)                    date: 2015-10-31 20:07:01
+(epstopdf)                    size: 266778 bytes
+(epstopdf)             Output file: <Abroke4dvar-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-31 20:14:41
+(epstopdf)                    size: 83818 bytes
+(epstopdf)             Command: <repstopdf --outfile=Abroke4dvar-eps-converted-
+to.pdf Abroke4dvar.eps>
+(epstopdf)             \includegraphics on input line 344.
 Package epstopdf Info: Output file is already uptodate.
 
-<taylordiag-eps-converted-to.pdf, id=114, 746.79pt x 629.35126pt>
-File: taylordiag-eps-converted-to.pdf Graphic file (type pdf)
+<Abroke4dvar-eps-converted-to.pdf, id=250, 841.1425pt x 649.42625pt>
+File: Abroke4dvar-eps-converted-to.pdf Graphic file (type pdf)
 
-<use taylordiag-eps-converted-to.pdf>
-Package pdftex.def Info: taylordiag-eps-converted-to.pdf used on input line 339
-.
-(pdftex.def)             Requested size: 249.33128pt x 210.11613pt.
+<use Abroke4dvar-eps-converted-to.pdf>
+Package pdftex.def Info: Abroke4dvar-eps-converted-to.pdf used on input line 34
+4.
+(pdftex.def)             Requested size: 244.3474pt x 188.65579pt.
+Package epstopdf Info: Source file: <Bbroke4dvar.eps>
+(epstopdf)                    date: 2015-10-31 20:07:52
+(epstopdf)                    size: 266561 bytes
+(epstopdf)             Output file: <Bbroke4dvar-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-31 20:14:42
+(epstopdf)                    size: 83594 bytes
+(epstopdf)             Command: <repstopdf --outfile=Bbroke4dvar-eps-converted-
+to.pdf Bbroke4dvar.eps>
+(epstopdf)             \includegraphics on input line 349.
+Package epstopdf Info: Output file is already uptodate.
+
+<Bbroke4dvar-eps-converted-to.pdf, id=251, 841.1425pt x 649.42625pt>
+File: Bbroke4dvar-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Bbroke4dvar-eps-converted-to.pdf>
+Package pdftex.def Info: Bbroke4dvar-eps-converted-to.pdf used on input line 34
+9.
+(pdftex.def)             Requested size: 244.3474pt x 188.65579pt.
+Package epstopdf Info: Source file: <Cbroke4dvar.eps>
+(epstopdf)                    date: 2015-10-31 20:08:06
+(epstopdf)                    size: 266794 bytes
+(epstopdf)             Output file: <Cbroke4dvar-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-31 20:14:43
+(epstopdf)                    size: 83801 bytes
+(epstopdf)             Command: <repstopdf --outfile=Cbroke4dvar-eps-converted-
+to.pdf Cbroke4dvar.eps>
+(epstopdf)             \includegraphics on input line 354.
+Package epstopdf Info: Output file is already uptodate.
+
+<Cbroke4dvar-eps-converted-to.pdf, id=252, 841.1425pt x 649.42625pt>
+File: Cbroke4dvar-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Cbroke4dvar-eps-converted-to.pdf>
+Package pdftex.def Info: Cbroke4dvar-eps-converted-to.pdf used on input line 35
+4.
+(pdftex.def)             Requested size: 244.3474pt x 188.65579pt.
+Package epstopdf Info: Source file: <Dbroke4dvar.eps>
+(epstopdf)                    date: 2015-10-31 20:08:20
+(epstopdf)                    size: 266694 bytes
+(epstopdf)             Output file: <Dbroke4dvar-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-31 20:14:44
+(epstopdf)                    size: 83681 bytes
+(epstopdf)             Command: <repstopdf --outfile=Dbroke4dvar-eps-converted-
+to.pdf Dbroke4dvar.eps>
+(epstopdf)             \includegraphics on input line 359.
+Package epstopdf Info: Output file is already uptodate.
+
+<Dbroke4dvar-eps-converted-to.pdf, id=253, 841.1425pt x 649.42625pt>
+File: Dbroke4dvar-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Dbroke4dvar-eps-converted-to.pdf>
+Package pdftex.def Info: Dbroke4dvar-eps-converted-to.pdf used on input line 35
+9.
+(pdftex.def)             Requested size: 244.3474pt x 188.65579pt.
 Package epstopdf Info: Source file: <Afscat.eps>
-(epstopdf)                    date: 2015-10-09 16:06:38
-(epstopdf)                    size: 42248 bytes
+(epstopdf)                    date: 2015-10-31 20:10:59
+(epstopdf)                    size: 42259 bytes
 (epstopdf)             Output file: <Afscat-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-09 16:08:03
-(epstopdf)                    size: 152855 bytes
+(epstopdf)                    date: 2015-10-31 20:14:45
+(epstopdf)                    size: 152859 bytes
 (epstopdf)             Command: <repstopdf --outfile=Afscat-eps-converted-to.pd
 f Afscat.eps>
-(epstopdf)             \includegraphics on input line 347.
+(epstopdf)             \includegraphics on input line 369.
 Package epstopdf Info: Output file is already uptodate.
 
-<Afscat-eps-converted-to.pdf, id=115, 827.09pt x 603.25375pt>
+<Afscat-eps-converted-to.pdf, id=254, 827.09pt x 603.25375pt>
 File: Afscat-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Afscat-eps-converted-to.pdf>
-Package pdftex.def Info: Afscat-eps-converted-to.pdf used on input line 347.
+Package pdftex.def Info: Afscat-eps-converted-to.pdf used on input line 369.
 (pdftex.def)             Requested size: 244.3474pt x 178.21605pt.
 Package epstopdf Info: Source file: <Bfscat.eps>
-(epstopdf)                    date: 2015-10-09 16:06:54
-(epstopdf)                    size: 42179 bytes
+(epstopdf)                    date: 2015-10-31 20:11:11
+(epstopdf)                    size: 42198 bytes
 (epstopdf)             Output file: <Bfscat-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-09 16:08:05
-(epstopdf)                    size: 152559 bytes
+(epstopdf)                    date: 2015-10-31 20:14:47
+(epstopdf)                    size: 152554 bytes
 (epstopdf)             Command: <repstopdf --outfile=Bfscat-eps-converted-to.pd
 f Bfscat.eps>
-(epstopdf)             \includegraphics on input line 352.
+(epstopdf)             \includegraphics on input line 374.
 Package epstopdf Info: Output file is already uptodate.
 
-<Bfscat-eps-converted-to.pdf, id=116, 827.09pt x 603.25375pt>
+<Bfscat-eps-converted-to.pdf, id=255, 827.09pt x 603.25375pt>
 File: Bfscat-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Bfscat-eps-converted-to.pdf>
-Package pdftex.def Info: Bfscat-eps-converted-to.pdf used on input line 352.
+Package pdftex.def Info: Bfscat-eps-converted-to.pdf used on input line 374.
 (pdftex.def)             Requested size: 244.3474pt x 178.21605pt.
 Package epstopdf Info: Source file: <Cfscat.eps>
-(epstopdf)                    date: 2015-10-09 16:07:17
-(epstopdf)                    size: 42220 bytes
+(epstopdf)                    date: 2015-10-31 20:11:22
+(epstopdf)                    size: 42241 bytes
 (epstopdf)             Output file: <Cfscat-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-09 16:08:06
-(epstopdf)                    size: 152886 bytes
+(epstopdf)                    date: 2015-10-31 20:14:48
+(epstopdf)                    size: 152864 bytes
 (epstopdf)             Command: <repstopdf --outfile=Cfscat-eps-converted-to.pd
 f Cfscat.eps>
-(epstopdf)             \includegraphics on input line 357.
+(epstopdf)             \includegraphics on input line 379.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cfscat-eps-converted-to.pdf, id=117, 827.09pt x 603.25375pt>
+<Cfscat-eps-converted-to.pdf, id=256, 827.09pt x 603.25375pt>
 File: Cfscat-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cfscat-eps-converted-to.pdf>
-Package pdftex.def Info: Cfscat-eps-converted-to.pdf used on input line 357.
+Package pdftex.def Info: Cfscat-eps-converted-to.pdf used on input line 379.
 (pdftex.def)             Requested size: 244.3474pt x 178.21605pt.
 Package epstopdf Info: Source file: <Dfscat.eps>
-(epstopdf)                    date: 2015-10-09 16:07:32
-(epstopdf)                    size: 42183 bytes
+(epstopdf)                    date: 2015-10-31 20:11:33
+(epstopdf)                    size: 42193 bytes
 (epstopdf)             Output file: <Dfscat-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-09 16:08:08
-(epstopdf)                    size: 152625 bytes
+(epstopdf)                    date: 2015-10-31 20:14:49
+(epstopdf)                    size: 152534 bytes
 (epstopdf)             Command: <repstopdf --outfile=Dfscat-eps-converted-to.pd
 f Dfscat.eps>
-(epstopdf)             \includegraphics on input line 362.
+(epstopdf)             \includegraphics on input line 384.
 Package epstopdf Info: Output file is already uptodate.
 
-<Dfscat-eps-converted-to.pdf, id=118, 827.09pt x 603.25375pt>
+<Dfscat-eps-converted-to.pdf, id=257, 827.09pt x 603.25375pt>
 File: Dfscat-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Dfscat-eps-converted-to.pdf>
-Package pdftex.def Info: Dfscat-eps-converted-to.pdf used on input line 362.
+Package pdftex.def Info: Dfscat-eps-converted-to.pdf used on input line 384.
 (pdftex.def)             Requested size: 244.3474pt x 178.21605pt.
+Package epstopdf Info: Source file: <inccvt.eps>
+(epstopdf)                    date: 2015-10-31 20:02:29
+(epstopdf)                    size: 52351 bytes
+(epstopdf)             Output file: <inccvt-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-31 20:14:50
+(epstopdf)                    size: 21480 bytes
+(epstopdf)             Command: <repstopdf --outfile=inccvt-eps-converted-to.pd
+f inccvt.eps>
+(epstopdf)             \includegraphics on input line 393.
+Package epstopdf Info: Output file is already uptodate.
+
+<inccvt-eps-converted-to.pdf, id=258, 821.0675pt x 661.47125pt>
+File: inccvt-eps-converted-to.pdf Graphic file (type pdf)
+
+<use inccvt-eps-converted-to.pdf>
+Package pdftex.def Info: inccvt-eps-converted-to.pdf used on input line 393.
+(pdftex.def)             Requested size: 398.93158pt x 321.38849pt.
+Package epstopdf Info: Source file: <tdcvt_a.eps>
+(epstopdf)                    date: 2015-10-31 20:36:23
+(epstopdf)                    size: 58243 bytes
+(epstopdf)             Output file: <tdcvt_a-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-31 20:40:41
+(epstopdf)                    size: 26125 bytes
+(epstopdf)             Command: <repstopdf --outfile=tdcvt_a-eps-converted-to.p
+df tdcvt_a.eps>
+(epstopdf)             \includegraphics on input line 405.
+Package epstopdf Info: Output file is already uptodate.
+
+<tdcvt_a-eps-converted-to.pdf, id=259, 722.7pt x 633.36626pt>
+File: tdcvt_a-eps-converted-to.pdf Graphic file (type pdf)
+
+<use tdcvt_a-eps-converted-to.pdf>
+Package pdftex.def Info: tdcvt_a-eps-converted-to.pdf used on input line 405.
+(pdftex.def)             Requested size: 244.3474pt x 214.1433pt.
+Package epstopdf Info: Source file: <tdcvt_f.eps>
+(epstopdf)                    date: 2015-10-31 20:35:57
+(epstopdf)                    size: 58257 bytes
+(epstopdf)             Output file: <tdcvt_f-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-31 20:40:42
+(epstopdf)                    size: 26116 bytes
+(epstopdf)             Command: <repstopdf --outfile=tdcvt_f-eps-converted-to.p
+df tdcvt_f.eps>
+(epstopdf)             \includegraphics on input line 410.
+Package epstopdf Info: Output file is already uptodate.
+
+<tdcvt_f-eps-converted-to.pdf, id=260, 722.7pt x 633.36626pt>
+File: tdcvt_f-eps-converted-to.pdf Graphic file (type pdf)
+
+<use tdcvt_f-eps-converted-to.pdf>
+Package pdftex.def Info: tdcvt_f-eps-converted-to.pdf used on input line 410.
+(pdftex.def)             Requested size: 244.3474pt x 214.1433pt.
  [12] [13 <./A4dvar-eps-converted-to.pdf> <./B4dvar-eps-converted-to.pdf> <./C4
-dvar-eps-converted-to.pdf> <./D4dvar-eps-converted-to.pdf>] [14 <./taylordiag-e
-ps-converted-to.pdf>] [15 <./Afscat-eps-converted-to.pdf> <./Bfscat-eps-convert
-ed-to.pdf> <./Cfscat-eps-converted-to.pdf> <./Dfscat-eps-converted-to.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 407.
+dvar-eps-converted-to.pdf> <./D4dvar-eps-converted-to.pdf>] [14 <./Abroke4dvar-
+eps-converted-to.pdf> <./Bbroke4dvar-eps-converted-to.pdf> <./Cbroke4dvar-eps-c
+onverted-to.pdf> <./Dbroke4dvar-eps-converted-to.pdf>] [15 <./Afscat-eps-conver
+ted-to.pdf> <./Bfscat-eps-converted-to.pdf> <./Cfscat-eps-converted-to.pdf> <./
+Dfscat-eps-converted-to.pdf>] [16 <./inccvt-eps-converted-to.pdf> <./tdcvt_a-ep
+s-converted-to.pdf> <./tdcvt_f-eps-converted-to.pdf>] [17]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 456.
 
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 407.
- [16
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 456.
+
+[18
 
 ] (./4dvar.bbl
 Missing character: There is no â in font cmr10!
@@ -722,70 +859,70 @@ Underfull \hbox (badness 2189) in paragraph at lines 55--62
 1726-4189.  doi: 10.5194/bg-12-1299-2015.  URL
  []
 
-[17]
-Underfull \hbox (badness 1515) in paragraph at lines 183--193
+[19]
+Underfull \hbox (badness 1515) in paragraph at lines 201--211
 \OT1/cmr/m/n/10.95 gins.  Four-Dimensional Vari-a-tional Data As-sim-i-la-tion 
 Ex-per-i-ments with a Mul-ti-level Semi-
  []
 
 
-Overfull \hbox (26.96233pt too wide) in paragraph at lines 183--193
+Overfull \hbox (26.96233pt too wide) in paragraph at lines 201--211
 \OT1/cmtt/m/n/10.95 http://journals.ametsoc.org/doi/abs/10.1175/1520-0493(1994)
 122%3C0966:FDVDAE%3E2.0.CO%3B2\OT1/cmr/m/n/10.95 . 
  []
 
 Missing character: There is no ® in font cmti10!
-
-Underfull \hbox (badness 1158) in paragraph at lines 206--215
+[20]
+Underfull \hbox (badness 1158) in paragraph at lines 224--233
 []\OT1/cmr/m/n/10.95 I. M. Navon, X. Zou, J. Der-ber, and J. Sela.  Vari-a-tion
 al Data As-sim-i-la-tion with an Adi-
  []
 
 
-Underfull \hbox (badness 2205) in paragraph at lines 206--215
+Underfull \hbox (badness 2205) in paragraph at lines 224--233
 \OT1/cmr/m/n/10.95 a-batic Ver-sion of the NMC Spec-tral Model.  \OT1/cmr/m/it/
 10.95 Monthly Weather Re-view\OT1/cmr/m/n/10.95 , 120(7):1433--1446,
  []
 
 
-Overfull \hbox (38.4597pt too wide) in paragraph at lines 206--215
+Overfull \hbox (38.4597pt too wide) in paragraph at lines 224--233
 \OT1/cmtt/m/n/10.95 http://journals.ametsoc.org/doi/abs/10.1175/1520-0493(1992)
 120%3C1433%3AVDAWAA%3E2.0.CO%3B2\OT1/cmr/m/n/10.95 . 
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 233--239
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--257
 []\OT1/cmr/m/n/10.95 Jorge No-cedal and Stephen J Wright.  \OT1/cmr/m/it/10.95 
 Nu-mer-i-cal Op-ti-miza-tion\OT1/cmr/m/n/10.95 .  Springer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--239
+Underfull \hbox (badness 10000) in paragraph at lines 251--257
 \OT1/cmr/m/n/10.95 Sci-ence & Busi-ness Me-dia, 1999.  ISBN 0387987932.  URL
  []
 
 
-Overfull \hbox (19.604pt too wide) in paragraph at lines 233--239
+Overfull \hbox (19.604pt too wide) in paragraph at lines 251--257
 \OT1/cmtt/m/n/10.95 http://books.google.co.uk/books/about/Numerical[]Optimizati
 on.html?id=epc5fX0lqRIC&pgis=1\OT1/cmr/m/n/10.95 . 
  []
 
-[19]) [20] (./4dvar.aux)
-
-LaTeX Warning: There were undefined references.
-
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no   in font cmr10!
+[21]) [22] [23] (./4dvar.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5706 strings out of 493117
- 83732 string characters out of 6135433
- 168557 words of memory out of 5000000
- 9009 multiletter control sequences out of 15000+600000
- 15365 words of font info for 59 fonts, out of 8000000 for 9000
+ 5788 strings out of 493117
+ 85626 string characters out of 6135433
+ 166909 words of memory out of 5000000
+ 9077 multiletter control sequences out of 15000+600000
+ 20139 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,15n,43p,2206b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,15n,43p,2206b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
@@ -804,10 +941,10 @@ ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 4dvar.pdf (20 pages, 2321796 bytes).
+Output written on 4dvar.pdf (23 pages, 2470756 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
+ 758 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

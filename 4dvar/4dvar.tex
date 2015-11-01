@@ -12,7 +12,7 @@
 \bibliographystyle{plainnat}
 
 \title{Investigating the role of background and observation error correlations in improving a model forecast of forest carbon balance using 4D-Var.}
-\author{Ewan Pinnington ADD AFFILIATIONS}
+\author{Ewan Pinnington ADD OTHER AUTHORS}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem*{defn}{Definition}
@@ -28,21 +28,21 @@ Efforts to implement variational data assimilation routines with functional ecol
 
 \section{Introduction} \label{sec:intro}
 
-\subsection{Tree blurb}
+%\subsection{Tree blurb}
 Terrestrial ecosystems and oceans are responsible for removing around half of all human emitted carbon-dioxide from the atmosphere and therefore mediate the effect of anthropogenic induced climate change \citep{ciais2014carbon}. Terrestrial ecosystem carbon uptake is the least understood process in the global carbon cycle. It is therefore vital that we improve understanding of the carbon uptake of terrestrial ecosystems and their response to climate change in order to better constrain predictions of future carbon budgets. Observations of the Net Ecosystem Exchange (NEE) of CO$_{2}$ between terrestrial ecosystems and the atmosphere are now routinely made at flux tower sites world-wide \citep{baldocchi2008turner} providing a valuable resource for model validation and data assimilation.
 
-\subsection{DA paragraph}
+%\subsection{DA paragraph}
 Data assimilation is the process of combining a mathematical model with observations in order to improve the estimate of the state of a system. Data assimilation has successfully been used in many applications to significantly improve model state and forecasts. Perhaps the most important application has been in numerical weather prediction where the impact of data assimilation has been that the four day forecast in 2014 has the same level of accuracy as the one day forecast in 1979 \citep{bauer2015quiet}. This increase in forecast skill is obviously not solely due to data assimilation but also increased quality and resolution of observations along with improvements in model structure, however the introduction and evolution of data assimilation has played a large part \citep{dee2011era}. The current method implemented at many leading operational numerical weather prediction centres is known as Four-Dimensional Variational data assimilation (4D-Var) \citep{rabier2000ecmwf, rawlins2007met}, which has been shown to be a significant improvement over its predecessor three-dimensional variational assimilation \citep{lorenc2005does}. Variational assimilation techniques minimise a cost function to find the optimal state of a system given all available knowledge of errors in the model and observations. The minimisation routine typically requires the derivative of the model, this can sometimes prove difficult to calculate. Using techniques such as automatic-differentiation can reduce the time taken to implement the derivative of a model. In numerical weather prediction data assimilation has been predominately used for state estimation whilst keeping parameters fixed. Variational data assimilation can be used for joint parameter and state estimation by augmenting the parameters into the state vector \citep{navon1998practical}. By including the parameters in the state vector we must also specify error statistics and error correlations for them. In \citet{smith2009variational} it is shown that the prescription of these error statistics and their correlations can have a significant impact on parameter-state estimates obtained from the assimilation.
 
-\subsection{DALEC and ecosystem models with data assimilation (draw out gaps):}
+%\subsection{DALEC and ecosystem models with data assimilation (draw out gaps):}
 Many different observations relevant to the carbon balance of forests have now been combined with functional ecology models, using data assimilation, in order to improve our knowledge ecological systems \citep{zobitz2011primer, fox2009reflex, richardson2010estimating, Quaife2008, Zobitz2014, Niu2014}. Two such models that have been used extensively with data assimilation are the Data Assimilation Linked Ecosystem Carbon (DALEC) model \citep{williams2005improved} and the Simplified Photosynthesis and Evapo-Transpiration (SIPNET) model \citep{braswell2005estimating}. Nearly all data assimilation routines built with these models have used sequential and Monte Carlo Markov chain (MCMC) data assimilation methods with the exception of DALEC being implemented in a variational routine by \citet{delahaies2013regularization}. There have been examples of global land surface models being implemented with variational methods such as the Carbon Cycle Data Assimilation System (CCDAS) \citep{Kaminski2013} and the ORganizing Carbon and Hydrology In Dynamic EcosystEms model (ORCHIDEE) \citep{Krinner2005}. These examples have mainly been used to assimilate data from satellite observations with a few examples where site level data has been assimilated \citep{Verbeeck2011, Bacour2015}.
 
 Background errors (describing our knowledge of error in our prior model estimates before data assimilation) and observation errors have largely been treated as uncorrelated and independent in ecosystem model data assimilation schemes. In 3D and 4DVar schemes background and observation errors are represented by the error covariance matrices \textbf{B} and \textbf{R} respectively. The off-diagonal elements of these matrices indicate the correlations between the parameter and state variables for \textbf{B} and the correlations between observation errors for \textbf{R}. In the assimilation the off-diagonal terms in the \textbf{B} matrix act to spread information between the state and augmented parameter variables \citep{kalnay2003atmospheric}. This means that assimilating observations of one state variable can act to update different state variables in the assimilation. In 4D-Var the \textbf{B} matrix is propagated implicitly by the forecast model, this means that even a diagonal \textbf{B} matrix can develop correlations throughout an assimilation window. Including correlations in \textbf{B} has been shown to significantly improve data assimilation results in numerical weather prediction \citep{bannister2008review}. 
 
 Including correlations between observation errors has only started to be explored recently in numerical weather prediction, with \textbf{R} still often treated as diagonal \citep{Stewart2013}. Including some correlation structure in \textbf{R} has been shown to improve forecast accuracy \citep{weston2014accounting}. Currently the correlations included in \textbf{R} have been mainly between observations made at the the same time rather than correlations between observations throughout time. When assimilating observations, data streams with many more observations can have a greater impact on the assimilation than those with fewer observations. In \citet{richardson2010estimating} this problem is discussed when assimilating large numbers of NEE observations along with smaller numbers of leaf area index and soil respiration observations. To address this problem Richardson uses a cost function that calculates the product of the departures from the observations rather than a cost function which sums these departures, giving a relative rather than absolute measure of the goodness-of-fit to the observations. Specifying serial correlations between observations represents another way of addressing this problem, whilst also adding valuable information to the data assimilation routine. Including serial correlations between observations of the same quantity decreases the impact of these observations \citep{jarvinen1999variational} increasing the impact of less frequent observations. 
 
-\subsection{What does this paper do/results:}
-In this paper we implement the new version of DALEC (DALEC2 \citep{Bloom2015}) in a 4DVAR data assimilation scheme for joint state and parameter estimation, assimilating daily NEE observations from the Alice Holt flux site in Hampshire, UK which is managed by Forest Research. This assimilation scheme is then subjected to rigorous testing to ensure correctness. We then outline a new method for including parameter and state correlations in the background error covariance matrix and a method for including serial correlations in the observation error covariance matrix. These matrices are then used in a series of experiments in order to examine the effect that including correlations in the assimilation scheme has on the results. We show that specifying parameter and state correlations in the prior knowledge and serial correlations between observation errors can significantly improve the predicted carbon balance.
+%\subsection{What does this paper do/results:}
+In this paper we implement the new version of DALEC (DALEC2 \citep{Bloom2015}) in a 4DVAR data assimilation scheme for joint state and parameter estimation, assimilating daily NEE observations from the Alice Holt flux site in Hampshire, UK which is managed by Forest Research \citep{wilkinson2012inter}. This assimilation scheme is then subjected to rigorous testing to ensure correctness. We then outline a new method for including parameter and state correlations in the background error covariance matrix and a method for including serial correlations in the observation error covariance matrix. These matrices are then used in a series of experiments in order to examine the effect that including correlations in the assimilation scheme has on the results. We show that specifying parameter and state correlations in the prior knowledge and serial correlations between observation errors can significantly improve the predicted carbon balance.
 
 \section{Model and Data Assimilation Methods}
 
@@ -56,7 +56,7 @@ The DALEC2 model is a simple process-based model describing the carbon balance o
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.5\textwidth]{Dalecdiagram.png}
+    \includegraphics[width=0.5\textwidth]{DALECdiagram.pdf}
     \caption{Representation of the fluxes in the DALEC2 carbon balance model. Green arrows represent C allocation, purple arrows represent litter fall and decomposition fluxes, blue arrows represent respiration fluxes and the red arrow represents the influence of leaf area index in the $GPP$ function.}
     \label{fig:DALEC_mod}
 \end{figure}
@@ -72,16 +72,16 @@ GPP^{t} &= ACM(C_f^{t}, c_{lma}, c_{eff}, \Psi) \label{GPP}
 \\C_l^{t+1}&=(1-(\theta_{lit}+\theta_{min})e^{\Theta T^{t}})C_l^{t}+\theta_{roo}C_r^{t}+\Phi_{off}C_f^{t}, 
 \\C_s^{t+1}&=(1-\theta_{som}e^{\Theta T^{t}})C_s^{t}+\theta_{woo}C_w^{t}+\theta_{min}e^{\Theta T^{t}}C_l^{t}, \label{dalec5}
 \end{align}
-where $T^{t}$ is the daily mean temperature, $\Psi$ represents the meteorological driving data used in the $GPP$ function and $\Phi_{on} / \Phi_{off}$ are functions controlling leaf-on and leaf-off. The model parameters used in equations \ref{GPP} to \ref{dalec5} are included in the appendix. DALEC2 differs from the original DALEC in that it can be parameterised for both deciduous and evergreen sites with $\Phi_{on}$ and $\Phi_{off}$ being able to reproduce the phenology of either type of site. The full details of this version of DALEC can be found in \cite{Bloom2015}. 
+where $T^{t}$ is the daily mean temperature, $\Psi$ represents the meteorological driving data used in the $GPP$ function and $\Phi_{on} / \Phi_{off}$ are functions controlling leaf-on and leaf-off. The model parameters used in equations \ref{GPP} to \ref{dalec5} are included in the appendix in table~\ref{table:xbvars}. DALEC2 differs from the original DALEC in that it can be parameterised for both deciduous and evergreen sites with $\Phi_{on}$ and $\Phi_{off}$ being able to reproduce the phenology of either type of site. The full details of this version of DALEC can be found in \cite{Bloom2015}. 
 
 \subsection{4D-Var} \label{4dvar}
 
-In 4D-Var we aim to maximise the probability of $P(\textbf{x}_0|\textbf{y})$, the initial state $\textbf{x}_0$ given a set of observations $\textbf{y}$ over some time window, $0, \dots, N$. The probability $P(\textbf{x}_0|\textbf{y})$ is maximised by minimising a cost function $J(\textbf{x})$ derived from Bayes Theorem \citep{lawless2013}. The cost function is given as,
+In 4D-Var we aim to maximise the probability of $P(\textbf{x}_0|\textbf{y})$, the initial state $\textbf{x}_0$ given a set of observations $\textbf{y}$ over some time window, $0, \dots, N$. The probability $P(\textbf{x}_0|\textbf{y})$ is maximised by minimising a cost function $J(\textbf{x}_0)$ derived from Bayes Theorem \citep{lawless2013}. The cost function is given as,
 
 \begin{equation}
 J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}_b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}_b)+\frac{1}{2}\sum_{i=0}^{N}(\textbf{y}_i-h_i(\textbf{x}_i))^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-h_i(\textbf{x}_i)),
 \end{equation}
-where $\textbf{x}_b$ is the so-called background and acts as the initial guess to the state $\textbf{x}_0$, $\textbf{B}$ is the background error covariance matrix and quantifies our knowledge of the error in the background, $h_i$ is the observation operator at time $t_i$ and maps the state vector evolved by the nonlinear model ($m_{0\rightarrow i}(\mathbf{x}_{0})=\textbf{x}_i$) to the observations at this time ($\textbf{y}_i$) and $\textbf{R}_i$ is the observation error covariance matrix at time $t_i$ and represents our knowledge of the uncertainty in the observations. The state that minimises the cost function is called the analysis and is denoted as $\textbf{x}_a$. This state is found using a minimisation routine that takes as arguments the cost function, the initial guess ($\textbf{x}_b$) and also the gradient of the cost function given as,
+where $\textbf{x}_b$ is the so-called background and acts as the initial guess to the state $\textbf{x}_0$, $\textbf{B}$ is the background error covariance matrix and quantifies our knowledge of the error in the background, $h_i$ is the observation operator at time $t_i$ and maps the state vector evolved by the nonlinear model ($m_{0\rightarrow i}(\mathbf{x}_{0})=\textbf{x}_i$) to the observations at this time ($\textbf{y}_i$) and $\textbf{R}_i$ is the observation error covariance matrix at time $t_i$ and represents our knowledge of the uncertainty in the observations. The state that minimises the cost function is called the analysis and is denoted as $\textbf{x}_a$. This state is found using a minimisation routine that takes as its input arguments the cost function, the initial guess ($\textbf{x}_b$) and also the gradient of the cost function given as,
 
 \begin{equation}
 \nabla J(\textbf{x}_0) = \textbf{B}^{-1}(\textbf{x}_0-\textbf{x}_b)-\sum_{i=0}^{N}\textbf{M}_{i,0}^{T}\textbf{H}_i^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-h_i(\textbf{x}_i)),
@@ -131,18 +131,18 @@ h_N(m_{0\rightarrow N}(\mathbf{x}_{0}))
 \end{pmatrix}.
 \end{equation}
 
-Solving the cost function in this form also allows us to build serial correlations into the observation error covariance matrix $\hat{\mathbf{R}}$. WHAT ARE OFF-DIAGONAL R'S HERE!
+Solving the cost function in this form also allows us to build serial correlations into the observation error covariance matrix $\hat{\mathbf{R}}$. The off-diagonal blocks of $\hat{\mathbf{R}}$ represent correlations in time between assimilated observations and are usually taken to be zero.
 %Forecast skill score, $SS = 1 - \frac{MSE_{forecast}}{MSE_{ref}}$, http://en.wikipedia.org/wiki/Forecast_skill
 
 \subsection{Implementation and testing of 4D-Var system}
 
-In our DALEC2 4D-Var scheme we are performing joint parameter and state estimation. Therefore the state vector, $\textbf{x}_0$, corresponds to the vector of the 17 model parameters and 6 initial carbon pool values, which can be found in the appendix. Here the nonlinear model (DALEC2) only updates the initial carbon pool values when evolving the state vector forward in time with the parameters being held constant. To find the background guess, $\textbf{x}_{b}$, to the state vector we can either use a previous DALEC2 model forecast's estimate to the state of the system for the site (when available) or use expert elicitation to define likely state and parameter values and ranges for the site. The background vector $(\textbf{x}_b)$ and its corresponding variances used in this paper were provided from existing runs of the the CARbon DAta-MOdel fraMework (CARDAMOM) \citep{Exbrayat2015}. This is a worse resolution dataset which provides a reasonable first guess at DALEC2 state and parameter values for the Alice Holt research site.
+In our DALEC2 4D-Var scheme we are performing joint parameter and state estimation. Therefore the state vector, $\textbf{x}_0$, corresponds to the vector of the 17 model parameters and 6 initial carbon pool values, which can be found in the appendix. Here the nonlinear model (DALEC2) only updates the initial carbon pool values when evolving the state vector forward in time with the parameters being held constant. To find the background guess, $\textbf{x}_{b}$, to the state vector we can either use a previous DALEC2 model forecast's estimate to the state of the system for the site (when available) or use expert elicitation to define likely state and parameter values and ranges for the site. The background vector $(\textbf{x}_b)$ and its corresponding standard deviations (see table~\ref{table:xbvars}) used in this paper were provided from existing runs of the the CARbon DAta-MOdel fraMework (CARDAMOM) \citep{Exbrayat2015}. This is a worse resolution dataset which provides a reasonable first guess at DALEC2 state and parameter values for the Alice Holt research site.
 
 In order to find the tangent linear model (TLM) for DALEC2 it is necessary to find the derivative of the model at each time step with respect to the 17 model parameters and the 6 carbon pools. We use the AlgoPy automatic differentiation package \citep{Walter2013} in Python to calculate the TLM at each time step. This package uses forward mode automatic differentiation to calculate the derivative of our model. In the following tests we use a diagonal approximation to our background and observational error covariance matrices so that, 
 $\textbf{B}_{diag}=\text{diag}(\bm{\sigma}_b)^2$ and $\hat{\textbf{R}}_{diag}=\text{diag}(\bm{\sigma}_o )^2$,
 where $\bm{\sigma}_b$ and $\bm{\sigma}_o$ are the vectors of the background and observational standard deviations respectively. 
 
-In this paper we assimilate observations of daily NEE. The flux tower actually produces an estimate of NEE every half-hour, we take the sum over the 48 measurements made each day. We only select days where there is no missing data and over $90\% $ of observations have a quality control flag associated with the best observations from the EddyPro flux processing software \citep{eddypro}. We take a variance of $0.5\text{gCm}^{-2}\text{day}^{-1}$ in our assimilated observations of daily NEE \citep{williams2005improved}. The minimisation routine used in our data assimilation experiments is the truncated Newton method \citep{Nocedal1999} from the Python package Scipy.optimize. In sections \ref{sec:testtlm} to \ref{sec:testgrad} we show tests of our scheme. 
+In this paper we assimilate observations of daily NEE. The flux tower actually produces an estimate of NEE every half-hour. We take the sum over the 48 measurements made each day. We only select days where there is no missing data and over $90\% $ of observations have a quality control flag associated with the best observations from the EddyPro flux processing software \citep{eddypro}. We take a variance of $0.5\text{gCm}^{-2}\text{day}^{-1}$ in our assimilated observations of daily NEE \citep{williams2005improved}. The minimisation routine used in our data assimilation experiments is the truncated Newton method \citep{Nocedal1999} from the Python package Scipy.optimize. In sections \ref{sec:testtlm} to \ref{sec:testgrad} we show tests of our scheme. 
 
 
 \subsubsection{Test of tangent linear model} \label{sec:testtlm}
@@ -160,7 +160,7 @@ where we expect $E_R \rightarrow 0$ as $\gamma \rightarrow 0$ (here we are using
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.6\textwidth]{testtlmer.png}
+    \includegraphics[width=0.5\textwidth]{linmoderr.eps}
     \caption{Plot of the tangent linear model test function (equation \ref{tlmtest}) for DALEC2, for a TLM evolving our state 731 days forward in time and a $5\%$ perturbation, $\delta \textbf{x}_0$.}
     \label{fig:tlm}
 \end{figure}
@@ -172,7 +172,7 @@ It is also useful to show how our TLM behaves over a time window to see how the 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.6\textwidth]{tlm_error.png}
+    \includegraphics[width=0.5\textwidth]{percenterrlinmod.eps}
     \caption{Plot of the percentage error in the tangent linear model (equation \ref{pertlmtest}) for DALEC2 when evolving the model state forward over a period of two years with three differing values of perturbation, $\delta \textbf{x}_0$.}
     \label{fig:tlm_error}
 \end{figure}
@@ -181,34 +181,41 @@ In figure \ref{fig:tlm_error} we can see that our TLM for DALEC2 performs well a
 
 \subsubsection{Test of adjoint model} 
 
-The adjoint model we have implemented for DALEC2 passes correctness tests \citep{lawless2013}. For our TLM $\mathbf{M}_{i,0}$ and its adjoint $\mathbf{M}_{i,0}^{T}$ we have the identity
+The adjoint model we have implemented for DALEC2 passes correctness tests. For our TLM $\mathbf{M}_{i,0}$ and its adjoint $\mathbf{M}_{i,0}^{T}$ we have the identity
 \begin{equation}
-<\mathbf{M}_{i,0}\delta\textbf{x}_0, \mathbf{M}_{i,0}\delta\textbf{x}_0> = <\delta\textbf{x}_0, \mathbf{M}_{i,0}^{T}\mathbf{M}_{i,0}\delta\textbf{x}_0>
+<\mathbf{M}_{i,0}\delta\textbf{x}_0, \mathbf{M}_{i,0}\delta\textbf{x}_0> = <\delta\textbf{x}_0, \mathbf{M}_{i,0}^{T}\mathbf{M}_{i,0}\delta\textbf{x}_0> \label{eqn:adjoint_test}
 \end{equation}
-for any inner product $<, >$ and perturbation $\delta \textbf{x}_0$. We evaluated the left hand side and right hand side of this identity for differing values of $\delta \textbf{x}_0$ and showed that they were equal to machine precision.
+for any inner product $<, >$ and perturbation $\delta \textbf{x}_0$, this is derived from the adjoint identity \citep{lawless2013}. Using the Euclidean inner product equation~\ref{eqn:adjoint_test} is equivalent to
+\begin{equation}
+(\mathbf{M}_{i,0}\delta\textbf{x}_0)^{T} (\mathbf{M}_{i,0}\delta\textbf{x}_0) = \delta\textbf{x}_0^{T} (\mathbf{M}_{i,0}^{T}(\mathbf{M}_{i,0}\delta\textbf{x}_0)).
+\end{equation}
+We evaluated the left hand side and right hand side of this identity for differing values of $\delta \textbf{x}_0$ and showed that they were equal to machine precision.
 
 \subsubsection{Gradient test} \label{sec:testgrad}
 
-The 4D-Var system we have developed passes tests for the gradient of the cost function \citep{Navon1992}. For our cost function $J$ and its gradient $\nabla J$ we can show that we have implemented $\nabla J$ correctly using the identity,
+The 4D-Var system we have developed passes tests for the gradient of the cost function \citep{Navon1992}. In the implementation of the cost function and its gradient we regularise the problem using a variable transform \citep{Freitag2010}. For our cost function $J$ and its gradient $\nabla J$ we can show that we have implemented $\nabla J$ correctly using the identity,
 \begin{equation}
 f(\alpha)=\frac{| J( \textbf{x}_0 + \alpha \textbf{b}) - J(\textbf{x}_0) |}{\alpha \textbf{b}^{T} \nabla J(\textbf{x}_0)} = 1 + O(\alpha),
 \end{equation}
-where $\textbf{b}$ is a vector of unit length and $\alpha$ is a parameter controlling the size of $\textbf{b}$. For small values of $\alpha$ not too close to machine zero we should have $f(\alpha)$ close to 1. Figure~\ref{fig:testgradcostone} shows $f(\alpha)$ for a 731 day assimilation window with $\textbf{b}=\textbf{x}_0||\textbf{x}_0||^{-1}$, we can see that $f(\alpha) \rightarrow 1$ as $\alpha \rightarrow 0$, as expected.
+where $\textbf{b}$ is a vector of unit length and $\alpha$ is a parameter controlling the size of $\textbf{b}$. For small values of $\alpha$ not too close to machine precision we should have $f(\alpha)$ close to 1. Figure~\ref{fig:costone} shows $f(\alpha)$ for a 365 day assimilation window with $\textbf{b}=\textbf{x}_0||\textbf{x}_0||^{-1}$, we can see that $f(\alpha) \rightarrow 1$ as $\alpha \rightarrow 0$, as expected until $f(\alpha)$ gets too close to machine zero at $O(\alpha) = 10^{-11}$.
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.6\textwidth]{gradtestone.png}
-    \caption{Test of the gradient of the cost function for a 731 day assimilation window with $\textbf{h}=\textbf{x}_0||\textbf{x}_0||^{-1}$. {\color{red}REDO}}
-    \label{fig:testgradcostone}
-\end{figure}
-
-We can also plot $|f(\alpha)-1|$, where we expect $|f(\alpha)-1| \rightarrow 0$ as $\alpha \rightarrow 0$.  In figure~\ref{fig:testgradcost} we have plotted $|f(\alpha)-1|$ for the same conditions as in figure~\ref{fig:testgradcostone}, we can see that $|f(\alpha) - 1| \rightarrow 0$ as $\alpha \rightarrow 0$, as expected (before $|f(\alpha)-1|$ gets too close to machine zero at $O(\alpha) = 10^{-5}$). This gives us confidence that the gradient of our cost function is implemented correctly.
+We can also plot $|f(\alpha)-1|$, where we expect $|f(\alpha)-1| \rightarrow 0$ as $\alpha \rightarrow 0$.  In figure~\ref{fig:cost} we have plotted $|f(\alpha)-1|$ for the same conditions as in figure~\ref{fig:costone}, we can see that $|f(\alpha) - 1| \rightarrow 0$ as $\alpha \rightarrow 0$, as expected (before $|f(\alpha)-1|$ gets too close to machine precision at $O(\alpha) = 10^{-8}$). This gives us confidence that the gradient of our cost function is implemented correctly.
 %$\nabla J(\textbf{x}_0)||\nabla J(\textbf{x}_0)||^{-1}$. 
+
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.6\textwidth]{testgradcost1.png}
-    \caption{Test of the gradient of the cost function, $|f(\alpha) -1|$. As $\alpha \rightarrow 0$ we have $| 1 - f(\alpha) | \rightarrow 0$ up to $O(\alpha) = 10^{-4}$ where we have gone past the precision of the computer.{\color{red}REDO}}
-    \label{fig:testgradcost}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{costone_cvt.eps}
+        \caption{$f(\alpha)$ test}
+        \label{fig:costone}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{cost_cvt.eps}
+        \caption{$|f(\alpha) - 1|$ test}
+        \label{fig:cost}
+    \end{subfigure}
+    \caption{Tests of the gradient of the cost function for a 365 day assimilation window with $\textbf{h}=\textbf{x}_0||\textbf{x}_0||^{-1}$.}
+    \label{fig:testgradcostone}
 \end{figure}
 
 \subsection{Including correlations in the background error covariance matrix} \label{sec:corB}
@@ -217,31 +224,24 @@ As discussed in section~\ref{sec:intro}, including correlations in \textbf{B} im
 
 In order to create a correlated background error covariance matrix, $\textbf{B}_{corr}$, using these constraints we create an ensemble of state vectors which we then take the covariance of to give us $\textbf{B}_{corr}$. To create this ensemble we use the following procedure:
 \begin{enumerate}
-\item Draw a random state vector, $\textbf{x}_i$, from the multivariate truncated normal distribution described by our $\textbf{x}_b$, associated variances and parameter-state ranges given in table REF (in appendix).
+\item Draw a random state vector, $\textbf{x}_i$, from the multivariate truncated normal distribution described by our $\textbf{x}_b$, associated variances and parameter-state ranges given in table~\ref{table:xbvars}.
 \item Test this $\textbf{x}_i$ with the ecological dynamical constraints (requiring us to run the DALEC2 model using this state).
 \item If $\textbf{x}_i$ passes it is added to to our ensemble, else it is discarded.
 \end{enumerate}
-Once we have a full ensemble (we chose an ensemble size of 1500 as past this point values of correlations did not appear to change significantly) we then take the covariance of the ensemble to find our $\textbf{B}_{corr}$. In figure \ref{fig:Bcorr} we have plotted the correlation matrix or normalised error covariance matrix of $\textbf{B}_{corr}$. This matrix includes both positive and negative correlations between parameter and state variables, with correlations of 1 down the diagonal between variables of the same quantity as expected. The largest positive off-diagonal correlation being $0.42$ between $f_{lab}$ and $C_{lab}$. This makes physical sense as $f_{lab}$ is the parameter controlling the amount of GPP allocated to the labile carbon pool, $C_{lab}$.
+Once we have a full ensemble (we chose an ensemble size of 1500 as past this point values of correlations did not appear to change significantly) we then take the covariance of the ensemble to find $\textbf{B}_{corr}$. In figure \ref{fig:Bcorr} we have plotted the correlation matrix or normalised error covariance matrix of $\textbf{B}_{corr}$. This matrix includes both positive and negative correlations between parameter and state variables, with correlations of 1 down the diagonal between variables of the same quantity as expected. The largest positive off-diagonal correlation being $0.42$ between $f_{lab}$ and $C_{lab}$. This makes physical sense as $f_{lab}$ is the parameter controlling the amount of GPP allocated to the labile carbon pool, $C_{lab}$.
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.5\textwidth]{b_edcNone_corrmat.png}
-    \caption{Background error correlation matrix created using method in section \ref{sec:corB}}
-    \label{fig:Bcorr}
-\end{figure}
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.55\textwidth]{edccorb.eps}
+    \includegraphics[width=0.55\textwidth]{bedccor.eps}
     \caption{Background error correlation matrix created using method in section \ref{sec:corB}}
     \label{fig:Bcorr}
 \end{figure}
 
 \subsection{Specifying serial correlations in the observational error covariance matrix} \label{sec:corR}
 
-In this paper we use observations of daily NEE. The flux tower actually produces an estimate of NEE every half-hour, we take the sum over the 48 measurements made each day. We only select days where there is no missing data and over $90\% $ of observations have a quality control flag associated with the best observations from the EddyPro flux processing software \citep{eddypro}. We take a variance of $0.5\text{gCm}^{-2}\text{day}^{-1}$ in our assimilated observations of daily NEE \citep{williams2005improved}. Errors in NEE observations come from different sources such as instrument errors, sampled ecosystem structure and turbulent conditions (when we have low turbulence and limited air mixing NEE is underestimated) \citep{Papale2006}. Due to this dependance on atmospheric conditions we expect the errors in observations of NEE to be serially correlated, as the atmospheric signal itself is serially correlated \citep{Daley1992}. If we were assimilating half hourly observations of NEE we would expect stronger correlations between observation errors, as atmospheric conditions are more constant at this time scale, with correlations between observation errors getting weaker with lower frequency observations. 
+Errors in NEE observations come from different sources such as instrument errors, sampled ecosystem structure and turbulent conditions (when we have low turbulence and limited air mixing NEE is underestimated) \citep{Papale2006}. Due to this dependance on atmospheric conditions we expect the errors in observations of NEE to be serially correlated, as the atmospheric signal itself is serially correlated \citep{Daley1992}. If we were assimilating half hourly observations of NEE we would expect stronger correlations between observation errors, as atmospheric conditions are more constant at this time scale, with correlations between observation errors getting weaker with lower frequency observations. The observation error covariance matrix does not only represent the instrumentation error for an observation but also the error in the observation operator (mapping the model state to the observation) and representativity error (error arising from the model being unable resolve the spatial and temporal scales of the observations). These other sources of error represented in $\hat{\textbf{R}}$ can also lead to correlations between observation errors \citep{Waller2014}.   
 
-In section~\ref{4dvar} we have re-written the 4D-Var cost function in equation~\ref{costfn} in order to allow the specification of serial observation error correlations in our assimilation scheme. These serial correlations are represented by the off-diagonal terms of $\hat{\mathbf{R}}$. As we do not have a practical method of estimating the serial correlation in NEE observation error we adapt the simple Gaussian model found in \citet{jarvinen1999variational} (a second order autoregressive correlation function was also tested but not presented here). The correlation $r$ between 2 observations at times $t_1$ and $t_2$ is given as,
+In section~\ref{4dvar} we have re-written the 4D-Var cost function in equation~\ref{costfn} in order to allow the specification of serial observation error correlations in our assimilation scheme. These serial correlations are represented by the off-diagonal blocks of $\hat{\mathbf{R}}$. In work carried out with spatial correlations it has been shown that the structure of the correlation is not critical \citep{Healy2005} and that it is better to include some estimate of error correlation structure in the observation error covariance matrix than wrongly assume that errors are independent \citep{Stewart2013}. As a first attempt we try including correlations on the scale of the observation frequency. We adapt the simple Gaussian model found in \citet{jarvinen1999variational} (a second order autoregressive correlation function was also tested but not presented here). The correlation $r$ between 2 observations at times $t_1$ and $t_2$ is given as,
 \begin{equation}
 r =
 \begin{cases} 
@@ -250,22 +250,22 @@ r =
    \end{cases}
    , \label{eqn:corr_fn}
 \end{equation}
-where $\tau$ is the e-folding time, $a$ is the correlation, $\delta$ is the Kronecker delta and $\eta$ is the cut off time after which the correlation between two observation errors is zero. We have incorporated a cut off for correlations between observation errors as we believe the correlation length scale to be quite short for our assimilated observations but also because this makes $\hat{\mathbf{R}}$ better conditioned and therefore easier to invert in the assimilation process. 
+where $\tau$ is the e-folding time, $a$ controls the strength of correlation, $\delta$ is the Kronecker delta and $\eta$ is the cut off time after which the correlation between two observation errors is zero. We have incorporated a cut off for correlations between observation errors as the assumed correlation length scale for our assimilated observations is short. This cut off along with the form of correlation function using the Kronecker delta helps ensure $\hat{\mathbf{R}}$ is positive definite and therefore invertible, as required in the assimilation process. 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.5\textwidth]{rcorb.eps}
+    \includegraphics[width=0.5\textwidth]{rcorcor.eps}
     \caption{Observation error covariance matrix for the 67 observations used in assimilation created using method in section \ref{sec:corR} with $\tau = 4$, $a=0.3$ and $\eta=4$.}
     \label{fig:Rcorr}
 \end{figure}
 
-Figure~\ref{sec:corR} shows $\hat{\mathbf{R}}$ created using equation~\ref{eqn:corr_fn}, there are 67 NEE observations in this one year assimilation window, these observations are not all on adjacent days and this is evident in the structure of $\hat{\mathbf{R}}$. The effect of the short e-folding time chosen here ($\tau=4$) provides the desired structure as correlations are likely to be on the scale of a day REFS. 
+Figure~\ref{fig:Rcorr} shows $\hat{\mathbf{R}}$ created using equation~\ref{eqn:corr_fn}, there are 67 NEE observations in this one year assimilation window, these observations are not all on adjacent days and this is evident in the structure of $\hat{\mathbf{R}}$. The effect of the short e-folding time chosen here ($\tau=4$) provides the desired structure. 
 
 \section{Results} \label{sec:results}
 
 \subsection{Experiments} \label{sec:exps}
 
-In the following sections we present the results of 4 experiments where we vary the representations of $\textbf{B}$ and $\hat{\mathbf{R}}$ while assimilating the same NEE observations in the window from 1999-2000. We then forecast the NEE over the next 14 years and compare with the observed data. These experiments are outlined in table~\ref{table:exps_tab} where $\textbf{B}_{diag}$ and $\hat{\mathbf{R}}_{diag}$ are the diagonal matrices of the parameter-state variances and the observations variances respectively and $\textbf{B}_{corr}$ and $\hat{\mathbf{R}}_{corr}$ are the matrices as specified in section~\ref{sec:corB} and section~\ref{sec:corR} respectively.
+In the following sections we present the results of 4 experiments where we vary the representations of $\textbf{B}$ and $\hat{\mathbf{R}}$ while assimilating the same NEE observations in the window from 1999-2000. As shown in figure~\ref{fig:tlm_error} the performance of the tangent linear model deteriorates after the first year. We then forecast the NEE over the next 14 years and compare with the observed data. These experiments are outlined in table~\ref{table:exps_tab} where $\textbf{B}_{diag}$ and $\hat{\mathbf{R}}_{diag}$ are the diagonal matrices of the parameter-state variances and the observations variances respectively and $\textbf{B}_{corr}$ and $\hat{\mathbf{R}}_{corr}$ are the matrices as specified in section~\ref{sec:corB} and section~\ref{sec:corR} respectively.
 
 \begin{table}[ht] 
 \begin{center}
@@ -284,28 +284,32 @@ In the following sections we present the results of 4 experiments where we vary 
 \end{center} 
 \end{table}
 
-In all the following experiments we present results when assimilating NEE observations in the period 1999-2000 from the Alice Holt flux site, other assimilation windows were also tested but are not shown here.
-
 \subsection{Experiment A} \label{sec:expa}
-In this experiment $\textbf{B}_{diag}$ and $\hat{\textbf{R}}_{diag}$ were used in our assimilation as described in section~\ref{sec:exps}. Because these contain no correlations this experiment forms the baseline by which the subsequent results from assimilation experiments are judged. 
+In this experiment $\textbf{B}_{diag}$ and $\hat{\textbf{R}}_{diag}$ were used in our assimilation as described in section~\ref{sec:exps}. Because these contain no correlations this experiment forms the baseline by which the subsequent results from assimilation experiments are judged.  
 
-Figure~\ref{fig:4dvardiagBR} shows assimilation and forecast results for NEE. We can see that our analysis trajectory (green line) fits well with the observations during the the assimilation window (1999-2000) and then diverges in the forecast (2000-2014). One reason for this is that our analysis is being over constrained by the observations and under constrained by the background. Using a diagonal background error covariance matrix ($\textbf{B}_{diag}$) we are not adding much background information to our system and therefore the observations dominate and result in the over fitting of our analysis to the assimilated observations of NEE.
+Figure~\ref{fig:4dvardiagBR} shows assimilation and forecast results for NEE. We can see that assimilating the observations of NEE has improved the background with our analysis trajectory (green line) fitting well with the observations during the the assimilation window (1999-2000). The analysis trajectory then diverges in the forecast (2000-2014). This can be seen more clearly in figue~\ref{fig:broke4dvardiagBR}, where we have an over prediction of respiration in the winter and the seasonal cycle does not match the observations. As discussed in section~\ref{sec:intro} previous work has shown the importance of specifying parameter-state correlations when using variational data assimilation for joint parameter-state estimation \citep{smith2009variational}. Although in 4D-Var some correlation structure is added implicitly as $\textbf{B}_{diag}$ is evolved through time, observations near the beginning of the window (before significant correlations develop in $\textbf{B}_{diag}$) will not be spread in a multivariate way. The correlations developed by the implicit evolution of $\textbf{B}_{diag}$ may also not include important physical relationships between variables. Therefore by not specifying these correlations in this experiment we allow our parameter and state variables to attain unrealistic values in order to find the best fit to the observations in the analysis window (1999-2000), leading to the divergence seen in the forecast (1999-2014). 
 
 To see how well our forecast performs after assimilation we show a scatter plot of modelled NEE against observed NEE in figure~\ref{fig:forecastscatBR}. Here we have a Root-Mean-Square Error (RMSE) of $4.22 \text{gCm}^{-2}$ and a bias of $-0.3 \text{gCm}^{-2}$ for our forecast of NEE, whereas our analysis (1999-2000) has a RMSE of $1.36 \text{gCm}^{-2}$ and a bias of $-0.03 \text{gCm}^{-2}$. The background trajectory meanwhile has a RMSE of $3.86 \text{gCm}^{-2}$ and a bias of $-1.60 \text{gCm}^{-2}$ in the analysis window (1999-2000) and the same RMSE of $3.86 \text{gCm}^{-2}$ but a bias of $-1.36 \text{gCm}^{-2}$ during the forecast period (2000-2014). Although using $\textbf{B}_{diag}$ and $\hat{\textbf{R}}_{diag}$ in our assimilation has considerably reduced the RMSE in our analysis period, it has also increased the RMSE in our forecast of NEE. However it has reduced the bias in the model forecast considerably from $-1.36 \text{gCm}^{-2}$ to $-0.3 \text{gCm}^{-2}$. The bias in the background comes from a constant under prediction of the more extreme negative values of NEE and this leads to considerably worse results than our analysis and its forecast for total forest carbon uptake. 
 
-{\color{red} **Maybe include something about the estimated reduction in error for parameter and state variables using the diagonal terms of \textbf{B} and \textbf{A} (analysis error covariance matrix). How best to compare and present these?}
+%{\color{red} **Maybe include something about the estimated reduction in error for parameter and state variables using the diagonal terms of \textbf{B} and \textbf{A} (analysis error covariance matrix). How best to compare and present these?}
 
 \subsection{Experiment B} \label{sec:expb}
 
-Here $\textbf{B}_{corr}$ (as defined in section~\ref{sec:corB}) and $\hat{\textbf{R}}_{diag}$ are used in our assimilation. In figure~\ref{fig:4dvaredcBR} we can see that the forecast performs considerably better than in experiment A and indeed from figure~\ref{fig:forecastscatedcBR} we see that our forecasts RMSE has almost halved (now $2.56 \text{gCm}^{-2}$) with a reduction in bias also, now $-0.2 \text{gCm}^{-2}$. In comparison using $\textbf{B}_{corr}$ in our assimilation slightly degrades the fit for our analysis (1999-2000), with a RMSE of $1.42 \text{gCm}^{-2}$ and a bias of $-0.04 \text{gCm}^{-2}$, this is because our assimilation scheme is now more constrained by the background than in experiment A. Therefore using $\textbf{B}_{corr}$ in our assimilation reduces the problem of overfitting to our assimilated observations of NEE as seen in experiment A. Another improvement made by using $\textbf{B}_{corr}$ in our assimilation is that our minimisation routine converges to a solution more quickly, taking 218 fewer function iterations than experiment A to converge. 
+Here $\textbf{B}_{corr}$ (as defined in section~\ref{sec:corB}) and $\hat{\textbf{R}}_{diag}$ are used in our assimilation. Figure~\ref{fig:4dvaredcBR} shows assimilation and forecast results for NEE. In figure~\ref{fig:broke4dvaredcBR} we can see that the forecast performs considerably better than in experiment A, with the analysis trajectory no longer over predicting winter respiration and matching the observed seasonal of NEE more closely in the forecast period (2000-2014). From figure~\ref{fig:forecastscatedcBR} and table~\ref{table:forecast_res} we see that our forecasts RMSE has almost halved (now $2.56 \text{gCm}^{-2}$) with a reduction in bias also, now $-0.2 \text{gCm}^{-2}$. In comparison using $\textbf{B}_{corr}$ in our assimilation very slightly degrades the fit for our analysis (1999-2000), with a RMSE of $1.42 \text{gCm}^{-2}$ and a bias of $-0.04 \text{gCm}^{-2}$, as shown in table~\ref{table:analysis_res}. 
+
+We can see the effect that including correlations in $\textbf{B}$ has on the analysis update in figure~\ref{fig:xa_inc}. For some variables including correlations in $\textbf{B}$ has had a large impact on the analysis update after assimilation. This is particularly clear for the $f_{lab}$ parameter. The largest positive off-diagonal correlation in $\textbf{B}_{edc}$ is between $C_{lab}$ and $f_{lab}$, with $f_{lab}$ also having a large positive correlation with $c_{lma}$ as shown in section~\ref{sec:corB}. The effect of these correlations has been to change the analysis increment for $f_{lab}$ from being slightly positive in experiment A to being strongly negative by following the analysis update of its correlated variables $C_{lab}$ and $c_{lma}$. The added constraint provided by the correlations in $\textbf{B}_{edc}$ reduces the likelihood that parameter and state variables will attain unrealistic values in order to fit the assimilated observations. Although this has led to a slightly degraded fit to the observations in the analysis window (1999-2000) it has also significantly improved the fit to observations for the forecast (1999-2014).
+
+%This is because our assimilation scheme is now more constrained by the background than in experiment A. Therefore using $\textbf{B}_{corr}$ in our assimilation reduces the problem of overfitting to our assimilated observations of NEE as seen in experiment A. Another improvement made by using $\textbf{B}_{corr}$ in our assimilation is that our minimisation routine converges to a solution more quickly, taking 218 fewer function iterations than experiment A to converge. 
 
 \subsection{Experiment C} \label{sec:expc}
 
-Here we use $\textbf{B}_{diag}$ and $\hat{\textbf{R}}_{corr}$ (as defined in section~\ref{sec:corR}) in the assimilation. Results shown in figure~\ref{fig:4dvardiagBcorR} appear similar to those in section~\ref{sec:expa} however there are some differences. Using $\hat{\textbf{R}}_{corr}$ in our assimilation has also reduced the minimisation routines convergence time, taking 127 less function iterations to converge than experiment A. We also have a slight reduction in RMSE for our forecast (now $4.09 \text{gCm}^{-2}$) from experiment A. As in experiment B our analysis gets slightly worse as using $\hat{\textbf{R}}_{corr}$ acts to reduce the overfitting of the analysis to the assimilated observations. The changes seen when using $\hat{\textbf{R}}_{corr}$ in the assimilation are less than when using $\textbf{B}_{corr}$ as the correlations specified in $\hat{\textbf{R}}_{corr}$ are quite small, we have therefore added less information to our system when using $\hat{\textbf{R}}_{corr}$ in the assimilation. We would expect the effect to be larger when trying to predict half hourly observations of NEE using a model with a half-hourly time step and assimilating half-hourly observations of NEE as we would then have much stronger correlations in $\hat{\textbf{R}}_{corr}$ (as discussed in section~\ref{sec:corR}). We also expect that specifying these correlations in  $\hat{\textbf{R}}$ will help when assimilating other less frequently sampled data streams along with NEE as the serial correlations reduce the weight given to the mean of the observations and also reduce the information content of the data streams with more observations \citep{jarvinen1999variational, Daley1992}.
+Here we use $\textbf{B}_{diag}$ and $\hat{\textbf{R}}_{corr}$ (as defined in section~\ref{sec:corR}) in the assimilation. Results shown in figure~\ref{fig:4dvarBcorR} and \ref{fig:broke4dvarBcorR} appear similar to those in section~\ref{sec:expa} however there are some differences. From table~\ref{table:forecast_res} and figure~\ref{fig:forecastscatBcorR} we see a slight reduction in RMSE for our forecast (now $4.09 \text{gCm}^{-2}$) in comparison with experiment A. As in experiment B the fit to the observations in the analysis window (1999-2000) is very slightly degraded as the added correlations in $\hat{\textbf{R}}_{corr}$ act to reduce the weight of the observations in the assimilation \citep{jarvinen1999variational}. The changes seen when using $\hat{\textbf{R}}_{corr}$ in the assimilation are less than when using $\textbf{B}_{corr}$ as the correlations specified in $\hat{\textbf{R}}_{corr}$ are on a short timescale and smaller than those in $\textbf{B}_{corr}$, $\textbf{B}$ also plays a larger role in the assimilation spreading information between parameter and state variables \citep{bannister2008review}. In figure~\ref{fig:xa_inc} we can see that the changes between experiment A and C in the analysis increment are much less than when using $\textbf{B}_{edc}$.  
+
+We also expect that specifying correlations in $\hat{\textbf{R}}$ will help when assimilating other less frequently sampled data streams along with NEE as the serial correlations reduce the weight given to the mean of the observations and also reduce the information content of the data streams with more observations \citep{jarvinen1999variational, Daley1992}.
 
 \subsection{Experiment D}
 
-In the final experiment we use $\textbf{B}_{corr}$ and $\hat{\textbf{R}}_{corr}$ in the assimilation. Figure~\ref{fig:4dvaredcBcorR} shows that using both correlated matrices gives similar results as experiment B when $\textbf{B}_{corr}$ is used with $\hat{\textbf{R}}_{diag}$. However using $\hat{\textbf{R}}_{corr}$ in addition to $\textbf{B}_{corr}$ provides similar improvements as in experiment C. The number of function evaluations taken for the minimisation routine to converge is 316; the lowest of all the experiments. Also the forecast RMSE is reduced again still from results in experiment B to $2.38 \text{gCm}^{-2}$. Using both matrices appears to combine the beneficial effects described in both section~\ref{sec:expb} and section~\ref{sec:expc}.
+In the final experiment we use $\textbf{B}_{corr}$ and $\hat{\textbf{R}}_{corr}$ in the assimilation. Figure~\ref{fig:4dvaredcBcorR} and figure~\ref{fig:4dvaredcBcorR} shows that using both correlated matrices gives similar results as experiment B when $\textbf{B}_{corr}$ is used with $\hat{\textbf{R}}_{diag}$. However using $\hat{\textbf{R}}_{corr}$ in addition to $\textbf{B}_{corr}$ provides similar improvements as in experiment C. From table~\ref{table:forecast_res} and figure~\ref{fig:forecastscatedcBcorR} we see the forecast RMSE is reduced again still from results in experiment B to $2.38 \text{gCm}^{-2}$. Using both matrices appears to combine the beneficial effects described in both section~\ref{sec:expb} and section~\ref{sec:expc}. In figure~\ref{fig:xa_inc} we can see that the analysis increment is very similar to experiment B.
  
 From the results in experiment D and integrating over the area of the Alice Holt flux site ($\sim 0.93\text{km}^2$) the forecasted (2000-2014) total carbon uptake for the Alice Holt research site is $5.04\times 10^9 \text{gC}$. In comparison the less accurate results from experiment A (using $\textbf{B}_{diag}$ and $\hat{\textbf{R}}_{diag}$) predict a total carbon uptake of $5.26 \times 10^9\text{gC}$, a difference of $2.25 \times 10^8\text{gC}$. This is quite a substantial difference as we are considering the carbon uptake of a small ($\sim 0.93\text{km}^2$) research site only.
 
@@ -334,11 +338,29 @@ From the results in experiment D and integrating over the area of the Alice Holt
     \caption{One year assimilation and fourteen year forecast of Alice Holt NEE with DALEC2, blue dotted line: background model trajectory, green line: analysis and forecast after assimilation, red dots: observations from Alice Holt flux site with error bars.}\label{fig:4dvar}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}
     \centering
-    \includegraphics[width=0.5\textwidth]{taylordiag.eps}
-    \caption{Taylor diagram displaying statistical comparison of the four experiment and background forecast (2000-2014) results with observations of NEE $( \text{gCm}^{-2})$.}
-    \label{fig:taylordiag}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{Abroke4dvar.eps}
+        \caption{Experiment A}
+        \label{fig:broke4dvardiagBR}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{Bbroke4dvar.eps}
+        \caption{Experiment B}
+        \label{fig:broke4dvaredcBR}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{Cbroke4dvar.eps}
+        \caption{Experiment C}
+        \label{fig:broke4dvarBcorR}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{Dbroke4dvar.eps}
+        \caption{Experiment D}
+        \label{fig:broke4dvaredcBcorR}
+    \end{subfigure}
+    \caption{Broken plot showing the first and final two years results from the one year assimilation and fourteen year forecast of Alice Holt NEE with DALEC2, blue dotted line: background model trajectory, green line: analysis and forecast after assimilation, red dots: observations from Alice Holt flux site with error bars.}\label{fig:4dvar}
 \end{figure}
 
 \begin{figure}
@@ -366,37 +388,64 @@ From the results in experiment D and integrating over the area of the Alice Holt
     \caption{Forecast scatter plot of modelled NEE vs. observations for 2000-2014 (green dots). Blue line represents the 1-1 line.}\label{fig:animals}
 \end{figure}
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{inccvt.eps}
+    \caption{Normalised analysis increment for the four experiments.}
+    \label{fig:xa_inc}
+\end{figure}
+
+\subsection{Summary}
+
+In our experiments we have shown that both $\textbf{B}_{corr}$ and $\hat{\textbf{R}}_{diag}$ have the effect of improving the model forecast of NEE. In figure~\ref{fig:taylordiag} we show Taylor diagrams displaying a statistical comparison of the four experiment and background analysis (1999-2000) and forecast (2000-2014) results withs the observations of NEE. {\color{red} Should I explain how to interpret the Taylor diagrams?} Figure~\ref{fig:td_a} shows clearly that all the experiments give very similar results in the analysis window (1999-2000). Whereas figure~\ref{fig:td_f} shows the significant difference between the experiments results in the forecast (2000-2014).
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{tdcvt_a.eps}
+        \caption{Analysis (1999-2000)}
+        \label{fig:td_a}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{tdcvt_f.eps}
+        \caption{Forecast (2000-2014)}
+        \label{fig:td_f}
+    \end{subfigure}
+    \caption{Taylor diagrams displaying statistical comparison of the four experiment and background analysis (1999-2000) and forecast (2000-2014) results with observations of NEE $( \text{gCm}^{-2})$.}
+    \label{fig:taylordiag}
+\end{figure}
+
 \begin{table}[ht] 
 \begin{center}
-	\begin{tabular}{| l | l | l | l | l |}
+	\begin{tabular}{| l | l | l | l |}
 	\hline
-	Experiment & RMSE $( \text{gCm}^{-2})$ & Bias $( \text{gCm}^{-2})$ & Correlation coefficient & \pbox{5cm}{Minimisation function \\ evaluations} \\ \hline
-	Background & $3.86$ & $-1.60$ & $0.70$ & $n/a$ \\ \hline
-	A & $1.36$ & $-0.03$ & $0.96$ & $571$ \\ \hline
-	B & $1.42$ & $-0.04$ & $0.95$ & $353$  \\ \hline
-	C & $1.37$ & $-0.09$ & $0.96$ & $444$ \\ \hline
-	D & $1.43$ & $-0.09$ & $0.95$ & $316$ \\ 
+	Experiment & RMSE $( \text{gCm}^{-2})$ & Bias $( \text{gCm}^{-2})$ & Correlation coefficient \\ \hline
+	Background & $3.86$ & $-1.60$ & $0.70$ \\ \hline
+	A & $1.36$ & $-0.03$ & $0.96$ \\ \hline
+	B & $1.42$ & $-0.04$ & $0.95$ \\ \hline
+	C & $1.37$ & $-0.09$ & $0.96$ \\ \hline
+	D & $1.43$ & $-0.09$ & $0.95$ \\ 
 	\hline
 	\end{tabular}
 	\caption{Analysis (1999-2000) results for experiments and background when judged against observed NEE.}
-	\label{table:exps_tab}
+	\label{table:analysis_res}
 \end{center} 
 \end{table}
 
 \begin{table}[ht] 
 \begin{center}
-	\begin{tabular}{| l | l | l | l | l |}
+	\begin{tabular}{| l | l | l | l |}
 	\hline
-	Experiment & RMSE $( \text{gCm}^{-2})$ & Bias $( \text{gCm}^{-2})$ &  Correlation coefficient & \pbox{6cm}{Minimisation function \\ evaluations} \\ \hline
-	Background & $3.86$ & $-1.36$ & $0.66$ & $n/a$ \\ \hline
-	A & $4.22$ & $-0.30$ & $0.79$ & $571$ \\ \hline
-	B & $2.56$ & $-0.20$ & $0.87$ & $353$  \\ \hline
-	C & $4.09$ & $-0.51$ & $0.78$ & $444$ \\ \hline
-	D & $2.38$ & $-0.33$ & $0.88$ & $316$ \\ 
+	Experiment & RMSE $( \text{gCm}^{-2})$ & Bias $( \text{gCm}^{-2})$ &  Correlation coefficient \\ \hline
+	Background & $3.86$ & $-1.36$ & $0.66$ \\ \hline
+	A & $4.22$ & $-0.30$ & $0.79$ \\ \hline
+	B & $2.56$ & $-0.20$ & $0.87$ \\ \hline
+	C & $4.09$ & $-0.51$ & $0.78$ \\ \hline
+	D & $2.38$ & $-0.33$ & $0.88$ \\ 
 	\hline
 	\end{tabular}
 	\caption{Forecast (2000-2014) results for experiments and background when judged against observed NEE.}
-	\label{table:exps_tab}
+	\label{table:forecast_res}
 \end{center} 
 \end{table}
 
@@ -428,7 +477,7 @@ Using the form of $\hat{\mathbf{R}}$ given in this paper for specifying serial c
 \end{itemize}
 
 \section{Acknowledgements}
-Luke, FR, NERC, NCEO, 
+Luke, FR, NERC, NCEO, (Which are needed? How to do this?)
 
 \bibliography{../PhD}{}
 %\bibliographystyle{plain}
@@ -437,38 +486,36 @@ Luke, FR, NERC, NCEO,
 
 \begin{table}[ht] 
 \begin{center}
-	\begin{tabular}{| l | l | l | l | l | l |}
+	\begin{tabular}{| l | l | l | l |}
 	\hline
-	Parameter & Background & A & B & C &  D \\ \hline
-$\theta_{min}$ & $9.810e-04$ & $1.000e-05$ & $1.000e-05$ & $1.000e-05$ & $1.000e-05$ \\ \hline
-$f_{auto}$ & $5.190e-01$ & $3.000e-01$ & $3.089e-01$ & $3.000e-01$ & $3.134e-01$ \\ \hline
-$f_{fol}$ & $1.086e-01$ & $1.640e-01$ & $3.025e-01$ & $1.822e-01$ & $3.006e-01$ \\ \hline
-$f_{roo}$ & $4.844e-01$ & $3.886e-01$ & $4.398e-01$ & $4.298e-01$ & $4.452e-01$ \\ \hline
-$c_{lspan}$ & $1.200e+00$ & $1.000e+00$ & $1.026e+00$ & $1.000e+00$ & $1.023e+00$ \\ \hline
-$\theta_{woo}$ & $1.013e-04$ & $1.185e-04$ & $1.228e-04$ & $1.254e-04$ & $1.228e-04$ \\ \hline
-$\theta_{roo}$ & $3.225e-03$ & $4.977e-03$ & $5.136e-03$ & $5.070e-03$ & $5.041e-03$ \\ \hline
-$\theta_{lit}$ & $3.442e-03$ & $2.688e-03$ & $1.601e-03$ & $2.107e-03$ & $1.563e-03$ \\ \hline
-$\theta_{som}$ & $1.113e-04$ & $1.873e-04$ & $1.443e-04$ & $1.914e-04$ & $1.482e-04$ \\ \hline
-$\Theta$ & $4.147e-02$ & $8.000e-02$ & $7.697e-02$ & $8.000e-02$ & $7.616e-02$ \\ \hline
-$c_{eff}$ & $7.144e+01$ & $1.000e+02$ & $9.347e+01$ & $1.000e+02$ & $9.276e+01$ \\ \hline
-$d_{onset}$ & $1.158e+02$ & $1.196e+02$ & $1.237e+02$ & $1.194e+02$ & $1.230e+02$ \\ \hline
-$f_{lab}$ & $3.204e-01$ & $3.801e-01$ & $1.000e-02$ & $3.707e-01$ & $1.000e-02$ \\ \hline
-$c_{ronset}$ & $4.134e+01$ & $2.752e+01$ & $4.567e+01$ & $2.924e+01$ & $4.680e+01$ \\ \hline
-$d_{fall}$ & $2.205e+02$ & $3.199e+02$ & $2.874e+02$ & $3.169e+02$ & $2.871e+02$ \\ \hline
-$c_{rfall}$ & $1.168e+02$ & $6.801e+01$ & $5.605e+01$ & $6.450e+01$ & $5.517e+01$ \\ \hline
-$c_{lma}$ & $1.285e+02$ & $3.869e+01$ & $5.165e+01$ & $4.237e+01$ & $5.163e+01$ \\ \hline
-$C_{lab}$ & $1.365e+02$ & $1.000e+01$ & $1.000e+01$ & $1.000e+01$ & $1.000e+01$ \\ \hline
-$C_{f}$ & $6.864e+01$ & $1.000e+01$ & $1.000e+01$ & $1.000e+01$ & $1.000e+01$ \\ \hline
-$C_{r}$ & $2.838e+02$ & $5.470e+02$ & $5.265e+02$ & $5.290e+02$ & $5.015e+02$ \\ \hline
-$C_{w}$ & $6.506e+03$ & $7.292e+03$ & $7.275e+03$ & $7.614e+03$ & $7.262e+03$ \\ \hline
-$C_{l}$ & $5.988e+02$ & $2.165e+02$ & $6.088e+02$ & $2.911e+02$ & $6.258e+02$ \\ \hline
-$C_{s}$ & $1.936e+03$ & $2.557e+03$ & $2.302e+03$ & $2.606e+03$ & $2.355e+03$ \\ \hline
+	Parameter & Description & Background & \pbox{7cm}{Standard \\deviation} \\ \hline
+$\theta_{min}$ & Litter mineralisation rate (day$^{-1}$) & $9.810e-04$ & $2.030e-03$ \\ \hline
+$f_{auto}$ & Autotrophic respiration fraction & $5.190e-01$ & $1.168e-01$  \\ \hline
+$f_{fol}$ & Fraction of GPP allocated to foliage & $1.086e-01$ & $1.116e-01$ \\ \hline
+$f_{roo}$ & Fraction of GPP allocated to fine roots & $4.844e-01$ & $2.989e-01$ \\ \hline
+$c_{lspan}$ & Determines annual leaf loss fraction & $1.200e+00$ & $1.161e-01$  \\ \hline
+$\theta_{woo}$ & Woody carbon turnover rate (day$^{-1}$) & $1.013e-04$ & $1.365e-04$  \\ \hline
+$\theta_{roo}$ & Fine root carbon turnover rate (day$^{-1}$) & $3.225e-03$ & $2.930e-03$ \\ \hline
+$\theta_{lit}$ & Litter carbon turnover rate (day$^{-1}$) & $3.442e-03$ & $3.117e-03$ \\ \hline
+$\theta_{som}$ & Soil and organic carbon turnover rate (day$^{-1}$) & $1.113e-04$ & $1.181e-04$ \\ \hline
+$\Theta$ & Temperature dependance exponent factor & $4.147e-02$ & $1.623e-02$ \\ \hline
+$c_{eff}$ & Canopy efficiency parameter & $7.144e+01$ & $2.042e+01$  \\ \hline
+$d_{onset}$ & Leaf onset day & $1.158e+02$ & $6.257e+00$ \\ \hline
+$f_{lab}$ & Fraction of GPP allocated to labile carbon pool & $3.204e-01$ & $1.145e-01$ \\ \hline
+$c_{ronset}$ & Labile carbon release period & $4.134e+01$ & $1.405e+01$ \\ \hline
+$d_{fall}$ & Leaf fall day & $2.205e+02$ & $3.724e+01$ \\ \hline
+$c_{rfall}$ & Leaf-fall period & $1.168e+02$ & $2.259e+01$  \\ \hline
+$c_{lma}$ & Leaf mass per area ($\text{gCm}^{-2}$) & $1.285e+02$ & $6.410e+01$ \\ \hline
+$C_{lab}$ & Labile carbon pool ($\text{gCm}^{-2}$) & $1.365e+02$ & $6.626e+01$ \\ \hline
+$C_{f}$ & Foliar carbon pool ($\text{gCm}^{-2}$) & $6.864e+01$ & $3.590e+01$  \\ \hline
+$C_{r}$ & Fine root carbon pool ($\text{gCm}^{-2}$) & $2.838e+02$ & $2.193e+02$  \\ \hline
+$C_{w}$ & Above and below ground woody carbon pool ($\text{gCm}^{-2}$) & $6.506e+03$ & $7.143e+03$  \\ \hline
+$C_{l}$ & Litter carbon pool ($\text{gCm}^{-2}$) & $5.988e+02$ & $5.450e+02$ \\ \hline
+$C_{s}$ & Soil and organic carbon pool ($\text{gCm}^{-2}$) & $1.936e+03$ & $1.276e+03$  \\ \hline
 	\end{tabular}
-	\caption{Parameter values for background and difference experiments analysis vectors.}
-	\label{table:exps_tab}
+	\caption{Parameter values and standard deviations for background vector used in experiments.}
+	\label{table:xbvars}
 \end{center} 
 \end{table}
-
-{\color{red} Write appendix!}
 
 \end{document}
