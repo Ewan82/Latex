@@ -1,4 +1,4 @@
-\begin{thebibliography}{45}
+\begin{thebibliography}{46}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -324,6 +324,16 @@ Laura~M. Stewart, Sarah~L. Dance, and Nancy~K. Nichols.
   65\penalty0 (1):\penalty0 1--14, 2013.
 \newblock ISSN 02806495.
 \newblock \doi{10.3402/tellusa.v65i0.19546}.
+
+\bibitem[Taylor(2001)]{Taylor2001}
+Karl~E. Taylor.
+\newblock {Summarizing multiple aspects of model performance in a single
+  diagram}.
+\newblock \emph{Journal of Geophysical Research}, 106\penalty0 (D7):\penalty0
+  7183, apr 2001.
+\newblock ISSN 0148-0227.
+\newblock \doi{10.1029/2000JD900719}.
+\newblock URL \url{http://doi.wiley.com/10.1029/2000JD900719}.
 
 \bibitem[Verbeeck et~al.(2011)Verbeeck, Peylin, Bacour, Bonal, Steppe, and
   Ciais]{Verbeeck2011}
