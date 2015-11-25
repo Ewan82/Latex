@@ -12,7 +12,7 @@
 \bibliographystyle{plainnat}
 
 \title{Investigating the role of background and observation error correlations in improving a model forecast of forest carbon balance using 4D-Var.}
-\author{Ewan Pinnington {\color{red} add authors and affiliations}}
+\author{Ewan Pinnington, E. Casella, S. L. Dance, A. S. Lawless, J. I. L. Morison, \\N. K. Nichols, T. L. Quaife, M. Wilkinson {\color{red} add affiliations}}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem*{defn}{Definition}
@@ -233,7 +233,7 @@ Once we have a full ensemble (we chose an ensemble size of 1500 as past this poi
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.55\textwidth]{bedccor.eps}
-    \caption{Background error correlation matrix created using method in section \ref{sec:corB}}
+    \caption{Background error correlation matrix created using method in section \ref{sec:corB}. Here the correlation scale for off-diagonal values ranges from $-0.5$ to $0.5$ with the correlation along the diagonal being $1$.}
     \label{fig:Bcorr}
 \end{figure}
 
@@ -465,18 +465,18 @@ Including correlations in both $\textbf{B}$ and $\textbf{R}$ improve the DALEC2 
 
 \section{Conclusion}
 
-Largely functional ecology and land surface model data assimilation routines treat prior estimates of parameter and state uncertainties and observation error statistics as independent and uncorrelated. In this paper we have shown the importance of including estimates to such correlations, especially between background parameter and state error statistics when performing joint parameter-state estimation.
+Functional ecology and land surface model data assimilation routines largely treat prior estimates of parameter-state uncertainties and observation error statistics as independent and uncorrelated. In this paper we have shown the importance of including estimates to such correlations, especially between background parameter and state error statistics when performing joint parameter-state estimation.
 
-When performing joint parameter-state estimation including correlations in the background error covariance matrix significantly improves our forecast after assimilation, in comparison to using a diagonal representation of $\textbf{B}$. Specifying serial correlations between observation errors in $\hat{\textbf{R}}$ also improves our forecast and we expect these correlations to have a greater impact when assimilating more than one data stream. More work is needed to investigate the effect of including these correlations at different sites and when assimilating multiple data streams. The development of a more diagnostic tool for the calculation of the error correlation structure in $\hat{\textbf{R}}$ is also important.  
+When performing joint parameter-state estimation using including correlations in the background error covariance matrix significantly improves our forecast after assimilation, in comparison to using a diagonal representation of $\textbf{B}$. Specifying serial correlations between observation errors in $\hat{\textbf{R}}$ also improves our forecast and we expect these correlations to have a greater impact when assimilating more than one data stream. More work is needed to investigate the effect of including these correlations at different sites and when assimilating multiple data streams. The development of a more diagnostic tool for the calculation of the error correlation structure in $\hat{\textbf{R}}$ is also important.  
 
 When including both parameter-state correlations in $\textbf{B}$ and time correlations between observation errors in $\hat{\textbf{R}}$ and assimilating only a single year of NEE observations we can forecast 14 years of NEE observations with a root-mean square error of $2.38\text{gCm}^{-2}\text{day}^{-1}$ and a correlations coefficient of $0.88$. This is a significant reduction in error from the results when using a $\textbf{B}$ and $\hat{\textbf{R}}$ with no specified correlations of $4.22\text{gCm}^{-2}\text{day}^{-1}$ and a correlation coefficient of $0.79$.
 
 \section{Acknowledgements}
-Luke, FR, NERC, NCEO, ({\color{red}Which are needed? How to do this?})
+Luke Smallman, NERC CASE with FR, NCEO ({\color{red} sort out})
 
 \bibliography{../PhD}{}
 %\bibliographystyle{plain}
-
+ \newpage
 \section*{Appendix}
 
 \begin{table}[ht] 

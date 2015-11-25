@@ -1,0 +1,171 @@
+\documentclass[11pt]{article}
+
+
+\usepackage[sort]{natbib}
+\usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx}
+\usepackage{wrapfig, caption, subcaption}
+\usepackage{fancyhdr}
+\usepackage[margin=1.0in]{geometry}
+\bibliographystyle{abbrvnat}
+
+
+
+\title{Fifth Monitoring Committee Meeting \\\vspace{4mm} \normalsize{Understanding the Information Content in Diverse Observations of Forest Carbon Stocks and Fluxes for Data Assimilation and Ecological Modeling\\ NERC case partnership with Forest Research}}
+\author{\normalsize{E. Pinnington}}
+\date{\normalsize{Room 1L43, 11am June 15, 2015}}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{defn}{Definition}
+
+
+
+	
+\begin{document}
+
+\maketitle
+
+\section{Introduction} \label{sec:intro}
+
+Forest ecosystems play an important role in sequestering human emitted carbon-dioxide from the atmosphere and therefore greatly reduce the effect of anthropogenic induced climate change. For that reason understanding their response to climate change is of great importance. Measurements of forest carbon balance are now routinely made in forests across the world using micrometeorological techniques, with many other relevant observations such as leaf area index and standing biomass also available \citep{baldocchi2008turner}. Many efforts have been made to combine this data with models of forest carbon balance using data assimilation techniques in order to improve modelled estimates \citep{fox2009reflex}. Currently, however, the optimal set of observations for understanding the carbon balance of a forest is not known. The aims of this PhD are:
+
+\begin{itemize}
+\item Understanding which observations provide models of forest carbon balance with most information in a data assimilation framework, with focus on the case partners research site Alice Holt.
+\item Finding a better way to quantify background and observation errors and their correlations.
+\item Investigating the effect of disturbance on the Alice Holt research forest. The disturbance came in 2014 when one side of the forest was thinned and the other side left unmanaged with the flux tower measuring net ecosystem exchange of $\text{CO}_{2}$ positioned on the boundary between the two sides. 
+\end{itemize}
+
+In the last report it was discussed that we had decided to move away from work using the Data Assimilation Linked Ecosystem Carbon model (DALEC) and start using the new version of this model (DALEC2 \citep{Bloom2015}). This was because DALEC2 can be parameterised for both deciduous and evergreen forests, whereas the version of DALEC used in previous work was an evergreen only model and the CASE partners research site (Alice Holt) is a mainly deciduous site. In the last report DALEC2 was implemented in a Four-Dimensional Variational data assimilation routine (4D-Var) for joint parameter and state estimation. It was shown that after assimilating 2 years of observations of the Net Ecosystem Exchange (NEE) of CO$_{2}$ from the Alice Holt flux site the forecast (2001-2006) root mean square error between modelled NEE and observed NEE fell from $4.37 \text{gCm}^{-2}\text{day}^{-1}$ to $2.12 \text{gCm}^{-2}\text{day}^{-1}$.
+
+Since completing the last report a paper draft has been completed on the work implementing 4D-Var with the DALEC2 model for joint parameter-state estimation. The second draft of this paper is included along with the monitoring committee report. In this paper we have also investigated the effect that background and observation error statistics and their correlations have on the assimilation. We found that specifying parameter-state error correlations in background error statistics can improve data assimilation forecast results significantly. Including correlations in time between observation error statistics was also found to improve assimilation forecast results. This work on the role of background and observation error statistics was expected to be completed in the new year with observation information content experiments and report being completed first, however the order of this work has now been swapped.
+
+In addition to the work found in the attached paper draft I have also been conducting a field work campaign taking leaf area index measurements at the CASE partners research flux site Alice Holt. These observations will contribute to both the information content experiments and the work investigating the effect of the disturbance on the Alice Holt research forest.       
+
+\section{Field work} \label{sec:fieldwork}
+
+In order to address the third aim of the PhD from section~\ref{sec:intro} a field work campaign has been undertaken to measure Leaf Area Index (LAI) at the Alice Holt flux site. We have used three different methods to measure LAI:
+\begin{itemize}
+\item Using a ceptometer and an additional Photosynthetically Active Radiation (PAR) sensor. Here we measure below canopy PAR using the ceptometer while logging above canopy PAR using a data logger and PAR sensor positioned outside the canopy. We can then calculate LAI using the above and below canopy readings and a set of equations relying on some assumptions. The ceptometer represents the quickest method for estimating LAI.
+\item Using hemispherical photographs as seen in figure~\ref{fig:hemiphotos}. Hemispherical photographs show a complete view of the sky in all directions, from these images we use software which can calculate the proportion of visible sky as a function of sky direction (gap fraction) this can then be used to calculate LAI.
+\item Using litter traps. Here we place litter traps under the canopy which catch the litter in a bag these bags are changed every week during the litter fall period and the litter sorted into species. We then dry the litter in an oven at $80^{\text{o}}\text{C}$ and weigh it. Towards the end of the season we scan a subsample for each species of 100 leaves  to find an area we then dry and weigh each subsample, a relationship between dry weight and leaf area can then be built and used to infer the total LAI once the whole seasons litter has been collected. This method of LAI calculation is the most time consuming.  
+\end{itemize}
+
+For this fieldwork we want to capture both the thinned and unthinned sides of the forest for this reason we have taken measurements along three transects spanning both sides of the site. In figure~\ref{fig:map} We show a map of the Alice Holt flux site with the three transects and 10m sampling points marked. For the ceptometer we take a measurement every 10m as it is the quickest method giving us 435 readings in total. The hemispherical photographs are taken every 50m as they are most time consuming giving us a total of 89 images. For the litter traps we have a total of 6 with 3 positioned in the western side and 3 in the east, however Forest Research already have 10 other traps in operation so this gives us some valuable extra data.
+
+Currently I have finished taking observations with the ceptometer and hemispherical camera of summer peak LAI and am continuing the process of managing the litter traps weekly. We will also take measurements of spring green up next year in order to constrain the phenology in DALEC2 more accurately. I am in the process of beginning to process the observations I have already taken to produce an LAI product. We plan to use these observations and observations of NEE for the thinned and unthinned sides of the forest (partitioned using a flux footprint model) to parameterise two versions of DALEC2 and compare the difference between the two sides. We will then also be able to test if by just assimilating NEE we can pick out a difference in LAI between the two sides.    
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1\textwidth]{straitsmap_threet_10m.png}
+    \caption{Map of the Alice Holt flux site. The crosses are 10m sampling points with the purple diamonds being Forest Research mensuration plots where measurements of woody biomass are made. The black diamond shows the position of the flux tower on the boundary between the thinned (West) and unthinned (East) sides of the forest.}
+    \label{fig:map}
+\end{figure}
+
+
+\begin{figure}[!h]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.7\linewidth]{043exp2.jpg}
+  \caption{Unthinned}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.7\linewidth]{252exp1.jpg}
+  \caption{Thinned}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{Hemispherical photographs from the Alice Holt flux site showing the difference between the thinned and unthinned sides of the forest.}
+\label{fig:hemiphotos}
+\end{figure}
+
+\section{Current work and future plans}
+
+I am currently in the process of getting the attached paper finished and we hope to have it submitted before Christmas. I have also started repeating the information content experiments that had been conducted using the original DALEC but now using DALEC2. While applying the measures previously used (SIC and DFS), I am also starting to work with the influence matrix, which measures the sensitivity of the analysis in observation space to the observations \citep{Cardinali2004}, and the adjoint technique proposed by \cite{Langland2004}, which approximates the sensitivity of a scalar forecast error norm to the observations. In \cite{Cardinali2004} the data assimilation problem is assumed to be Gaussian with a linear function mapping the state to observation space (\textbf{H}), such that,
+\begin{equation}
+\textbf{x}_{a} = \textbf{x}_{b} + \textbf{K}(\textbf{y} - \textbf{H}\textbf{x}_{b}), \label{daupdate}
+\end{equation}
+where \textbf{K} is the Kalman gain matrix, $\textbf{K} = (\textbf{H}^{T}\textbf{R}^{-1}\textbf{H} + \textbf{B}^{-1})^{-1}\textbf{H}^{T}\textbf{R}^{-1}$. The influence matrix is then defined as,
+\begin{equation}
+\textbf{S} = \frac{\partial {\mathbf{H}}\textbf{x}_a}{\partial {\textbf{y}}} = \textbf{K}^{T}\textbf{H}^{T}. \label{influmat}
+\end{equation}
+In order to consider observations over a 4D-Var time window we rewrite equation~\ref{daupdate} as,
+\begin{equation}
+\textbf{x}_{a} = \textbf{x}_{b} + \hat{\textbf{K}}(\hat{\textbf{y}} - \hat{\textbf{H}}\textbf{x}_{b}), \label{ass_xa}
+\end{equation}
+using the defined matrices in the attached paper, with $\hat{\textbf{K}} = (\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}\hat{\textbf{H}} + \textbf{B}^{-1})^{-1}\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}$. Equation~\ref{influmat} then becomes,
+\begin{equation}
+\textbf{S} = \frac{\partial {\hat{\mathbf{H}}}\textbf{x}_a}{\partial \hat{{\textbf{y}}}} = \hat{\textbf{K}}^{T}\hat{\textbf{H}}^{T}. \label{influmat2}
+\end{equation}
+In equation~\ref{ass_xa} we have also assumed that we have a linear model, $\mathbf{M}_{i,0}$, evolving our state from time 0 to time $i$. We know that our model is in fact nonlinear but have tested the tangent linear hypothesis for DALECV2 in the attached paper and have seen it to be a good approximation. 
+
+Using these measures and an observing system simulation experiment that I have developed, I will produce another report investigating the best set of observations for understanding the carbon balance of a forest and apply the results to the available data from Alice Holt. We will also explore the impact of using the correlated background and observational error covariance matrices defined in the attached paper on these information content measures. I am also continuing with the fieldwork campaign as described in section~\ref{sec:fieldwork}, other future work will be based on the attached thesis outline and Gantt chart. 
+
+\section{Professional and Academic Development}
+
+\subsection{Masters Courses}
+\begin{itemize}
+\item MAMB10 (Data Assimilation) - 85\%
+\item MAMNSO (Numerical Solutions to Ordinary Differential Equations) - 79\%
+\item MTMG02 (Atmospheric Physics) - 66\%
+\item MTMG49 (Boundary Layer) - 72\%
+\item MTMD01 (Environmental Data Visualization) - 78\%
+\item MTMD02 (Operational Data Assimilation) - 70\%
+\end{itemize}
+
+\subsection{Transferable Skills}
+
+During my PhD I have taken part in the following courses, workshops and activities:
+\begin{itemize}
+\item 28/01/2014 - Basic Statistics Refresher - RRDP
+
+\item 31/03/2014-01/04/2014 - Land Data Assimilation workshop at UCL - ESA
+
+\item 23/04/2014-25/03/2014 - Correlated Observation Errors in Data Assimilation Workshop - ESA
+
+\item 13/05/2014 - Social Media - Bloggs, Twitter and Your Online Presence - RRDP
+
+\item 29/05/2014 - How to Write a Paper - RRDP
+
+\item 25/06/2014-26/06/2014 - Software Carpentry Course - Git and Python
+
+\item 10/07/2014-11/07/2014 - Forest Research - Helped with field work LiDAR
+
+\item  21/07/2014-01/08/2014 - Fluxcourse Summer School - University of Colorado
+
+\item 29/09/2014-03/10/2014 - NERC course - Software Development for Environmental Scientists Level 1
+
+\item 08/10/2014-10/10/2014 - Environment YES - NERC ``dragon's den" type competition at Syngenta, Jesops Hill
+
+\item 17/12/2014 - Presentation at Maths for Planet Earth Industry day
+
+\item 24/02/2015 - Reading Soil Centre Workshop - What can Land Surface Models do for you?
+
+\item 23/03/2015-27-03/2015 - NERC course - Software Development for Environmental Scientists Level 2
+
+\item 11/03/2015 - Quo Vadis presentation
+
+\item 08/09/2015-11/09/2015 - RSPSoc conference University of Southampton - Presented a poster
+
+\item 24/09/2015 - Department poster presentation - Recieved an honourable mention for poster on ``Understanding the information content in observations of forest carbon balance"
+
+\item 02/11/2015-03/11/2015 - BES Ecosystems and Climate Change Mitigation Conference, Charles Darwin House, London - Presented a poster
+
+\item 02/12/2015 - RMetS SE centre meeting, Reading Town Hall - Invited to give a presentation after receiving honourable mention at the department poster presentation
+\end{itemize}
+
+\subsection{Demonstrating}
+During my PhD I have helped demonstrate on the following courses:
+\begin{itemize}
+\item 15/09/2014-1909/2014 - NERC Data assimilation for environmental scientists training course
+
+\item 16/02/2015-20/02/2015 - NERC Software Development for Environmental Scientists Level 1
+
+\item 20/04/2015-23/04/2015 - MT26E Surface Energy Exchange Practicals
+\end{itemize}
+
+
+\bibliography{../../PhD}{}
+%\bibliographystyle{plain}
+\end{document}
