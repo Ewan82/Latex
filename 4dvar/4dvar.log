@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  11 NOV 2015 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  1 DEC 2015 12:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -440,32 +440,34 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 23.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<DALECdiagram.pdf, id=17, 707.64375pt x 403.5075pt>
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+
+<DALECdiagram.pdf, id=20, 707.64375pt x 403.5075pt>
 File: DALECdiagram.pdf Graphic file (type pdf)
  <use DALECdiagram.pdf>
 Package pdftex.def Info: DALECdiagram.pdf used on input line 59.
 (pdftex.def)             Requested size: 249.33128pt x 142.17175pt.
 
-[3] [4 <./DALECdiagram.pdf>] [5]
+[4 <./DALECdiagram.pdf>] [5]
 Package epstopdf Info: Source file: <linmoderr.eps>
-(epstopdf)                    date: 2015-11-01 11:22:54
-(epstopdf)                    size: 54564 bytes
+(epstopdf)                    date: 2015-11-27 15:15:35
+(epstopdf)                    size: 63822 bytes
 (epstopdf)             Output file: <linmoderr-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-11-01 11:56:36
-(epstopdf)                    size: 16823 bytes
+(epstopdf)                    date: 2015-11-27 16:00:43
+(epstopdf)                    size: 19144 bytes
 (epstopdf)             Command: <repstopdf --outfile=linmoderr-eps-converted-to
 .pdf linmoderr.eps>
 (epstopdf)             \includegraphics on input line 163.
 Package epstopdf Info: Output file is already uptodate.
 
-<linmoderr-eps-converted-to.pdf, id=36, 847.165pt x 609.27625pt>
+<linmoderr-eps-converted-to.pdf, id=35, 847.165pt x 609.27625pt>
 File: linmoderr-eps-converted-to.pdf Graphic file (type pdf)
 
 <use linmoderr-eps-converted-to.pdf>
 Package pdftex.def Info: linmoderr-eps-converted-to.pdf used on input line 163.
 
 (pdftex.def)             Requested size: 249.33128pt x 179.31657pt.
+ [6 <./linmoderr-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <percenterrlinmod.eps>
 (epstopdf)                    date: 2015-11-01 11:55:03
 (epstopdf)                    size: 53004 bytes
@@ -477,25 +479,26 @@ rted-to.pdf percenterrlinmod.eps>
 (epstopdf)             \includegraphics on input line 175.
 Package epstopdf Info: Output file is already uptodate.
 
-<percenterrlinmod-eps-converted-to.pdf, id=37, 827.09pt x 585.18625pt>
+<percenterrlinmod-eps-converted-to.pdf, id=72, 827.09pt x 585.18625pt>
 File: percenterrlinmod-eps-converted-to.pdf Graphic file (type pdf)
 
 <use percenterrlinmod-eps-converted-to.pdf>
 Package pdftex.def Info: percenterrlinmod-eps-converted-to.pdf used on input li
 ne 175.
 (pdftex.def)             Requested size: 249.33128pt x 176.4055pt.
- [6 <./linmoderr-eps-converted-to.pdf>]
+ [7 <./percenterrlinmod-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <costone_cvt.eps>
-(epstopdf)                    date: 2015-11-01 13:31:01
-(epstopdf)                    size: 34160 bytes
+(epstopdf)                    date: 2015-11-27 15:56:45
+(epstopdf)                    size: 34616 bytes
 (epstopdf)             Output file: <costone_cvt-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-11-01 13:31:15
-(epstopdf)                    size: 14842 bytes
+(epstopdf)                    date: 2015-11-27 16:00:44
+(epstopdf)                    size: 15203 bytes
 (epstopdf)             Command: <repstopdf --outfile=costone_cvt-eps-converted-
 to.pdf costone_cvt.eps>
 (epstopdf)             \includegraphics on input line 208.
 Package epstopdf Info: Output file is already uptodate.
- <costone_cvt-eps-converted-to.pdf, id=73, 861.2175pt x 607.26875pt>
+
+<costone_cvt-eps-converted-to.pdf, id=126, 861.2175pt x 607.26875pt>
 File: costone_cvt-eps-converted-to.pdf Graphic file (type pdf)
 
 <use costone_cvt-eps-converted-to.pdf>
@@ -503,23 +506,23 @@ Package pdftex.def Info: costone_cvt-eps-converted-to.pdf used on input line 20
 8.
 (pdftex.def)             Requested size: 244.3474pt x 172.29503pt.
 Package epstopdf Info: Source file: <cost_cvt.eps>
-(epstopdf)                    date: 2015-11-01 13:27:54
-(epstopdf)                    size: 50108 bytes
+(epstopdf)                    date: 2015-11-27 15:57:32
+(epstopdf)                    size: 50475 bytes
 (epstopdf)             Output file: <cost_cvt-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-11-01 13:31:16
-(epstopdf)                    size: 17146 bytes
+(epstopdf)                    date: 2015-11-27 16:00:46
+(epstopdf)                    size: 17403 bytes
 (epstopdf)             Command: <repstopdf --outfile=cost_cvt-eps-converted-to.
 pdf cost_cvt.eps>
 (epstopdf)             \includegraphics on input line 213.
 Package epstopdf Info: Output file is already uptodate.
 
-<cost_cvt-eps-converted-to.pdf, id=74, 851.18pt x 609.27625pt>
+<cost_cvt-eps-converted-to.pdf, id=127, 851.18pt x 609.27625pt>
 File: cost_cvt-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cost_cvt-eps-converted-to.pdf>
 Package pdftex.def Info: cost_cvt-eps-converted-to.pdf used on input line 213.
 (pdftex.def)             Requested size: 244.3474pt x 174.90059pt.
- [7 <./percenterrlinmod-eps-converted-to.pdf>]
+ [8 <./costone_cvt-eps-converted-to.pdf> <./cost_cvt-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <bedccor.eps>
 (epstopdf)                    date: 2015-10-31 19:17:41
 (epstopdf)                    size: 175516 bytes
@@ -530,13 +533,14 @@ Package epstopdf Info: Source file: <bedccor.eps>
 df bedccor.eps>
 (epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
- <bedccor-eps-converted-to.pdf, id=126, 734.745pt x 621.32124pt>
+
+<bedccor-eps-converted-to.pdf, id=186, 734.745pt x 621.32124pt>
 File: bedccor-eps-converted-to.pdf Graphic file (type pdf)
 
 <use bedccor-eps-converted-to.pdf>
 Package pdftex.def Info: bedccor-eps-converted-to.pdf used on input line 235.
 (pdftex.def)             Requested size: 274.26593pt x 231.93306pt.
- [8 <./costone_cvt-eps-converted-to.pdf> <./cost_cvt-eps-converted-to.pdf>]
+ [9 <./bedccor-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <rcorcor.eps>
 (epstopdf)                    date: 2015-10-31 15:43:06
 (epstopdf)                    size: 943341 bytes
@@ -548,14 +552,14 @@ df rcorcor.eps>
 (epstopdf)             \includegraphics on input line 257.
 Package epstopdf Info: Output file is already uptodate.
 
-<rcorcor-eps-converted-to.pdf, id=185, 628.3475pt x 553.06625pt>
+<rcorcor-eps-converted-to.pdf, id=221, 628.3475pt x 553.06625pt>
 File: rcorcor-eps-converted-to.pdf Graphic file (type pdf)
 
 <use rcorcor-eps-converted-to.pdf>
 Package pdftex.def Info: rcorcor-eps-converted-to.pdf used on input line 257.
 (pdftex.def)             Requested size: 249.33128pt x 219.4588pt.
- [9 <./bedccor-eps-converted-to.pdf>]
-[10 <./rcorcor-eps-converted-to.pdf>] [11]
+ [10 <./rcorcor-eps-converted-to.pdf>]
+[11]
 Package epstopdf Info: Source file: <A4dvar.eps>
 (epstopdf)                    date: 2015-10-31 20:09:28
 (epstopdf)                    size: 569954 bytes
@@ -566,8 +570,7 @@ Package epstopdf Info: Source file: <A4dvar.eps>
 f A4dvar.eps>
 (epstopdf)             \includegraphics on input line 317.
 Package epstopdf Info: Output file is already uptodate.
-
-<A4dvar-eps-converted-to.pdf, id=246, 815.045pt x 603.25375pt>
+ <A4dvar-eps-converted-to.pdf, id=248, 815.045pt x 603.25375pt>
 File: A4dvar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use A4dvar-eps-converted-to.pdf>
@@ -584,7 +587,7 @@ f B4dvar.eps>
 (epstopdf)             \includegraphics on input line 322.
 Package epstopdf Info: Output file is already uptodate.
 
-<B4dvar-eps-converted-to.pdf, id=247, 815.045pt x 603.25375pt>
+<B4dvar-eps-converted-to.pdf, id=249, 815.045pt x 603.25375pt>
 File: B4dvar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use B4dvar-eps-converted-to.pdf>
@@ -601,7 +604,7 @@ f C4dvar.eps>
 (epstopdf)             \includegraphics on input line 327.
 Package epstopdf Info: Output file is already uptodate.
 
-<C4dvar-eps-converted-to.pdf, id=248, 815.045pt x 603.25375pt>
+<C4dvar-eps-converted-to.pdf, id=250, 815.045pt x 603.25375pt>
 File: C4dvar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use C4dvar-eps-converted-to.pdf>
@@ -618,7 +621,7 @@ f D4dvar.eps>
 (epstopdf)             \includegraphics on input line 332.
 Package epstopdf Info: Output file is already uptodate.
 
-<D4dvar-eps-converted-to.pdf, id=249, 815.045pt x 603.25375pt>
+<D4dvar-eps-converted-to.pdf, id=251, 815.045pt x 603.25375pt>
 File: D4dvar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use D4dvar-eps-converted-to.pdf>
@@ -635,7 +638,7 @@ to.pdf Abroke4dvar.eps>
 (epstopdf)             \includegraphics on input line 342.
 Package epstopdf Info: Output file is already uptodate.
 
-<Abroke4dvar-eps-converted-to.pdf, id=250, 841.1425pt x 649.42625pt>
+<Abroke4dvar-eps-converted-to.pdf, id=252, 841.1425pt x 649.42625pt>
 File: Abroke4dvar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Abroke4dvar-eps-converted-to.pdf>
@@ -653,7 +656,7 @@ to.pdf Bbroke4dvar.eps>
 (epstopdf)             \includegraphics on input line 347.
 Package epstopdf Info: Output file is already uptodate.
 
-<Bbroke4dvar-eps-converted-to.pdf, id=251, 841.1425pt x 649.42625pt>
+<Bbroke4dvar-eps-converted-to.pdf, id=253, 841.1425pt x 649.42625pt>
 File: Bbroke4dvar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Bbroke4dvar-eps-converted-to.pdf>
@@ -671,7 +674,7 @@ to.pdf Cbroke4dvar.eps>
 (epstopdf)             \includegraphics on input line 352.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cbroke4dvar-eps-converted-to.pdf, id=252, 841.1425pt x 649.42625pt>
+<Cbroke4dvar-eps-converted-to.pdf, id=254, 841.1425pt x 649.42625pt>
 File: Cbroke4dvar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cbroke4dvar-eps-converted-to.pdf>
@@ -689,7 +692,7 @@ to.pdf Dbroke4dvar.eps>
 (epstopdf)             \includegraphics on input line 357.
 Package epstopdf Info: Output file is already uptodate.
 
-<Dbroke4dvar-eps-converted-to.pdf, id=253, 841.1425pt x 649.42625pt>
+<Dbroke4dvar-eps-converted-to.pdf, id=255, 841.1425pt x 649.42625pt>
 File: Dbroke4dvar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Dbroke4dvar-eps-converted-to.pdf>
@@ -707,7 +710,7 @@ f Afscat.eps>
 (epstopdf)             \includegraphics on input line 367.
 Package epstopdf Info: Output file is already uptodate.
 
-<Afscat-eps-converted-to.pdf, id=254, 827.09pt x 603.25375pt>
+<Afscat-eps-converted-to.pdf, id=256, 827.09pt x 603.25375pt>
 File: Afscat-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Afscat-eps-converted-to.pdf>
@@ -724,7 +727,7 @@ f Bfscat.eps>
 (epstopdf)             \includegraphics on input line 372.
 Package epstopdf Info: Output file is already uptodate.
 
-<Bfscat-eps-converted-to.pdf, id=255, 827.09pt x 603.25375pt>
+<Bfscat-eps-converted-to.pdf, id=257, 827.09pt x 603.25375pt>
 File: Bfscat-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Bfscat-eps-converted-to.pdf>
@@ -741,7 +744,7 @@ f Cfscat.eps>
 (epstopdf)             \includegraphics on input line 377.
 Package epstopdf Info: Output file is already uptodate.
 
-<Cfscat-eps-converted-to.pdf, id=256, 827.09pt x 603.25375pt>
+<Cfscat-eps-converted-to.pdf, id=258, 827.09pt x 603.25375pt>
 File: Cfscat-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cfscat-eps-converted-to.pdf>
@@ -758,7 +761,7 @@ f Dfscat.eps>
 (epstopdf)             \includegraphics on input line 382.
 Package epstopdf Info: Output file is already uptodate.
 
-<Dfscat-eps-converted-to.pdf, id=257, 827.09pt x 603.25375pt>
+<Dfscat-eps-converted-to.pdf, id=259, 827.09pt x 603.25375pt>
 File: Dfscat-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Dfscat-eps-converted-to.pdf>
@@ -775,7 +778,7 @@ f inccvt.eps>
 (epstopdf)             \includegraphics on input line 391.
 Package epstopdf Info: Output file is already uptodate.
 
-<inccvt-eps-converted-to.pdf, id=258, 821.0675pt x 661.47125pt>
+<inccvt-eps-converted-to.pdf, id=260, 821.0675pt x 661.47125pt>
 File: inccvt-eps-converted-to.pdf Graphic file (type pdf)
 
 <use inccvt-eps-converted-to.pdf>
@@ -792,7 +795,7 @@ df tdcvt_a.eps>
 (epstopdf)             \includegraphics on input line 403.
 Package epstopdf Info: Output file is already uptodate.
 
-<tdcvt_a-eps-converted-to.pdf, id=259, 722.7pt x 633.36626pt>
+<tdcvt_a-eps-converted-to.pdf, id=261, 722.7pt x 633.36626pt>
 File: tdcvt_a-eps-converted-to.pdf Graphic file (type pdf)
 
 <use tdcvt_a-eps-converted-to.pdf>
@@ -809,7 +812,7 @@ df tdcvt_f.eps>
 (epstopdf)             \includegraphics on input line 408.
 Package epstopdf Info: Output file is already uptodate.
 
-<tdcvt_f-eps-converted-to.pdf, id=260, 722.7pt x 633.36626pt>
+<tdcvt_f-eps-converted-to.pdf, id=262, 722.7pt x 633.36626pt>
 File: tdcvt_f-eps-converted-to.pdf Graphic file (type pdf)
 
 <use tdcvt_f-eps-converted-to.pdf>
@@ -821,9 +824,9 @@ eps-converted-to.pdf> <./Bbroke4dvar-eps-converted-to.pdf> <./Cbroke4dvar-eps-c
 onverted-to.pdf> <./Dbroke4dvar-eps-converted-to.pdf>] [15 <./Afscat-eps-conver
 ted-to.pdf> <./Bfscat-eps-converted-to.pdf> <./Cfscat-eps-converted-to.pdf> <./
 Dfscat-eps-converted-to.pdf>] [16 <./inccvt-eps-converted-to.pdf> <./tdcvt_a-ep
-s-converted-to.pdf> <./tdcvt_f-eps-converted-to.pdf>] [17
+s-converted-to.pdf> <./tdcvt_f-eps-converted-to.pdf>] [17] [18
 
-] (./4dvar.bbl [18]
+] (./4dvar.bbl [19]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -845,7 +848,7 @@ Underfull \hbox (badness 2189) in paragraph at lines 55--62
 1726-4189.  doi: 10.5194/bg-12-1299-2015.  URL
  []
 
-[19]
+[20]
 Underfull \hbox (badness 1515) in paragraph at lines 201--211
 \OT1/cmr/m/n/10.95 gins.  Four-Dimensional Vari-a-tional Data As-sim-i-la-tion 
 Ex-per-i-ments with a Mul-ti-level Semi-
@@ -893,19 +896,19 @@ Overfull \hbox (19.604pt too wide) in paragraph at lines 251--257
 on.html?id=epc5fX0lqRIC&pgis=1\OT1/cmr/m/n/10.95 . 
  []
 
-[20]
+[21]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no   in font cmr10!
- [21]) [22] [23] (./4dvar.aux) ) 
+ [22]) [23] [24] (./4dvar.aux) ) 
 Here is how much of TeX's memory you used:
- 5775 strings out of 493117
- 85391 string characters out of 6135433
- 168015 words of memory out of 5000000
- 9067 multiletter control sequences out of 15000+600000
+ 5778 strings out of 493117
+ 85472 string characters out of 6135433
+ 170042 words of memory out of 5000000
+ 9070 multiletter control sequences out of 15000+600000
  20139 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,15n,43p,2206b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,15n,43p,2506b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
@@ -925,10 +928,10 @@ y6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
 .pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
 pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.p
 fb>
-Output written on 4dvar.pdf (23 pages, 2477363 bytes).
+Output written on 4dvar.pdf (24 pages, 2482980 bytes).
 PDF statistics:
- 758 PDF objects out of 1000 (max. 8388607)
- 209 compressed objects within 3 object streams
+ 763 PDF objects out of 1000 (max. 8388607)
+ 211 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

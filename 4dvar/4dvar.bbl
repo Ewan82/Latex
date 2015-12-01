@@ -1,4 +1,4 @@
-\begin{thebibliography}{46}
+\begin{thebibliography}{47}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -298,6 +298,11 @@ F~Rawlins, SP~Ballard, KJ~Bovis, AM~Clayton, D~Li, GW~Inverarity, AC~Lorenc,
   scheme.
 \newblock \emph{Quarterly Journal of the Royal Meteorological Society},
   133\penalty0 (623):\penalty0 347--362, 2007.
+
+\bibitem[Renaud(1997)]{renaud1997automatic}
+JE~Renaud.
+\newblock Automatic differentiation in robust optimization.
+\newblock \emph{AIAA journal}, 35\penalty0 (6):\penalty0 1072--1079, 1997.
 
 \bibitem[Richardson et~al.(2010)Richardson, Williams, Hollinger, Moore, Dail,
   Davidson, Scott, Evans, Hughes, Lee, et~al.]{richardson2010estimating}

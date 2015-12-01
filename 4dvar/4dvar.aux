@@ -2,18 +2,19 @@
 \bibstyle{plainnat}
 \citation{ciais2014carbon}
 \citation{baldocchi2008turner}
-\citation{bauer2015quiet}
-\citation{dee2011era}
-\citation{rabier2000ecmwf,rawlins2007met}
-\citation{lorenc2005does}
-\citation{navon1998practical}
-\citation{smith2009variational}
 \select@language{english}
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
 \@writefile{lot}{\select@language{english}}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
 \newlabel{sec:intro}{{1}{1}}
+\citation{bauer2015quiet}
+\citation{dee2011era}
+\citation{rabier2000ecmwf,rawlins2007met}
+\citation{lorenc2005does}
+\citation{renaud1997automatic}
+\citation{navon1998practical}
+\citation{smith2009variational}
 \citation{zobitz2011primer,fox2009reflex,richardson2010estimating,Quaife2008,Zobitz2014,Niu2014}
 \citation{williams2005improved}
 \citation{braswell2005estimating}
@@ -29,34 +30,34 @@
 \citation{jarvinen1999variational}
 \citation{Bloom2015}
 \citation{wilkinson2012inter}
-\citation{pitman2001leaf}
 \citation{wilkinson2012inter}
+\citation{wilkinson2012inter}
+\citation{eddypro}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Model and Data Assimilation Methods}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Alice Holt research forest}{3}}
 \citation{Bloom2015}
 \citation{williams2005improved}
 \citation{williams1997predicting}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Model and Data Assimilation Methods}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Alice Holt research forest}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}The DALEC2 model}{3}}
 \citation{Bloom2015}
 \citation{lawless2013}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Representation of the fluxes in the DALEC2 carbon balance model. Green arrows represent C allocation, purple arrows represent litter fall and decomposition fluxes, blue arrows represent respiration fluxes and the red arrow represents the influence of leaf area index in the $GPP$ function.\relax }}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}The DALEC2 model}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Representation of the fluxes in the DALEC2 carbon balance model. Green arrows represent C allocation, purple arrows represent litter fall and decomposition fluxes, blue arrows represent respiration fluxes and the red arrow represents the influence of leaf area index in the $GPP$ function. {\color  {red}maybe label with fluxes too}\relax }}{4}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:DALEC_mod}{{1}{4}}
 \newlabel{GPP}{{1}{4}}
 \newlabel{daleclab}{{2}{4}}
 \newlabel{dalec1}{{3}{4}}
 \newlabel{dalec5}{{7}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}4D-Var}{4}}
-\newlabel{4dvar}{{2.3}{4}}
 \citation{lawless2013}
 \citation{Exbrayat2015}
-\citation{Walter2013}
-\citation{eddypro}
-\citation{williams2005improved}
-\citation{Nocedal1999}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}4D-Var}{5}}
+\newlabel{4dvar}{{2.3}{5}}
 \newlabel{costfn}{{10}{5}}
 \newlabel{gradcostfn}{{11}{5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Implementation and testing of 4D-Var system}{5}}
+\citation{Walter2013}
+\citation{williams2005improved}
+\citation{Nocedal1999}
 \citation{Li1994}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Test of tangent linear model}{6}}
 \newlabel{sec:testtlm}{{2.4.1}{6}}
@@ -64,22 +65,19 @@
 \newlabel{tlmtest}{{14}{6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Plot of the tangent linear model test function (equation \ref  {tlmtest}) for DALEC2, for a TLM evolving our state 731 days forward in time and a $5\%$ perturbation, $\delta \textbf  {x}_0$.\relax }}{6}}
 \newlabel{fig:tlm}{{2}{6}}
-\newlabel{pertlmtest}{{15}{6}}
 \citation{lawless2013}
 \citation{Navon1992}
 \citation{Freitag2010}
-\citation{bannister2008review}
-\citation{Bloom2015}
-\citation{Bloom2015}
+\newlabel{pertlmtest}{{15}{7}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Plot of the percentage error in the tangent linear model (equation \ref  {pertlmtest}) for DALEC2 when evolving the model state forward over a period of two years with three differing values of perturbation, $\delta \textbf  {x}_0$.\relax }}{7}}
 \newlabel{fig:tlm_error}{{3}{7}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Test of adjoint model}{7}}
 \newlabel{eqn:adjoint_test}{{16}{7}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Gradient test}{7}}
 \newlabel{sec:testgrad}{{2.4.3}{7}}
-\citation{Papale2006}
-\citation{Daley1992}
-\citation{Waller2014}
+\citation{bannister2008review}
+\citation{Bloom2015}
+\citation{Bloom2015}
 \newlabel{fig:costone}{{4a}{8}}
 \newlabel{sub@fig:costone}{{a}{8}}
 \newlabel{fig:cost}{{4b}{8}}
@@ -88,37 +86,38 @@
 \newlabel{fig:testgradcostone}{{4}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Including correlations in the background error covariance matrix}{8}}
 \newlabel{sec:corB}{{2.5}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Specifying serial correlations in the observational error covariance matrix}{8}}
-\newlabel{sec:corR}{{2.6}{8}}
+\citation{Papale2006}
+\citation{Daley1992}
+\citation{Waller2014}
 \citation{Healy2005}
 \citation{Stewart2013}
 \citation{jarvinen1999variational}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Background error correlation matrix created using method in section \ref  {sec:corB}. Here the correlation scale for off-diagonal values ranges from $-0.5$ to $0.5$ with the correlation along the diagonal being $1$.\relax }}{9}}
 \newlabel{fig:Bcorr}{{5}{9}}
-\newlabel{eqn:corr_fn}{{19}{9}}
-\citation{smith2009variational}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Specifying serial correlations in the observational error covariance matrix}{9}}
+\newlabel{sec:corR}{{2.6}{9}}
+\newlabel{eqn:corr_fn}{{19}{10}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Observation error correlation matrix for the 67 observations used in assimilation created using method in section \ref  {sec:corR} with $\tau = 4$, $a=0.3$ and $\eta =4$.\relax }}{10}}
 \newlabel{fig:Rcorr}{{6}{10}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Results}{10}}
 \newlabel{sec:results}{{3}{10}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Experiments}{10}}
 \newlabel{sec:exps}{{3.1}{10}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces The combination of error covariance matrices used in each data assimilation experiment.\relax }}{10}}
-\newlabel{table:exps_tab}{{1}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Experiment A}{10}}
-\newlabel{sec:expa}{{3.2}{10}}
-\citation{jarvinen1999variational}
-\citation{bannister2008review}
+\citation{smith2009variational}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces The combination of error covariance matrices used in each data assimilation experiment.\relax }}{11}}
+\newlabel{table:exps_tab}{{1}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Experiment A}{11}}
+\newlabel{sec:expa}{{3.2}{11}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Experiment B}{11}}
 \newlabel{sec:expb}{{3.3}{11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Experiment C}{11}}
-\newlabel{sec:expc}{{3.4}{11}}
+\citation{jarvinen1999variational}
+\citation{bannister2008review}
 \citation{jarvinen1999variational,Daley1992}
 \citation{Taylor2001}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Experiment C}{12}}
+\newlabel{sec:expc}{{3.4}{12}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Experiment D}{12}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Summary}{12}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Analysis (1999-2000) results for experiments and background when judged against observed NEE.\relax }}{12}}
-\newlabel{table:analysis_res}{{2}{12}}
 \newlabel{fig:4dvardiagBR}{{7a}{13}}
 \newlabel{sub@fig:4dvardiagBR}{{a}{13}}
 \newlabel{fig:4dvaredcBR}{{7b}{13}}
@@ -151,14 +150,16 @@
 \newlabel{fig:animals}{{9}{15}}
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Normalised analysis increment for the four experiments.\relax }}{16}}
 \newlabel{fig:xa_inc}{{10}{16}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Forecast (2000-2014) results for experiments and background when judged against observed NEE.\relax }}{16}}
-\newlabel{table:forecast_res}{{3}{16}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Analysis (1999-2000) results for experiments and background when judged against observed NEE.\relax }}{16}}
+\newlabel{table:analysis_res}{{2}{16}}
 \newlabel{fig:td_a}{{11a}{16}}
 \newlabel{sub@fig:td_a}{{a}{16}}
 \newlabel{fig:td_f}{{11b}{16}}
 \newlabel{sub@fig:td_f}{{b}{16}}
 \@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Taylor diagrams displaying statistical comparison of the four experiment and background analysis (1999-2000) and forecast (2000-2014) results with observations of NEE $( \text  {gCm}^{-2})$. The dotted line represents the standard deviation of the observations and the contours represent values of constant root mean square error between model and observations.\relax }}{16}}
 \newlabel{fig:taylordiag}{{11}{16}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Forecast (2000-2014) results for experiments and background when judged against observed NEE.\relax }}{17}}
+\newlabel{table:forecast_res}{{3}{17}}
 \citation{Bloom2015}
 \citation{smith2009variational}
 \citation{Bloom2015}
@@ -166,14 +167,14 @@
 \citation{jarvinen1999variational}
 \citation{Baldocchi2015}
 \citation{desroziers2005diagnosis}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{17}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{18}}
 \bibdata{../PhD}
 \bibcite{Bacour2015}{{1}{2015}{{Bacour et~al.}}{{Bacour, Peylin, MacBean, Rayner, Delage, Chevallier, Weiss, Demarty, Santaren, Baret, Berveiller, Dufr\^{e}ne, and Prunet}}}
 \bibcite{baldocchi2008turner}{{2}{2008}{{Baldocchi}}{{}}}
 \bibcite{Baldocchi2015}{{3}{2015}{{Baldocchi et~al.}}{{Baldocchi, Sturtevant, and Contributors}}}
 \bibcite{bannister2008review}{{4}{2008}{{Bannister}}{{}}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{18}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Acknowledgements}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{19}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Acknowledgements}{19}}
 \bibcite{bauer2015quiet}{{5}{2015}{{Bauer et~al.}}{{Bauer, Thorpe, and Brunet}}}
 \bibcite{Bloom2015}{{6}{2015}{{Bloom and Williams}}{{}}}
 \bibcite{braswell2005estimating}{{7}{2005}{{Braswell et~al.}}{{Braswell, Sacks, Linder, and Schimel}}}
@@ -203,18 +204,19 @@
 \bibcite{Quaife2008}{{31}{2008}{{Quaife et~al.}}{{Quaife, Lewis, {De Kauwe}, Williams, Law, Disney, and Bowyer}}}
 \bibcite{rabier2000ecmwf}{{32}{2000}{{Rabier et~al.}}{{Rabier, J{\"a}rvinen, Klinker, Mahfouf, and Simmons}}}
 \bibcite{rawlins2007met}{{33}{2007}{{Rawlins et~al.}}{{Rawlins, Ballard, Bovis, Clayton, Li, Inverarity, Lorenc, and Payne}}}
-\bibcite{richardson2010estimating}{{34}{2010}{{Richardson et~al.}}{{Richardson, Williams, Hollinger, Moore, Dail, Davidson, Scott, Evans, Hughes, Lee, et~al.}}}
-\bibcite{smith2009variational}{{35}{2009}{{Smith et~al.}}{{Smith, Dance, Baines, Nichols, and Scott}}}
-\bibcite{Stewart2013}{{36}{2013}{{Stewart et~al.}}{{Stewart, Dance, and Nichols}}}
-\bibcite{Taylor2001}{{37}{2001}{{Taylor}}{{}}}
-\bibcite{Verbeeck2011}{{38}{2011}{{Verbeeck et~al.}}{{Verbeeck, Peylin, Bacour, Bonal, Steppe, and Ciais}}}
-\bibcite{Waller2014}{{39}{2014}{{Waller et~al.}}{{Waller, Dance, Lawless, Nichols, and Eyre}}}
-\bibcite{Walter2013}{{40}{2013}{{Walter and Lehmann}}{{}}}
-\bibcite{weston2014accounting}{{41}{2014}{{Weston et~al.}}{{Weston, Bell, and Eyre}}}
-\bibcite{wilkinson2012inter}{{42}{2012}{{Wilkinson et~al.}}{{Wilkinson, Eaton, Broadmeadow, and Morison}}}
-\bibcite{williams1997predicting}{{43}{1997}{{Williams et~al.}}{{Williams, Rastetter, Fernandes, Goulden, Shaver, and Johnson}}}
-\bibcite{williams2005improved}{{44}{2005}{{Williams et~al.}}{{Williams, Schwarz, Law, Irvine, and Kurpius}}}
-\bibcite{Zobitz2014}{{45}{2014}{{Zobitz et~al.}}{{Zobitz, Moore, Quaife, Braswell, Bergeson, Anthony, and Monson}}}
-\bibcite{zobitz2011primer}{{46}{2011}{{Zobitz et~al.}}{{Zobitz, Desai, Moore, and Chadwick}}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Parameter values and standard deviations for background vector used in experiments.\relax }}{23}}
-\newlabel{table:xbvars}{{4}{23}}
+\bibcite{renaud1997automatic}{{34}{1997}{{Renaud}}{{}}}
+\bibcite{richardson2010estimating}{{35}{2010}{{Richardson et~al.}}{{Richardson, Williams, Hollinger, Moore, Dail, Davidson, Scott, Evans, Hughes, Lee, et~al.}}}
+\bibcite{smith2009variational}{{36}{2009}{{Smith et~al.}}{{Smith, Dance, Baines, Nichols, and Scott}}}
+\bibcite{Stewart2013}{{37}{2013}{{Stewart et~al.}}{{Stewart, Dance, and Nichols}}}
+\bibcite{Taylor2001}{{38}{2001}{{Taylor}}{{}}}
+\bibcite{Verbeeck2011}{{39}{2011}{{Verbeeck et~al.}}{{Verbeeck, Peylin, Bacour, Bonal, Steppe, and Ciais}}}
+\bibcite{Waller2014}{{40}{2014}{{Waller et~al.}}{{Waller, Dance, Lawless, Nichols, and Eyre}}}
+\bibcite{Walter2013}{{41}{2013}{{Walter and Lehmann}}{{}}}
+\bibcite{weston2014accounting}{{42}{2014}{{Weston et~al.}}{{Weston, Bell, and Eyre}}}
+\bibcite{wilkinson2012inter}{{43}{2012}{{Wilkinson et~al.}}{{Wilkinson, Eaton, Broadmeadow, and Morison}}}
+\bibcite{williams1997predicting}{{44}{1997}{{Williams et~al.}}{{Williams, Rastetter, Fernandes, Goulden, Shaver, and Johnson}}}
+\bibcite{williams2005improved}{{45}{2005}{{Williams et~al.}}{{Williams, Schwarz, Law, Irvine, and Kurpius}}}
+\bibcite{Zobitz2014}{{46}{2014}{{Zobitz et~al.}}{{Zobitz, Moore, Quaife, Braswell, Bergeson, Anthony, and Monson}}}
+\bibcite{zobitz2011primer}{{47}{2011}{{Zobitz et~al.}}{{Zobitz, Desai, Moore, and Chadwick}}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Parameter values and standard deviations for background vector used in experiments.\relax }}{24}}
+\newlabel{table:xbvars}{{4}{24}}
