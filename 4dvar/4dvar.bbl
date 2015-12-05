@@ -153,6 +153,12 @@ Heikki J{\"a}rvinen, Erik Andersson, and Fran{\c{c}}ois Bouttier.
   with serially correlated errors.
 \newblock \emph{Tellus A}, 51\penalty0 (4):\penalty0 469--488, 1999.
 
+\bibitem[Jones et~al.(2001)Jones, Oliphant, Peterson, et~al.]{scipy2015}
+Eric Jones, Travis Oliphant, Pearu Peterson, et~al.
+\newblock {SciPy}: Open source scientific tools for {Python}, 2001.
+\newblock URL \url{http://www.scipy.org/}.
+\newblock [Online; accessed 2015-12-04].
+
 \bibitem[Kalnay(2003)]{kalnay2003atmospheric}
 Eugenia Kalnay.
 \newblock \emph{Atmospheric modeling, data assimilation, and predictability}.
@@ -264,12 +270,6 @@ D.~Papale, M.~Reichstein, M.~Aubinet, E.~Canfora, C.~Bernhofer, W.~Kutsch,
 \newblock \emph{Biogeosciences}, 3\penalty0 (4):\penalty0 571--583, 2006.
 \newblock ISSN 1726-4189.
 \newblock \doi{10.5194/bg-3-571-2006}.
-
-\bibitem[Pitman and Broadmeadow(2001)]{pitman2001leaf}
-Rona Pitman and Mark Broadmeadow.
-\newblock Leaf area, biomass and physiological parameterisation of ground
-  vegetation of lowland oak woodland.
-\newblock \emph{Forestry Commission, Edinburgh}, 2001.
 
 \bibitem[Quaife et~al.(2008)Quaife, Lewis, {De Kauwe}, Williams, Law, Disney,
   and Bowyer]{Quaife2008}

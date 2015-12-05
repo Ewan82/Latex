@@ -48,7 +48,7 @@ In this paper we implement the new version of DALEC (DALEC2 \citep{Bloom2015}) i
 
 \subsection{Alice Holt research forest}
 
-Alice Holt Forest is a research forest area managed by the UK Forestry Commission located in Hampshire, SE England. Forest Research has been operating a $\text{CO}_{2}$ flux measurement tower in a portion of the forest, the Straits Inclosure, since 1998m so it is one of the longer forest site $\text{CO}_2$ flux record, globally. The Straits Inclosure is a $90 \text{ha}$ area of managed deciduous broadleaved plantation woodland, presently approximately $80$ years old, on a surface water gley soil. The majority of the canopy trees are oak (Quercus robur), with an understory of hazel (Corylus avellana) and hawthorn (Crataegus monogyna); but there is a small area of conifers (Pinus nigra) within the tower measurement footprint area in some weather conditions. Further details of the Straits Inclosure site and the measurement procedures are given in \citet{wilkinson2012inter}, together with analysis of stand-scale $30$ minute average net $\text{CO}_{2}$ fluxes (NEE) measured by standard eddy covariance methods from 1998-2011. The data used here span from January 1999 to December 2013, and consist of the NEE fluxes and meteorological driving data of temperatures, irradiance and atmospheric $\text{CO}_2$ concentration. The original NEE data were subjected to normal quality control procedures, including $u^{*}$ filtering to remove unreliable data when there were low turbulence night time conditions, as described in \citet{wilkinson2012inter}, but were not gap-filled. To compute daily NEE observations we take the sum over the 48 measurements made each day. We only select days where there is no missing data and over $90\% $ of $\text{CO}_2$ flux observations have a quality control flag associated with the best observations from the EddyPro flux processing software \citep{eddypro}.
+Alice Holt Forest is a research forest area managed by the UK Forestry Commission located in Hampshire, SE England. Forest Research has been operating a $\text{CO}_{2}$ flux measurement tower in a portion of the forest, the Straits Inclosure, since 1998m so it is one of the longer forest site $\text{CO}_2$ flux record, globally. The Straits Inclosure is a $90 \text{ha}$ area of managed deciduous broadleaved plantation woodland, presently approximately $80$ years old, on a surface water gley soil. The majority of the canopy trees are oak (Quercus robur), with an understory of hazel (Corylus avellana) and hawthorn (Crataegus monogyna); but there is a small area of conifers (Pinus nigra) within the tower measurement footprint area in some weather conditions. Further details of the Straits Inclosure site and the measurement procedures are given in \citet{wilkinson2012inter}, together with analysis of stand-scale $30$ minute average net $\text{CO}_{2}$ fluxes (NEE) measured by standard eddy covariance methods from 1998-2011. The data used here span from January 1999 to December 2013, and consist of the NEE fluxes and meteorological driving data of temperatures, irradiance and atmospheric $\text{CO}_2$ concentration. The original NEE data were subjected to normal quality control procedures, including $u^{*}$ filtering to remove unreliable data when there were low turbulence night time conditions, as described in \citet{wilkinson2012inter}, but were not gap-filled. To compute daily NEE observations we take the sum over the 48 measurements made each day. We only select days where there is no missing data and over $90\% $ of $\text{CO}_2$ flux observations have a quality control flag associated with the best observations and no observations associated with the worst from the EddyPro flux processing software \citep{eddypro}.
 
 \subsection{The DALEC2 model}
 
@@ -61,40 +61,80 @@ The DALEC2 model is a simple process-based model describing the carbon balance o
     \label{fig:DALEC_mod}
 \end{figure}
 
-The model equations for the carbon pools at day $t+1$ are as follows:
+The model equations for the carbon pools at day $i+1$ are as follows:
 
 \begin{align}
-GPP^{t} &= ACM(C_f^{t}, c_{lma}, c_{eff}, \Psi) \label{GPP}
-\\C_{lab}^{t+1}&=(1-\Phi _{on})C_{lab}^{t}+(1-f_{auto})(1-f_{fol})f_{lab}GPP^{t}, \label{daleclab}
-\\C_f^{t+1}&=(1-\Phi_{off})C_f^{t}+\Phi_{on}C_{lab}^{t}+(1-f_{auto})f_{fol}GPP^{t}, \label{dalec1}
-\\C_r^{t+1}&=(1-\theta_{roo})C_r^{t}+(1-f_{auto})(1-f_{fol})(1-f_{lab})f_{roo}GPP^{t}, 
-\\C_w^{t+1}&=(1-\theta_{woo})C_w^{t}+(1-f_{auto})(1-f_{fol})(1-f_{lab})(1-f_{roo})GPP^{t}, 
-\\C_l^{t+1}&=(1-(\theta_{lit}+\theta_{min})e^{\Theta T^{t}})C_l^{t}+\theta_{roo}C_r^{t}+\Phi_{off}C_f^{t}, 
-\\C_s^{t+1}&=(1-\theta_{som}e^{\Theta T^{t}})C_s^{t}+\theta_{woo}C_w^{t}+\theta_{min}e^{\Theta T^{t}}C_l^{t}, \label{dalec5}
+GPP^{i} &= ACM(C_{fol}^{i-1}, c_{lma}, c_{eff}, \Psi) \label{GPP}
+\\C_{lab}^{i}&=(1-\Phi _{on})C_{lab}^{i-1}+(1-f_{auto})(1-f_{fol})f_{lab}GPP^{i}, \label{daleclab}
+\\C_{fol}^{i}&=(1-\Phi_{off})C_{fol}^{i-1}+\Phi_{on}C_{lab}^{i-1}+(1-f_{auto})f_{fol}GPP^{i}, \label{dalec1}
+\\C_{roo}^{i}&=(1-\theta_{roo})C_{roo}^{i-1}+(1-f_{auto})(1-f_{fol})(1-f_{lab})f_{roo}GPP^{i}, 
+\\C_{woo}^{i}&=(1-\theta_{woo})C_{woo}^{i-1}+(1-f_{auto})(1-f_{fol})(1-f_{lab})(1-f_{roo})GPP^{i}, 
+\\C_{lit}^{i}&=(1-(\theta_{lit}+\theta_{min})e^{\Theta T^{i-1}})C_{lit}^{i-1}+\theta_{roo}C_{roo}^{i-1}+\Phi_{off}C_{fol}^{i-1}, 
+\\C_{som}^{i}&=(1-\theta_{som}e^{\Theta T^{i-1}})C_{som}^{i-1}+\theta_{woo}C_{woo}^{i-1}+\theta_{min}e^{\Theta T^{i-1}}C_{lit}^{i-1}, \label{dalec5}
 \end{align}
-where $T^{t}$ is the daily mean temperature, $\Psi$ represents the meteorological driving data used in the $GPP$ function and $\Phi_{on} / \Phi_{off}$ are functions controlling leaf-on and leaf-off. The model parameters used in equations \ref{GPP} to \ref{dalec5} are included in the appendix in table~\ref{table:xbvars}. DALEC2 differs from the original DALEC in that it can be parameterised for both deciduous and evergreen sites with $\Phi_{on}$ and $\Phi_{off}$ being able to reproduce the phenology of either type of site. The full details of this version of DALEC can be found in \cite{Bloom2015}. 
+where $T^{i-1}$ is the daily mean temperature, $\Psi$ represents the meteorological driving data used in the $GPP$ function and $\Phi_{on} / \Phi_{off}$ are functions controlling leaf-on and leaf-off. The model parameters used in equations \eqref{GPP} to \eqref{dalec5} are included in the appendix in table~\ref{table:xbvars}. DALEC2 differs from the original DALEC in that it can be parameterised for both deciduous and evergreen sites with $\Phi_{on}$ and $\Phi_{off}$ being able to reproduce the phenology of either type of site. The full details of this version of DALEC can be found in \cite{Bloom2015}. 
 
 \subsection{4D-Var} \label{4dvar}
 
-In 4D-Var we aim to maximise $P(\textbf{x}_0|\textbf{y})$, the probability of the initial state, $\textbf{x}_0$, given a set of observations $\textbf{y}$ over some time window, $0, \dots, N$. The probability $P(\textbf{x}_0|\textbf{y})$ is maximised by minimising a cost function $J(\textbf{x}_0)$ derived from Bayes Theorem \citep{lawless2013}. The cost function is given as,
-
+We consider the discrete nonlinear dynamical system given by
 \begin{equation}
-J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}_b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}_b)+\frac{1}{2}\sum_{i=0}^{N}(\textbf{y}_i-h_i(\textbf{x}_i))^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-h_i(\textbf{x}_i)),
+\textbf{z}_{i} = \textbf{f}_{i-1\rightarrow i}(\textbf{z}_{i-1}, \textbf{p}_{i-1}),
 \end{equation}
-where $\textbf{x}_b$ is the so-called background and acts as the initial guess to the state $\textbf{x}_0$, $\textbf{B}$ is the background error covariance matrix and quantifies our knowledge of the error in the background, $h_i$ is the observation operator at time $t_i$ and maps the state vector evolved by the nonlinear model ($m_{0\rightarrow i}(\mathbf{x}_{0})=\textbf{x}_i$) to the observations at this time ($\textbf{y}_i$) and $\textbf{R}_i$ is the observation error covariance matrix at time $t_i$ and represents our knowledge of the uncertainty in the observations. The state that minimises the cost function is called the analysis and is denoted as $\textbf{x}_a$. This state is found using a minimisation routine that takes as its input arguments the cost function, the initial guess ($\textbf{x}_b$) and also the gradient of the cost function given as,
+where $\textbf{z}_{i} \in \mathbb{R}^{n}$ is the state vector at time $t_i$, $\textbf{f}_{i-1 \rightarrow i}$ is the nonlinear model operator propagating the state at time $t_{i-1}$ to time $t_{i}$ for $i = 1, 2, \dots, N$ and $\textbf{p}_{i-1} \in \mathbb{R}^{q}$ is a vector of $q$ model parameters at time $t_{i-1}$. For DALEC2 the state vector $\textbf{z}_{i}=(C_{lab}^{i}, C_{for}^{i}, C_{roo}^{i}, C_{woo}^{i}, C_{lit}^{i}, C_{som}^{i})^{T}$. The model parameters are not updated by the nonlinear model operator, therefore the evolution of the parameters is given by,
+\begin{equation}
+\textbf{p}_{i} = \textbf{p}_{i-1}, 
+\end{equation}
+for $i= 1, 2, \dots, N$. We define the new vector $\textbf{x}$ by joining the parameter vector $\textbf{p}$ with the model state vector $\textbf{z}$, giving us the augmented state vector
+\begin{equation}
+\textbf{x} =
+\begin{pmatrix}
+\textbf{p} \\
+\textbf{z}
+\end{pmatrix}
+\in \mathbb{R}^{q+n}.
+\end{equation}
+We define the augmented system model by
+\begin{equation}
+\textbf{x}_{i} = \textbf{m}_{i-1 \rightarrow i}(\textbf{x}_{i-1}), \label{eqn:nonlinmod}
+\end{equation}
+where
+\begin{equation}
+\textbf{m}_{i-1\rightarrow i}(\textbf{x}_{i-1}) =
+\begin{pmatrix}
+\textbf{p}_{i-1} \\
+\textbf{f}_{i-1\rightarrow i}(\textbf{z}_{i-1}, \textbf{p}_{i-1})
+\end{pmatrix}
+=
+\begin{pmatrix}
+\textbf{p}_{i} \\
+\textbf{z}_{i}
+\end{pmatrix}
+\in \mathbb{R}^{q+n}.
+\end{equation}
+The available observations at time $t_{i}$ are represented by the vector $\textbf{y}_{i} \in \mathbb{R}^{r_{i}}$ which are related to the augmented state vector through the equation
+\begin{equation}
+\textbf{y}_{i}=\textbf{h}_{i}(\textbf{x}_{i})+ \mathbf{ \epsilon}_{i},
+\end{equation} 
+where $\textbf{h}_{i}: \mathbb{R}^{q+n} \rightarrow \mathbb{R}^{r_{i}}$ is the observation operator mapping the augmented state vector to observation space and $\mathbf{\epsilon}_{i} \in \mathbb{R}^{r_{i}}$ represents the observation errors. These errors are usually assumed to be unbiased, Gaussian and serially uncorrelated with known covariance matrices $\textbf{R}_{i}$.
+
+We assumer that at time $t_{0}$ we have an initial estimate to the augmented state, usually referred to as the background vector denoted $\textbf{x}^{b}$. This background is assumed to have unbiased, Gaussian errors with known covariance matrix $\textbf{B}$. In 4D-Var we aim to find the initial state that minimises the wighted least squares distance to the background while minimising the weighted least squares distance of the model trajectory to the observations over the time window $t_{0}, \dots, t_{N}$ \citep{lawless2013}. We do this by finding the state $\textbf{x}^{a}_{0}$ at time $t_{0}$ that minimises the cost function
+\begin{equation}
+J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}\sum_{i=0}^{N}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i))^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i)),
+\end{equation}
+subject to the augmented states $\textbf{x}_{i}$ satisfying the nonlinear dynamical model \eqref{eqn:nonlinmod}. The state that minimises the cost function, $\textbf{x}^{a}_{0}$, is commonly called the analysis. This state is found using a minimisation routine that takes as its input arguments the cost function, the background vector ($\textbf{x}^{b}$) and also the gradient of the cost function given as,
 
 \begin{equation}
-\nabla J(\textbf{x}_0) = \textbf{B}^{-1}(\textbf{x}_0-\textbf{x}_b)-\sum_{i=0}^{N}\textbf{M}_{i,0}^{T}\textbf{H}_i^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-h_i(\textbf{x}_i)),
+\nabla J(\textbf{x}_0) = \textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^{b})-\sum_{i=0}^{N}\textbf{M}_{i,0}^{T}\textbf{H}_i^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i))
 \end{equation}
 
-where $\textbf{H}_i = \frac{\partial h_i(\textbf{x}_i)}{\partial\textbf{x}_i}$ is our linearized observation operator and $\mathbf{M}_{i,0}=\mathbf{M}_{i-1}\mathbf{M}_{i-2}\cdots\mathbf{M}_0$ is the tangent linear model with $\mathbf{M}_i=\frac{\partial m_{i}(\textbf{x}_{i})}{\partial \textbf{x}_{i}}$. In practice $\nabla J(\textbf{x}_0)$ is calculated using the method of Lagrange multipliers as shown in \citet{lawless2013}. We can rewrite the cost function and its gradient to avoid the sum notation as,
+where $\textbf{H}_i = \frac{\partial \textbf{h}_i(\textbf{x}_i)}{\partial\textbf{x}_i}$ is our linearized observation operator and $\mathbf{M}_{i,0}=\mathbf{M}_{i-1}\mathbf{M}_{i-2}\cdots\mathbf{M}_0$ is the tangent linear model with $\mathbf{M}_i=\frac{\partial \textbf{m}_{i-1\rightarrow i}(\textbf{x}_{i})}{\partial \textbf{x}_{i}}$. In practice $\nabla J(\textbf{x}_0)$ is calculated using the method of Lagrange multipliers as shown in \citet{lawless2013}. We can rewrite the cost function and its gradient to avoid the sum notation as,
 
 \begin{equation}
-J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}_b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}_b)+\frac{1}{2}(\hat{\textbf{y}}-\hat{h}(\textbf{x}_0))^{T}\hat{\textbf{R}}^{-1}(\hat{\textbf{y}}-\hat{h}(\textbf{x}_0)) \label{costfn}
+J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_0))^{T}\hat{\textbf{R}}^{-1}(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_0)) \label{costfn}
 \end{equation}
 and
 \begin{equation}
-\nabla J(\textbf{x}_0) = \textbf{B}^{-1}(\textbf{x}_0-\textbf{x}_b)-\hat{\mathbf{H}}^{T}\hat{\textbf{R}}^{-1}(\hat{\textbf{y}}-\hat{h}(\textbf{x}_0)), \label{gradcostfn}
+\nabla J(\textbf{x}_0) = \textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)-\hat{\mathbf{H}}^{T}\hat{\textbf{R}}^{-1}(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_0)), \label{gradcostfn}
 \end{equation}
 where,
 \begin{equation}
@@ -106,12 +146,12 @@ where,
 \textbf{y}_N
 \end{pmatrix},
 \hspace{1mm}
-\hat{h}(\textbf{x}_0)=
+\hat{\textbf{h}}(\textbf{x}_0)=
 \begin{pmatrix}
-h_0(\textbf{x}_0) \\
-h_1(m_{0\rightarrow 1}(\mathbf{x}_{0}))\\
+\textbf{h}_0(\textbf{x}_0) \\
+\textbf{h}_1(\textbf{m}_{0\rightarrow 1}(\mathbf{x}_{0}))\\
 \vdots \\
-h_N(m_{0\rightarrow N}(\mathbf{x}_{0}))
+\textbf{h}_N(\textbf{m}_{0\rightarrow N}(\mathbf{x}_{0}))
 \end{pmatrix},
 \hspace{1mm}
 \hat{\mathbf{R}}=
@@ -131,41 +171,39 @@ h_N(m_{0\rightarrow N}(\mathbf{x}_{0}))
 \end{pmatrix}.
 \end{equation}
 
-Solving the cost function in this form also allows us to build serial correlations into the observation error covariance matrix $\hat{\mathbf{R}}$. The off-diagonal blocks of $\hat{\mathbf{R}}$ represent correlations in time between assimilated observations and are usually taken to be zero.
+Solving the cost function in this form also allows us to build serial time correlations into the observation error covariance matrix $\hat{\mathbf{R}}$. The off-diagonal blocks of $\hat{\mathbf{R}}$ represent correlations in time between assimilated observations and are usually taken to be zero, in section~\ref{sec:corR} we show how these off-diagonal blocks can be specified.
 %Forecast skill score, $SS = 1 - \frac{MSE_{forecast}}{MSE_{ref}}$, http://en.wikipedia.org/wiki/Forecast_skill
 
-\subsection{Implementation and testing of 4D-Var system}
+\subsection{Implementation and testing of 4D-Var system} \label{sec:implement4dvar}
 
-In our DALEC2 4D-Var scheme we are performing joint parameter and state estimation. Therefore the state vector, $\textbf{x}_0$, corresponds to the vector of the 17 model parameters and 6 initial carbon pool values, which can be found in the appendix in table~\ref{table:xbvars}. Here the nonlinear model (DALEC2) only updates the initial carbon pool values when evolving the state vector forward in time with the parameters being held constant. To find the background guess, $\textbf{x}_{b}$, to the state vector we can either use a previous DALEC2 model forecast's estimate to the state of the system for the site (when available) or use expert elicitation to define likely state and parameter values and ranges for the site. The background vector $(\textbf{x}_b)$ and its corresponding standard deviations (see table~\ref{table:xbvars}) used in this paper were provided from existing runs of the the CARbon DAta-MOdel fraMework (CARDAMOM) \citep{Exbrayat2015}. This is a worse resolution dataset which provides a reasonable first guess at DALEC2 state and parameter values for the Alice Holt research site.
+In our DALEC2 4D-Var scheme we are performing joint parameter and state estimation. The augmented state vector, $\textbf{x}_0$, corresponds to the vector of the 17 model parameters and 6 initial carbon pool values, which can be found in the appendix in table~\ref{table:xbvars}. Here the nonlinear model (DALEC2) only updates the initial carbon pool values when evolving the augmented state vector forward in time with the parameters being held constant. To find the background estimate, $\textbf{x}^{b}$, to the augmented state vector we can either use a previous DALEC2 model forecast's estimate of the state of the system for the site (when available) or use expert elicitation to define likely state and parameter values and ranges for the site. The background vector $(\textbf{x}^b)$ and its corresponding standard deviations (see table~\ref{table:xbvars}) used in this paper were provided from existing runs of the the CARbon DAta-MOdel fraMework (CARDAMOM) \citep{Exbrayat2015}. This is a dataset derived from satellite observations of leaf area index which provides a reasonable first guess at DALEC2 state and parameter values for the Alice Holt research site. In this paper we assimilate observations of daily NEE. We assume a variance of $0.5\text{gCm}^{-2}\text{day}^{-1}$ in our assimilated observations of daily NEE \citep{williams2005improved}.
 
 In order to find the tangent linear model (TLM) for DALEC2 it is necessary to find the derivative of the model at each time step with respect to the 17 model parameters and the 6 carbon pools. We use the AlgoPy automatic differentiation package \citep{Walter2013} in Python to calculate the TLM at each time step. This package uses forward mode automatic differentiation to calculate the derivative of our model. In the following tests we use a diagonal approximation to our background and observational error covariance matrices so that, 
 $\textbf{B}_{diag}=\text{diag}(\bm{\sigma}_b)^2$ and $\hat{\textbf{R}}_{diag}=\text{diag}(\bm{\sigma}_o )^2$,
-where $\bm{\sigma}_b$ and $\bm{\sigma}_o$ are the vectors of the background and observational standard deviations respectively. 
-
-In this paper we assimilate observations of daily NEE. We assume a variance of $0.5\text{gCm}^{-2}\text{day}^{-1}$ in our assimilated observations of daily NEE \citep{williams2005improved}. The minimisation routine used in our data assimilation experiments is the truncated Newton method \citep{Nocedal1999} from the Python package Scipy.optimize. In sections \ref{sec:testtlm} to \ref{sec:testgrad} we show tests of our scheme. 
+where $\bm{\sigma}_b$ is the vector of background standard deviations found in table~\ref{table:xbvars} and $\bm{\sigma}_o$ is the vector of observational standard deviations, for a single observation of NEE $\sigma_o^{2}=0.5\text{gCm}^{-2}\text{day}^{-1}$. The minimisation routine used in our data assimilation experiments is the truncated Newton method \citep{Nocedal1999} from the Python package Scipy.optimize \citep{scipy2015}. In sections \ref{sec:testtlm} to \ref{sec:testgrad} we show tests of our scheme. 
 
 
 \subsubsection{Test of tangent linear model} \label{sec:testtlm}
 
 We can have confidence that our implementation of the TLM for DALEC2 is correct as it passes the following relevant tests \citep{Li1994}. In 4D-Var we assume the tangent linear hypothesis,
 \begin{equation}
-m_{0\rightarrow i}(\mathbf{x}_0+\gamma \delta\mathbf{x}_0) \approx m_{0 \rightarrow i}(\mathbf{x}_0) + \mathbf{M}_{i,0}\gamma \delta\mathbf{x}_0, \label{TLH}
+\textbf{m}_{0\rightarrow i}(\mathbf{x}_0+\gamma \delta\mathbf{x}_0) \approx \textbf{m}_{0 \rightarrow i}(\mathbf{x}_0) + \mathbf{M}_{i,0}\gamma \delta\mathbf{x}_0, \label{TLH}
 \end{equation}
-where $\delta\mathbf{x}_0$ is a perturbation of the initial state and $\gamma$ is a parameter controlling the size of this perturbation. The validity of this assumption depends on how nonlinear the model is, the length of the assimilation window and the size of the perturbation $\delta\mathbf{x}_0$. We can test this by rearranging equation~\ref{TLH} to find the relative error,
+where $\delta\mathbf{x}_0$ is a perturbation of the initial augmented state $\textbf{x}_{0}$ and $\gamma$ is a parameter controlling the size of this perturbation. The validity of this assumption depends on how nonlinear the model is, the length of the assimilation window and the size of the augmented state perturbation $\delta\mathbf{x}_0$. We can test this by rearranging equation~\eqref{TLH} and introducing a term for the relative error to find,
 \begin{equation}
-E_R=\frac{||m_{0\rightarrow i}(\mathbf{x}_0+\gamma \delta\mathbf{x}_0) - m_{0 \rightarrow i}(\mathbf{x}_0)||}{||\mathbf{M}_{i,0}\gamma\delta\mathbf{x}_0||}, \label{tlmtest}
+E_R=\frac{||\textbf{m}_{0\rightarrow i}(\mathbf{x}_0+\gamma \delta\mathbf{x}_0) - \textbf{m}_{0 \rightarrow i}(\mathbf{x}_0)||}{||\mathbf{M}_{i,0}\gamma\delta\mathbf{x}_0||}, \label{tlmtest}
 \end{equation}
-where we expect $E_R \rightarrow 0$ as $\gamma \rightarrow 0$ (here we are using the Euclidean norm). Figure~\ref{fig:tlm} shows equation~\ref{tlmtest} plotted for DALEC2 with a TLM evolving our state 731 days forward in time for different values $\gamma$, with a $5\%$ perturbation $\delta\mathbf{x}_0$. Figure~\ref{fig:tlm} shows that the TLM behaves as expected for values of $\gamma$ approaching $0$.
+where we expect $E_R \rightarrow 0$ as $\gamma \rightarrow 0$ (here we are using the Euclidean norm). Figure~\ref{fig:tlm} shows equation~\eqref{tlmtest} plotted for DALEC2 with a TLM evolving our state 731 days forward in time for different values of $\gamma$ approaching zero, with a $5\%$ perturbation $\delta\mathbf{x}_0$. Figure~\ref{fig:tlm} shows that the TLM behaves as expected for values of $\gamma$ approaching $0$. This was also tested for different choices of $\textbf{x}_{0}$ and perturbation sizes with similar results.
 
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.5\textwidth]{linmoderr.eps}
-    \caption{Plot of the tangent linear model test function (equation \ref{tlmtest}) for DALEC2, for a TLM evolving our state 731 days forward in time and a $5\%$ perturbation, $\delta \textbf{x}_0$.}
+    \caption{Plot of the tangent linear model test function (equation \eqref{tlmtest}) for DALEC2, for a TLM evolving our state 731 days forward in time and a $5\%$ perturbation, $\delta \textbf{x}_0$.}
     \label{fig:tlm}
 \end{figure}
 
-It is also useful to show how our TLM behaves over a time window to see how the error in the TLM grows as we evolve our state further forward in time. We again rearrange equation \ref{TLH} with an additional error term to find, 
+It is also useful to show how our TLM behaves over a time window to see how the error in the TLM grows as we evolve our state further forward in time. We again rearrange equation \eqref{TLH} with an additional error term to find, 
 \begin{equation}
 \text{percentage error in TLM} = \begin{vmatrix} \frac{||m_{0\rightarrow i}(\mathbf{x}_0+\delta\mathbf{x}_0) - m_{0 \rightarrow i}(\mathbf{x}_0)||}{|| \mathbf{M}_{i,0}\delta\mathbf{x}_0||} - 1 \end{vmatrix} \times 100. \label{pertlmtest}
 \end{equation}
@@ -173,7 +211,7 @@ It is also useful to show how our TLM behaves over a time window to see how the 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.5\textwidth]{percenterrlinmod.eps}
-    \caption{Plot of the percentage error in the tangent linear model (equation \ref{pertlmtest}) for DALEC2 when evolving the model state forward over a period of two years with three differing values of perturbation, $\delta \textbf{x}_0$.}
+    \caption{Plot of the percentage error in the tangent linear model (equation \eqref{pertlmtest}) for DALEC2 when evolving the model state forward over a period of two years with three differing values of perturbation, $\delta \textbf{x}_0$.}
     \label{fig:tlm_error}
 \end{figure}
 
@@ -185,11 +223,11 @@ The adjoint model we have implemented for DALEC2 passes correctness tests. For o
 \begin{equation}
 <\mathbf{M}_{i,0}\delta\textbf{x}_0, \mathbf{M}_{i,0}\delta\textbf{x}_0> = <\delta\textbf{x}_0, \mathbf{M}_{i,0}^{T}\mathbf{M}_{i,0}\delta\textbf{x}_0> \label{eqn:adjoint_test}
 \end{equation}
-for any inner product $<, >$ and perturbation $\delta \textbf{x}_0$, this is derived from the adjoint identity \citep{lawless2013}. Using the Euclidean inner product equation~\ref{eqn:adjoint_test} is equivalent to
+for any inner product $<, >$ and perturbation $\delta \textbf{x}_0$. This is derived from the adjoint identity \citep{lawless2013}. Using the Euclidean inner product, equation~\eqref{eqn:adjoint_test} is equivalent to
 \begin{equation}
 (\mathbf{M}_{i,0}\delta\textbf{x}_0)^{T} (\mathbf{M}_{i,0}\delta\textbf{x}_0) = \delta\textbf{x}_0^{T} (\mathbf{M}_{i,0}^{T}(\mathbf{M}_{i,0}\delta\textbf{x}_0)).
 \end{equation}
-We evaluated the left hand side and right hand side of this identity for differing values of $\delta \textbf{x}_0$ and showed that they were equal to machine precision.
+We evaluated the left hand side and right hand side of this identity for differing values of $\textbf{x}_0$ and size of perturbation $\delta \textbf{x}_0$ and showed that they were equal to machine precision.
 
 \subsubsection{Gradient test} \label{sec:testgrad}
 
@@ -197,7 +235,7 @@ The 4D-Var system we have developed passes tests for the gradient of the cost fu
 \begin{equation}
 f(\alpha)=\frac{| J( \textbf{x}_0 + \alpha \textbf{b}) - J(\textbf{x}_0) |}{\alpha \textbf{b}^{T} \nabla J(\textbf{x}_0)} = 1 + O(\alpha),
 \end{equation}
-where $\textbf{b}$ is a vector of unit length and $\alpha$ is a parameter controlling the size of $\textbf{b}$. For small values of $\alpha$ not too close to machine precision we should have $f(\alpha)$ close to 1. Figure~\ref{fig:costone} shows $f(\alpha)$ for a 365 day assimilation window with $\textbf{b}=\textbf{x}_0||\textbf{x}_0||^{-1}$, we can see that $f(\alpha) \rightarrow 1$ as $\alpha \rightarrow 0$, as expected until $f(\alpha)$ gets too close to machine zero at $O(\alpha) = 10^{-11}$.
+where $\textbf{b}$ is a vector of unit length and $\alpha$ is a parameter controlling the size of $\textbf{b}$. For small values of $\alpha$ not too close to machine precision we should have $f(\alpha)$ close to 1. Figure~\ref{fig:costone} shows $f(\alpha)$ for a 365 day assimilation window with $\textbf{b}=\textbf{x}_0||\textbf{x}_0||^{-1}$, we can see that $f(\alpha) \rightarrow 1$ as $\alpha \rightarrow 0$, as expected until $f(\alpha)$ gets too close to machine zero at $O(\alpha) = 10^{-11}$. This was also tested with $\textbf{b}$ in different different directions and similar results obtained.
 
 We can also plot $|f(\alpha)-1|$, where we expect $|f(\alpha)-1| \rightarrow 0$ as $\alpha \rightarrow 0$.  In figure~\ref{fig:cost} we have plotted $|f(\alpha)-1|$ for the same conditions as in figure~\ref{fig:costone}, we can see that $|f(\alpha) - 1| \rightarrow 0$ as $\alpha \rightarrow 0$, as expected (before $|f(\alpha)-1|$ gets too close to machine precision at $O(\alpha) = 10^{-8}$). This gives us confidence that the gradient of our cost function is implemented correctly.
 %$\nabla J(\textbf{x}_0)||\nabla J(\textbf{x}_0)||^{-1}$. 
@@ -214,21 +252,25 @@ We can also plot $|f(\alpha)-1|$, where we expect $|f(\alpha)-1| \rightarrow 0$ 
         \caption{$|f(\alpha) - 1|$ test}
         \label{fig:cost}
     \end{subfigure}
-    \caption{Tests of the gradient of the cost function for a 365 day assimilation window with $\textbf{h}=\textbf{x}_0||\textbf{x}_0||^{-1}$.}
+    \caption{Tests of the gradient of the cost function for a 365 day assimilation window with $\textbf{b}=\textbf{x}_0||\textbf{x}_0||^{-1}$.}
     \label{fig:testgradcostone}
 \end{figure}
 
 \subsection{Including correlations in the background error covariance matrix} \label{sec:corB}
 
-As discussed in section~\ref{sec:intro}, including correlations in \textbf{B} impacts how information from assimilated observations is spread between different types of analysis variables \citep{bannister2008review}. We explored a number of different methods in order to include parameter-state correlations in \textbf{B}. In this paper we present a method using a set of ecological dynamical constraints on model parameters and state variables from \citet{Bloom2015}. In \citet{Bloom2015} implementing these constraints in a Metropolis Hastings MCMC data assimilation routine is shown to improve results significantly. The constraints impose conditions on carbon pool turnover and allocation ratios, steady state proximity and growth and decay of model carbon pools.
+As discussed in section~\ref{sec:intro}, including correlations in \textbf{B} impacts how information from assimilated observations is spread between different types of analysis variables \citep{bannister2008review}. We explored a number of different methods in order to include parameter-state correlations in \textbf{B}. In this paper we present a method using a set of ecological dynamical constraints, based on expert judgement, on model parameters and state variables from \citet{Bloom2015}. \citet{Bloom2015} show that implementing these constraints in a Metropolis Hastings MCMC data assimilation routine improves results significantly. The constraints impose conditions on carbon pool turnover and allocation ratios, steady state proximity and growth and decay of model carbon pools.
 
 In order to create a correlated background error covariance matrix, $\textbf{B}_{corr}$, using these constraints we create an ensemble of state vectors which we then take the covariance of to give us $\textbf{B}_{corr}$. To create this ensemble we use the following procedure:
 \begin{enumerate}
-\item Draw a random state vector, $\textbf{x}_i$, from the multivariate truncated normal distribution described by our $\textbf{x}_b$, associated variances and parameter-state ranges given in table~\ref{table:xbvars}.
+\item Draw a random augmented state vector, $\textbf{x}_i$, from the multivariate truncated normal distribution described by
+\begin{equation}
+\textbf{X} \sim \mathcal{N}(\textbf{x}^b, \textbf{B}_{diag}),
+\end{equation} 
+where $\textbf{B}_{diag}$ is the diagonal matrix described in section~\ref{sec:implement4dvar} and $\textbf{X}$ is bound by the parameter and state ranges given in table~\ref{table:xbvars} in the appendix.
 \item Test this $\textbf{x}_i$ with the ecological dynamical constraints (requiring us to run the DALEC2 model using this state).
 \item If $\textbf{x}_i$ passes it is added to to our ensemble, else it is discarded.
 \end{enumerate}
-Once we have a full ensemble (we chose an ensemble size of 1500 as past this point values of correlations did not appear to change significantly) we then take the covariance of the ensemble to find $\textbf{B}_{corr}$. In figure \ref{fig:Bcorr} we have plotted the correlation matrix or normalised error covariance matrix of $\textbf{B}_{corr}$. This matrix includes both positive and negative correlations between parameter and state variables, with correlations of 1 down the diagonal between variables of the same quantity as expected. The largest positive off-diagonal correlation being $0.42$ between $f_{lab}$ and $C_{lab}$. This makes physical sense as $f_{lab}$ is the parameter controlling the amount of GPP allocated to the labile carbon pool, $C_{lab}$.
+Once we have a full ensemble we then take the covariance of the ensemble to find $\textbf{B}_{corr}$. We chose an ensemble size of 1500 as using a larger ensemble did not appear to change values of correlations significantly. In figure \ref{fig:Bcorr} we have plotted the correlation matrix or normalised error covariance matrix associated with $\textbf{B}_{corr}$. This matrix includes both positive and negative correlations between parameter and state variables, with correlations of 1 down the diagonal between variables of the same quantity as expected. The largest positive off-diagonal correlation is $0.42$ between $f_{lab}$ and $C_{lab}$. This makes physical sense as $f_{lab}$ is the parameter controlling the amount of GPP allocated to the labile carbon pool, $C_{lab}$.
 
 \begin{figure}[ht]
     \centering
@@ -237,11 +279,11 @@ Once we have a full ensemble (we chose an ensemble size of 1500 as past this poi
     \label{fig:Bcorr}
 \end{figure}
 
-\subsection{Specifying serial correlations in the observational error covariance matrix} \label{sec:corR}
+\subsection{Specifying serial correlations in the observation error covariance matrix} \label{sec:corR}
 
-Errors in NEE observations come from different sources such as instrument errors, sampled ecosystem structure and turbulent conditions (when we have low turbulence and limited air mixing NEE is underestimated) \citep{Papale2006}. Due to this dependance on atmospheric conditions we expect the errors in observations of NEE to be serially correlated, as the atmospheric signal itself is serially correlated \citep{Daley1992}. If we were assimilating half hourly observations of NEE we would expect stronger correlations between observation errors, as atmospheric conditions are more constant at this time scale, with correlations between observation errors getting weaker with lower frequency observations. The observation error covariance matrix does not only represent the instrumentation error for an observation but also the error in the observation operator (mapping the model state to the observation) and representativity error (error arising from the model being unable resolve the spatial and temporal scales of the observations). These other sources of error represented in $\hat{\textbf{R}}$ can also lead to correlations between observation errors \citep{Waller2014}.   
+The observation error covariance matrix does not only represent the instrumentation error for an observation but also the error in the observation operator (mapping the model state to the observation) and representativity error (error arising from the model being unable resolve the spatial and temporal scales of the observations). These other sources of error represented in $\hat{\textbf{R}}$ can also lead to correlations between observation errors \citep{Waller2014}. Errors in NEE observations come from different sources such as instrument errors, sampled ecosystem structure and turbulent conditions (when we have low turbulence and limited air mixing NEE is underestimated) \citep{Papale2006}. Due to this dependence on atmospheric conditions we expect the errors in observations of NEE to be serially correlated, as the atmospheric signal itself is serially correlated \citep{Daley1992}. If we were assimilating half hourly observations of NEE we would expect stronger correlations between observation errors, as atmospheric conditions are more constant at this time scale, with correlations between observation errors getting weaker with lower frequency observations. It is also possible that error in the observation operator and representativity error will lead to observation error correlations in observations of NEE.
 
-In section~\ref{4dvar} we have re-written the 4D-Var cost function in equation~\ref{costfn} in order to allow the specification of serial observation error correlations in our assimilation scheme. These serial correlations are represented by the off-diagonal blocks of $\hat{\mathbf{R}}$. In work carried out with spatial correlations it has been shown that the structure of the correlation is not critical \citep{Healy2005} and that it is better to include some estimate of error correlation structure in the observation error covariance matrix than wrongly assume that errors are independent \citep{Stewart2013}. As a first attempt we try including correlations on the scale of the observation frequency. We adapt the simple Gaussian model found in \citet{jarvinen1999variational} (a second order autoregressive correlation function was also tested but not presented here). The correlation $r$ between 2 observations at times $t_1$ and $t_2$ is given as,
+In section~\ref{4dvar} we have re-written the 4D-Var cost function in equation~\eqref{costfn} in order to allow the specification of serial observation error correlations in our assimilation scheme. These serial correlations are represented by the off-diagonal blocks of $\hat{\mathbf{R}}$. In work carried out with spatial correlations it has been shown that the structure of the correlation is not critical and that it is better to include some estimate of error correlation structure in the observation error covariance matrix than wrongly assume that errors are independent \citep{Stewart2013, Healy2005}. As a first attempt we try including temporal correlations on the scale of the observation frequency. We adapt the simple Gaussian model found in \citet{jarvinen1999variational} (a second order autoregressive correlation function was also tested but is not presented here). The correlation $r$ between 2 observations at times $t_1$ and $t_2$ is given as,
 \begin{equation}
 r =
 \begin{cases} 
@@ -250,7 +292,7 @@ r =
    \end{cases}
    , \label{eqn:corr_fn}
 \end{equation}
-where $\tau$ is the e-folding time, $a$ controls the strength of correlation, $\delta$ is the Kronecker delta and $\eta$ is the cut off time after which the correlation between two observation errors is zero. We have incorporated a cut off for correlations between observation errors as the assumed correlation length scale for our assimilated observations is short. This cut off along with the form of correlation function using the Kronecker delta helps ensure $\hat{\mathbf{R}}$ is positive definite and therefore invertible, as required in the assimilation process. 
+where $\tau$ is the e-folding time, $a$ controls the strength of correlation, $\delta$ is the Kronecker delta and $\eta$ is the cut off time after which the correlation between two observation errors is zero. We have incorporated a cut off for correlations between observation errors as the assumed correlation length scale for our assimilated observations is short. This cut off along with the form of correlation function using the Kronecker delta helps ensure $\hat{\mathbf{R}}$ is positive definite and therefore invertible, as required in the assimilation process. The variance assumed in the observations of NEE is $0.5\text{gCm}^{-2}\text{day}^{-1}$ as described in section~\ref{sec:implement4dvar}.
 
 \begin{figure}[ht]
     \centering
@@ -259,13 +301,13 @@ where $\tau$ is the e-folding time, $a$ controls the strength of correlation, $\
     \label{fig:Rcorr}
 \end{figure}
 
-Figure~\ref{fig:Rcorr} shows the correlation matrix for $\hat{\mathbf{R}}$ created using equation~\ref{eqn:corr_fn}, there are 67 NEE observations in this one year assimilation window, these observations are not all on adjacent days and this is evident in the structure of $\hat{\mathbf{R}}$. The effect of the short e-folding time chosen here ($\tau=4$) provides the desired structure. 
+Figure~\ref{fig:Rcorr} shows the correlation matrix for $\hat{\mathbf{R}}$ created using equation~\eqref{eqn:corr_fn}. There are 67 NEE observations in this one year assimilation window, these observations are not all on adjacent days and this is evident in the structure of $\hat{\mathbf{R}}$. The effect of the short e-folding time chosen here ($\tau=4$) provides the desired structure. 
 
 \section{Results} \label{sec:results}
 
 \subsection{Experiments} \label{sec:exps}
 
-In the following sections we present the results of 4 experiments where we vary the representations of $\textbf{B}$ and $\hat{\mathbf{R}}$ while assimilating the same NEE observations in the window from 1999-2000. As shown in figure~\ref{fig:tlm_error} the performance of the tangent linear model deteriorates after the first year. We then forecast the NEE over the next 14 years and compare with the observed data. These experiments are outlined in table~\ref{table:exps_tab} where $\textbf{B}_{diag}$ and $\hat{\mathbf{R}}_{diag}$ are the diagonal matrices of the parameter-state variances and the observations variances respectively and $\textbf{B}_{corr}$ and $\hat{\mathbf{R}}_{corr}$ are the matrices as specified in section~\ref{sec:corB} and section~\ref{sec:corR} respectively.
+In the following sections we present the results of four experiments where we vary the representations of $\textbf{B}$ and $\hat{\mathbf{R}}$ while assimilating the same NEE observations in the window from 1999-2000. As shown in figure~\ref{fig:tlm_error} the performance of the tangent linear model deteriorates after the first year. We then forecast the NEE over the next 14 years and compare with the observed data. These experiments are outlined in table~\ref{table:exps_tab} where $\textbf{B}_{diag}$ and $\hat{\mathbf{R}}_{diag}$ are the diagonal matrices of the parameter and state variances and the observations variances respectively and $\textbf{B}_{corr}$ and $\hat{\mathbf{R}}_{corr}$ are the matrices as specified in section~\ref{sec:corB} and section~\ref{sec:corR} respectively.
 
 \begin{table}[ht] 
 \begin{center}
@@ -495,18 +537,18 @@ $\theta_{lit}$ & Litter carbon turnover rate (day$^{-1}$) & $3.442e-03$ & $3.117
 $\theta_{som}$ & Soil and organic carbon turnover rate (day$^{-1}$) & $1.113e-04$ & $1.181e-04$ \\ \hline
 $\Theta$ & Temperature dependance exponent factor & $4.147e-02$ & $1.623e-02$ \\ \hline
 $c_{eff}$ & Canopy efficiency parameter & $7.144e+01$ & $2.042e+01$  \\ \hline
-$d_{onset}$ & Leaf onset day & $1.158e+02$ & $6.257e+00$ \\ \hline
+$d_{onset}$ & Leaf onset day (day) & $1.158e+02$ & $6.257e+00$ \\ \hline
 $f_{lab}$ & Fraction of GPP allocated to labile carbon pool & $3.204e-01$ & $1.145e-01$ \\ \hline
-$c_{ronset}$ & Labile carbon release period & $4.134e+01$ & $1.405e+01$ \\ \hline
-$d_{fall}$ & Leaf fall day & $2.205e+02$ & $3.724e+01$ \\ \hline
-$c_{rfall}$ & Leaf-fall period & $1.168e+02$ & $2.259e+01$  \\ \hline
+$c_{ronset}$ & Labile carbon release period (days) & $4.134e+01$ & $1.405e+01$ \\ \hline
+$d_{fall}$ & Leaf fall day (day) & $2.205e+02$ & $3.724e+01$ \\ \hline
+$c_{rfall}$ & Leaf-fall period (days) & $1.168e+02$ & $2.259e+01$  \\ \hline
 $c_{lma}$ & Leaf mass per area ($\text{gCm}^{-2}$) & $1.285e+02$ & $6.410e+01$ \\ \hline
 $C_{lab}$ & Labile carbon pool ($\text{gCm}^{-2}$) & $1.365e+02$ & $6.626e+01$ \\ \hline
-$C_{f}$ & Foliar carbon pool ($\text{gCm}^{-2}$) & $6.864e+01$ & $3.590e+01$  \\ \hline
-$C_{r}$ & Fine root carbon pool ($\text{gCm}^{-2}$) & $2.838e+02$ & $2.193e+02$  \\ \hline
-$C_{w}$ & Above and below ground woody carbon pool ($\text{gCm}^{-2}$) & $6.506e+03$ & $7.143e+03$  \\ \hline
-$C_{l}$ & Litter carbon pool ($\text{gCm}^{-2}$) & $5.988e+02$ & $5.450e+02$ \\ \hline
-$C_{s}$ & Soil and organic carbon pool ($\text{gCm}^{-2}$) & $1.936e+03$ & $1.276e+03$  \\ \hline
+$C_{fol}$ & Foliar carbon pool ($\text{gCm}^{-2}$) & $6.864e+01$ & $3.590e+01$  \\ \hline
+$C_{roo}$ & Fine root carbon pool ($\text{gCm}^{-2}$) & $2.838e+02$ & $2.193e+02$  \\ \hline
+$C_{woo}$ & Above and below ground woody carbon pool ($\text{gCm}^{-2}$) & $6.506e+03$ & $7.143e+03$  \\ \hline
+$C_{lit}$ & Litter carbon pool ($\text{gCm}^{-2}$) & $5.988e+02$ & $5.450e+02$ \\ \hline
+$C_{som}$ & Soil and organic carbon pool ($\text{gCm}^{-2}$) & $1.936e+03$ & $1.276e+03$  \\ \hline
 	\end{tabular}
 	\caption{Parameter values and standard deviations for background vector used in experiments.}
 	\label{table:xbvars}
