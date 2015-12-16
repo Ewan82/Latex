@@ -1,4 +1,4 @@
-\begin{thebibliography}{47}
+\begin{thebibliography}{51}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -60,6 +60,15 @@ A.~A. Bloom and M.~Williams.
 \newblock \doi{10.5194/bg-12-1299-2015}.
 \newblock URL \url{http://www.biogeosciences.net/12/1299/2015/}.
 
+\bibitem[Bonavita et~al.(2015)Bonavita, Hólm, Isaksen, and Fisher]{QJ:QJ2652}
+Massimo Bonavita, Elias Hólm, Lars Isaksen, and Mike Fisher.
+\newblock The evolution of the ecmwf hybrid data assimilation system.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society}, pages
+  n/a--n/a, 2015.
+\newblock ISSN 1477-870X.
+\newblock \doi{10.1002/qj.2652}.
+\newblock URL \url{http://dx.doi.org/10.1002/qj.2652}.
+
 \bibitem[Braswell et~al.(2005)Braswell, Sacks, Linder, and
   Schimel]{braswell2005estimating}
 Bobby~H Braswell, William~J Sacks, Ernst Linder, and David~S Schimel.
@@ -78,6 +87,16 @@ Philippe Ciais, Christopher Sabine, Govindasamy Bala, Laurent Bopp, Victor
   Contribution of Working Group I to the Fifth Assessment Report of the
   Intergovernmental Panel on Climate Change}, pages 465--570. Cambridge
   University Press, 2014.
+
+\bibitem[Clayton et~al.(2013)Clayton, Lorenc, and Barker]{QJ:QJ2054}
+A.~M. Clayton, A.~C. Lorenc, and D.~M. Barker.
+\newblock Operational implementation of a hybrid ensemble/4d-var global data
+  assimilation system at the met office.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  139\penalty0 (675):\penalty0 1445--1461, 2013.
+\newblock ISSN 1477-870X.
+\newblock \doi{10.1002/qj.2054}.
+\newblock URL \url{http://dx.doi.org/10.1002/qj.2054}.
 
 \bibitem[Daley(1992)]{Daley1992}
 Roger Daley.
@@ -194,6 +213,15 @@ G.~Krinner, Nicolas Viovy, Nathalie de~Noblet-Ducoudr\'{e}, J\'{e}r\^{o}me
 \newblock ISSN 08866236.
 \newblock \doi{10.1029/2003GB002199}.
 
+\bibitem[Lasslop et~al.(2008)Lasslop, Reichstein, Kattge, and
+  Papale]{lasslop:hal-00297973}
+G.~Lasslop, M.~Reichstein, J.~Kattge, and D.~Papale.
+\newblock {Influences of observation errors in eddy flux data on inverse model
+  parameter estimation}.
+\newblock \emph{{Biogeosciences Discussions}}, 5\penalty0 (1):\penalty0
+  751--785, February 2008.
+\newblock URL \url{https://hal.archives-ouvertes.fr/hal-00297973}.
+
 \bibitem[Lawless et~al.(2013)Lawless, Cullen, Freitag, Kindermann, and
   Scheichl]{lawless2013}
 A.~S. Lawless, M.J.P. Cullen, M.~A. Freitag, S.~Kindermann, and R.~Scheichl.
@@ -225,6 +253,23 @@ Andrew~C Lorenc and F~Rawlins.
 \newblock Why does 4d-var beat 3d-var?
 \newblock \emph{Quarterly Journal of the Royal Meteorological Society},
   131\penalty0 (613):\penalty0 3247--3257, 2005.
+
+\bibitem[Meir et~al.(2002)Meir, Kruijt, Broadmeadow, Barbosa, Kull, Carswell,
+  Nobre, and Jarvis]{meir2002acclimation}
+P~Meir, B~Kruijt, M~Broadmeadow, E~Barbosa, O~Kull, F~Carswell, A~Nobre, and
+  PG~Jarvis.
+\newblock Acclimation of photosynthetic capacity to irradiance in tree canopies
+  in relation to leaf nitrogen concentration and leaf mass per unit area.
+\newblock \emph{Plant, Cell \& Environment}, 25\penalty0 (3):\penalty0
+  343--357, 2002.
+
+\bibitem[Moodey et~al.(2013)Moodey, Lawless, Potthast, and van
+  Leeuwen]{moodycycled4dvar}
+Alexander J~F Moodey, Amos~S Lawless, Roland W~E Potthast, and Peter~Jan van
+  Leeuwen.
+\newblock Nonlinear error dynamics for cycled data assimilation methods.
+\newblock \emph{Inverse Problems}, 29\penalty0 (2):\penalty0 025002, 2013.
+\newblock URL \url{http://stacks.iop.org/0266-5611/29/i=2/a=025002}.
 
 \bibitem[Navon et~al.(1992)Navon, Zou, Derber, and Sela]{Navon1992}
 I.~M. Navon, X.~Zou, J.~Derber, and J.~Sela.
@@ -282,27 +327,23 @@ Tristan Quaife, Philip Lewis, Martin {De Kauwe}, Mathew Williams, Beverly~E.
 \newblock ISSN 00344257.
 \newblock \doi{10.1016/j.rse.2007.05.020}.
 
-\bibitem[Rabier et~al.(2000)Rabier, J{\"a}rvinen, Klinker, Mahfouf, and
-  Simmons]{rabier2000ecmwf}
-Florence Rabier, H~J{\"a}rvinen, E~Klinker, J-F Mahfouf, and A~Simmons.
-\newblock The ecmwf operational implementation of four-dimensional variational
-  assimilation. i: Experimental results with simplified physics.
-\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
-  126\penalty0 (564):\penalty0 1143--1170, 2000.
-
-\bibitem[Rawlins et~al.(2007)Rawlins, Ballard, Bovis, Clayton, Li, Inverarity,
-  Lorenc, and Payne]{rawlins2007met}
-F~Rawlins, SP~Ballard, KJ~Bovis, AM~Clayton, D~Li, GW~Inverarity, AC~Lorenc,
-  and TJ~Payne.
-\newblock The met office global four-dimensional variational data assimilation
-  scheme.
-\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
-  133\penalty0 (623):\penalty0 347--362, 2007.
-
 \bibitem[Renaud(1997)]{renaud1997automatic}
 JE~Renaud.
 \newblock Automatic differentiation in robust optimization.
 \newblock \emph{AIAA journal}, 35\penalty0 (6):\penalty0 1072--1079, 1997.
+
+\bibitem[Richardson et~al.(2008)Richardson, Mahecha, Falge, Kattge, Moffat,
+  Papale, Reichstein, Stauch, Braswell, Churkina, Kruijt, and
+  Hollinger]{Richardson200838}
+Andrew~D. Richardson, Miguel~D. Mahecha, Eva Falge, Jens Kattge, Antje~M.
+  Moffat, Dario Papale, Markus Reichstein, Vanessa~J. Stauch, Bobby~H.
+  Braswell, Galina Churkina, Bart Kruijt, and David~Y. Hollinger.
+\newblock Statistical properties of random \{CO2\} flux measurement uncertainty
+  inferred from model residuals.
+\newblock \emph{Agricultural and Forest Meteorology}, 148\penalty0
+  (1):\penalty0 38 -- 50, 2008.
+\newblock ISSN 0168-1923.
+\newblock \doi{http://dx.doi.org/10.1016/j.agrformet.2007.09.001}.
 
 \bibitem[Richardson et~al.(2010)Richardson, Williams, Hollinger, Moore, Dail,
   Davidson, Scott, Evans, Hughes, Lee, et~al.]{richardson2010estimating}
