@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{52}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -266,16 +266,16 @@
   on inverse model parameter estimation}}.
 \newblock \bibinfo{journal}{{Biogeosciences Discussions}} \bibinfo{volume}{5},
   \bibinfo{pages}{751--785}.
-%Type = Book
-\bibitem[{Lawless et~al.(2013)Lawless, Cullen, Freitag, Kindermann and
-  Scheichl}]{lawless2013}
-\bibinfo{author}{Lawless, A.S.}, \bibinfo{author}{Cullen, M.},
-  \bibinfo{author}{Freitag, M.A.}, \bibinfo{author}{Kindermann, S.},
-  \bibinfo{author}{Scheichl, R.}, \bibinfo{year}{2013}.
+%Type = Inproceedings
+\bibitem[{Lawless(2013)}]{lawless2013}
+\bibinfo{author}{Lawless, A.S.}, \bibinfo{year}{2013}.
 \newblock \bibinfo{title}{Variational data assimilation for very large
-  environmental problems. In Large Scale Inverse Problems: Computational
-  Methods and Applications in the Earth Sciences}.
-\newblock \bibinfo{publisher}{De Gruyter}.
+  environmental problems.}, in: \bibinfo{editor}{Cullen, M.J.P.},
+  \bibinfo{editor}{Freitag, M.A.}, \bibinfo{editor}{Kindermann, S.},
+  \bibinfo{editor}{Scheichl, R.} (Eds.), \bibinfo{booktitle}{Large scale
+  Inverse Problems: Computational Methods and Applications in the Earth
+  Sciences, Radon series on Computational and Applied Mathematics},
+  \bibinfo{publisher}{De Gruyter}. pp. \bibinfo{pages}{55--90}.
 %Type = Article
 \bibitem[{Li et~al.(1994)Li, Navon, Yang, Zou, Bates, Moorthi and
   Higgins}]{Li1994}
@@ -430,6 +430,17 @@
   estimation: application to a simple morphodynamic model}.
 \newblock \bibinfo{journal}{Ocean Dynamics} \bibinfo{volume}{59},
   \bibinfo{pages}{697--708}.
+%Type = Article
+\bibitem[{Smith et~al.(2011)Smith, Dance and Nichols}]{Smith2011436}
+\bibinfo{author}{Smith, P.J.}, \bibinfo{author}{Dance, S.L.},
+  \bibinfo{author}{Nichols, N.K.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{A hybrid data assimilation scheme for model parameter
+  estimation: Application to morphodynamic modelling}.
+\newblock \bibinfo{journal}{Computers \& Fluids} \bibinfo{volume}{46},
+  \bibinfo{pages}{436 -- 441}.
+\newblock \DOIprefix\doi{http://dx.doi.org/10.1016/j.compfluid.2011.01.010}.
+  \bibinfo{note}{10th \{ICFD\} Conference Series on Numerical Methods for Fluid
+  Dynamics (ICFD 2010)}.
 %Type = Article
 \bibitem[{Stewart et~al.(2013)Stewart, Dance and Nichols}]{Stewart2013}
 \bibinfo{author}{Stewart, L.M.}, \bibinfo{author}{Dance, S.L.},

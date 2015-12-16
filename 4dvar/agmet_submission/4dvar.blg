@@ -4,44 +4,44 @@ The top-level auxiliary file: 4dvar.aux
 The style file: model2-names.bst.bst
 Database file #1: PhD.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 51 entries,
+You've used 52 entries,
             2990 wiz_defined-function locations,
-            1088 strings with 19040 characters,
-and the built_in function-call counts, 41568 in all, are:
-= -- 2933
-> -- 2278
-< -- 15
-+ -- 883
-- -- 816
-* -- 5001
-:= -- 6095
-add.period$ -- 170
-call.type$ -- 51
-change.case$ -- 519
-chr.to.int$ -- 51
-cite$ -- 51
-duplicate$ -- 2805
-empty$ -- 2686
-format.name$ -- 963
-if$ -- 7509
+            1100 strings with 19398 characters,
+and the built_in function-call counts, 42402 in all, are:
+= -- 3010
+> -- 2285
+< -- 17
++ -- 887
+- -- 817
+* -- 5092
+:= -- 6199
+add.period$ -- 173
+call.type$ -- 52
+change.case$ -- 527
+chr.to.int$ -- 52
+cite$ -- 52
+duplicate$ -- 2875
+empty$ -- 2753
+format.name$ -- 966
+if$ -- 7678
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 618
-newline$ -- 287
-num.names$ -- 204
-pop$ -- 1001
+missing$ -- 631
+newline$ -- 292
+num.names$ -- 210
+pop$ -- 1010
 preamble$ -- 1
-purify$ -- 471
+purify$ -- 474
 quote$ -- 0
-skip$ -- 737
+skip$ -- 760
 stack$ -- 0
-substring$ -- 1652
-swap$ -- 2323
-text.length$ -- 2
+substring$ -- 1718
+swap$ -- 2384
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 447
+type$ -- 459
 warning$ -- 0
-while$ -- 237
+while$ -- 245
 width$ -- 0
-write$ -- 760
+write$ -- 778
