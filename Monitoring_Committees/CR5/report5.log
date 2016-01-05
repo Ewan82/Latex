@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  25 NOV 2015 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  30 DEC 2015 17:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -253,23 +253,26 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen133
 \Gm@dimlist=\toks28
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
 \c@theorem=\count108
 
 (./report5.aux)
 \openout1 = `report5.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -365,83 +368,129 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+LaTeX Font Info:    Try loading font information for U+msa on input line 27.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+LaTeX Font Info:    Try loading font information for U+msb on input line 27.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 26.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 27.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 33.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
  [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<straitsmap_threet_10m.png, id=16, 1300.86pt x 669.9429pt>
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Package epstopdf Info: Source file: <tdcvt_a.eps>
+(epstopdf)                    date: 2015-12-16 09:48:00
+(epstopdf)                    size: 60726 bytes
+(epstopdf)             Output file: <tdcvt_a-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-12-21 16:52:43
+(epstopdf)                    size: 27339 bytes
+(epstopdf)             Command: <repstopdf --outfile=tdcvt_a-eps-converted-to.p
+df tdcvt_a.eps>
+(epstopdf)             \includegraphics on input line 69.
+Package epstopdf Info: Output file is already uptodate.
+
+<tdcvt_a-eps-converted-to.pdf, id=13, 722.7pt x 633.36626pt>
+File: tdcvt_a-eps-converted-to.pdf Graphic file (type pdf)
+
+<use tdcvt_a-eps-converted-to.pdf>
+Package pdftex.def Info: tdcvt_a-eps-converted-to.pdf used on input line 69.
+(pdftex.def)             Requested size: 230.18253pt x 201.72456pt.
+Package epstopdf Info: Source file: <tdcvt_f.eps>
+(epstopdf)                    date: 2015-12-16 09:47:37
+(epstopdf)                    size: 60767 bytes
+(epstopdf)             Output file: <tdcvt_f-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-12-21 16:52:44
+(epstopdf)                    size: 27340 bytes
+(epstopdf)             Command: <repstopdf --outfile=tdcvt_f-eps-converted-to.p
+df tdcvt_f.eps>
+(epstopdf)             \includegraphics on input line 74.
+Package epstopdf Info: Output file is already uptodate.
+
+<tdcvt_f-eps-converted-to.pdf, id=14, 722.7pt x 633.36626pt>
+File: tdcvt_f-eps-converted-to.pdf Graphic file (type pdf)
+
+<use tdcvt_f-eps-converted-to.pdf>
+Package pdftex.def Info: tdcvt_f-eps-converted-to.pdf used on input line 74.
+(pdftex.def)             Requested size: 230.18253pt x 201.72456pt.
+ [2] [3 <./tdcvt_a-eps-converted-to.pdf> <./tdcvt_f-eps-converted-to.pdf>]
+<straitsmap_threet_10m.png, id=101, 1300.86pt x 669.9429pt>
 File: straitsmap_threet_10m.png Graphic file (type png)
 
 <use straitsmap_threet_10m.png>
-Package pdftex.def Info: straitsmap_threet_10m.png used on input line 59.
+Package pdftex.def Info: straitsmap_threet_10m.png used on input line 108.
 (pdftex.def)             Requested size: 469.75502pt x 241.92549pt.
- <043exp2.jpg, id=18, 4769.82pt x 3179.88pt>
+ <043exp2.jpg, id=103, 4769.82pt x 3179.88pt>
 File: 043exp2.jpg Graphic file (type jpg)
 
 <use 043exp2.jpg>
-Package pdftex.def Info: 043exp2.jpg used on input line 69.
+Package pdftex.def Info: 043exp2.jpg used on input line 118.
 (pdftex.def)             Requested size: 164.41353pt x 109.60893pt.
- <252exp1.jpg, id=19, 4769.82pt x 3179.88pt>
+ <252exp1.jpg, id=104, 4769.82pt x 3179.88pt>
 File: 252exp1.jpg Graphic file (type jpg)
 
 <use 252exp1.jpg>
-Package pdftex.def Info: 252exp1.jpg used on input line 75.
+Package pdftex.def Info: 252exp1.jpg used on input line 124.
 (pdftex.def)             Requested size: 164.41353pt x 109.60893pt.
- [3 <./straitsmap_threet_10m.png> <./043exp2.jpg> <./252exp1.jpg>] [4]
-Overfull \hbox (5.74812pt too wide) in paragraph at lines 153--154
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4] [5 <./straitsmap_threet_10m.png> <./043exp2.jpg> <./252exp1.jpg>]
+<ahfapar2.pdf, id=112, 711.65875pt x 500.87125pt>
+File: ahfapar2.pdf Graphic file (type pdf)
+ <use ahfapar2.pdf>
+Package pdftex.def Info: ahfapar2.pdf used on input line 157.
+(pdftex.def)             Requested size: 375.80544pt x 264.48987pt.
+ [6]
+[7 <./ahfapar2.pdf>]
+Overfull \hbox (5.74812pt too wide) in paragraph at lines 211--212
 []\OT1/cmr/m/n/10.95 02/11/2015-03/11/2015 - BES Ecosys-tems and Cli-mate Chang
 e Mit-i-ga-tion Con-fer-ence, Charles
  []
 
-(./report5.bbl [5]
+(./report5.bbl
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-) [6] (./report5.aux) ) 
+ [8] [9]) [10] (./report5.aux) ) 
 Here is how much of TeX's memory you used:
- 4852 strings out of 493117
- 69926 string characters out of 6135433
- 140634 words of memory out of 5000000
- 8206 multiletter control sequences out of 15000+600000
+ 4922 strings out of 493117
+ 71423 string characters out of 6135433
+ 144550 words of memory out of 5000000
+ 8268 multiletter control sequences out of 15000+600000
  15365 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,43p,961b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
-0.pfb>
-Output written on report5.pdf (6 pages, 8782980 bytes).
+ 38i,11n,43p,1160b,436s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmtt10.pfb>
+Output written on report5.pdf (10 pages, 9888033 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 172 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

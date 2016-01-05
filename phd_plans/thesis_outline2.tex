@@ -2,6 +2,9 @@
 \usepackage[sort]{natbib}
 \usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx}
 \usepackage{fancyhdr}
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
 \usepackage[margin=0.8in]{geometry}
 \bibliographystyle{plainnat}
 
@@ -48,7 +51,7 @@
 \item Implementation of DALEC2 in a 4D-Var scheme for parameter and state estimation.
 \item Investigation into effect of including parameter-state error correlations in the background error covariance matrix, B, and correlations between observation errors in time in the observation error covariance matrix, R.
 \item Results: Including parameter-state error correlations in B can significantly improve data assimilation forecast results. Including serial correlations between NEE observation errors in R also improves the assimilation forecast and we expect this to have a greater impact when assimilating more than one data stream.
-\item Future work/if time: Use Deroziers method to improve our estimates of both B and R. This will involve changing the Deroziers diagnostic so that it is applicable to a time window of observations in 4D-Var. Investigate the effect on our results from the data assimilation experiments. Using twin experiments with known error covariances to validate method.
+\item Future work: Use Deroziers method to improve our estimates of both B and R. This will involve changing the Deroziers diagnostic so that it is applicable to a time window of observations in 4D-Var. Investigate the effect on our results from the data assimilation experiments. Using twin experiments with known error covariances to validate method.
 \end{itemize}
 
 
@@ -78,5 +81,16 @@
 \item Summary and future work.
 \end{itemize}
 
+\begin{sidewaysfigure}[ht]
+    \includegraphics[width=1.\textwidth]{gantt.pdf}
+    \caption{Gantt chart from monitoring committee 4.}
+    \label{fig:PropProf}
+\end{sidewaysfigure}
+
+\begin{sidewaysfigure}[ht]
+    \includegraphics[width=1.\textwidth]{gantt_nov15.pdf}
+    \caption{Updated Gantt chart from monitoring committee 5.}
+    \label{fig:PropProf}
+\end{sidewaysfigure}
 
 \end{document}

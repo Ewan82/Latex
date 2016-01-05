@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  15 DEC 2015 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  21 DEC 2015 16:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -805,39 +805,48 @@ onverted-to.pdf> <./Dbroke4dvar-eps-converted-to.pdf>] [16 <./xbfscat-eps-conve
 rted-to.pdf> <./Afscat-eps-converted-to.pdf> <./Bfscat-eps-converted-to.pdf> <.
 /Cfscat-eps-converted-to.pdf> <./Dfscat-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <tdcvt_a.eps>
-(epstopdf)                    date: 2015-12-14 21:09:22
-(epstopdf)                    size: 60788 bytes
+(epstopdf)                    date: 2015-12-16 09:48:00
+(epstopdf)                    size: 60726 bytes
 (epstopdf)             Output file: <tdcvt_a-eps-converted-to.pdf>
 (epstopdf)                    date: 2015-12-14 21:09:35
 (epstopdf)                    size: 27303 bytes
 (epstopdf)             Command: <repstopdf --outfile=tdcvt_a-eps-converted-to.p
 df tdcvt_a.eps>
 (epstopdf)             \includegraphics on input line 449.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=tdcvt_a-eps-converted-to.pdf tdcvt_a.eps)...execu
+ted safely (allowed).
 
-<tdcvt_a-eps-converted-to.pdf, id=682, 716.6775pt x 627.34375pt>
+Package epstopdf Info: Result file: <tdcvt_a-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-12-21 16:52:28
+(epstopdf)                    size: 27339 bytes.
+ <tdcvt_a-eps-converted-to.pdf, id=682, 722.7pt x 633.36626pt>
 File: tdcvt_a-eps-converted-to.pdf Graphic file (type pdf)
 
 <use tdcvt_a-eps-converted-to.pdf>
 Package pdftex.def Info: tdcvt_a-eps-converted-to.pdf used on input line 449.
-(pdftex.def)             Requested size: 244.3474pt x 213.88754pt.
+(pdftex.def)             Requested size: 244.3474pt x 214.1433pt.
 Package epstopdf Info: Source file: <tdcvt_f.eps>
-(epstopdf)                    date: 2015-12-14 21:08:18
-(epstopdf)                    size: 60823 bytes
+(epstopdf)                    date: 2015-12-16 09:47:37
+(epstopdf)                    size: 60767 bytes
 (epstopdf)             Output file: <tdcvt_f-eps-converted-to.pdf>
 (epstopdf)                    date: 2015-12-14 21:08:39
 (epstopdf)                    size: 27313 bytes
 (epstopdf)             Command: <repstopdf --outfile=tdcvt_f-eps-converted-to.p
 df tdcvt_f.eps>
 (epstopdf)             \includegraphics on input line 454.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=tdcvt_f-eps-converted-to.pdf tdcvt_f.eps)...execu
+ted safely (allowed).
 
-<tdcvt_f-eps-converted-to.pdf, id=683, 716.6775pt x 627.34375pt>
+Package epstopdf Info: Result file: <tdcvt_f-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-12-21 16:52:29
+(epstopdf)                    size: 27340 bytes.
+
+<tdcvt_f-eps-converted-to.pdf, id=683, 722.7pt x 633.36626pt>
 File: tdcvt_f-eps-converted-to.pdf Graphic file (type pdf)
 
 <use tdcvt_f-eps-converted-to.pdf>
 Package pdftex.def Info: tdcvt_f-eps-converted-to.pdf used on input line 454.
-(pdftex.def)             Requested size: 244.3474pt x 213.88754pt.
+(pdftex.def)             Requested size: 244.3474pt x 214.1433pt.
  [17 <./inccvt-eps-converted-to.pdf>]
 [18 <./tdcvt_a-eps-converted-to.pdf> <./tdcvt_f-eps-converted-to.pdf>] [19]
 (./4dvar.bbl [20]
@@ -951,7 +960,7 @@ sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
 ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/lo
 cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/loc
 al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 4dvar.pdf (25 pages, 2691167 bytes).
+Output written on 4dvar.pdf (25 pages, 2691239 bytes).
 PDF statistics:
  910 PDF objects out of 1000 (max. 8388607)
  269 compressed objects within 3 object streams
