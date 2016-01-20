@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\usepackage[sort]{natbib}
+\usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx, color}
+\usepackage{fancyhdr}
+\usepackage[margin=1.0in]{geometry}
+\bibliographystyle{abbrvnat}
+
+\title{Chapter Plan: Information Content}
+\author{Ewan Pinnington}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{defn}{Definition}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introductory material}
+
+\begin{itemize}
+\item Discuss observability of system. Consider observability of the linearised problem by computing $\hat{\textbf{H}}$ and calculating the rank for a given number of observations, then comparing this to the rank of the augmented state vector. Comment that for state estimation with DALEC1 the system is observable by only assimilating Net Ecosystem Exchange (NEE) observations. This is not the case for joint parameter and state estimation with DALEC2 ({\color{red} check this!}).
+\item Definition of information content measures:
+\begin{itemize}
+\item Shannon information content \citep{rodgers2000inverse} 
+\item Degrees of freedom for signal \citep{fowler2011measures}
+\item The influence matrix \citep{Cardinali2004}
+\item Adjoint sensitivity \citep{Langland2004}
+\end{itemize}
+\item How measures are implemented with data assimilation system introduced in earlier chapters for a time series of observations. We can consider the information content in a time series of observations by using the $\hat{\textbf{R}}$ and $\hat{\textbf{H}}$ matrices in the normal definitions of information content.
+
+\end{itemize}
+
+\section{DALEC1 information content analytic expressions} \label{sec:dalec1}
+
+\begin{itemize}
+\item Derivation of analytic equations for Shannon information content and degrees of freedom for signal using the DALEC1 data assimilation system, set up for state estimation. Discuss what information content is a function of for NEE (temperature, gross primary production, observation and background standard deviations, etc.). Extend the analytic expressions for information content for multiple observations of NEE in time. This will allow us to see the impact on information content of including a correlation in $\hat{\textbf{R}}$ by specifying the off diagonal term.
+
+\item Show table displaying values of information content calculated from analytic expressions against values calculated numerically in Python. This will give us confidence that our numerical implementation of the measures is correct.
+\end{itemize}
+
+\section{Information content with the DALEC2 model}
+\begin{itemize}
+\item Repeat work with DALEC1 from previous information content report using the DALEC2 data assimilation system for joint state and parameter estimation. Investigate if we have similar results with DALEC2 when using the measures from the report (Shannon information content, degrees of freedom for signal). Previous results had shown information content varying seasonally for NEE (as expected from \ref{sec:dalec1}) and that information content tends to a limit as successive observations of the same type are added to the assimilation in time. 
+
+\item Investigate the effect on information content when using a parameter set describing an evergreen forest vs. a parameter set describing a deciduous forest for DALEC2. Does the added phenology in DALEC2 (especially for a deciduous parameter set) impact on temporal nature of information content found for NEE with DALEC1? 
+
+\item Extend work to include new measures. The \citet{Cardinali2004} influence matrix measures the sensitivity of the analysis in observation space to the observations. The adjoint technique proposed by \citet{Langland2004}, approximates the sensitivity of a scalar forecast error norm to the observations. 
+
+\item Investigate the effect of using correlated error covariance matrices (introduced in earlier chapters) on the information content in observations. Effect: Spreading of information from observations.
+\end{itemize}
+
+\section{Twin experiments with DALEC2}
+\begin{itemize}
+\item Determine which parameter and state variables are recoverable when assimilating different synthetic observation types (NEE, soil respiration, phenological parameters, etc.) in a set of twin experiments. Background standard deviations and analysis augmented state used as truth and perturbed twice to find a background vector (reword). 
+
+\item Can we accurately predict gross primary productivity and total ecosystem respiration by only assimilating NEE. If not what extra observations/constraints (does using $\textbf{B}_{corr}$ help) are required?
+
+\item Use twin experiment setup to further investigate results from information content measures.
+\end{itemize}
+
+\section{Future work}
+\begin{itemize}
+\item Investigate effect of miss-specification of error, quantity and time of sampling of observations using twin experiments.
+
+\item Investigate information content in NEE and total ecosystem respiration (night time NEE) observations when observations are treated as half hourly, averaged twice daily or averaged daily by using a variable time step in DALEC2. This will involve modifying the DALEC2 model to run at a variable timestep (requires updating the mechanism for autotrophic respiration in the model). Modifying the model in this way will also help when parameterising DALEC2 for thinned/unthinned flux data as it will make more data available to us (we wont have to have a full day of observations in order to calculate a daily NEE value for assimilation). 
+\end{itemize}
+
+\bibliography{../PhD}{}
+
+\end{document}

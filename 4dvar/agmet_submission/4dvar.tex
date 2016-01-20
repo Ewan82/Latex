@@ -75,13 +75,16 @@
 
 \author[address1,address2]{Nancy K. Nichols}
 
-\author[address1]{Tristan L. Quaife}
-
 \author[address3]{Matthew Wilkinson}
+
+\author[address1,address4]{Tristan L. Quaife}
+
 
 \address[address1]{Department of Meteorology, University of Reading, Reading, UK}
 \address[address2]{Department of Maths and Statistics, University of Reading, Reading, UK}
 \address[address3]{Centre for Sustainable Forestry and Climate Change, Forest Research, Alice Holt, Farnham, UK}
+\address[address4]{National Centre for Earth Observation, University of Reading, Reading, UK}
+
 
 \begin{abstract}
 Efforts to implement variational data assimilation routines with functional ecology models and land surface models have been limited, with sequential and Markov chain Monte Carlo data assimilation methods being prevalent. When data assimilation has been used with models of carbon balance, background ``prior" errors and observation errors have largely been treated as independent and uncorrelated. Correlations between background errors have long been known to be a key aspect of data assimilation in numerical weather prediction. More recently, it has been shown that accounting for correlated observation errors in the assimilation algorithm can considerably improve data assimilation results and forecasts. In this paper we implement a Four-Dimensional Variational data assimilation (4D-Var) scheme with a simple model of forest carbon balance, for joint parameter and state estimation and assimilate daily observations of Net Ecosystem $\text{CO}_{2}$ Exchange (NEE) taken at the Alice Holt forest $\text{CO}_2$ flux site in Hampshire, UK. We then investigate the effect of specifying correlations between parameter and state variables in background error statistics and the effect of specifying correlations in time between observation error statistics. The idea of including these correlations in time is new and has not been previously explored in carbon balance model data assimilation. In data assimilation, background and observation error statistics are often described by the background error covariance matrix and the observation error covariance matrix. We outline novel methods for creating correlated versions of these matrices, using a set of previously postulated dynamical constraints to include correlations in the background error statistics and a Gaussian correlation function to include time correlations in the observation error statistics. The methods used in this paper will allow the inclusion of time correlations between many different observation types in the assimilation algorithm, meaning that previously neglected information can be accounted for. In our experiments we compared the results using our new correlated background and observation error covariance matrices and those using diagonal covariance matrices. We found that using the new correlated matrices reduced the root mean square error in the $14$ year forecast of daily NEE by $44\%$ decreasing from $4.22~\text{gCm}^{-2}\text{day}^{-1}$ to $2.38~\text{gCm}^{-2}\text{day}^{-1}$.     
@@ -614,7 +617,7 @@ When including both parameter-state correlations in $\textbf{B}$ and time correl
 
 \section{Acknowledgements}
 
-This work was funded by the UK Natural Environment Research Council (NERC), The National Centre for Earth Observation (NCEO) and the UK Forestry Commission. We are grateful to Luke Smallman for providing the background information used in the experiments detailed in this paper.
+This work was funded by the UK Natural Environment Research Council (NE/K00705X/1) with a CASE award from the UK Forestry Commission. T. Quaife's contribution funded by the National Centre for Earth Observation. We are grateful to Luke Smallman for providing the background information used in the experiments detailed in this paper.
 
 \section*{References}
 
