@@ -47,12 +47,14 @@
 
 \item Extend work to include new measures. The \citet{Cardinali2004} influence matrix measures the sensitivity of the analysis in observation space to the observations. The adjoint technique proposed by \citet{Langland2004}, approximates the sensitivity of a scalar forecast error norm to the observations. 
 
+The Influence matrix will allow us to see the spreading of information in NEE observations when using the correlated observation error covariance matrix defined in the previous chapters.
+
 \item Investigate the effect of using correlated error covariance matrices (introduced in earlier chapters) on the information content in observations. Effect: Spreading of information from observations.
 \end{itemize}
 
 \section{Twin experiments with DALEC2}
 \begin{itemize}
-\item Determine which parameter and state variables are recoverable when assimilating different synthetic observation types (NEE, soil respiration, phenological parameters, etc.) in a set of twin experiments. Background standard deviations and analysis augmented state used as truth and perturbed twice to find a background vector (reword). 
+\item Determine which parameter and state variables are recoverable when assimilating different synthetic observation types (NEE, soil respiration, phenological parameters, etc.) in a set of twin experiments. Using background standard deviations and analysis augmented state from previous chapter as the truth to generate synthetic observations for assimilation. Perturbing the truth twice to find a background vector. 
 
 \item Can we accurately predict gross primary productivity and total ecosystem respiration by only assimilating NEE. If not what extra observations/constraints (does using $\textbf{B}_{corr}$ help) are required?
 
