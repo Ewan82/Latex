@@ -1,0 +1,129 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Barnett and Cameron(1985)]{barnett1985introduction}
+S.~Barnett and R.~Cameron.
+\newblock \emph{Introduction to Mathematical Control Theory}.
+\newblock Oxford Applied Mathematics and Computing Science Series. Clarendon
+  Press, 1985.
+\newblock ISBN 9780198596400.
+
+\bibitem[Cohn and Dee(1988)]{Cohn1988}
+S.~E. Cohn and D.~P. Dee.
+\newblock {Observability of discretized partial differential equations}.
+\newblock \emph{SIAM Journal on Numerical Analysis}, 25\penalty0 (3):\penalty0
+  586, 1988.
+\newblock ISSN 00361429.
+\newblock \doi{10.1137/0725037}.
+
+\bibitem[Engelen and Stephens(2004)]{engelen2004information}
+R.~Engelen and G.~Stephens.
+\newblock Information content of infrared satellite sounding measurements with
+  respect to co2.
+\newblock \emph{Journal of Applied Meteorology}, 43\penalty0 (2):\penalty0
+  373--378, 2004.
+
+\bibitem[Fisher(2003)]{fisher2003estimation}
+M.~Fisher.
+\newblock \emph{Estimation of entropy reduction and degrees of freedom for
+  signal for large variational analysis systems}.
+\newblock European Centre for Medium-Range Weather Forecasts, 2003.
+
+\bibitem[Fowler and {Van Leeuwen}(2013)]{Fowler2013}
+A.~Fowler and P.~J. {Van Leeuwen}.
+\newblock {Observation impact in data assimilation: The effect of non-gaussian
+  observation error}.
+\newblock \emph{Tellus, Series A: Dynamic Meteorology and Oceanography},
+  65\penalty0 (1):\penalty0 1--16, 2013.
+\newblock ISSN 02806495.
+\newblock \doi{10.3402/tellusa.v65i0.20035}.
+
+\bibitem[Jacquez and Greif(1985)]{Jacquez1985}
+J.~A. Jacquez and P.~Greif.
+\newblock {Numerical parameter identifiability and estimability: Integrating
+  identifiability, estimability, and optimal sampling design}.
+\newblock \emph{Mathematical Biosciences}, 77\penalty0 (1-2):\penalty0
+  201--227, 1985.
+\newblock ISSN 00255564.
+\newblock \doi{10.1016/0025-5564(85)90098-7}.
+
+\bibitem[Johnson et~al.(2005)Johnson, Hoskins, and
+  Nichols]{johnson2005singular}
+C.~Johnson, B.~J. Hoskins, and N.~K. Nichols.
+\newblock A singular vector perspective of 4d-var: Filtering and interpolation.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  131\penalty0 (605):\penalty0 1--19, 2005.
+
+\bibitem[Joyner et~al.(2012)Joyner, \v{C}ert\'{\i}k, Meurer, and
+  Granger]{Joyner:2012:OSC:2110170.2110185}
+D.~Joyner, O.~\v{C}ert\'{\i}k, A.~Meurer, and B.~E. Granger.
+\newblock Open source computer algebra systems: Sympy.
+\newblock \emph{ACM Commun. Comput. Algebra}, 45\penalty0 (3/4):\penalty0
+  225--234, Jan. 2012.
+\newblock ISSN 1932-2240.
+\newblock \doi{10.1145/2110170.2110185}.
+
+\bibitem[Ljung(1998)]{ljung1998system}
+L.~Ljung.
+\newblock \emph{System Identification: Theory for the User}.
+\newblock Pearson Education, 1998.
+\newblock ISBN 9780132440530.
+
+\bibitem[Navon(1998)]{navon1998practical}
+I.~Navon.
+\newblock Practical and theoretical aspects of adjoint parameter estimation and
+  identifiability in meteorology and oceanography.
+\newblock \emph{Dynamics of Atmospheres and Oceans}, 27\penalty0 (1):\penalty0
+  55--79, 1998.
+
+\bibitem[Paige(1981)]{Paige1981}
+C.~Paige.
+\newblock {Properties of numerical algorithms related to computing
+  controllability}.
+\newblock \emph{IEEE Transactions on Automatic Control}, 26\penalty0
+  (1):\penalty0 130--138, 1981.
+\newblock ISSN 0018-9286.
+\newblock \doi{10.1109/TAC.1981.1102563}.
+
+\bibitem[Press et~al.(2007)Press, Teukolsky, Vetterling, and
+  Flannery]{press2007numerical}
+W.~Press, S.~A. Teukolsky, W.~T. Vetterling, and B.~P. Flannery.
+\newblock \emph{Numerical Recipes 3rd Edition: The Art of Scientific
+  Computing}.
+\newblock Cambridge University Press, 2007.
+\newblock ISBN 9780521880688.
+
+\bibitem[Rodgers et~al.(2000)]{rodgers2000inverse}
+C.~D. Rodgers et~al.
+\newblock \emph{Inverse methods for atmospheric sounding: Theory and practice},
+  volume~2.
+\newblock World scientific Singapore, 2000.
+
+\bibitem[Singh et~al.(2013)Singh, Sandu, Jardak, Bowman, and
+  Lee]{singh2013practical}
+K.~Singh, A.~Sandu, M.~Jardak, K.~Bowman, and M.~Lee.
+\newblock A practical method to estimate information content in the context of
+  4d-var data assimilation.
+\newblock \emph{SIAM/ASA Journal on Uncertainty Quantification}, 1\penalty0
+  (1):\penalty0 106--138, 2013.
+
+\bibitem[Stewart et~al.(2008)Stewart, Dance, and
+  Nichols]{stewart2008correlated}
+L.~M. Stewart, S.~Dance, and N.~Nichols.
+\newblock Correlated observation errors in data assimilation.
+\newblock \emph{International journal for numerical methods in fluids},
+  56\penalty0 (8):\penalty0 1521--1527, 2008.
+
+\bibitem[Williams et~al.(2005)Williams, Schwarz, Law, Irvine, and
+  Kurpius]{williams2005improved}
+M.~Williams, P.~A. Schwarz, B.~E. Law, J.~Irvine, and M.~R. Kurpius.
+\newblock An improved analysis of forest carbon dynamics using data
+  assimilation.
+\newblock \emph{Global Change Biology}, 11\penalty0 (1):\penalty0 89--105,
+  2005.
+
+\end{thebibliography}
