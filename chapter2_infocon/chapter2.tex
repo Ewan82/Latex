@@ -1,6 +1,6 @@
 \documentclass[11pt]{article}
 \usepackage[sort]{natbib}
-\usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx, breqn, setspace, printlen, caption, subcaption, pbox, fixltx2e}
+\usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx, breqn, setspace, printlen, caption, subcaption, pbox, fixltx2e, bm}
 \usepackage{fancyhdr, color}
 \usepackage{mathptmx}     
 \bibliographystyle{abbrvnat}
@@ -27,7 +27,7 @@ Observability is a mathematical concept from control theory. A system is said to
 \dot{\textbf{x}} &= \textbf{A}(t)\textbf{x}(t) +\textbf{B}(t)\textbf{u}(t) \\
 \textbf{y} &= \textbf{C}(t)\textbf{x}(t)
 \end{align}
-where $\textbf{A}$ is $n \times n$, $\textbf{B}$ is $n \times m$ and $\textbf{C}$ is $r \times n$ is \textit{completely observable} if for any $t_0$ and any initial state $\textbf{x}(t_0) = \textbf{x}_0$ there exists a finite time $t_i > t_0$ such that knowledge of $\textbf{u}(t)$ and $\textbf{y}(t)$ for $t_0 \leq t \leq t_i$ suffices to uniquely determine $\textbf{x}_0$. There is no loss of generality in assuming $\textbf{u}(t)$ is identically zero throughout the whole interval, this is the case for data assimilation.
+where $\textbf{A}$ is $n \times n$, $\textbf{B}$ is $n \times m$ and $\textbf{C}$ is $r \times n$ is \textit{completely observable} if for any $t_0$ and any initial state $\textbf{x}(t_0) = \textbf{x}_0$ there exists a finite time $t_i > t_0$ such that knowledge of $\textbf{u}(t)$ and $\textbf{y}(t)$ for $t_0 \leq t \leq t_i$ suffices to uniquely determine $\textbf{x}_0$. There is no loss of generality in assuming $\textbf{u}(t)$ is identically zero throughout the whole interval; this is the case for data assimilation.
 
 \begin{theorem} \label{thm:observable}
 When $\textbf{A}$, $\textbf{B}$ and $\textbf{C}$ are time-invariant the system is completely observable if and only if the $nr \times n$ observability matrix
@@ -54,9 +54,9 @@ This result can be applied to the data assimilation problem \citep{johnson2005si
 \mathbf{H}_N\mathbf{M}_{N,0}
 \end{pmatrix} \label{eqn: hmat}
 \end{equation}
-as defined in section {\color{red} REF}. So that if the rank of $\hat{\textbf{H}}$ is equal to $n$, the size of $\textbf{x}_0$, the system is observable. Theorem \ref{thm:observable} is for linear systems and has been applied to the linearised data assimilation problem. For a set of observations $\hat{\textbf{y}}$ this still gives us a good indication to the observability of the system, although it is not a measure of non-linear observability. It is important to note that the system being observable in this case means that we can construct a unique solution from the observational part of the cost function and does not account for parameter miss-specification and observation error. In \citet{Cohn1988} it is shown that having an observable system is necessary and sufficient for asymptotic stability of the data assimilation process. In practice we include a background term in the cost function for 4D-Var data assimilation which regularises the problem and means that we always have a unique solution.
+as defined in section {\color{red} REF}. So that if the rank of $\hat{\textbf{H}}$ is equal to $n$, the size of $\textbf{x}_0$, the system is observable. Theorem \ref{thm:observable} is for linear systems and has been applied to the linearised data assimilation problem. {\color{red} More linking and discussing of time invariant observability over a specific window rather than infinite} For a set of observations $\hat{\textbf{y}}$ this still gives us a good indication to the observability of the system, although it is not a measure of non-linear observability. It is important to note that the system being observable in this case means that we can construct a unique solution, $\textbf{x}^a$, from the observational part of the cost function and does not account for parameter miss-specification and observation error. In \citet{Cohn1988} it is shown that having an observable system is necessary and sufficient for asymptotic stability of the data assimilation process {\color{red} MORE, is this applicable?}. In practice we include a background term in the cost function for 4D-Var data assimilation which regularises the problem and means that we always have a unique solution.
 
-\section{Information Content Measures}%%%%%%%%%%%%%%%%%%%%%%
+\section{Information Content Measures} \label{sec:IC}%%%%%%%%%%%%%%%%%%%%%% 
 
 Information content measures are already being used to quantify the different levels of information provided by observations in the development of satellite instruments \citep{stewart2008correlated, engelen2004information} and in operational data assimilation schemes \citep{fisher2003estimation, singh2013practical}. In these fields, two of the more widely used measures are Shannon Information Content (also known as entropy reduction) and the degrees of freedom for signal. We will apply both methods for observations assimilated with DALEC. 
 
@@ -84,10 +84,7 @@ where $\bf{B}$ is the background error covariance matrix and $\bf{A}$ is the ana
 \begin{equation}
 SIC=\frac{1}{2}\text{ln}\frac{\begin{vmatrix} \bf{B} \end{vmatrix}}{\begin{vmatrix} \bf{A} \end{vmatrix}}.
 \end{equation}•
-From equation \ref{Amat} we can see the $SIC$ can also be written as,
-\begin{equation}
-SIC= \frac{1}{2}\text{ln}\begin{vmatrix} \mathbf{B} \end{vmatrix}\begin{vmatrix} \mathbf{J}'' \end{vmatrix}. \label{sic}
-\end{equation}•
+{\color{red}Where A is ... and for the 4dvar case becomes... specify}
 
 \subsection{Degrees of Freedom for Signal} \label{DFSintro}%%%%%%%%%%%%%%%%%%%%%%
 
@@ -97,20 +94,22 @@ We have symmetric positive definite background and analysis error covariance mat
 
 In order to do this we take $\mathbf{B}^{\frac{-1}{2}}$ such that $\mathbf{B}^{-1} = \mathbf{B}^{\frac{-1}{2}}\mathbf{B}^{\frac{-1}{2}}$. We now take $\bf{Q}$ to be the orthogonal matrix composed of the eigenvectors of $\mathbf{B}^{\frac{-1}{2}}\mathbf{A}\mathbf{B}^{\frac{-1}{2}}$ we have,
 \begin{equation}
-\mathbf{Q}^{T}\bigg(\mathbf{B}^{\frac{-1}{2}}\mathbf{A}\mathbf{B}^{\frac{-1}{2}}\bigg)\mathbf{Q} = \bf{\Lambda},
+\mathbf{Q}^{T}\bigg(\mathbf{B}^{\frac{-1}{2}}\mathbf{A}\mathbf{B}^{\frac{-1}{2}}\bigg)\mathbf{Q} = \bm{\Lambda},
 \end{equation}• 
 \begin{equation}
-\mathbf{Q}^{T}\bigg(\mathbf{B}^{\frac{-1}{2}}\mathbf{B}\mathbf{B}^{\frac{-1}{2}}\bigg)\mathbf{Q} = \mathbf{I}_{n\times n}
+\mathbf{Q}^{T}\bigg(\mathbf{B}^{\frac{-1}{2}}\mathbf{B}\mathbf{B}^{\frac{-1}{2}}\bigg)\mathbf{Q} = \bm{I}_{n\times n}
 \end{equation}•
-where $\bf{\Lambda}$ is a diagonal matrix. Each diagonal element of our transformed $\bf{B}$ is equal to one and corresponds to one degree of freedom. The diagonal elements of $\mathbf{\Lambda}$ correspond to the matrix's eigenvalues and can be interpreted as the relative reduction in variance for each of the $n$ degrees of freedom \cite{singh2013practical}. We can then define the $DFS$ as,
+where $\bm{\Lambda}$ is a diagonal matrix. Each diagonal element of our transformed $\bf{B}$ is equal to one and corresponds to one degree of freedom. The diagonal elements of $\bm{\Lambda}$ correspond to the matrix's eigenvalues and can be interpreted as the relative reduction in variance for each of the $n$ degrees of freedom \cite{singh2013practical}. We can then define the $DFS$ as,
 \begin{equation}
 \begin{split}
-DFS & = \text{trace}(\mathbf{I}_{n\times n} - \mathbf{\Lambda}) \\
-       & = n - \text{trace}(\mathbf{\Lambda}) \\
+DFS & = \text{trace}(\mathbf{I}_{n\times n} - \bm{\Lambda}) \\
+       & = n - \text{trace}(\bm{\Lambda}) \\
        & = n - \text{trace}(\mathbf{B}^{\frac{-1}{2}}\mathbf{A}\mathbf{B}^{\frac{-1}{2}}) \\
        & = n - \text{trace}(\mathbf{B}^{-1}\mathbf{A}).
 \end{split}
 \end{equation}
+{\color{red} A is as defined in sec  REF}.
+
 
 \subsection{Look at Christine Johnsons paper and CVT Hhat for obs impact?}
 
@@ -121,7 +120,7 @@ DFS & = \text{trace}(\mathbf{I}_{n\times n} - \mathbf{\Lambda}) \\
 
 \subsection{DALEC1 observability} \label{sec:D1observability}
 
-DALEC1 is the original version of the DALEC2 model introduced in section {\color{red} REF}. At the start of the PhD project work was undertaken with DALEC1 before the DALEC2 model was released. The version of DALEC1 used was an evergreen only model, further details of the model can be found in section {\color{red} REF} and \citet{williams2005improved}. 
+DALEC1 is the original version of the DALEC2 model introduced in section {\color{red} REF}. At the start of the PhD project work was undertaken with DALEC1 before the DALEC2 model was released. The version of DALEC1 used was an evergreen only model; further details of the model can be found in section {\color{red} REF} and \citet{williams2005improved}. 
 
 We initially consider observability of the DALEC1 state estimation system. DALEC1 is a smaller model and allows us to understand the concept of observability before moving onto work with the more complicated DALEC2 joint state and parameter estimation system. DALEC1 was implemented in a 4D-Var data assimilation scheme for state estimation, with the tangent linear model being computed analytically by hand. Using this analytic implementation of the tangent linear model we can compute the observability of the model for differing sets of observations. We have the tangent linear model,
 \begin{dmath}
@@ -134,9 +133,9 @@ f_{roo}(1-f_{fol})(1-f_{auto})\zeta^i & (1-\theta_{roo}) & 0 & 0 & 0 \\
 0 & 0 & \theta_{lit} & \theta_{min}\chi^{i-1} & (1-\theta_{som}\chi^{i-1}) \\
 \end{pmatrix}, \label{eqn:linmod}
 \end{dmath}
-where \(\textbf{x}_{i}=(C_{fol}^{i}, C_{roo}^{i}, C_{woo}^{i}, C_{lit}^{i}, C_{som}^{i})^{T}\), $\zeta^i = \frac{\partial GPP^{i}(C_{fol}^{i-1}, \Psi)}{\partial C_{fol}^{i-1}}$ and $\chi^{i-1}=e^{\Theta T^{i-1}}$ with the parameters and symbols having the same meaning as in section {\color{red} REF}. 
+where \(\textbf{x}_{i}=(C_{fol}^{i}, C_{roo}^{i}, C_{woo}^{i}, C_{lit}^{i}, C_{som}^{i})^{T}\), $\zeta^i = \partial GPP^{i}(C_{fol}^{i-1}, \Psi)/\partial C_{fol}^{i-1}$ and $\chi^{i-1}=e^{\Theta T^{i-1}}$ with the parameters and symbols having the same meaning as in section {\color{red} REF}. 
 
-We can use the linearised model with the linearised observation operator $\textbf{H}_{i}$ to form the matrix in equation~\ref{eqn: hmat} and compute the observability. We will need at least 5 observations of any type for the system to be observable as the state $\textbf{x}_0$ is of size 5 in the DALEC1 state estimation case. We first consider the observability for 5 observations of LAI. For DALEC1 LAI takes the form
+We can use the linearised model with the linearised observation operator $\textbf{H}_{i}$ to form the matrix in equation~\eqref{eqn: hmat} and compute the observability. We will need at least 5 observations of any type for the system to be observable as the state $\textbf{x}_0$ is of size 5 in the DALEC1 state estimation case. We first consider the observability for 5 observations of LAI. For DALEC1 LAI takes the form
 \begin{equation}
 LAI^{i} = \frac{C_{fol}^{i}}{c_{lma}}.
 \end{equation}
@@ -166,7 +165,7 @@ Using the linearised observation operator and the linear model from equation~\re
 \frac{1}{c_{lma}}\prod_{i=0}^{3}((1-\theta_{fol})+f_{fol}(1-f_{auto})\zeta^i) & 0 & 0 & 0 & 0
 \end{pmatrix},
 \end{dmath}
-so that no matter how many observations of LAI we add our system will not be observable as the rows of $\hat{\textbf{H}}$ are all linearly dependant, so that $\hat{\textbf{H}}$ in this case has rank 1. We can repeat this for different observations to see for which observation types our system is observable. 
+so that no matter how many observations of LAI we add, our system will not be observable as the rows of $\hat{\textbf{H}}$ are all linearly dependant, so that $\hat{\textbf{H}}$ in this case has rank 1. We can repeat this for different observations to see for which observation types our system is observable. 
 
 \begin{figure}[ht]
     \centering
@@ -175,7 +174,7 @@ so that no matter how many observations of LAI we add our system will not be obs
     \label{fig:D1_observability}
 \end{figure}
 
-From figure~\ref{fig:D1_observability} we can see that our system is observable for 5 observations of the soil and organic matter carbon pool $C_{som}$. In figure~\ref{fig:D1_observability} we have shown results for the rank of  $\hat{\textbf{H}}$ when we have 5 observations in each case, this has also been tested with increasing numbers of observations being added to the system with the results from figure~\ref{fig:D1_observability} remaining unchanged. 
+From figure~\ref{fig:D1_observability} we can see that our system is observable for 5 observations of the soil and organic matter carbon pool $C_{som}$. In figure~\ref{fig:D1_observability} we have shown results for the rank of  $\hat{\textbf{H}}$ when we have 5 observations in each case; this has also been tested with increasing numbers of observations being added to the system with the results from figure~\ref{fig:D1_observability} remaining unchanged. 
 
 The system being observable for observations of $C_{som}$ physically makes sense as all the carbon in the system that is not respired to the atmosphere eventually ends up in $C_{som}$, so that by taking observations of this pool we observe all the others. In a similar way $\hat{\textbf{H}}$ is also full rank for observations of NEE and ground respiration. We can see from the form of these observations in DALEC1 that they both contain indirect observations of $C_{som}$ with NEE taking the form
 \begin{equation}
@@ -201,7 +200,7 @@ G_{resp}^{i}=\frac{1}{3}f_{auto}GPP^{i}(C_{fol}^{i-1}, \Psi) + \theta_{lit}C_{li
 \end{equation}
 At flux tower sites NEE is the most observed quantity, these results give us confidence that we can construct a unique solution when working with flux tower data. We will further explore the concept of observability for the joint parameter and state estimation case with DALEC2 in section~\ref{sec: D2_observability}. 
 
-For the state and parameter estimation case we will not be able to compute the observability of the system analytically, it is therefore important to check that the numerical calculation of the rank of $\hat{\textbf{H}}$ for DALEC1 is equal to the rank when calculated analytically. This will give us confidence that our implementation of the numeric rank is correct for DALEC2 as the implementation is the same in both cases. In table~\ref{table: a_n_h_D1} we show that for both numeric and analytic implementations we have the same results for the rank of $\hat{\textbf{H}}$.
+For the state and parameter estimation case we will not be able to compute the observability of the system analytically, it is therefore important to check that the numerical calculation of the rank of $\hat{\textbf{H}}$ for DALEC1 is equal to the rank when calculated analytically. This will give us confidence that our implementation of the numeric rank is correct for DALEC2 when applied to a well-conditioned problem as the implementation is the same in both cases. In table~\ref{table: a_n_h_D1} we show that for both numeric and analytic implementations we have the same results for the rank of $\hat{\textbf{H}}$.
 
 \begin{table}[ht] 
 \begin{center}
@@ -223,7 +222,66 @@ For the state and parameter estimation case we will not be able to compute the o
 \end{center} 
 \end{table}
 
-% \subsection{DALEC1 information content}
+\subsection{DALEC1 information content}
+
+For the DALEC1 state estimation we can calculate the analytic representation of the information content measures discussed in section~\ref{sec:IC}. This will allow us to understand how the information content changes for differing numbers of observations, different observation types and the effect of including observation error correlations in the assimilation scheme, before moving onto work with the larger DALEC2 joint parameter and state estimation case. For these experiments the elements of the state vector have corresponding background standard deviations $ \sigma_{cfol, b}, \sigma_{croo, b}, \sigma_{cwoo, b}, \sigma_{clit, b}, \sigma_{csom, b}$. We then have
+\begin{equation}
+\bm{B} = \begin{pmatrix} 
+\sigma_{cfol,b}^{2} & 0 & 0 & 0 & 0 \\
+0 & \sigma_{croo,b}^{2} & 0 & 0 & 0 \\
+0 & 0 & \sigma_{cwoo,b}^{2} & 0 & 0 \\
+0 & 0 & 0 & \sigma_{clit,b}^{2} & 0 \\
+0 & 0 & 0 & 0 & \sigma_{csom,b}^{2} \\
+\end{pmatrix}. \label{eqn:BmatD1}
+\end{equation}   
+
+We begin by considering the Shannon Information Content (SIC) and Degrees of Freedom for Signal (DFS) for a single observation of LAI. We have the linearised observation operator
+\begin{equation}
+\textbf{H}_{i} = \frac{\partial LAI^{i}}{\partial \textbf{x}_{i}} =
+\begin{pmatrix}
+\frac{1}{c_{lma}} & 0 & 0 & 0 & 0
+\end{pmatrix}.
+\end{equation}
+As we have a single observation at one time, our observation error covariance matrix, $\bf{R}$, is just the variance of our observation of LAI at time $t_0$ ($\sigma_{LAI,o}^{2}$). Therefore,
+\begin{equation}
+\mathbf{R}_0=\sigma_{LAI,o}^{2}.
+\end{equation}
+We then have from equation \ref{Amat},
+\begin{equation}
+\begin{array} {lcl}
+\mathbf{A} &=& (\mathbf{J}'')^{-1} \\
+&=& (\mathbf{B}^{-1}+\hat{\mathbf{H}}^{T}\hat{\mathbf{R}}^{-1}\hat{\mathbf{H}})^{-1} \\
+&=& (\mathbf{B}^{-1}+\mathbf{H}_0^{T}\mathbf{R}_0^{-1}\mathbf{H}_0)^{-1} \\
+&=& \begin{pmatrix} 
+\frac{c_{lma}^2 \sigma_{LAI,o}^2 \sigma_{cfol,b}^2}{\sigma_{cfol,b}^2 + c_{lma}^2 \sigma_{LAI,o}^2} & 0 & 0 & 0 & 0 \\
+0 & \sigma_{croo,b}^{2} & 0 & 0 & 0 \\
+0 & 0 & \sigma_{cwoo,b}^{2} & 0 & 0 \\
+0 & 0 & 0 & \sigma_{clit,b}^{2} & 0 \\
+0 & 0 & 0 & 0 & \sigma_{csom,b}^{2} \\
+\end{pmatrix}.
+\end{array}
+\end{equation} 
+We can now derive the SIC and DFS using equation \ref{sic} and \ref{dfs} as,
+\begin{equation}
+SIC = \frac{1}{2}\text{ln}\frac{\begin{vmatrix} \mathbf{B} \end{vmatrix}}{\begin{vmatrix} \mathbf{A} \end{vmatrix}}= \frac{1}{2}\text{ln}\frac{(c_{lma}^2 \sigma_{LAI,o}^{2}+\sigma_{cfol,b}^{2})}{c_{lma}^2 \sigma_{LAI,o}^{2}}
+=\frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{cfol,b}^{2}}{c_{lma}^2 \sigma_{LAI,o}^{2}}\bigg) \label{eqn:siclai}
+\end{equation}
+and 
+\begin{equation}
+DFS = n - tr(\textbf{B}^{-1}\textbf{A}) = 5 - \bigg(\frac{c_{lma}^2 \sigma_{LAI,o}^{2}}{(c_{lma}^2 \sigma_{LAI,o}^{2}+\sigma_{cfol,b}^{2})} + 4 \bigg) = 1 -\frac{c_{lma}^2 \sigma_{LAI,o}^{2}}{(c_{lma}^2 \sigma_{LAI,o}^{2}+\sigma_{cfol,b}^{2})}. \label{eqn:dfslai}
+\end{equation}
+We see that in general for a direct observation of any of the carbon pools $C$ we have
+\begin{equation}
+SIC =\frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{c,b}^{2}}{\sigma_{c,o}^{2}}\bigg)
+\end{equation}
+and 
+\begin{equation}
+DFS = 1 -\frac{\sigma_{c,o}^{2}}{(\sigma_{c,o}^{2}+\sigma_{c,b}^{2})},
+\end{equation}
+where $\sigma_{c,o}$ and $\sigma_{c,b}$ are the observation and background standard deviations respectively, corresponding to any of the 5 carbon pools.
+We see the SIC for an observation of a single observation of one of the carbon pools is dependent on the ratio between the observation and background variances. The carbon pool observation which will give us the highest SIC is the observation with the largest ratio $\frac{\sigma_{c,b}^{2}}{\sigma_{c,o}^{2}}$. This is also the case for DFS. Assuming a fixed background standard deviation, the carbon pool observation which will give us the highest information content is the pool which we can measure most accurately, as expected. From equations~\eqref{eqn:siclai} and \eqref{eqn:dfslai} for an observation of LAI the information content is also dependent on $c_{lma}$ the parameter describing leaf mass area.
+
+Next we consider the information content in a single observation of NEE 
 
 \subsection{DALEC2 observability} \label{sec: D2_observability}
 
@@ -247,7 +305,7 @@ We compute observability in the same way as in section~\ref{sec:D1observability}
     \label{fig:D2_observability}
 \end{figure}
 
-In figure~\ref{fig:D2_observabilityrank} we see that for 23 observations of NEE our system is unobservable as we have a rank deficient $\hat{\textbf{H}}$. However, we cannot trust the rank calculation of $\hat{\textbf{H}}$ in this case. Figure~\ref{fig:D2_observabilitycond} shows that for 23 observations of NEE $\hat{\textbf{H}}$ has a condition number in the order of $10^{19}$. The condition number of a matrix corresponds to the ratio of the largest to the smallest singular values. A condition number of this size means that we have very small singular values. In the calculation of the rank of a matrix using an SVD we define the rank to be the number of singular values greater than the threshold \texttt{ tol = max(S) * max(n, m) * eps } \citep{press2007numerical}, where \texttt{S} is the vector of singular values, \texttt{n} and \texttt{m} are the rows and columns of the matrix whose rank we wish to calculate and \texttt{eps} is the epsilon value for the datatype of \texttt{S} (In this case a double-precision float with \texttt{eps = 2.22e-16}). For 23 observations of NEE $\hat{\textbf{H}}$ is classed as being rank deficient as \texttt{tol = 1.02e-10} and the three smallest singular values of $\hat{\textbf{H}}$ are \texttt{[1.39e-11, 7.84e-15, 1.46e-15]} but here we are working past the accuracy of the computer and so cannot have confidence that $\hat{\textbf{H}}$ is rank deficient in this case.
+In figure~\ref{fig:D2_observabilityrank} we see that for 23 observations of NEE our system is unobservable as we have a rank deficient $\hat{\textbf{H}}$. However, we cannot trust the rank calculation of $\hat{\textbf{H}}$ in this case. Figure~\ref{fig:D2_observabilitycond} shows that for 23 observations of NEE $\hat{\textbf{H}}$ has a condition number in the order of $10^{19}$. The condition number of a matrix corresponds to the ratio of the largest to the smallest singular values. A condition number of this size means that we have very small singular values. In the calculation of the rank of a matrix using an SVD we define the rank to be the number of singular values greater than the threshold \texttt{ tol = max(S) * max(n, m) * eps } \citep{press2007numerical}, where \texttt{S} is the vector of singular values, \texttt{n} and \texttt{m} are the rows and columns of the matrix whose rank we wish to calculate and \texttt{eps} is the machine accuracy for the datatype of \texttt{S} (In this case a double-precision float with \texttt{eps = 2.22e-16}). For 23 observations of NEE $\hat{\textbf{H}}$ is classed as being rank deficient as \texttt{tol = 1.02e-10} and the three smallest singular values of $\hat{\textbf{H}}$ are \texttt{[1.39e-11, 7.84e-15, 1.46e-15]} but here we are working past the accuracy of the computer and so cannot have confidence that $\hat{\textbf{H}}$ is rank deficient in this case.
 
 \begin{figure}[ht]
     \centering
@@ -265,7 +323,7 @@ In figure~\ref{fig:D2_observabilityrank} we see that for 23 observations of NEE 
     \label{fig:D2_cvtobservability}
 \end{figure}
 
-In order to address the problem of ill-conditioning of the $\hat{\textbf{H}}$ matrix we can instead calculate the rank of the control variable transform observability matrix, $\hat{\textbf{R}}^{-1/2}\hat{\textbf{H}}\textbf{D}^{1/2}$, where the symbols have the same meaning as in section {\color{red} REF section where CVT is described, $\textbf{D} = diag\{\textbf{B}\}$}. From figure~\ref{fig:D2_observabilitycondcvt} we can see this matrix is much better conditioned than $\hat{\textbf{H}}$ and for 23 observations of NEE we now have an observable system. Although the condition numbers here are still large we can have more confidence in these results as we are working within the precision of the computer.
+In order to address the problem of ill-conditioning of the $\hat{\textbf{H}}$ matrix we can instead calculate the rank of the control variable transform observability matrix, $\hat{\textbf{R}}^{-1/2}\hat{\textbf{H}}\textbf{D}^{1/2}$, where the symbols have the same meaning as in section {\color{red} REF section where CVT is described, $\textbf{D} = diag\{\textbf{B}\}$}. The rank of $\hat{\textbf{R}}^{-1/2}\hat{\textbf{H}}\textbf{D}^{1/2}$ and $\hat{\textbf{H}}$ are the same since $\hat{\textbf{R}}$ and $\textbf{D}$ are both full rank matrices. From figure~\ref{fig:D2_observabilitycondcvt} we can see this matrix is much better conditioned than $\hat{\textbf{H}}$ and for 23 observations of NEE we now have an observable system. Although the condition numbers here are still large we can have more confidence in these results as we are working within the precision of the computer.
 
 In the previous experiments we have considered increasing numbers of NEE observations taken on adjacent days. It is also useful to consider the observability of the system when we have a number of observations randomly distributed throughout a time window. This is more consistent with what we expect from the real data we have to work with.  
 
