@@ -1,0 +1,1060 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  17 MAY 2016 10:28
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**4dvar.tex
+(./4dvar.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/elsarticle/elsarticle.cls
+Document Class: elsarticle 2009/09/17, 1.2.0: Elsevier Ltd
+\@bls=\dimen102
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen103
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+\c@tnote=\count88
+\c@fnote=\count89
+\c@cnote=\count90
+\c@ead=\count91
+\c@author=\count92
+\@eadauthor=\toks15
+\c@affn=\count93
+\absbox=\box26
+\keybox=\box27
+\Columnwidth=\dimen106
+\space@left=\dimen107
+\els@boxa=\box28
+\els@boxb=\box29
+\leftMargin=\dimen108
+\@enLab=\toks16
+\@sep=\skip43
+\@@sep=\skip44
+ (./4dvar.spl)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip45
+\bibsep=\skip46
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count94
+)
+\splwrite=\write3
+\openout3 = `4dvar.spl'.
+
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count95
+\output=\toks17
+\linenoprevgraf=\count96
+\linenumbersep=\dimen109
+\linenumberwidth=\dimen110
+\c@linenumber=\count97
+\c@pagewiselinenumber=\count98
+\c@LN@truepage=\count99
+\c@internallinenumber=\count100
+\c@internallinenumbers=\count101
+\quotelinenumbersep=\dimen111
+\bframerule=\dimen112
+\bframesep=\dimen113
+\bframebox=\box30
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen114
+\Hy@linkcounter=\count102
+\Hy@pagecounter=\count103
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count104
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count105
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen115
+\Fld@menulength=\count106
+\Field@Width=\dimen116
+\Fld@charsize=\dimen117
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count107
+\c@Item=\count108
+\c@Hfootnote=\count109
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count110
+\c@bookmark@seq@number=\count111
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip47
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldlasy=\mathgroup7
+LaTeX Info: Redefining \bm on input line 203.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen118
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+LaTeX Info: Redefining \boldsymbol on input line 39.
+\pmbraise@=\dimen119
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count112
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count113
+\leftroot@=\count114
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count115
+\DOTSCASE@=\count116
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box31
+\strutbox@=\box32
+\big@size=\dimen120
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count117
+\c@MaxMatrixCols=\count118
+\dotsspace@=\muskip11
+\c@parentequation=\count119
+\dspbrk@lvl=\count120
+\tag@help=\toks19
+\row@=\count121
+\column@=\count122
+\maxfields@=\count123
+\andhelp@=\toks20
+\eqnshift@=\dimen121
+\alignsep@=\dimen122
+\tagshift@=\dimen123
+\tagwidth@=\dimen124
+\totwidth@=\dimen125
+\lineht@=\dimen126
+\@envbody=\toks21
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup8
+\symAMSb=\mathgroup9
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip51
+\L@UnitsRaiseTextstyle=\skip52
+\L@UnitsRaiseScriptstyle=\skip53
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amscd.sty
+Package: amscd 1999/11/29 v2.0
+\athelp@=\toks23
+\minaw@=\dimen127
+\bigaw@=\dimen128
+\minCDarrowwidth=\dimen129
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsxtra.sty
+Package: amsxtra 1999/11/15 v1.2c
+LaTeX Info: Redefining \nobreakspace on input line 65.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks29
+LaTeX Info: Redefining \qed on input line 283.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 137.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen130
+\captionmargin@=\dimen131
+\captionwidth=\dimen132
+\caption@tempdima=\dimen133
+\caption@indent=\dimen134
+\caption@parindent=\dimen135
+\caption@hangindent=\dimen136
+)
+\c@ContinuedFloat=\count124
+Package caption Info: hyperref package is loaded.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count125
+\c@subtable=\count126
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pbox/pbox.sty
+Package: pbox 2011/12/07 v1.2 Dynamic parboxes
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count127
+\calc@Bcount=\count128
+\calc@Adimen=\dimen137
+\calc@Bdimen=\dimen138
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count129
+\calc@Cskip=\skip59
+)
+\pb@xlen=\skip60
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2014/05/13 v1.1q fixes to LaTeX
+LaTeX Info: Redefining \em on input line 429.
+LaTeX Info: The control sequence `\[' is already robust on input line 480.
+LaTeX Info: The control sequence `\]' is already robust on input line 481.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count130
+\Gm@cntv=\count131
+\c@Gm@tempcnt=\count132
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks30
+)
+(./4dvar.aux
+
+LaTeX Warning: Label `fig:broke4dvar' multiply defined.
+
+)
+\openout1 = `4dvar.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 51.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count133
+\scratchdimen=\dimen147
+\scratchbox=\box33
+\nofMPsegments=\count134
+\nofMParguments=\count135
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count136
+\MPscratchDim=\dimen148
+\MPnumerator=\count137
+\makeMPintoPDFobject=\count138
+\everyMPtoPDFconversion=\toks32
+)
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring OFF on input line 51.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count139
+)
+LaTeX Info: Redefining \ref on input line 51.
+LaTeX Info: Redefining \pageref on input line 51.
+LaTeX Info: Redefining \nameref on input line 51.
+
+(./4dvar.out) (./4dvar.out)
+\@outlinefile=\write4
+\openout4 = `4dvar.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(57.81621pt, 498.66258pt, 57.81621pt)
+* v-part:(T,H,B)=(57.81621pt, 679.33757pt, 57.81621pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=498.66258pt
+* \textheight=679.33757pt
+* \oddsidemargin=-14.45378pt
+* \evensidemargin=-14.45378pt
+* \topmargin=-51.45378pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=24.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 90
+.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 90
+.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 90
+.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 90
+.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 90.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7.4> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 98.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 98.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 98.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 98.
+LaTeX Font Info:    Calculating math sizes for size <7.4> on input line 98.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.47603> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 98.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <4.44003> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 98.
+
+
+LaTeX Font Warning: Font shape `U/lasy/m/n' in size <5.47603> not available
+(Font)              size <5> substituted on input line 98.
+
+
+LaTeX Font Warning: Font shape `U/lasy/m/n' in size <4.44003> not available
+(Font)              size <5> substituted on input line 98.
+
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5.47603> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 98.
+
+LaTeX Font Warning: Font shape `U/lasy/m/n' in size <5.47603> not available
+(Font)              size <5> substituted on input line 98.
+
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <4.44003> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 98.
+
+LaTeX Font Warning: Font shape `U/lasy/m/n' in size <4.44003> not available
+(Font)              size <5> substituted on input line 98.
+
+[1
+
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package mathptmx Warning: There are no bold math fonts on input line 102.
+
+[2] [3] [4] <dalec2diag.pdf, id=230, 758.835pt x 453.695pt>
+File: dalec2diag.pdf Graphic file (type pdf)
+
+<use dalec2diag.pdf>
+Package pdftex.def Info: dalec2diag.pdf used on input line 134.
+(pdftex.def)             Requested size: 249.33128pt x 149.06906pt.
+ [5 <./dalec2diag.pdf>] [6] [7] [8]
+Package epstopdf Info: Source file: <linmoderr.eps>
+(epstopdf)                    date: 2015-11-27 15:15:35
+(epstopdf)                    size: 63822 bytes
+(epstopdf)             Output file: <linmoderr-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-12-15 17:30:54
+(epstopdf)                    size: 19144 bytes
+(epstopdf)             Command: <repstopdf --outfile=linmoderr-eps-converted-to
+.pdf linmoderr.eps>
+(epstopdf)             \includegraphics on input line 304.
+Package epstopdf Info: Output file is already uptodate.
+
+<linmoderr-eps-converted-to.pdf, id=329, 847.165pt x 609.27625pt>
+File: linmoderr-eps-converted-to.pdf Graphic file (type pdf)
+
+<use linmoderr-eps-converted-to.pdf>
+Package pdftex.def Info: linmoderr-eps-converted-to.pdf used on input line 304.
+
+(pdftex.def)             Requested size: 249.33128pt x 179.31657pt.
+Package epstopdf Info: Source file: <percenterrlinmod.eps>
+(epstopdf)                    date: 2015-12-10 12:16:43
+(epstopdf)                    size: 50503 bytes
+(epstopdf)             Output file: <percenterrlinmod-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-12-15 17:32:15
+(epstopdf)                    size: 29893 bytes
+(epstopdf)             Command: <repstopdf --outfile=percenterrlinmod-eps-conve
+rted-to.pdf percenterrlinmod.eps>
+(epstopdf)             \includegraphics on input line 318.
+Package epstopdf Info: Output file is already uptodate.
+
+<percenterrlinmod-eps-converted-to.pdf, id=333, 827.09pt x 585.18625pt>
+File: percenterrlinmod-eps-converted-to.pdf Graphic file (type pdf)
+
+<use percenterrlinmod-eps-converted-to.pdf>
+Package pdftex.def Info: percenterrlinmod-eps-converted-to.pdf used on input li
+ne 318.
+(pdftex.def)             Requested size: 249.33128pt x 176.4055pt.
+ [9 <./linmoderr-eps-converted-to.pdf>] [10 <./percenterrlinmod-eps-converted-t
+o.pdf>]
+Package epstopdf Info: Source file: <costone_cvt.eps>
+(epstopdf)                    date: 2015-11-27 15:56:45
+(epstopdf)                    size: 34616 bytes
+(epstopdf)             Output file: <costone_cvt-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-12-15 17:32:16
+(epstopdf)                    size: 15203 bytes
+(epstopdf)             Command: <repstopdf --outfile=costone_cvt-eps-converted-
+to.pdf costone_cvt.eps>
+(epstopdf)             \includegraphics on input line 357.
+Package epstopdf Info: Output file is already uptodate.
+
+<costone_cvt-eps-converted-to.pdf, id=444, 861.2175pt x 607.26875pt>
+File: costone_cvt-eps-converted-to.pdf Graphic file (type pdf)
+
+<use costone_cvt-eps-converted-to.pdf>
+Package pdftex.def Info: costone_cvt-eps-converted-to.pdf used on input line 35
+7.
+(pdftex.def)             Requested size: 244.3474pt x 172.29503pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 358.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 358.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 358.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 358.
+Package epstopdf Info: Source file: <cost_cvt.eps>
+(epstopdf)                    date: 2015-11-27 15:57:32
+(epstopdf)                    size: 50475 bytes
+(epstopdf)             Output file: <cost_cvt-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-12-15 17:32:17
+(epstopdf)                    size: 17403 bytes
+(epstopdf)             Command: <repstopdf --outfile=cost_cvt-eps-converted-to.
+pdf cost_cvt.eps>
+(epstopdf)             \includegraphics on input line 362.
+Package epstopdf Info: Output file is already uptodate.
+
+<cost_cvt-eps-converted-to.pdf, id=445, 851.18pt x 609.27625pt>
+File: cost_cvt-eps-converted-to.pdf Graphic file (type pdf)
+
+<use cost_cvt-eps-converted-to.pdf>
+Package pdftex.def Info: cost_cvt-eps-converted-to.pdf used on input line 362.
+(pdftex.def)             Requested size: 244.3474pt x 174.90059pt.
+ [11 <./costone_cvt-eps-converted-to.pdf> <./cost_cvt-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <bedccor.eps>
+(epstopdf)                    date: 2015-12-14 21:07:37
+(epstopdf)                    size: 191748 bytes
+(epstopdf)             Output file: <bedccor-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-12-15 17:32:18
+(epstopdf)                    size: 45170 bytes
+(epstopdf)             Command: <repstopdf --outfile=bedccor-eps-converted-to.p
+df bedccor.eps>
+(epstopdf)             \includegraphics on input line 390.
+Package epstopdf Info: Output file is already uptodate.
+
+<bedccor-eps-converted-to.pdf, id=518, 698.61pt x 651.43375pt>
+File: bedccor-eps-converted-to.pdf Graphic file (type pdf)
+
+<use bedccor-eps-converted-to.pdf>
+Package pdftex.def Info: bedccor-eps-converted-to.pdf used on input line 390.
+(pdftex.def)             Requested size: 274.26593pt x 255.74794pt.
+ [12 <./bedccor-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <rcorcor.eps>
+(epstopdf)                    date: 2015-10-31 15:43:06
+(epstopdf)                    size: 943341 bytes
+(epstopdf)             Output file: <rcorcor-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-12-15 17:32:19
+(epstopdf)                    size: 79942 bytes
+(epstopdf)             Command: <repstopdf --outfile=rcorcor-eps-converted-to.p
+df rcorcor.eps>
+(epstopdf)             \includegraphics on input line 414.
+Package epstopdf Info: Output file is already uptodate.
+
+<rcorcor-eps-converted-to.pdf, id=597, 628.3475pt x 553.06625pt>
+File: rcorcor-eps-converted-to.pdf Graphic file (type pdf)
+
+<use rcorcor-eps-converted-to.pdf>
+Package pdftex.def Info: rcorcor-eps-converted-to.pdf used on input line 414.
+(pdftex.def)             Requested size: 249.33128pt x 219.4588pt.
+ [13] [14 <./rcorcor-eps-converted-to.pdf>]
+[15] [16] <A4dvar2.pdf, id=714, 822.31845pt x 602.44164pt>
+File: A4dvar2.pdf Graphic file (type pdf)
+ <use A4dvar2.pdf>
+Package pdftex.def Info: A4dvar2.pdf used on input line 474.
+(pdftex.def)             Requested size: 244.3474pt x 179.00569pt.
+
+<B4dvar2.pdf, id=715, 822.31845pt x 602.44164pt>
+File: B4dvar2.pdf Graphic file (type pdf)
+ <use B4dvar2.pdf>
+Package pdftex.def Info: B4dvar2.pdf used on input line 479.
+(pdftex.def)             Requested size: 244.3474pt x 179.00569pt.
+
+<C4dvar2.pdf, id=716, 822.31845pt x 602.44164pt>
+File: C4dvar2.pdf Graphic file (type pdf)
+ <use C4dvar2.pdf>
+Package pdftex.def Info: C4dvar2.pdf used on input line 484.
+(pdftex.def)             Requested size: 244.3474pt x 179.00569pt.
+
+<D4dvar2.pdf, id=717, 822.31845pt x 602.44164pt>
+File: D4dvar2.pdf Graphic file (type pdf)
+ <use D4dvar2.pdf>
+Package pdftex.def Info: D4dvar2.pdf used on input line 489.
+(pdftex.def)             Requested size: 244.3474pt x 179.00569pt.
+
+<Abroke4dvar2.pdf, id=718, 777.51103pt x 592.81258pt>
+File: Abroke4dvar2.pdf Graphic file (type pdf)
+ <use Abroke4dvar2.pdf>
+Package pdftex.def Info: Abroke4dvar2.pdf used on input line 499.
+(pdftex.def)             Requested size: 244.3474pt x 186.30275pt.
+
+<Bbroke4dvar2.pdf, id=719, 777.51103pt x 592.81258pt>
+File: Bbroke4dvar2.pdf Graphic file (type pdf)
+ <use Bbroke4dvar2.pdf>
+Package pdftex.def Info: Bbroke4dvar2.pdf used on input line 504.
+(pdftex.def)             Requested size: 244.3474pt x 186.30275pt.
+
+<Cbroke4dvar2.pdf, id=720, 777.51103pt x 592.81258pt>
+File: Cbroke4dvar2.pdf Graphic file (type pdf)
+ <use Cbroke4dvar2.pdf>
+Package pdftex.def Info: Cbroke4dvar2.pdf used on input line 509.
+(pdftex.def)             Requested size: 244.3474pt x 186.30275pt.
+
+<Dbroke4dvar2.pdf, id=721, 777.51103pt x 592.81258pt>
+File: Dbroke4dvar2.pdf Graphic file (type pdf)
+ <use Dbroke4dvar2.pdf>
+Package pdftex.def Info: Dbroke4dvar2.pdf used on input line 514.
+(pdftex.def)             Requested size: 244.3474pt x 186.30275pt.
+
+<Amoddat_resid.pdf, id=724, 822.31845pt x 602.72394pt>
+File: Amoddat_resid.pdf Graphic file (type pdf)
+ <use Amoddat_resid.pdf>
+Package pdftex.def Info: Amoddat_resid.pdf used on input line 524.
+(pdftex.def)             Requested size: 244.3474pt x 179.08957pt.
+
+<Bmoddat_resid.pdf, id=725, 822.31845pt x 602.72394pt>
+File: Bmoddat_resid.pdf Graphic file (type pdf)
+ <use Bmoddat_resid.pdf>
+Package pdftex.def Info: Bmoddat_resid.pdf used on input line 529.
+(pdftex.def)             Requested size: 244.3474pt x 179.08957pt.
+
+<Cmoddat_resid.pdf, id=726, 822.31845pt x 602.72394pt>
+File: Cmoddat_resid.pdf Graphic file (type pdf)
+ <use Cmoddat_resid.pdf>
+Package pdftex.def Info: Cmoddat_resid.pdf used on input line 534.
+(pdftex.def)             Requested size: 244.3474pt x 179.08957pt.
+
+<Dmoddat_resid.pdf, id=727, 822.31845pt x 602.72394pt>
+File: Dmoddat_resid.pdf Graphic file (type pdf)
+ <use Dmoddat_resid.pdf>
+Package pdftex.def Info: Dmoddat_resid.pdf used on input line 539.
+(pdftex.def)             Requested size: 244.3474pt x 179.08957pt.
+
+<xbfscat2.pdf, id=728, 677.09836pt x 678.0629pt>
+File: xbfscat2.pdf Graphic file (type pdf)
+ <use xbfscat2.pdf>
+Package pdftex.def Info: xbfscat2.pdf used on input line 549.
+(pdftex.def)             Requested size: 199.46198pt x 199.73712pt.
+
+<Afscat2.pdf, id=729, 677.09836pt x 678.0629pt>
+File: Afscat2.pdf Graphic file (type pdf)
+ <use Afscat2.pdf>
+Package pdftex.def Info: Afscat2.pdf used on input line 554.
+(pdftex.def)             Requested size: 199.46198pt x 199.73712pt.
+
+<Bfscat2.pdf, id=730, 677.09836pt x 678.0629pt>
+File: Bfscat2.pdf Graphic file (type pdf)
+ <use Bfscat2.pdf>
+Package pdftex.def Info: Bfscat2.pdf used on input line 559.
+(pdftex.def)             Requested size: 199.46198pt x 199.73712pt.
+
+<Cfscat2.pdf, id=731, 677.09836pt x 678.0629pt>
+File: Cfscat2.pdf Graphic file (type pdf)
+ <use Cfscat2.pdf>
+Package pdftex.def Info: Cfscat2.pdf used on input line 564.
+(pdftex.def)             Requested size: 199.46198pt x 199.73712pt.
+
+<Dfscat2.pdf, id=732, 677.09836pt x 678.0629pt>
+File: Dfscat2.pdf Graphic file (type pdf)
+ <use Dfscat2.pdf>
+Package pdftex.def Info: Dfscat2.pdf used on input line 569.
+(pdftex.def)             Requested size: 199.46198pt x 199.73712pt.
+Package epstopdf Info: Source file: <inccvt.eps>
+(epstopdf)                    date: 2015-12-14 20:19:52
+(epstopdf)                    size: 73164 bytes
+(epstopdf)             Output file: <inccvt-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-12-15 17:32:37
+(epstopdf)                    size: 39024 bytes
+(epstopdf)             Command: <repstopdf --outfile=inccvt-eps-converted-to.pd
+f inccvt.eps>
+(epstopdf)             \includegraphics on input line 578.
+Package epstopdf Info: Output file is already uptodate.
+
+<inccvt-eps-converted-to.pdf, id=733, 945.5325pt x 414.54875pt>
+File: inccvt-eps-converted-to.pdf Graphic file (type pdf)
+
+<use inccvt-eps-converted-to.pdf>
+Package pdftex.def Info: inccvt-eps-converted-to.pdf used on input line 578.
+(pdftex.def)             Requested size: 398.93158pt x 174.9063pt.
+ [17] [18 <./A4dvar2.pdf> <./B4dvar2.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./B4dvar2.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./C4dvar2.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./C4dvar2.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./D4dvar2.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./D4dvar2.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>] [19 <./Abroke4dvar2.pdf> <./Bbroke4dvar2.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Bbroke4dvar2.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./Cbroke4dvar2.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Cbroke4dvar2.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./Dbroke4dvar2.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Dbroke4dvar2.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>] [20 <./Amoddat_resid.pdf> <./Bmoddat_resid.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Bmoddat_resid.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+> <./Cmoddat_resid.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Cmoddat_resid.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+> <./Dmoddat_resid.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Dmoddat_resid.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>] [21 <./xbfscat2.pdf> <./Afscat2.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Afscat2.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./Bfscat2.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Bfscat2.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./Cfscat2.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Cfscat2.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./Dfscat2.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Dfscat2.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]
+Package epstopdf Info: Source file: <tdcvt_a.eps>
+(epstopdf)                    date: 2015-12-16 09:48:00
+(epstopdf)                    size: 60726 bytes
+(epstopdf)             Output file: <tdcvt_a-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-12-16 09:49:02
+(epstopdf)                    size: 27339 bytes
+(epstopdf)             Command: <repstopdf --outfile=tdcvt_a-eps-converted-to.p
+df tdcvt_a.eps>
+(epstopdf)             \includegraphics on input line 590.
+Package epstopdf Info: Output file is already uptodate.
+ <tdcvt_a-eps-converted-to.pdf, id=1512, 722.7pt x 633.36626pt>
+File: tdcvt_a-eps-converted-to.pdf Graphic file (type pdf)
+
+<use tdcvt_a-eps-converted-to.pdf>
+Package pdftex.def Info: tdcvt_a-eps-converted-to.pdf used on input line 590.
+(pdftex.def)             Requested size: 244.3474pt x 214.1433pt.
+Package epstopdf Info: Source file: <tdcvt_f.eps>
+(epstopdf)                    date: 2015-12-16 09:47:37
+(epstopdf)                    size: 60767 bytes
+(epstopdf)             Output file: <tdcvt_f-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-12-16 09:49:03
+(epstopdf)                    size: 27340 bytes
+(epstopdf)             Command: <repstopdf --outfile=tdcvt_f-eps-converted-to.p
+df tdcvt_f.eps>
+(epstopdf)             \includegraphics on input line 595.
+Package epstopdf Info: Output file is already uptodate.
+
+<tdcvt_f-eps-converted-to.pdf, id=1513, 722.7pt x 633.36626pt>
+File: tdcvt_f-eps-converted-to.pdf Graphic file (type pdf)
+
+<use tdcvt_f-eps-converted-to.pdf>
+Package pdftex.def Info: tdcvt_f-eps-converted-to.pdf used on input line 595.
+(pdftex.def)             Requested size: 244.3474pt x 214.1433pt.
+ [22 <./inccvt-eps-converted-to.pdf>]
+[23 <./tdcvt_a-eps-converted-to.pdf> <./tdcvt_f-eps-converted-to.pdf>] [24]
+[25] (./4dvar.bbl [26]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ó in font ptmr7t!
+ [27] [28]
+Missing character: There is no ® in font ptmr7t!
+ [29]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 419.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 419.
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no   in font ptmr7t!
+ [30]) [31]
+Overfull \hbox (1.0149pt too wide) in paragraph at lines 665--692
+ [] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 733.
+[32] [33]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 733.
+ (./4dvar.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 733.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 733.
+Package rerunfilecheck Info: File `4dvar.out' has not changed.
+(rerunfilecheck)             Checksum: C45240B4D18624B68109C39F93FF9A40;1433.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.55997pt have occurred.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 733.
+ ) 
+Here is how much of TeX's memory you used:
+ 9474 strings out of 493117
+ 141559 string characters out of 6135433
+ 257071 words of memory out of 5000000
+ 12537 multiletter control sequences out of 15000+600000
+ 64745 words of font info for 154 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,19n,38p,2825b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/u
+rw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/u
+tmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on 4dvar.pdf (33 pages, 2671640 bytes).
+PDF statistics:
+ 1865 PDF objects out of 2073 (max. 8388607)
+ 991 compressed objects within 10 object streams
+ 162 named destinations out of 1000 (max. 500000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
+
