@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  17 MAY 2016 10:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  23 MAY 2016 09:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1029,13 +1029,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 733.
  ) 
 Here is how much of TeX's memory you used:
- 9474 strings out of 493117
- 141559 string characters out of 6135433
- 257071 words of memory out of 5000000
- 12537 multiletter control sequences out of 15000+600000
+ 9473 strings out of 493117
+ 141548 string characters out of 6135433
+ 258171 words of memory out of 5000000
+ 12536 multiletter control sequences out of 15000+600000
  64745 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,19n,38p,2825b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,19n,38p,2837b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1051,7 +1051,7 @@ nts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/u
 rw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on 4dvar.pdf (33 pages, 2671640 bytes).
+Output written on 4dvar.pdf (33 pages, 2671658 bytes).
 PDF statistics:
  1865 PDF objects out of 2073 (max. 8388607)
  991 compressed objects within 10 object streams
