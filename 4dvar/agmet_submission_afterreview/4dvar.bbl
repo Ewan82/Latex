@@ -1,4 +1,4 @@
-\begin{thebibliography}{54}
+\begin{thebibliography}{55}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -471,6 +471,14 @@
 \newblock \bibinfo{journal}{Journal of Geophysical Research}
   \bibinfo{volume}{106}, \bibinfo{pages}{7183}.
 \newblock \DOIprefix\doi{10.1029/2000JD900719}.
+%Type = Article
+\bibitem[{Tremolet(2006)}]{Tremolet2006}
+\bibinfo{author}{Tremolet, Y.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{{Accounting for an imperfect model in 4D-Var}}.
+\newblock \bibinfo{journal}{Quarterly Journal of the Royal Meteorological
+  Society} \bibinfo{volume}{132}, \bibinfo{pages}{2483--2504}.
+\newblock \URLprefix \url{http://doi.wiley.com/10.1256/qj.05.224},
+  \DOIprefix\doi{10.1256/qj.05.224}.
 %Type = Article
 \bibitem[{Verbeeck et~al.(2011)Verbeeck, Peylin, Bacour, Bonal, Steppe and
   Ciais}]{Verbeeck2011}
