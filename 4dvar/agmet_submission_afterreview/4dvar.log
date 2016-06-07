@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  31 MAY 2016 16:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  2 JUN 2016 11:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -767,115 +767,115 @@ File: rcorcor-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: rcorcor-eps-converted-to.pdf used on input line 416.
 (pdftex.def)             Requested size: 249.33128pt x 219.4588pt.
  [14 <./rcorcor-eps-converted-to.pdf>]
-[15] [16] [17] <A4dvar2.pdf, id=734, 822.31845pt x 602.44164pt>
+[15] [16] [17] <A4dvar2.pdf, id=733, 822.31845pt x 602.44164pt>
 File: A4dvar2.pdf Graphic file (type pdf)
 
 <use A4dvar2.pdf>
 Package pdftex.def Info: A4dvar2.pdf used on input line 476.
 (pdftex.def)             Requested size: 244.3474pt x 179.00569pt.
- <B4dvar2.pdf, id=735, 822.31845pt x 602.44164pt>
+ <B4dvar2.pdf, id=734, 822.31845pt x 602.44164pt>
 File: B4dvar2.pdf Graphic file (type pdf)
 
 <use B4dvar2.pdf>
 Package pdftex.def Info: B4dvar2.pdf used on input line 481.
 (pdftex.def)             Requested size: 244.3474pt x 179.00569pt.
- <C4dvar2.pdf, id=736, 822.31845pt x 602.44164pt>
+ <C4dvar2.pdf, id=735, 822.31845pt x 602.44164pt>
 File: C4dvar2.pdf Graphic file (type pdf)
 
 <use C4dvar2.pdf>
 Package pdftex.def Info: C4dvar2.pdf used on input line 486.
 (pdftex.def)             Requested size: 244.3474pt x 179.00569pt.
- <D4dvar2.pdf, id=737, 822.31845pt x 602.44164pt>
+ <D4dvar2.pdf, id=736, 822.31845pt x 602.44164pt>
 File: D4dvar2.pdf Graphic file (type pdf)
 
 <use D4dvar2.pdf>
 Package pdftex.def Info: D4dvar2.pdf used on input line 491.
 (pdftex.def)             Requested size: 244.3474pt x 179.00569pt.
- <Abroke4dvar2.pdf, id=738, 777.51103pt x 592.81258pt>
+ <Abroke4dvar2.pdf, id=737, 777.51103pt x 592.81258pt>
 File: Abroke4dvar2.pdf Graphic file (type pdf)
 
 <use Abroke4dvar2.pdf>
 Package pdftex.def Info: Abroke4dvar2.pdf used on input line 501.
 (pdftex.def)             Requested size: 244.3474pt x 186.30275pt.
- <Bbroke4dvar2.pdf, id=739, 777.51103pt x 592.81258pt>
+ <Bbroke4dvar2.pdf, id=738, 777.51103pt x 592.81258pt>
 File: Bbroke4dvar2.pdf Graphic file (type pdf)
 
 <use Bbroke4dvar2.pdf>
 Package pdftex.def Info: Bbroke4dvar2.pdf used on input line 506.
 (pdftex.def)             Requested size: 244.3474pt x 186.30275pt.
- <Cbroke4dvar2.pdf, id=740, 777.51103pt x 592.81258pt>
+ <Cbroke4dvar2.pdf, id=739, 777.51103pt x 592.81258pt>
 File: Cbroke4dvar2.pdf Graphic file (type pdf)
 
 <use Cbroke4dvar2.pdf>
 Package pdftex.def Info: Cbroke4dvar2.pdf used on input line 511.
 (pdftex.def)             Requested size: 244.3474pt x 186.30275pt.
- <Dbroke4dvar2.pdf, id=741, 777.51103pt x 592.81258pt>
+ <Dbroke4dvar2.pdf, id=740, 777.51103pt x 592.81258pt>
 File: Dbroke4dvar2.pdf Graphic file (type pdf)
 
 <use Dbroke4dvar2.pdf>
 Package pdftex.def Info: Dbroke4dvar2.pdf used on input line 516.
 (pdftex.def)             Requested size: 244.3474pt x 186.30275pt.
- <Amoddat_resid.pdf, id=744, 822.31845pt x 602.72394pt>
+ <Amoddat_resid.pdf, id=743, 822.31845pt x 602.72394pt>
 File: Amoddat_resid.pdf Graphic file (type pdf)
 
 <use Amoddat_resid.pdf>
 Package pdftex.def Info: Amoddat_resid.pdf used on input line 526.
 (pdftex.def)             Requested size: 244.3474pt x 179.08957pt.
- <Bmoddat_resid.pdf, id=745, 822.31845pt x 602.72394pt>
+ <Bmoddat_resid.pdf, id=744, 822.31845pt x 602.72394pt>
 File: Bmoddat_resid.pdf Graphic file (type pdf)
 
 <use Bmoddat_resid.pdf>
 Package pdftex.def Info: Bmoddat_resid.pdf used on input line 531.
 (pdftex.def)             Requested size: 244.3474pt x 179.08957pt.
- <Cmoddat_resid.pdf, id=746, 822.31845pt x 602.72394pt>
+ <Cmoddat_resid.pdf, id=745, 822.31845pt x 602.72394pt>
 File: Cmoddat_resid.pdf Graphic file (type pdf)
 
 <use Cmoddat_resid.pdf>
 Package pdftex.def Info: Cmoddat_resid.pdf used on input line 536.
 (pdftex.def)             Requested size: 244.3474pt x 179.08957pt.
- <Dmoddat_resid.pdf, id=747, 822.31845pt x 602.72394pt>
+ <Dmoddat_resid.pdf, id=746, 822.31845pt x 602.72394pt>
 File: Dmoddat_resid.pdf Graphic file (type pdf)
 
 <use Dmoddat_resid.pdf>
 Package pdftex.def Info: Dmoddat_resid.pdf used on input line 541.
 (pdftex.def)             Requested size: 244.3474pt x 179.08957pt.
- <xbfscat2.pdf, id=748, 677.09836pt x 678.0629pt>
+ <xbfscat2.pdf, id=747, 677.09836pt x 678.0629pt>
 File: xbfscat2.pdf Graphic file (type pdf)
 
 <use xbfscat2.pdf>
 Package pdftex.def Info: xbfscat2.pdf used on input line 551.
 (pdftex.def)             Requested size: 199.46198pt x 199.73712pt.
- <Afscat2.pdf, id=749, 677.09836pt x 678.0629pt>
+ <Afscat2.pdf, id=748, 677.09836pt x 678.0629pt>
 File: Afscat2.pdf Graphic file (type pdf)
 
 <use Afscat2.pdf>
 Package pdftex.def Info: Afscat2.pdf used on input line 556.
 (pdftex.def)             Requested size: 199.46198pt x 199.73712pt.
- <Bfscat2.pdf, id=750, 677.09836pt x 678.0629pt>
+ <Bfscat2.pdf, id=749, 677.09836pt x 678.0629pt>
 File: Bfscat2.pdf Graphic file (type pdf)
 
 <use Bfscat2.pdf>
 Package pdftex.def Info: Bfscat2.pdf used on input line 561.
 (pdftex.def)             Requested size: 199.46198pt x 199.73712pt.
- <Cfscat2.pdf, id=751, 677.09836pt x 678.0629pt>
+ <Cfscat2.pdf, id=750, 677.09836pt x 678.0629pt>
 File: Cfscat2.pdf Graphic file (type pdf)
 
 <use Cfscat2.pdf>
 Package pdftex.def Info: Cfscat2.pdf used on input line 566.
 (pdftex.def)             Requested size: 199.46198pt x 199.73712pt.
- <Dfscat2.pdf, id=752, 677.09836pt x 678.0629pt>
+ <Dfscat2.pdf, id=751, 677.09836pt x 678.0629pt>
 File: Dfscat2.pdf Graphic file (type pdf)
 
 <use Dfscat2.pdf>
 Package pdftex.def Info: Dfscat2.pdf used on input line 571.
 (pdftex.def)             Requested size: 199.46198pt x 199.73712pt.
- <inccvt2.pdf, id=753, 946.29156pt x 414.63345pt>
+ <inccvt2.pdf, id=752, 946.29156pt x 414.63345pt>
 File: inccvt2.pdf Graphic file (type pdf)
 
 <use inccvt2.pdf>
 Package pdftex.def Info: inccvt2.pdf used on input line 580.
 (pdftex.def)             Requested size: 398.93158pt x 174.79651pt.
- [18] [19 <./A4dvar2.pdf> <./B4dvar2.pdf
+ [18 <./A4dvar2.pdf> <./B4dvar2.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./B4dvar2.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
@@ -887,7 +887,7 @@ ple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./D4dvar2.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->] [20 <./Abroke4dvar2.pdf> <./Bbroke4dvar2.pdf
+>] [19 <./Abroke4dvar2.pdf> <./Bbroke4dvar2.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Bbroke4dvar2.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
@@ -899,7 +899,7 @@ multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Dbroke4dvar2.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
->] [21 <./Amoddat_resid.pdf> <./Bmoddat_resid.pdf
+>] [20 <./Amoddat_resid.pdf> <./Bmoddat_resid.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Bmoddat_resid.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
@@ -911,7 +911,7 @@ pdfTeX warning: /usr/texbin/pdflatex (file ./Cmoddat_resid.pdf): PDF inclusion:
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Dmoddat_resid.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] [22 <./xbfscat2.pdf> <./Afscat2.pdf
+>] [21 <./xbfscat2.pdf> <./Afscat2.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Afscat2.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
@@ -938,7 +938,7 @@ Package epstopdf Info: Source file: <tdcvt_a.eps>
 df tdcvt_a.eps>
 (epstopdf)             \includegraphics on input line 592.
 Package epstopdf Info: Output file is already uptodate.
- <tdcvt_a-eps-converted-to.pdf, id=1534, 722.7pt x 633.36626pt>
+ <tdcvt_a-eps-converted-to.pdf, id=1526, 722.7pt x 633.36626pt>
 File: tdcvt_a-eps-converted-to.pdf Graphic file (type pdf)
 
 <use tdcvt_a-eps-converted-to.pdf>
@@ -955,20 +955,20 @@ df tdcvt_f.eps>
 (epstopdf)             \includegraphics on input line 597.
 Package epstopdf Info: Output file is already uptodate.
 
-<tdcvt_f-eps-converted-to.pdf, id=1535, 722.7pt x 633.36626pt>
+<tdcvt_f-eps-converted-to.pdf, id=1527, 722.7pt x 633.36626pt>
 File: tdcvt_f-eps-converted-to.pdf Graphic file (type pdf)
 
 <use tdcvt_f-eps-converted-to.pdf>
 Package pdftex.def Info: tdcvt_f-eps-converted-to.pdf used on input line 597.
 (pdftex.def)             Requested size: 244.3474pt x 214.1433pt.
- [23 <./inccvt2.pdf> <./tdcvt_a-eps-converted-to.pdf> <./tdcvt_f-eps-converted-
-to.pdf>] [24] [25] [26] (./4dvar.bbl [27]
+ [22 <./inccvt2.pdf>] [23 <./tdcvt_a-eps-converted-to.pdf> <./tdcvt_f-eps-conve
+rted-to.pdf>] [24] [25] [26] (./4dvar.bbl
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
 Missing character: There is no ó in font ptmr7t!
 
-[28]
+[27] [28]
 Missing character: There is no ® in font ptmr7t!
  [29]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 419.
@@ -983,13 +983,13 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no   in font ptmr7t!
- [31]) [32]
+) [31]
 Overfull \hbox (1.0149pt too wide) in paragraph at lines 667--694
  [] 
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 735.
-[33] [34]
+[32] [33]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 735.
  (./4dvar.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 735.
@@ -1007,13 +1007,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 735.
  ) 
 Here is how much of TeX's memory you used:
- 9478 strings out of 493117
- 141506 string characters out of 6135433
+ 9477 strings out of 493117
+ 141499 string characters out of 6135433
  258202 words of memory out of 5000000
  12539 multiletter control sequences out of 15000+600000
  64745 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,19n,38p,3097b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,19n,38p,3097b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1029,10 +1029,10 @@ nts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/u
 rw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on 4dvar.pdf (34 pages, 2658498 bytes).
+Output written on 4dvar.pdf (33 pages, 2657576 bytes).
 PDF statistics:
- 1893 PDF objects out of 2073 (max. 8388607)
- 1022 compressed objects within 11 object streams
- 164 named destinations out of 1000 (max. 500000)
+ 1888 PDF objects out of 2073 (max. 8388607)
+ 1018 compressed objects within 11 object streams
+ 163 named destinations out of 1000 (max. 500000)
  304 words of extra memory for PDF output out of 10000 (max. 10000000)
 

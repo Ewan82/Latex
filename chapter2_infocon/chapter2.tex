@@ -58,7 +58,34 @@ as defined in section {\color{red} REF}. So that if the rank of $\hat{\textbf{H}
 
 \section{Information Content Measures} \label{sec:IC}%%%%%%%%%%%%%%%%%%%%%% 
 
-Information content measures are already being used to quantify the different levels of information provided by observations in the development of satellite instruments \citep{stewart2008correlated, engelen2004information} and in operational data assimilation schemes \citep{fisher2003estimation, singh2013practical}. In these fields, two of the more widely used measures are Shannon Information Content (also known as entropy reduction) and the degrees of freedom for signal. We will apply both methods for observations assimilated with DALEC. 
+In data assimilation we combine prior estimates with observations to improve our knowledge of the state of a system. In this process some observations will have a greater impact on our results than others. Many measures exist for understanding observation impact on the analysis.
+
+Information content measures have been used to quantify the different levels of information provided by observations in the development of satellite instruments \citep{stewart2008correlated, engelen2004information} and in operational data assimilation schemes \citep{fisher2003estimation, singh2013practical}. In \citet{Fowler2013} it is discussed that in these operational schemes observation information content measures have been used for
+\begin{itemize}
+\item Removing observation with a lesser impact in order to improve the efficiency of the assimilation process \citet{rabier2002channel, singh2013practical, rodgers1998information}
+\item 
+\item
+\end{itemize}
+
+For the following measures the data assimilation problem is assumed to be Gaussian with a linear function mapping the state to  observation space (\textbf{H}), following the derivation from \citet{kalnay2003atmospheric} we have,
+\begin{equation}
+\textbf{x}_{a} = \textbf{x} + \textbf{K}(\textbf{y} - \textbf{H}\textbf{x}_{b}), \label{eqn:analysis}
+\end{equation}
+where $\textbf{K}$ is the Kalman gain matrix,
+\begin{equation}
+\textbf{K} = (\textbf{H}^{T}\textbf{R}^{-1}\textbf{H} + \textbf{B}^{-1})^{-1}\textbf{H}^{T}\textbf{R}^{-1}.
+\end{equation}
+In order to consider observations over a 4D-Var time window we rewrite equation~\eqref{eqn:analysis} as,
+\begin{equation}
+\textbf{x}_{a} = \textbf{x} + \hat{\textbf{K}}(\hat{\textbf{y}} - \hat{\textbf{H}}\textbf{x}_{b}),
+\end{equation}
+using the defined matrices in section {\color{red} REF}, with $\hat{\textbf{K}} = (\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}\hat{\textbf{H}} + \textbf{B}^{-1})^{-1}\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}.$ 
+
+\citep{fisher2003estimation} **Reference about SIC and DFS being used in operational atmospheric DA.
+\citep{singh2013practical} **Ref about using fischer mat, dfs and SIC for data pruning to produce similar results.
+
+\subsection{Sensitivity of analysis to observations}
+
 
 \subsection{Shannon Information Content}%%%%%%%%%%%%%%%%%%%%%%
 
@@ -110,13 +137,14 @@ DFS & = \text{trace}(\mathbf{I}_{n\times n} - \bm{\Lambda}) \\
 \end{equation}
 {\color{red} A is as defined in sec  REF}.
 
-
-\subsection{Look at Christine Johnsons paper and CVT Hhat for obs impact?}
-
-\subsection{Cardinalli influence matrix to show spreading of information from correlations}
-
-
 \section{Results}
+
+\subsection{Chapter overview}
+\textit{Draft}
+
+In this chapter we aim to analyse the information content in the observations used for assimilation with the DALEC and DALEC2 model. We begin by considering the observability of our system to see if we have enough information from the observations available to us in order to construct a unique solution to our data assimilation problem. In practice we include a background term in our assimilation (ref DA section) to ensure we can always find a locally unique solution. However, it is informative to show that observations alone provide us with enough information to find a unique solution.
+
+We then consider different information content measures applied to our system in order to show how the information content varies for the different observation types available to us for both DALEC and DALEC2. Using these measure also allows us to consider the effect of including error correlations in our data assimilation algorithm (see previous section) on the information content in the observations.
 
 \subsection{DALEC1 observability} \label{sec:D1observability}
 
