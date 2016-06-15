@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,13 +12,27 @@ S.~Barnett and R.~Cameron.
   Press, 1985.
 \newblock ISBN 9780198596400.
 
-\bibitem[Cohn and Dee(1988)]{Cohn1988}
-S.~E. Cohn and D.~P. Dee.
-\newblock {Observability of discretized partial differential equations}.
-\newblock \emph{SIAM Journal on Numerical Analysis}, 25\penalty0 (3):\penalty0
-  586, 1988.
-\newblock ISSN 00361429.
-\newblock \doi{10.1137/0725037}.
+\bibitem[Cardinali et~al.(2004)Cardinali, Pezzulli, and
+  Andersson]{Cardinali2004}
+C.~Cardinali, S.~Pezzulli, and E.~Andersson.
+\newblock Influence-matrix diagnostic of a data assimilation system.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  130\penalty0 (603):\penalty0 2767--2786, 2004.
+\newblock ISSN 1477-870X.
+\newblock \doi{10.1256/qj.03.205}.
+\newblock URL \url{http://dx.doi.org/10.1256/qj.03.205}.
+
+\bibitem[Cover and Thomas(1991)]{cover1991elements}
+T.~M. Cover and J.~A. Thomas.
+\newblock Elements of information theory. new york: J.
+\newblock \emph{Wiley and Sons}, 5:\penalty0 5, 1991.
+
+\bibitem[Desroziers et~al.(2009)Desroziers, Berre, Chabot, and
+  Chapnik]{desroziers2009posteriori}
+G.~Desroziers, L.~Berre, V.~Chabot, and B.~Chapnik.
+\newblock A posteriori diagnostics in an ensemble of perturbed analyses.
+\newblock \emph{Monthly Weather Review}, 137\penalty0 (10):\penalty0
+  3420--3436, 2009.
 
 \bibitem[Engelen and Stephens(2004)]{engelen2004information}
 R.~Engelen and G.~Stephens.
@@ -26,6 +40,13 @@ R.~Engelen and G.~Stephens.
   respect to co2.
 \newblock \emph{Journal of Applied Meteorology}, 43\penalty0 (2):\penalty0
   373--378, 2004.
+
+\bibitem[Eyre(1990)]{eyre1990information}
+J.~Eyre.
+\newblock The information content of data from satellite sounding systems: A
+  simulation study.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  116\penalty0 (492):\penalty0 401--434, 1990.
 
 \bibitem[Fisher(2003)]{fisher2003estimation}
 M.~Fisher.
@@ -94,6 +115,13 @@ C.~Paige.
 \newblock ISSN 0018-9286.
 \newblock \doi{10.1109/TAC.1981.1102563}.
 
+\bibitem[Palmer et~al.(1998)Palmer, Gelaro, Barkmeijer, and
+  Buizza]{palmer1998singular}
+T.~Palmer, R.~Gelaro, J.~Barkmeijer, and R.~Buizza.
+\newblock Singular vectors, metrics, and adaptive observations.
+\newblock \emph{Journal of the Atmospheric Sciences}, 55\penalty0 (4):\penalty0
+  633--653, 1998.
+
 \bibitem[Press et~al.(2007)Press, Teukolsky, Vetterling, and
   Flannery]{press2007numerical}
 W.~Press, S.~A. Teukolsky, W.~T. Vetterling, and B.~P. Flannery.
@@ -101,6 +129,21 @@ W.~Press, S.~A. Teukolsky, W.~T. Vetterling, and B.~P. Flannery.
   Computing}.
 \newblock Cambridge University Press, 2007.
 \newblock ISBN 9780521880688.
+
+\bibitem[Rabier et~al.(2002)Rabier, Fourri{\'e}, Chaf{\"a}i, and
+  Prunet]{rabier2002channel}
+F.~Rabier, N.~Fourri{\'e}, D.~Chaf{\"a}i, and P.~Prunet.
+\newblock Channel selection methods for infrared atmospheric sounding
+  interferometer radiances.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  128\penalty0 (581):\penalty0 1011--1027, 2002.
+
+\bibitem[Rodgers(1998)]{rodgers1998information}
+C.~D. Rodgers.
+\newblock Information content and optimisation of high spectral resolution
+  remote measurements.
+\newblock \emph{Advances in Space Research}, 21\penalty0 (3):\penalty0
+  361--367, 1998.
 
 \bibitem[Rodgers et~al.(2000)]{rodgers2000inverse}
 C.~D. Rodgers et~al.
@@ -123,6 +166,13 @@ L.~M. Stewart, S.~Dance, and N.~Nichols.
 \newblock \emph{International journal for numerical methods in fluids},
   56\penalty0 (8):\penalty0 1521--1527, 2008.
 
+\bibitem[Wahba(1985)]{wahba1985design}
+G.~Wahba.
+\newblock Design criteria and eigensequence plots for satellite-computed
+  tomography.
+\newblock \emph{Journal of Atmospheric and Oceanic Technology}, 2\penalty0
+  (2):\penalty0 125--132, 1985.
+
 \bibitem[Williams et~al.(2005)Williams, Schwarz, Law, Irvine, and
   Kurpius]{williams2005improved}
 M.~Williams, P.~A. Schwarz, B.~E. Law, J.~Irvine, and M.~R. Kurpius.
@@ -130,5 +180,11 @@ M.~Williams, P.~A. Schwarz, B.~E. Law, J.~Irvine, and M.~R. Kurpius.
   assimilation.
 \newblock \emph{Global Change Biology}, 11\penalty0 (1):\penalty0 89--105,
   2005.
+
+\bibitem[Zou et~al.(1992)Zou, Navon, and Le~Dimet]{zou1992incomplete}
+X.~Zou, I.~Navon, and F.~Le~Dimet.
+\newblock Incomplete observations and control of gravity waves in variational
+  data assimilation.
+\newblock \emph{Tellus A}, 44\penalty0 (4):\penalty0 273--296, 1992.
 
 \end{thebibliography}

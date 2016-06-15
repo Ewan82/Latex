@@ -54,22 +54,22 @@ This result can be applied to the data assimilation problem \citep{johnson2005si
 \mathbf{H}_N\mathbf{M}_{N,0}
 \end{pmatrix} \label{eqn: hmat}
 \end{equation}
-as defined in section {\color{red} REF}. So that if the rank of $\hat{\textbf{H}}$ is equal to $n$, the size of $\textbf{x}_0$, the system is observable. Theorem \ref{thm:observable} is for linear systems and has been applied to the linearised data assimilation problem. {\color{red} More linking and discussing of time invariant observability over a specific window rather than infinite} For a set of observations $\hat{\textbf{y}}$ this still gives us a good indication to the observability of the system, although it is not a measure of non-linear observability. It is important to note that the system being observable in this case means that we can construct a unique solution, $\textbf{x}^a$, from the observational part of the cost function and does not account for parameter miss-specification and observation error. In \citet{Cohn1988} it is shown that having an observable system is necessary and sufficient for asymptotic stability of the data assimilation process {\color{red} MORE, is this applicable?}. In practice we include a background term in the cost function for 4D-Var data assimilation which regularises the problem and means that we always have a unique solution.
+as defined in section {\color{red} REF}. In Appendix B of \citet{zou1992incomplete} it is shown that for the linear data assimilation problem it is possible to obtain a unique analysis state over a specific assimilation window with no background term if the rank of $\hat{\textbf{H}}$ is equal to $n$, the size of $\textbf{x}_0$. For the non-linear data assimilation problem the rank of $\hat{\textbf{H}}$ being equal to $n$ ensures a locally unique analysis can be found without including a background term. In practice a background term is typically included in the cost function for 4D-Var data assimilation which regularises the problem and means that we always have a unique solution.
 
-\section{Information Content Measures} \label{sec:IC}%%%%%%%%%%%%%%%%%%%%%% 
+\section{Information content measures} \label{sec:IC}%%%%%%%%%%%%%%%%%%%%%% 
 
 In data assimilation we combine prior estimates with observations to improve our knowledge of the state of a system. In this process some observations will have a greater impact on our results than others. Many measures exist for understanding observation impact on the analysis.
 
-Information content measures have been used to quantify the different levels of information provided by observations in the development of satellite instruments \citep{stewart2008correlated, engelen2004information} and in operational data assimilation schemes \citep{fisher2003estimation, singh2013practical}. In \citet{Fowler2013} it is discussed that in these operational schemes observation information content measures have been used for
+Information content measures have been used to quantify the different levels of information provided by observations in the development of satellite instruments \citep{stewart2008correlated, engelen2004information} and in operational data assimilation schemes \citep{fisher2003estimation, singh2013practical}. In \citet{Fowler2013} it is discussed that in these operational schemes information content measures have been used for
 \begin{itemize}
-\item Removing observation with a lesser impact in order to improve the efficiency of the assimilation process \citet{rabier2002channel, singh2013practical, rodgers1998information}
-\item 
-\item
+\item Removing observations with a lesser impact in order to improve the efficiency of the assimilation process \citep{rabier2002channel, singh2013practical, rodgers1998information}.
+\item Diagnosing erroneous observations and assumed statistics \citep{desroziers2009posteriori}.
+\item Improving data assimilation results by adding observations which theoretically have a high impact. Defining target observations \citep{palmer1998singular}. Designing new observing systems \citep{wahba1985design, eyre1990information}. 
 \end{itemize}
 
 For the following measures the data assimilation problem is assumed to be Gaussian with a linear function mapping the state to  observation space (\textbf{H}), following the derivation from \citet{kalnay2003atmospheric} we have,
 \begin{equation}
-\textbf{x}_{a} = \textbf{x} + \textbf{K}(\textbf{y} - \textbf{H}\textbf{x}_{b}), \label{eqn:analysis}
+\textbf{x}_{a} = \textbf{x}_{b} + \textbf{K}(\textbf{y} - \textbf{H}\textbf{x}_{b}), \label{eqn:analysis}
 \end{equation}
 where $\textbf{K}$ is the Kalman gain matrix,
 \begin{equation}
@@ -77,65 +77,81 @@ where $\textbf{K}$ is the Kalman gain matrix,
 \end{equation}
 In order to consider observations over a 4D-Var time window we rewrite equation~\eqref{eqn:analysis} as,
 \begin{equation}
-\textbf{x}_{a} = \textbf{x} + \hat{\textbf{K}}(\hat{\textbf{y}} - \hat{\textbf{H}}\textbf{x}_{b}),
+\textbf{x}_{a} = \textbf{x}_{b} + \hat{\textbf{K}}(\hat{\textbf{y}} - \hat{\textbf{H}}\textbf{x}_{b}),
 \end{equation}
 using the defined matrices in section {\color{red} REF}, with $\hat{\textbf{K}} = (\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}\hat{\textbf{H}} + \textbf{B}^{-1})^{-1}\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}.$ 
 
-\citep{fisher2003estimation} **Reference about SIC and DFS being used in operational atmospheric DA.
-\citep{singh2013practical} **Ref about using fischer mat, dfs and SIC for data pruning to produce similar results.
+Making the assumption of a linear and Gaussian data assimilation problem is clearly a limitation. These measures are therefore limited to a period where the forecast model remains reasonably linear. The implications of assuming Gaussian error statistics are discussed in \citet{Fowler2013}.
 
-\subsection{Sensitivity of analysis to observations}
+%\citep{fisher2003estimation} **Reference about SIC and DFS being used in operational atmospheric DA.
 
+%\citep{singh2013practical} **Ref about using fischer mat, dfs and SIC for data pruning to produce similar results.
 
-\subsection{Shannon Information Content}%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sensitivity of analysis to observations} \label{sec:inf_mat}
 
-In DA, Shannon Information Content ($SIC$) is a measure of the reduction in entropy given a set of observations. Entropy physically corresponds to the volume in state space taken up by the probability density function ($pdf$) describing the knowledge of the state. When a measurement is made, the volume of this $pdf$ decreases. The $SIC$ of the measurement is a measure of the factor by which the $pdf$ decreases \citep{rodgers2000inverse}. If $P_b(x)$ is our knowledge of the state before an observation and $P_o(x|y)$ is our knowledge after an observation then we have entropies,
-\[
-S[P_b(x)] = - \int P_b(x)\text{log}_2[P_b(x)]dx
- \hspace{5mm} \text{and} \hspace{5mm} 
-S[P_o(x|y)] = - \int P_o(x|y)\text{log}_2[P_o(x|y)]dx.
-\]
-The entropy reduction, or $SIC$, due to the observation is then,
-\begin{equation} \label{shaic}
-SIC =  S[P_b(x)]-S[P_o(x|y)].
-\end{equation}
-If we assume all $pdfs$ are Gaussian and use the natural logarithm as opposed to $\text{log}_2$ (for algebraic convenience) \cite{rodgers2000inverse}, the entropy of a multivariate Gaussian distruibution for a vector $\textbf{x}$ with $n$ elements (before and after observations) can be derived as,
-\begin{equation} \label{SB}
- S[P_b(\textbf{x})] = n\text{ln}(2\pi e)^{\frac{1}{2}}+\frac{1}{2}\text{ln}\begin{vmatrix}\bf{B}\end{vmatrix}
-\end{equation}
-and
-\begin{equation} \label{SA}
- S[P_o(\textbf{x}|\textbf{y})] = n\text{ln}(2\pi e)^{\frac{1}{2}}+\frac{1}{2}\text{ln}\begin{vmatrix}\bf{A}\end{vmatrix}
-\end{equation}
-where $\bf{B}$ is the background error covariance matrix and $\bf{A}$ is the analysis error covariance matrix. Combining equations \ref{shaic}, \ref{SB} and \ref{SA} we can write the $SIC$ as,
+The influence matrix measures the sensitivity of the analysis in observation space to the observations \citep{Cardinali2004} and is defined by,
 \begin{equation}
-SIC=\frac{1}{2}\text{ln}\frac{\begin{vmatrix} \bf{B} \end{vmatrix}}{\begin{vmatrix} \bf{A} \end{vmatrix}}.
-\end{equation}•
-{\color{red}Where A is ... and for the 4dvar case becomes... specify}
-
-\subsection{Degrees of Freedom for Signal} \label{DFSintro}%%%%%%%%%%%%%%%%%%%%%%
-
-The degrees of freedom for signal ($DFS$) indicates the number of elements of the state that have been measured by the observations. If we consider a state vector $\textbf{x}$ with $n$ elements (or $n$ degrees of freedom) then the maximum value the $DFS$ could obtain would be $n$, in this case all elements of the state would have been measured. Conversely if $DFS = 0$ then no elements of the state would have been measured by our observations \citep{Fowler2013}.
-
-We have symmetric positive definite background and analysis error covariance matrices $\bf{B}$ and $\bf{A}$. The eigenvalues of each matrix gives a representation for the uncertainty in the direction of the associated eigenvector, thus, by comparing the eigenvalues of both matrices we can determine the reduction in uncertainty given a set of observations \citep{stewart2008correlated}.
-
-In order to do this we take $\mathbf{B}^{\frac{-1}{2}}$ such that $\mathbf{B}^{-1} = \mathbf{B}^{\frac{-1}{2}}\mathbf{B}^{\frac{-1}{2}}$. We now take $\bf{Q}$ to be the orthogonal matrix composed of the eigenvectors of $\mathbf{B}^{\frac{-1}{2}}\mathbf{A}\mathbf{B}^{\frac{-1}{2}}$ we have,
+\textbf{S} = \frac{\partial \textbf{H}\textbf{x}_{a}}{\partial \textbf{y}}. \label{eqn:inf_mat}
+\end{equation}
+From equation~\eqref{eqn:analysis} we see that,
 \begin{equation}
-\mathbf{Q}^{T}\bigg(\mathbf{B}^{\frac{-1}{2}}\mathbf{A}\mathbf{B}^{\frac{-1}{2}}\bigg)\mathbf{Q} = \bm{\Lambda},
-\end{equation}• 
+\textbf{S} = \textbf{K}^{T}\textbf{H}^{T},
+\end{equation}
+here $\textbf{S}$ will be a $p \times p$ matrix, where $p$ is the number of observations. The diagonal elements of $\textbf{S}$ are $\textbf{S}_{i,i} = \frac{\partial (\textbf{H}\textbf{x}_{a})_{i}}{\partial \textbf{y}_{i}}$ and represent the `self-sensitivity' of the $i^{th}$ modelled observation to the $i^{th}$ observation. The off-diagonal elements of $\textbf{S}$ represent the `cross-sensitivity' and are given by $\textbf{S}_{i,j} = \frac{\partial (\textbf{H}\textbf{x}_{a})_{i}}{\partial \textbf{y}_{j}}$. If we wish to consider the influence matrix for observations over a 4D-Var time window we can re-write equation~\eqref{eqn:inf_mat} as,
 \begin{equation}
-\mathbf{Q}^{T}\bigg(\mathbf{B}^{\frac{-1}{2}}\mathbf{B}\mathbf{B}^{\frac{-1}{2}}\bigg)\mathbf{Q} = \bm{I}_{n\times n}
-\end{equation}•
-where $\bm{\Lambda}$ is a diagonal matrix. Each diagonal element of our transformed $\bf{B}$ is equal to one and corresponds to one degree of freedom. The diagonal elements of $\bm{\Lambda}$ correspond to the matrix's eigenvalues and can be interpreted as the relative reduction in variance for each of the $n$ degrees of freedom \cite{singh2013practical}. We can then define the $DFS$ as,
+\textbf{S} = \frac{\partial \hat{\textbf{H}}\textbf{x}_{a}}{\partial \hat{\textbf{y}}} = \hat{\textbf{K}}^{T}\hat{\textbf{H}}^{T}. \label{eqn:4dinf_mat}
+\end{equation}
+The Kalman gain matrix $\hat{\textbf{K}}$ can be re-written as,
+\begin{equation}
+\hat{\textbf{K}} = \textbf{A}\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}, \label{eqn:analysis_kgain}
+\end{equation}
+where $\textbf{A}$ is the analysis error covariance,
+\begin{equation}
+\textbf{A} = (\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}\hat{\textbf{H}} + \textbf{B}^{-1})^{-1}.
+\end{equation}
+Inserting equation~\eqref{eqn:analysis_kgain} into \eqref{eqn:4dinf_mat} we find,
+ \begin{equation}
+ \textbf{S} = \hat{\textbf{R}}^{-1}\hat{\textbf{H}}\textbf{A}\hat{\textbf{H}}^{T}.
+ \end{equation}
+We can therefore see the sensitivity of the analysis to observations is inversely proportional to the observation error and proportional to the analysis error. This means that the most influential observations are those with the smallest error variance providing information about regions of state space with the largest prior error \citep{Cardinali2004}.
+
+\subsection{Degrees of freedom for signal} \label{DFSintro}%%%%%%%%%%%%%%%%%%%%%%
+
+The degrees of freedom for signal ($dfs$) indicates the number of elements of the state that have been measured by the observations. If we consider a state vector $\textbf{x}$ with $n$ elements (or $n$ degrees of freedom) then the maximum value the $dfs$ could obtain would be $n$, in this case all elements of the state would have been measured. Conversely if $dfs = 0$ then no elements of the state would have been measured by our observations \citep{Fowler2013}.
+
+For symmetric positive definite prior and posterior error covariance matrices $\bf{B}$ and $\bf{A}$, we can define the degrees of freedom for signal by means of a transform $\textbf{L}$ that reduces the prior error covariance matrix, $\textbf{B}$ to the $n \times n$ identity \citep{fisher2003estimation}. Each diagonal element of the transformed matrix $\textbf{B}$ then corresponds to a single degree of freedom with the trace being equal to $n$, the total degrees of freedom. 
+
+The transform $\textbf{L}$ can also be represented by $\textbf{Q}^{T}\textbf{L}$, where $\textbf{Q}$ is an orthogonal matrix. So that $\textbf{Q}^{T}\textbf{L}\textbf{B}\textbf{L}^{T}\textbf{Q} = \textbf{Q}^{T}\textbf{Q} = \textbf{I}_{n \times n}$. By defining $\textbf{Q}$ to be the matrix of the eigenvectors of $\textbf{L}\textbf{A}\textbf{L}^{T}$, we reduce $\textbf{B}$ to the identity and $\textbf{L}\textbf{A}\textbf{L}^{T}$ to the diagonal matrix of its eigenvalues, $\bm{\Lambda}$. The eigenvalues $\lambda_{i}$ of $\textbf{L}\textbf{A}\textbf{L}^{T}$ can be interpreted as the fractional reduction in uncertainty for the $n$ state members. If an eigenvalue is close to zero the corresponding state member has been well observed, if it is close to one the corresponding state member has not been constrained by the assimilated observations \citep{stewart2008correlated}. We then define the degrees of freedom for signal as,
 \begin{equation}
 \begin{split}
-DFS & = \text{trace}(\mathbf{I}_{n\times n} - \bm{\Lambda}) \\
+dfs & = \text{trace}(\textbf{Q}^{T}\textbf{L}\textbf{B}\textbf{L}^{T}\textbf{Q} - \textbf{Q}^{T}\textbf{L}\textbf{A}\textbf{L}^{T}\textbf{Q}) \\
+       & = \text{trace}(\mathbf{I}_{n\times n} - \bm{\Lambda}) \\
        & = n - \text{trace}(\bm{\Lambda}) \\
-       & = n - \text{trace}(\mathbf{B}^{\frac{-1}{2}}\mathbf{A}\mathbf{B}^{\frac{-1}{2}}) \\
+       & = n - \text{trace}(\textbf{L}\textbf{A}\textbf{L}^{T}) \\
        & = n - \text{trace}(\mathbf{B}^{-1}\mathbf{A}).
 \end{split}
 \end{equation}
-{\color{red} A is as defined in sec  REF}.
+In \citet{rodgers2000inverse} it is shown that the $dfs$ can also be calculated as the trace of the influence matrix $\textbf{S}$ (defined in section~\ref{sec:inf_mat}) with,
+\begin{equation}
+dfs = \text{trace}(\textbf{S}) = \sum_{i} \lambda_{i},
+\end{equation}
+where $\lambda_{i}$ is the $i^{th}$ eigenvalue of $\textbf{S}$.
+
+\subsection{Shannon information content}%%%%%%%%%%%%%%%%%%%%%%
+
+Shannon Information Content ($SIC$) is a measure of the reduction in entropy (uncertainty) given a set of observations. When a measurement is made, the entropy or uncertainty in our state decreases. The $SIC$ of an observation is a measure of the factor by which the uncertainty decreases \citep{cover1991elements}. We can define this using the prior, $p(\textbf{x})$, and posterior, $p(\textbf{x}|\textbf{y})$, distributions as,
+\begin{equation}
+SIC = \int p(\textbf{x})\text{ln}p(\textbf{x}) d\textbf{x} - \int p(\textbf{y}) \int p(\textbf{x}|\textbf{y})\text{ln}p(\textbf{x}|\textbf{y})d\textbf{x}d\textbf{y}.
+\end{equation}
+From \citet{rodgers2000inverse}, for the Gaussian case $SIC$ becomes a function of the prior and posterior error covariance matrices with,
+\begin{equation}
+SIC=\frac{1}{2}\text{ln}\frac{\begin{vmatrix} \bf{B} \end{vmatrix}}{\begin{vmatrix} \bf{A} \end{vmatrix}}.
+\end{equation}
+The $SIC$ can also be defined in terms of the eigenvalues of the influence matrix $\textbf{S}$ with,
+\begin{equation}
+SIC = -\frac{1}{2} \sum_{i} ln | 1 - \lambda_{i} |
+\end{equation}
+where $\lambda_{i}$ is the $i^{th}$ eigenvalue of $\textbf{S}$. In \citet{eyre1990information} using $SIC$ is shown to be beneficial over solely measuring the change in error variances before and after assimilation as the $SIC$ also uses information about the change in error covariances. This is also true for the $dfs$.   
 
 \section{Results}
 
