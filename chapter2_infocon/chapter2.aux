@@ -33,10 +33,12 @@
 \newlabel{eqn:analysis_kgain}{{11}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Degrees of freedom for signal}{3}}
 \newlabel{DFSintro}{{2.2}{3}}
+\newlabel{eqn:dfs}{{14}{3}}
 \citation{rodgers2000inverse}
 \citation{eyre1990information}
 \citation{williams2005improved}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Shannon information content}{4}}
+\newlabel{eqn:sic}{{17}{4}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Results}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Chapter overview}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}DALEC1 observability}{4}}
@@ -49,66 +51,100 @@
 \newlabel{fig:D1_observability}{{1}{6}}
 \newlabel{eqn: D1_nee}{{23}{6}}
 \newlabel{neeeqn}{{25}{6}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Rank of $\mathaccentV {hat}05E{\textbf  {H}}$ for 5 observations of different types for both numeric and analytic implementations with DALEC1.\relax }}{7}}
-\newlabel{table: a_n_h_D1}{{1}{7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}DALEC1 information content}{7}}
-\newlabel{eqn:BmatD1}{{27}{7}}
 \citation{navon1998practical}
 \citation{ljung1998system}
 \citation{Jacquez1985}
 \citation{Paige1981}
-\newlabel{eqn:siclai}{{31}{8}}
-\newlabel{eqn:dfslai}{{32}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}DALEC2 observability}{8}}
-\newlabel{sec: D2_observability}{{3.4}{8}}
 \citation{press2007numerical}
-\newlabel{fig:D2_observabilityrank}{{2a}{9}}
-\newlabel{sub@fig:D2_observabilityrank}{{a}{9}}
-\newlabel{fig:D2_observabilitycond}{{2b}{9}}
-\newlabel{sub@fig:D2_observabilitycond}{{b}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Observability of DALEC2 for $\mathaccentV {hat}05E{\textbf  {H}}$ with an increasing number of NEE observations displayed alongside the condition number for the $\mathaccentV {hat}05E{\textbf  {H}}$ matrices.\relax }}{9}}
-\newlabel{fig:D2_observability}{{2}{9}}
-\newlabel{fig:D2_observailityrankcvt}{{3a}{10}}
-\newlabel{sub@fig:D2_observailityrankcvt}{{a}{10}}
-\newlabel{fig:D2_observabilitycondcvt}{{3b}{10}}
-\newlabel{sub@fig:D2_observabilitycondcvt}{{b}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Observability of the CVT DALEC2 for $\mathaccentV {hat}05E{\textbf  {R}}^{-1/2}\mathaccentV {hat}05E{\textbf  {H}}\textbf  {D}^{1/2}$ with an increasing number of NEE observations displayed alongside the condition number for the $\mathaccentV {hat}05E{\textbf  {R}}^{-1/2}\mathaccentV {hat}05E{\textbf  {H}}\textbf  {D}^{1/2}$ matrices.\relax }}{10}}
-\newlabel{fig:D2_cvtobservability}{{3}{10}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Rank of $\mathaccentV {hat}05E{\textbf  {H}}$ for 5 observations of different types for both numeric and analytic implementations with DALEC1.\relax }}{7}}
+\newlabel{table: a_n_h_D1}{{1}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}DALEC2 observability}{7}}
+\newlabel{sec: D2_observability}{{3.3}{7}}
+\newlabel{fig:D2_observabilityrank}{{2a}{8}}
+\newlabel{sub@fig:D2_observabilityrank}{{a}{8}}
+\newlabel{fig:D2_observabilitycond}{{2b}{8}}
+\newlabel{sub@fig:D2_observabilitycond}{{b}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Observability of DALEC2 for $\mathaccentV {hat}05E{\textbf  {H}}$ with an increasing number of NEE observations displayed alongside the condition number for the $\mathaccentV {hat}05E{\textbf  {H}}$ matrices.\relax }}{8}}
+\newlabel{fig:D2_observability}{{2}{8}}
+\newlabel{fig:D2_observailityrankcvt}{{3a}{9}}
+\newlabel{sub@fig:D2_observailityrankcvt}{{a}{9}}
+\newlabel{fig:D2_observabilitycondcvt}{{3b}{9}}
+\newlabel{sub@fig:D2_observabilitycondcvt}{{b}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Observability of the CVT DALEC2 for $\mathaccentV {hat}05E{\textbf  {R}}^{-1/2}\mathaccentV {hat}05E{\textbf  {H}}\textbf  {D}^{1/2}$ with an increasing number of NEE observations displayed alongside the condition number for the $\mathaccentV {hat}05E{\textbf  {R}}^{-1/2}\mathaccentV {hat}05E{\textbf  {H}}\textbf  {D}^{1/2}$ matrices.\relax }}{9}}
+\newlabel{fig:D2_cvtobservability}{{3}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}DALEC1 information content}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Information content for observations at a single time}{9}}
+\newlabel{sec:info_con_single_time}{{3.4.1}{9}}
+\newlabel{fig:D2_observailityrankwind}{{4a}{10}}
+\newlabel{sub@fig:D2_observailityrankwind}{{a}{10}}
+\newlabel{fig:D2_observabilitycondwind}{{4b}{10}}
+\newlabel{sub@fig:D2_observabilitycondwind}{{b}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Observability of DALEC2 for a $\mathaccentV {hat}05E{\textbf  {H}}$ with an increasing number of NEE observations randomly distributed through a 1 year assimilation window (left). Condition number for the $\mathaccentV {hat}05E{\textbf  {H}}$ matrices (right).\relax }}{10}}
+\newlabel{fig:D2_observabilitywind}{{4}{10}}
+\newlabel{eqn:BmatD1}{{27}{10}}
+\newlabel{fig:D2_observailityrankcvtwind}{{5a}{11}}
+\newlabel{sub@fig:D2_observailityrankcvtwind}{{a}{11}}
+\newlabel{fig:D2_observabilitycondcvtwind}{{5b}{11}}
+\newlabel{sub@fig:D2_observabilitycondcvtwind}{{b}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Observability of the CVT DALEC2 system for $\mathaccentV {hat}05E{\textbf  {R}}^{-1/2}\mathaccentV {hat}05E{\textbf  {H}}\textbf  {D}^{1/2}$ with an increasing number of NEE observations randomly distributed through a 1 year assimilation window (left). Condition number for the $\mathaccentV {hat}05E{\textbf  {R}}^{-1/2}\mathaccentV {hat}05E{\textbf  {H}}\textbf  {D}^{1/2}$ matrices (right).\relax }}{11}}
+\newlabel{fig:D2_cvtobservabilitywind}{{5}{11}}
+\newlabel{eqn:siclai}{{31}{11}}
+\newlabel{eqn:dfslai}{{32}{11}}
+\newlabel{eqn:sicC}{{33}{11}}
+\citation{Richardson200838}
+\newlabel{eqn:dfsC}{{34}{12}}
+\newlabel{eqn:sicnee}{{37}{12}}
+\newlabel{eqn:dfsnee}{{38}{12}}
+\newlabel{fig:sic_nee_oregon2007}{{6a}{13}}
+\newlabel{sub@fig:sic_nee_oregon2007}{{a}{13}}
+\newlabel{fig:temp_nee_oregon2007}{{6b}{13}}
+\newlabel{sub@fig:temp_nee_oregon2007}{{b}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces SIC for a single NEE observation changing throughout a years window using driving data from a pine stand in Oregon taken in 2007 (left). Temperature term \(e^{\Theta T^{i}}\) (where \(T^{i}\) is the mean daily temperature) using the same driving data (right).\relax }}{13}}
+\newlabel{fig:neeSIC_temp_comp}{{6}{13}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Correctness tests showing numeric and analytic values of information content calculated using 2007 driving data and parameter values from an Oregon pine forest.\relax }}{14}}
+\newlabel{table:correctness_test}{{2}{14}}
+\newlabel{eqn:sicneecfol}{{41}{14}}
+\newlabel{eqn:sicneecroo}{{42}{14}}
+\newlabel{eqn:sicneecwoo}{{43}{14}}
+\newlabel{eqn:sicneeclit}{{44}{14}}
+\newlabel{eqn:sicneecsom}{{45}{14}}
+\citation{brown2002measuring}
+\citation{husch2002forest}
+\citation{dahdouh2006empirical}
+\citation{Lefsky199983}
+\citation{le2011biomass}
+\citation{Fowler2012}
 \bibdata{../PhD}
 \bibcite{barnett1985introduction}{{1}{1985}{{Barnett and Cameron}}{{}}}
-\bibcite{Cardinali2004}{{2}{2004}{{Cardinali et~al.}}{{Cardinali, Pezzulli, and Andersson}}}
-\newlabel{fig:D2_observailityrankwind}{{4a}{11}}
-\newlabel{sub@fig:D2_observailityrankwind}{{a}{11}}
-\newlabel{fig:D2_observabilitycondwind}{{4b}{11}}
-\newlabel{sub@fig:D2_observabilitycondwind}{{b}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Observability of DALEC2 for a $\mathaccentV {hat}05E{\textbf  {H}}$ with an increasing number of NEE observations randomly distributed through a 1 year assimilation window (left). Condition number for the $\mathaccentV {hat}05E{\textbf  {H}}$ matrices (right).\relax }}{11}}
-\newlabel{fig:D2_observabilitywind}{{4}{11}}
-\bibcite{cover1991elements}{{3}{1991}{{Cover and Thomas}}{{}}}
-\bibcite{desroziers2009posteriori}{{4}{2009}{{Desroziers et~al.}}{{Desroziers, Berre, Chabot, and Chapnik}}}
-\bibcite{engelen2004information}{{5}{2004}{{Engelen and Stephens}}{{}}}
-\bibcite{eyre1990information}{{6}{1990}{{Eyre}}{{}}}
-\bibcite{fisher2003estimation}{{7}{2003}{{Fisher}}{{}}}
-\bibcite{Fowler2013}{{8}{2013}{{Fowler and {Van Leeuwen}}}{{}}}
-\bibcite{Jacquez1985}{{9}{1985}{{Jacquez and Greif}}{{}}}
-\newlabel{fig:D2_observailityrankcvtwind}{{5a}{12}}
-\newlabel{sub@fig:D2_observailityrankcvtwind}{{a}{12}}
-\newlabel{fig:D2_observabilitycondcvtwind}{{5b}{12}}
-\newlabel{sub@fig:D2_observabilitycondcvtwind}{{b}{12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Observability of the CVT DALEC2 system for $\mathaccentV {hat}05E{\textbf  {R}}^{-1/2}\mathaccentV {hat}05E{\textbf  {H}}\textbf  {D}^{1/2}$ with an increasing number of NEE observations randomly distributed through a 1 year assimilation window (left). Condition number for the $\mathaccentV {hat}05E{\textbf  {R}}^{-1/2}\mathaccentV {hat}05E{\textbf  {H}}\textbf  {D}^{1/2}$ matrices (right).\relax }}{12}}
-\newlabel{fig:D2_cvtobservabilitywind}{{5}{12}}
-\bibcite{johnson2005singular}{{10}{2005}{{Johnson et~al.}}{{Johnson, Hoskins, and Nichols}}}
-\bibcite{Joyner:2012:OSC:2110170.2110185}{{11}{2012}{{Joyner et~al.}}{{Joyner, \v {C}ert\'{\i }k, Meurer, and Granger}}}
-\bibcite{kalnay2003atmospheric}{{12}{2003}{{Kalnay}}{{}}}
-\bibcite{ljung1998system}{{13}{1998}{{Ljung}}{{}}}
-\bibcite{navon1998practical}{{14}{1998}{{Navon}}{{}}}
-\bibcite{Paige1981}{{15}{1981}{{Paige}}{{}}}
-\bibcite{palmer1998singular}{{16}{1998}{{Palmer et~al.}}{{Palmer, Gelaro, Barkmeijer, and Buizza}}}
-\bibcite{press2007numerical}{{17}{2007}{{Press et~al.}}{{Press, Teukolsky, Vetterling, and Flannery}}}
-\bibcite{rabier2002channel}{{18}{2002}{{Rabier et~al.}}{{Rabier, Fourri{\'e}, Chaf{\"a}i, and Prunet}}}
-\bibcite{rodgers1998information}{{19}{1998}{{Rodgers}}{{}}}
-\bibcite{rodgers2000inverse}{{20}{2000}{{Rodgers et~al.}}{{}}}
-\bibcite{singh2013practical}{{21}{2013}{{Singh et~al.}}{{Singh, Sandu, Jardak, Bowman, and Lee}}}
-\bibcite{stewart2008correlated}{{22}{2008}{{Stewart et~al.}}{{Stewart, Dance, and Nichols}}}
-\bibcite{wahba1985design}{{23}{1985}{{Wahba}}{{}}}
-\bibcite{williams2005improved}{{24}{2005}{{Williams et~al.}}{{Williams, Schwarz, Law, Irvine, and Kurpius}}}
-\bibcite{zou1992incomplete}{{25}{1992}{{Zou et~al.}}{{Zou, Navon, and Le~Dimet}}}
+\bibcite{brown2002measuring}{{2}{2002}{{Brown}}{{}}}
+\bibcite{Cardinali2004}{{3}{2004}{{Cardinali et~al.}}{{Cardinali, Pezzulli, and Andersson}}}
+\bibcite{cover1991elements}{{4}{1991}{{Cover and Thomas}}{{}}}
+\bibcite{dahdouh2006empirical}{{5}{2006}{{Dahdouh-Guebas and Koedam}}{{}}}
+\bibcite{desroziers2009posteriori}{{6}{2009}{{Desroziers et~al.}}{{Desroziers, Berre, Chabot, and Chapnik}}}
+\bibcite{engelen2004information}{{7}{2004}{{Engelen and Stephens}}{{}}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Information content in successive observations}{15}}
+\bibcite{eyre1990information}{{8}{1990}{{Eyre}}{{}}}
+\bibcite{fisher2003estimation}{{9}{2003}{{Fisher}}{{}}}
+\bibcite{Fowler2012}{{10}{2012}{{Fowler and {Jan Van Leeuwen}}}{{}}}
+\bibcite{Fowler2013}{{11}{2013}{{Fowler and {Van Leeuwen}}}{{}}}
+\bibcite{husch2002forest}{{12}{2002}{{Husch et~al.}}{{Husch, Beers, and Kershaw~Jr}}}
+\bibcite{Jacquez1985}{{13}{1985}{{Jacquez and Greif}}{{}}}
+\bibcite{johnson2005singular}{{14}{2005}{{Johnson et~al.}}{{Johnson, Hoskins, and Nichols}}}
+\bibcite{Joyner:2012:OSC:2110170.2110185}{{15}{2012}{{Joyner et~al.}}{{Joyner, \v {C}ert\'{\i }k, Meurer, and Granger}}}
+\bibcite{kalnay2003atmospheric}{{16}{2003}{{Kalnay}}{{}}}
+\bibcite{le2011biomass}{{17}{2011}{{Le~Toan et~al.}}{{Le~Toan, Quegan, Davidson, Balzter, Paillou, Papathanassiou, Plummer, Rocca, Saatchi, Shugart, et~al.}}}
+\bibcite{Lefsky199983}{{18}{1999}{{Lefsky et~al.}}{{Lefsky, Harding, Cohen, Parker, and Shugart}}}
+\bibcite{ljung1998system}{{19}{1998}{{Ljung}}{{}}}
+\bibcite{navon1998practical}{{20}{1998}{{Navon}}{{}}}
+\bibcite{Paige1981}{{21}{1981}{{Paige}}{{}}}
+\bibcite{palmer1998singular}{{22}{1998}{{Palmer et~al.}}{{Palmer, Gelaro, Barkmeijer, and Buizza}}}
+\bibcite{press2007numerical}{{23}{2007}{{Press et~al.}}{{Press, Teukolsky, Vetterling, and Flannery}}}
+\bibcite{rabier2002channel}{{24}{2002}{{Rabier et~al.}}{{Rabier, Fourri{\'e}, Chaf{\"a}i, and Prunet}}}
+\bibcite{Richardson200838}{{25}{2008}{{Richardson et~al.}}{{Richardson, Mahecha, Falge, Kattge, Moffat, Papale, Reichstein, Stauch, Braswell, Churkina, Kruijt, and Hollinger}}}
+\bibcite{rodgers1998information}{{26}{1998}{{Rodgers}}{{}}}
+\bibcite{rodgers2000inverse}{{27}{2000}{{Rodgers et~al.}}{{}}}
+\bibcite{singh2013practical}{{28}{2013}{{Singh et~al.}}{{Singh, Sandu, Jardak, Bowman, and Lee}}}
+\bibcite{stewart2008correlated}{{29}{2008}{{Stewart et~al.}}{{Stewart, Dance, and Nichols}}}
+\bibcite{wahba1985design}{{30}{1985}{{Wahba}}{{}}}
+\bibcite{williams2005improved}{{31}{2005}{{Williams et~al.}}{{Williams, Schwarz, Law, Irvine, and Kurpius}}}
+\bibcite{zou1992incomplete}{{32}{1992}{{Zou et~al.}}{{Zou, Navon, and Le~Dimet}}}

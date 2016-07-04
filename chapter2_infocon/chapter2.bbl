@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,6 +11,12 @@ S.~Barnett and R.~Cameron.
 \newblock Oxford Applied Mathematics and Computing Science Series. Clarendon
   Press, 1985.
 \newblock ISBN 9780198596400.
+
+\bibitem[Brown(2002)]{brown2002measuring}
+S.~Brown.
+\newblock Measuring carbon in forests: current status and future challenges.
+\newblock \emph{Environmental pollution}, 116\penalty0 (3):\penalty0 363--372,
+  2002.
 
 \bibitem[Cardinali et~al.(2004)Cardinali, Pezzulli, and
   Andersson]{Cardinali2004}
@@ -26,6 +32,14 @@ C.~Cardinali, S.~Pezzulli, and E.~Andersson.
 T.~M. Cover and J.~A. Thomas.
 \newblock Elements of information theory. new york: J.
 \newblock \emph{Wiley and Sons}, 5:\penalty0 5, 1991.
+
+\bibitem[Dahdouh-Guebas and Koedam(2006)]{dahdouh2006empirical}
+F.~Dahdouh-Guebas and N.~Koedam.
+\newblock Empirical estimate of the reliability of the use of the point-centred
+  quarter method (pcqm): Solutions to ambiguous field situations and
+  description of the pcqm+ protocol.
+\newblock \emph{Forest Ecology and management}, 228\penalty0 (1):\penalty0
+  1--18, 2006.
 
 \bibitem[Desroziers et~al.(2009)Desroziers, Berre, Chabot, and
   Chapnik]{desroziers2009posteriori}
@@ -54,6 +68,15 @@ M.~Fisher.
   signal for large variational analysis systems}.
 \newblock European Centre for Medium-Range Weather Forecasts, 2003.
 
+\bibitem[Fowler and {Jan Van Leeuwen}(2012)]{Fowler2012}
+A.~Fowler and P.~{Jan Van Leeuwen}.
+\newblock {Measures of observation impact in non-Gaussian data assimilation}.
+\newblock \emph{Tellus A}, 64\penalty0 (0), apr 2012.
+\newblock ISSN 1600-0870.
+\newblock \doi{10.3402/tellusa.v64i0.17192}.
+\newblock URL
+  \url{http://www.tellusa.net/index.php/tellusa/article/view/17192}.
+
 \bibitem[Fowler and {Van Leeuwen}(2013)]{Fowler2013}
 A.~Fowler and P.~J. {Van Leeuwen}.
 \newblock {Observation impact in data assimilation: The effect of non-gaussian
@@ -62,6 +85,11 @@ A.~Fowler and P.~J. {Van Leeuwen}.
   65\penalty0 (1):\penalty0 1--16, 2013.
 \newblock ISSN 02806495.
 \newblock \doi{10.3402/tellusa.v65i0.20035}.
+
+\bibitem[Husch et~al.(2002)Husch, Beers, and Kershaw~Jr]{husch2002forest}
+B.~Husch, T.~W. Beers, and J.~A. Kershaw~Jr.
+\newblock \emph{Forest mensuration}.
+\newblock John Wiley \& Sons, 2002.
 
 \bibitem[Jacquez and Greif(1985)]{Jacquez1985}
 J.~A. Jacquez and P.~Greif.
@@ -92,6 +120,27 @@ D.~Joyner, O.~\v{C}ert\'{\i}k, A.~Meurer, and B.~E. Granger.
 E.~Kalnay.
 \newblock \emph{Atmospheric modeling, data assimilation, and predictability}.
 \newblock Cambridge university press, 2003.
+
+\bibitem[Le~Toan et~al.(2011)Le~Toan, Quegan, Davidson, Balzter, Paillou,
+  Papathanassiou, Plummer, Rocca, Saatchi, Shugart, et~al.]{le2011biomass}
+T.~Le~Toan, S.~Quegan, M.~Davidson, H.~Balzter, P.~Paillou, K.~Papathanassiou,
+  S.~Plummer, F.~Rocca, S.~Saatchi, H.~Shugart, et~al.
+\newblock The biomass mission: Mapping global forest biomass to better
+  understand the terrestrial carbon cycle.
+\newblock \emph{Remote sensing of environment}, 115\penalty0 (11):\penalty0
+  2850--2860, 2011.
+
+\bibitem[Lefsky et~al.(1999)Lefsky, Harding, Cohen, Parker, and
+  Shugart]{Lefsky199983}
+M.~A. Lefsky, D.~Harding, W.~Cohen, G.~Parker, and H.~Shugart.
+\newblock Surface lidar remote sensing of basal area and biomass in deciduous
+  forests of eastern maryland, \{USA\}.
+\newblock \emph{Remote Sensing of Environment}, 67\penalty0 (1):\penalty0 83 --
+  98, 1999.
+\newblock ISSN 0034-4257.
+\newblock \doi{http://dx.doi.org/10.1016/S0034-4257(98)00071-6}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0034425798000716}.
 
 \bibitem[Ljung(1998)]{ljung1998system}
 L.~Ljung.
@@ -137,6 +186,19 @@ F.~Rabier, N.~Fourri{\'e}, D.~Chaf{\"a}i, and P.~Prunet.
   interferometer radiances.
 \newblock \emph{Quarterly Journal of the Royal Meteorological Society},
   128\penalty0 (581):\penalty0 1011--1027, 2002.
+
+\bibitem[Richardson et~al.(2008)Richardson, Mahecha, Falge, Kattge, Moffat,
+  Papale, Reichstein, Stauch, Braswell, Churkina, Kruijt, and
+  Hollinger]{Richardson200838}
+A.~D. Richardson, M.~D. Mahecha, E.~Falge, J.~Kattge, A.~M. Moffat, D.~Papale,
+  M.~Reichstein, V.~J. Stauch, B.~H. Braswell, G.~Churkina, B.~Kruijt, and
+  D.~Y. Hollinger.
+\newblock Statistical properties of random \{CO2\} flux measurement uncertainty
+  inferred from model residuals.
+\newblock \emph{Agricultural and Forest Meteorology}, 148\penalty0
+  (1):\penalty0 38 -- 50, 2008.
+\newblock ISSN 0168-1923.
+\newblock \doi{http://dx.doi.org/10.1016/j.agrformet.2007.09.001}.
 
 \bibitem[Rodgers(1998)]{rodgers1998information}
 C.~D. Rodgers.

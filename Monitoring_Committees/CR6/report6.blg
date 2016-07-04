@@ -5,42 +5,42 @@ The style file: abbrvnat.bst
 Database file #1: ../../PhD.bib
 You've used 18 entries,
             2773 wiz_defined-function locations,
-            745 strings with 9738 characters,
-and the built_in function-call counts, 11270 in all, are:
-= -- 1009
-> -- 846
-< -- 8
-+ -- 285
-- -- 267
-* -- 1056
-:= -- 1784
-add.period$ -- 76
+            736 strings with 9814 characters,
+and the built_in function-call counts, 11599 in all, are:
+= -- 1014
+> -- 929
+< -- 6
++ -- 312
+- -- 294
+* -- 1101
+:= -- 1841
+add.period$ -- 70
 call.type$ -- 18
-change.case$ -- 140
+change.case$ -- 149
 chr.to.int$ -- 18
 cite$ -- 36
-duplicate$ -- 396
-empty$ -- 746
-format.name$ -- 291
-if$ -- 2298
+duplicate$ -- 397
+empty$ -- 741
+format.name$ -- 316
+if$ -- 2352
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 18
-newline$ -- 119
+newline$ -- 113
 num.names$ -- 72
-pop$ -- 233
+pop$ -- 258
 preamble$ -- 1
-purify$ -- 122
+purify$ -- 131
 quote$ -- 0
-skip$ -- 337
+skip$ -- 345
 stack$ -- 0
-substring$ -- 479
-swap$ -- 39
+substring$ -- 467
+swap$ -- 38
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 198
 warning$ -- 0
-while$ -- 90
+while$ -- 89
 width$ -- 0
-write$ -- 284
+write$ -- 271

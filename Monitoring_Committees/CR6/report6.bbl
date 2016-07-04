@@ -21,16 +21,6 @@ A.~A. Bloom and M.~Williams.
 \newblock \doi{10.5194/bg-12-1299-2015}.
 \newblock URL \url{http://www.biogeosciences.net/12/1299/2015/}.
 
-\bibitem[Cardinali et~al.(2004)Cardinali, Pezzulli, and
-  Andersson]{Cardinali2004}
-C.~Cardinali, S.~Pezzulli, and E.~Andersson.
-\newblock Influence-matrix diagnostic of a data assimilation system.
-\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
-  130\penalty0 (603):\penalty0 2767--2786, 2004.
-\newblock ISSN 1477-870X.
-\newblock \doi{10.1256/qj.03.205}.
-\newblock URL \url{http://dx.doi.org/10.1256/qj.03.205}.
-
 \bibitem[Ciais et~al.(2014)Ciais, Sabine, Bala, Bopp, Brovkin, Canadell,
   Chhabra, DeFries, Galloway, Heimann, et~al.]{ciais2014carbon}
 P.~Ciais, C.~Sabine, G.~Bala, L.~Bopp, V.~Brovkin, J.~Canadell, A.~Chhabra,
@@ -84,15 +74,6 @@ J.~Kimmins.
   nutrient cycling studies in british columbian coastal forests.
 \newblock \emph{Ecology}, pages 1008--1019, 1973.
 
-\bibitem[Langland and Baker(2004)]{Langland2004}
-R.~H. Langland and N.~L. Baker.
-\newblock {Estimation of observation impact using the NRL atmospheric
-  variational data assimilation adjoint system}.
-\newblock \emph{Tellus, Series A: Dynamic Meteorology and Oceanography},
-  56\penalty0 (3):\penalty0 189--201, 2004.
-\newblock ISSN 02806495.
-\newblock \doi{10.1111/j.1600-0870.2004.00056.x}.
-
 \bibitem[Niu et~al.(2014)Niu, Luo, Dietze, Keenan, Shi, Li, and Iii]{Niu2014}
 S.~Niu, Y.~Luo, M.~C. Dietze, T.~F. Keenan, Z.~Shi, J.~Li, and F.~S.~C. Iii.
 \newblock {The role of data assimilation in predictive ecology}.
@@ -100,6 +81,15 @@ S.~Niu, Y.~Luo, M.~C. Dietze, T.~F. Keenan, Z.~Shi, J.~Li, and F.~S.~C. Iii.
 \newblock ISSN 2150-8925.
 \newblock \doi{10.1890/ES13-00273.1}.
 \newblock URL \url{http://www.esajournals.org/doi/abs/10.1890/ES13-00273.1}.
+
+\bibitem[Pinnington et~al.(submitted 2016)Pinnington, Casella, Dance, Lawless,
+  Morrison, Nichols, Wilkinson, and Quaife]{Pinnington2016}
+E.~Pinnington, E.~Casella, S.~Dance, A.~Lawless, J.~Morrison, N.~Nichols,
+  M.~Wilkinson, and T.~Quaife.
+\newblock {Investigating the role of prior and observation error correlations
+  in improving a model forecast of forest carbon balance using four dimensional
+  variational data assimilation}.
+\newblock \emph{Agricultural and Forest Meteorology}, submitted 2016.
 
 \bibitem[Quaife et~al.(2008)Quaife, Lewis, {De Kauwe}, Williams, Law, Disney,
   and Bowyer]{Quaife2008}
@@ -127,22 +117,21 @@ P.~J. Smith, S.~L. Dance, M.~J. Baines, N.~K. Nichols, and T.~R. Scott.
   to a simple morphodynamic model.
 \newblock \emph{Ocean Dynamics}, 59\penalty0 (5):\penalty0 697--708, 2009.
 
-\bibitem[Taylor(2001)]{Taylor2001}
-K.~E. Taylor.
-\newblock {Summarizing multiple aspects of model performance in a single
-  diagram}.
-\newblock \emph{Journal of Geophysical Research}, 106\penalty0 (D7):\penalty0
-  7183, apr 2001.
-\newblock ISSN 0148-0227.
-\newblock \doi{10.1029/2000JD900719}.
-\newblock URL \url{http://doi.wiley.com/10.1029/2000JD900719}.
-
 \bibitem[Weston et~al.(2014)Weston, Bell, and Eyre]{weston2014accounting}
 P.~Weston, W.~Bell, and J.~Eyre.
 \newblock Accounting for correlated error in the assimilation of
   high-resolution sounder data.
 \newblock \emph{Quarterly Journal of the Royal Meteorological Society},
   140\penalty0 (685):\penalty0 2420--2429, 2014.
+
+\bibitem[Wilkinson et~al.(2016)Wilkinson, Crow, Eaton, and
+  Morison]{wilkinson2016}
+M.~Wilkinson, P.~Crow, E.~L. Eaton, and J.~I.~L. Morison.
+\newblock Effects of management thinning on co2 exchange by a plantation oak
+  woodland in south-eastern england.
+\newblock \emph{Biogeosciences}, 13\penalty0 (8):\penalty0 2367--2378, 2016.
+\newblock \doi{10.5194/bg-13-2367-2016}.
+\newblock URL \url{http://www.biogeosciences.net/13/2367/2016/}.
 
 \bibitem[Zobitz et~al.(2011)Zobitz, Desai, Moore, and
   Chadwick]{zobitz2011primer}
@@ -163,5 +152,11 @@ J.~M. Zobitz, D.~J.~P. Moore, T.~Quaife, B.~H. Braswell, A.~Bergeson, J.~a.
 \newblock ISSN 01681923.
 \newblock \doi{10.1016/j.agrformet.2014.04.011}.
 \newblock URL \url{http://dx.doi.org/10.1016/j.agrformet.2014.04.011}.
+
+\bibitem[Zou et~al.(1992)Zou, Navon, and Le~Dimet]{zou1992incomplete}
+X.~Zou, I.~Navon, and F.~Le~Dimet.
+\newblock Incomplete observations and control of gravity waves in variational
+  data assimilation.
+\newblock \emph{Tellus A}, 44\penalty0 (4):\penalty0 273--296, 1992.
 
 \end{thebibliography}

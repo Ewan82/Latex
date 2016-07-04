@@ -41,7 +41,7 @@
 \begin{itemize}
 \item Automatic differentiation for DALEC2 tangent linear model in Python (AlgoPy package). {\color{yellow} $\blacksquare$}
 \item Description of Leaf Area Index (LAI) measurement campaign (ceptometer, hemispherical photographs and litter traps). {\color{yellow} $\blacksquare$}
-\item Outline of woody biomass measurements using point-centred quarter method.
+\item Outline of woody biomass measurements using point-centred quarter method. {\color{yellow} $\blacksquare$}
 \end{itemize}
 
 
@@ -52,14 +52,13 @@
 \item Investigation into effect of including parameter-state error correlations in the background error covariance matrix, $\textbf{B}$, and correlations between observation errors in time in the observation error covariance matrix, $\textbf{R}$. {\color{green} $\blacksquare$}
 \item Results: Including parameter-state error correlations in $\textbf{B}$ can significantly improve data assimilation forecast results. Including serial correlations between NEE observation errors in $\textbf{R}$ also improves the assimilation forecast and we expect this to have a greater impact when assimilating more than one data stream. {\color{green} $\blacksquare$}
 \item Example experiments: varying day of leaf on parameter in model to see effect of phenology and growing season length on carbon sequestration (work with Forest Research). {\color{green} $\blacksquare$}
-\item Future work: Use Deroziers method to improve our estimates of both $\textbf{B}$ and $\textbf{R}$. This will involve changing the Deroziers diagnostic so that it is applicable to a time window of observations in 4D-Var. Investigate the effect on our results from the data assimilation experiments. Using twin experiments with known error covariances to validate method. {\color{red} $\blacksquare$}
 \end{itemize}
 
 
 \section{Observability and information content in carbon balance observations with DALEC1 \& 2} \label{sec:ic}
 \begin{itemize}
 \item Assess the observability of the system for both DALEC1 and DALEC2 in order to see if we can find a unique analysis with the observational information alone. System is observable for observations of NEE for both DALEC1 state estimation case and DALEC2 joint parameter and state estimation case. {\color{green} $\blacksquare$}
-\item Information content measures: Shannon information content, degrees of freedom for signal, influence matrix.
+\item Information content measures: Shannon information content, degrees of freedom for signal, influence matrix. {\color{green} $\blacksquare$}
 \item DALEC1
 \begin{itemize}
 \item Introduce explicit expressions for information content for observations relating to DALEC1 at a single time. {\color{green} $\blacksquare$}
@@ -94,6 +93,7 @@
 \section{Conclusion}
 \begin{itemize}
 \item Summary and future work. {\color{red} $\blacksquare$}
+\item Future work example: Use Deroziers method to improve our estimates of both $\textbf{B}$ and $\textbf{R}$. This will involve changing the Deroziers diagnostic so that it is applicable to a time window of observations in 4D-Var. Investigate the effect on our results from the data assimilation experiments. Using twin experiments with known error covariances to validate method. {\color{red} $\blacksquare$}
 \end{itemize}
 \hspace{10mm}
 
@@ -104,5 +104,12 @@ Key:
 {\color{yellow} $\blacksquare$} - Work in process, some results found and written up but may need extra attention.
 
 {\color{red} $\blacksquare$} - Work has yet to be started.
+
+
+\begin{sidewaysfigure}[ht]
+    \includegraphics[width=1.\textwidth]{Tasks.pdf}
+    \caption{Gantt chart for remaining work to be completed.}
+    \label{fig:PropProf}
+\end{sidewaysfigure}
 
 \end{document}

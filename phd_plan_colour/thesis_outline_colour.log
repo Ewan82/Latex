@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  13 JUN 2016 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  23 JUN 2016 11:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -382,29 +382,33 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
  [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-
-(./thesis_outline_colour.aux) ) 
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<Tasks.pdf, id=16, 845.1575pt x 597.23125pt>
+File: Tasks.pdf Graphic file (type pdf)
+ <use Tasks.pdf>
+Package pdftex.def Info: Tasks.pdf used on input line 110.
+(pdftex.def)             Requested size: 679.33757pt x 480.06389pt.
+ [3] [4 <./Tasks.pdf>] (./thesis_outline_colour.aux) ) 
 Here is how much of TeX's memory you used:
- 3839 strings out of 493117
- 51449 string characters out of 6135433
- 124387 words of memory out of 5000000
- 7199 multiletter control sequences out of 15000+600000
+ 3847 strings out of 493117
+ 51538 string characters out of 6135433
+ 124398 words of memory out of 5000000
+ 7206 multiletter control sequences out of 15000+600000
  14851 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,43p,757b,208s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
-sfonts/symbols/msam10.pfb>
-Output written on thesis_outline_colour.pdf (3 pages, 88238 bytes).
+ 38i,8n,43p,757b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on thesis_outline_colour.pdf (4 pages, 113289 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

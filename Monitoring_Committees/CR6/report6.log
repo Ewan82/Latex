@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  15 JUN 2016 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  29 JUN 2016 10:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -226,6 +226,25 @@ Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \f@ncyO@olf=\skip61
 \f@ncyO@orf=\skip62
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2014/05/13 v2.10 `tabularx' package (DPC)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen126
+\extrarowheight=\dimen127
+\NC@list=\toks28
+\extratabsurround=\skip63
+\backup@length=\skip64
+)
+\TX@col@width=\dimen128
+\TX@old@table=\dimen129
+\TX@old@col=\dimen130
+\TX@target=\dimen131
+\TX@delta=\dimen132
+\TX@cols=\count105
+\TX@ftn=\toks29
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -240,23 +259,20 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count105
-\Gm@cntv=\count106
-\c@Gm@tempcnt=\count107
-\Gm@bindingoffset=\dimen126
-\Gm@wd@mp=\dimen127
-\Gm@odd@mp=\dimen128
-\Gm@even@mp=\dimen129
-\Gm@layoutwidth=\dimen130
-\Gm@layoutheight=\dimen131
-\Gm@layouthoffset=\dimen132
-\Gm@layoutvoffset=\dimen133
-\Gm@dimlist=\toks28
+\Gm@cnth=\count106
+\Gm@cntv=\count107
+\c@Gm@tempcnt=\count108
+\Gm@bindingoffset=\dimen133
+\Gm@wd@mp=\dimen134
+\Gm@odd@mp=\dimen135
+\Gm@even@mp=\dimen136
+\Gm@layoutwidth=\dimen137
+\Gm@layoutheight=\dimen138
+\Gm@layouthoffset=\dimen139
+\Gm@layoutvoffset=\dimen140
+\Gm@dimlist=\toks30
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/placeins/placeins.sty
-Package: placeins 2005/04/18  v 2.2
-)
-\c@theorem=\count108
+\c@theorem=\count109
 
 (./report6.aux)
 \openout1 = `report6.aux'.
@@ -276,17 +292,17 @@ LaTeX Font Info:    ... okay on input line 25.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
-\scratchdimen=\dimen134
+\scratchcounter=\count110
+\scratchdimen=\dimen141
 \scratchbox=\box29
-\nofMPsegments=\count110
-\nofMParguments=\count111
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count112
-\MPscratchDim=\dimen135
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
-\everyMPtoPDFconversion=\toks30
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen142
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks32
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -391,80 +407,112 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
  [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<Amoddat_resid.pdf, id=16, 822.31845pt x 602.72394pt>
+File: Amoddat_resid.pdf Graphic file (type pdf)
+ <use Amoddat_resid.pdf>
+Package pdftex.def Info: Amoddat_resid.pdf used on input line 71.
+(pdftex.def)             Requested size: 230.18253pt x 168.70636pt.
 
-<straitsmap_threet_10m.png, id=21, 1300.86pt x 669.9429pt>
-File: straitsmap_threet_10m.png Graphic file (type png)
+<Bmoddat_resid.pdf, id=17, 822.31845pt x 602.72394pt>
+File: Bmoddat_resid.pdf Graphic file (type pdf)
+ <use Bmoddat_resid.pdf>
+Package pdftex.def Info: Bmoddat_resid.pdf used on input line 76.
+(pdftex.def)             Requested size: 230.18253pt x 168.70636pt.
 
-<use straitsmap_threet_10m.png>
-Package pdftex.def Info: straitsmap_threet_10m.png used on input line 90.
-(pdftex.def)             Requested size: 469.75502pt x 241.92549pt.
- <043exp2.jpg, id=23, 4769.82pt x 3179.88pt>
+<Cmoddat_resid.pdf, id=18, 822.31845pt x 602.72394pt>
+File: Cmoddat_resid.pdf Graphic file (type pdf)
+ <use Cmoddat_resid.pdf>
+Package pdftex.def Info: Cmoddat_resid.pdf used on input line 81.
+(pdftex.def)             Requested size: 230.18253pt x 168.70636pt.
+
+<Dmoddat_resid.pdf, id=19, 822.31845pt x 602.72394pt>
+File: Dmoddat_resid.pdf Graphic file (type pdf)
+ <use Dmoddat_resid.pdf>
+Package pdftex.def Info: Dmoddat_resid.pdf used on input line 86.
+(pdftex.def)             Requested size: 230.18253pt x 168.70636pt.
+
+[3] [4 <./Amoddat_resid.pdf> <./Bmoddat_resid.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Bmoddat_resid.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+> <./Cmoddat_resid.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Cmoddat_resid.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+> <./Dmoddat_resid.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Dmoddat_resid.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 2393) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10.95 Hemispherical pho-tographs [Jon-ck-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10.95 PCQM [Dahdouh-Guebas and
+ []
+
+<043exp2.jpg, id=237, 4769.82pt x 3179.88pt>
 File: 043exp2.jpg Graphic file (type jpg)
-
-<use 043exp2.jpg>
-Package pdftex.def Info: 043exp2.jpg used on input line 100.
+ <use 043exp2.jpg>
+Package pdftex.def Info: 043exp2.jpg used on input line 128.
 (pdftex.def)             Requested size: 164.41353pt x 109.60893pt.
- <252exp1.jpg, id=24, 4769.82pt x 3179.88pt>
+
+<252exp1.jpg, id=238, 4769.82pt x 3179.88pt>
 File: 252exp1.jpg Graphic file (type jpg)
-
-<use 252exp1.jpg>
-Package pdftex.def Info: 252exp1.jpg used on input line 106.
+ <use 252exp1.jpg>
+Package pdftex.def Info: 252exp1.jpg used on input line 134.
 (pdftex.def)             Requested size: 164.41353pt x 109.60893pt.
+ [5 <./043exp2.jpg> <./252exp1.jpg>] <hmat.pdf, id=242, 387.68588pt x 536.2426p
+t>
+File: hmat.pdf Graphic file (type pdf)
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4 <./straitsmap_threet_10m.png>] [5 <./043exp2.jpg> <./252exp1.jpg>]
-<ahfapar2.pdf, id=32, 711.65875pt x 500.87125pt>
-File: ahfapar2.pdf Graphic file (type pdf)
- <use ahfapar2.pdf>
-Package pdftex.def Info: ahfapar2.pdf used on input line 139.
-(pdftex.def)             Requested size: 375.80544pt x 264.48987pt.
- [6 <./ahfapar2.pdf>]
-Overfull \hbox (5.74812pt too wide) in paragraph at lines 193--194
+<use hmat.pdf>
+Package pdftex.def Info: hmat.pdf used on input line 156.
+(pdftex.def)             Requested size: 234.8775pt x 324.89008pt.
+ [6 <./hmat.pdf>] [7]
+Overfull \hbox (5.74812pt too wide) in paragraph at lines 215--216
 []\OT1/cmr/m/n/10.95 02/11/2015-03/11/2015 - BES Ecosys-tems and Cli-mate Chang
 e Mit-i-ga-tion Con-fer-ence, Charles
  []
 
-<egu2.jpg, id=41, 1391.1975pt x 642.4pt>
+<egu2.jpg, id=293, 1391.1975pt x 642.4pt>
 File: egu2.jpg Graphic file (type jpg)
  <use egu2.jpg>
-Package pdftex.def Info: egu2.jpg used on input line 209.
+Package pdftex.def Info: egu2.jpg used on input line 231.
 (pdftex.def)             Requested size: 187.89914pt x 86.75946pt.
- [7] (./report6.bbl
+ [8 <./egu2.jpg>]
+(./report6.bbl
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-
-[8 <./egu2.jpg>]) [9] (./report6.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ [9]) [10] (./report6.aux) ) 
 Here is how much of TeX's memory you used:
- 4926 strings out of 493117
- 71440 string characters out of 6135433
- 142804 words of memory out of 5000000
- 8274 multiletter control sequences out of 15000+600000
+ 5016 strings out of 493117
+ 72582 string characters out of 6135433
+ 145560 words of memory out of 5000000
+ 8361 multiletter control sequences out of 15000+600000
  15365 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,11n,43p,1360b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report6.pdf (9 pages, 9930728 bytes).
+ 38i,11n,43p,1418b,438s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmtt10.pfb>
+Output written on report6.pdf (10 pages, 8666912 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 342 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

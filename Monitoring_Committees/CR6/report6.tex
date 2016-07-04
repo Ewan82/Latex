@@ -4,16 +4,16 @@
 \usepackage[sort]{natbib}
 \usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx}
 \usepackage{wrapfig, caption, subcaption}
-\usepackage{fancyhdr}
+\usepackage{fancyhdr, tabularx}
 \usepackage[margin=1.0in]{geometry}
 \bibliographystyle{abbrvnat}
-\usepackage[section]{placeins}
+%\usepackage[section]{placeins}
 
 
 
 \title{Sixth Monitoring Committee Meeting \\\vspace{4mm} \normalsize{Understanding the Information Content in Diverse Observations of Forest Carbon Stocks and Fluxes for Data Assimilation and Ecological Modeling\\ NERC CASE partnership with Forest Research}}
 \author{\normalsize{E. Pinnington}}
-\date{\normalsize{Room 1L36, 10am July 6, 2016}}
+\date{\normalsize{Room 1L36, 10am, $6^{\text{th}}$ July 2016}}
 
 
 \newtheorem{theorem}{Theorem}[section]
@@ -30,21 +30,21 @@
 
 The land surface and oceans are responsible for removing around half of all human emitted carbon-dioxide from the atmosphere and therefore mediate the effect of anthropogenic induced climate change. Terrestrial ecosystem carbon uptake is the least understood process in the global carbon cycle \citep{ciais2014carbon}. It is therefore vital that we improve understanding of the carbon uptake of terrestrial ecosystems and their response to climate change in order to better constrain predictions of future carbon budgets. Measurements of ecosystem carbon balance are now routinely made in forests across the world using micrometeorological techniques, with many other relevant observations such as leaf area index and standing biomass also available \citep{baldocchi2008turner}. These observations provide a valuable resource for insight into the current state of the carbon dynamics for existing terrestrial ecosystems. 
 
-In order to produce future predictions of forest carbon balance we must use mathematical models describing these systems. However, these model predictions are often unreliable and have high error. The mathematical technique of data assimilation allows us to combine current observations and model predictions to find optimised parameters and states for our system and produce forecasts with greater confidences. Many efforts have been made to combine available data with models of forest carbon balance using data assimilation techniques \citep{zobitz2011primer, fox2009reflex, richardson2010estimating, Quaife2008, Zobitz2014, Niu2014}. Currently, however, the optimal set of observations for understanding the carbon balance of a forest is not known. In data assimilation it is extremely important to characterise the errors in prior estimates and observations as accurately as possible. In ecosystem model data assimilation the treatment of prior and observational errors has largely been simple, assuming all errors are independent and uncorrelated. Making the assumption of independent uncorrelated errors, when correlations do exist, has been shown to have a negative impact on data assimilation results in numerical weather prediction \citet{smith2009variational, weston2014accounting}. The aims of this PhD are:
+In order to produce future predictions of forest carbon balance we must use mathematical models describing these systems. However, these model predictions are often unreliable and have high error. The mathematical technique of data assimilation allows us to combine current observations and model predictions to find optimised parameters and states for our system and produce forecasts with greater confidences. Many efforts have been made to combine available data with models of forest carbon balance using data assimilation techniques \citep{zobitz2011primer, fox2009reflex, richardson2010estimating, Quaife2008, Zobitz2014, Niu2014}. Currently, however, the optimal set of observations for understanding the carbon balance of a forest is not known. In data assimilation it is important to characterise the errors in prior estimates and observations as accurately as possible. In ecosystem model data assimilation the treatment of prior and observational errors has largely been simple, assuming all errors are independent and uncorrelated. Making the assumption of independent uncorrelated errors, when correlations do exist, has been shown to have a negative impact on data assimilation results in numerical weather prediction \citep{smith2009variational, weston2014accounting}. The aims of this PhD are:
 
 \begin{itemize}
-\item Finding a better way to quantify background and observation errors and their correlations.
-\item Understanding which observations provide models of forest carbon balance with most information in a data assimilation framework, focusing on the CASE partners research site Alice Holt. Also, assessing the effect on the information content in observations when error correlations are specified.
+\item Finding a better way to quantify prior and observation errors and their correlations.
+\item Understanding which observations provide models of forest carbon balance with most information in a data assimilation framework, focusing on the CASE partners research site Alice Holt. Also assessing the effect of specifying error correlations on the information content in observations.
 \item Investigating the effect of disturbance on the Alice Holt research forest. The disturbance occurred in 2014 when one side of the forest was thinned and the other side left unmanaged. The flux tower measuring net ecosystem exchange of $\text{CO}_{2}$ is situated on the boundary between the two sides. 
 \end{itemize}
 
-In the previous report we discussed the draft paper that had been produced on the work implementing the DALEC2 forest carbon balance model \citep{Bloom2015} in a 4D-Var data assimilation routine for joint parameter and state estimation. We had moved on to work with the DALEC2 model from DALEC1 as it can be parameterised for both evergreen and deciduous forest sites (The CASE partners site is predominately deciduous) whereas the DALEC1 model from previous work was evergreen only. The presented draft paper explored the effect that different representations of prior and observation error statistics have on the assimilation. We found that specifying parameter-state error correlations in background error statistics can improve data assimilation forecast results significantly. Including correlations in time between observation errors was also found to improve assimilation forecast results. We also discussed the extensive field work campaign that had been undertaken in the previous report, where three different methods were used to measure the leaf area index at the CASE partners research flux tower site Alice Holt.    
+In the previous report we discussed the draft paper that had been produced on the work implementing the DALEC2 forest carbon balance model \citep{Bloom2015} in a 4D-Var data assimilation routine for joint parameter and state estimation. We had moved on to work with the DALEC2 model from DALEC1 as it can be parameterised for both evergreen and deciduous forest sites (The CASE partners site is predominately deciduous) whereas the DALEC1 model from previous work was evergreen only. The presented draft paper explored the effect that different representations of prior and observation error statistics had on the assimilation. We found that specifying parameter-state error correlations in prior error statistics can improve data assimilation forecast results significantly. Including correlations in time between observation errors was also found to improve assimilation forecast results. We also discussed the extensive field work campaign that had been undertaken in the previous report, where three different methods were used to measure the leaf area index at the CASE partners research flux tower site Alice Holt.    
 
-Since completing the last report the paper draft was finalised and submitted to the Agricultural and Forest Meteorology journal. The reviews for the paper have been received with the paper requiring minor revisions. These revisions have been addressed and we have recently re-submitted the manuscript and response to reviewers. The fieldwork described in the last report has also now been completed. Another fieldwork campaign to measure woody biomass, using the method of point-centred quarters \citep{dahdouh2006empirical}, at Alice Holt has also been completed.    
+Since completing the last report the paper draft was finalised and submitted to the Agricultural and Forest Meteorology journal \citep{Pinnington2016}. The reviews for the paper have been received with the paper requiring minor revisions. These revisions have been addressed and we have recently re-submitted the manuscript and response to reviewers. The fieldwork described in the last report has also now been completed. Another fieldwork campaign to measure woody biomass, using the method of point-centred quarters \citep{dahdouh2006empirical}, at Alice Holt has also been completed.    
 
 \section{Paper on 4D-Var with DALEC2 and prior and observation error correlations}
 
-In the attached paper Four-Dimensional Variational data assimilation (4D-Var) is implemented with the DALEC2 functional ecology model for joint parameter and state estimation. The assimilation routine is then subjected to rigorous testing to check for correctness. We outline novel methods to create a background error covariance matrix (describing our knowledge of the error in prior model estimates before data assimilation) that includes correlations and a novel method to include time correlations between observation errors in the observation error covariance matrix. The background and observation error covariance matrices are largely treated as diagonal in carbon balance model data assimilation. We show that including these correlations in our assimilation scheme can improve forecasts of NEE significantly. The root mean square error in the $14$ year forecast of daily NEE being reduced by $44\%$, decreasing from $4.22~\text{gCm}^{-2}\text{day}^{-1}$ to $2.38~\text{gCm}^{-2}\text{day}^{-1}$. We conducted 4 experiments to investigate the impact of the different matrices on the assimilation. In table~\ref{table:exps_tab} we show which matrices were used in each experiment. 
+In the attached paper Four-Dimensional Variational data assimilation (4D-Var) is implemented with the DALEC2 functional ecology model for joint parameter and state estimation. The assimilation routine is then subjected to rigorous testing to check for correctness. We outline novel methods to create a background error covariance matrix (describing our knowledge of the error in prior model estimates before data assimilation) that includes correlations and a novel method to include time correlations between observation errors in the observation error covariance matrix. The background and observation error covariance matrices are largely treated as diagonal in carbon balance model data assimilation. In our experiments we assimilate a single year (Jan 1999 - Dec 2000) of NEE observations and then run a 14 year (Jan 2000 - Dec 2013) forecast to judge the skill of our models after assimilation. We show that including these correlations in our assimilation scheme can improve forecasts of NEE significantly. The root mean square error in the $14$ year forecast of daily NEE is reduced by $44\%$, decreasing from $4.22~\text{g C m}^{-2}\text{ day}^{-1}$ to $2.38~\text{g C m}^{-2}\text{ day}^{-1}$. We conducted 4 experiments to investigate the impact of the different matrices on the assimilation. In Table~\ref{table:exps_tab} we show which matrices were used in each experiment. 
 
 \begin{table}[ht] 
 \begin{center}
@@ -63,37 +63,63 @@ In the attached paper Four-Dimensional Variational data assimilation (4D-Var) is
 \end{center} 
 \end{table}
 
-One of the main co
+One of the main comments from the received reviews was that, from the included plots, it was hard to judge the skill of the model forecast for NEE after assimilation. It was suggested that we include plots of the model-data differences averaged over the multiple years of the forecast. These are shown in Figure~\ref{fig:broke4dvar}. From these plots we can see that the largest errors in our posterior model forecast occur at the start of the season from April to June. This is a result of not capturing the phenology of the site correctly in our model forecast. We can see that these errors have been significantly reduced in Figure~\ref{fig:Dmoddat_resid} where all correlations are included in the assimilation. Even when including all correlations we still find the largest errors in the period from April to June, as a result of mistiming the date of green-up for our forest site. This suggests a flaw with our phenology model in DALEC2. We have therefore begun work on including a new phenology model in DALEC2 that will more closely match the phenology of the site. 
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{Amoddat_resid.pdf}
+        \caption{Experiment A}
+        \label{fig:Amoddat_resid}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{Bmoddat_resid.pdf}
+        \caption{Experiment B}
+        \label{fig:Bmoddat_resid}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{Cmoddat_resid.pdf}
+        \caption{Experiment C}
+        \label{fig:Cmoddat_resid}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{Dmoddat_resid.pdf}
+        \caption{Experiment D}
+        \label{fig:Dmoddat_resid}
+    \end{subfigure}
+    \caption{Net ecosystem exchange model-data differences for the four experiments. Here each point corresponds to the mean model-data difference for that day of the year over the 14 year model forecast (Jan 2000 - Dec 2013).}\label{fig:broke4dvar}
+\end{figure}
 
 
 \section{Field work} \label{sec:fieldwork}
 
-In order to address the third aim of the PhD from section~\ref{sec:intro} a field work campaign has been undertaken to measure Leaf Area Index (LAI) at the Alice Holt flux site. I have used three different methods to measure LAI:
+In the last monitoring report it was discussed that a field work campaign had been undertaken to measure Leaf Area Index (LAI) at the Alice Holt flux site, using three different methods. These measurements were taken along three transects capturing both thinned and unthinned sides of the forest. Since completing the last report I have completed this fieldwork campaign and am now beginning to process the collected data.
+
+I have also conducted a biomass survey of the Alice Holt flux site. This survey used the Point-Centred Quarters Method (PCQM) \citep{dahdouh2006empirical}. I have sampled along the three established transects. This will allow us to determine an estimate of the woody biomass for both sides of the forest. The observations that have been taken on the PhD are shown in Table~\ref{table:obs}. 
+
+These observations will be used in the third results chapter of the thesis. We plan to use all observations that I have made with the available observations of NEE for the thinned and unthinned sides of the forest (partitioned using a flux footprint model) for data assimilation. Two versions of the DALEC2 model will be parameterised (for the thinned and unthinned sides of the forest). This will allow us to see if there is a difference between the optimised parameters for the thinned/unthinned versions of DALEC2. We will test if by just assimilating NEE we can pick out a difference in LAI between the two sides. 
+
+We will investigate the effect of the disturbance further by parameterising DALEC2 for the thinned section of the forest both before and after the thinning occurred using the record of partitioned NEE observations. This will again allow us to see if the optimised parameters are consistent with the known changes to the forest ecosystem. From work already carried out at Forest Research it has been noted that there is no significant change in NEE between the thinned and unthinned sides of the forest, when considering only the flux towers partitioned record of NEE measurements \citep{wilkinson2016}. These experiments will hopefully allow us to answer questions we currently have about the effect of disturbance, for example:
 \begin{itemize}
-\item Using a ceptometer and an additional Photosynthetically Active Radiation (PAR) sensor. Here we measure below canopy PAR using the ceptometer while logging above canopy PAR using a data logger and PAR sensor positioned outside the canopy. We can then calculate LAI using the above and below canopy readings and a set of equations relying on some assumptions \citep{fassnacht1994comparison}. The ceptometer represents the quickest method for estimating LAI.
-\item Using hemispherical photographs as shown in figure~\ref{fig:hemiphotos}. Hemispherical photographs show a complete view of the sky in all directions, from these images we use software which can calculate the proportion of visible sky as a function of sky direction (gap fraction) this can then be used to calculate LAI  \citep{Jonckheere2004}.
-\item Using litter traps. Here we place litter traps under the canopy which catch the litter in a bag these bags are changed every week during the litter fall period and the litter sorted into species. We then dry the litter in an oven at $70^{\text{o}}\text{C}$ and weigh it. Towards the end of the season we scan a subsample for each species of 100 leaves  to find an area we then dry and weigh each subsample, a relationship between dry weight and leaf area can then be built and used to infer the total LAI once the whole seasons litter has been collected. This method of LAI calculation is the most time consuming.  
-\end{itemize}
-
-For this fieldwork we want to capture both the thinned and unthinned sides of the forest. For this reason I have taken measurements along three transects spanning both sides of the site. Figure~\ref{fig:map} shows a map of the Alice Holt flux site with the three transects and 10m sampling points marked. For the ceptometer I took measurements every 10m giving us 435 readings in total. However the hemispherical photographs were taken every 50m as they are more time consuming. This gave a total of 89 images. I mapped out these points in the forest using a GPS unit and pink tree spray paint. 
-
-I deployed a total of 6 litter traps with 3 positioned in the western side and 3 in the east. However Forest Research already have 10 other traps in operation giving us some valuable extra data. The 6 litter traps is not enough to describe the LAI for the research site \citep{kimmins1973some}. We will use these litter traps as a point of comparison and validation for the ceptometer and hemispherical photograph estimates of LAI made at the same locations. The litter traps have been sampled weekly throughout the autumn and winter which gives us an estimate to the rate of litter fall. This is another observation we can use for data assimilation and model validation.
-
-I have finished taking observations with the ceptometer and hemispherical camera of summer peak LAI. However I am continuing the process of managing the litter traps weekly as this seasons leaf fall period has been longer than usual. I will be taking measurements of spring green up next year in order to constrain the phenology in DALEC2 more accurately. I am now processing the observations I have already taken to find an LAI product. 
-
-At the start of the new year (2016) I will be conducting a biomass survey of the Alice Holt flux site. This will use the method of point centred quarters \citep{dahdouh2006empirical} to determine an estimate of the woody biomass for both sides of the forest. 
-
-We plan to use all observations that I have made and with the available observations of NEE for the thinned and unthinned sides of the forest (partitioned using a flux footprint model) for data assimilation. Two versions of the DALEC2 model will be parameterised (for the thinned and unthinned sides of the forest). This will allow us to see if there is a difference between the optimised parameters for the thinned/unthinned versions of DALEC2. We will test if by just assimilating NEE we can pick out a difference in LAI between the two sides. 
-
-We will investigate the effect of the disturbance further by parameterising DALEC2 for the thinned section of the forest both before and after the thinning occurred using the record of partitioned NEE observations. This will again allow us to see if the optimised parameters are consistent with the known changes to the forest ecosystem.   
-
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=1.\textwidth]{straitsmap_threet_10m.png}
-    \caption{Map of the Alice Holt flux site. The crosses are 10m sampling points with the purple diamonds being Forest Research mensuration plots where measurements of woody biomass are made. The black diamond shows the position of the flux tower on the boundary between the thinned (West) and unthinned (East) sides of the forest.}
-    \label{fig:map}
-\end{figure}
-
+\item Do we see evidence that the understory and remaining dominant trees are compensating for the removed trees in the thinned section of the forest by demonstrating increased Gross Primary Productivity (GPP), as a result of reduced competition and higher light availability?
+\item Is heterotrophic respiration from the soil reduced for the thinned section of forest meaning that the NEE remains similar to that of the unthinned section of forest?
+\end{itemize}  
+We hope that this work will form the basis for the next paper.
+\begin{table}[ht] 
+\begin{center}
+	\begin{tabularx}{\textwidth}{| l | X | X |}
+	\hline
+	Observation & Method & Number of observations \\ \hline
+	LAI & Ceptometer \citep{fassnacht1994comparison} & 435 \\ \hline
+	LAI & Hemispherical photographs \citep{Jonckheere2004} & 89  \\ \hline
+	LAI & Litter traps \citep{kimmins1973some} & 6 points measured throughout the season \\ \hline
+	Woody biomass & PCQM \citep{dahdouh2006empirical} & 114  \\ 
+	\hline
+	\end{tabularx}
+	\caption{Observations taken during the PhD at the Alice Holt research forest.}
+	\label{table:obs}
+\end{center} 
+\end{table}
 
 \begin{figure}[!h]
 \centering
@@ -113,36 +139,30 @@ We will investigate the effect of the disturbance further by parameterising DALE
 \label{fig:hemiphotos}
 \end{figure}
 
-\section{Current work and future plans}
+\section{Observability and information content}
 
-I am currently in the process of getting the attached paper finished and we hope to have it submitted early in the new year (2016). I have begun repeating the information content experiments using DALEC2. these experiments had been previously conducted using the original DALEC model. In addition to the measures previously used for DALEC (SIC and DFS), I will be extending this work to include other measures. The influence matrix measures the sensitivity of the analysis in observation space to the observations \citep{Cardinali2004}. The adjoint technique proposed by \cite{Langland2004}, approximates the sensitivity of a scalar forecast error norm to the observations . In \cite{Cardinali2004} the data assimilation problem is assumed to be Gaussian with a linear function mapping the state to observation space (\textbf{H}), such that,
-\begin{equation}
-\textbf{x}_{a} = \textbf{x}_{b} + \textbf{K}(\textbf{y} - \textbf{H}\textbf{x}_{b}), \label{daupdate}
-\end{equation}
-where \textbf{K} is the Kalman gain matrix, $\textbf{K} = (\textbf{H}^{T}\textbf{R}^{-1}\textbf{H} + \textbf{B}^{-1})^{-1}\textbf{H}^{T}\textbf{R}^{-1}$. The influence matrix is then defined as,
-\begin{equation}
-\textbf{S} = \frac{\partial {\mathbf{H}}\textbf{x}_a}{\partial {\textbf{y}}} = \textbf{K}^{T}\textbf{H}^{T}. \label{influmat}
-\end{equation}
-In order to consider observations over a 4D-Var time window we rewrite equation~\ref{daupdate} as,
-\begin{equation}
-\textbf{x}_{a} = \textbf{x}_{b} + \hat{\textbf{K}}(\hat{\textbf{y}} - \hat{\textbf{H}}\textbf{x}_{b}), \label{ass_xa}
-\end{equation}
-using the defined matrices in the attached paper, with $\hat{\textbf{K}} = (\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}\hat{\textbf{H}} + \textbf{B}^{-1})^{-1}\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}$. Equation~\ref{influmat} then becomes,
-\begin{equation}
-\textbf{S} = \frac{\partial {\hat{\mathbf{H}}}\textbf{x}_a}{\partial \hat{{\textbf{y}}}} = \hat{\textbf{K}}^{T}\hat{\textbf{H}}^{T}. \label{influmat2}
-\end{equation}
-In equation~\ref{ass_xa} we have also assumed that we have a linear model, $\mathbf{M}_{i,0}$, evolving our state from time 0 to time $i$. We know that our model is in fact nonlinear but have tested the tangent linear hypothesis for DALECV2 in the attached paper and have seen it to be a good approximation. 
+A first draft of the second results chapter of the thesis on observability and information content for the DALEC2 ecosystem carbon model is close to completion. In this work we consider:
+\begin{itemize}
+\item The observability of the system for DALEC1 and DALEC2 with the available observations. This will allow us to see if we can find a unique analysis with the observational information alone.
+\item The analytic information content in carbon balance observations for evergreen ecosystems with DALEC1 and how this information content varies over a time window.
+\item The numerical information content in observations for DALEC2 for both evergreen and deciduous ecosystems over a time window.
+\item The effect of including error correlations on the information content in observations.
+\end{itemize}
 
-Using these measures and an observing system simulation experiment that I have developed, I will produce another report investigating the best set of observations for understanding the carbon balance of a forest. We will explore the impact of using the correlated background and observational error covariance matrices defined in the attached paper on these information content measures. Using the twin experiments we will also investigate the effect of the correlated error covariance matrices on recovering the truth after assimilating a set of synthetic observations. I am also continuing with the fieldwork campaign as described in section~\ref{sec:fieldwork}. I have currently processed the ceptometer data to produce a Fraction of Absorbed Photosynthetically Active Radiation (FAPAR) product as shown in figure~\ref{fig:fapar}. Work to produce an LAI product is still ongoing. From figure~\ref{fig:fapar} we can see that the FAPAR produce demonstrates the distinct difference in canopy structure for the different sections of the forest site. Other future work will be based on the attached thesis outline and Gantt chart. 
+We find that for both DALEC1 and DALEC2 our system is observable when assimilating observations of NEE only (providing we have enough observations of NEE) as shown in Figure~\ref{fig:hmat}. This means that we have enough information from observations of NEE alone to find a locally unique analysis state over a specific assimilation window with no background term \citep{zou1992incomplete}. In practice a background term is typically included in the cost function for 4D-Var data assimilation which regularises the problem and means that we always have a unique solution.
 
-
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=.8\textwidth]{ahfapar2.pdf}
-    \caption{Map of the Alice Holt flux site displaying values of FAPAR for the 10m sampling points of the ceptometer in the described field work campaign in section~\ref{sec:fieldwork}.}
-    \label{fig:fapar}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\linewidth]{hmat.pdf}
+  \caption{Rank of the observability matrix $\hat{\textbf{H}}$ for increasing number of NEE observations over a years assimilation window. If the the rank of $\hat{\textbf{H}}$ is equal to 23 (the size of the state vector) then our system is observable and we can find a locally unique minimum of the observational part of the cost function.}
+  \label{fig:hmat}
 \end{figure}
 
+We show that both analytic and numerical implementations of the information content measures (Shannon information content, degrees of freedom for signal and the sensitivity of the analysis to observations) give the same results. This gives us confidence that for DALEC2 our numerical implementation of these measures is correct. For DALEC1 we find temporal variation in information content for an evergreen ecosystem with observations made at times with higher temperatures having higher information content, as discussed in previous reports. We also show that including correlations in time between observation errors reduces information content. This may explain some of the results found in the attached paper, where including correlations in time between observations of NEE improves the model forecast by reducing overfitting to the observations in the assimilation window. 
+
+For DALEC2 we find that for an evergreen ecosystem, information content in NEE observations is most reliant on temperature. However, for a deciduous site some of the NEE observations with the highest information content come during the period of green-up. This makes physical sense as the NEE for a deciduous site is controlled by phenology much more than for an evergreen site. We again find that including time correlations between observation errors reduces information content. This work is completed and in the process of being written up.
+
+One of the main issues with assimilating only NEE is that the measurement represents the difference between GPP and Total ecosystem Respiration (RT), with NEE = RT - GPP. This means that assimilation of NEE alone can result in the over/under-prediction of RT and GPP. We hope at the end of this results chapter to consider the assimilation of day and night time NEE by using a modified observation operator in the 4D-Var DALEC2 scheme. Here night time NEE is equal to RT as no GPP occurs during the night. We hope this will help us to better partition NEE between GPP and RT. We plan to investigate this using a set of twin experiments that have already been developed. If successful this will also prove helpful for the final results chapter investigating the effect of disturbance on the Alice Holt research forest.   
 
 \section{Professional and Academic Development}
 
@@ -214,7 +234,11 @@ During my PhD I have taken part in the following courses, workshops and activiti
 \end{figure}
 
 \item 12/05/2016 - Three minute thesis, Graduate School - Competed in the heats for the 3 minute thesis competition and progressed to the final at the Doctoral Research Conference
+
+\item 23/06/2016 - Participated in the three minute thesis final at the doctoral research conference Reading
 \end{itemize}
+
+
 
 \subsection{Demonstrating}
 During my PhD I have helped demonstrate on the following courses:
