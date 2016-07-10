@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  1 JUL 2016 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  10 JUL 2016 17:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -813,35 +813,72 @@ nclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./dalec2_obsrankcondcvtwind.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
->] <oregon2007SICnee.pdf, id=374, 433.62pt x 578.16pt>
+>] <oregon2007SICnee.pdf, id=374, 925.05597pt x 635.97598pt>
 File: oregon2007SICnee.pdf Graphic file (type pdf)
 
 <use oregon2007SICnee.pdf>
 Package pdftex.def Info: oregon2007SICnee.pdf used on input line 435.
-(pdftex.def)             Requested size: 211.38832pt x 281.85406pt.
- <oregon2007temp.pdf, id=375, 433.62pt x 578.16pt>
+(pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
+
+<oregon2007temp.pdf, id=375, 925.05597pt x 635.97598pt>
 File: oregon2007temp.pdf Graphic file (type pdf)
 
 <use oregon2007temp.pdf>
 Package pdftex.def Info: oregon2007temp.pdf used on input line 440.
-(pdftex.def)             Requested size: 211.38832pt x 281.85406pt.
+(pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
  [12] [13 <./oregon2007SICnee.pdf> <./oregon2007temp.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./oregon2007temp.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
->] [14] (./chapter2.bbl [15]
+>] [14] [15] <sic_succ_cf.pdf, id=466, 925.05597pt x 635.97598pt>
+File: sic_succ_cf.pdf Graphic file (type pdf)
+
+<use sic_succ_cf.pdf>
+Package pdftex.def Info: sic_succ_cf.pdf used on input line 590.
+(pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
+ <dfs_succ_cf.pdf, id=467, 925.05597pt x 635.97598pt>
+File: dfs_succ_cf.pdf Graphic file (type pdf)
+
+<use dfs_succ_cf.pdf>
+Package pdftex.def Info: dfs_succ_cf.pdf used on input line 595.
+(pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
+ <sic_succ_nee.pdf, id=468, 821.71463pt x 602.73962pt>
+File: sic_succ_nee.pdf Graphic file (type pdf)
+
+<use sic_succ_nee.pdf>
+Package pdftex.def Info: sic_succ_nee.pdf used on input line 608.
+(pdftex.def)             Requested size: 211.38832pt x 155.05313pt.
+ <dfs_succ_nee.pdf, id=469, 822.3263pt x 602.73962pt>
+File: dfs_succ_nee.pdf Graphic file (type pdf)
+
+<use dfs_succ_nee.pdf>
+Package pdftex.def Info: dfs_succ_nee.pdf used on input line 613.
+(pdftex.def)             Requested size: 211.38832pt x 154.94276pt.
+ [16 <./sic_succ_cf.pdf> <./dfs_succ_cf.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./dfs_succ_cf.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <./sic_succ_nee.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./sic_succ_nee.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./dfs_succ_nee.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./dfs_succ_nee.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>] (./chapter2.bbl [17]
 Underfull \hbox (badness 1292) in paragraph at lines 112--118
 []\OT1/ptm/m/n/10.95 D. Joyner, O. []Cert[]^^Pk, A. Meurer, and B. E. Granger. 
  Open source com-puter al-ge-bra sys-tems:
  []
 
-[16]) [17] (./chapter2.aux) ) 
+[18]) [19] (./chapter2.aux) ) 
 Here is how much of TeX's memory you used:
- 11095 strings out of 493117
- 190685 string characters out of 6135433
- 248917 words of memory out of 5000000
- 14337 multiletter control sequences out of 15000+600000
- 66989 words of font info for 160 fonts, out of 8000000 for 9000
+ 11129 strings out of 493117
+ 191304 string characters out of 6135433
+ 250031 words of memory out of 5000000
+ 14365 multiletter control sequences out of 15000+600000
+ 68494 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,16n,43p,10387b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvip
@@ -857,10 +894,10 @@ live/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/
 texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on chapter2.pdf (17 pages, 287335 bytes).
+Output written on chapter2.pdf (19 pages, 339384 bytes).
 PDF statistics:
- 512 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
+ 662 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

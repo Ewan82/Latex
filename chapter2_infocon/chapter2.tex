@@ -156,7 +156,7 @@ where $\lambda_{i}$ is the $i^{th}$ eigenvalue of $\textbf{S}$. In \citet{eyre19
 \section{Results}
 
 \subsection{Chapter overview}
-\textit{Draft:} In this chapter we aim to analyse the information content in the observations used for assimilation with the DALEC1 and DALEC2 model. We begin by considering the observability of our system to see if we have enough information from the observations available to us in order to construct a unique solution to our data assimilation problem. In practice we include a background term in our assimilation ({\color{red}REF DA section}) to ensure we can always find a locally unique solution. However, it is informative to show that observations alone provide us with enough information to find a unique solution.
+\textit{{\color{red}Draft, redo once chapter complete:}} In this chapter we aim to analyse the information content in the observations used for assimilation with the DALEC1 and DALEC2 model. We begin by considering the observability of our system to see if we have enough information from the observations available to us in order to construct a unique solution to our data assimilation problem. In practice we include a background term in our assimilation ({\color{red}REF DA section}) to ensure we can always find a locally unique solution. However, it is informative to show that observations alone provide us with enough information to find a unique solution.
 
 We then consider different information content measures applied to our system in order to show how the information content varies for the different observation types available to us for both DALEC1 and DALEC2. Using these measure also allows us to consider the effect of including error correlations in our data assimilation algorithm (see previous results chapter {\color{red}REF}) on the information content in the observations.
 
@@ -390,7 +390,7 @@ We then have from equation {\color{red}REF A mat eqn from DA section},
 \end{equation} 
 We can now derive the SIC and $dfs$ using equation \eqref{eqn:sic} and \eqref{eqn:dfs} as,
 \begin{equation}
-\text{SIC} = \frac{1}{2}\text{ln}\frac{\begin{vmatrix} \mathbf{B} \end{vmatrix}}{\begin{vmatrix} \mathbf{A} \end{vmatrix}}= \frac{1}{2}\text{ln}\frac{(c_{lma}^2 \sigma_{LAI,o}^{2}+\sigma_{cfol,b}^{2})}{c_{lma}^2 \sigma_{LAI,o}^{2}}
+\text{SIC} = \frac{1}{2}\text{ln}\frac{\begin{vmatrix} \mathbf{B} \end{vmatrix}}{\begin{vmatrix} \mathbf{A} \end{vmatrix}} = \frac{1}{2}\text{ln}\frac{(c_{lma}^2 \sigma_{LAI,o}^{2}+\sigma_{cfol,b}^{2})}{c_{lma}^2 \sigma_{LAI,o}^{2}}
 =\frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{cfol,b}^{2}}{c_{lma}^2 \sigma_{LAI,o}^{2}}\bigg) \label{eqn:siclai}
 \end{equation}
 and 
@@ -449,7 +449,7 @@ In Figure~\ref{fig:neeSIC_temp_comp} we show how closely SIC is related to mean 
 
 In Figure~\ref{fig:sic_nee_oregon2007} we have assumed constant prior and observation standard deviations. This is an accurate assumption for our prior errors. However, it has been shown that NEE errors are heteroskedastic \citep{Richardson200838} and therefore scale with the magnitude of the flux. This would reduce the magnitude of the results shown in Figure~\ref{fig:sic_nee_oregon2007}, as our standard deviation in observations of summer NEE would be larger, reducing the information content. Although the true NEE error is heteroskedastic for data assimilation the results in Figure~\ref{fig:sic_nee_oregon2007} suggest assuming a constant standard deviation is a good approximation, if our aim is to best fit the data. A larger standard deviation in summer observations of NEE will reduce their weight in the assimilation algorithm. This will mean our assimilation will attempt to fit the winter observations more closely than the summer observations. If in fact the summer observations are providing the most information about the fluxes of carbon through our system they will help constrain our state better than winter observations. Hence assuming a constant standard deviation for NEE errors may help improve data assimilation forecasts. {\color{red}TEST THIS??? (maybe with DALEC2? show improvement in forecast with constant $\sigma$ vs. $\sigma$ scaled by flux magnitude)}
 
-For Figure~\ref{fig:sic_nee_oregon2007} we have used a numerical implementation in Python to calculate the SIC varying for 365 days of driving data. It is important to test our numerical implementation for correctness. In table~\ref{table:correctness_test} we show the SIC and \(dfs\) calculated both analytically and numerically to check our numerical implementation for correctness. This gives us a degree of confidence that our implementation is also correct for DALEC2. In this table we have assumed constant prior and observation standard deviations for the carbon pools.
+For Figure~\ref{fig:sic_nee_oregon2007} we have used a numerical implementation in Python to calculate the SIC varying for 365 days of driving data. It is important to test our numerical implementation for correctness. In table~\ref{table:correctness_test} we show the SIC and \(dfs\) calculated both analytically and numerically. From this table we can see that both analytic and numerical implementations give us the same result to machine precision. This gives us a degree of confidence that our implementation is also correct for DALEC2. In this table we have assumed constant prior and observation standard deviations for the carbon pools.
 
 \begin{table}[ht] 
 %\begin{center}
@@ -532,9 +532,131 @@ In practice we cannot assume constant prior and observation errors across the di
 
 \subsubsection{Information content in successive observations}
 
-In section~\ref{sec:info_con_single_time} we investigate the information in observation for DALEC1 at a single time. In this section we will consider successive observations in time. It has been shown that the SIC in observations is additive with successive observations in time. The proof for this can be found in appendix A.1 of \citet{Fowler2012}.
+In section~\ref{sec:info_con_single_time} we investigate the information in observation for DALEC1 at a single time. In this section we will consider successive observations in time. It has been shown that the SIC in observations is additive with successive observations in time. The proof for this can be found in appendix A.1 of \citet{Fowler2012}. We can see this if we calculate the SIC for successive observations of foliar carbon, \(C_{fol}\). We have the linearised observation operator and observation error covariance matrix at time $t_i$,
+\begin{equation}
+\mathbf{H}_{i} = \frac{\partial C_{fol}^{i}}{\partial \textbf{x}_i} = \begin{pmatrix}
+1 & 0 & 0 & 0 & 0
+\end{pmatrix}
+\hspace{5mm} \text{and} \hspace{5mm}
+\mathbf{R}_i=\sigma_{cfol,o}^{2}.
+\end{equation}
+For two successive observations of \(C_{fol}\) we have,
+\begin{equation}
+\hat{\mathbf{H}}=
+\begin{pmatrix}
+\mathbf{H}_0 \\
+\mathbf{H}_1\mathbf{M}_0\\
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & 0 & 0 & 0 & 0 \\
+(1-\theta_{fol})+f_{fol}(1-f_{auto})\zeta^0 & 0 & 0 & 0 & 0\\
+\end{pmatrix}
+\end{equation}
+and
+\begin{equation}
+\hat{\mathbf{R}}=
+\begin{pmatrix}
+\mathbf{R}_0 & 0  \\
+0 & \mathbf{R}_1  \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+\sigma_{cfol,o}^{2} & 0  \\
+0 & \sigma_{cfol,o}^{2}  \\
+\end{pmatrix}.
+\end{equation}
+We then have,
+\begin{equation}
+SIC = \frac{1}{2}\text{ln}\frac{\begin{vmatrix} \mathbf{B} \end{vmatrix}}{\begin{vmatrix} \mathbf{A} \end{vmatrix}} =\frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{cfol,b}^{2}}{\sigma_{cfol,o}^{2}}+\frac{\sigma_{cfol,b}^{2}\eta_0^{2}}{\sigma_{cfol,o}^{2}} \bigg), \label{eq:sic_2cfol}
+\end{equation}
+where $\eta_i=(1-\theta_{fol})+f_{fol}(1-f_{auto})\zeta^{i}$. We see this is similar to equation~\eqref{eqn:sicC} for the SIC of a single carbon pool observation but with an added term evolved by the linearised model. Here the second term is multiplied by \(\eta_{0}^2\) which is the square of the first element of the linearised model \(\mathbf{M}_0\). We can continue adding more observations at successive times. For three observations at successive times we have,
+\begin{equation}
+SIC =\frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{cfol,b}^{2}}{\sigma_{cfol,o}^{2}}+\frac{\sigma_{cfol,b}^{2}\eta_0^{2}}{\sigma_{cfol,o}^{2}}+\frac{\sigma_{cfol,b}^{2}\eta_0^{2}\eta_1^{2}}{\sigma_{cfol,o}^{2}} \bigg),
+\end{equation}
+for four,
+\begin{equation}
+SIC =\frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{cfol,b}^{2}}{\sigma_{cfol,o}^{2}}+\frac{\sigma_{cfol,b}^{2}\eta_0^{2}}{\sigma_{cfol,o}^{2}}+\frac{\sigma_{cfol,b}^{2}\eta_0^{2}\eta_1^{2}}{\sigma_{cfol,o}^{2}}+\frac{\sigma_{cfol,b}^{2}\eta_0^{2}\eta_1^{2}\eta_2^{2}}{\sigma_{cfol,o}^{2}} \bigg).
+\end{equation}
+Using a simple proof by induction we find that for \(n\) successive observations we have,
+\begin{equation}
+SIC\text{ for }n\text{ successive observations of }C_{fol} = \frac{1}{2}\text{ln}\bigg(1+\frac{\sigma_{cfol,b}^{2}}{\sigma_{cfol,o}^{2}}\big(1+\sum_{k=0}^{n-2}\prod_{i=0}^{k}\eta_i^{2}\big)\bigg)
+\end{equation}
+This demonstrates that SIC is additive for successive observations in time. In Figure~\ref{fig:ic_succ_cf} we have plotted the SIC and \(dfs\) for increasing numbers of observations of \(C_{fol}\), using a year of meteorological driving data from a pine stand in Oregon. We see that as successive observations are added the information content tends to a limit where we are adding no new information with extra observations of \(C_{fol}\). For \(dfs\) this limit is one as we are only observing a single degree of freedom so cannot constrain more than a single element of the state. For SIC we add a decreasing amount of information as observations are made further away from the initial state. We find similar results for all other carbon pools. This suggests making observations of any individual carbon pool for a forest site too often is not cost effective as after just a few observations the information you are adding to your system begins to decrease. 
 
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{sic_succ_cf.pdf}
+        \caption{SIC for successive \(C_{fol}\) observations}
+        \label{fig:sic_succ_cf}
+    \end{subfigure}%
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{dfs_succ_cf.pdf}
+        \caption{\(dfs\) for successive \(C_{fol}\) observations}
+        \label{fig:dfs_succ_cf}
+    \end{subfigure}
+    \caption{SIC and \(dfs\) for as successive \(C_{fol}\) observations are added throughout a years window using driving data from a pine stand in Oregon taken in 2007.}
+    \label{fig:ic_succ_cf}
+\end{figure}
 
+In section~\ref{sec:info_con_single_time} it was shown that observations of NEE made during the summer had significantly higher information content than those made during winter for an evergreen forest site. In figure~\ref{fig:ic_succ_nee} we show that 27 days of successive winter NEE observations (made from January \(1^{\text{st}}\) 2007) are required to give the same information content as a single summer observation of NEE (taken on \( 22^{\text{nd}} \) June 2007).
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{sic_succ_nee.pdf}
+        \caption{SIC for successive NEE observations}
+        \label{fig:sic_succ_nee}
+    \end{subfigure} \hspace{5mm}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{dfs_succ_nee.pdf}
+        \caption{\(dfs\) for successive NEE observations}
+        \label{fig:dfs_succ_nee}
+    \end{subfigure}
+    \caption{Blue line: SIC and \(dfs\) for as successive NEE observations are added for 40 days from the \(1^{\text{st}}\) January 2007 using driving data from a pine stand in Oregon, green dotted line: SIC and \(dfs\) for a single summer observation of NEE made on \( 22^{\text{nd}} \) June 2007. }
+    \label{fig:ic_succ_nee}
+\end{figure}
+
+In chapter REF we have investigated the effect of including correlations in time between observation errors on the results from data assimilation with DALEC2. We can see the effect on the analytic representation of information content for two successive observations of \(C_{fol}\) when including an off-diagonal correlation term in the matrix \(\hat{\mathbf{R}}\). We have
+\begin{equation}
+\mathbf{H}_{i} = \frac{\partial C_{fol}^{i}}{\partial \textbf{x}_i} = \begin{pmatrix}
+1 & 0 & 0 & 0 & 0
+\end{pmatrix}
+\hspace{5mm} \text{and} \hspace{5mm}
+\mathbf{R}_i=\sigma_{cfol,o}^{2}.
+\end{equation}
+For two successive observations of \(C_{fol}\) we have,
+\begin{equation}
+\hat{\mathbf{H}}=
+\begin{pmatrix}
+\mathbf{H}_0 \\
+\mathbf{H}_1\mathbf{M}_0\\
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & 0 & 0 & 0 & 0 \\
+(1-\theta_{fol})+f_{fol}(1-f_{auto})\zeta^0 & 0 & 0 & 0 & 0\\
+\end{pmatrix}
+\end{equation}
+and
+\begin{equation}
+\hat{\mathbf{R}}=
+\begin{pmatrix}
+\mathbf{R}_0 & \sigma_{1,2}^{2}  \\
+\sigma_{2,1}^{2} & \mathbf{R}_1  \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+\sigma_{cfol,o}^{2} & \sigma_{1,2}^{2}  \\
+\sigma_{2,1}^{2} & \sigma_{cfol,o}^{2}  \\
+\end{pmatrix},
+\end{equation}
+here \(\hat{\mathbf{R}}\) is symmetric and we have \(\sigma_{1,2}^{2} = \sigma_{2,1}^{2} = \sigma_{corr}^{2}\). We then find,
+\begin{equation}
+SIC = \frac{1}{2}\text{ln}\frac{\begin{vmatrix} \mathbf{B} \end{vmatrix}}{\begin{vmatrix} \mathbf{A} \end{vmatrix}} =\frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{cfol,b}^{2}}{\sigma_{cfol,o}^{2} - \frac{\sigma_{corr}^{2}}{\sigma_{cfol,o}^{2}}}+\frac{\sigma_{cfol,b}^{2}\eta_0^{2}}{\sigma_{cfol,o}^{2} - \frac{\sigma_{corr}^{2}}{\sigma_{cfol,o}^{2}}} - \frac{2\sigma_{cfol,b}^{2}\sigma_{corr}\eta_0}{\sigma_{cfol,o}^{4} - \sigma_{corr}^{2}} \bigg), \label{eq:sic_2cfolcorr}
+\end{equation}
+We have a similar expression as in equation~\eqref{eq:sic_2cfol} qith no correlations. Terms 2 and 3 in equation~\eqref{eq:sic_2cfolcorr} will be slightly increased as \(\frac{\sigma_{corr}^{2}}{\sigma_{cfol,o}^{2}}\) has been subtracted from the denominator of each term. These terms will only be slightly increased as \(\frac{\sigma_{corr}^{2}}{\sigma_{cfol,o}^{2}}\) is bound above by 1 and will tend to be smaller as the correlation between the two successive observation errors will tend to be closer to zero than 1. As we have an additional \(4^{\text{th}}\) term in equation~\eqref{eq:sic_2cfolcorr} subtracted from the other 3 terms the included time error correlation has the overall effect of reducing the information content in the two successive \(C_{fol}\) observations. The reduction in information content in successive observations makes sense as we are assimilating less independent information. This backs up the results seen in the previous chapter REF where including correlations in time between observations of NEE reduces overfitting to the observations in the assimilation window and gives an improvement to the model forecast.
 
 
 \bibliography{../PhD}{}

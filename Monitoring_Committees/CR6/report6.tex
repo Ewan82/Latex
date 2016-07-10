@@ -251,6 +251,23 @@ During my PhD I have helped demonstrate on the following courses:
 \end{itemize}
 
 
+\begin{table}[ht] 
+\begin{center}
+	\begin{tabularx}{\textwidth}{| l | X | X | X | X |}
+	\hline
+	Experiment & Uncorrelated prior errors, $\textbf{B}_{diag}$ & Uncorrelated observation errors, $\hat{\mathbf{R}}_{diag}$ & Correlated prior errors, $\textbf{B}_{corr}$ &
+	Correlation observation errors, $\hat{\mathbf{R}}_{corr}$ \\ \hline
+	A & $\times$ & $\times$ & & \\ \hline
+	B & & $\times$ & $\times$ & \\ \hline
+	C & $\times$ & & & $\times$ \\ \hline
+	D & & & $\times$ & $\times$ \\ 
+	\hline
+	\end{tabularx}
+	\caption{The combination of error covariance matrices used in each data assimilation experiment. $\textbf{B}_{diag}$ and $\hat{\mathbf{R}}_{diag}$ are the diagonal background and observation error covariance matrices, with no correlations and $\textbf{B}_{corr}$ and $\hat{\mathbf{R}}_{corr}$ are the background and observation error covariance matrices including correlations.}
+	\label{table:exps_tab}
+\end{center} 
+\end{table}
+
 \bibliography{../../PhD}{}
 %\bibliographystyle{plain}
 \end{document}
