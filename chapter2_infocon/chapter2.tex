@@ -7,7 +7,7 @@
 %\usepackage[section]{placeins}
 \usepackage[margin=1.0in]{geometry}
 
-\title{Results chapter 2: Observability and Information Content {\color{red}DRAFT}}
+\title{Results chapter 2: Observability and information content {\color{red}DRAFT}}
 \author{Ewan Pinnington}
 
 \newtheorem{theorem}{Theorem}[section]
@@ -56,7 +56,7 @@ This result can be applied to the data assimilation problem \citep{johnson2005si
 \end{equation}
 as defined in section {\color{red} REF}. In Appendix B of \citet{zou1992incomplete} it is shown that for the linear data assimilation problem it is possible to obtain a unique analysis state over a specific assimilation window with no background term if the rank of $\hat{\textbf{H}}$ is equal to $n$, the size of $\textbf{x}_0$. For the non-linear data assimilation problem the rank of $\hat{\textbf{H}}$ being equal to $n$ ensures a locally unique analysis can be found without including a background term. In practice a background term is typically included in the cost function for 4D-Var data assimilation which regularises the problem and means that we always have a unique solution.
 
-\section{Information content measures} \label{sec:IC}%%%%%%%%%%%%%%%%%%%%%% 
+\subsection{Information content measures} \label{sec:IC}%%%%%%%%%%%%%%%%%%%%%% 
 
 In data assimilation we combine prior estimates with observations to improve our knowledge of the state of a system. In this process some observations will have a greater impact on our results than others. Many measures exist for understanding observation impact on the analysis.
 
@@ -87,7 +87,7 @@ Making the assumption of a linear and Gaussian data assimilation problem is clea
 
 %\citep{singh2013practical} **Ref about using fischer mat, dfs and SIC for data pruning to produce similar results.
 
-\subsection{Sensitivity of analysis to observations} \label{sec:inf_mat}
+\subsubsection{Sensitivity of analysis to observations} \label{sec:inf_mat}
 
 The influence matrix measures the sensitivity of the analysis in observation space to the observations \citep{Cardinali2004} and is defined by,
 \begin{equation}
@@ -115,7 +115,7 @@ Inserting equation~\eqref{eqn:analysis_kgain} into \eqref{eqn:4dinf_mat} we find
  \end{equation}
 We can therefore see the sensitivity of the analysis to observations is inversely proportional to the observation error and proportional to the analysis error. This means that the most influential observations are those with the smallest error variance providing information about regions of state space with the largest prior error \citep{Cardinali2004}.
 
-\subsection{Degrees of freedom for signal} \label{DFSintro}%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Degrees of freedom for signal} \label{DFSintro}%%%%%%%%%%%%%%%%%%%%%%
 
 The degrees of freedom for signal ($dfs$) indicates the number of elements of the state that have been measured by the observations. If we consider a state vector $\textbf{x}$ with $n$ elements (or $n$ degrees of freedom) then the maximum value the $dfs$ could obtain would be $n$, in this case all elements of the state would have been measured. Conversely if $dfs = 0$ then no elements of the state would have been measured by our observations \citep{Fowler2013}.
 
@@ -137,7 +137,7 @@ dfs = \text{trace}(\textbf{S}) = \sum_{i} \lambda_{i},
 \end{equation}
 where $\lambda_{i}$ is the $i^{th}$ eigenvalue of $\textbf{S}$.
 
-\subsection{Shannon information content}%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Shannon information content}%%%%%%%%%%%%%%%%%%%%%%
 
 Shannon Information Content (SIC) is a measure of the reduction in entropy (uncertainty) given a set of observations. When a measurement is made, the entropy or uncertainty in our state decreases. The $SIC$ of an observation is a measure of the factor by which the uncertainty decreases \citep{cover1991elements}. We can define this using the prior, $p(\textbf{x})$, and posterior, $p(\textbf{x}|\textbf{y})$, distributions as,
 \begin{equation}
@@ -348,7 +348,7 @@ We have tested the observability of the system for observations of NEE when we h
 \end{figure}
 
 
-\subsection{DALEC1 information content}
+\subsection{DALEC1 information content}%%%%%%%%%%%%%%%%%%%
 \subsubsection{Information content for observations at a single time} \label{sec:info_con_single_time}
 
 For the DALEC1 state estimation we can calculate the analytic representation of the information content measures discussed in section~\ref{sec:IC}. This will allow us to understand how the information content changes for differing numbers of observations, different observation types and the effect of including observation error correlations in the assimilation scheme, before moving onto work with the larger DALEC2 joint parameter and state estimation case. For these experiments the elements of the state vector have corresponding background standard deviations $ \sigma_{cfol, b}, \sigma_{croo, b}, \sigma_{cwoo, b}, \sigma_{clit, b}, \sigma_{csom, b}$. We then have
@@ -438,14 +438,14 @@ We see that Equations~\eqref{eqn:sicnee} and \eqref{eqn:dfsnee} have a similar f
     \end{subfigure}%
     \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{oregon2007temp.pdf}
-        \caption{Temperature term for years data}
+        \caption{Mean daily temperature for years data}
         \label{fig:temp_nee_oregon2007}
     \end{subfigure}
-    \caption{SIC for a single NEE observation changing throughout a years window using driving data from a pine stand in Oregon taken in 2007 (left). Temperature term \(e^{\Theta T^{i}}\) (where \(T^{i}\) is the mean daily temperature) using the same driving data (right).}
+    \caption{SIC for a single NEE observation changing throughout a years window using driving data from a pine stand in Oregon taken in 2007 (left). Mean daily temperature for the same site and period (right).}
     \label{fig:neeSIC_temp_comp}
 \end{figure}
 
-In Figure~\ref{fig:neeSIC_temp_comp} we show how closely SIC is related to mean daily temperature for NEE observations throughout a years using daily driving data from a pine stand in Oregon. Higher information content in summer observations of NEE makes physical sense. In summertime fluxes of carbon through the forest ecosystem are of greater magnitude than in winter, with more photosynthesis and respiration occurring. This gives us more information about the fluxes of carbon through our system in summertime observations of NEE. It is important to consider this result when planning for down time or routine maintenance at flux tower sites measuring NEE. The temperature dependence of information content will also hold true for other observations whose observation operators include the nonlinear temperature term controlling heterotrophic respiration. These observations include ground respiration, measured using soil respiration chambers and total ecosystem respiration, estimated from nighttime NEE measurements.
+In Figure~\ref{fig:neeSIC_temp_comp} we show how closely SIC is related to mean daily temperature for NEE observations throughout a years using daily driving data from a pine stand in Oregon. Higher information content in summer observations of NEE makes physical sense. In summertime fluxes of carbon through the forest ecosystem are of greater magnitude than in winter, with more photosynthesis and respiration occurring. This gives us more information about the fluxes of carbon through our system in summertime observations of NEE. It is important to consider this result when planning for down time or routine maintenance at flux tower sites measuring NEE. The temperature dependence of information content will also hold true for other observations whose observation operators include the nonlinear temperature term controlling heterotrophic respiration. These observations include ground respiration, measured using soil respiration chambers, and total ecosystem respiration, estimated from nighttime NEE measurements.
 
 In Figure~\ref{fig:sic_nee_oregon2007} we have assumed constant prior and observation standard deviations. This is an accurate assumption for our prior errors. However, it has been shown that NEE errors are heteroskedastic \citep{Richardson200838} and therefore scale with the magnitude of the flux. This would reduce the magnitude of the results shown in Figure~\ref{fig:sic_nee_oregon2007}, as our standard deviation in observations of summer NEE would be larger, reducing the information content. Although the true NEE error is heteroskedastic for data assimilation the results in Figure~\ref{fig:sic_nee_oregon2007} suggest assuming a constant standard deviation is a good approximation, if our aim is to best fit the data. A larger standard deviation in summer observations of NEE will reduce their weight in the assimilation algorithm. This will mean our assimilation will attempt to fit the winter observations more closely than the summer observations. If in fact the summer observations are providing the most information about the fluxes of carbon through our system they will help constrain our state better than winter observations. Hence assuming a constant standard deviation for NEE errors may help improve data assimilation forecasts. {\color{red}TEST THIS??? (maybe with DALEC2? show improvement in forecast with constant $\sigma$ vs. $\sigma$ scaled by flux magnitude)}
 
@@ -618,7 +618,7 @@ In section~\ref{sec:info_con_single_time} it was shown that observations of NEE 
     \label{fig:ic_succ_nee}
 \end{figure}
 
-In chapter REF we have investigated the effect of including correlations in time between observation errors on the results from data assimilation with DALEC2. We can see the effect on the analytic representation of information content for two successive observations of \(C_{fol}\) when including an off-diagonal correlation term in the matrix \(\hat{\mathbf{R}}\). We have
+In chapter REF we have investigated the effect of including correlations in time between observation errors on the results from data assimilation with DALEC2. We can see the effect on the analytic representation of information content for two successive observations of \(C_{fol}\) when including an off-diagonal correlation term in the matrix \(\hat{\mathbf{R}}\). So that \(\hat{\mathbf{R}} = \hat{\mathbf{D}}\mathbf{C}\hat{\mathbf{D}}^{\text{T}}\), where \(\hat{\mathbf{D}}\) is the diagonal matrix of observation standard deviations and \(\mathbf{C}\) is a correlation matrix of the same shape. We then have
 \begin{equation}
 \mathbf{H}_{i} = \frac{\partial C_{fol}^{i}}{\partial \textbf{x}_i} = \begin{pmatrix}
 1 & 0 & 0 & 0 & 0
@@ -641,22 +641,86 @@ For two successive observations of \(C_{fol}\) we have,
 \end{equation}
 and
 \begin{equation}
-\hat{\mathbf{R}}=
+\hat{\mathbf{R}} =  \hat{\mathbf{D}}\mathbf{C}\hat{\mathbf{D}}^{\text{T}} =
 \begin{pmatrix}
-\mathbf{R}_0 & \sigma_{1,2}^{2}  \\
-\sigma_{2,1}^{2} & \mathbf{R}_1  \\
+\sigma_{cfol,o} & 0  \\
+0 & \sigma_{cfol,o}  \\
+\end{pmatrix}
+\begin{pmatrix}
+1 & \rho  \\
+\rho & 1  \\
+\end{pmatrix}
+\begin{pmatrix}
+\sigma_{cfol,o} & 0  \\
+0 & \sigma_{cfol,o}  \\
 \end{pmatrix}
 =
 \begin{pmatrix}
-\sigma_{cfol,o}^{2} & \sigma_{1,2}^{2}  \\
-\sigma_{2,1}^{2} & \sigma_{cfol,o}^{2}  \\
+\sigma_{cfol,o}^{2} & \rho\sigma_{cfol,o}^{2}  \\
+\rho\sigma_{cfol,o}^{2} & \sigma_{cfol,o}^{2}  \\
 \end{pmatrix},
 \end{equation}
-here \(\hat{\mathbf{R}}\) is symmetric and we have \(\sigma_{1,2}^{2} = \sigma_{2,1}^{2} = \sigma_{corr}^{2}\). We then find,
+with \(0 \leq \rho < 1\). We then find,
 \begin{equation}
-SIC = \frac{1}{2}\text{ln}\frac{\begin{vmatrix} \mathbf{B} \end{vmatrix}}{\begin{vmatrix} \mathbf{A} \end{vmatrix}} =\frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{cfol,b}^{2}}{\sigma_{cfol,o}^{2} - \frac{\sigma_{corr}^{2}}{\sigma_{cfol,o}^{2}}}+\frac{\sigma_{cfol,b}^{2}\eta_0^{2}}{\sigma_{cfol,o}^{2} - \frac{\sigma_{corr}^{2}}{\sigma_{cfol,o}^{2}}} - \frac{2\sigma_{cfol,b}^{2}\sigma_{corr}\eta_0}{\sigma_{cfol,o}^{4} - \sigma_{corr}^{2}} \bigg), \label{eq:sic_2cfolcorr}
+SIC = \frac{1}{2}\text{ln}\frac{\begin{vmatrix} \mathbf{B} \end{vmatrix}}{\begin{vmatrix} \mathbf{A} \end{vmatrix}} =\frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{cfol,b}^{2}}{\sigma_{cfol,o}^{2}(1 - \rho^2)}+\frac{\sigma_{cfol,b}^{2}\eta_0^{2}}{\sigma_{cfol,o}^{2}(1 - \rho^2)} - \frac{2\sigma_{cfol,b}^{2}\eta_0 \rho}{\sigma_{cfol,o}^{2}(1 - \rho^2)} \bigg), \label{eq:sic_2cfolcorr}
 \end{equation}
-We have a similar expression as in equation~\eqref{eq:sic_2cfol} qith no correlations. Terms 2 and 3 in equation~\eqref{eq:sic_2cfolcorr} will be slightly increased as \(\frac{\sigma_{corr}^{2}}{\sigma_{cfol,o}^{2}}\) has been subtracted from the denominator of each term. These terms will only be slightly increased as \(\frac{\sigma_{corr}^{2}}{\sigma_{cfol,o}^{2}}\) is bound above by 1 and will tend to be smaller as the correlation between the two successive observation errors will tend to be closer to zero than 1. As we have an additional \(4^{\text{th}}\) term in equation~\eqref{eq:sic_2cfolcorr} subtracted from the other 3 terms the included time error correlation has the overall effect of reducing the information content in the two successive \(C_{fol}\) observations. The reduction in information content in successive observations makes sense as we are assimilating less independent information. This backs up the results seen in the previous chapter REF where including correlations in time between observations of NEE reduces overfitting to the observations in the assimilation window and gives an improvement to the model forecast.
+here we have a similar expression as in equation~\eqref{eq:sic_2cfol} for the SIC of two successive \(C_{fol}\) with no included observation error correlations. Terms 2 and 3 inside of the logarithmic expression in equation~\eqref{eq:sic_2cfolcorr} now have a changed denominator as a result of including the observation error correlation \(\rho\). We also have an additional \(4^{\text{th}}\) term in the logarithmic expression of equation~\eqref{eq:sic_2cfolcorr} subtracted from the other 3 terms. We re-write equation~\eqref{eq:sic_2cfolcorr} as, 
+\begin{equation}
+SIC = \frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{cfol,b}^{2}(1+ \eta_0(\eta_0-2\rho))}{\sigma_{cfol,o}^{2}(1 - \rho^2)} \bigg).\label{eq:sic_2cfolcorr2}
+\end{equation}
+From equation~\eqref{eq:sic_2cfolcorr2} we can see that the SIC will grow as the correlation \(\rho\) approaches 1. 
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{sic_corr_D1.pdf}
+        \caption{Shannon information content}
+        \label{fig:sic_corr_D1}
+    \end{subfigure}%
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{dfs_corr_D1.pdf}
+        \caption{Degrees of freedom for signal}
+        \label{fig:dfs_corr_D1}
+    \end{subfigure}
+    \caption{Information content for two successive observations of foliar carbon (\(C_{fol}\)) when a varying time correlation is included between observation errors.}
+    \label{fig:ic_corr_D1}
+\end{figure}
+
+Figure~\ref{fig:ic_corr_D1} shows that as the size of time correlation \(\rho\) approaches 1 the information content in the two observations of \(C_{fol}\) grows for both SIC and \(dfs\). This increase in information content makes sense as including the correlation in time is increasing the influence of each observation of the analysis update. 
+
+
+\subsection{DALEC2 information content}%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Information content in observations for DALEC2}
+%SIC with D2 show same for single time, inf mat for evergreen and deciduous, difference in phenology has effect on info %content when model is involved successive obs less valuable than ones at start of the window. show col sums for inf mat.
+
+In this section we repeat and extend some of the results we have found for DALEC1 state estimation information content to the joint parameter and state estimation DALEC2 system. This means we now have an augmented state of 23 elements (17 parameters and 6 state variables) as opposed to the 5 state members for DALEC1. This means we can no longer examine the analytic representations of information content and instead look at the information content calculated analytically for DALEC2. 
+
+
+
+In section~\ref{sec:info_con_single_time}
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{oregon2007SICneeD2.pdf}
+        \caption{SIC for single NEE observation}
+        \label{fig:sic_nee_oregon2007}
+    \end{subfigure}%
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{oregon2007temp.pdf}
+        \caption{Mean daily temperature for years data}
+        \label{fig:temp_nee_oregon2007}
+    \end{subfigure}
+    \caption{SIC a single NEE observation changing throughout a years window using driving data from a pine stand in Oregon taken in 2007 (left). Mean daily temperature for the same site and period (right).}
+    \label{fig:neeSIC_temp_comp}
+\end{figure}
+
+
+\subsubsection{Effect of time correlations on observation information content}
+
+
+
+
 
 
 \bibliography{../PhD}{}
