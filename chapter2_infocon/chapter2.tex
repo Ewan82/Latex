@@ -618,130 +618,38 @@ In section~\ref{sec:info_con_single_time} it was shown that observations of NEE 
     \label{fig:ic_succ_nee}
 \end{figure}
 
-In chapter REF we have investigated the effect of including correlations in time between observation errors on the results from data assimilation with DALEC2. We can see the effect on the analytic representation of information content for two successive observations of \(C_{fol}\) when including an off-diagonal correlation term in the matrix \(\hat{\mathbf{R}}\). So that \(\hat{\mathbf{R}} = \hat{\mathbf{D}}\mathbf{C}\hat{\mathbf{D}}^{\text{T}}\), where \(\hat{\mathbf{D}}\) is the diagonal matrix of observation standard deviations and \(\mathbf{C}\) is a correlation matrix of the same shape. We then have
-\begin{equation}
-\mathbf{H}_{i} = \frac{\partial C_{fol}^{i}}{\partial \textbf{x}_i} = \begin{pmatrix}
-1 & 0 & 0 & 0 & 0
-\end{pmatrix}
-\hspace{5mm} \text{and} \hspace{5mm}
-\mathbf{R}_i=\sigma_{cfol,o}^{2}.
-\end{equation}
-For two successive observations of \(C_{fol}\) we have,
-\begin{equation}
-\hat{\mathbf{H}}=
-\begin{pmatrix}
-\mathbf{H}_0 \\
-\mathbf{H}_1\mathbf{M}_0\\
-\end{pmatrix}
-=
-\begin{pmatrix}
-1 & 0 & 0 & 0 & 0 \\
-(1-\theta_{fol})+f_{fol}(1-f_{auto})\zeta^0 & 0 & 0 & 0 & 0\\
-\end{pmatrix}
-\end{equation}
-and
+In chapter REF we have investigated the effect of including correlations in time between observation errors on the results from data assimilation with DALEC2. We can see the effect on the analytic representation of information content for two successive observations of NEE when including an off-diagonal correlation term in the matrix \(\hat{\mathbf{R}}\). So that \(\hat{\mathbf{R}} = \hat{\mathbf{D}}\mathbf{C}\hat{\mathbf{D}}^{\text{T}}\), where \(\hat{\mathbf{D}}\) is the diagonal matrix of observation standard deviations and \(\mathbf{C}\) is a correlation matrix of the same shape. We then have
 \begin{equation}
 \hat{\mathbf{R}} =  \hat{\mathbf{D}}\mathbf{C}\hat{\mathbf{D}}^{\text{T}} =
 \begin{pmatrix}
-\sigma_{cfol,o} & 0  \\
-0 & \sigma_{cfol,o}  \\
+\sigma_{nee,o} & 0  \\
+0 & \sigma_{nee,o}  \\
 \end{pmatrix}
 \begin{pmatrix}
 1 & \rho  \\
 \rho & 1  \\
 \end{pmatrix}
 \begin{pmatrix}
-\sigma_{cfol,o} & 0  \\
-0 & \sigma_{cfol,o}  \\
+\sigma_{nee,o} & 0  \\
+0 & \sigma_{nee,o}  \\
 \end{pmatrix}
 =
 \begin{pmatrix}
-\sigma_{cfol,o}^{2} & \rho\sigma_{cfol,o}^{2}  \\
-\rho\sigma_{cfol,o}^{2} & \sigma_{cfol,o}^{2}  \\
+\sigma_{nee,o}^{2} & \rho\sigma_{nee,o}^{2}  \\
+\rho\sigma_{nee,o}^{2} & \sigma_{nee,o}^{2}  \\
 \end{pmatrix},
 \end{equation}
-with \(0 \leq \rho < 1\). We then find,
-\begin{equation}
-SIC = \frac{1}{2}\text{ln}\frac{\begin{vmatrix} \mathbf{B} \end{vmatrix}}{\begin{vmatrix} \mathbf{A} \end{vmatrix}} =\frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{cfol,b}^{2}}{\sigma_{cfol,o}^{2}(1 - \rho^2)}+\frac{\sigma_{cfol,b}^{2}\eta_0^{2}}{\sigma_{cfol,o}^{2}(1 - \rho^2)} - \frac{2\sigma_{cfol,b}^{2}\eta_0 \rho}{\sigma_{cfol,o}^{2}(1 - \rho^2)} \bigg), \label{eq:sic_2cfolcorr}
-\end{equation}
-here we have a similar expression as in equation~\eqref{eq:sic_2cfol} for the SIC of two successive \(C_{fol}\) with no included observation error correlations. Terms 2 and 3 inside of the logarithmic expression in equation~\eqref{eq:sic_2cfolcorr} now have a changed denominator as a result of including the observation error correlation \(\rho\). We also have an additional \(4^{\text{th}}\) term in the logarithmic expression of equation~\eqref{eq:sic_2cfolcorr} subtracted from the other 3 terms. We re-write equation~\eqref{eq:sic_2cfolcorr} as, 
-\begin{equation}
-SIC = \frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{cfol,b}^{2}(1+ \eta_0(\eta_0-2\rho))}{\sigma_{cfol,o}^{2}(1 - \rho^2)} \bigg).\label{eq:sic_2cfolcorr2}
-\end{equation}
-From equation~\eqref{eq:sic_2cfolcorr2} we can see that the SIC will grow as the correlation \(\rho\) approaches 1. 
+with \(0 \leq \rho < 1\).
 
+We have not shown the analytic representation for the SIC here as it is too large. We instead use the symbolic Python package SymPy \citep{Joyner:2012:OSC:2110170.2110185} to plot the SIC for an increasing value of \(\rho\) in figure~\ref{fig:sic_corr_D1}.
 \begin{figure}[ht]
-    \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{sic_corr_D1.pdf}
-        \caption{Shannon information content}
-        \label{fig:sic_corr_D1}
-    \end{subfigure}%
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{dfs_corr_D1.pdf}
-        \caption{Degrees of freedom for signal}
-        \label{fig:dfs_corr_D1}
-    \end{subfigure}
-    \caption{Information content for two successive observations of foliar carbon (\(C_{fol}\)) when a varying time correlation is included between observation errors.}
-    \label{fig:ic_corr_D1}
+	\centering
+        \includegraphics[width=0.5\textwidth]{sic_corr_D1_nee.pdf}
+    \caption{Shannon information content for two successive observations of NEE when a varying time correlation is included between observation errors.}
+    \label{fig:sic_corr_D1}
 \end{figure}
+Figure~\ref{fig:sic_corr_D1} shows that as the size of time correlation \(\rho\) approaches 1 the information content in the two observations of NEE decreases. This decrease in information content makes sense as including the correlation in time is decreasing the amount of independent information we are assimilating. This result is also seen in \citet{jarvinen1999variational} where including a serial correlations between observation errors is shown to reduce the weight given to the mean of the observations in the assimilation (equivalent to inflating the variance of the observations). This also supports the results found in section (REF corr error section) where we see that including correlations in time between observation errors reduces the problem of overfitting to the assimilated observations.
 
-Figure~\ref{fig:ic_corr_D1} shows that as the size of time correlation \(\rho\) approaches 1 the information content in the two observations of \(C_{fol}\) grows for both SIC and \(dfs\). This increase in information content makes sense as including the correlation in time is increasing the influence of each observation on the analysis update. We can see this more clearly if we consider the impact of including this correlation on the observational part of the cost function, \(\textbf{J}_{o}\), for a simple system. We consider a system with an initial state corresponding to a scalar, \(x_0\), for which we wish to minimise the observational part of the cost function \(\textbf{J}_{o}\). Let,
-\begin{equation}
-\textbf{M}_i = a, \hspace{5mm}
-\mathbf{H}_{i} = \frac{\partial x_i}{\partial x_i} = 1
-\hspace{5mm} \text{and} \hspace{5mm}
-\mathbf{R}_i=\sigma_{x,o}^{2}.
-\end{equation}
-For two successive observations of \(x_i\), \(y_0\) and \(y_1\) we have,
-\begin{equation}
-\hat{\mathbf{y}}=
-\begin{pmatrix}
-y_0 \\
-y_1 \\
-\end{pmatrix},
-\hspace{5mm}
-\hat{\mathbf{H}}=
-\begin{pmatrix}
-\mathbf{H}_0 \\
-\mathbf{H}_1\mathbf{M}_0\\
-\end{pmatrix}
-=
-\begin{pmatrix}
-1  \\
-a  \\
-\end{pmatrix}
-\end{equation}
-and
-\begin{equation}
-\hat{\mathbf{R}} =  \hat{\mathbf{D}}\mathbf{C}\hat{\mathbf{D}}^{\text{T}} =
-\begin{pmatrix}
-\sigma_{x,o} & 0  \\
-0 & \sigma_{x,o}  \\
-\end{pmatrix}
-\begin{pmatrix}
-1 & \rho  \\
-\rho & 1  \\
-\end{pmatrix}
-\begin{pmatrix}
-\sigma_{x,o} & 0  \\
-0 & \sigma_{x,o}  \\
-\end{pmatrix}
-=
-\begin{pmatrix}
-\sigma_{x,o}^{2} & \rho\sigma_{x,o}^{2}  \\
-\rho\sigma_{x,o}^{2} & \sigma_{x,o}^{2}  \\
-\end{pmatrix},
-\end{equation}
-with \(0 \leq \rho < 1\). Then if \(\rho = 0\),
-\begin{equation}
-\textbf{J}_{o} = (\hat{\textbf{y}} - \hat{\textbf{H}}x_0)\hat{\textbf{R}}^{-1}(\hat{\textbf{y}} - \hat{\textbf{H}}x_0)^{T} = \frac{(x_0 - y_0)^2}{\sigma_{x,o}^{2}} + \frac{(ax_0 - y_1)^2}{\sigma_{x,o}^{2}}, \label{eqn:simp_nocorr}
-\end{equation}
-else if \(\rho \neq 0\) we have,
-\begin{equation}
-\textbf{J}_{o} = \frac{(x_0 - y_0)(x_0-y_0-\rho(ax_0-y_1)}{\sigma_{x,o}^{2}(1-\rho^2)} + \frac{(ax_0 - y_1)(ax_0 - y_1 - \rho(x_0 - y_0)}{\sigma_{x,o}^{2}(1-\rho^2)}. \label{eqn:simp_corr}
-\end{equation}
-We can see from equation~\eqref{eqn:simp_nocorr} and \eqref{eqn:simp_corr} that including this correlation in time between observation errors spreads the influence of each observation on the state \(x_i\) through time.
 
 \subsection{DALEC2 information content}%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Information content in observations for DALEC2}

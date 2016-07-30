@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -99,6 +99,13 @@ J.~A. Jacquez and P.~Greif.
   201--227, 1985.
 \newblock ISSN 00255564.
 \newblock \doi{10.1016/0025-5564(85)90098-7}.
+
+\bibitem[J{\"a}rvinen et~al.(1999)J{\"a}rvinen, Andersson, and
+  Bouttier]{jarvinen1999variational}
+H.~J{\"a}rvinen, E.~Andersson, and F.~Bouttier.
+\newblock Variational assimilation of time sequences of surface observations
+  with serially correlated errors.
+\newblock \emph{Tellus A}, 51\penalty0 (4):\penalty0 469--488, 1999.
 
 \bibitem[Johnson et~al.(2005)Johnson, Hoskins, and
   Nichols]{johnson2005singular}
