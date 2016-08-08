@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  29 JUL 2016 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  6 AUG 2016 18:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -884,75 +884,80 @@ File: oregon2007temp.pdf Graphic file (type pdf)
 Package pdftex.def Info: oregon2007temp.pdf used on input line 670.
 (pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
 
-<ah_inf_mat.pdf, id=654, 794.97pt x 650.43pt>
-File: ah_inf_mat.pdf Graphic file (type pdf)
- <use ah_inf_mat.pdf>
-Package pdftex.def Info: ah_inf_mat.pdf used on input line 683.
-(pdftex.def)             Requested size: 216.09045pt x 176.79948pt.
+<inf_mat_sa.pdf, id=654, 617.68382pt x 949.91447pt>
+File: inf_mat_sa.pdf Graphic file (type pdf)
+ <use inf_mat_sa.pdf>
+Package pdftex.def Info: inf_mat_sa.pdf used on input line 683.
+(pdftex.def)             Requested size: 216.09045pt x 332.3156pt.
 
-<oregon_inf_mat.pdf, id=655, 794.97pt x 650.43pt>
-File: oregon_inf_mat.pdf Graphic file (type pdf)
- <use oregon_inf_mat.pdf>
-Package pdftex.def Info: oregon_inf_mat.pdf used on input line 688.
-(pdftex.def)             Requested size: 216.09045pt x 176.79948pt.
+<inf_mat_so.pdf, id=655, 617.68382pt x 949.91447pt>
+File: inf_mat_so.pdf Graphic file (type pdf)
+ <use inf_mat_so.pdf>
+Package pdftex.def Info: inf_mat_so.pdf used on input line 688.
+(pdftex.def)             Requested size: 216.09045pt x 332.3156pt.
 
-[18 <./oregon2007SICneeD2.pdf>]
-<ah_pheno.pdf, id=699, 925.05597pt x 635.97598pt>
+<ah_pheno.pdf, id=656, 925.05597pt x 635.97598pt>
 File: ah_pheno.pdf Graphic file (type pdf)
  <use ah_pheno.pdf>
-Package pdftex.def Info: ah_pheno.pdf used on input line 705.
+Package pdftex.def Info: ah_pheno.pdf used on input line 703.
 (pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
 
-<oregon_pheno.pdf, id=700, 925.05597pt x 635.97598pt>
+<oregon_pheno.pdf, id=657, 925.05597pt x 635.97598pt>
 File: oregon_pheno.pdf Graphic file (type pdf)
  <use oregon_pheno.pdf>
-Package pdftex.def Info: oregon_pheno.pdf used on input line 710.
+Package pdftex.def Info: oregon_pheno.pdf used on input line 708.
 (pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
 
-(./chapter2.bbl [19 <./ah_inf_mat.pdf> <./oregon_inf_mat.pdf
+[18 <./oregon2007SICneeD2.pdf>] [19 <./inf_mat_sa.pdf> <./inf_mat_so.pdf
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./oregon_inf_mat.pdf): PDF inclusion
-: multiple pdfs with page group included in a single page
-> <./ah_pheno.pdf
+pdfTeX warning: /usr/texbin/pdflatex (file ./inf_mat_so.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>] <sic_corr_D2_nee.pdf, id=786, 851.85066pt x 603.66495pt>
+File: sic_corr_D2_nee.pdf Graphic file (type pdf)
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./ah_pheno.pdf): PDF inclusion: mult
-iple pdfs with page group included in a single page
-> <./oregon_pheno.pdf
+<use sic_corr_D2_nee.pdf>
+Package pdftex.def Info: sic_corr_D2_nee.pdf used on input line 727.
+(pdftex.def)             Requested size: 234.8775pt x 166.4459pt.
+ (./chapter2.bbl [20 <./ah_pheno.pdf> <./oregon_pheno.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./oregon_pheno.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
+> <./sic_corr_D2_nee.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./sic_corr_D2_nee.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 >]
 Underfull \hbox (badness 1292) in paragraph at lines 119--125
 []\OT1/ptm/m/n/10.95 D. Joyner, O. []Cert[]^^Pk, A. Meurer, and B. E. Granger. 
  Open source com-puter al-ge-bra sys-tems:
  []
 
-[20] [21]) [22] (./chapter2.aux) ) 
+[21]) [22] (./chapter2.aux) ) 
 Here is how much of TeX's memory you used:
- 11178 strings out of 493117
- 192349 string characters out of 6135433
- 249270 words of memory out of 5000000
- 14408 multiletter control sequences out of 15000+600000
+ 11185 strings out of 493117
+ 192477 string characters out of 6135433
+ 249293 words of memory out of 5000000
+ 14414 multiletter control sequences out of 15000+600000
  68494 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,16n,43p,10387b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc
-/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/urw/times/utmri8a.pfb>
-Output written on chapter2.pdf (22 pages, 704067 bytes).
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvip
+s/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
+10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on chapter2.pdf (22 pages, 720674 bytes).
 PDF statistics:
- 852 PDF objects out of 1000 (max. 8388607)
- 254 compressed objects within 3 object streams
+ 932 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
