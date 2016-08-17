@@ -1,9 +1,18 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{3}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Booth et~al.(2012)Booth, Jones, Collins, Totterdell, Cox, Sitch,
+  Huntingford, Betts, Harris, and Lloyd]{1748-9326-7-2-024002}
+B.~B.~B. Booth, C.~D. Jones, M.~Collins, I.~J. Totterdell, P.~M. Cox, S.~Sitch,
+  C.~Huntingford, R.~A. Betts, G.~R. Harris, and J.~Lloyd.
+\newblock High sensitivity of future global warming to land carbon cycle
+  processes.
+\newblock \emph{Environmental Research Letters}, 7\penalty0 (2):\penalty0
+  024002, 2012.
 
 \bibitem[Ciais et~al.(2014)Ciais, Sabine, Bala, Bopp, Brovkin, Canadell,
   Chhabra, DeFries, Galloway, Heimann, et~al.]{ciais2014carbon}
@@ -14,5 +23,18 @@ P.~Ciais, C.~Sabine, G.~Bala, L.~Bopp, V.~Brovkin, J.~Canadell, A.~Chhabra,
   Contribution of Working Group I to the Fifth Assessment Report of the
   Intergovernmental Panel on Climate Change}, pages 465--570. Cambridge
   University Press, 2014.
+
+\bibitem[Falkowski et~al.(2000)Falkowski, Scholes, Boyle, Canadell, Canfield,
+  Elser, Gruber, Hibbard, H{\"o}gberg, Linder, Mackenzie, Moore~III, Pedersen,
+  Rosenthal, Seitzinger, Smetacek, and Steffen]{Falkowski291}
+P.~Falkowski, R.~J. Scholes, E.~Boyle, J.~Canadell, D.~Canfield, J.~Elser,
+  N.~Gruber, K.~Hibbard, P.~H{\"o}gberg, S.~Linder, F.~T. Mackenzie,
+  B.~Moore~III, T.~Pedersen, Y.~Rosenthal, S.~Seitzinger, V.~Smetacek, and
+  W.~Steffen.
+\newblock The global carbon cycle: A test of our knowledge of earth as a
+  system.
+\newblock \emph{Science}, 290\penalty0 (5490):\penalty0 291--296, 2000.
+\newblock ISSN 0036-8075.
+\newblock \doi{10.1126/science.290.5490.291}.
 
 \end{thebibliography}
