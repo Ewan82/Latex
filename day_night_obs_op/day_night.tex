@@ -50,9 +50,7 @@ NEE_{day}^{i} = -GPP^{i}(C_{fol}^{i}, \Psi) + r_{a,day}f_{auto}GPP^{i}(C_{fol}^{
 \end{equation}
 where \(r_{a,day}\) is the fraction of autotrophic respiration that occurs during daylight hours, \(\delta_{day}\) is the day length and \(T_{day}^{i}\) is the mean daytime temperature. For nighttime NEE we have,
 \begin{equation}
-\begin{split}
-NEE_{night}^{i} =  r_{a,night}f_{auto}GPP^{i}(C_{fol}^{i}, \Psi) + \delta_{night}\theta_{lit}C_{lit}^i e^{\Theta T_{night}^{i}} -  \delta_{day}\delta_{night}\theta_{lit}^{2}C_{lit}^i e^{\Theta T_{day}^{i}+ \Theta T_{night}^{i}} \\ + \delta_{night}\theta_{som}C_{som}^i e^{\Theta T_{night}^{i}} - \delta_{day}\delta_{night}\theta_{som}^{2}C_{som}^i e^{\Theta T_{day}^{i} + \Theta T_{night}^{i}} 
-\end{split} \label{eqn: D1_nee_night}
+NEE_{night}^{i} =  r_{a,night}f_{auto}GPP^{i}(C_{fol}^{i}, \Psi) + \delta_{night}\theta_{lit}C_{lit}^i e^{\Theta T_{night}^{i}} + \delta_{night}\theta_{som}C_{som}^i e^{\Theta T_{night}^{i}} \label{eqn: D1_nee_night}
 \end{equation}
 where \(r_{a,night}\) is the fraction of autotrophic respiration that occurs during the night \((r_{a,night}=1 - r_{a,day}) \), \(\delta_{night}\) is the night length \((\delta_{night} = 1 - \delta_{day})\) and \(T_{night}^{i}\) is the mean nighttime temperature. For Equation~\eqref{eqn: D1_nee_night} \(-  \delta_{day}\delta_{night}\theta_{lit}^{2}C_{lit}^i e^{\Theta T_{day}^{i}+ \Theta T_{night}^{i}}\) and \(- \delta_{day}\delta_{night}\theta_{som}^{2}C_{som}^i e^{\Theta T_{day}^{i} + \Theta T_{night}^{i}}\) correspond to the amount of carbon respired during the day, without including these terms we will over predict nighttime respiration. The effect of these terms may be very small and we might find it is not necessary to include them in the nighttime NEE observation operator. 
 

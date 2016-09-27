@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -36,5 +36,11 @@ P.~Falkowski, R.~J. Scholes, E.~Boyle, J.~Canadell, D.~Canfield, J.~Elser,
 \newblock \emph{Science}, 290\penalty0 (5490):\penalty0 291--296, 2000.
 \newblock ISSN 0036-8075.
 \newblock \doi{10.1126/science.290.5490.291}.
+
+\bibitem[Mitchell(1989)]{mitchell1989greenhouse}
+J.~F. Mitchell.
+\newblock The ?greenhouse? effect and climate change.
+\newblock \emph{Reviews of Geophysics}, 27\penalty0 (1):\penalty0 115--139,
+  1989.
 
 \end{thebibliography}
