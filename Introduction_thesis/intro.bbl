@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -36,6 +36,15 @@ P.~Falkowski, R.~J. Scholes, E.~Boyle, J.~Canadell, D.~Canfield, J.~Elser,
 \newblock \emph{Science}, 290\penalty0 (5490):\penalty0 291--296, 2000.
 \newblock ISSN 0036-8075.
 \newblock \doi{10.1126/science.290.5490.291}.
+
+\bibitem[Le~Qu{\'e}r{\'e} et~al.(2015)Le~Qu{\'e}r{\'e}, Moriarty, Andrew,
+  Canadell, Sitch, Korsbakken, Friedlingstein, Peters, Andres, Boden,
+  et~al.]{le2015global}
+C.~Le~Qu{\'e}r{\'e}, R.~Moriarty, R.~M. Andrew, J.~G. Canadell, S.~Sitch, J.~I.
+  Korsbakken, P.~Friedlingstein, G.~P. Peters, R.~J. Andres, T.~Boden, et~al.
+\newblock Global carbon budget 2015.
+\newblock \emph{Earth System Science Data}, 7\penalty0 (2):\penalty0 349--396,
+  2015.
 
 \bibitem[Mitchell(1989)]{mitchell1989greenhouse}
 J.~F. Mitchell.
