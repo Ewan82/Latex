@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -24,6 +24,13 @@ P.~Ciais, C.~Sabine, G.~Bala, L.~Bopp, V.~Brovkin, J.~Canadell, A.~Chhabra,
   Intergovernmental Panel on Climate Change}, pages 465--570. Cambridge
   University Press, 2014.
 
+\bibitem[Cox et~al.(2000)Cox, Betts, Jones, Spall, and Totterdell]{cox2000}
+P.~M. Cox, R.~A. Betts, C.~D. Jones, S.~A. Spall, and I.~J. Totterdell.
+\newblock Acceleration of global warming due to carbon-cycle feedbacks in a
+  coupled climate model.
+\newblock \emph{Nature}, 408\penalty0 (6809):\penalty0 184--187, 11 2000.
+\newblock URL \url{http://dx.doi.org/10.1038/35041539}.
+
 \bibitem[Falkowski et~al.(2000)Falkowski, Scholes, Boyle, Canadell, Canfield,
   Elser, Gruber, Hibbard, H{\"o}gberg, Linder, Mackenzie, Moore~III, Pedersen,
   Rosenthal, Seitzinger, Smetacek, and Steffen]{Falkowski291}
@@ -46,6 +53,14 @@ C.~Le~Qu{\'e}r{\'e}, R.~Moriarty, R.~M. Andrew, J.~G. Canadell, S.~Sitch, J.~I.
 \newblock \emph{Earth System Science Data}, 7\penalty0 (2):\penalty0 349--396,
   2015.
 
+\bibitem[L{\"u}thi et~al.(2008)L{\"u}thi, Le~Floch, Bereiter, Blunier, Barnola,
+  Siegenthaler, Raynaud, Jouzel, Fischer, Kawamura, et~al.]{luthi2008high}
+D.~L{\"u}thi, M.~Le~Floch, B.~Bereiter, T.~Blunier, J.-M. Barnola,
+  U.~Siegenthaler, D.~Raynaud, J.~Jouzel, H.~Fischer, K.~Kawamura, et~al.
+\newblock High-resolution carbon dioxide concentration record 650,000--800,000
+  years before present.
+\newblock \emph{Nature}, 453\penalty0 (7193):\penalty0 379--382, 2008.
+
 \bibitem[Mercado et~al.(2009)Mercado, Bellouin, Sitch, Boucher, Huntingford,
   Wild, and Cox]{Mercadodiffuseradiation2009}
 L.~M. Mercado, N.~Bellouin, S.~Sitch, O.~Boucher, C.~Huntingford, M.~Wild, and
@@ -53,11 +68,10 @@ L.~M. Mercado, N.~Bellouin, S.~Sitch, O.~Boucher, C.~Huntingford, M.~Wild, and
 \newblock Impact of changes in diffuse radiation on the global land carbon
   sink.
 \newblock \emph{Nature}, 458\penalty0 (7241):\penalty0 1014--1017, 04 2009.
-\newblock URL \url{http://dx.doi.org/10.1038/nature07949}.
 
 \bibitem[Mitchell(1989)]{mitchell1989greenhouse}
 J.~F. Mitchell.
-\newblock The ?greenhouse? effect and climate change.
+\newblock The greenhouse effect and climate change.
 \newblock \emph{Reviews of Geophysics}, 27\penalty0 (1):\penalty0 115--139,
   1989.
 
