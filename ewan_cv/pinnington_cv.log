@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  3 OCT 2016 20:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  4 OCT 2016 16:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -223,37 +223,52 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen124
 \Gm@dimlist=\toks27
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box28
+\beforetitleunit=\skip63
+\aftertitleunit=\skip64
+\ttl@plus=\dimen125
+\ttl@minus=\dimen126
+\ttl@toksa=\toks28
+\titlewidth=\dimen127
+\titlewidthlast=\dimen128
+\titlewidthfirst=\dimen129
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/bibentry.sty
+Package: bibentry 2007/10/30 1.5 (PWD)
+)
 \c@theorem=\count104
 
 (./pinnington_cv.aux)
 \openout1 = `pinnington_cv.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count105
-\scratchdimen=\dimen125
-\scratchbox=\box28
+\scratchdimen=\dimen130
+\scratchbox=\box29
 \nofMPsegments=\count106
 \nofMParguments=\count107
-\everyMPshowfont=\toks28
+\everyMPshowfont=\toks29
 \MPscratchCnt=\count108
-\MPscratchDim=\dimen126
+\MPscratchDim=\dimen131
 \MPnumerator=\count109
 \makeMPintoPDFobject=\count110
-\everyMPtoPDFconversion=\toks29
+\everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -306,15 +321,15 @@ e
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(43.36243pt, 527.57014pt, 43.36243pt)
-* v-part:(T,H,B)=(43.36243pt, 708.24513pt, 43.36243pt)
+* h-part:(L,W,R)=(57.81621pt, 498.66258pt, 57.81621pt)
+* v-part:(T,H,B)=(57.81621pt, 679.33757pt, 57.81621pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=527.57014pt
-* \textheight=708.24513pt
-* \oddsidemargin=-28.90756pt
-* \evensidemargin=-28.90756pt
-* \topmargin=-65.90756pt
+* \textwidth=498.66258pt
+* \textheight=679.33757pt
+* \oddsidemargin=-14.45378pt
+* \evensidemargin=-14.45378pt
+* \topmargin=-51.45378pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -332,49 +347,61 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+(./pinnington_cv.bbl)
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 18.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 28.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 33.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
  [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-(./pinnington_cv.aux) ) 
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (9.70285pt too wide) in paragraph at lines 74--75
+[]\OT1/cmr/m/n/10.95 As front man for a band, I signed a three year pub-lish-in
+g deal with Global Tal-ent (www.thisisglobal.com).
+ []
+
+
+Package bibentry Warning: You have used \nobibliography* 
+(bibentry)                without a following \bibliography.
+(bibentry)                You may not be able to run BibTeX.
+
+[2] (./pinnington_cv.aux) ) 
 Here is how much of TeX's memory you used:
- 3646 strings out of 493117
- 48561 string characters out of 6135433
- 120018 words of memory out of 5000000
- 7022 multiletter control sequences out of 15000+600000
+ 3940 strings out of 493117
+ 52395 string characters out of 6135433
+ 126513 words of memory out of 5000000
+ 7306 multiletter control sequences out of 15000+600000
  14851 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,43p,699b,210s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb>
-Output written on pinnington_cv.pdf (2 pages, 101461 bytes).
+ 38i,6n,43p,749b,208s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb>
+Output written on pinnington_cv.pdf (2 pages, 102749 bytes).
 PDF statistics:
  43 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream

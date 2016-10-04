@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Pinnington et~al.(2016)Pinnington, Casella, Dance, Lawless, Morison,
+  Nichols, Wilkinson, and Quaife]{Pinnington2016299}
+E.~M. Pinnington, E.~Casella, S.~L. Dance, A.~S. Lawless, J.~I. Morison, N.~K.
+  Nichols, M.~Wilkinson, and T.~L. Quaife.
+\newblock Investigating the role of prior and observation error correlations in
+  improving a model forecast of forest carbon balance using four-dimensional
+  variational data assimilation.
+\newblock \emph{Agricultural and Forest Meteorology}, 228–229:\penalty0 299
+  -- 314, 2016.
+\newblock ISSN 0168-1923.
+\newblock \doi{http://dx.doi.org/10.1016/j.agrformet.2016.07.006}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S016819231630332X}.
+
+\end{thebibliography}
