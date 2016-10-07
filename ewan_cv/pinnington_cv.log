@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  4 OCT 2016 16:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  4 OCT 2016 18:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -373,7 +373,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
  [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (9.70285pt too wide) in paragraph at lines 74--75
+Overfull \hbox (9.70285pt too wide) in paragraph at lines 73--74
 []\OT1/cmr/m/n/10.95 As front man for a band, I signed a three year pub-lish-in
 g deal with Global Tal-ent (www.thisisglobal.com).
  []
@@ -385,11 +385,11 @@ Package bibentry Warning: You have used \nobibliography*
 
 [2] (./pinnington_cv.aux) ) 
 Here is how much of TeX's memory you used:
- 3940 strings out of 493117
- 52395 string characters out of 6135433
- 126513 words of memory out of 5000000
- 7306 multiletter control sequences out of 15000+600000
- 14851 words of font info for 57 fonts, out of 8000000 for 9000
+ 3942 strings out of 493117
+ 52419 string characters out of 6135433
+ 126401 words of memory out of 5000000
+ 7307 multiletter control sequences out of 15000+600000
+ 15197 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,6n,43p,749b,208s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/publ
@@ -400,11 +400,12 @@ msfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb>
-Output written on pinnington_cv.pdf (2 pages, 102749 bytes).
+m/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti10.pfb>
+Output written on pinnington_cv.pdf (2 pages, 116053 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
