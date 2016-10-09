@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+\usepackage[sort]{natbib}
+\usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx}
+\usepackage{fancyhdr}
+\usepackage[margin=1.0in]{geometry}
+\bibliographystyle{abbrvnat}
+
+\title{Using data assimilation to understand the effect of disturbance on a managed woodland}
+\author{Ewan Pinnington}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{defn}{Definition}
+
+
+\begin{document}
+
+\maketitle
+
+
+\section*{Abstract}
+The response of forests and terrestrial ecosystems to disturbance is an important process in the global carbon cycle. In current estimates of the global carbon budget disturbance is one of the least understood components. In this paper we investigate the effect of management practices on the carbon dynamics of a mature temperate woodland. In order to better understand ecosystem response we use the mathematical technique of data assimilation to combine a diverse set of observations with a mathematical model of ecosystem carbon balance. This allows us to combine the uncertainty from observations and prior model predictions to find the best possible estimate to the studied system. The data assimilation techniques presented in this paper are applicable to other ecosystem models and data assimilation schemes. Previous statistical analyses of eddy covariance data at the study site had suggested that disturbance from thinning resulted in no change to net ecosystem carbon uptake. In this paper we find evidence to support this and suggest this is due to reduced heterotrophic respiration post-disturbance.  
+
+\section{Introduction}
+\subsection{Role of disturbance in the global C cycle}
+
+\subsection{Current theories on terrestrial ecosystem response to disturbance}
+Particular focus on effect of management practices on woodland carbon dynamics.
+
+\subsection{The role of data assimilation for improving estimates to a system}
+Combining the errors from model and observations to improve understanding of a systems response to change.
+
+\subsection{What does this paper do?}
+Analyse the effect of disturbance from management practices (thinning) for a deciduous managed woodland (Alice Holt) by the combination of a diverse set of observations with a mathematical model of forest carbon balance. Western side of the site thinned in 2014 and the Eastern side left unmanaged. The site has a flux tower positioned on the boundary between managed and unmanaged forest. Eddy covariance observation record was split between two sides using a flux footprint model found in REF. Previous statistical analysis of a management event in 2007 had suggested that there was no change in the Net Ecosystem Exchange (NEE) of CO\(_{2}\) between the managed and unmanaged sides of the forest after thinning. From the years data after the 2014 management event and optimised model in this paper we find evidence to support this and seek an explanation for why the net uptake of carbon remains unchanged even after removing a large proportion of the trees from one side. The data assimilation techniques presented in this paper could be applied for similar analyses at other sites and provide a novel method to help elucidate the reasons behind ecosystem responses.   
+
+\section{Observation and data assimilation methods}
+\subsection{Alice Holt research forest}
+
+\subsection{Model and data assimilation}
+\subsubsection{DALEC ecosystem carbon model}
+See Bloom Williams 2015
+\subsubsection{Four-Dimensional variational data assimilation}
+See Pinnington et al 2016.
+
+Here we have also written new observation operators to allow for assimilation daytime and nighttime NEE. This provides us with many more observations for assimilation after data processing, as we are averaging over shorter time periods so have a smaller probability of gaps and erroneous data. These new observation operators allow for assimilation of day/night NEE with no further model development and could be applied to other ecosystem models to allow for the assimilation of finer temporal resolution eddy covariance data and possible improvements to the partitioning of photosynthesis and ecosystem respiration. 
+
+\subsection{Observations}
+\subsubsection{Flux tower eddy covariance}
+Flux record split between managed and unmanaged sides of forest using flux footprint model found in REF. Data also average half daily for day and night time observations of the net ecosystem exchange of CO\(_{2}\). For more info please see Wilkinson et al 2014.
+\subsubsection{Leaf area index}
+LAI measurements made with ceptometer, hemispherical photographs and litter traps also giving us estimates to the leaf mass area of forest.
+\subsubsection{Woody biomass}  
+Method of point centred quarters used from REF and an allometric relationship between diameter at breast heigh and total above ground biomass and corse root biomass to find an estimate to total woody biomass for both sides of the forest.
+
+\subsection{Experimental setup}
+Assimilation of 2015 years data post disturbance for the optimisation of two parameter sets, one corresponding to the unmanaged East and the other set to the managed West.
+
+\section{Results}
+Show plots of East and West after assimilation and the change in optimised parameters. Confident in results as we know that even assimilating a single year of data we can accurately describe the carbon dynamics of the site for a long time period (15 years) into the future from Pinnington et al 2016.
+
+\section{Discussion}
+From the assimilation of multiple data streams with a model of ecosystem carbon balance we find evidence that reduced heterotrophic respiration following disturbance allows a managed woodland to exhibit an unchanged net carbon uptake when compared against an undisturbed section of the same woodland. 
+
+\section{Conclusion}
+Wrap up the results and discussion.
+
+
+\bibliography{../PhD}{}
+\end{document}
