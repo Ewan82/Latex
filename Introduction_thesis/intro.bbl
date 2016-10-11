@@ -1,9 +1,25 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Baldocchi(2008)]{baldocchi2008turner}
+D.~Baldocchi.
+\newblock Turner review no. 15.`breathing'of the terrestrial biosphere: lessons
+  learned from a global network of carbon dioxide flux measurement systems.
+\newblock \emph{Australian Journal of Botany}, 56\penalty0 (1):\penalty0 1--26,
+  2008.
+
+\bibitem[Baldocchi et~al.(2001)Baldocchi, Falge, Gu, Olson, Hollinger, Running,
+  Anthoni, Bernhofer, Davis, Evans, et~al.]{baldocchi2001fluxnet}
+D.~Baldocchi, E.~Falge, L.~Gu, R.~Olson, D.~Hollinger, S.~Running, P.~Anthoni,
+  C.~Bernhofer, K.~Davis, R.~Evans, et~al.
+\newblock Fluxnet: A new tool to study the temporal and spatial variability of
+  ecosystem-scale carbon dioxide, water vapor, and energy flux densities.
+\newblock \emph{Bulletin of the American Meteorological Society}, 82\penalty0
+  (11):\penalty0 2415--2434, 2001.
 
 \bibitem[Booth et~al.(2012)Booth, Jones, Collins, Totterdell, Cox, Sitch,
   Huntingford, Betts, Harris, and Lloyd]{1748-9326-7-2-024002}
@@ -44,6 +60,16 @@ P.~Falkowski, R.~J. Scholes, E.~Boyle, J.~Canadell, D.~Canfield, J.~Elser,
 \newblock ISSN 0036-8075.
 \newblock \doi{10.1126/science.290.5490.291}.
 
+\bibitem[Jones et~al.(2013)Jones, Robertson, Arora, Friedlingstein,
+  Shevliakova, Bopp, Brovkin, Hajima, Kato, Kawamiya, et~al.]{jones2013twenty}
+C.~Jones, E.~Robertson, V.~Arora, P.~Friedlingstein, E.~Shevliakova, L.~Bopp,
+  V.~Brovkin, T.~Hajima, E.~Kato, M.~Kawamiya, et~al.
+\newblock Twenty-first-century compatible co2 emissions and airborne fraction
+  simulated by cmip5 earth system models under four representative
+  concentration pathways.
+\newblock \emph{Journal of Climate}, 26\penalty0 (13):\penalty0 4398--4413,
+  2013.
+
 \bibitem[Le~Qu{\'e}r{\'e} et~al.(2015)Le~Qu{\'e}r{\'e}, Moriarty, Andrew,
   Canadell, Sitch, Korsbakken, Friedlingstein, Peters, Andres, Boden,
   et~al.]{le2015global}
@@ -75,6 +101,23 @@ J.~F. Mitchell.
 \newblock \emph{Reviews of Geophysics}, 27\penalty0 (1):\penalty0 115--139,
   1989.
 
+\bibitem[Moss et~al.(2010)Moss, Edmonds, Hibbard, Manning, Rose, Van~Vuuren,
+  Carter, Emori, Kainuma, Kram, et~al.]{moss2010next}
+R.~H. Moss, J.~A. Edmonds, K.~A. Hibbard, M.~R. Manning, S.~K. Rose, D.~P.
+  Van~Vuuren, T.~R. Carter, S.~Emori, M.~Kainuma, T.~Kram, et~al.
+\newblock The next generation of scenarios for climate change research and
+  assessment.
+\newblock \emph{Nature}, 463\penalty0 (7282):\penalty0 747--756, 2010.
+
+\bibitem[Myneni et~al.(2002)Myneni, Hoffman, Knyazikhin, Privette, Glassy,
+  Tian, Wang, Song, Zhang, Smith, et~al.]{myneni2002global}
+R.~Myneni, S.~Hoffman, Y.~Knyazikhin, J.~Privette, J.~Glassy, Y.~Tian, Y.~Wang,
+  X.~Song, Y.~Zhang, G.~Smith, et~al.
+\newblock Global products of vegetation leaf area and fraction absorbed par
+  from year one of modis data.
+\newblock \emph{Remote sensing of environment}, 83\penalty0 (1):\penalty0
+  214--231, 2002.
+
 \bibitem[{Oak Ridge National Laboratory Distributed Active Archive Center ORNL
   DAAC}(2013)]{fluxnetsite2013}
 {Oak Ridge National Laboratory Distributed Active Archive Center ORNL DAAC}.
@@ -89,6 +132,14 @@ Y.~Pan, R.~A. Birdsey, J.~Fang, R.~Houghton, P.~E. Kauppi, W.~A. Kurz, O.~L.
 \newblock A large and persistent carbon sink in the world?s forests.
 \newblock \emph{Science}, 333\penalty0 (6045):\penalty0 988--993, 2011.
 
+\bibitem[Running et~al.(2004)Running, Nemani, Heinsch, Zhao, Reeves, and
+  Hashimoto]{running2004continuous}
+S.~W. Running, R.~R. Nemani, F.~A. Heinsch, M.~Zhao, M.~Reeves, and
+  H.~Hashimoto.
+\newblock A continuous satellite-derived measure of global terrestrial primary
+  production.
+\newblock \emph{Bioscience}, 54\penalty0 (6):\penalty0 547--560, 2004.
+
 \bibitem[Sitch et~al.(2008)Sitch, Huntingford, Gedney, Levy, Lomas, Piao,
   Betts, Ciais, Cox, Friedlingstein, et~al.]{sitch2008evaluation}
 S.~Sitch, C.~Huntingford, N.~Gedney, P.~Levy, M.~Lomas, S.~Piao, R.~Betts,
@@ -98,5 +149,14 @@ S.~Sitch, C.~Huntingford, N.~Gedney, P.~Levy, M.~Lomas, S.~Piao, R.~Betts,
   models (dgvms).
 \newblock \emph{Global Change Biology}, 14\penalty0 (9):\penalty0 2015--2039,
   2008.
+
+\bibitem[Yuan et~al.(2007)Yuan, Liu, Zhou, Zhou, Tieszen, Baldocchi, Bernhofer,
+  Gholz, Goldstein, Goulden, et~al.]{yuan2007deriving}
+W.~Yuan, S.~Liu, G.~Zhou, G.~Zhou, L.~L. Tieszen, D.~Baldocchi, C.~Bernhofer,
+  H.~Gholz, A.~H. Goldstein, M.~L. Goulden, et~al.
+\newblock Deriving a light use efficiency model from eddy covariance flux data
+  for predicting daily gross primary production across biomes.
+\newblock \emph{Agricultural and Forest Meteorology}, 143\penalty0
+  (3):\penalty0 189--207, 2007.
 
 \end{thebibliography}
