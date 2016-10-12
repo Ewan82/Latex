@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  9 OCT 2016 16:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  12 OCT 2016 12:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -347,28 +347,47 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 17.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-No file disturbance.bbl.
-[3] (./disturbance.aux) ) 
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
+disturbance.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 9--16
+[]\OT1/cmr/m/n/10.95 F. A. Di-jk-stra and W. Cheng.  In-ter-ac-tions be-tween s
+oil and tree roots ac-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--16
+\OT1/cmr/m/n/10.95 cel-er-ate long-term soil car-bon de-com-po-si-tion.  \OT1/c
+mr/m/it/10.95 Ecol-ogy Let-ters\OT1/cmr/m/n/10.95 , 10(11):1046--
+ []
+
+
+Underfull \hbox (badness 8094) in paragraph at lines 9--16
+\OT1/cmr/m/n/10.95 1053, 2007.  ISSN 1461-0248.  doi: 10.1111/j.1461-0248.2007.
+01095.x.  URL
+ []
+
+) [3] (./disturbance.aux) ) 
 Here is how much of TeX's memory you used:
- 3631 strings out of 493117
- 48248 string characters out of 6135433
- 119056 words of memory out of 5000000
- 7009 multiletter control sequences out of 15000+600000
- 14851 words of font info for 57 fonts, out of 8000000 for 9000
+ 3646 strings out of 493117
+ 48459 string characters out of 6135433
+ 120197 words of memory out of 5000000
+ 7020 multiletter control sequences out of 15000+600000
+ 15365 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,43p,1207b,210s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr8.pfb>
-Output written on disturbance.pdf (3 pages, 84880 bytes).
+ 38i,6n,43p,1218b,210s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmtt10.pfb>
+Output written on disturbance.pdf (3 pages, 110019 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 46 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

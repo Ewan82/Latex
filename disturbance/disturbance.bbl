@@ -1,0 +1,28 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Dijkstra and Cheng(2007)]{ELE:ELE1095}
+F.~A. Dijkstra and W.~Cheng.
+\newblock Interactions between soil and tree roots accelerate long-term soil
+  carbon decomposition.
+\newblock \emph{Ecology Letters}, 10\penalty0 (11):\penalty0 1046--1053, 2007.
+\newblock ISSN 1461-0248.
+\newblock \doi{10.1111/j.1461-0248.2007.01095.x}.
+\newblock URL \url{http://dx.doi.org/10.1111/j.1461-0248.2007.01095.x}.
+
+\bibitem[Moore et~al.(2013)Moore, Trahan, Wilkes, Quaife, Stephens, Elder,
+  Desai, Negron, and Monson]{ELE:ELE12097}
+D.~J.~P. Moore, N.~A. Trahan, P.~Wilkes, T.~Quaife, B.~B. Stephens, K.~Elder,
+  A.~R. Desai, J.~Negron, and R.~K. Monson.
+\newblock Persistent reduced ecosystem respiration after insect disturbance in
+  high elevation forests.
+\newblock \emph{Ecology Letters}, 16\penalty0 (6):\penalty0 731--737, 2013.
+\newblock ISSN 1461-0248.
+\newblock \doi{10.1111/ele.12097}.
+\newblock URL \url{http://dx.doi.org/10.1111/ele.12097}.
+
+\end{thebibliography}

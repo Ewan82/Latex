@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  11 AUG 2016 10:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  12 OCT 2016 08:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -927,13 +927,13 @@ multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./sic_corr_D2_nee.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
->] (./chapter2.bbl [21]
+>] [21] (./chapter2.bbl
 Underfull \hbox (badness 1292) in paragraph at lines 119--125
 []\OT1/ptm/m/n/10.95 D. Joyner, O. []Cert[]^^Pk, A. Meurer, and B. E. Granger. 
  Open source com-puter al-ge-bra sys-tems:
  []
 
-[22]) [23] (./chapter2.aux) ) 
+[22] [23]) [24] (./chapter2.aux) ) 
 Here is how much of TeX's memory you used:
  11186 strings out of 493117
  192488 string characters out of 6135433
@@ -942,23 +942,23 @@ Here is how much of TeX's memory you used:
  68494 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,16n,43p,10387b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvip
-s/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
-10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/urw/times/utmri8a.pfb>
-Output written on chapter2.pdf (23 pages, 724639 bytes).
+{/usr/local/texlive/2014/texmf-dist/fonts/enc
+/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/urw/times/utmri8a.pfb>
+Output written on chapter2.pdf (24 pages, 726239 bytes).
 PDF statistics:
- 935 PDF objects out of 1000 (max. 8388607)
- 266 compressed objects within 3 object streams
+ 938 PDF objects out of 1000 (max. 8388607)
+ 268 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
