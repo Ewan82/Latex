@@ -1,9 +1,18 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bloom and Williams(2015)]{Bloom2015}
+A.~A. Bloom and M.~Williams.
+\newblock {Constraining ecosystem carbon dynamics in a data-limited world:
+  integrating ecological "common sense" in a model–data fusion framework}.
+\newblock \emph{Biogeosciences}, 12\penalty0 (5):\penalty0 1299--1315, 2015.
+\newblock ISSN 1726-4189.
+\newblock \doi{10.5194/bg-12-1299-2015}.
+\newblock URL \url{http://www.biogeosciences.net/12/1299/2015/}.
 
 \bibitem[Dijkstra and Cheng(2007)]{ELE:ELE1095}
 F.~A. Dijkstra and W.~Cheng.
@@ -13,6 +22,19 @@ F.~A. Dijkstra and W.~Cheng.
 \newblock ISSN 1461-0248.
 \newblock \doi{10.1111/j.1461-0248.2007.01095.x}.
 \newblock URL \url{http://dx.doi.org/10.1111/j.1461-0248.2007.01095.x}.
+
+\bibitem[Kerr and Haufe(2011)]{kerr2011thinning}
+G.~Kerr and J.~Haufe.
+\newblock Thinning practice: A silvicultural guide.
+\newblock \emph{Forestry Commission}, page~54, 2011.
+
+\bibitem[Lawless(2013)]{lawless2013}
+A.~S. Lawless.
+\newblock Variational data assimilation for very large environmental problems.
+\newblock In M.~J.~P. Cullen, M.~A. Freitag, S.~Kindermann, and R.~Scheichl,
+  editors, \emph{Large scale Inverse Problems: Computational Methods and
+  Applications in the Earth Sciences, Radon series on Computational and Applied
+  Mathematics}, pages 55--90. De Gruyter, 2013.
 
 \bibitem[Moore et~al.(2013)Moore, Trahan, Wilkes, Quaife, Stephens, Elder,
   Desai, Negron, and Monson]{ELE:ELE12097}
@@ -24,5 +46,86 @@ D.~J.~P. Moore, N.~A. Trahan, P.~Wilkes, T.~Quaife, B.~B. Stephens, K.~Elder,
 \newblock ISSN 1461-0248.
 \newblock \doi{10.1111/ele.12097}.
 \newblock URL \url{http://dx.doi.org/10.1111/ele.12097}.
+
+\bibitem[Papale et~al.(2006)Papale, Reichstein, Aubinet, Canfora, Bernhofer,
+  Kutsch, Longdoz, Rambal, Valentini, Vesala, et~al.]{papale2006towards}
+D.~Papale, M.~Reichstein, M.~Aubinet, E.~Canfora, C.~Bernhofer, W.~Kutsch,
+  B.~Longdoz, S.~Rambal, R.~Valentini, T.~Vesala, et~al.
+\newblock Towards a standardized processing of net ecosystem exchange measured
+  with eddy covariance technique: algorithms and uncertainty estimation.
+\newblock \emph{Biogeosciences}, 3\penalty0 (4):\penalty0 571--583, 2006.
+
+\bibitem[Pinnington et~al.(2016)Pinnington, Casella, Dance, Lawless, Morison,
+  Nichols, Wilkinson, and Quaife]{Pinnington2016299}
+E.~M. Pinnington, E.~Casella, S.~L. Dance, A.~S. Lawless, J.~I. Morison, N.~K.
+  Nichols, M.~Wilkinson, and T.~L. Quaife.
+\newblock Investigating the role of prior and observation error correlations in
+  improving a model forecast of forest carbon balance using four-dimensional
+  variational data assimilation.
+\newblock \emph{Agricultural and Forest Meteorology}, 228–229:\penalty0 299
+  -- 314, 2016.
+\newblock ISSN 0168-1923.
+\newblock \doi{http://dx.doi.org/10.1016/j.agrformet.2016.07.006}.
+
+\bibitem[Raupach et~al.(2005)Raupach, Rayner, Barrett, DeFries, Heimann, Ojima,
+  Quegan, and Schmullius]{raupach2005model}
+M.~Raupach, P.~Rayner, D.~Barrett, R.~DeFries, M.~Heimann, D.~Ojima, S.~Quegan,
+  and C.~Schmullius.
+\newblock Model--data synthesis in terrestrial carbon observation: methods,
+  data requirements and data uncertainty specifications.
+\newblock \emph{Global Change Biology}, 11\penalty0 (3):\penalty0 378--397,
+  2005.
+
+\bibitem[Richardson et~al.(2008)Richardson, Mahecha, Falge, Kattge, Moffat,
+  Papale, Reichstein, Stauch, Braswell, Churkina, Kruijt, and
+  Hollinger]{Richardson200838}
+A.~D. Richardson, M.~D. Mahecha, E.~Falge, J.~Kattge, A.~M. Moffat, D.~Papale,
+  M.~Reichstein, V.~J. Stauch, B.~H. Braswell, G.~Churkina, B.~Kruijt, and
+  D.~Y. Hollinger.
+\newblock Statistical properties of random \{CO2\} flux measurement uncertainty
+  inferred from model residuals.
+\newblock \emph{Agricultural and Forest Meteorology}, 148\penalty0
+  (1):\penalty0 38 -- 50, 2008.
+\newblock ISSN 0168-1923.
+\newblock \doi{http://dx.doi.org/10.1016/j.agrformet.2007.09.001}.
+
+\bibitem[Tremolet(2006)]{Tremolet2006}
+Y.~Tremolet.
+\newblock {Accounting for an imperfect model in 4D-Var}.
+\newblock \emph{Quarterly Journal of the Royal Meteorological Society},
+  132\penalty0 (621):\penalty0 2483--2504, 2006.
+\newblock ISSN 00359009.
+\newblock \doi{10.1256/qj.05.224}.
+\newblock URL \url{http://doi.wiley.com/10.1256/qj.05.224}.
+
+\bibitem[Wilkinson et~al.(2012)Wilkinson, Eaton, Broadmeadow, and
+  Morison]{wilkinson2012inter}
+M.~Wilkinson, E.~Eaton, M.~Broadmeadow, and J.~Morison.
+\newblock Inter-annual variation of carbon uptake by a plantation oak woodland
+  in south-eastern england.
+\newblock \emph{Biogeosciences}, 9\penalty0 (12):\penalty0 5373--5389, 2012.
+
+\bibitem[Wilkinson et~al.(2015)Wilkinson, Crow, Eaton, and
+  Morison]{wilkinson2015effects}
+M.~Wilkinson, P.~Crow, E.~Eaton, and J.~Morison.
+\newblock Effects of management thinning on co\(_{2}\) exchange by a plantation
+  oak woodland in south-eastern england.
+\newblock \emph{Biogeosciences Discussions}, 12\penalty0 (19), 2015.
+
+\bibitem[Williams et~al.(1997)Williams, Rastetter, Fernandes, Goulden, Shaver,
+  and Johnson]{williams1997predicting}
+M.~Williams, E.~B. Rastetter, D.~N. Fernandes, M.~L. Goulden, G.~R. Shaver, and
+  L.~C. Johnson.
+\newblock Predicting gross primary productivity in terrestrial ecosystems.
+\newblock \emph{Ecological Applications}, 7\penalty0 (3):\penalty0 882--894,
+  1997.
+
+\bibitem[Williams et~al.(2005)Williams, Schwarz, Law, Irvine, and
+  Kurpius]{williams2005improved}
+M.~Williams, P.~A. Schwarz, B.~E. Law, J.~Irvine, and M.~R. Kurpius.
+\newblock An improved analysis of forest carbon dynamics using data
+  assimilation.
+\newblock \emph{Global Change Biology}, 11\penalty0 (1):\penalty0 89--105,
+  2005.
 
 \end{thebibliography}
