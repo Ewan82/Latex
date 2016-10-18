@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  16 OCT 2016 11:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  18 OCT 2016 12:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -365,82 +365,90 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 17.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<dalec2diag.pdf, id=16, 758.835pt x 453.695pt>
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+
+<Thinned.pdf, id=23, 845.1575pt x 597.23125pt>
+File: Thinned.pdf Graphic file (type pdf)
+ <use Thinned.pdf>
+Package pdftex.def Info: Thinned.pdf used on input line 85.
+(pdftex.def)             Requested size: 234.8775pt x 165.97513pt.
+ [4 <./Thinned.pdf>] <dalec2diag.pdf, id=62, 758.835pt x 453.695pt>
 File: dalec2diag.pdf Graphic file (type pdf)
  <use dalec2diag.pdf>
-Package pdftex.def Info: dalec2diag.pdf used on input line 55.
+Package pdftex.def Info: dalec2diag.pdf used on input line 101.
 (pdftex.def)             Requested size: 234.8775pt x 140.42938pt.
- [3 <./dalec2diag.pdf>] [4] [5]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 150.
+
+[5 <./dalec2diag.pdf>] [6]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 147.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
- [6]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 147.
+
 (./disturbance.bbl
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--25
+Underfull \hbox (badness 10000) in paragraph at lines 25--32
 []\OT1/cmr/m/n/10.95 F. A. Di-jk-stra and W. Cheng.  In-ter-ac-tions be-tween s
 oil and tree roots ac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--25
+Underfull \hbox (badness 10000) in paragraph at lines 25--32
 \OT1/cmr/m/n/10.95 cel-er-ate long-term soil car-bon de-com-po-si-tion.  \OT1/c
 mr/m/it/10.95 Ecol-ogy Let-ters\OT1/cmr/m/n/10.95 , 10(11):1046--
  []
 
 
-Underfull \hbox (badness 8094) in paragraph at lines 18--25
+Underfull \hbox (badness 8094) in paragraph at lines 25--32
 \OT1/cmr/m/n/10.95 1053, 2007.  ISSN 1461-0248.  doi: 10.1111/j.1461-0248.2007.
 01095.x.  URL
  []
 
+[7]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-[7])
-Overfull \hbox (107.52946pt too wide) in paragraph at lines 166--193
+ [8])
+Overfull \hbox (107.52946pt too wide) in paragraph at lines 178--205
  [] 
  []
 
-[8] [9] (./disturbance.aux) ) 
+[9] [10] (./disturbance.aux) ) 
 Here is how much of TeX's memory you used:
- 3822 strings out of 493117
- 51351 string characters out of 6135433
- 133478 words of memory out of 5000000
- 7185 multiletter control sequences out of 15000+600000
+ 3843 strings out of 493117
+ 51761 string characters out of 6135433
+ 136719 words of memory out of 5000000
+ 7205 multiletter control sequences out of 15000+600000
  15365 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,18n,43p,1482b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
-fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pf
-b>
-Output written on disturbance.pdf (9 pages, 261119 bytes).
+ 38i,18n,43p,1638b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
+.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
+pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.p
+fb>
+Output written on disturbance.pdf (10 pages, 4067957 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 141 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
