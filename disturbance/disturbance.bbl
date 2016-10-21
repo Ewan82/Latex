@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -20,6 +20,14 @@ N.~J. Br{\'e}da.
   instruments and current controversies.
 \newblock \emph{Journal of experimental botany}, 54\penalty0 (392):\penalty0
   2403--2417, 2003.
+
+\bibitem[Dahdouh-Guebas and Koedam(2006)]{dahdouh2006empirical}
+F.~Dahdouh-Guebas and N.~Koedam.
+\newblock Empirical estimate of the reliability of the use of the point-centred
+  quarter method (pcqm): Solutions to ambiguous field situations and
+  description of the pcqm+ protocol.
+\newblock \emph{Forest Ecology and management}, 228\penalty0 (1):\penalty0
+  1--18, 2006.
 
 \bibitem[Dijkstra and Cheng(2007)]{ELE:ELE1095}
 F.~A. Dijkstra and W.~Cheng.
@@ -67,6 +75,11 @@ A.~S. Lawless.
   editors, \emph{Large scale Inverse Problems: Computational Methods and
   Applications in the Earth Sciences, Radon series on Computational and Applied
   Mathematics}, pages 55--90. De Gruyter, 2013.
+
+\bibitem[McKay et~al.(2003)McKay, Hudson, and Hudson]{mckay2003woodfuel}
+H.~McKay, J.~Hudson, and R.~Hudson.
+\newblock Woodfuel resource in britain.
+\newblock \emph{Forestry Commission Report}, 2003.
 
 \bibitem[Moore et~al.(2013)Moore, Trahan, Wilkes, Quaife, Stephens, Elder,
   Desai, Negron, and Monson]{ELE:ELE12097}

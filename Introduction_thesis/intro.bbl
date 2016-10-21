@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -222,6 +222,11 @@ S.~W. Running, R.~R. Nemani, F.~A. Heinsch, M.~Zhao, M.~Reeves, and
 \newblock A continuous satellite-derived measure of global terrestrial primary
   production.
 \newblock \emph{Bioscience}, 54\penalty0 (6):\penalty0 547--560, 2004.
+
+\bibitem[Schimel(2013)]{schimel2013climate}
+D.~Schimel.
+\newblock \emph{Climate and ecosystems}.
+\newblock Princeton University Press, 2013.
 
 \bibitem[Scholze et~al.(2006)Scholze, Knorr, Arnell, and
   Prentice]{scholze2006climate}

@@ -1,7 +1,7 @@
 \documentclass[11pt]{article}
 \usepackage[sort]{natbib}
-\usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx, pbox}
-\usepackage{fancyhdr}
+\usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx, pbox, subcaption}
+\usepackage{fancyhdr, tabularx}
 \usepackage[margin=1in]{geometry}
 \bibliographystyle{abbrvnat}
 
@@ -18,7 +18,7 @@
 
 
 \section*{Abstract}
-The response of forests and terrestrial ecosystems to disturbance is an important process in the global carbon cycle in context of a changing climate. Disturbance can take many forms, for example; felling, fire and insect outbreak. In current estimates of the global carbon budget disturbance is one of the least understood components. In this paper we investigate the effect of management practices on the carbon dynamics of a mature temperate woodland. In order to better understand ecosystem response we use the mathematical technique of data assimilation to combine a diverse set of observations with a mathematical model of ecosystem carbon balance. This allows us to combine the uncertainty from observations and prior model predictions to find the best possible estimate to the studied system. We develop new data assimilation techniques allowing for the assimilation of daytime and nighttime net ecosystem exchange observations with a daily time-step model. This allows for the assimilation of much otherwise neglected carbon flux information. These techniques are applicable to other ecosystem models and data assimilation schemes. Previous statistical analyses of eddy covariance data at the study site had suggested that disturbance from thinning resulted in no change to net ecosystem carbon uptake. We show that this is likely due to reduced ecosystem respiration post-disturbance compensating for a reduction in gross primary productivity. Our results support the theory of an upper limit for forest net carbon uptake due to the magnitude of ecosystem respiration scaling with gross primary productivity.  
+The response of forests and terrestrial ecosystems to disturbance is an important process in the global carbon cycle in context of a changing climate. Disturbance can take many forms, for example; felling, fire and insect outbreak. In current estimates of the global carbon budget disturbance is one of the least understood components. In this paper we investigate the effect of management practices on the carbon dynamics of a mature temperate woodland. In order to better understand ecosystem response we use the mathematical technique of data assimilation to combine a diverse set of observations with a mathematical model of ecosystem carbon balance. This allows us to combine the uncertainty from observations and prior model predictions to find the best possible estimate to the studied system. We develop new data assimilation techniques allowing for the assimilation of daytime and nighttime net ecosystem exchange observations with a daily time-step model. This allows for the assimilation of much otherwise neglected carbon flux information. These techniques are applicable to other ecosystem models and data assimilation schemes. Previous statistical analyses of eddy covariance data at the study site had suggested that disturbance from thinning resulted in no change to the net carbon uptake of the ecosystem. We show that this is likely due to reduced ecosystem respiration post-disturbance compensating for a reduction in gross primary productivity. Our results support the theory of an upper limit of forest net carbon uptake due to the magnitude of ecosystem respiration scaling with gross primary productivity.  
 
 \section{Introduction}
 \subsection{Role of disturbance in the global C cycle}
@@ -45,7 +45,7 @@ Alice Holt Forest is a research forest area managed by the UK Forestry Commissio
 
 As part of the management regime, the Straits Inclosure is subject to thinning; whereby a proportion of trees are removed from the canopy in order to reduce competition and improve the quality of the final tree crop. At the Straits an intermediate thinning method is used with a portion of both subdominant and dominant trees being removed from the stand \citep{kerr2011thinning}. The whole of the stand was thinned in 1995. Subsequently the Eastern side of the Straits was thinned in 2007 and then the Western side in 2014. The flux tower at the site is situated on the boundary between these two sides, allowing for the use of a footprint model to split the flux record and analyse the effect of this disturbance on carbon fluxes at the site. In \citet{wilkinson2015effects} a statistically analysis of the eddy covariance flux record found that there was no significant effect on the net carbon uptake of the Eastern side after thinning in 2007. In this paper we focus on the effect of disturbance on the Western side after thinning in 2014.   
 
-\subsection{Observations}
+\subsection{Observations} \label{sec:obs}
 
 In order to assess the effect the 2014 thinning had on the Straits Inclosure an intensive field campaign was undertaken to measure leaf area index and also estimate woody biomass. From the site we also have a long record of flux data as discussed in section~\ref{sec:site_description}.
 
@@ -77,19 +77,32 @@ As part of the work undertaken for this paper; to assess the impact of the 2014 
 The ceptometer is used with an additional Photosynthetically Active Radiation (PAR) sensor. We measure below canopy PAR using the ceptometer while logging above canopy PAR using a data logger and PAR sensor positioned outside the canopy. We can then estimate LAI using the above and below canopy readings and a set of equations relying on some assumptions \citep{fassnacht1994comparison}.
 For the hemispherical photographs we use the HemiView software \citep{rich1999hemiview} which can calculate the proportion of visible sky as a function of sky direction (gap fraction) this can then be used to calculate LAI  \citep{Jonckheere2004}.
 
-Six litter traps were also established at points along the transects allowing for comparison with the other methods. These were sampled throughout the season in 2015. We found the litter trap derived LAI was always greater than LAI estimates derived from optical methods, as expected \citep{breda2003ground}. From the sampling of the litter traps we also have estimates to leaf mass area for use in data assimilation. As the 6 litter traps are not enough to describe the LAI for the research site \citep{kimmins1973some}, we used estimates from the ceptometer and hemispherical photographs for data assimilation. We take the weighted average of the hemispherical photograph and ceptometer estimated LAI to find an LAI of 4.24 with a standard error of 0.07 for the Eastern unthinned section of forest and an LAI of 3.06 with a standard error of 0.07 for the Western thinned section of forest. 
+Six litter traps were also established at points along the transects allowing for comparison with the other methods. These were sampled throughout the season in 2015. We found the litter trap derived LAI was always greater than LAI estimates derived from optical methods, as expected \citep{breda2003ground}. From the sampling of the litter traps we also have estimates to leaf mass per area for use in data assimilation. As the 6 litter traps are not enough to describe the LAI for the research site \citep{kimmins1973some}, we used estimates from the ceptometer and hemispherical photographs for data assimilation. We take the weighted average of the hemispherical photograph and ceptometer estimated LAI to find an LAI of 4.42 with a standard error of 0.07 for the Eastern unthinned section of forest and an LAI of 3.06 with a standard error of 0.07 for the Western thinned section of forest. From our litter trap observations we find a leaf mass per area of 29 g C m\(^{-2}\) for both sides of the forest.
 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.5\textwidth]{Thinned.pdf}
-    \caption{Hemispherical photograph derived LAI for the Straits Inclosure at 50m intervals.} \label{fig:hemi_lai}
+    \includegraphics[width=0.5\textwidth]{thinned.pdf}
+    \caption{Hemispherical photograph derived LAI for the Straits Inclosure at 50m intervals along three transects.} \label{fig:hemi_lai}
 \end{figure}
 
 \subsubsection{Woody biomass}  
-Method of point centred quarters used from REF and an allometric relationship between diameter at breast heigh and total above ground biomass and corse root biomass to find an estimate to total woody biomass for both sides of the forest.
+The method of Point-Centred Quarters (PCQ) was used to conduct a biomass survey as specified in \citet{dahdouh2006empirical}. 114 points were sampled along the three transects measuring the Diameter at Breast Height (DBH) and the density of trees. We then used allometric relationships between DBH and total above ground biomass and coarse root biomass, found in work carried out by Forest Research and in \citet{mckay2003woodfuel}, to find an estimate to total woody and coarse root carbon. We can see these observations in table~\ref{table:cwoo_obs}, we have made the assumption that 50\% of dry plant mass is carbon.
 
-Mensuration measurements for West of Forest from Ian,  
+Forest Research also carry out their own mensuration studies at the site. One such study was carried out of the Western side after the thinning at a similar time to our own PCQ measurements and found a tree density of 225 ha\(^{-1}\) and an average DBH of 32 cm, which are in close agreement to our own estimates in table~\ref{table:cwoo_obs}. This gives us confidence that past measurements before the thinning will also be representative of the methods we have used. From 2009 measurements from Forest Research found the Western side to have a tree density of 418 ha\(^{-1}\) and an average DBH of 27.73 cm. This suggests that approximately 46\% of trees have been removed during thinning. From these estimates we can also see the effect thinning has on the type of trees found at the site. The amount of trees per hectare has dropped dramatically after thinning but the mean DBH has increased, indicating that smaller subdominant trees have been removed. The mean DBH on the Eastern side is greater still, indicating that the thinning that took place in 2007 of the Eastern side has allowed the dominant trees to grow as a result of reduced competition.
+
+\begin{table}[ht] 
+\begin{center}
+	\begin{tabularx}{\textwidth}{| l | l | l | X |}
+	\hline
+	Sector & Tree density (ha\(^{-1}\)) & mean DBH (cm) & Estimated Woody biomass and coarse root carbon (g C m\(^{-2}\)) \\ \hline
+	East & 272 & 34.12 & 13130 \\ \hline
+	West & 225 & 32.85 & 9908 \\ \hline
+	\end{tabularx}
+	\caption{Point-centred quarter method observations for 2015.}
+	\label{table:cwoo_obs}
+\end{center} 
+\end{table}
 
 \subsection{Model and data assimilation}
 \subsubsection{DALEC2 ecosystem carbon model} \label{sec:dalec2}
@@ -104,36 +117,95 @@ The DALEC2 model is a simple process-based model describing the carbon dynamics 
 
 \subsubsection{Data assimilation} \label{sec:da}
 
-We implement Four-Dimensional Variation data assimilation (4D-Var) with the DALEC2 model for joint parameter and state estimation. In 4D-Var we aim to find the parameter and initial state values such that the model trajectory best fits the data over some time window, given some prior information about the system. This prior information takes the form of an initial estimate to the parameter and state variables of the model, $\textbf{x}^{b}$, valid at the initial time. This prior is assumed to have unbiased, Gaussian errors with known covariance matrix $\textbf{B}$. Adding the prior term ensures that our problem is well posed and that we can find a locally unique solution \citep{Tremolet2006}. The prior used in this paper is derived from the assimilation of eddy covariance data from previous years. In 4D-Var we aim to find the parameter and initial state values that minimises the weighted least squares distance to the prior while minimising the weighted least squares distance of the model trajectory to the observations over the time window $t_{0}, \dots, t_{N}$ \citep{lawless2013}. We do this by finding the state $\textbf{x}^{a}_{0}$ at time $t_{0}$ that minimises the cost function
+We implement Four-Dimensional Variation data assimilation (4D-Var) with the DALEC2 model for joint parameter and state estimation. In 4D-Var we aim to find the parameter and initial state values such that the model trajectory best fits the data over some time window, given some prior information about the system. This prior information takes the form of an initial estimate to the parameter and state variables of the model, $\textbf{x}^{b}$, valid at the initial time. This prior is assumed to have unbiased, Gaussian errors with known covariance matrix $\textbf{B}$. Adding the prior term ensures that our problem is well posed and that we can find a locally unique solution \citep{Tremolet2006}. The prior used in this paper is derived from the assimilation of eddy covariance data from previous years and can be found in table~\ref{table:xbvars}. In 4D-Var we aim to find the parameter and initial state values that minimises the weighted least squares distance to the prior while minimising the weighted least squares distance of the model trajectory to the observations over the time window $t_{0}, \dots, t_{N}$ \citep{lawless2013}. We do this by finding the state $\textbf{x}^{a}_{0}$ at time $t_{0}$ that minimises the cost function
 
 \begin{equation}
 J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}\sum_{i=0}^{N}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i))^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i)),
 \end{equation}
-where $\textbf{x}_{0}$ is the vector of parameter and initial state values to be optimised, $\textbf{h}_{i}$ is the observation operator mapping the parameters and state to the observations $\textbf{y}_{i}$ and $\textbf{R}_{i}$ is the observation error covariance matrix. Further details of the implemented data assimilation scheme and specification of prior and observational errors can be found in \citet{Pinnington2016299}.
+where $\textbf{x}_{0}$ is the vector of parameter and initial state values to be optimised, $\textbf{h}_{i}$ is the observation operator mapping the parameters and state to the observations $\textbf{y}_{i}$ and $\textbf{R}_{i}$ is the observation error covariance matrix. Further details of the implemented data assimilation scheme and specification of prior and observational errors can be found in \citet{Pinnington2016299}. 
 
 In this paper we assimilate day and nighttime NEE in order to increase the number of observations available to us and also better partition our modelled estimate of GPP and total ecosystem respiration, as discussed in section~\ref{sec:eddycov}. As the DALEC2 model runs at a daily time step this requires us to relate the daily parameter and state values from the model to the twice-daily observations of NEE. We do this by writing two new observation operators, one relating the model state and parameters to daytime NEE and the other to nighttime NEE. The NEE of CO\(_{2}\) at any given time is the difference between GPP and ecosystem respiration. For an observation of total daily NEE on day \(i\) we have,
 \begin{equation}
-NEE^{i}=-(1-f_{auto})GPP^{i}(C_{fol}^{i}, \Psi) + \theta_{lit}C_{lit}^i e^{\Theta T^{i}} + \theta_{som}C_{som}^i e^{\Theta T^{i}}, \label{eqn: D1_nee}
+NEE^{i}=-GPP^{i}(C_{fol}^{i}, \Psi) +f_{auto}GPP^{i}(C_{fol}^{i}, \Psi) + \theta_{lit}C_{lit}^i e^{\Theta T^{i}} + \theta_{som}C_{som}^i e^{\Theta T^{i}}, \label{eqn: D1_nee}
 \end{equation}
-where all terms have the same meaning as described in section~\ref{sec:dalec_eqns}. For total daytime NEE we have,
+where all terms have the same meaning as described in section~\ref{sec:dalec_eqns}, with term one being gross primary productivity, term two corresponding to autotrophic respiration and term three and four corresponding to heterotrophic respiration. For total daytime NEE we have,
 \begin{equation}
 NEE_{day}^{i} = -GPP^{i}(C_{fol}^{i}, \Psi) + \delta_{day}f_{auto}GPP^{i}(C_{fol}^{i}, \Psi) + \delta_{day}\theta_{lit}C_{lit}^i e^{\Theta T_{day}^{i}} + \delta_{day}\theta_{som}C_{som}^i e^{\Theta T_{day}^{i}} \label{eqn: D1_nee_day}
 \end{equation}
-where \(\delta_{day}\) is the day length, expressed as \(\frac{\text{number of daylight hours}}{24}\), and \(T_{day}^{i}\) is the mean daytime temperature. For nighttime NEE we have,
+where \(\delta_{day}\) is the day length, expressed as \(\frac{\text{number of daylight hours}}{24}\), and \(T_{day}^{i}\) is the mean daytime temperature. Here we still have the same term for GPP as in equation~\eqref{eqn: D1_nee} as all photosynthesis occurs during daylight hours, the respirations are then scaled by the length of daylight hours. For nighttime NEE we have,
 \begin{equation}
 NEE_{night}^{i} =  \delta_{night}f_{auto}GPP^{i}(C_{fol}^{i}, \Psi) + \delta_{night}\theta_{lit}C_{lit}^i e^{\Theta T_{night}^{i}} + \delta_{night}\theta_{som}C_{som}^i e^{\Theta T_{night}^{i}} \label{eqn: D1_nee_night}
 \end{equation}
-where \(\delta_{night}\) is the night length, expressed as \(\frac{\text{number of night hours}}{24}\), and \(T_{night}^{i}\) is the mean nighttime temperature. Day length and night length are calculated using a solar model here, but could also be estimated using the record of incident solar radiation from the flux tower. These new observation operators allow for assimilation of day/nighttime NEE without the need for model development and can be applied to other ecosystem models to allow for the assimilation of finer temporal resolution eddy covariance data and possible improvements to the partitioning of photosynthesis and ecosystem respiration. From section~\ref{sec:results} we can see that these modified observation operators allow our model to predict both daytime and nighttime NEE accurately.
+where \(\delta_{night}\) is the night length, expressed as \(\frac{\text{number of night hours}}{24}\), and \(T_{night}^{i}\) is the mean nighttime temperature. Here we no long have a term for GPP as no GPP will occur during the night, the respirations are again scaled by night length as in equation~\eqref{eqn: D1_nee_day}. Day length and night length are calculated using a solar model here, but could also be estimated using the record of incident solar radiation from the flux tower. These new observation operators allow for assimilation of day/nighttime NEE without the need for model development and can be applied to other ecosystem models to allow for the assimilation of finer temporal resolution eddy covariance data and possible improvements to the partitioning of photosynthesis and ecosystem respiration. From section~\ref{sec:results} we can see that these modified observation operators allow our model to predict both daytime and nighttime NEE accurately.
 
 %Cite MacBean?? for correlations?
 
 \subsection{Experimental setup}
-Assimilation of 2015 years data post disturbance for the optimisation of two parameter sets, one corresponding to the unmanaged East and the other set to the managed West.
+%Assimilation of 2015 years data post disturbance for the optimisation of two parameter sets, one corresponding to the unmanaged East and the other set to the managed West.
 
-In this paper we have split the flux tower eddy covariance record using a footprint model. This means we have observations of NEE for both the West and East sides of the forest stand. By combining these two distinct sets of observations with our prior model using 4D-Var data assimilation allows us to retrieve two unique sets of parameter and initial state values, .
+%In this paper we have split the flux tower eddy covariance record using a footprint model. This means we have observations of NEE for both the West and East sides of the forest stand. By combining these two distinct sets of observations with our prior model using 4D-Var data assimilation allows us to retrieve two unique sets of parameter and initial state values, .
+
+Using the prior model estimate specified in table~\ref{table:xbvars} we run two data assimilation experiments for the years window of 2015. In the first experiment we assimilated all data available (as specified in section~\ref{sec:obs}) for the unthinned Eastern section of forest. In the second experiment we assimilate all data available for the thinned Western section of forest. Combining these two distinct sets of observations with our prior model using 4D-Var data assimilation allows us to retrieve two unique sets of parameter and initial state values corresponding to the thinned and unthinned sections of the site. This allows us to judge the effect the thinning in 2014 had on the carbon dynamics of the forest in 2015. We do this by analysing the optimised parameter and initial state values for the thinned and unthinned sections of the forest and also considering the model predictions of different variables for each side post-disturbance. 
 
 \section{Results} \label{sec:results}
 Show plots of East and West after assimilation and the change in optimised parameters. Confident in results as we know that even assimilating a single year of data we can accurately describe the carbon dynamics of the site for a long time period (15 years) into the future from Pinnington et al 2016.
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{nee_day.pdf}
+        \caption{NEE\(_{day}\)}
+        \label{fig:nee_day}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{nee_night.pdf}
+        \caption{NEE\(_{night}\)}
+        \label{fig:nee_night}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{lai.pdf}
+        \caption{Leaf area index}
+        \label{fig:lai}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{c_woo.pdf}
+        \caption{C\(_{woo}\)}
+        \label{fig:c_woo}
+    \end{subfigure}
+    \caption{2015 East and West observations and model trajectories after assimilation. Blue line: model trajectory after assimilation of East data, blue shading: error in model after assimilation (\(\pm\) 1 standard deviation), blue dots: East observations with error bars, orange line: model trajectory after assimilation of West data, orange shading: error in model after assimilation (\(\pm\) 1 standard deviation), orange dots: West observations with error bars.} \label{fig:nee_day}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{gpp.pdf}
+        \caption{GPP}
+        \label{fig:gpp}
+        \end{subfigure}
+     \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{rt.pdf}
+        \caption{Total ecosystem respiration}
+        \label{fig:rt}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{ra.pdf}
+        \caption{Autotrophic respiration}
+        \label{fig:ra}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\textwidth]{rh.pdf}
+        \caption{Heterotrophic respiration}
+        \label{fig:rh}
+    \end{subfigure}
+    \caption{2015 East and West model trajectories after assimilation. Blue line: model trajectory after assimilation of East data, blue shading: error in model after assimilation (\(\pm\) 1 standard deviation), blue dots: East observations with error bars, orange line: model trajectory after assimilation of West data, orange shading: error in model after assimilation (\(\pm\) 1 standard deviation), orange dots: West observations with error bars.} \label{fig:nee_day}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{xa_inc.pdf}
+    \caption{Normalised analysis (posterior model) increment \big($\frac{(\textbf{x}^a - \textbf{x}^b)}{\textbf{x}^b}$\big) for the East and West experiments. Explanation of parameter and state variable symbols in table~\ref{table:xbvars}.}
+    \label{fig:xa_inc}
+\end{figure}
 
 \section{Discussion}
 From the assimilation of multiple data streams with a model of ecosystem carbon balance we find evidence that reduced heterotrophic respiration following disturbance allows a managed woodland to exhibit an unchanged net carbon uptake when compared against an undisturbed section of the same woodland. 
@@ -175,7 +247,7 @@ where $T^{i-1}$ is the daily mean temperature, $\Psi$ represents the meteorologi
 
 \begin{table}[ht] 
 \begin{center}
-	\begin{tabular}{| l | l | l | l | l |}
+	\begin{tabularx}{\textwidth}{| l | X | l | l | l |}
 	\hline
 	Parameter & Description & \pbox{7cm}{Background\\ vector ($\textbf{x}^{b}$)} & \pbox{7cm}{Standard \\deviation} & Range \\ \hline
 $\theta_{min}$ & Litter mineralisation rate (day$^{-1}$) & $9.810\times 10^{-4}$ & $2.030\times 10^{-3}$ & $10^{-5} - 10^{-2}$ \\ \hline
@@ -194,14 +266,14 @@ $f_{lab}$ & Fraction of GPP allocated to labile carbon pool & $3.204\times 10^{-
 $c_{ronset}$ & Labile carbon release period (days) & $4.134\times 10^{1}$ & $1.405\times 10^{1}$ & $10 - 100$ \\ \hline
 $d_{fall}$ & Leaf fall day (day) & $2.205\times 10^{2}$ & $3.724\times 10^{1}$ & $1 - 365$ \\ \hline
 $c_{rfall}$ & Leaf-fall period (days) & $1.168\times 10^{2}$ & $2.259\times 10^{1}$ & $10 - 100$ \\ \hline
-$c_{lma}$ & Leaf mass per area ($\text{gCm}^{-2}$) & $1.285\times 10^{2}$ & $6.410\times 10^{1}$ & $10 - 400$ \\ \hline
-$C_{lab}$ & Labile carbon pool ($\text{gCm}^{-2}$) & $1.365\times 10^{2}$ & $6.626\times 10^{1}$ & $10 - 1000$ \\ \hline
-$C_{fol}$ & Foliar carbon pool ($\text{gCm}^{-2}$) & $6.864\times 10^{1}$ & $3.590\times 10^{1}$ & $10 - 1000$ \\ \hline
-$C_{roo}$ & Fine root carbon pool ($\text{gCm}^{-2}$) & $2.838\times 10^{2}$ & $2.193\times 10^{2}$ & $10 - 1000$ \\ \hline
+$c_{lma}$ & Leaf mass per area ($\text{g C m}^{-2}$) & $1.285\times 10^{2}$ & $6.410\times 10^{1}$ & $10 - 400$ \\ \hline
+$C_{lab}$ & Labile carbon pool ($\text{g C m}^{-2}$) & $1.365\times 10^{2}$ & $6.626\times 10^{1}$ & $10 - 1000$ \\ \hline
+$C_{fol}$ & Foliar carbon pool ($\text{g C m}^{-2}$) & $6.864\times 10^{1}$ & $3.590\times 10^{1}$ & $10 - 1000$ \\ \hline
+$C_{roo}$ & Fine root carbon pool ($\text{g C m}^{-2}$) & $2.838\times 10^{2}$ & $2.193\times 10^{2}$ & $10 - 1000$ \\ \hline
 $C_{woo}$ & Above and below ground woody carbon pool ($\text{gCm}^{-2}$) & $6.506\times 10^{3}$ & $7.143\times 10^{3}$ & $100 - 10^{5}$ \\ \hline
-$C_{lit}$ & Litter carbon pool ($\text{gCm}^{-2}$) & $5.988\times 10^{2}$ & $5.450\times 10^{2}$ & $10 - 1000$ \\ \hline
-$C_{som}$ & Soil and organic carbon pool ($\text{gCm}^{-2}$) & $1.936\times 10^{3}$ & $1.276\times 10^{3}$ & $100 - 2 \times 10^{5}$  \\ \hline
-	\end{tabular}
+$C_{lit}$ & Litter carbon pool ($\text{g C m}^{-2}$) & $5.988\times 10^{2}$ & $5.450\times 10^{2}$ & $10 - 1000$ \\ \hline
+$C_{som}$ & Soil and organic carbon pool ($\text{g C m}^{-2}$) & $1.936\times 10^{3}$ & $1.276\times 10^{3}$ & $100 - 2 \times 10^{5}$  \\ \hline
+	\end{tabularx}
 	\caption{Parameter values and standard deviations for background vector used in experiments.}
 	\label{table:xbvars}
 \end{center} 

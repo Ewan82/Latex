@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  18 OCT 2016 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  21 OCT 2016 17:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -203,6 +203,28 @@ LaTeX Info: Redefining \addtolength on input line 76.
 )
 \pb@xlen=\skip57
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@tempdima=\dimen122
+\caption@indent=\dimen123
+\caption@parindent=\dimen124
+\caption@hangindent=\dimen125
+)
+\c@ContinuedFloat=\count104
+)
+\c@subfigure=\count105
+\c@subtable=\count106
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip58
 \f@ncyO@elh=\skip59
@@ -213,6 +235,25 @@ LaTeX Info: Redefining \addtolength on input line 76.
 \f@ncyO@erf=\skip64
 \f@ncyO@olf=\skip65
 \f@ncyO@orf=\skip66
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2014/05/13 v2.10 `tabularx' package (DPC)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen126
+\extrarowheight=\dimen127
+\NC@list=\toks27
+\extratabsurround=\skip67
+\backup@length=\skip68
+)
+\TX@col@width=\dimen128
+\TX@old@table=\dimen129
+\TX@old@col=\dimen130
+\TX@target=\dimen131
+\TX@delta=\dimen132
+\TX@cols=\count107
+\TX@ftn=\toks28
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -228,22 +269,29 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count104
-\Gm@cntv=\count105
-\c@Gm@tempcnt=\count106
-\Gm@bindingoffset=\dimen119
-\Gm@wd@mp=\dimen120
-\Gm@odd@mp=\dimen121
-\Gm@even@mp=\dimen122
-\Gm@layoutwidth=\dimen123
-\Gm@layoutheight=\dimen124
-\Gm@layouthoffset=\dimen125
-\Gm@layoutvoffset=\dimen126
-\Gm@dimlist=\toks27
+\Gm@cnth=\count108
+\Gm@cntv=\count109
+\c@Gm@tempcnt=\count110
+\Gm@bindingoffset=\dimen133
+\Gm@wd@mp=\dimen134
+\Gm@odd@mp=\dimen135
+\Gm@even@mp=\dimen136
+\Gm@layoutwidth=\dimen137
+\Gm@layoutheight=\dimen138
+\Gm@layouthoffset=\dimen139
+\Gm@layoutvoffset=\dimen140
+\Gm@dimlist=\toks29
 )
-\c@theorem=\count107
+\c@theorem=\count111
 
-(./disturbance.aux)
+(./disturbance.aux
+
+LaTeX Warning: Label `fig:nee_day' multiply defined.
+
+
+LaTeX Warning: Label `fig:nee_day' multiply defined.
+
+)
 \openout1 = `disturbance.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -258,20 +306,19 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
-
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen127
+\scratchcounter=\count112
+\scratchdimen=\dimen141
 \scratchbox=\box28
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen128
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks29
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen142
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
+\everyMPtoPDFconversion=\toks31
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -316,6 +363,9 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -367,88 +417,203 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 
-<Thinned.pdf, id=23, 845.1575pt x 597.23125pt>
-File: Thinned.pdf Graphic file (type pdf)
- <use Thinned.pdf>
-Package pdftex.def Info: Thinned.pdf used on input line 85.
+<thinned.pdf, id=23, 845.1575pt x 597.23125pt>
+File: thinned.pdf Graphic file (type pdf)
+ <use thinned.pdf>
+Package pdftex.def Info: thinned.pdf used on input line 85.
 (pdftex.def)             Requested size: 234.8775pt x 165.97513pt.
- [4 <./Thinned.pdf>] <dalec2diag.pdf, id=62, 758.835pt x 453.695pt>
+ [4 <./thinned.pdf>] <dalec2diag.pdf, id=30, 758.835pt x 453.695pt>
 File: dalec2diag.pdf Graphic file (type pdf)
  <use dalec2diag.pdf>
-Package pdftex.def Info: dalec2diag.pdf used on input line 101.
+Package pdftex.def Info: dalec2diag.pdf used on input line 114.
 (pdftex.def)             Requested size: 234.8775pt x 140.42938pt.
 
-[5 <./dalec2diag.pdf>] [6]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 147.
+[5] [6 <./dalec2diag.pdf>] <nee_day.pdf, id=42, 808.26251pt x 561.2733pt>
+File: nee_day.pdf Graphic file (type pdf)
+
+<use nee_day.pdf>
+Package pdftex.def Info: nee_day.pdf used on input line 156.
+(pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
+ <nee_night.pdf, id=43, 808.26251pt x 561.2733pt>
+File: nee_night.pdf Graphic file (type pdf)
+
+<use nee_night.pdf>
+Package pdftex.def Info: nee_night.pdf used on input line 161.
+(pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
+ <lai.pdf, id=44, 808.26251pt x 561.2733pt>
+File: lai.pdf Graphic file (type pdf)
+ <use lai.pdf>
+Package pdftex.def Info: lai.pdf used on input line 166.
+(pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
+
+<c_woo.pdf, id=45, 822.41255pt x 567.3485pt>
+File: c_woo.pdf Graphic file (type pdf)
+ <use c_woo.pdf>
+Package pdftex.def Info: c_woo.pdf used on input line 171.
+(pdftex.def)             Requested size: 230.18253pt x 158.78723pt.
+
+<gpp.pdf, id=46, 808.26251pt x 561.2733pt>
+File: gpp.pdf Graphic file (type pdf)
+ <use gpp.pdf>
+Package pdftex.def Info: gpp.pdf used on input line 181.
+(pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
+
+<rt.pdf, id=47, 808.26251pt x 561.2733pt>
+File: rt.pdf Graphic file (type pdf)
+ <use rt.pdf>
+Package pdftex.def Info: rt.pdf used on input line 186.
+(pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
+
+<ra.pdf, id=48, 808.26251pt x 561.2733pt>
+File: ra.pdf Graphic file (type pdf)
+ <use ra.pdf>
+Package pdftex.def Info: ra.pdf used on input line 191.
+(pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
+
+<rh.pdf, id=49, 808.26251pt x 561.2733pt>
+File: rh.pdf Graphic file (type pdf)
+ <use rh.pdf>
+Package pdftex.def Info: rh.pdf used on input line 196.
+(pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
+
+<xa_inc.pdf, id=50, 940.17496pt x 408.61095pt>
+File: xa_inc.pdf Graphic file (type pdf)
+ <use xa_inc.pdf>
+Package pdftex.def Info: xa_inc.pdf used on input line 205.
+(pdftex.def)             Requested size: 375.80544pt x 163.32924pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 219.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 147.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 219.
+ [7] [8 <./nee_day.pdf> <./nee_night.pdf
 
-(./disturbance.bbl
+pdfTeX warning: /usr/texbin/pdflatex (file ./nee_night.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <./lai.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./lai.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+> <./c_woo.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./c_woo.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+>] (./disturbance.bbl
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
+ [9 <./gpp.pdf> <./rt.pdf
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--32
+pdfTeX warning: /usr/texbin/pdflatex (file ./rt.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./ra.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./ra.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./rh.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./rh.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 33--40
 []\OT1/cmr/m/n/10.95 F. A. Di-jk-stra and W. Cheng.  In-ter-ac-tions be-tween s
 oil and tree roots ac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--32
+Underfull \hbox (badness 10000) in paragraph at lines 33--40
 \OT1/cmr/m/n/10.95 cel-er-ate long-term soil car-bon de-com-po-si-tion.  \OT1/c
 mr/m/it/10.95 Ecol-ogy Let-ters\OT1/cmr/m/n/10.95 , 10(11):1046--
  []
 
 
-Underfull \hbox (badness 8094) in paragraph at lines 25--32
+Underfull \hbox (badness 8094) in paragraph at lines 33--40
 \OT1/cmr/m/n/10.95 1053, 2007.  ISSN 1461-0248.  doi: 10.1111/j.1461-0248.2007.
 01095.x.  URL
  []
 
-[7]
+[10 <./xa_inc.pdf>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [8])
-Overfull \hbox (107.52946pt too wide) in paragraph at lines 178--205
- [] 
+) [11]
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
+[]|\OT1/cmr/m/n/10.95 Litter min-er-al-i-sa-tion rate
  []
 
-[9] [10] (./disturbance.aux) ) 
+
+Underfull \hbox (badness 4144) in paragraph at lines 276--276
+[]|\OT1/cmr/m/n/10.95 Autotrophic res-pi-ra-tion frac-
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 276--276
+[]|\OT1/cmr/m/n/10.95 Determines an-nual leaf loss
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 276--276
+[]|\OT1/cmr/m/n/10.95 Woody car-bon turnover rate
+ []
+
+
+Underfull \hbox (badness 5175) in paragraph at lines 276--276
+[]|\OT1/cmr/m/n/10.95 Litter car-bon turnover rate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
+[]|\OT1/cmr/m/n/10.95 Soil and or-ganic car-bon
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 276--276
+[]|\OT1/cmr/m/n/10.95 Labile car-bon re-lease pe-riod
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
+[]|\OT1/cmr/m/n/10.95 Fine root car-bon pool
+ []
+
+[12] [13] (./disturbance.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3843 strings out of 493117
- 51761 string characters out of 6135433
- 136719 words of memory out of 5000000
- 7205 multiletter control sequences out of 15000+600000
- 15365 words of font info for 59 fonts, out of 8000000 for 9000
+ 5130 strings out of 493117
+ 73965 string characters out of 6135433
+ 167711 words of memory out of 5000000
+ 8459 multiletter control sequences out of 15000+600000
+ 20139 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,18n,43p,1638b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.p
-fb>
-Output written on disturbance.pdf (10 pages, 4067957 bytes).
+ 42i,18n,43p,1648b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on disturbance.pdf (13 pages, 673580 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 646 PDF objects out of 1000 (max. 8388607)
+ 211 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
