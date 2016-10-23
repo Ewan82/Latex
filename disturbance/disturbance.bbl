@@ -1,4 +1,4 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -21,6 +21,16 @@ N.~J. Br{\'e}da.
 \newblock \emph{Journal of experimental botany}, 54\penalty0 (392):\penalty0
   2403--2417, 2003.
 
+\bibitem[Ciais et~al.(2014)Ciais, Sabine, Bala, Bopp, Brovkin, Canadell,
+  Chhabra, DeFries, Galloway, Heimann, et~al.]{ciais2014carbon}
+P.~Ciais, C.~Sabine, G.~Bala, L.~Bopp, V.~Brovkin, J.~Canadell, A.~Chhabra,
+  R.~DeFries, J.~Galloway, M.~Heimann, et~al.
+\newblock Carbon and other biogeochemical cycles.
+\newblock In \emph{Climate change 2013: the physical science basis.
+  Contribution of Working Group I to the Fifth Assessment Report of the
+  Intergovernmental Panel on Climate Change}, pages 465--570. Cambridge
+  University Press, 2014.
+
 \bibitem[Dahdouh-Guebas and Koedam(2006)]{dahdouh2006empirical}
 F.~Dahdouh-Guebas and N.~Koedam.
 \newblock Empirical estimate of the reliability of the use of the point-centred
@@ -37,6 +47,15 @@ F.~A. Dijkstra and W.~Cheng.
 \newblock ISSN 1461-0248.
 \newblock \doi{10.1111/j.1461-0248.2007.01095.x}.
 \newblock URL \url{http://dx.doi.org/10.1111/j.1461-0248.2007.01095.x}.
+
+\bibitem[Dore et~al.(2012)Dore, Montes-Helu, Hart, Hungate, Koch, Moon,
+  Finkral, and Kolb]{dore2012recovery}
+S.~Dore, M.~Montes-Helu, S.~C. Hart, B.~A. Hungate, G.~W. Koch, J.~B. Moon,
+  A.~J. Finkral, and T.~E. Kolb.
+\newblock Recovery of ponderosa pine ecosystem carbon and water fluxes from
+  thinning and stand-replacing fire.
+\newblock \emph{Global change biology}, 18\penalty0 (10):\penalty0 3171--3185,
+  2012.
 
 \bibitem[Fassnacht et~al.(1994)Fassnacht, Gower, Norman, and
   McMurtric]{fassnacht1994comparison}
@@ -76,6 +95,21 @@ A.~S. Lawless.
   Applications in the Earth Sciences, Radon series on Computational and Applied
   Mathematics}, pages 55--90. De Gruyter, 2013.
 
+\bibitem[Liu et~al.(2011)Liu, Bond-Lamberty, Hicke, Vargas, Zhao, Chen, Edburg,
+  Hu, Liu, McGuire, Xiao, Keane, Yuan, Tang, Luo, Potter, and
+  Oeding]{JGRG:JGRG779}
+S.~Liu, B.~Bond-Lamberty, J.~A. Hicke, R.~Vargas, S.~Zhao, J.~Chen, S.~L.
+  Edburg, Y.~Hu, J.~Liu, A.~D. McGuire, J.~Xiao, R.~Keane, W.~Yuan, J.~Tang,
+  Y.~Luo, C.~Potter, and J.~Oeding.
+\newblock Simulating the impacts of disturbances on forest carbon cycling in
+  north america: Processes, data, models, and challenges.
+\newblock \emph{Journal of Geophysical Research: Biogeosciences}, 116\penalty0
+  (G4):\penalty0 n/a--n/a, 2011.
+\newblock ISSN 2156-2202.
+\newblock \doi{10.1029/2010JG001585}.
+\newblock URL \url{http://dx.doi.org/10.1029/2010JG001585}.
+\newblock G00K08.
+
 \bibitem[McKay et~al.(2003)McKay, Hudson, and Hudson]{mckay2003woodfuel}
 H.~McKay, J.~Hudson, and R.~Hudson.
 \newblock Woodfuel resource in britain.
@@ -91,6 +125,15 @@ D.~J.~P. Moore, N.~A. Trahan, P.~Wilkes, T.~Quaife, B.~B. Stephens, K.~Elder,
 \newblock ISSN 1461-0248.
 \newblock \doi{10.1111/ele.12097}.
 \newblock URL \url{http://dx.doi.org/10.1111/ele.12097}.
+
+\bibitem[Moreaux et~al.(2011)Moreaux, Lamaud, Bosc, Bonnefond, Medlyn, and
+  Loustau]{moreaux2011paired}
+V.~Moreaux, {\'E}.~Lamaud, A.~Bosc, J.-M. Bonnefond, B.~E. Medlyn, and
+  D.~Loustau.
+\newblock Paired comparison of water, energy and carbon exchanges over two
+  young maritime pine stands (pinus pinaster ait.): effects of thinning and
+  weeding in the early stage of tree growth.
+\newblock \emph{Tree physiology}, page tpr048, 2011.
 
 \bibitem[Papale et~al.(2006)Papale, Reichstein, Aubinet, Canfora, Bernhofer,
   Kutsch, Longdoz, Rambal, Valentini, Vesala, et~al.]{papale2006towards}
@@ -140,6 +183,11 @@ A.~D. Richardson, M.~D. Mahecha, E.~Falge, J.~Kattge, A.~M. Moffat, D.~Papale,
 \newblock ISSN 0168-1923.
 \newblock \doi{http://dx.doi.org/10.1016/j.agrformet.2007.09.001}.
 
+\bibitem[Running(2008)]{running2008ecosystem}
+S.~W. Running.
+\newblock Ecosystem disturbance, carbon, and climate.
+\newblock \emph{Science}, 321\penalty0 (5889):\penalty0 652--653, 2008.
+
 \bibitem[Tremolet(2006)]{Tremolet2006}
 Y.~Tremolet.
 \newblock {Accounting for an imperfect model in 4D-Var}.
@@ -148,6 +196,13 @@ Y.~Tremolet.
 \newblock ISSN 00359009.
 \newblock \doi{10.1256/qj.05.224}.
 \newblock URL \url{http://doi.wiley.com/10.1256/qj.05.224}.
+
+\bibitem[Vesala et~al.(2005)Vesala, Suni, Rannik, Keronen, Markkanen, Sevanto,
+  Gr{\"o}nholm, Smolander, Kulmala, Ilvesniemi, et~al.]{vesala2005effect}
+T.~Vesala, T.~Suni, {\"U}.~Rannik, P.~Keronen, T.~Markkanen, S.~Sevanto,
+  T.~Gr{\"o}nholm, S.~Smolander, M.~Kulmala, H.~Ilvesniemi, et~al.
+\newblock Effect of thinning on surface fluxes in a boreal forest.
+\newblock \emph{Global Biogeochemical Cycles}, 19\penalty0 (2), 2005.
 
 \bibitem[Wilkinson et~al.(2012)Wilkinson, Eaton, Broadmeadow, and
   Morison]{wilkinson2012inter}

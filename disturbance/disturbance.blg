@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: disturbance.aux
 The style file: abbrvnat.bst
 Database file #1: ../PhD.bib
-You've used 20 entries,
+You've used 26 entries,
             2773 wiz_defined-function locations,
-            751 strings with 9876 characters,
-and the built_in function-call counts, 12011 in all, are:
-= -- 1060
-> -- 902
-< -- 11
-+ -- 303
-- -- 283
-* -- 1099
-:= -- 1904
-add.period$ -- 79
-call.type$ -- 20
-change.case$ -- 152
-chr.to.int$ -- 20
-cite$ -- 40
-duplicate$ -- 435
-empty$ -- 804
-format.name$ -- 311
-if$ -- 2456
+            793 strings with 11960 characters,
+and the built_in function-call counts, 16979 in all, are:
+= -- 1466
+> -- 1402
+< -- 14
++ -- 471
+- -- 445
+* -- 1577
+:= -- 2703
+add.period$ -- 102
+call.type$ -- 26
+change.case$ -- 222
+chr.to.int$ -- 26
+cite$ -- 52
+duplicate$ -- 585
+empty$ -- 1054
+format.name$ -- 479
+if$ -- 3459
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 20
-newline$ -- 126
-num.names$ -- 82
-pop$ -- 261
+missing$ -- 26
+newline$ -- 160
+num.names$ -- 106
+pop$ -- 394
 preamble$ -- 1
-purify$ -- 132
+purify$ -- 196
 quote$ -- 0
-skip$ -- 373
+skip$ -- 528
 stack$ -- 0
-substring$ -- 471
-swap$ -- 44
-text.length$ -- 3
+substring$ -- 608
+swap$ -- 72
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 220
+type$ -- 286
 warning$ -- 0
-while$ -- 94
+while$ -- 122
 width$ -- 0
-write$ -- 303
+write$ -- 390
