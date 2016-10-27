@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  24 OCT 2016 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  27 OCT 2016 16:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -439,30 +439,31 @@ File: thinned.pdf Graphic file (type pdf)
  <use thinned.pdf>
 Package pdftex.def Info: thinned.pdf used on input line 85.
 (pdftex.def)             Requested size: 375.80544pt x 265.57114pt.
- [5 <./thinned.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 101--101
 []|\OT1/cmr/m/n/10.95 Estimated Woody biomass and
  []
 
-<dalec2diag.pdf, id=33, 758.835pt x 453.695pt>
+[5] <dalec2diag.pdf, id=30, 758.835pt x 453.695pt>
 File: dalec2diag.pdf Graphic file (type pdf)
  <use dalec2diag.pdf>
 Package pdftex.def Info: dalec2diag.pdf used on input line 114.
 (pdftex.def)             Requested size: 234.8775pt x 140.42938pt.
- [6]
-[7 <./dalec2diag.pdf>] <nee_day.pdf, id=46, 808.26251pt x 561.2733pt>
-File: nee_day.pdf Graphic file (type pdf)
 
-<use nee_day.pdf>
+[6 <./thinned.pdf>] [7 <./dalec2diag.pdf>]
+<nee_day.pdf, id=46, 808.26251pt x 561.2733pt>
+File: nee_day.pdf Graphic file (type pdf)
+ <use nee_day.pdf>
 Package pdftex.def Info: nee_day.pdf used on input line 156.
 (pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
- <nee_night.pdf, id=47, 808.26251pt x 561.2733pt>
-File: nee_night.pdf Graphic file (type pdf)
 
-<use nee_night.pdf>
+<nee_night.pdf, id=47, 808.26251pt x 561.2733pt>
+File: nee_night.pdf Graphic file (type pdf)
+ <use nee_night.pdf>
 Package pdftex.def Info: nee_night.pdf used on input line 161.
 (pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
- <lai.pdf, id=48, 808.26251pt x 561.2733pt>
+
+<lai.pdf, id=48, 808.26251pt x 561.2733pt>
 File: lai.pdf Graphic file (type pdf)
  <use lai.pdf>
 Package pdftex.def Info: lai.pdf used on input line 166.
@@ -558,6 +559,7 @@ Underfull \hbox (badness 8094) in paragraph at lines 43--50
 01095.x.  URL
  []
 
+[11 <./xa_inc.pdf>]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -588,11 +590,11 @@ Underfull \hbox (badness 3019) in paragraph at lines 88--98
 lbio.2004.10.010.  URL
  []
 
-[11 <./xa_inc.pdf>] [12]
+[12]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [13])
+ [13]) [14]
 Underfull \hbox (badness 10000) in paragraph at lines 276--276
 []|\OT1/cmr/m/n/10.95 Litter min-er-al-i-sa-tion rate
  []
@@ -632,16 +634,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--276
 []|\OT1/cmr/m/n/10.95 Fine root car-bon pool
  []
 
-[14] [15] (./disturbance.aux)
+[15] [16] (./disturbance.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5657 strings out of 493117
- 80703 string characters out of 6135433
- 182961 words of memory out of 5000000
- 8980 multiletter control sequences out of 15000+600000
+ 5660 strings out of 493117
+ 80787 string characters out of 6135433
+ 180039 words of memory out of 5000000
+ 8983 multiletter control sequences out of 15000+600000
  20139 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,19n,43p,1675b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -663,10 +665,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on disturbance.pdf (15 pages, 688450 bytes).
+Output written on disturbance.pdf (16 pages, 688504 bytes).
 PDF statistics:
- 652 PDF objects out of 1000 (max. 8388607)
- 215 compressed objects within 3 object streams
+ 661 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
