@@ -1,24 +1,200 @@
-\documentclass[11pt]{article}
-\usepackage[sort]{natbib}
-\usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx, pbox, subcaption, xcolor}
-\usepackage{fancyhdr, tabularx}
-\usepackage[margin=1in]{geometry}
-\bibliographystyle{abbrvnat}
+%% 11/23/2015
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% AGUJournalTemplate.tex: this template file is for articles formatted with LaTeX
+%
+% This file includes commands and instructions
+% given in the order necessary to produce a final output that will
+% satisfy AGU requirements. 
+%
+% You may copy this file and give it your
+% article name, and enter your text.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PLEASE DO NOT USE YOUR OWN MACROS
+% DO NOT USE \newcommand, \renewcommand, or \def, etc.
+%
+% FOR FIGURES, DO NOT USE \psfrag or \subfigure.
+% DO NOT USE \psfrag or \subfigure commands.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% All questions should be e-mailed to latex@agu.org.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Step 1: Set the \documentclass
+%
+% There are two options for article format:
+%
+% 1) PLEASE USE THE DRAFT OPTION TO SUBMIT YOUR PAPERS.
+% The draft option produces double spaced output.
+% 
+% 2) numberline will give you line numbers.
 
-\title{Using data assimilation to understand the effect of disturbance on a managed woodland {\color{red} DRAFT}}
-\author{Ewan Pinnington}
+%% To submit your paper:
 
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem*{defn}{Definition}
+\documentclass[draft,linenumbers]{agujournal}
+\drafttrue
+\usepackage{graphicx, pbox, subcaption, xcolor}
+
+%% For final version.
+% \documentclass{agujournal}
+
+% Now, type in the journal name: \journalname{<Journal Name>}
+
+% ie, \journalname{Journal of Geophysical Research}
+%% Choose from this list of Journals:
+%
+% JGR-Atmospheres
+% JGR-Biogeosciences
+% JGR-Earth Surface
+% JGR-Oceans
+% JGR-Planets
+% JGR-Solid Earth
+% JGR-Space Physics
+% Global Biochemical Cycles
+% Geophysical Research Letters
+% Paleoceanography
+% Radio Science
+% Reviews of Geophysics
+% Tectonics
+% Space Weather
+% Water Resource Research
+% Geochemistry, Geophysics, Geosystems
+% Journal of Advances in Modeling Earth Systems (JAMES)
+% Earth's Future
+% Earth and Space Science
+%
+%
+
+\journalname{JGR-Biogeosciences}
 
 
 \begin{document}
 
-\maketitle
+%% ------------------------------------------------------------------------ %%
+%  Title
+% 
+% (A title should be specific, informative, and brief. Use
+% abbreviations only if they are defined in the abstract. Titles that
+% start with general keywords then specific terms are optimized in
+% searches)
+%
+%% ------------------------------------------------------------------------ %%
+
+% Example: \title{This is a test title}
+
+\title{Using data assimilation to understand the effect of disturbance on a managed woodland {\color{red} DRAFT}}
+
+%% ------------------------------------------------------------------------ %%
+%
+%  AUTHORS AND AFFILIATIONS
+%
+%% ------------------------------------------------------------------------ %%
+
+% Authors are individuals who have significantly contributed to the
+% research and preparation of the article. Group authors are allowed, if
+% each author in the group is separately identified in an appendix.)
+
+% List authors by first name or initial followed by last name and
+% separated by commas. Use \affil{} to number affiliations, and
+% \thanks{} for author notes.  
+% Additional author notes should be indicated with \thanks{} (for
+% example, for current addresses). 
+
+% Example: \authors{A. B. Author\affil{1}\thanks{Current address, Antartica}, B. C. Author\affil{2,3}, and D. E.
+% Author\affil{3,4}\thanks{Also funded by Monsanto.}}
+
+\authors{Ewan M. Pinnington\affil{1}, Eric Casella\affil{3}, Sarah L. Dance\affil{1,2}, Amos S. Lawless\affil{1,2,4}, James I. L. Morison\affil{3}, Nancy K. Nichols\affil{1,2,4}, Matthew Wilkinson\affil{3}, Tristan L. Quaife\affil{1,4}}
 
 
-\section*{Abstract}
-The response of forests and terrestrial ecosystems to disturbance is an important process in the global carbon cycle in the context of a changing climate. Disturbance can take many forms, for example; felling, fire and insect outbreak. In current estimates of the global carbon budget, disturbance is one of the least understood components. In this paper, we investigate the effect of the management practice f selective felling on the carbon dynamics of a mature temperate woodland. In order to better understand ecosystem response we use the mathematical technique of data assimilation to combine a diverse set of observations with a mathematical model of ecosystem carbon balance. Data assimilation combines the uncertainty from observations and prior model predictions to find the best possible estimate to the studied system. We develop new data assimilation techniques allowing for the assimilation of daytime and nighttime net ecosystem exchange observations with a daily time-step model. This allows for the assimilation of much otherwise neglected carbon flux information. The presented techniques allow us to estimate the effect of step-changes in ecosystem composition on the parameter and state variables in a modelled estimate of forest carbon balance. These techniques are applicable to other ecosystem models and data assimilation schemes. Previous statistical analyses of eddy covariance data at the study site had suggested that disturbance from selective felling (thinning) resulted in no change to the net carbon uptake of the ecosystem. We show that this is likely due to reduced ecosystem respiration post-disturbance compensating for a reduction in gross primary productivity. Our results support the theory of an upper limit of forest net carbon uptake due to the magnitude of ecosystem respiration scaling with gross primary productivity.  
+% \affiliation{1}{First Affiliation}
+% \affiliation{2}{Second Affiliation}
+% \affiliation{3}{Third Affiliation}
+% \affiliation{4}{Fourth Affiliation}
+
+\affiliation{1}{Department of Meteorology, University of Reading, Reading, UK}
+\affiliation{2}{Department of Mathematics and Statistics, University of Reading, Reading, UK}
+\affiliation{1}{Centre for Sustainable Forestry and Climate Change, Forest Research, Alice Holt, Farnham, UK}
+\affiliation{1}{National Centre for Earth Observation, University of Reading, Reading, UK}
+
+%(repeat as many times as is necessary)
+
+%% Corresponding Author:
+% Corresponding author mailing address and e-mail address:
+
+% (include name and email addresses of the corresponding author.  More
+% than one corresponding author is allowed in this LaTeX file and for
+% publication; but only one corresponding author is allowed in our
+% editorial system.)  
+
+% Example: \correspondingauthor{First and Last Name}{email@address.edu}
+
+\correspondingauthor{Ewan M. Pinnington}{e.m.pinnington@pgr.reading.ac.uk}
+
+%% Keypoints, final entry on title page.
+
+% Example: 
+% \begin{keypoints}
+% \item	List up to three key points (at least one is required)
+% \item	Key Points summarize the main points and conclusions of the article
+% \item	Each must be 100 characters or less with no special characters or punctuation 
+% \end{keypoints}
+
+%  List up to three key points (at least one is required)
+%  Key Points summarize the main points and conclusions of the article
+%  Each must be 100 characters or less with no special characters or punctuation 
+
+\begin{keypoints}
+\item Data assimilation used to investigate effect of selective felling
+\item No change found in net ecosystem carbon uptake after disturbance
+\item Concurrent reduction in respirations and photosynthesis allow for unchanged carbon uptake 
+\end{keypoints}
+
+%% ------------------------------------------------------------------------ %%
+%
+%  ABSTRACT
+%
+% A good abstract will begin with a short description of the problem
+% being addressed, briefly describe the new data or analyses, then
+% briefly states the main conclusion(s) and how they are supported and
+% uncertainties. 
+%% ------------------------------------------------------------------------ %%
+
+%% \begin{abstract} starts the second page 
+
+\begin{abstract}
+The response of forests and terrestrial ecosystems to disturbance is an important process in the global carbon cycle in the context of a changing climate. Disturbance can take many forms, for example; felling, fire and insect outbreak. In current estimates of the global carbon budget, disturbance is one of the least understood components. In this paper, we investigate the effect of the management practice f selective felling on the carbon dynamics of a mature temperate woodland. In order to better understand ecosystem response we use the mathematical technique of data assimilation to combine a diverse set of observations with a mathematical model of ecosystem carbon balance. Data assimilation combines the uncertainty from observations and prior model predictions to find the best possible estimate to the studied system. We develop new data assimilation techniques allowing for the assimilation of daytime and nighttime net ecosystem exchange observations with a daily time-step model. This allows for the assimilation of much otherwise neglected carbon flux information. The presented techniques allow us to estimate the effect of step-changes in ecosystem composition on the parameter and state variables in a modelled estimate of forest carbon balance. These techniques are applicable to other ecosystem models and data assimilation schemes. Previous statistical analyses of eddy covariance data at the study site had suggested that disturbance from selective felling (thinning) resulted in no change to the net carbon uptake of the ecosystem. We show that this is likely due to reduced ecosystem respiration post-disturbance compensating for a reduction in gross primary productivity. Our results support the theory of an upper limit of forest net carbon uptake due to the magnitude of ecosystem respiration scaling with gross primary productivity.  \end{abstract}
+
+
+%% ------------------------------------------------------------------------ %%
+%
+%  TEXT
+%
+%% ------------------------------------------------------------------------ %%
+
+%%% Suggested section heads:
+% \section{Introduction}
+% 
+% The main text should start with an introduction. Except for short
+% manuscripts (such as comments and replies), the text should be divided
+% into sections, each with its own heading. 
+
+% Headings should be sentence fragments and do not begin with a
+% lowercase letter or number. Examples of good headings are:
+
+% \section{Materials and Methods}
+% Here is text on Materials and Methods.
+%
+% \subsection{A descriptive heading about methods}
+% More about Methods.
+% 
+% \section{Data} (Or section title might be a descriptive heading about data)
+% 
+% \section{Results} (Or section title might be a descriptive heading about the
+% results)
+% 
+% \section{Conclusions}
+
 
 \section{Introduction}
 \subsection{\textcolor{red}{Role of disturbance in the global C cycle}}
@@ -47,7 +223,7 @@ As part of the management regime, the Straits Inclosure is subject to thinning; 
 
 \subsection{Observations} \label{sec:obs}
 
-In order to assess the effect the 2014 thinning had on the Straits Inclosure an intensive field campaign was undertaken in 2015 to measure leaf area index and also estimate woody biomass. From the site we also have a long record of flux data as discussed in section~\ref{sec:site_description}. These observations span both the thinned and unthinned sides of the forest and give us two distinct sets of observations describing both sides of the site.
+In order to assess the effect the 2014 thinning had on the Straits Inclosure, an intensive field campaign was undertaken in 2015 to measure leaf area index and also estimate woody biomass. From the site we also have a long record of flux data as discussed in section~\ref{sec:site_description}. These observations span both the thinned and unthinned sides of the forest and give us two distinct sets of observations describing both thinned and unthinned.
 
 \subsubsection{Flux tower eddy covariance} \label{sec:eddycov} 
 
@@ -56,6 +232,7 @@ The Straits Inclosure flux tower provides us with half-hourly observations from 
 In data assimilation NEE observations are usually averaged daily for use with daily time-step functional ecology models. To compute daily NEE observations we take the mean over the 48 measurements made each day, selecting only days where there is no missing data. As we have been strict on the quality control of the flux record and not allowed any gap filling this presents a problem in the number of NEE observations available to us. By splitting the flux record between two sides we retrieve very few total daily observations of NEE. In order to address this we instead compute day and nighttime NEE fluxes (NEE\(_{day}\) and NEE\(_{night}\) respectively) for use in data assimilation. To compute daytime or nighttime NEE observations, we take the mean over the half-hourly day or nighttime (calculated using a solar model) measurements, again only taking periods where there are no gaps in the data so that we are only considering true observations. This provides us with many more observations for assimilation after data processing, as seen in table~\ref{table:nee_obs}. Because we are averaging over shorter time periods we have a smaller probability of gaps and erroneous data. We see that we have many more daytime NEE observations than nighttime, as we tend to have much more turbulent air mixing in daylight hours. In section~\ref{sec:da} we give details of how we relate these twice daily observations of NEE to a daily time-step model.     
 
 \begin{table}[ht] 
+	\caption{Number of observations of NEE, NEE\(_{day}\) and NEE\(_{night}\) for East and West sides of the Straits Inclosure for the year 2015.}
 \begin{center}
 	\begin{tabular}{| l | l | l | l | l |}
 	\hline
@@ -63,7 +240,6 @@ In data assimilation NEE observations are usually averaged daily for use with da
 	Unthinned (E) & 8 & 43 & 10 \\ \hline
 	Thinned (W) & 8 & 49 & 24 \\ \hline
 	\end{tabular}
-	\caption{Number of observations of NEE, NEE\(_{day}\) and NEE\(_{night}\) for East and West sides of the Straits Inclosure for the year 2015.}
 	\label{table:nee_obs}
 \end{center} 
 \end{table}
@@ -92,14 +268,14 @@ The method of Point-Centred Quarters (PCQ) was used to conduct a biomass survey 
 Forest Research also carry out their own mensuration studies at the site. One such study was carried out of the Western side after the thinning at a similar time to our own PCQ measurements and found a tree density of 225 ha\(^{-1}\) and an average DBH of 32 cm, which are in close agreement to our own estimates in table~\ref{table:cwoo_obs}. This gives us confidence that past measurements before the thinning will also be representative of the methods we have used. From 2009, measurements from Forest Research found the Western side to have a tree density of 418 ha\(^{-1}\) and an average DBH of 27.73 cm. This suggests that approximately 46\% of trees have been removed during thinning. From these estimates we can also see the effect thinning has on the type of trees found at the site. The amount of trees per hectare has dropped dramatically after thinning but the mean DBH has increased, indicating that smaller subdominant trees have been removed. The mean DBH on the Eastern side is greater still, indicating that the thinning that took place in 2007 of the Eastern side has allowed the dominant trees to grow as a result of reduced competition.
 
 \begin{table}[ht] 
+	\caption{Point-centred quarter method observations for 2015.}
 \begin{center}
-	\begin{tabularx}{\textwidth}{| l | l | l | X |}
+	\begin{tabular}{| l | p{2cm} | p{2cm} | p{4.5cm} |}
 	\hline
-	Sector & Tree density (ha\(^{-1}\)) & mean DBH (cm) & Estimated Woody biomass and coarse root carbon (g C m\(^{-2}\)) \\ \hline
+	Sector & Tree density (ha\(^{-1}\)) & Mean DBH (cm) & Estimated Woody biomass and coarse root carbon (g C m\(^{-2}\)) \\ \hline
 	Unthinned (E) & 272 & 34.12 & 13130 \\ \hline
 	Thinned (W) & 225 & 32.85 & 9908 \\ \hline
-	\end{tabularx}
-	\caption{Point-centred quarter method observations for 2015.}
+	\end{tabular}
 	\label{table:cwoo_obs}
 \end{center} 
 \end{table}
@@ -111,7 +287,7 @@ The DALEC2 model is a simple process-based model describing the carbon dynamics 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.5\textwidth]{dalec2diag.pdf}
+    \includegraphics[width=0.6\textwidth]{dalec2diag.pdf}
     \caption{Representation of the fluxes in the DALEC2 carbon balance model. Green arrows represent C allocation, purple arrows represent litter fall and decomposition fluxes, blue arrows represent respiration fluxes and the red arrow represents the influence of leaf area index in the $GPP$ function.} \label{fig:DALEC_mod}
 \end{figure}
 
@@ -119,23 +295,31 @@ The DALEC2 model is a simple process-based model describing the carbon dynamics 
 
 We implement Four-Dimensional Variation data assimilation (4D-Var) with the DALEC2 model for joint parameter and state estimation. In 4D-Var we aim to find the parameter and initial state values such that the model trajectory best fits the data over some time window, given some prior information about the system. This prior information takes the form of an initial estimate to the parameter and state variables of the model, $\textbf{x}^{b}$, valid at the initial time. This prior is assumed to have unbiased, Gaussian errors with known covariance matrix $\textbf{B}$. Adding the prior term ensures that our problem is well posed and that we can find a locally unique solution \citep{Tremolet2006}. The prior used in this paper is derived from the assimilation of eddy covariance data from previous years and can be found in table~\ref{table:xbvars}. In 4D-Var we aim to find the parameter and initial state values that minimises the weighted least squares distance to the prior, while minimising the weighted least squares distance of the model trajectory to the observations over the time window $t_{0}, \dots, t_{N}$ \citep{lawless2013}. We do this by finding the state $\textbf{x}^{a}$ at time $t_{0}$ that minimises the cost function
 
+\begin{linenomath*}
 \begin{equation}
 J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}\sum_{i=0}^{N}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i))^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i)),
 \end{equation}
+\end{linenomath*}
 where $\textbf{x}_{0}$ is the vector of parameter and initial state values to be optimised, $\textbf{h}_{i}$ is the observation operator mapping the parameters and state to the observations $\textbf{y}_{i}$ and $\textbf{R}_{i}$ is the observation error covariance matrix. Further details of the implemented data assimilation scheme and specification of prior and observational errors can be found in \citet{Pinnington2016299}. 
 
 In this paper we assimilate day and nighttime NEE in order to increase the number of observations available to us and also better partition our modelled estimate of GPP and total ecosystem respiration, as discussed in section~\ref{sec:eddycov}. As the DALEC2 model runs at a daily time step, this requires us to relate the daily parameter and state values from the model to the twice-daily observations of NEE. We do this by writing two new observation operators, one relating the model state and parameters to daytime NEE, and the other to nighttime NEE. The NEE of CO\(_{2}\) at any given time is the difference between GPP and ecosystem respiration. For an observation of total daily NEE on day \(i\) we have,
+\begin{linenomath*}
 \begin{equation}
 NEE^{i}=-GPP^{i}(C_{fol}^{i}, \Psi) +f_{auto}GPP^{i}(C_{fol}^{i}, \Psi) + \theta_{lit}C_{lit}^i e^{\Theta T^{i}} + \theta_{som}C_{som}^i e^{\Theta T^{i}}, \label{eqn: D1_nee}
 \end{equation}
+\end{linenomath*}
 where all terms have the same meaning as described in section~\ref{sec:dalec_eqns}, with term one being gross primary productivity, term two corresponding to autotrophic respiration and term three and four corresponding to heterotrophic respiration. For total daytime NEE we have,
+\begin{linenomath*}
 \begin{equation}
 NEE_{day}^{i} = -GPP^{i}(C_{fol}^{i}, \Psi) + \delta_{day}f_{auto}GPP^{i}(C_{fol}^{i}, \Psi) + \delta_{day}\theta_{lit}C_{lit}^i e^{\Theta T_{day}^{i}} + \delta_{day}\theta_{som}C_{som}^i e^{\Theta T_{day}^{i}} \label{eqn: D1_nee_day}
 \end{equation}
+\end{linenomath*}
 where \(\delta_{day}\) is the day length, expressed as \(\frac{\text{number of daylight hours}}{24}\), and \(T_{day}^{i}\) is the mean daytime temperature. Here we still have the same term for GPP as in equation~\eqref{eqn: D1_nee} as all photosynthesis occurs during daylight hours, the respirations are then scaled by the length of daylight hours. For nighttime NEE we have,
+\begin{linenomath*}
 \begin{equation}
 NEE_{night}^{i} =  \delta_{night}f_{auto}GPP^{i}(C_{fol}^{i}, \Psi) + \delta_{night}\theta_{lit}C_{lit}^i e^{\Theta T_{night}^{i}} + \delta_{night}\theta_{som}C_{som}^i e^{\Theta T_{night}^{i}} \label{eqn: D1_nee_night}
 \end{equation}
+\end{linenomath*}
 where \(\delta_{night}\) is the night length, expressed as \(\frac{\text{number of night hours}}{24}\), and \(T_{night}^{i}\) is the mean nighttime temperature. Here we no long have a term for GPP as no GPP will occur during the night. The respirations are again scaled by night length as in equation~\eqref{eqn: D1_nee_day}. Day length and night length are calculated using a solar model here, but could also be estimated using the record of incident solar radiation from the flux tower. These new observation operators allow for assimilation of day/nighttime NEE without the need for model development and can be applied to other ecosystem models to allow for the assimilation of finer temporal resolution eddy covariance data and possible improvements to the partitioning of photosynthesis and ecosystem respiration. From section~\ref{sec:results} we can see that these modified observation operators allow our model to predict both daytime and nighttime NEE accurately.
 
 %Cite MacBean?? for correlations?
@@ -249,9 +433,108 @@ In this work we have presented novel methods for understanding ecosystem respons
 We find no significant change in net ecosystem carbon uptake after a thinning event in 2014 where approximately 46\% of trees were removed from the studied area. This was also found to be true when a similar event occurred in 2007 \citep{wilkinson2015effects}. From our optimised model we find that reduced ecosystem respiration is the main reason for this unchanged net ecosystem carbon uptake. So that even for a demonstrated decrease in GPP following thinning, there is no significant change in NEE. We believe this reduction in ecosystem respiration is due to reduced input of autotrophic substrate following thinning, meaning both autotrophic and heterotrophic respiration are reduced. These results support work suggesting that GPP is the dominant driver for ecosystem respiration  \citep{GCB:GCB412, heinemeyer2012exploring, PCE:PCE1053, hogberg2006towards, ELE:ELE12097}. This has implications on future predictions of land surface carbon uptake and whether forests will continue to sequester atmospheric CO\(_{2}\) at similar rates, or if they will be limited by increased GPP leading to increased respiration. 
 
 
-\bibliography{../PhD}{}
 
-\section*{Appendix}
+%Text here ===>>>
+
+%%
+
+%  Numbered lines in equations:
+%  To add line numbers to lines in equations,
+%  \begin{linenomath*}
+%  \begin{equation}
+%  \end{equation}
+%  \end{linenomath*}
+
+
+
+%% Enter Figures and Tables near as possible to where they are first mentioned:
+%
+% DO NOT USE \psfrag or \subfigure commands.
+%
+% Figure captions go below the figure.
+% Table titles go above tables;  other caption information
+%  should be placed in last line of the table, using
+% \multicolumn2l{$^a$ This is a table note.}
+%
+%----------------
+% EXAMPLE FIGURE
+%
+% \begin{figure}[h]
+% \centering
+% when using pdflatex, use pdf file:
+% \includegraphics[width=20pc]{figsamp.pdf}
+%
+% when using dvips, use .eps file:
+% \includegraphics[width=20pc]{figsamp.eps}
+%
+% \caption{Short caption}
+% \label{figone}
+%  \end{figure}
+%
+% ---------------
+% EXAMPLE TABLE
+%
+% \begin{table}
+% \caption{Time of the Transition Between Phase 1 and Phase 2$^{a}$}
+% \centering
+% \begin{tabular}{l c}
+% \hline
+%  Run  & Time (min)  \\
+% \hline
+%   $l1$  & 260   \\
+%   $l2$  & 300   \\
+%   $l3$  & 340   \\
+%   $h1$  & 270   \\
+%   $h2$  & 250   \\
+%   $h3$  & 380   \\
+%   $r1$  & 370   \\
+%   $r2$  & 390   \\
+% \hline
+% \multicolumn{2}{l}{$^{a}$Footnote text here.}
+% \end{tabular}
+% \end{table}
+
+%% SIDEWAYS FIGURE and TABLE 
+% AGU prefers the use of {sidewaystable} over {landscapetable} as it causes fewer problems.
+%
+% \begin{sidewaysfigure}
+% \includegraphics[width=20pc]{figsamp}
+% \caption{caption here}
+% \label{newfig}
+% \end{sidewaysfigure}
+% 
+%  \begin{sidewaystable}
+%  \caption{Caption here}
+% \label{tab:signif_gap_clos}
+%  \begin{tabular}{ccc}
+% one&two&three\\
+% four&five&six
+%  \end{tabular}
+%  \end{sidewaystable}
+
+%% If using numbered lines, please surround equations with \begin{linenomath*}...\end{linenomath*}
+%\begin{linenomath*}
+%\begin{equation}
+%y|{f} \sim g(m, \sigma),
+%\end{equation}
+%\end{linenomath*}
+
+%%% End of body of article
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optional Appendix goes here
+%
+% The \appendix command resets counters and redefines section heads
+%
+% After typing \appendix
+%
+%\section{Here Is Appendix Title}
+% will show
+% A: Here Is Appendix Title
+%
+%\appendix
+%\section{Here is a sample appendix}
+\appendix
 
 \section{DALEC2 equations} \label{sec:dalec_eqns}
 
@@ -267,6 +550,41 @@ GPP^{i} &= ACM(C_{fol}^{i-1}, c_{lma}, c_{eff}, \Psi) \label{GPP}
 \\C_{som}^{i}&=C_{som}^{i-1}+\theta_{woo}C_{woo}^{i-1}+\theta_{min}e^{\Theta T^{i-1}}C_{lit}^{i-1}-\theta_{som}e^{\Theta T^{i-1}}C_{som}^{i-1}, \label{dalec5}
 \end{align}
 where $T^{i-1}$ is the daily mean temperature, $\Psi$ represents the meteorological driving data used in the $GPP$ function and $\Phi_{on} / \Phi_{off}$ are functions controlling leaf-on and leaf-off. Descriptions for each model parameter used in equations \eqref{GPP} to \eqref{dalec5} are included in table~\ref{table:xbvars}. DALEC2 can be parameterised for both deciduous and evergreen sites with $\Phi_{on}$ and $\Phi_{off}$ being able to reproduce the phenology of either type of site. The full details of this version of DALEC can be found in \cite{Bloom2015}. 
+
+\begin{table}[ht] 
+	\caption{Parameter values and standard deviations for prior vector used in experiments.}
+\begin{center}
+\scriptsize
+	\begin{tabular}{| l | p{4.5cm} | p{1.7cm} | p{1.7cm} | p{1.7cm} |}
+	\hline
+	Parameter & Description & Prior estimate ($\textbf{x}^{b}$) & Standard deviation & Range \\ \hline
+$\theta_{min}$ & Litter mineralisation rate (day$^{-1}$) & $5.471\times 10^{-4}$ & $2.861\times 10^{-7}$ & $10^{-5} - 10^{-2}$ \\ \hline
+$f_{auto}$ & Autotrophic respiration fraction & $4.492\times 10^{-1}$ & $7.605\times 10^{-5}$ & $0.3 - 0.7$  \\ \hline
+$f_{fol}$ & Fraction of GPP allocated to foliage & $4.091\times 10^{-2}$ & $8.122\times 10^{-4}$ & $0.01-0.5$ \\ \hline
+$f_{roo}$ & Fraction of GPP allocated to fine roots & $3.700\times 10^{-1}$ & $1.420\times 10^{-3}$ & $0.01-0.5$ \\ \hline
+$c_{lspan}$ & Determines annual leaf loss fraction & $1.089\times 10^{0} $ & $1.164\times 10^{-3}$ & $1.0001 - 10$ \\ \hline
+$\theta_{woo}$ & Woody carbon turnover rate (day$^{-1}$) & $1.012\times 10^{-4}$ & $1.274\times 10^{-9}$ & $2.5\times10^{-5} - 10^{-3}$ \\ \hline
+$\theta_{roo}$ & Fine root carbon turnover rate (day$^{-1}$) & $5.411\times 10^{-3}$ & $5.669\times 10^{-7}$ & $10^{-4} - 10^{-2}$ \\ \hline
+$\theta_{lit}$ & Litter carbon turnover rate (day$^{-1}$) & $4.387\times 10^{-3}$ & $7.648\times 10^{-7}$ & $10^{-4} - 10^{-2}$ \\ \hline
+$\theta_{som}$ & Soil and organic carbon turnover rate (day$^{-1}$) & $1.311\times 10^{-4}$ & $1.133\times 10^{-9}$ & $10^{-7} - 10^{-3}$ \\ \hline
+$\Theta$ & Temperature dependance exponent factor & $9.354\times 10^{-2}$ & $2.854\times 10^{-5}$ & $0.018 - 0.08$ \\ \hline
+$c_{eff}$ & Canopy efficiency parameter & $5.618\times 10^{1}$ & $2.797\times 10^{0}$ & $10 - 100$ \\ \hline
+$d_{onset}$ & Leaf onset day (day) & $1.584\times 10^{2}$ & $5.740\times 10^{0}$ & $1 - 365$ \\ \hline
+$f_{lab}$ & Fraction of GPP allocated to labile carbon pool & $7.927\times 10^{-2}$ & $9.997\times 10^{-4}$ & $0.01 - 0.5$ \\ \hline
+$c_{ronset}$ & Labile carbon release period (days) & $1.891\times 10^{1}$ & $2.519\times 10^{1}$ & $10 - 100$ \\ \hline
+$d_{fall}$ & Leaf fall day (day) & $3.049\times 10^{2}$ & $4.386\times 10^{1}$ & $1 - 365$ \\ \hline
+$c_{rfall}$ & Leaf-fall period (days) & $5.447\times 10^{1}$ & $6.294\times 10^{1}$ & $10 - 100$ \\ \hline
+$c_{lma}$ & Leaf mass per area ($\text{g C m}^{-2}$) & $2.929\times 10^{1}$ & $2.975\times 10^{2}$ & $10 - 400$ \\ \hline
+$C_{lab}$ & Labile carbon pool ($\text{g C m}^{-2}$) & $7.309\times 10^{1}$ & $1.413\times 10^{3}$ & $10 - 1000$ \\ \hline
+$C_{fol}$ & Foliar carbon pool ($\text{g C m}^{-2}$) & $1.313\times 10^{1}$ & $5.668\times 10^{2}$ & $10 - 1000$ \\ \hline
+$C_{roo}$ & Fine root carbon pool ($\text{g C m}^{-2}$) & $2.103\times 10^{2}$ & $1.711\times 10^{4}$ & $10 - 1000$ \\ \hline
+$C_{woo}$ & Above and below ground woody carbon pool ($\text{gCm}^{-2}$) & $7.182\times 10^{3}$ & $1.707\times 10^{7}$ & $100 - 10^{5}$ \\ \hline
+$C_{lit}$ & Litter carbon pool ($\text{g C m}^{-2}$) & $1.697\times 10^{2}$ & $4.190\times 10^{4}$ & $10 - 1000$ \\ \hline
+$C_{som}$ & Soil and organic carbon pool ($\text{g C m}^{-2}$) & $1.950\times 10^{3}$ & $7.043\times 10^{5}$ & $100 - 2 \times 10^{5}$  \\ \hline
+	\end{tabular}
+	\label{table:xbvars}
+\end{center} 
+\end{table}
 
 \section{Observation error covariance matrices}
 
@@ -285,38 +603,655 @@ where $T^{i-1}$ is the daily mean temperature, $\Psi$ represents the meteorologi
     \caption{Observation error correlation matrices for thinned and unthinned data assimilation experiments. For more details see \citet{Pinnington2016299}} \label{fig:mod}
 \end{figure}
 
-\begin{table}[ht] 
-\begin{center}
-	\begin{tabularx}{\textwidth}{| l | X | l | l | l |}
-	\hline
-	Parameter & Description & \pbox{7cm}{Background\\ vector ($\textbf{x}^{b}$)} & \pbox{7cm}{Standard \\deviation} & Range \\ \hline
-$\theta_{min}$ & Litter mineralisation rate (day$^{-1}$) & $9.810\times 10^{-4}$ & $2.030\times 10^{-3}$ & $10^{-5} - 10^{-2}$ \\ \hline
-$f_{auto}$ & Autotrophic respiration fraction & $5.190\times 10^{-1}$ & $1.168\times 10^{-1}$ & $0.3 - 0.7$  \\ \hline
-$f_{fol}$ & Fraction of GPP allocated to foliage & $1.086\times 10^{-1}$ & $1.116\times 10^{-1}$ & $0.01-0.5$ \\ \hline
-$f_{roo}$ & Fraction of GPP allocated to fine roots & $4.844\times 10^{-1}$ & $2.989\times 10^{-1}$ & $0.01-0.5$ \\ \hline
-$c_{lspan}$ & Determines annual leaf loss fraction & $1.200\times 10^{0} $ & $1.161\times 10^{-1}$ & $1.0001 - 10$ \\ \hline
-$\theta_{woo}$ & Woody carbon turnover rate (day$^{-1}$) & $1.013\times 10^{-4}$ & $1.365\times 10^{-4}$ & $2.5\times10^{-5} - 10^{-3}$ \\ \hline
-$\theta_{roo}$ & Fine root carbon turnover rate (day$^{-1}$) & $3.225\times 10^{-3}$ & $2.930\times 10^{-3}$ & $10^{-4} - 10^{-2}$ \\ \hline
-$\theta_{lit}$ & Litter carbon turnover rate (day$^{-1}$) & $3.442\times 10^{-3}$ & $3.117\times 10^{-3}$ & $10^{-4} - 10^{-2}$ \\ \hline
-$\theta_{som}$ & Soil and organic carbon turnover rate (day$^{-1}$) & $1.113\times 10^{-4}$ & $1.181\times 10^{-4}$ & $10^{-7} - 10^{-3}$ \\ \hline
-$\Theta$ & Temperature dependance exponent factor & $4.147\times 10^{-2}$ & $1.623\times 10^{-2}$ & $0.018 - 0.08$ \\ \hline
-$c_{eff}$ & Canopy efficiency parameter & $7.144\times 10^{1}$ & $2.042\times 10^{1}$ & $10 - 100$ \\ \hline
-$d_{onset}$ & Leaf onset day (day) & $1.158\times 10^{2}$ & $6.257\times 10^{0}$ & $1 - 365$ \\ \hline
-$f_{lab}$ & Fraction of GPP allocated to labile carbon pool & $3.204\times 10^{-1}$ & $1.145\times 10^{-1}$ & $0.01 - 0.5$ \\ \hline
-$c_{ronset}$ & Labile carbon release period (days) & $4.134\times 10^{1}$ & $1.405\times 10^{1}$ & $10 - 100$ \\ \hline
-$d_{fall}$ & Leaf fall day (day) & $2.205\times 10^{2}$ & $3.724\times 10^{1}$ & $1 - 365$ \\ \hline
-$c_{rfall}$ & Leaf-fall period (days) & $1.168\times 10^{2}$ & $2.259\times 10^{1}$ & $10 - 100$ \\ \hline
-$c_{lma}$ & Leaf mass per area ($\text{g C m}^{-2}$) & $1.285\times 10^{2}$ & $6.410\times 10^{1}$ & $10 - 400$ \\ \hline
-$C_{lab}$ & Labile carbon pool ($\text{g C m}^{-2}$) & $1.365\times 10^{2}$ & $6.626\times 10^{1}$ & $10 - 1000$ \\ \hline
-$C_{fol}$ & Foliar carbon pool ($\text{g C m}^{-2}$) & $6.864\times 10^{1}$ & $3.590\times 10^{1}$ & $10 - 1000$ \\ \hline
-$C_{roo}$ & Fine root carbon pool ($\text{g C m}^{-2}$) & $2.838\times 10^{2}$ & $2.193\times 10^{2}$ & $10 - 1000$ \\ \hline
-$C_{woo}$ & Above and below ground woody carbon pool ($\text{gCm}^{-2}$) & $6.506\times 10^{3}$ & $7.143\times 10^{3}$ & $100 - 10^{5}$ \\ \hline
-$C_{lit}$ & Litter carbon pool ($\text{g C m}^{-2}$) & $5.988\times 10^{2}$ & $5.450\times 10^{2}$ & $10 - 1000$ \\ \hline
-$C_{som}$ & Soil and organic carbon pool ($\text{g C m}^{-2}$) & $1.936\times 10^{3}$ & $1.276\times 10^{3}$ & $100 - 2 \times 10^{5}$  \\ \hline
-	\end{tabularx}
-	\caption{Parameter values and standard deviations for background vector used in experiments.}
-	\label{table:xbvars}
-\end{center} 
-\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Optional Glossary, Notation or Acronym section goes here:
+%
+%%%%%%%%%%%%%%  
+% Glossary is only allowed in Reviews of Geophysics
+%  \begin{glossary}
+%  \term{Term}
+%   Term Definition here
+%  \term{Term}
+%   Term Definition here
+%  \term{Term}
+%   Term Definition here
+%  \end{glossary}
+
+%
+%%%%%%%%%%%%%%
+% Acronyms
+%   \begin{acronyms}
+%   \acro{Acronym}
+%   Definition here
+%   \acro{EMOS}
+%   Ensemble model output statistics 
+%   \acro{ECMWF}
+%   Centre for Medium-Range Weather Forecasts
+%   \end{acronyms}
+
+%
+%%%%%%%%%%%%%%
+% Notation 
+%   \begin{notation}
+%   \notation{$a+b$} Notation Definition here
+%   \notation{$e=mc^2$} 
+%   Equation in German-born physicist Albert Einstein's theory of special
+%  relativity that showed that the increased relativistic mass ($m$) of a
+%  body comes from the energy of motion of the bodyâ€”that is, its kinetic
+%  energy ($E$)â€”divided by the speed of light squared ($c^2$).
+%   \end{notation}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  ACKNOWLEDGMENTS
+%
+% The acknowledgments must list:
+%
+% â€¢	All funding sources related to this work from all authors
+%
+% â€¢	Any real or perceived financial conflicts of interests for any
+%	author
+%
+% â€¢	Other affiliations for any author that may be perceived as
+% 	having a conflict of interest with respect to the results of this
+% 	paper.
+%
+% â€¢	A statement that indicates to the reader where the data
+% 	supporting the conclusions can be obtained (for example, in the
+% 	references, tables, supporting information, and other databases).
+%
+% It is also the appropriate place to thank colleagues and other contributors. 
+% AGU does not normally allow dedications.
+
+
+\acknowledgments
+This work was funded by the UK Natural Environment Research Council (NE/K00705X/1) with a CASE award from the UK Forestry Commission. This work was also partly funded by the National Centre for Earth Observation. We are grateful to Ian Craig for providing Forest Research mensuration estimates.
+
+
+%% ------------------------------------------------------------------------ %%
+%% Citations
+
+% Please use ONLY \citet and \citep for reference citations.
+% DO NOT use other cite commands (e.g., \cite, \citeyear, \nocite, \citealp, etc.).
+
+
+%% Example \citet and \citep:
+%  ...as shown by \citet{Boug10}, \citet{Buiz07}, \citet{Fra10},
+%  \citet{Ghel00}, and \citet{Leit74}. 
+
+%  ...as shown by \citep{Boug10}, \citep{Buiz07}, \citep{Fra10},
+%  \citep{Ghel00, Leit74}. 
+
+%  ...has been shown \citep [e.g.,][]{Boug10,Buiz07,Fra10}.
+
+
+
+%%  REFERENCE LIST AND TEXT CITATIONS
+%
+% Either type in your references using
+%
+% \begin{thebibliography}{}
+% \bibitem[{\textit{Kobayashi et~al.}}(2003)]{R2013} Kobayashi, T.,
+% Tran, A.~H., Nishijo, H., Ono, T., and Matsumoto, G.  (2003).
+% Contribution of hippocampal place cell activity to learning and
+% formation of goal-directed navigation in rats. \textit{Neuroscience}
+% 117, 1025--1035.
+%
+% \bibitem{}
+% Text
+% \end{thebibliography}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Or, to use BibTeX:
+%
+% Follow these steps
+%
+% 1. Type in \bibliography{<name of your .bib file>} 
+%    Run LaTeX on your LaTeX file.
+%
+% 2. Run BiBTeX on your LaTeX file.
+%
+% 3. Open the new .bbl file containing the reference list and
+%   copy all the contents into your LaTeX file here.
+%
+% 4. Run LaTeX on your new file which will produce the citations.
+%
+% AGU does not want a .bib or a .bbl file. Please copy in the contents of your .bbl file here.
+
+
+%% After you run BibTeX, Copy in the contents of the .bbl file here:
+\begin{thebibliography}{48}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Bhupinderpal et~al.}(2003)\textit{Bhupinderpal, Nordgren,
+  Ottosson~L{\"o}fvenius, H{\"o}gberg, Mellander, and
+  H{\"o}gberg}}]{PCE:PCE1053}
+Bhupinderpal, S., A.~Nordgren, M.~Ottosson~L{\"o}fvenius, M.~N. H{\"o}gberg,
+  P.~E. Mellander, and P.~H{\"o}gberg (2003), Tree root and soil heterotrophic
+  respiration as revealed by girdling of boreal scots pine forest: extending
+  observations beyond the first year, \textit{Plant, Cell \& Environment},
+  \textit{26}(8), 1287--1296, \doi{10.1046/j.1365-3040.2003.01053.x}.
+
+\bibitem[{\textit{Bloom and Williams}(2015)}]{Bloom2015}
+Bloom, A.~A., and M.~Williams (2015), {Constraining ecosystem carbon dynamics
+  in a data-limited world: integrating ecological "common sense" in a
+  model?Äìdata fusion framework}, \textit{Biogeosciences}, \textit{12}(5),
+  1299--1315, \doi{10.5194/bg-12-1299-2015}.
+
+\bibitem[{\textit{Br{\'e}da}(2003)}]{breda2003ground}
+Br{\'e}da, N.~J. (2003), Ground-based measurements of leaf area index: a review
+  of methods, instruments and current controversies, \textit{Journal of
+  experimental botany}, \textit{54}(392), 2403--2417.
+
+\bibitem[{\textit{Ciais et~al.}(2014)\textit{Ciais, Sabine, Bala, Bopp,
+  Brovkin, Canadell, Chhabra, DeFries, Galloway, Heimann
+  et~al.}}]{ciais2014carbon}
+Ciais, P., C.~Sabine, G.~Bala, L.~Bopp, V.~Brovkin, J.~Canadell, A.~Chhabra,
+  R.~DeFries, J.~Galloway, M.~Heimann, et~al. (2014), Carbon and other
+  biogeochemical cycles, in \textit{Climate change 2013: the physical science
+  basis. Contribution of Working Group I to the Fifth Assessment Report of the
+  Intergovernmental Panel on Climate Change}, pp. 465--570, Cambridge
+  University Press.
+
+\bibitem[{\textit{Dahdouh-Guebas and Koedam}(2006)}]{dahdouh2006empirical}
+Dahdouh-Guebas, F., and N.~Koedam (2006), Empirical estimate of the reliability
+  of the use of the point-centred quarter method (pcqm): Solutions to ambiguous
+  field situations and description of the pcqm+ protocol, \textit{Forest
+  Ecology and management}, \textit{228}(1), 1--18.
+
+\bibitem[{\textit{Dijkstra and Cheng}(2007)}]{ELE:ELE1095}
+Dijkstra, F.~A., and W.~Cheng (2007), Interactions between soil and tree roots
+  accelerate long-term soil carbon decomposition, \textit{Ecology Letters},
+  \textit{10}(11), 1046--1053, \doi{10.1111/j.1461-0248.2007.01095.x}.
+
+\bibitem[{\textit{Dore et~al.}(2012)\textit{Dore, Montes-Helu, Hart, Hungate,
+  Koch, Moon, Finkral, and Kolb}}]{dore2012recovery}
+Dore, S., M.~Montes-Helu, S.~C. Hart, B.~A. Hungate, G.~W. Koch, J.~B. Moon,
+  A.~J. Finkral, and T.~E. Kolb (2012), Recovery of ponderosa pine ecosystem
+  carbon and water fluxes from thinning and stand-replacing fire,
+  \textit{Global change biology}, \textit{18}(10), 3171--3185.
+
+\bibitem[{\textit{Fassnacht et~al.}(1994)\textit{Fassnacht, Gower, Norman, and
+  McMurtric}}]{fassnacht1994comparison}
+Fassnacht, K.~S., S.~T. Gower, J.~M. Norman, and R.~E. McMurtric (1994), A
+  comparison of optical and direct methods for estimating foliage surface area
+  index in forests, \textit{Agricultural and Forest Meteorology},
+  \textit{71}(1), 183--207.
+
+\bibitem[{\textit{Fox et~al.}(2009)\textit{Fox, Williams, Richardson, Cameron,
+  Gove, Quaife, Ricciuto, Reichstein, Tomelleri, Trudinger
+  et~al.}}]{fox2009reflex}
+Fox, A., M.~Williams, A.~D. Richardson, D.~Cameron, J.~H. Gove, T.~Quaife,
+  D.~Ricciuto, M.~Reichstein, E.~Tomelleri, C.~M. Trudinger, et~al. (2009), The
+  reflex project: comparing different algorithms and implementations for the
+  inversion of a terrestrial ecosystem model against eddy covariance data,
+  \textit{Agricultural and Forest Meteorology}, \textit{149}(10), 1597--1615.
+
+\bibitem[{\textit{Heath et~al.}(2005)\textit{Heath, Ayres, Possell, Bardgett,
+  Black, Grant, Ineson, and Kerstiens}}]{heath2005rising}
+Heath, J., E.~Ayres, M.~Possell, R.~D. Bardgett, H.~I. Black, H.~Grant,
+  P.~Ineson, and G.~Kerstiens (2005), Rising atmospheric co2 reduces
+  sequestration of root-derived soil carbon, \textit{Science},
+  \textit{309}(5741), 1711--1713.
+
+\bibitem[{\textit{Heinemeyer et~al.}(2012)\textit{Heinemeyer, Wilkinson,
+  Vargas, Subke, Casella, Morison, and Ineson}}]{heinemeyer2012exploring}
+Heinemeyer, A., M.~Wilkinson, R.~Vargas, J.-A. Subke, E.~Casella, J.~I.
+  Morison, and P.~Ineson (2012), Exploring the ``overflow tap'' theory: linking
+  forest soil co2 fluxes and individual mycorrhizosphere components to
+  photosynthesis, \textit{Biogeosciences}, \textit{9}(1), 79--95.
+
+\bibitem[{\textit{Hernesmaa et~al.}(2005)\textit{Hernesmaa, Bj??rkl??f,
+  Kiikkil?§, Fritze, Haahtela, and Romantschuk}}]{Hernesmaa2005777}
+Hernesmaa, A., K.~Bj??rkl??f, O.~Kiikkil?§, H.~Fritze, K.~Haahtela, and
+  M.~Romantschuk (2005), Structure and function of microbial communities in the
+  rhizosphere of scots pine after tree-felling, \textit{Soil Biology and
+  Biochemistry}, \textit{37}(4), 777 -- 785,
+  \doi{http://dx.doi.org/10.1016/j.soilbio.2004.10.010}.
+
+\bibitem[{\textit{Hilker et~al.}(2009)\textit{Hilker, Wulder, Coops, Linke,
+  McDermid, Masek, Gao, and White}}]{hilker2009new}
+Hilker, T., M.~A. Wulder, N.~C. Coops, J.~Linke, G.~McDermid, J.~G. Masek,
+  F.~Gao, and J.~C. White (2009), A new data fusion model for high spatial-and
+  temporal-resolution mapping of forest disturbance based on landsat and modis,
+  \textit{Remote Sensing of Environment}, \textit{113}(8), 1613--1627.
+
+\bibitem[{\textit{H{\"o}gberg and Read}(2006)}]{hogberg2006towards}
+H{\"o}gberg, P., and D.~J. Read (2006), Towards a more plant physiological
+  perspective on soil ecology, \textit{Trends in Ecology \& Evolution},
+  \textit{21}(10), 548--554.
+
+\bibitem[{\textit{H{\"o}gberg et~al.}(2001)\textit{H{\"o}gberg, Nordgren,
+  Buchmann, Taylor, Ekblad, H{\"o}gberg, Nyberg, Ottosson-L{\"o}fvenius, and
+  Read}}]{hogberg2001large}
+H{\"o}gberg, P., A.~Nordgren, N.~Buchmann, A.~F. Taylor, A.~Ekblad, M.~N.
+  H{\"o}gberg, G.~Nyberg, M.~Ottosson-L{\"o}fvenius, and D.~J. Read (2001),
+  Large-scale forest girdling shows that current photosynthesis drives soil
+  respiration, \textit{Nature}, \textit{411}(6839), 789--792.
+
+\bibitem[{\textit{Janssens et~al.}(2001)\textit{Janssens, Lankreijer,
+  Matteucci, Kowalski, Buchmann, Epron, Pilegaard, Kutsch, Longdoz, Gr?nwald,
+  Montagnani, Dore, Rebmann, Moors, Grelle, Rannik, Morgenstern, Oltchev,
+  Clement, Gu?mundsson, Minerbi, Berbigier, Ibrom, Moncrieff, Aubinet,
+  Bernhofer, Jensen, Vesala, Granier, Schulze, Lindroth, Dolman, Jarvis,
+  Ceulemans, and Valentini}}]{GCB:GCB412}
+Janssens, I.~A., H.~Lankreijer, G.~Matteucci, A.~S. Kowalski, N.~Buchmann,
+  D.~Epron, K.~Pilegaard, W.~Kutsch, B.~Longdoz, T.~Gr?nwald, L.~Montagnani,
+  S.~Dore, C.~Rebmann, E.~J. Moors, A.~Grelle, ?.~Rannik, K.~Morgenstern,
+  S.~Oltchev, R.~Clement, J.~Gu?mundsson, S.~Minerbi, P.~Berbigier, A.~Ibrom,
+  J.~Moncrieff, M.~Aubinet, C.~Bernhofer, N.~O. Jensen, T.~Vesala, A.~Granier,
+  E.~D. Schulze, A.~Lindroth, A.~J. Dolman, P.~G. Jarvis, R.~Ceulemans, and
+  R.~Valentini (2001), Productivity overshadows temperature in determining soil
+  and ecosystem respiration across european forests, \textit{Global Change
+  Biology}, \textit{7}(3), 269--278, \doi{10.1046/j.1365-2486.2001.00412.x}.
+
+\bibitem[{\textit{Jonckheere et~al.}(2004)\textit{Jonckheere, Fleck, Nackaerts,
+  Muys, Coppin, Weiss, and Baret}}]{Jonckheere2004}
+Jonckheere, I., S.~Fleck, K.~Nackaerts, B.~Muys, P.~Coppin, M.~Weiss, and
+  F.~Baret (2004), {Review of methods for in situ leaf area index determination
+  Part I. Theories, sensors and hemispherical photography},
+  \textit{Agricultural and Forest Meteorology}, \textit{121}(1-2), 19--35,
+  \doi{10.1016/j.agrformet.2003.08.027}.
+
+\bibitem[{\textit{Kantzas et~al.}(2015)\textit{Kantzas, Quegan, and
+  Lomas}}]{kantzas2015improving}
+Kantzas, E., S.~Quegan, and M.~Lomas (2015), Improving the representation of
+  fire disturbance in dynamic vegetation models by assimilating satellite data:
+  a case study over the arctic, \textit{Geoscientific Model Development},
+  \textit{8}(8), 2597--2609.
+
+\bibitem[{\textit{Kerr and Haufe}(2011)}]{kerr2011thinning}
+Kerr, G., and J.~Haufe (2011), Thinning practice: A silvicultural guide,
+  \textit{Forestry Commission}, p.~54.
+
+\bibitem[{\textit{Kimmins}(1973)}]{kimmins1973some}
+Kimmins, J. (1973), Some statistical aspects of sampling throughfall
+  precipitation in nutrient cycling studies in british columbian coastal
+  forests, \textit{Ecology}, pp. 1008--1019.
+
+\bibitem[{\textit{Kurz et~al.}(2008)\textit{Kurz, Dymond, Stinson, Rampley,
+  Neilson, Carroll, Ebata, and Safranyik}}]{kurz2008mountain}
+Kurz, W.~A., C.~Dymond, G.~Stinson, G.~Rampley, E.~Neilson, A.~Carroll,
+  T.~Ebata, and L.~Safranyik (2008), Mountain pine beetle and forest carbon
+  feedback to climate change, \textit{Nature}, \textit{452}(7190), 987--990.
+
+\bibitem[{\textit{Lawless}(2013)}]{lawless2013}
+Lawless, A.~S. (2013), Variational data assimilation for very large
+  environmental problems., in \textit{Large scale Inverse Problems:
+  Computational Methods and Applications in the Earth Sciences, Radon series on
+  Computational and Applied Mathematics}, edited by M.~J.~P. Cullen, M.~A.
+  Freitag, S.~Kindermann, and R.~Scheichl, pp. 55--90, De Gruyter.
+
+\bibitem[{\textit{Liu et~al.}(2011)\textit{Liu, Bond-Lamberty, Hicke, Vargas,
+  Zhao, Chen, Edburg, Hu, Liu, McGuire, Xiao, Keane, Yuan, Tang, Luo, Potter,
+  and Oeding}}]{JGRG:JGRG779}
+Liu, S., B.~Bond-Lamberty, J.~A. Hicke, R.~Vargas, S.~Zhao, J.~Chen, S.~L.
+  Edburg, Y.~Hu, J.~Liu, A.~D. McGuire, J.~Xiao, R.~Keane, W.~Yuan, J.~Tang,
+  Y.~Luo, C.~Potter, and J.~Oeding (2011), Simulating the impacts of
+  disturbances on forest carbon cycling in north america: Processes, data,
+  models, and challenges, \textit{Journal of Geophysical Research:
+  Biogeosciences}, \textit{116}(G4), n/a--n/a, \doi{10.1029/2010JG001585},
+  g00K08.
+
+\bibitem[{\textit{McKay et~al.}(2003)\textit{McKay, Hudson, and
+  Hudson}}]{mckay2003woodfuel}
+McKay, H., J.~Hudson, and R.~Hudson (2003), Woodfuel resource in britain,
+  \textit{Forestry Commission Report}.
+
+\bibitem[{\textit{Moore et~al.}(2013)\textit{Moore, Trahan, Wilkes, Quaife,
+  Stephens, Elder, Desai, Negron, and Monson}}]{ELE:ELE12097}
+Moore, D. J.~P., N.~A. Trahan, P.~Wilkes, T.~Quaife, B.~B. Stephens, K.~Elder,
+  A.~R. Desai, J.~Negron, and R.~K. Monson (2013), Persistent reduced ecosystem
+  respiration after insect disturbance in high elevation forests,
+  \textit{Ecology Letters}, \textit{16}(6), 731--737, \doi{10.1111/ele.12097}.
+
+\bibitem[{\textit{Moreaux et~al.}(2011)\textit{Moreaux, Lamaud, Bosc,
+  Bonnefond, Medlyn, and Loustau}}]{moreaux2011paired}
+Moreaux, V., {\'E}.~Lamaud, A.~Bosc, J.-M. Bonnefond, B.~E. Medlyn, and
+  D.~Loustau (2011), Paired comparison of water, energy and carbon exchanges
+  over two young maritime pine stands (pinus pinaster ait.): effects of
+  thinning and weeding in the early stage of tree growth, \textit{Tree
+  physiology}, p. tpr048.
+
+\bibitem[{\textit{Niu et~al.}(2014)\textit{Niu, Luo, Dietze, Keenan, Shi, Li,
+  and Iii}}]{Niu2014}
+Niu, S., Y.~Luo, M.~C. Dietze, T.~F. Keenan, Z.~Shi, J.~Li, and F.~S.~C. Iii
+  (2014), {The role of data assimilation in predictive ecology},
+  \textit{Ecosphere}, \textit{5}(5), art65, \doi{10.1890/ES13-00273.1}.
+
+\bibitem[{\textit{Papale et~al.}(2006)\textit{Papale, Reichstein, Aubinet,
+  Canfora, Bernhofer, Kutsch, Longdoz, Rambal, Valentini, Vesala
+  et~al.}}]{papale2006towards}
+Papale, D., M.~Reichstein, M.~Aubinet, E.~Canfora, C.~Bernhofer, W.~Kutsch,
+  B.~Longdoz, S.~Rambal, R.~Valentini, T.~Vesala, et~al. (2006), Towards a
+  standardized processing of net ecosystem exchange measured with eddy
+  covariance technique: algorithms and uncertainty estimation,
+  \textit{Biogeosciences}, \textit{3}(4), 571--583.
+
+\bibitem[{\textit{Pierret et~al.}(2016)\textit{Pierret, Maeght, ClÈment,
+  Montoroi, Hartmann, and Gonkhamdee}}]{Pierret01102016}
+Pierret, A., J.-L. Maeght, C.~ClÈment, J.-P. Montoroi, C.~Hartmann, and
+  S.~Gonkhamdee (2016), Understanding deep roots and their functions in
+  ecosystems: an advocacy for more unconventional research, \textit{Annals of
+  Botany}, \textit{118}(4), 621--635, \doi{10.1093/aob/mcw130}.
+
+\bibitem[{\textit{Pinnington et~al.}(2016)\textit{Pinnington, Casella, Dance,
+  Lawless, Morison, Nichols, Wilkinson, and Quaife}}]{Pinnington2016299}
+Pinnington, E.~M., E.~Casella, S.~L. Dance, A.~S. Lawless, J.~I. Morison, N.~K.
+  Nichols, M.~Wilkinson, and T.~L. Quaife (2016), Investigating the role of
+  prior and observation error correlations in improving a model forecast of
+  forest carbon balance using four-dimensional variational data assimilation,
+  \textit{Agricultural and Forest Meteorology}, \textit{228?Äì229}, 299 -- 314,
+  \doi{http://dx.doi.org/10.1016/j.agrformet.2016.07.006}.
+
+\bibitem[{\textit{Quaife et~al.}(2008)\textit{Quaife, Lewis, {De Kauwe},
+  Williams, Law, Disney, and Bowyer}}]{Quaife2008}
+Quaife, T., P.~Lewis, M.~{De Kauwe}, M.~Williams, B.~E. Law, M.~Disney, and
+  P.~Bowyer (2008), {Assimilating canopy reflectance data into an ecosystem
+  model with an Ensemble Kalman Filter}, \textit{Remote Sensing of
+  Environment}, \textit{112}(4), 1347--1364, \doi{10.1016/j.rse.2007.05.020}.
+
+\bibitem[{\textit{Raupach et~al.}(2005)\textit{Raupach, Rayner, Barrett,
+  DeFries, Heimann, Ojima, Quegan, and Schmullius}}]{raupach2005model}
+Raupach, M., P.~Rayner, D.~Barrett, R.~DeFries, M.~Heimann, D.~Ojima,
+  S.~Quegan, and C.~Schmullius (2005), Model--data synthesis in terrestrial
+  carbon observation: methods, data requirements and data uncertainty
+  specifications, \textit{Global Change Biology}, \textit{11}(3), 378--397.
+
+\bibitem[{\textit{Rich et~al.}(1999)\textit{Rich, Wood, Vieglais, Burek, and
+  Webb}}]{rich1999hemiview}
+Rich, P.~M., J.~Wood, D.~Vieglais, K.~Burek, and N.~Webb (1999), Hemiview user
+  manual, version 2.1, \textit{Delta-T Devices Ltd., Cambridge, UK},
+  \textit{79}.
+
+\bibitem[{\textit{Richardson et~al.}(2008)\textit{Richardson, Mahecha, Falge,
+  Kattge, Moffat, Papale, Reichstein, Stauch, Braswell, Churkina, Kruijt, and
+  Hollinger}}]{Richardson200838}
+Richardson, A.~D., M.~D. Mahecha, E.~Falge, J.~Kattge, A.~M. Moffat, D.~Papale,
+  M.~Reichstein, V.~J. Stauch, B.~H. Braswell, G.~Churkina, B.~Kruijt, and
+  D.~Y. Hollinger (2008), Statistical properties of random \{CO2\} flux
+  measurement uncertainty inferred from model residuals, \textit{Agricultural
+  and Forest Meteorology}, \textit{148}(1), 38 -- 50,
+  \doi{http://dx.doi.org/10.1016/j.agrformet.2007.09.001}.
+
+\bibitem[{\textit{Richardson et~al.}(2010)\textit{Richardson, Williams,
+  Hollinger, Moore, Dail, Davidson, Scott, Evans, Hughes, Lee
+  et~al.}}]{richardson2010estimating}
+Richardson, A.~D., M.~Williams, D.~Y. Hollinger, D.~J. Moore, D.~B. Dail, E.~A.
+  Davidson, N.~A. Scott, R.~S. Evans, H.~Hughes, J.~T. Lee, et~al. (2010),
+  Estimating parameters of a forest ecosystem c model with measurements of
+  stocks and fluxes as joint constraints, \textit{Oecologia}, \textit{164}(1),
+  25--40.
+
+\bibitem[{\textit{Running}(2008)}]{running2008ecosystem}
+Running, S.~W. (2008), Ecosystem disturbance, carbon, and climate,
+  \textit{Science}, \textit{321}(5889), 652--653.
+
+\bibitem[{\textit{Schimel and Weintraub}(2003)}]{schimel2003implications}
+Schimel, J.~P., and M.~N. Weintraub (2003), The implications of exoenzyme
+  activity on microbial carbon and nitrogen limitation in soil: a theoretical
+  model, \textit{Soil Biology and Biochemistry}, \textit{35}(4), 549--563.
+
+\bibitem[{\textit{Seidl et~al.}(2011)\textit{Seidl, Fernandes, Fonseca, Gillet,
+  J{\"o}nsson, Mergani{\v{c}}ov{\'a}, Netherer, Arpaci, Bontemps, Bugmann
+  et~al.}}]{seidl2011modelling}
+Seidl, R., P.~M. Fernandes, T.~F. Fonseca, F.~Gillet, A.~M. J{\"o}nsson,
+  K.~Mergani{\v{c}}ov{\'a}, S.~Netherer, A.~Arpaci, J.-D. Bontemps, H.~Bugmann,
+  et~al. (2011), Modelling natural disturbances in forest ecosystems: a review,
+  \textit{Ecological Modelling}, \textit{222}(4), 903--924.
+
+\bibitem[{\textit{Talbot et~al.}(2008)\textit{Talbot, Allison, and
+  Treseder}}]{talbot2008decomposers}
+Talbot, J., S.~Allison, and K.~Treseder (2008), Decomposers in disguise:
+  mycorrhizal fungi as regulators of soil c dynamics in ecosystems under global
+  change, \textit{Functional ecology}, \textit{22}(6), 955--963.
+
+\bibitem[{\textit{Thornton et~al.}(2002)\textit{Thornton, Law, Gholz, Clark,
+  Falge, Ellsworth, Goldstein, Monson, Hollinger, Falk
+  et~al.}}]{thornton2002modeling}
+Thornton, P., B.~Law, H.~L. Gholz, K.~L. Clark, E.~Falge, D.~Ellsworth,
+  A.~Goldstein, R.~Monson, D.~Hollinger, M.~Falk, et~al. (2002), Modeling and
+  measuring the effects of disturbance history and climate on carbon and water
+  budgets in evergreen needleleaf forests, \textit{Agricultural and forest
+  meteorology}, \textit{113}(1), 185--222.
+
+\bibitem[{\textit{Tremolet}(2006)}]{Tremolet2006}
+Tremolet, Y. (2006), {Accounting for an imperfect model in 4D-Var},
+  \textit{Quarterly Journal of the Royal Meteorological Society},
+  \textit{132}(621), 2483--2504, \doi{10.1256/qj.05.224}.
+
+\bibitem[{\textit{Vesala et~al.}(2005)\textit{Vesala, Suni, Rannik, Keronen,
+  Markkanen, Sevanto, Gr{\"o}nholm, Smolander, Kulmala, Ilvesniemi
+  et~al.}}]{vesala2005effect}
+Vesala, T., T.~Suni, {\"U}.~Rannik, P.~Keronen, T.~Markkanen, S.~Sevanto,
+  T.~Gr{\"o}nholm, S.~Smolander, M.~Kulmala, H.~Ilvesniemi, et~al. (2005),
+  Effect of thinning on surface fluxes in a boreal forest, \textit{Global
+  Biogeochemical Cycles}, \textit{19}(2).
+
+\bibitem[{\textit{Wilkinson et~al.}(2012)\textit{Wilkinson, Eaton, Broadmeadow,
+  and Morison}}]{wilkinson2012inter}
+Wilkinson, M., E.~Eaton, M.~Broadmeadow, and J.~Morison (2012), Inter-annual
+  variation of carbon uptake by a plantation oak woodland in south-eastern
+  england, \textit{Biogeosciences}, \textit{9}(12), 5373--5389.
+
+\bibitem[{\textit{Wilkinson et~al.}(2015)\textit{Wilkinson, Crow, Eaton, and
+  Morison}}]{wilkinson2015effects}
+Wilkinson, M., P.~Crow, E.~Eaton, and J.~Morison (2015), Effects of management
+  thinning on co\(_{2}\) exchange by a plantation oak woodland in south-eastern
+  england., \textit{Biogeosciences Discussions}, \textit{12}(19).
+
+\bibitem[{\textit{Williams et~al.}(1997)\textit{Williams, Rastetter, Fernandes,
+  Goulden, Shaver, and Johnson}}]{williams1997predicting}
+Williams, M., E.~B. Rastetter, D.~N. Fernandes, M.~L. Goulden, G.~R. Shaver,
+  and L.~C. Johnson (1997), Predicting gross primary productivity in
+  terrestrial ecosystems, \textit{Ecological Applications}, \textit{7}(3),
+  882--894.
+
+\bibitem[{\textit{Williams et~al.}(2005)\textit{Williams, Schwarz, Law, Irvine,
+  and Kurpius}}]{williams2005improved}
+Williams, M., P.~A. Schwarz, B.~E. Law, J.~Irvine, and M.~R. Kurpius (2005), An
+  improved analysis of forest carbon dynamics using data assimilation,
+  \textit{Global Change Biology}, \textit{11}(1), 89--105.
+
+\bibitem[{\textit{Zobitz et~al.}(2011)\textit{Zobitz, Desai, Moore, and
+  Chadwick}}]{zobitz2011primer}
+Zobitz, J., A.~Desai, D.~Moore, and M.~Chadwick (2011), A primer for data
+  assimilation with ecological models using markov chain monte carlo (mcmc),
+  \textit{Oecologia}, \textit{167}(3), 599--611.
+
+\bibitem[{\textit{Zobitz et~al.}(2014)\textit{Zobitz, Moore, Quaife, Braswell,
+  Bergeson, Anthony, and Monson}}]{Zobitz2014}
+Zobitz, J.~M., D.~J.~P. Moore, T.~Quaife, B.~H. Braswell, A.~Bergeson, J.~a.
+  Anthony, and R.~K. Monson (2014), {Joint data assimilation of satellite
+  reflectance and net ecosystem exchange data constrains ecosystem carbon
+  fluxes at a high-elevation subalpine forest}, \textit{Agricultural and Forest
+  Meteorology}, \textit{195-196}, 73--88,
+  \doi{10.1016/j.agrformet.2014.04.011}.
+
+\end{thebibliography}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Track Changes:
+% To add words, \added{<word added>}
+% To delete words, \deleted{<word deleted>}
+% To replace words, \replace{<word to be replaced>}{<replacement word>}
+% To explain why change was made: \explain{<explanation>} This will put
+% a comment into the right margin.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% At the end of the document, use \listofchanges, which will list the
+% changes and the page and line number where the change was made.
+
+% When final version, \listofchanges will not produce anything,
+% \added{<word or words>} word will be printed, \deleted{<word or words} will take away the word,
+% \replaced{<delete this word>}{<replace with this word>} will print only the replacement word.
+%  In the final version, \explain will not print anything.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%
+\listofchanges
+%%%
 
 \end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Supporting Information
+%% (Optional) See AGUSuppInfoSamp.tex/pdf for requirements 
+%% for Supporting Information.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+More Information and Advice:
+
+%% ------------------------------------------------------------------------ %%
+%
+%  SECTION HEADS
+%
+%% ------------------------------------------------------------------------ %%
+
+% Capitalize the first letter of each word (except for
+% prepositions, conjunctions, and articles that are
+% three or fewer letters).
+
+% AGU follows standard outline style; therefore, there cannot be a section 1 without
+% a section 2, or a section 2.3.1 without a section 2.3.2.
+% Please make sure your section numbers are balanced.
+% ---------------
+% Level 1 head
+%
+% Use the \section{} command to identify level 1 heads;
+% type the appropriate head wording between the curly
+% brackets, as shown below.
+%
+%An example:
+%\section{Level 1 Head: Introduction}
+%
+% ---------------
+% Level 2 head
+%
+% Use the \subsection{} command to identify level 2 heads.
+%An example:
+%\subsection{Level 2 Head}
+%
+% ---------------
+% Level 3 head
+%
+% Use the \subsubsection{} command to identify level 3 heads
+%An example:
+%\subsubsection{Level 3 Head}
+%
+%---------------
+% Level 4 head
+%
+% Use the \subsubsubsection{} command to identify level 3 heads
+% An example:
+%\subsubsubsection{Level 4 Head} An example.
+%
+%% ------------------------------------------------------------------------ %%
+%
+%  IN-TEXT LISTS
+%
+%% ------------------------------------------------------------------------ %%
+%
+% Do not use bulleted lists; enumerated lists are okay.
+% \begin{enumerate}
+% \item
+% \item
+% \item
+% \end{enumerate}
+%
+%% ------------------------------------------------------------------------ %%
+%
+%  EQUATIONS
+%
+%% ------------------------------------------------------------------------ %%
+
+% Single-line equations are centered.
+% Equation arrays will appear left-aligned.
+
+Math coded inside display math mode \[ ...\]
+ will not be numbered, e.g.,:
+ \[ x^2=y^2 + z^2\]
+
+ Math coded inside \begin{equation} and \end{equation} will
+ be automatically numbered, e.g.,:
+ \begin{equation}
+ x^2=y^2 + z^2
+ \end{equation}
+
+
+% To create multiline equations, use the
+% \begin{eqnarray} and \end{eqnarray} environment
+% as demonstrated below.
+\begin{eqnarray}
+  x_{1} & = & (x - x_{0}) \cos \Theta \nonumber \\
+        && + (y - y_{0}) \sin \Theta  \nonumber \\
+  y_{1} & = & -(x - x_{0}) \sin \Theta \nonumber \\
+        && + (y - y_{0}) \cos \Theta.
+\end{eqnarray}
+
+%If you don't want an equation number, use the star form:
+%\begin{eqnarray*}...\end{eqnarray*}
+
+% Break each line at a sign of operation
+% (+, -, etc.) if possible, with the sign of operation
+% on the new line.
+
+% Indent second and subsequent lines to align with
+% the first character following the equal sign on the
+% first line.
+
+% Use an \hspace{} command to insert horizontal space
+% into your equation if necessary. Place an appropriate
+% unit of measure between the curly braces, e.g.
+% \hspace{1in}; you may have to experiment to achieve
+% the correct amount of space.
+
+
+%% ------------------------------------------------------------------------ %%
+%
+%  EQUATION NUMBERING: COUNTER
+%
+%% ------------------------------------------------------------------------ %%
+
+% You may change equation numbering by resetting
+% the equation counter or by explicitly numbering
+% an equation.
+
+% To explicitly number an equation, type \eqnum{}
+% (with the desired number between the brackets)
+% after the \begin{equation} or \begin{eqnarray}
+% command.  The \eqnum{} command will affect only
+% the equation it appears with; LaTeX will number
+% any equations appearing later in the manuscript
+% according to the equation counter.
+%
+
+% If you have a multiline equation that needs only
+% one equation number, use a \nonumber command in
+% front of the double backslashes (\\) as shown in
+% the multiline equation above.
+
+% If you are using line numbers, remember to surround
+% equations with \begin{linenomath*}...\end{linenomath*}
+
+%  To add line numbers to lines in equations:
+%  \begin{linenomath*}
+%  \begin{equation}
+%  \end{equation}
+%  \end{linenomath*}
+
+
+

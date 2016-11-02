@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  27 OCT 2016 16:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  31 OCT 2016 16:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -303,10 +303,19 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 
 (./disturbance.aux
 
-LaTeX Warning: Label `fig:nee_day' multiply defined.
+LaTeX Warning: Label `fig:gpp' multiply defined.
 
 
-LaTeX Warning: Label `fig:nee_day' multiply defined.
+LaTeX Warning: Label `sub@fig:gpp' multiply defined.
+
+
+LaTeX Warning: Label `fig:rt' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:rt' multiply defined.
+
+
+LaTeX Warning: Label `fig:mod' multiply defined.
 
 )
 \openout1 = `disturbance.aux'.
@@ -439,80 +448,64 @@ File: thinned.pdf Graphic file (type pdf)
  <use thinned.pdf>
 Package pdftex.def Info: thinned.pdf used on input line 85.
 (pdftex.def)             Requested size: 375.80544pt x 265.57114pt.
-
+ [5]
 Underfull \hbox (badness 10000) in paragraph at lines 101--101
 []|\OT1/cmr/m/n/10.95 Estimated Woody biomass and
  []
 
-[5] <dalec2diag.pdf, id=30, 758.835pt x 453.695pt>
+<dalec2diag.pdf, id=30, 758.835pt x 453.695pt>
 File: dalec2diag.pdf Graphic file (type pdf)
  <use dalec2diag.pdf>
 Package pdftex.def Info: dalec2diag.pdf used on input line 114.
 (pdftex.def)             Requested size: 234.8775pt x 140.42938pt.
-
-[6 <./thinned.pdf>] [7 <./dalec2diag.pdf>]
-<nee_day.pdf, id=46, 808.26251pt x 561.2733pt>
+ [6 <./thinned.pdf>] [7 <./dalec2diag.pdf>] [8]
+<nee_day.pdf, id=49, 808.26251pt x 561.2733pt>
 File: nee_day.pdf Graphic file (type pdf)
  <use nee_day.pdf>
-Package pdftex.def Info: nee_day.pdf used on input line 156.
+Package pdftex.def Info: nee_day.pdf used on input line 160.
 (pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
 
-<nee_night.pdf, id=47, 808.26251pt x 561.2733pt>
+<nee_night.pdf, id=50, 808.26251pt x 561.2733pt>
 File: nee_night.pdf Graphic file (type pdf)
  <use nee_night.pdf>
-Package pdftex.def Info: nee_night.pdf used on input line 161.
+Package pdftex.def Info: nee_night.pdf used on input line 165.
 (pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
 
-<lai.pdf, id=48, 808.26251pt x 561.2733pt>
+<lai.pdf, id=51, 808.26251pt x 561.2733pt>
 File: lai.pdf Graphic file (type pdf)
  <use lai.pdf>
-Package pdftex.def Info: lai.pdf used on input line 166.
+Package pdftex.def Info: lai.pdf used on input line 170.
 (pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
 
-<c_woo.pdf, id=49, 822.41255pt x 567.3485pt>
+<c_woo.pdf, id=52, 822.41255pt x 567.3485pt>
 File: c_woo.pdf Graphic file (type pdf)
  <use c_woo.pdf>
-Package pdftex.def Info: c_woo.pdf used on input line 171.
+Package pdftex.def Info: c_woo.pdf used on input line 175.
 (pdftex.def)             Requested size: 230.18253pt x 158.78723pt.
 
-<gpp.pdf, id=50, 808.26251pt x 561.2733pt>
+<gpp.pdf, id=53, 808.26251pt x 561.2733pt>
 File: gpp.pdf Graphic file (type pdf)
  <use gpp.pdf>
-Package pdftex.def Info: gpp.pdf used on input line 181.
+Package pdftex.def Info: gpp.pdf used on input line 187.
 (pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
 
-<rt.pdf, id=51, 808.26251pt x 561.2733pt>
+<rt.pdf, id=54, 808.26251pt x 561.2733pt>
 File: rt.pdf Graphic file (type pdf)
  <use rt.pdf>
-Package pdftex.def Info: rt.pdf used on input line 186.
+Package pdftex.def Info: rt.pdf used on input line 192.
 (pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
 
-<ra.pdf, id=52, 808.26251pt x 561.2733pt>
+<ra.pdf, id=55, 808.26251pt x 561.2733pt>
 File: ra.pdf Graphic file (type pdf)
  <use ra.pdf>
-Package pdftex.def Info: ra.pdf used on input line 191.
+Package pdftex.def Info: ra.pdf used on input line 197.
 (pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
 
-<rh.pdf, id=53, 808.26251pt x 561.2733pt>
+<rh.pdf, id=56, 808.26251pt x 561.2733pt>
 File: rh.pdf Graphic file (type pdf)
  <use rh.pdf>
-Package pdftex.def Info: rh.pdf used on input line 196.
+Package pdftex.def Info: rh.pdf used on input line 202.
 (pdftex.def)             Requested size: 230.18253pt x 159.84465pt.
-
-<xa_inc.pdf, id=54, 940.17496pt x 408.61095pt>
-File: xa_inc.pdf Graphic file (type pdf)
- <use xa_inc.pdf>
-Package pdftex.def Info: xa_inc.pdf used on input line 205.
-(pdftex.def)             Requested size: 375.80544pt x 163.32924pt.
- [8]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 219.
-
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 219.
  [9 <./nee_day.pdf> <./nee_night.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./nee_night.pdf): PDF inclusion: mul
@@ -525,11 +518,7 @@ pdfs with page group included in a single page
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./c_woo.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
->] (./disturbance.bbl
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
- [10 <./gpp.pdf> <./rt.pdf
+>] [10 <./gpp.pdf> <./rt.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./rt.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
@@ -541,25 +530,34 @@ dfs with page group included in a single page
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./rh.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
->]
-Underfull \hbox (badness 10000) in paragraph at lines 43--50
+>] <xa_inc.pdf, id=520, 940.17496pt x 408.61095pt>
+File: xa_inc.pdf Graphic file (type pdf)
+ <use xa_inc.pdf>
+Package pdftex.def Info: xa_inc.pdf used on input line 216.
+(pdftex.def)             Requested size: 375.80544pt x 163.32924pt.
+ [11 <./xa_inc.pdf>] [12] (./disturbance.bbl
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--62
 []\OT1/cmr/m/n/10.95 F. A. Di-jk-stra and W. Cheng.  In-ter-ac-tions be-tween s
 oil and tree roots ac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--50
+Underfull \hbox (badness 10000) in paragraph at lines 55--62
 \OT1/cmr/m/n/10.95 cel-er-ate long-term soil car-bon de-com-po-si-tion.  \OT1/c
 mr/m/it/10.95 Ecol-ogy Let-ters\OT1/cmr/m/n/10.95 , 10(11):1046--
  []
 
 
-Underfull \hbox (badness 8094) in paragraph at lines 43--50
+Underfull \hbox (badness 8094) in paragraph at lines 55--62
 \OT1/cmr/m/n/10.95 1053, 2007.  ISSN 1461-0248.  doi: 10.1111/j.1461-0248.2007.
 01095.x.  URL
  []
 
-[11 <./xa_inc.pdf>]
+[13]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -567,86 +565,122 @@ Missing character: There is no ¶ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--98
+Underfull \hbox (badness 10000) in paragraph at lines 108--118
 []\OT1/cmr/m/n/10.95 A. Her-nes-maa, K. Bjrklf, O. Ki-ikkil, H. Fritze, K. Haah
 tela, and M. Ro-
  []
 
 
-Underfull \hbox (badness 5607) in paragraph at lines 88--98
+Underfull \hbox (badness 5607) in paragraph at lines 108--118
 \OT1/cmr/m/n/10.95 mantschuk.  Struc-ture and func-tion of mi-cro-bial com-mu-n
 i-ties in the rhi-zo-sphere
  []
 
 
-Underfull \hbox (badness 4403) in paragraph at lines 88--98
+Underfull \hbox (badness 4403) in paragraph at lines 108--118
 \OT1/cmr/m/n/10.95 of scots pine af-ter tree-felling.  \OT1/cmr/m/it/10.95 Soil
  Bi-ol-ogy and Bio-chem-istry\OT1/cmr/m/n/10.95 , 37(4):777 -- 785,
  []
 
 
-Underfull \hbox (badness 3019) in paragraph at lines 88--98
+Underfull \hbox (badness 3019) in paragraph at lines 108--118
 \OT1/cmr/m/n/10.95 2005.  ISSN 0038-0717.  doi: http://dx.doi.org/10.1016/j.soi
 lbio.2004.10.010.  URL
  []
 
-[12]
+Missing character: There is no ü in font cmr10!
+Missing character: There is no Ü in font cmr10!
+Missing character: There is no ð in font cmr10!
+
+Underfull \hbox (badness 1137) in paragraph at lines 149--163
+[]\OT1/cmr/m/n/10.95 I. A. Janssens, H. Lankrei-jer, G. Mat-teucci, A. S. Kowal
+-ski, N. Buch-mann, D. Epron,
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 149--163
+\OT1/cmr/m/n/10.95 ter-min-ing soil and ecosys-tem res-pi-ra-tion across eu-ro-
+pean forests.  \OT1/cmr/m/it/10.95 Global Change Bi-ol-
+ []
+
+[14]
+Missing character: There is no é in font cmr10!
+ [15]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [13]) [14]
-Underfull \hbox (badness 10000) in paragraph at lines 276--276
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 318.
+
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 318.
+
+[16]) <_rmat_east.png, id=601, 625.1355pt x 552.1428pt>
+File: _rmat_east.png Graphic file (type png)
+ <use _rmat_east.png>
+Package pdftex.def Info: _rmat_east.png used on input line 276.
+(pdftex.def)             Requested size: 230.18253pt x 203.30391pt.
+
+<_rmat_west.png, id=603, 625.1355pt x 552.1428pt>
+File: _rmat_west.png Graphic file (type png)
+ <use _rmat_west.png>
+Package pdftex.def Info: _rmat_west.png used on input line 281.
+(pdftex.def)             Requested size: 230.18253pt x 203.30391pt.
+ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 316--316
 []|\OT1/cmr/m/n/10.95 Litter min-er-al-i-sa-tion rate
  []
 
 
-Underfull \hbox (badness 4144) in paragraph at lines 276--276
+Underfull \hbox (badness 4144) in paragraph at lines 316--316
 []|\OT1/cmr/m/n/10.95 Autotrophic res-pi-ra-tion frac-
  []
 
 
-Underfull \hbox (badness 4913) in paragraph at lines 276--276
+Underfull \hbox (badness 4913) in paragraph at lines 316--316
 []|\OT1/cmr/m/n/10.95 Determines an-nual leaf loss
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 276--276
+Underfull \hbox (badness 1748) in paragraph at lines 316--316
 []|\OT1/cmr/m/n/10.95 Woody car-bon turnover rate
  []
 
 
-Underfull \hbox (badness 5175) in paragraph at lines 276--276
+Underfull \hbox (badness 5175) in paragraph at lines 316--316
 []|\OT1/cmr/m/n/10.95 Litter car-bon turnover rate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--276
+Underfull \hbox (badness 10000) in paragraph at lines 316--316
 []|\OT1/cmr/m/n/10.95 Soil and or-ganic car-bon
  []
 
 
-Underfull \hbox (badness 2426) in paragraph at lines 276--276
+Underfull \hbox (badness 2426) in paragraph at lines 316--316
 []|\OT1/cmr/m/n/10.95 Labile car-bon re-lease pe-riod
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--276
+Underfull \hbox (badness 10000) in paragraph at lines 316--316
 []|\OT1/cmr/m/n/10.95 Fine root car-bon pool
  []
 
-[15] [16] (./disturbance.aux)
+[18 <./_rmat_east.png> <./_rmat_west.png>] [19] (./disturbance.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5660 strings out of 493117
- 80787 string characters out of 6135433
- 180039 words of memory out of 5000000
- 8983 multiletter control sequences out of 15000+600000
+ 5693 strings out of 493117
+ 81484 string characters out of 6135433
+ 176899 words of memory out of 5000000
+ 9013 multiletter control sequences out of 15000+600000
  20139 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,19n,43p,1675b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,19n,43p,1882b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
@@ -665,10 +699,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on disturbance.pdf (16 pages, 688504 bytes).
+Output written on disturbance.pdf (19 pages, 745767 bytes).
 PDF statistics:
- 661 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
+ 676 PDF objects out of 1000 (max. 8388607)
+ 225 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

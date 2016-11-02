@@ -1,9 +1,21 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{48}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bhupinderpal et~al.(2003)Bhupinderpal, Nordgren,
+  Ottosson~L{\"o}fvenius, H{\"o}gberg, Mellander, and H{\"o}gberg]{PCE:PCE1053}
+S.~Bhupinderpal, A.~Nordgren, M.~Ottosson~L{\"o}fvenius, M.~N. H{\"o}gberg,
+  P.~E. Mellander, and P.~H{\"o}gberg.
+\newblock Tree root and soil heterotrophic respiration as revealed by girdling
+  of boreal scots pine forest: extending observations beyond the first year.
+\newblock \emph{Plant, Cell \& Environment}, 26\penalty0 (8):\penalty0
+  1287--1296, 2003.
+\newblock ISSN 1365-3040.
+\newblock \doi{10.1046/j.1365-3040.2003.01053.x}.
+\newblock URL \url{http://dx.doi.org/10.1046/j.1365-3040.2003.01053.x}.
 
 \bibitem[Bloom and Williams(2015)]{Bloom2015}
 A.~A. Bloom and M.~Williams.
@@ -75,11 +87,19 @@ A.~Fox, M.~Williams, A.~D. Richardson, D.~Cameron, J.~H. Gove, T.~Quaife,
 \newblock \emph{Agricultural and Forest Meteorology}, 149\penalty0
   (10):\penalty0 1597--1615, 2009.
 
+\bibitem[Heath et~al.(2005)Heath, Ayres, Possell, Bardgett, Black, Grant,
+  Ineson, and Kerstiens]{heath2005rising}
+J.~Heath, E.~Ayres, M.~Possell, R.~D. Bardgett, H.~I. Black, H.~Grant,
+  P.~Ineson, and G.~Kerstiens.
+\newblock Rising atmospheric co2 reduces sequestration of root-derived soil
+  carbon.
+\newblock \emph{Science}, 309\penalty0 (5741):\penalty0 1711--1713, 2005.
+
 \bibitem[Heinemeyer et~al.(2012)Heinemeyer, Wilkinson, Vargas, Subke, Casella,
   Morison, and Ineson]{heinemeyer2012exploring}
 A.~Heinemeyer, M.~Wilkinson, R.~Vargas, J.-A. Subke, E.~Casella, J.~I. Morison,
   and P.~Ineson.
-\newblock Exploring the ?overflow tap? theory: linking forest soil co2 fluxes
+\newblock Exploring the ``overflow tap'' theory: linking forest soil co2 fluxes
   and individual mycorrhizosphere components to photosynthesis.
 \newblock \emph{Biogeosciences}, 9\penalty0 (1):\penalty0 79--95, 2012.
 
@@ -105,6 +125,12 @@ T.~Hilker, M.~A. Wulder, N.~C. Coops, J.~Linke, G.~McDermid, J.~G. Masek,
 \newblock \emph{Remote Sensing of Environment}, 113\penalty0 (8):\penalty0
   1613--1627, 2009.
 
+\bibitem[H{\"o}gberg and Read(2006)]{hogberg2006towards}
+P.~H{\"o}gberg and D.~J. Read.
+\newblock Towards a more plant physiological perspective on soil ecology.
+\newblock \emph{Trends in Ecology \& Evolution}, 21\penalty0 (10):\penalty0
+  548--554, 2006.
+
 \bibitem[H{\"o}gberg et~al.(2001)H{\"o}gberg, Nordgren, Buchmann, Taylor,
   Ekblad, H{\"o}gberg, Nyberg, Ottosson-L{\"o}fvenius, and
   Read]{hogberg2001large}
@@ -113,6 +139,27 @@ P.~H{\"o}gberg, A.~Nordgren, N.~Buchmann, A.~F. Taylor, A.~Ekblad, M.~N.
 \newblock Large-scale forest girdling shows that current photosynthesis drives
   soil respiration.
 \newblock \emph{Nature}, 411\penalty0 (6839):\penalty0 789--792, 2001.
+
+\bibitem[Janssens et~al.(2001)Janssens, Lankreijer, Matteucci, Kowalski,
+  Buchmann, Epron, Pilegaard, Kutsch, Longdoz, Grünwald, Montagnani, Dore,
+  Rebmann, Moors, Grelle, Rannik, Morgenstern, Oltchev, Clement, Guðmundsson,
+  Minerbi, Berbigier, Ibrom, Moncrieff, Aubinet, Bernhofer, Jensen, Vesala,
+  Granier, Schulze, Lindroth, Dolman, Jarvis, Ceulemans, and
+  Valentini]{GCB:GCB412}
+I.~A. Janssens, H.~Lankreijer, G.~Matteucci, A.~S. Kowalski, N.~Buchmann,
+  D.~Epron, K.~Pilegaard, W.~Kutsch, B.~Longdoz, T.~Grünwald, L.~Montagnani,
+  S.~Dore, C.~Rebmann, E.~J. Moors, A.~Grelle, Ü.~Rannik, K.~Morgenstern,
+  S.~Oltchev, R.~Clement, J.~Guðmundsson, S.~Minerbi, P.~Berbigier, A.~Ibrom,
+  J.~Moncrieff, M.~Aubinet, C.~Bernhofer, N.~O. Jensen, T.~Vesala, A.~Granier,
+  E.~D. Schulze, A.~Lindroth, A.~J. Dolman, P.~G. Jarvis, R.~Ceulemans, and
+  R.~Valentini.
+\newblock Productivity overshadows temperature in determining soil and
+  ecosystem respiration across european forests.
+\newblock \emph{Global Change Biology}, 7\penalty0 (3):\penalty0 269--278,
+  2001.
+\newblock ISSN 1365-2486.
+\newblock \doi{10.1046/j.1365-2486.2001.00412.x}.
+\newblock URL \url{http://dx.doi.org/10.1046/j.1365-2486.2001.00412.x}.
 
 \bibitem[Jonckheere et~al.(2004)Jonckheere, Fleck, Nackaerts, Muys, Coppin,
   Weiss, and Baret]{Jonckheere2004}
@@ -215,6 +262,15 @@ D.~Papale, M.~Reichstein, M.~Aubinet, E.~Canfora, C.~Bernhofer, W.~Kutsch,
   with eddy covariance technique: algorithms and uncertainty estimation.
 \newblock \emph{Biogeosciences}, 3\penalty0 (4):\penalty0 571--583, 2006.
 
+\bibitem[Pierret et~al.(2016)Pierret, Maeght, Clément, Montoroi, Hartmann, and
+  Gonkhamdee]{Pierret01102016}
+A.~Pierret, J.-L. Maeght, C.~Clément, J.-P. Montoroi, C.~Hartmann, and
+  S.~Gonkhamdee.
+\newblock Understanding deep roots and their functions in ecosystems: an
+  advocacy for more unconventional research.
+\newblock \emph{Annals of Botany}, 118\penalty0 (4):\penalty0 621--635, 2016.
+\newblock \doi{10.1093/aob/mcw130}.
+
 \bibitem[Pinnington et~al.(2016)Pinnington, Casella, Dance, Lawless, Morison,
   Nichols, Wilkinson, and Quaife]{Pinnington2016299}
 E.~M. Pinnington, E.~Casella, S.~L. Dance, A.~S. Lawless, J.~I. Morison, N.~K.
@@ -279,6 +335,13 @@ S.~W. Running.
 \newblock Ecosystem disturbance, carbon, and climate.
 \newblock \emph{Science}, 321\penalty0 (5889):\penalty0 652--653, 2008.
 
+\bibitem[Schimel and Weintraub(2003)]{schimel2003implications}
+J.~P. Schimel and M.~N. Weintraub.
+\newblock The implications of exoenzyme activity on microbial carbon and
+  nitrogen limitation in soil: a theoretical model.
+\newblock \emph{Soil Biology and Biochemistry}, 35\penalty0 (4):\penalty0
+  549--563, 2003.
+
 \bibitem[Seidl et~al.(2011)Seidl, Fernandes, Fonseca, Gillet, J{\"o}nsson,
   Mergani{\v{c}}ov{\'a}, Netherer, Arpaci, Bontemps, Bugmann,
   et~al.]{seidl2011modelling}
@@ -288,6 +351,13 @@ R.~Seidl, P.~M. Fernandes, T.~F. Fonseca, F.~Gillet, A.~M. J{\"o}nsson,
 \newblock Modelling natural disturbances in forest ecosystems: a review.
 \newblock \emph{Ecological Modelling}, 222\penalty0 (4):\penalty0 903--924,
   2011.
+
+\bibitem[Talbot et~al.(2008)Talbot, Allison, and
+  Treseder]{talbot2008decomposers}
+J.~Talbot, S.~Allison, and K.~Treseder.
+\newblock Decomposers in disguise: mycorrhizal fungi as regulators of soil c
+  dynamics in ecosystems under global change.
+\newblock \emph{Functional ecology}, 22\penalty0 (6):\penalty0 955--963, 2008.
 
 \bibitem[Thornton et~al.(2002)Thornton, Law, Gholz, Clark, Falge, Ellsworth,
   Goldstein, Monson, Hollinger, Falk, et~al.]{thornton2002modeling}

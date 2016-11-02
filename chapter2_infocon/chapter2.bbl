@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{36}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -128,6 +128,22 @@ E.~Kalnay.
 \newblock \emph{Atmospheric modeling, data assimilation, and predictability}.
 \newblock Cambridge university press, 2003.
 
+\bibitem[Law et~al.(2001{\natexlab{a}})Law, Thornton, Irvine, Anthoni, and
+  Van~Tuyl]{law2001carbon}
+B.~Law, P.~Thornton, J.~Irvine, P.~Anthoni, and S.~Van~Tuyl.
+\newblock Carbon storage and fluxes in ponderosa pine forests at different
+  developmental stages.
+\newblock \emph{Global Change Biology}, 7\penalty0 (7):\penalty0 755--777,
+  2001{\natexlab{a}}.
+
+\bibitem[Law et~al.(2001{\natexlab{b}})Law, Van~Tuyl, Cescatti, and
+  Baldocchi]{law2001estimation}
+B.~Law, S.~Van~Tuyl, A.~Cescatti, and D.~Baldocchi.
+\newblock Estimation of leaf area index in open-canopy ponderosa pine forests
+  at different successional stages and management regimes in oregon.
+\newblock \emph{Agricultural and Forest Meteorology}, 108\penalty0
+  (1):\penalty0 1--14, 2001{\natexlab{b}}.
+
 \bibitem[Le~Toan et~al.(2011)Le~Toan, Quegan, Davidson, Balzter, Paillou,
   Papathanassiou, Plummer, Rocca, Saatchi, Shugart, et~al.]{le2011biomass}
 T.~Le~Toan, S.~Quegan, M.~Davidson, H.~Balzter, P.~Paillou, K.~Papathanassiou,
@@ -185,6 +201,17 @@ W.~Press, S.~A. Teukolsky, W.~T. Vetterling, and B.~P. Flannery.
   Computing}.
 \newblock Cambridge University Press, 2007.
 \newblock ISBN 9780521880688.
+
+\bibitem[Quaife et~al.(2008)Quaife, Lewis, {De Kauwe}, Williams, Law, Disney,
+  and Bowyer]{Quaife2008}
+T.~Quaife, P.~Lewis, M.~{De Kauwe}, M.~Williams, B.~E. Law, M.~Disney, and
+  P.~Bowyer.
+\newblock {Assimilating canopy reflectance data into an ecosystem model with an
+  Ensemble Kalman Filter}.
+\newblock \emph{Remote Sensing of Environment}, 112\penalty0 (4):\penalty0
+  1347--1364, 2008.
+\newblock ISSN 00344257.
+\newblock \doi{10.1016/j.rse.2007.05.020}.
 
 \bibitem[Rabier et~al.(2002)Rabier, Fourri{\'e}, Chaf{\"a}i, and
   Prunet]{rabier2002channel}
