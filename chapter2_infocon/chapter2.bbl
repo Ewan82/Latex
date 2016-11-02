@@ -1,9 +1,16 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{43}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Baldocchi(2008)]{baldocchi2008turner}
+D.~Baldocchi.
+\newblock Turner review no. 15.`breathing'of the terrestrial biosphere: lessons
+  learned from a global network of carbon dioxide flux measurement systems.
+\newblock \emph{Australian Journal of Botany}, 56\penalty0 (1):\penalty0 1--26,
+  2008.
 
 \bibitem[Barnett and Cameron(1985)]{barnett1985introduction}
 S.~Barnett and R.~Cameron.
@@ -85,6 +92,16 @@ A.~Fowler and P.~J. {Van Leeuwen}.
   65\penalty0 (1):\penalty0 1--16, 2013.
 \newblock ISSN 02806495.
 \newblock \doi{10.3402/tellusa.v65i0.20035}.
+
+\bibitem[Fox et~al.(2009)Fox, Williams, Richardson, Cameron, Gove, Quaife,
+  Ricciuto, Reichstein, Tomelleri, Trudinger, et~al.]{fox2009reflex}
+A.~Fox, M.~Williams, A.~D. Richardson, D.~Cameron, J.~H. Gove, T.~Quaife,
+  D.~Ricciuto, M.~Reichstein, E.~Tomelleri, C.~M. Trudinger, et~al.
+\newblock The reflex project: comparing different algorithms and
+  implementations for the inversion of a terrestrial ecosystem model against
+  eddy covariance data.
+\newblock \emph{Agricultural and Forest Meteorology}, 149\penalty0
+  (10):\penalty0 1597--1615, 2009.
 
 \bibitem[Husch et~al.(2002)Husch, Beers, and Kershaw~Jr]{husch2002forest}
 B.~Husch, T.~W. Beers, and J.~A. Kershaw~Jr.
@@ -178,6 +195,14 @@ I.~Navon.
 \newblock \emph{Dynamics of Atmospheres and Oceans}, 27\penalty0 (1):\penalty0
   55--79, 1998.
 
+\bibitem[Niu et~al.(2014)Niu, Luo, Dietze, Keenan, Shi, Li, and Iii]{Niu2014}
+S.~Niu, Y.~Luo, M.~C. Dietze, T.~F. Keenan, Z.~Shi, J.~Li, and F.~S.~C. Iii.
+\newblock {The role of data assimilation in predictive ecology}.
+\newblock \emph{Ecosphere}, 5\penalty0 (5):\penalty0 art65, 2014.
+\newblock ISSN 2150-8925.
+\newblock \doi{10.1890/ES13-00273.1}.
+\newblock URL \url{http://www.esajournals.org/doi/abs/10.1890/ES13-00273.1}.
+
 \bibitem[Paige(1981)]{Paige1981}
 C.~Paige.
 \newblock {Properties of numerical algorithms related to computing
@@ -221,6 +246,11 @@ F.~Rabier, N.~Fourri{\'e}, D.~Chaf{\"a}i, and P.~Prunet.
 \newblock \emph{Quarterly Journal of the Royal Meteorological Society},
   128\penalty0 (581):\penalty0 1011--1027, 2002.
 
+\bibitem[Renaud(1997)]{renaud1997automatic}
+J.~Renaud.
+\newblock Automatic differentiation in robust optimization.
+\newblock \emph{AIAA journal}, 35\penalty0 (6):\penalty0 1072--1079, 1997.
+
 \bibitem[Richardson et~al.(2008)Richardson, Mahecha, Falge, Kattge, Moffat,
   Papale, Reichstein, Stauch, Braswell, Churkina, Kruijt, and
   Hollinger]{Richardson200838}
@@ -233,6 +263,14 @@ A.~D. Richardson, M.~D. Mahecha, E.~Falge, J.~Kattge, A.~M. Moffat, D.~Papale,
   (1):\penalty0 38 -- 50, 2008.
 \newblock ISSN 0168-1923.
 \newblock \doi{http://dx.doi.org/10.1016/j.agrformet.2007.09.001}.
+
+\bibitem[Richardson et~al.(2010)Richardson, Williams, Hollinger, Moore, Dail,
+  Davidson, Scott, Evans, Hughes, Lee, et~al.]{richardson2010estimating}
+A.~D. Richardson, M.~Williams, D.~Y. Hollinger, D.~J. Moore, D.~B. Dail, E.~A.
+  Davidson, N.~A. Scott, R.~S. Evans, H.~Hughes, J.~T. Lee, et~al.
+\newblock Estimating parameters of a forest ecosystem c model with measurements
+  of stocks and fluxes as joint constraints.
+\newblock \emph{Oecologia}, 164\penalty0 (1):\penalty0 25--40, 2010.
 
 \bibitem[Rodgers(1998)]{rodgers1998information}
 C.~D. Rodgers.
@@ -276,6 +314,26 @@ M.~Williams, P.~A. Schwarz, B.~E. Law, J.~Irvine, and M.~R. Kurpius.
   assimilation.
 \newblock \emph{Global Change Biology}, 11\penalty0 (1):\penalty0 89--105,
   2005.
+
+\bibitem[Zobitz et~al.(2011)Zobitz, Desai, Moore, and
+  Chadwick]{zobitz2011primer}
+J.~Zobitz, A.~Desai, D.~Moore, and M.~Chadwick.
+\newblock A primer for data assimilation with ecological models using markov
+  chain monte carlo (mcmc).
+\newblock \emph{Oecologia}, 167\penalty0 (3):\penalty0 599--611, 2011.
+
+\bibitem[Zobitz et~al.(2014)Zobitz, Moore, Quaife, Braswell, Bergeson, Anthony,
+  and Monson]{Zobitz2014}
+J.~M. Zobitz, D.~J.~P. Moore, T.~Quaife, B.~H. Braswell, A.~Bergeson, J.~a.
+  Anthony, and R.~K. Monson.
+\newblock {Joint data assimilation of satellite reflectance and net ecosystem
+  exchange data constrains ecosystem carbon fluxes at a high-elevation
+  subalpine forest}.
+\newblock \emph{Agricultural and Forest Meteorology}, 195-196:\penalty0 73--88,
+  2014.
+\newblock ISSN 01681923.
+\newblock \doi{10.1016/j.agrformet.2014.04.011}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.agrformet.2014.04.011}.
 
 \bibitem[Zou et~al.(1992)Zou, Navon, and Le~Dimet]{zou1992incomplete}
 X.~Zou, I.~Navon, and F.~Le~Dimet.
