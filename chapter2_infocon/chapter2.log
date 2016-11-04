@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  2 NOV 2016 11:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  2 NOV 2016 16:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -774,42 +774,41 @@ File: dalec2_obsrankcvtcond.pdf Graphic file (type pdf)
 <use dalec2_obsrankcvtcond.pdf>
 Package pdftex.def Info: dalec2_obsrankcvtcond.pdf used on input line 305.
 (pdftex.def)             Requested size: 187.89914pt x 250.53596pt.
-
-<dalec2_obsrankwind.pdf, id=164, 433.62pt x 578.16pt>
-File: dalec2_obsrankwind.pdf Graphic file (type pdf)
-
-<use dalec2_obsrankwind.pdf>
-Package pdftex.def Info: dalec2_obsrankwind.pdf used on input line 320.
-(pdftex.def)             Requested size: 187.89914pt x 250.53596pt.
-
-<dalec2_obsrankcondwind.pdf, id=165, 433.62pt x 578.16pt>
-File: dalec2_obsrankcondwind.pdf Graphic file (type pdf)
-
-<use dalec2_obsrankcondwind.pdf>
-Package pdftex.def Info: dalec2_obsrankcondwind.pdf used on input line 325.
-(pdftex.def)             Requested size: 187.89914pt x 250.53596pt.
  [9 <./dalec2_obsrankcvt.pdf> <./dalec2_obsrankcvtcond.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./dalec2_obsrankcvtcond.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
->] <dalec2_obsrankcvtwind.pdf, id=235, 433.62pt x 578.16pt>
-File: dalec2_obsrankcvtwind.pdf Graphic file (type pdf)
+>] <dalec2_obsrankwind.pdf, id=233, 433.62pt x 578.16pt>
+File: dalec2_obsrankwind.pdf Graphic file (type pdf)
 
-<use dalec2_obsrankcvtwind.pdf>
-Package pdftex.def Info: dalec2_obsrankcvtwind.pdf used on input line 342.
+<use dalec2_obsrankwind.pdf>
+Package pdftex.def Info: dalec2_obsrankwind.pdf used on input line 322.
 (pdftex.def)             Requested size: 187.89914pt x 250.53596pt.
 
-<dalec2_obsrankcondcvtwind.pdf, id=236, 433.62pt x 578.16pt>
-File: dalec2_obsrankcondcvtwind.pdf Graphic file (type pdf)
+<dalec2_obsrankcondwind.pdf, id=234, 433.62pt x 578.16pt>
+File: dalec2_obsrankcondwind.pdf Graphic file (type pdf)
 
-<use dalec2_obsrankcondcvtwind.pdf>
-Package pdftex.def Info: dalec2_obsrankcondcvtwind.pdf used on input line 347.
+<use dalec2_obsrankcondwind.pdf>
+Package pdftex.def Info: dalec2_obsrankcondwind.pdf used on input line 327.
 (pdftex.def)             Requested size: 187.89914pt x 250.53596pt.
  [10 <./dalec2_obsrankwind.pdf> <./dalec2_obsrankcondwind.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./dalec2_obsrankcondwind.pdf): PDF i
 nclusion: multiple pdfs with page group included in a single page
->] [11 <./dalec2_obsrankcvtwind.pdf> <./dalec2_obsrankcondcvtwind.pdf
+>] <dalec2_obsrankcvtwind.pdf, id=303, 433.62pt x 578.16pt>
+File: dalec2_obsrankcvtwind.pdf Graphic file (type pdf)
+
+<use dalec2_obsrankcvtwind.pdf>
+Package pdftex.def Info: dalec2_obsrankcvtwind.pdf used on input line 344.
+(pdftex.def)             Requested size: 187.89914pt x 250.53596pt.
+
+<dalec2_obsrankcondcvtwind.pdf, id=304, 433.62pt x 578.16pt>
+File: dalec2_obsrankcondcvtwind.pdf Graphic file (type pdf)
+
+<use dalec2_obsrankcondcvtwind.pdf>
+Package pdftex.def Info: dalec2_obsrankcondcvtwind.pdf used on input line 349.
+(pdftex.def)             Requested size: 187.89914pt x 250.53596pt.
+ [11 <./dalec2_obsrankcvtwind.pdf> <./dalec2_obsrankcondcvtwind.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./dalec2_obsrankcondcvtwind.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
@@ -817,14 +816,14 @@ F inclusion: multiple pdfs with page group included in a single page
 File: oregon2007SICnee.pdf Graphic file (type pdf)
 
 <use oregon2007SICnee.pdf>
-Package pdftex.def Info: oregon2007SICnee.pdf used on input line 439.
+Package pdftex.def Info: oregon2007SICnee.pdf used on input line 441.
 (pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
 
 <oregon2007temp.pdf, id=378, 925.05597pt x 635.97598pt>
 File: oregon2007temp.pdf Graphic file (type pdf)
 
 <use oregon2007temp.pdf>
-Package pdftex.def Info: oregon2007temp.pdf used on input line 444.
+Package pdftex.def Info: oregon2007temp.pdf used on input line 446.
 (pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
  [13 <./oregon2007SICnee.pdf> <./oregon2007temp.pdf
 
@@ -834,34 +833,34 @@ pdfTeX warning: /usr/texbin/pdflatex (file ./oregon2007temp.pdf): PDF inclusion
 File: sic_succ_cf.pdf Graphic file (type pdf)
 
 <use sic_succ_cf.pdf>
-Package pdftex.def Info: sic_succ_cf.pdf used on input line 596.
+Package pdftex.def Info: sic_succ_cf.pdf used on input line 598.
 (pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
  <dfs_succ_cf.pdf, id=467, 925.05597pt x 635.97598pt>
 File: dfs_succ_cf.pdf Graphic file (type pdf)
 
 <use dfs_succ_cf.pdf>
-Package pdftex.def Info: dfs_succ_cf.pdf used on input line 601.
+Package pdftex.def Info: dfs_succ_cf.pdf used on input line 603.
 (pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
  <sic_succ_nee.pdf, id=468, 821.71463pt x 602.73962pt>
 File: sic_succ_nee.pdf Graphic file (type pdf)
 
 <use sic_succ_nee.pdf>
-Package pdftex.def Info: sic_succ_nee.pdf used on input line 614.
+Package pdftex.def Info: sic_succ_nee.pdf used on input line 616.
 (pdftex.def)             Requested size: 211.38832pt x 155.05313pt.
  <dfs_succ_nee.pdf, id=469, 822.3263pt x 602.73962pt>
 File: dfs_succ_nee.pdf Graphic file (type pdf)
 
 <use dfs_succ_nee.pdf>
-Package pdftex.def Info: dfs_succ_nee.pdf used on input line 619.
+Package pdftex.def Info: dfs_succ_nee.pdf used on input line 621.
 (pdftex.def)             Requested size: 211.38832pt x 154.94276pt.
-
-<sic_corr_D1_nee.pdf, id=470, 431.80353pt x 315.09375pt>
+ [16]
+<sic_corr_D1_nee.pdf, id=473, 431.80353pt x 315.09375pt>
 File: sic_corr_D1_nee.pdf Graphic file (type pdf)
 
 <use sic_corr_D1_nee.pdf>
-Package pdftex.def Info: sic_corr_D1_nee.pdf used on input line 655.
+Package pdftex.def Info: sic_corr_D1_nee.pdf used on input line 657.
 (pdftex.def)             Requested size: 234.8775pt x 171.39334pt.
- [16] [17 <./sic_succ_cf.pdf> <./dfs_succ_cf.pdf
+ [17 <./sic_succ_cf.pdf> <./dfs_succ_cf.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./dfs_succ_cf.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
@@ -877,61 +876,63 @@ multiple pdfs with page group included in a single page
 File: oregon2007SICneeD2.pdf Graphic file (type pdf)
 
 <use oregon2007SICneeD2.pdf>
-Package pdftex.def Info: oregon2007SICneeD2.pdf used on input line 673.
+Package pdftex.def Info: oregon2007SICneeD2.pdf used on input line 675.
 (pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
 File: oregon2007temp.pdf Graphic file (type pdf)
  <use oregon2007temp.pdf>
-Package pdftex.def Info: oregon2007temp.pdf used on input line 678.
+Package pdftex.def Info: oregon2007temp.pdf used on input line 680.
 (pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
- [18 <./sic_corr_D1_nee.pdf> <./oregon2007SICneeD2.pdf
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./oregon2007SICneeD2.pdf): PDF inclu
-sion: multiple pdfs with page group included in a single page
->] <inf_mat_sa.pdf, id=696, 617.68382pt x 949.91447pt>
+<inf_mat_sa.pdf, id=617, 617.68382pt x 949.91447pt>
 File: inf_mat_sa.pdf Graphic file (type pdf)
  <use inf_mat_sa.pdf>
-Package pdftex.def Info: inf_mat_sa.pdf used on input line 691.
+Package pdftex.def Info: inf_mat_sa.pdf used on input line 693.
 (pdftex.def)             Requested size: 216.09045pt x 332.3156pt.
 
-<inf_mat_so.pdf, id=697, 617.68382pt x 949.91447pt>
+<inf_mat_so.pdf, id=618, 617.68382pt x 949.91447pt>
 File: inf_mat_so.pdf Graphic file (type pdf)
  <use inf_mat_so.pdf>
-Package pdftex.def Info: inf_mat_so.pdf used on input line 696.
+Package pdftex.def Info: inf_mat_so.pdf used on input line 698.
 (pdftex.def)             Requested size: 216.09045pt x 332.3156pt.
 
-[19 <./inf_mat_sa.pdf> <./inf_mat_so.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./inf_mat_so.pdf): PDF inclusion: mu
-ltiple pdfs with page group included in a single page
->] <ah_pheno.pdf, id=783, 925.05597pt x 635.97598pt>
+[18 <./sic_corr_D1_nee.pdf>] <ah_pheno.pdf, id=659, 925.05597pt x 635.97598pt>
 File: ah_pheno.pdf Graphic file (type pdf)
- <use ah_pheno.pdf>
-Package pdftex.def Info: ah_pheno.pdf used on input line 711.
-(pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
 
-<oregon_pheno.pdf, id=784, 925.05597pt x 635.97598pt>
+<use ah_pheno.pdf>
+Package pdftex.def Info: ah_pheno.pdf used on input line 713.
+(pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
+ <oregon_pheno.pdf, id=660, 925.05597pt x 635.97598pt>
 File: oregon_pheno.pdf Graphic file (type pdf)
- <use oregon_pheno.pdf>
-Package pdftex.def Info: oregon_pheno.pdf used on input line 716.
+
+<use oregon_pheno.pdf>
+Package pdftex.def Info: oregon_pheno.pdf used on input line 718.
 (pdftex.def)             Requested size: 211.38832pt x 145.3301pt.
 
-<sic_corr_D2_nee.pdf, id=785, 851.85066pt x 603.66495pt>
+<sic_corr_D2_nee.pdf, id=661, 851.85066pt x 603.66495pt>
 File: sic_corr_D2_nee.pdf Graphic file (type pdf)
 
 <use sic_corr_D2_nee.pdf>
-Package pdftex.def Info: sic_corr_D2_nee.pdf used on input line 733.
+Package pdftex.def Info: sic_corr_D2_nee.pdf used on input line 735.
 (pdftex.def)             Requested size: 234.8775pt x 166.4459pt.
- [20 <./ah_pheno.pdf> <./oregon_pheno.pdf
+ [19 <./oregon2007SICneeD2.pdf>] [20 <./inf_mat_sa.pdf> <./inf_mat_so.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./inf_mat_so.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>] [21 <./ah_pheno.pdf> <./oregon_pheno.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./oregon_pheno.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
->] [21 <./sic_corr_D2_nee.pdf>] (./chapter2.bbl [22]
+> <./sic_corr_D2_nee.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./sic_corr_D2_nee.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>] (./chapter2.bbl [22]
 Underfull \hbox (badness 1292) in paragraph at lines 136--142
 []\OT1/ptm/m/n/10.95 D. Joyner, O. []Cert[]^^Pk, A. Meurer, and B. E. Granger. 
  Open source com-puter al-ge-bra sys-tems:
  []
 
-[23] [24]) [25] (./chapter2.aux) ) 
+[23]) [24] (./chapter2.aux) ) 
 Here is how much of TeX's memory you used:
  11217 strings out of 493117
  193184 string characters out of 6135433
@@ -940,23 +941,23 @@ Here is how much of TeX's memory you used:
  68494 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,18n,43p,10387b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc
-/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/urw/times/utmri8a.pfb>
-Output written on chapter2.pdf (25 pages, 731958 bytes).
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvip
+s/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
+10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on chapter2.pdf (24 pages, 730255 bytes).
 PDF statistics:
- 942 PDF objects out of 1000 (max. 8388607)
- 271 compressed objects within 3 object streams
+ 938 PDF objects out of 1000 (max. 8388607)
+ 268 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
