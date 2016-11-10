@@ -1,0 +1,107 @@
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bloom and Williams(2015)]{Bloom2015}
+A.~A. Bloom and M.~Williams.
+\newblock {Constraining ecosystem carbon dynamics in a data-limited world:
+  integrating ecological "common sense" in a model–data fusion framework}.
+\newblock \emph{Biogeosciences}, 12\penalty0 (5):\penalty0 1299--1315, 2015.
+\newblock ISSN 1726-4189.
+\newblock \doi{10.5194/bg-12-1299-2015}.
+\newblock URL \url{http://www.biogeosciences.net/12/1299/2015/}.
+
+\bibitem[Bloom et~al.(2016)Bloom, Exbrayat, van~der Velde, Feng, and
+  Williams]{bloom2016decadal}
+A.~A. Bloom, J.-F. Exbrayat, I.~R. van~der Velde, L.~Feng, and M.~Williams.
+\newblock The decadal state of the terrestrial carbon cycle: Global retrievals
+  of terrestrial carbon allocation, pools, and residence times.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 113\penalty0
+  (5):\penalty0 1285--1290, 2016.
+
+\bibitem[Braswell et~al.(2005)Braswell, Sacks, Linder, and
+  Schimel]{braswell2005estimating}
+B.~H. Braswell, W.~J. Sacks, E.~Linder, and D.~S. Schimel.
+\newblock Estimating diurnal to annual ecosystem parameters by synthesis of a
+  carbon flux model with eddy covariance net ecosystem exchange observations.
+\newblock \emph{Global Change Biology}, 11\penalty0 (2):\penalty0 335--355,
+  2005.
+
+\bibitem[Fox et~al.(2009)Fox, Williams, Richardson, Cameron, Gove, Quaife,
+  Ricciuto, Reichstein, Tomelleri, Trudinger, et~al.]{fox2009reflex}
+A.~Fox, M.~Williams, A.~D. Richardson, D.~Cameron, J.~H. Gove, T.~Quaife,
+  D.~Ricciuto, M.~Reichstein, E.~Tomelleri, C.~M. Trudinger, et~al.
+\newblock The reflex project: comparing different algorithms and
+  implementations for the inversion of a terrestrial ecosystem model against
+  eddy covariance data.
+\newblock \emph{Agricultural and Forest Meteorology}, 149\penalty0
+  (10):\penalty0 1597--1615, 2009.
+
+\bibitem[Quaife et~al.(2008)Quaife, Lewis, {De Kauwe}, Williams, Law, Disney,
+  and Bowyer]{Quaife2008}
+T.~Quaife, P.~Lewis, M.~{De Kauwe}, M.~Williams, B.~E. Law, M.~Disney, and
+  P.~Bowyer.
+\newblock {Assimilating canopy reflectance data into an ecosystem model with an
+  Ensemble Kalman Filter}.
+\newblock \emph{Remote Sensing of Environment}, 112\penalty0 (4):\penalty0
+  1347--1364, 2008.
+\newblock ISSN 00344257.
+\newblock \doi{10.1016/j.rse.2007.05.020}.
+
+\bibitem[Rayner(2010)]{rayner2010current}
+P.~J. Rayner.
+\newblock The current state of carbon-cycle data assimilation.
+\newblock \emph{Current Opinion in Environmental Sustainability}, 2\penalty0
+  (4):\penalty0 289--296, 2010.
+
+\bibitem[Richardson et~al.(2010)Richardson, Williams, Hollinger, Moore, Dail,
+  Davidson, Scott, Evans, Hughes, Lee, et~al.]{richardson2010estimating}
+A.~D. Richardson, M.~Williams, D.~Y. Hollinger, D.~J. Moore, D.~B. Dail, E.~A.
+  Davidson, N.~A. Scott, R.~S. Evans, H.~Hughes, J.~T. Lee, et~al.
+\newblock Estimating parameters of a forest ecosystem c model with measurements
+  of stocks and fluxes as joint constraints.
+\newblock \emph{Oecologia}, 164\penalty0 (1):\penalty0 25--40, 2010.
+
+\bibitem[Trudinger et~al.(2007)Trudinger, Raupach, Rayner, Kattge, Liu, Pak,
+  Reichstein, Renzullo, Richardson, Roxburgh, et~al.]{trudinger2007optic}
+C.~M. Trudinger, M.~R. Raupach, P.~J. Rayner, J.~Kattge, Q.~Liu, B.~Pak,
+  M.~Reichstein, L.~Renzullo, A.~D. Richardson, S.~H. Roxburgh, et~al.
+\newblock Optic project: An intercomparison of optimization techniques for
+  parameter estimation in terrestrial biogeochemical models.
+\newblock \emph{Journal of Geophysical Research: Biogeosciences}, 112\penalty0
+  (G2), 2007.
+
+\bibitem[Vrugt et~al.(2005)Vrugt, Diks, Gupta, Bouten, and
+  Verstraten]{vrugt2005improved}
+J.~A. Vrugt, C.~G. Diks, H.~V. Gupta, W.~Bouten, and J.~M. Verstraten.
+\newblock Improved treatment of uncertainty in hydrologic modeling: Combining
+  the strengths of global optimization and data assimilation.
+\newblock \emph{Water Resources Research}, 41\penalty0 (1), 2005.
+
+\bibitem[Williams et~al.(1997)Williams, Rastetter, Fernandes, Goulden, Shaver,
+  and Johnson]{williams1997predicting}
+M.~Williams, E.~B. Rastetter, D.~N. Fernandes, M.~L. Goulden, G.~R. Shaver, and
+  L.~C. Johnson.
+\newblock Predicting gross primary productivity in terrestrial ecosystems.
+\newblock \emph{Ecological Applications}, 7\penalty0 (3):\penalty0 882--894,
+  1997.
+
+\bibitem[Williams et~al.(2005)Williams, Schwarz, Law, Irvine, and
+  Kurpius]{williams2005improved}
+M.~Williams, P.~A. Schwarz, B.~E. Law, J.~Irvine, and M.~R. Kurpius.
+\newblock An improved analysis of forest carbon dynamics using data
+  assimilation.
+\newblock \emph{Global Change Biology}, 11\penalty0 (1):\penalty0 89--105,
+  2005.
+
+\bibitem[Williams et~al.(2009)Williams, Richardson, Reichstein, Stoy, Peylin,
+  Verbeeck, Carvalhais, Jung, Hollinger, Kattge, et~al.]{williams2009improving}
+M.~Williams, A.~Richardson, M.~Reichstein, P.~Stoy, P.~Peylin, H.~Verbeeck,
+  N.~Carvalhais, M.~Jung, D.~Hollinger, J.~Kattge, et~al.
+\newblock Improving land surface models with fluxnet data.
+\newblock \emph{Biogeosciences}, 6\penalty0 (7):\penalty0 1341--1359, 2009.
+
+\end{thebibliography}

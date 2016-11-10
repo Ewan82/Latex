@@ -1,0 +1,68 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{../mystyle}
+\bibliographystyle{abbrvnat}
+
+\title{Literature review}
+\author{Ewan Pinnington}
+
+
+\begin{document}
+
+\maketitle
+
+%\section{Ecosystem carbon balance models}
+
+
+\section{State of data assimilation with models of the carbon cycle}
+This chapter reviews recent efforts in using data assimilation with carbon cycle models in order to improve current estimates of ecosystem carbon balance. The approach of this review is to consider different relevant models of carbon balance and their implementation with data assimilation schemes. 
+
+
+%The approach of this review is to consider the different types of data assimilation and their implementation with carbon cycle models. 
+
+\subsection{DALEC}
+
+\begin{itemize}
+\item \citet{richardson2010estimating} uses Markov Chain Monte Carlo data assimilation with a modified version of the DALEC model running at a twice-daily time step. Data from the spruce-dominated Howland Forest AmeriFlux site, Maine, USA. Assimilate gap-filled daytime and nighttime NEE. Takes the product of data stream miss match rather than sum to avoid overweighting of NEE observations in assimilation algorithm. Woody biomass increment found to provide orthogonal constraint to NEE and reduce uncertainties in parameter estimates.
+
+\item \citet{williams2005improved} original DALEC paper, uses aggregated canopy model (ACM) to predict photosynthesis \citep{williams1997predicting}. Observations from young ponderosa pine stand in Oregon used. Gap-filled NEE data used. Ensemble Kalman Filter used (EnKF), uses multiple EnKF's within a quasi-Newton minimisation routine (using a finite difference approximation to the gradient) to find a guess to an initial parameter set, this is perhaps not a good idea as the derivative of a sequential DA method is not meaningful. Found that rare measurements of stocks have limited effect constraining other components of C cycle, suggested that long time-series of these stocks with be more important to constrain C pool turnovers.
+
+\item \citet{fox2009reflex} present the REgional Flux Estimation eXperiment (REFLEX) model-data fusion (DA) inter-comparison project. Study had nine participants using a variety of DA methods (MCMC, EnKF and a genetic algorithm) to combine both synthetic and observed NEE and LAI data with DALEC model. Observed NEE data gap-filled. No DA technique shown to perform consistently better than others. Parameters linked directly to GPP and Reco best constrained, parameters related to slower processes (allocation to and turnover of fine root/wood C pools) are poorly constrained. Suggest more data on seasonal variations in slow large C pools would add useful constraint to DA schemes, to help constrain parameters that are poorly estimated with EC data alone. Discuss that future studies should explore the importance of prior error estimates.
+
+\item \citet{Bloom2015} present the DALEC2 model an updated version of the DALEC model which can be optimised for a deciduous or evergreen ecosystem. Outline a set of ecological dynamical constraints on parameter inequalities, steady state proximities and C pool turnover rates. When EDC's are used in a MCMC DA scheme with the DALEC2 model showed to retrieve improved analyses due to limiting unrealistic ecosystem behaviours. 
+
+\item \citet{Quaife2008} use a EnKF to assimilate MODIS at-ground spectral bidirectional reflectance factor satellite data with the DALEC model at the Metolius forest, a temperate coniferous forest site in Oregon, Northwestern US. Find a discrepancy between model estimated LAI after assimilation of MODIS data and ground based LAI estimates, with the modelled estimate being higher than measurements from the site. Prediction of NEP is improved by assimilating the EO data and significant reductions in modelled flux uncertainties are achieved.    
+
+\item \citet{bloom2016decadal} use MCMC methods (with some prior constraints) to assimilate MODIS LAI and HWSD soil carbon with DALEC2 model for a global \(1^o \times 1^o\) grid, could be issues with computing power as implemented models become more complex and have more observations available, variational methods may alleviate this problem. Uses EDC's described in \citet{Bloom2015} to limit parameter space, could be an issue for some global ecosystems that do not adhere to these specified constraints. Use the retrieved global DALEC2 map to gain insight into ecosystem functioning. Suggest that conventional land cover maps cannot adequately describe  the spatial variability of carbon states and processes. Creates a valuable set of prior model estimates which could be used with variational assimilation methods.
+
+\end{itemize}
+
+
+\subsection{BETHY}
+
+\subsection{SIPNET}
+
+\begin{itemize}
+
+\item \citet{braswell2005estimating} Use MCMC techniques to combine gap-filled NEE data from Harvard Forest flux site with simplified Photosynthesis and Evapo-Transpiration model (SIPNET).
+
+\end{itemize}
+
+\subsection{JULES}
+
+\subsection{ORCHIDEE}
+
+\subsection{Reviews of DA in C cycle}
+
+\begin{itemize}
+
+\item \citet{williams2009improving} discuss methodologies for combining FLUXNET data with land surface models. The many sources of error in EC observations are highlighted, and the fact that NEE represents the different between the two quantities of interest GPP and Reco, therefore both quantities can still be misspecified in a model and still achieve the observed NEE this is related to the concept of equifinality.  Different DA techniques are outlined. It is proposed that temporal error correlations between sub-daily fluxes are likely to be severe and states that these could be included in the observation error covariance matrix R, although it is commented that this would be a difficult task. Identified challenges: Defining improved observation operators and understanding what measurements best complement EC data, better quantification of error in DA schemes and to test current modelling concepts such as plant functional types and their ability to describe FLUXNET data. Suggests combinations of techniques can be successful, e.g. global search methods (MCMC) to get close to global minimum followed by gradient based method to get closer to this minimum \citep{vrugt2005improved}.  
+
+\item \citet{trudinger2007optic} present the Optimisation InterComparison (OptIC) project, where participants used different DA methods to estimate the parameters of a highly simplified model representation of terrestrial carbon dynamics. The project found more variation in estimated parameters due to the definition of the cost function than choice of optimisation technique (e.g gradient-based, sequential and MCMC methods). Different errors were added to pseudo observations in 21 outlined experiments for participants to complete, these included; Gaussian, lognormal and temporally correlated distributions. None of the participants made an effort to account for added temporally correlated error and this resulted in biased results being achieved from optimisation schemes. It was stated that the main criterion for success was the accurate specification of errors. 
+
+\item In a review of data assimilation for the carbon-cycle \citet{rayner2010current} suggest that there should be more focus on the information content of different relevant observations. It is also stated that more effort should be made in developing of new observation operators and specification of their errors.
+
+\end{itemize}
+
+
+\bibliography{../PhD}{}
+\end{document}

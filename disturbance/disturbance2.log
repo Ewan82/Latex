@@ -1,0 +1,716 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  7 NOV 2016 19:28
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**disturbance2.tex
+(./disturbance2.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count87
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
+LaTeX Info: Redefining \bm on input line 203.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+LaTeX Info: Redefining \boldsymbol on input line 39.
+\pmbraise@=\dimen104
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip48
+\L@UnitsRaiseTextstyle=\skip49
+\L@UnitsRaiseScriptstyle=\skip50
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amscd.sty
+Package: amscd 1999/11/29 v2.0
+\athelp@=\toks19
+\minaw@=\dimen112
+\bigaw@=\dimen113
+\minCDarrowwidth=\dimen114
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsxtra.sty
+Package: amsxtra 1999/11/15 v1.2c
+LaTeX Info: Redefining \nobreakspace on input line 65.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip51
+\thm@postskip=\skip52
+\thm@headsep=\skip53
+\dth@everypar=\toks25
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks26
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pbox/pbox.sty
+Package: pbox 2011/12/07 v1.2 Dynamic parboxes
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count101
+\calc@Bcount=\count102
+\calc@Adimen=\dimen117
+\calc@Bdimen=\dimen118
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count103
+\calc@Cskip=\skip56
+)
+\pb@xlen=\skip57
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@tempdima=\dimen122
+\caption@indent=\dimen123
+\caption@parindent=\dimen124
+\caption@hangindent=\dimen125
+)
+\c@ContinuedFloat=\count104
+)
+\c@subfigure=\count105
+\c@subtable=\count106
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip58
+\f@ncyO@elh=\skip59
+\f@ncyO@erh=\skip60
+\f@ncyO@olh=\skip61
+\f@ncyO@orh=\skip62
+\f@ncyO@elf=\skip63
+\f@ncyO@erf=\skip64
+\f@ncyO@olf=\skip65
+\f@ncyO@orf=\skip66
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2014/05/13 v2.10 `tabularx' package (DPC)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen126
+\extrarowheight=\dimen127
+\NC@list=\toks27
+\extratabsurround=\skip67
+\backup@length=\skip68
+)
+\TX@col@width=\dimen128
+\TX@old@table=\dimen129
+\TX@old@col=\dimen130
+\TX@target=\dimen131
+\TX@delta=\dimen132
+\TX@cols=\count107
+\TX@ftn=\toks28
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count108
+\Gm@cntv=\count109
+\c@Gm@tempcnt=\count110
+\Gm@bindingoffset=\dimen133
+\Gm@wd@mp=\dimen134
+\Gm@odd@mp=\dimen135
+\Gm@even@mp=\dimen136
+\Gm@layoutwidth=\dimen137
+\Gm@layoutheight=\dimen138
+\Gm@layouthoffset=\dimen139
+\Gm@layoutvoffset=\dimen140
+\Gm@dimlist=\toks29
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+\c@theorem=\count111
+
+(./disturbance2.aux)
+\openout1 = `disturbance2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count112
+\scratchdimen=\dimen141
+\scratchbox=\box28
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen142
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
+\everyMPtoPDFconversion=\toks31
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 18.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) [1
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+ [4] [5]
+<thinned.pdf, id=29, 845.1575pt x 597.23125pt>
+File: thinned.pdf Graphic file (type pdf)
+ <use thinned.pdf>
+Package pdftex.def Info: thinned.pdf used on input line 117.
+(pdftex.def)             Requested size: 375.80544pt x 265.57114pt.
+ [6 <./thinned.pdf>]
+Underfull \hbox (badness 7522) in paragraph at lines 131--131
+[]|\OT1/cmr/m/n/12 Tree den-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+[]|\OT1/cmr/m/n/12 Mean
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+[]|\OT1/cmr/m/n/12 Estimated Woody
+ []
+
+<dalec2diag.pdf, id=36, 758.835pt x 453.695pt>
+File: dalec2diag.pdf Graphic file (type pdf)
+ <use dalec2diag.pdf>
+Package pdftex.def Info: dalec2diag.pdf used on input line 146.
+(pdftex.def)             Requested size: 281.85587pt x 168.51526pt.
+ [7]
+[8 <./dalec2diag.pdf>] [9] <nee_day.pdf, id=52, 808.26251pt x 561.2733pt>
+File: nee_day.pdf Graphic file (type pdf)
+
+<use nee_day.pdf>
+Package pdftex.def Info: nee_day.pdf used on input line 193.
+(pdftex.def)             Requested size: 225.4804pt x 156.57307pt.
+ <nee_night.pdf, id=53, 808.26251pt x 561.2733pt>
+File: nee_night.pdf Graphic file (type pdf)
+
+<use nee_night.pdf>
+Package pdftex.def Info: nee_night.pdf used on input line 198.
+(pdftex.def)             Requested size: 225.4804pt x 156.57307pt.
+ <lai.pdf, id=54, 808.26251pt x 561.2733pt>
+File: lai.pdf Graphic file (type pdf)
+ <use lai.pdf>
+Package pdftex.def Info: lai.pdf used on input line 203.
+(pdftex.def)             Requested size: 225.4804pt x 156.57307pt.
+
+<c_woo.pdf, id=55, 822.41255pt x 567.3485pt>
+File: c_woo.pdf Graphic file (type pdf)
+ <use c_woo.pdf>
+Package pdftex.def Info: c_woo.pdf used on input line 208.
+(pdftex.def)             Requested size: 225.4804pt x 155.5495pt.
+
+<gpp.pdf, id=56, 808.26251pt x 561.2733pt>
+File: gpp.pdf Graphic file (type pdf)
+ <use gpp.pdf>
+Package pdftex.def Info: gpp.pdf used on input line 220.
+(pdftex.def)             Requested size: 225.4804pt x 156.57307pt.
+
+<rt.pdf, id=57, 808.26251pt x 561.2733pt>
+File: rt.pdf Graphic file (type pdf)
+ <use rt.pdf>
+Package pdftex.def Info: rt.pdf used on input line 225.
+(pdftex.def)             Requested size: 225.4804pt x 156.57307pt.
+
+<ra.pdf, id=58, 808.26251pt x 561.2733pt>
+File: ra.pdf Graphic file (type pdf)
+ <use ra.pdf>
+Package pdftex.def Info: ra.pdf used on input line 230.
+(pdftex.def)             Requested size: 225.4804pt x 156.57307pt.
+
+<rh.pdf, id=59, 808.26251pt x 561.2733pt>
+File: rh.pdf Graphic file (type pdf)
+ <use rh.pdf>
+Package pdftex.def Info: rh.pdf used on input line 235.
+(pdftex.def)             Requested size: 225.4804pt x 156.57307pt.
+ [10]
+<xa_inc.pdf, id=63, 940.17496pt x 408.61095pt>
+File: xa_inc.pdf Graphic file (type pdf)
+ <use xa_inc.pdf>
+Package pdftex.def Info: xa_inc.pdf used on input line 249.
+(pdftex.def)             Requested size: 375.80544pt x 163.32924pt.
+ [11 <./nee_day.pdf> <./nee_night.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./nee_night.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <./lai.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./lai.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+> <./c_woo.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./c_woo.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+>] [12 <./gpp.pdf> <./rt.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./rt.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./ra.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./ra.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./rh.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./rh.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+>] [13 <./xa_inc.pdf>] [14] (./disturbance2.bbl
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+
+Underfull \hbox (badness 3312) in paragraph at lines 55--62
+[]\OT1/cmr/m/n/12 F. A. Di-jk-stra and W. Cheng.  In-ter-ac-tions be-tween soil
+ and tree roots ac-
+ []
+
+
+Underfull \hbox (badness 5847) in paragraph at lines 55--62
+\OT1/cmr/m/n/12 cel-er-ate long-term soil car-bon de-com-po-si-tion.  \OT1/cmr/
+m/it/12 Ecol-ogy Let-ters\OT1/cmr/m/n/12 , 10(11):1046--
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 55--62
+\OT1/cmr/m/n/12 1053, 2007.  ISSN 1461-0248.  doi: 10.1111/j.1461-0248.2007.010
+95.x.  URL
+ []
+
+[15]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+
+Underfull \hbox (badness 5345) in paragraph at lines 108--118
+[]\OT1/cmr/m/n/12 A. Her-nes-maa, K. Bjrklf, O. Ki-ikkil, H. Fritze, K. Haahtel
+a, and M. Ro-
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 108--118
+\OT1/cmr/m/n/12 mantschuk.  Struc-ture and func-tion of mi-cro-bial com-mu-ni-t
+ies in the rhi-zo-sphere
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 108--118
+\OT1/cmr/m/n/12 of scots pine af-ter tree-felling.  \OT1/cmr/m/it/12 Soil Bi-ol
+-ogy and Bio-chem-istry\OT1/cmr/m/n/12 , 37(4):777 -- 785,
+ []
+
+Missing character: There is no ü in font cmr12!
+Missing character: There is no Ü in font cmr12!
+Missing character: There is no ð in font cmr12!
+[16]
+Underfull \hbox (badness 2486) in paragraph at lines 250--256
+[]\OT1/cmr/m/n/12 S. Niu, Y. Luo, M. C. Di-etze, T. F. Keenan, Z. Shi, J. Li, a
+nd F. S. C.
+ []
+
+
+Underfull \hbox (badness 6188) in paragraph at lines 250--256
+\OT1/cmr/m/n/12 Iii.  The role of data as-sim-i-la-tion in pre-dic-tive ecol-og
+y.  \OT1/cmr/m/it/12 Eco-sphere\OT1/cmr/m/n/12 , 5
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--256
+\OT1/cmr/m/n/12 (5):art65, 2014.  ISSN 2150-8925.  doi: 10.1890/ES13-00273.1.  
+URL
+ []
+
+Missing character: There is no é in font cmr12!
+[17]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 318.
+
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 318.
+ [18]
+Underfull \hbox (badness 6708) in paragraph at lines 426--436
+[]\OT1/cmr/m/n/12 J. M. Zo-b-itz, D. J. P. Moore, T. Quaife, B. H. Braswell, A.
+ Berge-son,
+ []
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 426--436
+\OT1/cmr/m/n/12 J. a. An-thony, and R. K. Mon-son.  Joint data as-sim-i-la-tion
+ of satel-lite re-
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 426--436
+\OT1/cmr/m/n/12 a high-elevation sub-alpine for-est.  \OT1/cmr/m/it/12 Agri-cul
+-tural and For-est Me-te-o-rol-ogy\OT1/cmr/m/n/12 , 195-196:
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 426--436
+\OT1/cmr/m/n/12 73--88, 2014.  ISSN 01681923.  doi: 10.1016/j.agrformet.2014.04
+.011.  URL
+ []
+
+) [19]
+Underfull \hbox (badness 10000) in paragraph at lines 313--313
+[]|\OT1/cmr/m/n/10.95 Prior es-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--313
+\OT1/cmr/m/n/10.95 ti-mate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--313
+[]|\OT1/cmr/m/n/10.95 Standard
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--319
+[]|\OT1/cmr/m/n/10.95 Woody car-bon turnover rate
+ []
+
+
+Underfull \hbox (badness 3199) in paragraph at lines 320--320
+[]|\OT1/cmr/m/n/10.95 Fine root car-bon turnover rate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--336
+[]|\OT1/cmr/m/n/10.95 Soil and or-ganic car-bon pool
+ []
+
+<_rmat_east.png, id=610, 625.1355pt x 552.1428pt>
+File: _rmat_east.png Graphic file (type png)
+ <use _rmat_east.png>
+Package pdftex.def Info: _rmat_east.png used on input line 347.
+(pdftex.def)             Requested size: 230.18253pt x 203.30391pt.
+
+<_rmat_west.png, id=612, 625.1355pt x 552.1428pt>
+File: _rmat_west.png Graphic file (type png)
+ <use _rmat_west.png>
+Package pdftex.def Info: _rmat_west.png used on input line 352.
+(pdftex.def)             Requested size: 230.18253pt x 203.30391pt.
+ [20 <./_rmat_east.png> <./_rmat_west.png>] [21] (./disturbance2.aux) ) 
+Here is how much of TeX's memory you used:
+ 5711 strings out of 493117
+ 81944 string characters out of 6135433
+ 174033 words of memory out of 5000000
+ 9033 multiletter control sequences out of 15000+600000
+ 21046 words of font info for 82 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,14n,43p,1909b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on disturbance2.pdf (21 pages, 743166 bytes).
+PDF statistics:
+ 682 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+
