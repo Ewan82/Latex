@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -50,6 +50,13 @@ T.~Quaife, P.~Lewis, M.~{De Kauwe}, M.~Williams, B.~E. Law, M.~Disney, and
   1347--1364, 2008.
 \newblock ISSN 00344257.
 \newblock \doi{10.1016/j.rse.2007.05.020}.
+
+\bibitem[Rayner et~al.(2005)Rayner, Scholze, Knorr, Kaminski, Giering, and
+  Widmann]{rayner2005two}
+P.~Rayner, M.~Scholze, W.~Knorr, T.~Kaminski, R.~Giering, and H.~Widmann.
+\newblock Two decades of terrestrial carbon fluxes from a carbon cycle data
+  assimilation system (ccdas).
+\newblock \emph{Global Biogeochemical Cycles}, 19\penalty0 (2), 2005.
 
 \bibitem[Rayner(2010)]{rayner2010current}
 P.~J. Rayner.
