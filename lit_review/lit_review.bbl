@@ -1,4 +1,4 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -40,6 +40,14 @@ A.~Fox, M.~Williams, A.~D. Richardson, D.~Cameron, J.~H. Gove, T.~Quaife,
 \newblock \emph{Agricultural and Forest Meteorology}, 149\penalty0
   (10):\penalty0 1597--1615, 2009.
 
+\bibitem[Knorr and Heimann(2001)]{knorr2001uncertainties}
+W.~Knorr and M.~Heimann.
+\newblock Uncertainties in global terrestrial biosphere modeling: 1. a
+  comprehensive sensitivity analysis with a new photosynthesis and energy
+  balance scheme.
+\newblock \emph{Global Biogeochemical Cycles}, 15\penalty0 (1):\penalty0
+  207--225, 2001.
+
 \bibitem[Quaife et~al.(2008)Quaife, Lewis, {De Kauwe}, Williams, Law, Disney,
   and Bowyer]{Quaife2008}
 T.~Quaife, P.~Lewis, M.~{De Kauwe}, M.~Williams, B.~E. Law, M.~Disney, and
@@ -71,6 +79,14 @@ A.~D. Richardson, M.~Williams, D.~Y. Hollinger, D.~J. Moore, D.~B. Dail, E.~A.
 \newblock Estimating parameters of a forest ecosystem c model with measurements
   of stocks and fluxes as joint constraints.
 \newblock \emph{Oecologia}, 164\penalty0 (1):\penalty0 25--40, 2010.
+
+\bibitem[Scholze et~al.(2007)Scholze, Kaminski, Rayner, Knorr, and
+  Giering]{scholze2007propagating}
+M.~Scholze, T.~Kaminski, P.~Rayner, W.~Knorr, and R.~Giering.
+\newblock Propagating uncertainty through prognostic carbon cycle data
+  assimilation system simulations.
+\newblock \emph{Journal of Geophysical Research: Atmospheres}, 112\penalty0
+  (D17), 2007.
 
 \bibitem[Trudinger et~al.(2007)Trudinger, Raupach, Rayner, Kattge, Liu, Pak,
   Reichstein, Renzullo, Richardson, Roxburgh, et~al.]{trudinger2007optic}

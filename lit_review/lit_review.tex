@@ -41,7 +41,9 @@ This chapter reviews recent efforts in using data assimilation with carbon cycle
 
 \begin{itemize}
 
-\item \citet{rayner2005two}
+\item \citet{rayner2005two} implement 4Dvar with the Biosphere Energy Transport HYdrology (BETHY) model \citep{knorr2001uncertainties} to assimilate satellite observations and atmospheric CO\(_2\) concentrations in a stepwise manner on a global scale. Assimilating observation types in separate stages has been shown by Macbean 2016 that assimilating concurrently better? Use automatic diffrentiation to find the derivative of the BETHY model which is needed in the calculation of the gradient of the 4Dvar cost function. Calculate the inverse of the hessian of the cost function to find an estimate to posterior parameter errors. Find that uncertainty in long-term soil carbon storage is the largest contributor to uncertainty in the net CO\(_2\) flux.
+
+\item \citet{scholze2007propagating} building on  \citet{rayner2005two} describes improvements to the CCDAS system and BEHTY model and run the model for a 3 year hindcast period after a 10 year assimilation. Calculate posterior parameter uncertainties and correlations from the inverse of the hessian and then shows how this uncertainty can be propagated through time for future predictions.   
 
 \end{itemize}
 
@@ -49,10 +51,10 @@ This chapter reviews recent efforts in using data assimilation with carbon cycle
 
 \begin{itemize}
 
-\item \citet{braswell2005estimating} Use MCMC techniques to combine gap-filled NEE data from Harvard Forest flux site with simplified Photosynthesis and Evapo-Transpiration model (SIPNET). Use data assimilation to estimate the standard deviation of EC measurements, find an estimate of approximately \(1 \text{g C m}^{-2}\) for daily flux errors. Find that some parameters are unconstrained by NEE data as modelled observations of NEE are insensitive to these model parameters. Recommend using a simple model for DA before adding levels of complexity.  
+\item \citet{braswell2005estimating} Use MCMC techniques to combine gap-filled NEE data from Harvard Forest flux site with simplified Photosynthesis and Evapo-Transpiration model (SIPNET). Use data assimilation to estimate the standard deviation of EC measurements, find an estimate of approximately \(1~\text{g C m}^{-2}\) for daily flux errors. Find that some parameters are unconstrained by NEE data as modelled observations of NEE are insensitive to these model parameters. Recommend using a simple model for DA before adding levels of complexity.  
 
 \end{itemize}
-
+ 
 \subsection{JULES}
 
 \subsection{ORCHIDEE}
