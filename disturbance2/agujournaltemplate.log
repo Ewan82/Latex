@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  18 NOV 2016 21:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  19 NOV 2016 16:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -414,74 +414,12 @@ LaTeX Info: Redefining \cite on input line 694.
 \refchangenumber=\count115
 \listchangenum=\count116
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/pbox/pbox.sty
-Package: pbox 2011/12/07 v1.2 Dynamic parboxes
+(./agujournaltemplate.aux
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count117
-\calc@Bcount=\count118
-\calc@Adimen=\dimen122
-\calc@Bdimen=\dimen123
-\calc@Askip=\skip65
-\calc@Bskip=\skip66
-LaTeX Info: Redefining \setlength on input line 75.
-LaTeX Info: Redefining \addtolength on input line 76.
-\calc@Ccount=\count119
-\calc@Cskip=\skip67
-)
-\pb@xlen=\skip68
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen124
-\captionmargin@=\dimen125
-\captionwidth=\dimen126
-\caption@tempdima=\dimen127
-\caption@indent=\dimen128
-\caption@parindent=\dimen129
-\caption@hangindent=\dimen130
-Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
-)
-
-Package caption Warning: Unsupported document class (or package) detected,
-(caption)                usage of the caption package is not recommended.
-See the caption package documentation for explanation.
-
-Package caption Info: \@makecaption = \long macro:#1#2->{\small \ifx \@captype 
-\xfigure \vskip \abovecaptionskip \fi {\ifturnofflinenums \else \ifnumlines \in
-ternallinenumbers \fi \fi \sbox \@tempboxa {\bf #1.\quad \rm #2}\ifdim \wd \@te
-mpboxa >.9\hsize \bf #1.\quad \rm \relax #2\par \else {\centering \bf #1.\rm \q
-uad #2 \vskip 1sp} \fi } \ifx \@captype \xfigure \else \vskip \belowcaptionskip
- \fi }.
-\c@ContinuedFloat=\count120
-Package caption Info: rotating package is loaded.
-)
-\c@subfigure=\count121
-\c@subtable=\count122
-) (./agujournaltemplate.aux
-
-LaTeX Warning: Label `fig:gpp' multiply defined.
+LaTeX Warning: Label `table:cwoo_obs' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:gpp' multiply defined.
-
-
-LaTeX Warning: Label `fig:rt' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:rt' multiply defined.
-
-
-LaTeX Warning: Label `fig:mod' multiply defined.
+LaTeX Warning: Label `fig:nee_part' multiply defined.
 
 )
 \openout1 = `agujournaltemplate.aux'.
@@ -532,21 +470,21 @@ File: t1ntxrx.fd 2012/12/25 v1.0
 )
 LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
 (Font)              scaled to size 10.0pt on input line 72.
-\c@mv@tabular=\count123
-\c@mv@boldtabular=\count124
+\c@mv@tabular=\count117
+\c@mv@boldtabular=\count118
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
-\scratchdimen=\dimen131
+\scratchcounter=\count119
+\scratchdimen=\dimen122
 \scratchbox=\box33
-\nofMPsegments=\count126
-\nofMParguments=\count127
+\nofMPsegments=\count120
+\nofMParguments=\count121
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count128
-\MPscratchDim=\dimen132
-\MPnumerator=\count129
-\makeMPintoPDFobject=\count130
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen123
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
 \everyMPtoPDFconversion=\toks25
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -594,31 +532,6 @@ e
 ))
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 72.
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: Incompatible package detected (regarding \@caption).
-(caption)             \@caption = \long macro:#1[#2]#3->\par \begingroup \@parb
-oxrestore \normalsize \linenumbers \@makecaption {\csname fnum@#1\endcsname }{\
-ignorespaces #3}\par \endgroup .
-
-
-Package caption Warning: \caption will not be redefined since it's already
-(caption)                redefined by a document class or package which is
-(caption)                unknown to the caption package.
-See the caption package documentation for explanation.
-
-
-./agujournaltemplate.tex:72: Package caption Error: The `subcaption' package do
-es not work correctly
-(caption)                in compatibility mode.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72 \begin{document}
-                     
-? 
-Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
 (Font)              scaled to size 14.4pt on input line 86.
 LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
@@ -626,6 +539,7 @@ LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
 LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
 (Font)              scaled to size 5.0pt on input line 86.
 LaTeX Font Info:    Try loading font information for T1+qhv on input line 86.
+
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
@@ -717,13 +631,16 @@ LaTeX Font Info:    Font shape `T1/ntxrx/bx/it' will be
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
+LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
+(Font)              scaled to size 9.0pt on input line 235.
+
 Underfull \hbox (badness 10000) in paragraph at lines 235--235
-[]\T1/ntxrx/m/n/10 Table 1: |Num-ber of ob-ser-va-tions of NEE, NEE$[]$ and NEE
-$[]$ for East and West sides of the
+[]\T1/ntxrx/bx/n/9 Table 1. \T1/ntxrx/m/n/9 Num-ber of ob-ser-va-tions of NEE, 
+NEE$[]$ and NEE$[]$ for East and West sides of the Straits
  []
 
 
-Underfull \vbox (badness 1509) has occurred while \output is active []
+Underfull \vbox (badness 2564) has occurred while \output is active []
 
  [7]
 Overfull \hbox (0.8302pt too wide) in paragraph at lines 253--255
@@ -738,8 +655,8 @@ Package pdftex.def Info: thinned.pdf used on input line 261.
 (pdftex.def)             Requested size: 317.9892pt x 224.70842pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 262--262
-[]\T1/ntxrx/m/n/10 Figure  1: |Hemi-spher-i-cal pho-to-graph de-rived LAI for t
-he Straits In-clo-sure at 50m in-ter-vals along
+[]\T1/ntxrx/bx/n/9 Figure  1. \T1/ntxrx/m/n/9 Hemi-spher-i-cal pho-to-graph de-
+rived LAI for the Straits In-clo-sure at 50m in-ter-vals along three
  []
 
 
@@ -763,42 +680,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--275
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9 <./thinned.pdf>] <dalec2diag.pdf, id=47, 758.835pt x 453.695pt>
+ [9 <./thinned.pdf>] <dalec2diag.pdf, id=49, 758.835pt x 453.695pt>
 File: dalec2diag.pdf Graphic file (type pdf)
  <use dalec2diag.pdf>
 Package pdftex.def Info: dalec2diag.pdf used on input line 290.
 (pdftex.def)             Requested size: 238.49341pt x 142.58931pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 291--291
-[]\T1/ntxrx/m/n/10 Figure  2: |Rep-re-sen-ta-tion of the fluxes in the DALEC2 c
-ar-bon bal-ance model. Green ar-rows
+[]\T1/ntxrx/bx/n/9 Figure  2. \T1/ntxrx/m/n/9 Rep-re-sen-ta-tion of the fluxes 
+in the DALEC2 car-bon bal-ance model. Green ar-rows rep-re-sent C al-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 291--291
-\T1/ntxrx/m/n/10 rep-re-sent C al-lo-ca-tion, pur-ple ar-rows rep-re-sent lit-t
-er fall and de-com-po-si-tion fluxes, blue ar-rows
+\T1/ntxrx/m/n/9 lo-ca-tion, pur-ple ar-rows rep-re-sent lit-ter fall and de-com
+-po-si-tion fluxes, blue ar-rows rep-re-sent res-pi-ra-tion fluxes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
-\T1/ntxrx/m/n/10 rep-re-sent res-pi-ra-tion fluxes and the red ar-row rep-re-se
-nts the in-flu-ence of leaf area in-dex in the
- []
+Underfull \vbox (badness 3219) has occurred while \output is active []
 
-
+ [10 <./dalec2diag.pdf>]
 Overfull \hbox (15.02768pt too wide) in paragraph at lines 296--297
 []\T1/ntxrx/m/n/10 We im-ple-ment Four-Dimensional Vari-a-tion data as-sim-i-la
 -tion (4D-Var) with the DALEC2 
  []
 
 
-Underfull \vbox (badness 2556) has occurred while \output is active []
+Underfull \vbox (badness 1092) has occurred while \output is active []
 
- [10]
-Underfull \vbox (badness 1117) has occurred while \output is active []
-
- [11 <./dalec2diag.pdf>]
+ [11]
 Overfull \hbox (9.46918pt too wide) detected at line 315
 \OML/ntxmi/m/it/10 NEE[] \U/ntxmia/m/it/10 = \OMS/ntxsy/m/n/10 ^^@\OML/ntxmi/m/
 it/10 GPP[]\U/ntxmia/m/it/10 }\OML/ntxmi/m/it/10 C[]; \U/ntxmia/m/it/10 	~ ý \O
@@ -807,149 +718,150 @@ mia/m/it/10 	~ ý \OML/ntxmi/m/it/10 ^^N[]^^R[]C[]e[] \U/ntxmia/m/it/10 ý \OML/n
 txmi/m/it/10 ^^N[]^^R[]C[]e[]
  []
 
-[12] <nee_day.pdf, id=64, 808.26251pt x 561.2733pt>
-File: nee_day.pdf Graphic file (type pdf)
- <use nee_day.pdf>
-Package pdftex.def Info: nee_day.pdf used on input line 344.
-(pdftex.def)             Requested size: 194.76982pt x 135.2479pt.
+[12]
 
-<nee_night.pdf, id=65, 808.26251pt x 561.2733pt>
-File: nee_night.pdf Graphic file (type pdf)
- <use nee_night.pdf>
-Package pdftex.def Info: nee_night.pdf used on input line 349.
-(pdftex.def)             Requested size: 194.76982pt x 135.2479pt.
+LaTeX Warning: Reference `fig:nee_day' on page 13 undefined on input line 351.
 
-<lai.pdf, id=66, 808.26251pt x 561.2733pt>
-File: lai.pdf Graphic file (type pdf)
- <use lai.pdf>
-Package pdftex.def Info: lai.pdf used on input line 354.
-(pdftex.def)             Requested size: 194.76982pt x 135.2479pt.
 
-<c_woo.pdf, id=67, 822.41255pt x 567.3485pt>
-File: c_woo.pdf Graphic file (type pdf)
- <use c_woo.pdf>
-Package pdftex.def Info: c_woo.pdf used on input line 359.
-(pdftex.def)             Requested size: 194.76982pt x 134.3571pt.
+LaTeX Warning: Reference `fig:nee_night' on page 13 undefined on input line 351
+.
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
-[]\T1/ntxrx/m/n/10 Figure  4: |2015 un-thinned and thinned ob-ser-va-tions and 
-model tra-jec-to-ries af-ter as-sim-i-la-tion. Blue
+
+LaTeX Warning: Reference `fig:lai' on page 13 undefined on input line 373.
+
+
+LaTeX Warning: Reference `fig:c_woo' on page 13 undefined on input line 373.
+
+
+LaTeX Warning: Reference `fig:nee_day' on page 13 undefined on input line 373.
+
+
+LaTeX Warning: Reference `fig:nee_night' on page 13 undefined on input line 373
+.
+
+<obs_compc.pdf, id=66, 925.05597pt x 635.97598pt>
+File: obs_compc.pdf Graphic file (type pdf)
+ <use obs_compc.pdf>
+Package pdftex.def Info: obs_compc.pdf used on input line 377.
+(pdftex.def)             Requested size: 397.48499pt x 273.27025pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+[]\T1/ntxrx/bx/n/9 Figure  3. \T1/ntxrx/m/n/9 2015 un-thinned and thinned side 
+ob-ser-va-tions and model tra-jec-to-ries af-ter as-sim-i-la-tion for ex-per-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
-\T1/ntxrx/m/n/10 line: model tra-jec-tory af-ter as-sim-i-la-tion of un-thinned
- data, blue shad-ing: un-cer-tainty in model
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+\T1/ntxrx/m/n/9 i-ment C. Blue line: model tra-jec-tory af-ter as-sim-i-la-tion
+ of un-thinned data, blue shad-ing: un-cer-tainty in model
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
-\T1/ntxrx/m/n/10 tra-jec-tory af-ter as-sim-i-la-tion ($\OMS/ntxsy/m/n/10 ^^F$ 
-\T1/ntxrx/m/n/10 1 stan-dard de-vi-a-tion), blue dots: un-thinned ob-ser-va-tio
-ns with er-ror
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+\T1/ntxrx/m/n/9 tra-jec-tory af-ter as-sim-i-la-tion ($\OMS/ntxsy/m/n/9 ^^F$ \T
+1/ntxrx/m/n/9 1 stan-dard de-vi-a-tion), blue dots: un-thinned ob-ser-va-tions 
+with er-ror bars, or-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
-\T1/ntxrx/m/n/10 bars, or-ange line: model tra-jec-tory af-ter as-sim-i-la-tion
- of thinned data, or-ange shad-ing: un-cer-tainty
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+\T1/ntxrx/m/n/9 ange line: model tra-jec-tory af-ter as-sim-i-la-tion of thinne
+d data, or-ange shad-ing: un-cer-tainty in model tra-jec-tory
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
-\T1/ntxrx/m/n/10 in model tra-jec-tory af-ter as-sim-i-la-tion ($\OMS/ntxsy/m/n
-/10 ^^F$ \T1/ntxrx/m/n/10 1 stan-dard de-vi-a-tion), or-ange dots: thinned ob-s
-er-va-tions
- []
+LaTeX Warning: Reference `fig:gpp' on page 13 undefined on input line 381.
 
-<gpp.pdf, id=68, 808.26251pt x 561.2733pt>
-File: gpp.pdf Graphic file (type pdf)
- <use gpp.pdf>
-Package pdftex.def Info: gpp.pdf used on input line 371.
-(pdftex.def)             Requested size: 194.76982pt x 135.2479pt.
 
-<rt.pdf, id=69, 808.26251pt x 561.2733pt>
-File: rt.pdf Graphic file (type pdf)
- <use rt.pdf>
-Package pdftex.def Info: rt.pdf used on input line 376.
-(pdftex.def)             Requested size: 194.76982pt x 135.2479pt.
+LaTeX Warning: Reference `fig:rt' on page 13 undefined on input line 381.
 
-<ra.pdf, id=70, 808.26251pt x 561.2733pt>
-File: ra.pdf Graphic file (type pdf)
- <use ra.pdf>
-Package pdftex.def Info: ra.pdf used on input line 381.
-(pdftex.def)             Requested size: 194.76982pt x 135.2479pt.
 
-<rh.pdf, id=71, 808.26251pt x 561.2733pt>
-File: rh.pdf Graphic file (type pdf)
- <use rh.pdf>
-Package pdftex.def Info: rh.pdf used on input line 386.
-(pdftex.def)             Requested size: 194.76982pt x 135.2479pt.
+LaTeX Warning: Reference `fig:nee_day' on page 13 undefined on input line 381.
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--390
-[]\T1/ntxrx/m/n/10 Figure  6: |2015 un-thinned and thinned model tra-jec-to-rie
-s af-ter as-sim-i-la-tion. Blue line: model tra-
+
+LaTeX Warning: Reference `fig:ra' on page 13 undefined on input line 381.
+
+
+LaTeX Warning: Reference `fig:rh' on page 13 undefined on input line 381.
+
+[13] <flux_compc.pdf, id=71, 925.05597pt x 635.97598pt>
+File: flux_compc.pdf Graphic file (type pdf)
+ <use flux_compc.pdf>
+Package pdftex.def Info: flux_compc.pdf used on input line 385.
+(pdftex.def)             Requested size: 397.48499pt x 273.27025pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--386
+[]\T1/ntxrx/bx/n/9 Figure  4. \T1/ntxrx/m/n/9 2015 un-thinned and thinned side 
+model tra-jec-to-ries af-ter as-sim-i-la-tion for ex-per-i-ment C. Blue
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--390
-\T1/ntxrx/m/n/10 jec-tory af-ter as-sim-i-la-tion of un-thinned data, blue shad
--ing: un-cer-tainty in model tra-jec-tory af-ter
+Underfull \hbox (badness 10000) in paragraph at lines 386--386
+\T1/ntxrx/m/n/9 line: model tra-jec-tory af-ter as-sim-i-la-tion of un-thinned 
+data, blue shad-ing: un-cer-tainty in model tra-jec-tory af-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--390
-\T1/ntxrx/m/n/10 as-sim-i-la-tion ($\OMS/ntxsy/m/n/10 ^^F$ \T1/ntxrx/m/n/10 1 s
-tan-dard de-vi-a-tion), or-ange line: model tra-jec-tory af-ter as-sim-i-la-tio
-n of thinned
+Underfull \hbox (badness 10000) in paragraph at lines 386--386
+\T1/ntxrx/m/n/9 as-sim-i-la-tion ($\OMS/ntxsy/m/n/9 ^^F$ \T1/ntxrx/m/n/9 1 stan
+-dard de-vi-a-tion), or-ange line: model tra-jec-tory af-ter as-sim-i-la-tion o
+f thinned data, or-ange
+ []
+
+<nee_cum_partc.pdf, id=72, 842.89532pt x 582.58278pt>
+File: nee_cum_partc.pdf Graphic file (type pdf)
+ <use nee_cum_partc.pdf>
+Package pdftex.def Info: nee_cum_partc.pdf used on input line 392.
+(pdftex.def)             Requested size: 397.48499pt x 274.72955pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
+[]\T1/ntxrx/bx/n/9 Figure  5. \T1/ntxrx/m/n/9 2015 un-thinned and thinned side 
+model tra-jec-to-ries for cu-mu-la-tive NEE and its par-ti-tion-ing af-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
+\T1/ntxrx/m/n/9 as-sim-i-la-tion for ex-per-i-ment C. Solid line cu-mu-la-tive 
+NEE, dot-ted line: cu-mu-la-tive ecosys-tem res-pi-ra-tion,
+ []
+
+<rt_part_c.pdf, id=73, 910.01143pt x 623.0375pt>
+File: rt_part_c.pdf Graphic file (type pdf)
+ <use rt_part_c.pdf>
+Package pdftex.def Info: rt_part_c.pdf used on input line 399.
+(pdftex.def)             Requested size: 397.48499pt x 272.13141pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
+[]\T1/ntxrx/bx/n/9 Figure  6. \T1/ntxrx/m/n/9 2015 un-thinned and thinned side 
+model tra-jec-tory for cu-mu-la-tive to-tal ecosys-tem res-pi-ra-tion and
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13]
+ [14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14 <./nee_day.pdf> <./nee_night.pdf
+ [15 <./obs_compc.pdf>] <xa_incc.pdf, id=162, 940.12791pt x 408.61095pt>
+File: xa_incc.pdf Graphic file (type pdf)
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./nee_night.pdf): PDF inclusion: mul
-tiple pdfs with page group included in a single page
-> <./lai.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./lai.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
-> <./c_woo.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./c_woo.pdf): PDF inclusion: multipl
-e pdfs with page group included in a single page
->]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15 <./gpp.pdf> <./rt.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./rt.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./ra.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./ra.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./rh.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./rh.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
->] <xa_inc.pdf, id=538, 940.17496pt x 408.61095pt>
-File: xa_inc.pdf Graphic file (type pdf)
- <use xa_inc.pdf>
-Package pdftex.def Info: xa_inc.pdf used on input line 400.
+<use xa_incc.pdf>
+Package pdftex.def Info: xa_incc.pdf used on input line 410.
 (pdftex.def)             Requested size: 317.9892pt x 138.20262pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--401
-[]\T1/ntxrx/m/n/10 Figure  7: |Nor-malised anal-y-sis (pos-te-rior model) in-cr
-e-ment []$[]$[] for the East and West ex-per-i-
+Underfull \hbox (badness 10000) in paragraph at lines 411--411
+[]\T1/ntxrx/bx/n/9 Figure  7. \T1/ntxrx/m/n/9 Nor-malised anal-y-sis (pos-te-ri
+or model) in-cre-ment []$[]$[] for the East and West ex-per-i-ments.
  []
 
-[16 <./xa_inc.pdf>]
-Overfull \hbox (0.78526pt too wide) in paragraph at lines 410--411
+
+Underfull \vbox (badness 5302) has occurred while \output is active []
+
+ [16 <./flux_compc.pdf>]
+Underfull \vbox (badness 5970) has occurred while \output is active []
+
+ [17 <./nee_cum_partc.pdf>]
+Overfull \hbox (0.78526pt too wide) in paragraph at lines 420--421
 \T1/ntxrx/m/n/10 site in this pa-per) \T1/ntxrx/m/it/10 Heine-meyer et al. \T1/
 ntxrx/m/n/10 [2012] showed a large 56% con-tri-bu-tion of au-totrophic 
  []
@@ -957,64 +869,111 @@ ntxrx/m/n/10 [2012] showed a large 56% con-tri-bu-tion of au-totrophic
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17]
+ [18 <./rt_part_c.pdf>]
+Underfull \vbox (badness 1024) has occurred while \output is active []
+
+ [19 <./xa_incc.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
-[19]
+ [20]
 LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
-(Font)              scaled to size 7.0pt on input line 557.
+(Font)              scaled to size 7.0pt on input line 567.
 LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
-(Font)              scaled to size 7.0pt on input line 560.
+(Font)              scaled to size 7.0pt on input line 570.
 
-Underfull \hbox (badness 10000) in paragraph at lines 560--560
+Underfull \hbox (badness 10000) in paragraph at lines 570--570
 []\T1/ntxrx/m/n/7 Prior es-ti-mate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 560--560
+Underfull \hbox (badness 10000) in paragraph at lines 570--570
 []\T1/ntxrx/m/n/7 Standard de-vi-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 573--573
+Underfull \hbox (badness 10000) in paragraph at lines 583--583
 []\T1/ntxrx/m/n/7 Fraction of GPP al-lo-cated to la-bile car-bon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--581
+Underfull \hbox (badness 10000) in paragraph at lines 591--591
 []\T1/ntxrx/m/n/7 Above and be-low ground woody car-bon pool
  []
 
-<_rmat_east.png, id=611, 625.1355pt x 552.1428pt>
-File: _rmat_east.png Graphic file (type png)
- <use _rmat_east.png>
-Package pdftex.def Info: _rmat_east.png used on input line 594.
-(pdftex.def)             Requested size: 194.76982pt x 172.03027pt.
+<obs_compa.pdf, id=425, 925.05597pt x 635.97598pt>
+File: obs_compa.pdf Graphic file (type pdf)
+ <use obs_compa.pdf>
+Package pdftex.def Info: obs_compa.pdf used on input line 603.
+(pdftex.def)             Requested size: 397.48499pt x 273.27025pt.
 
-<_rmat_west.png, id=613, 625.1355pt x 552.1428pt>
-File: _rmat_west.png Graphic file (type png)
- <use _rmat_west.png>
-Package pdftex.def Info: _rmat_west.png used on input line 599.
-(pdftex.def)             Requested size: 194.76982pt x 172.03027pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 603--603
-[]\T1/ntxrx/m/n/10 Figure  B.2: |Ob-ser-va-tion er-ror cor-re-la-tion ma-tri-ce
-s for thinned and un-thinned data as-sim-i-la-tion
+Underfull \hbox (badness 10000) in paragraph at lines 604--604
+[]\T1/ntxrx/bx/n/9 Figure  B.1. \T1/ntxrx/m/n/9 2015 un-thinned and thinned sid
+e ob-ser-va-tions and model tra-jec-to-ries af-ter as-sim-i-la-tion for
  []
 
 
-Overfull \hbox (1.30273pt too wide) in paragraph at lines 671--673
+Underfull \hbox (badness 10000) in paragraph at lines 604--604
+\T1/ntxrx/m/n/9 ex-per-i-ment A. Blue line: model tra-jec-tory af-ter as-sim-i-
+la-tion of un-thinned data, blue shad-ing: un-cer-tainty
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 604--604
+\T1/ntxrx/m/n/9 in model tra-jec-tory af-ter as-sim-i-la-tion ($\OMS/ntxsy/m/n/
+9 ^^F$ \T1/ntxrx/m/n/9 1 stan-dard de-vi-a-tion), blue dots: un-thinned ob-ser-
+va-tions with er-ror
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 604--604
+\T1/ntxrx/m/n/9 bars, or-ange line: model tra-jec-tory af-ter as-sim-i-la-tion 
+of thinned data, or-ange shad-ing: un-cer-tainty in model
+ []
+
+<obs_compb.pdf, id=426, 925.05597pt x 635.97598pt>
+File: obs_compb.pdf Graphic file (type pdf)
+ <use obs_compb.pdf>
+Package pdftex.def Info: obs_compb.pdf used on input line 609.
+(pdftex.def)             Requested size: 397.48499pt x 273.27025pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--610
+[]\T1/ntxrx/bx/n/9 Figure  B.2. \T1/ntxrx/m/n/9 2015 un-thinned and thinned sid
+e ob-ser-va-tions and model tra-jec-to-ries af-ter as-sim-i-la-tion for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--610
+\T1/ntxrx/m/n/9 ex-per-i-ment B. Blue line: model tra-jec-tory af-ter as-sim-i-
+la-tion of un-thinned data, blue shad-ing: un-cer-tainty in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--610
+\T1/ntxrx/m/n/9 model tra-jec-tory af-ter as-sim-i-la-tion ($\OMS/ntxsy/m/n/9 ^
+^F$ \T1/ntxrx/m/n/9 1 stan-dard de-vi-a-tion), blue dots: un-thinned ob-ser-va-
+tions with er-ror
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--610
+\T1/ntxrx/m/n/9 bars, or-ange line: model tra-jec-tory af-ter as-sim-i-la-tion 
+of thinned data, or-ange shad-ing: un-cer-tainty in model
+ []
+
+
+Overfull \hbox (1.30273pt too wide) in paragraph at lines 694--696
 \T1/ntxrx/m/n/10 This work was funded by the UK Nat-u-ral En-vi-ron-ment Re-sea
 rch Coun-cil (NE/K00705X/1) 
  []
 
-
+[21] [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20]
-[21 <./_rmat_east.png> <./_rmat_west.png>]
-Underfull \hbox (badness 1009) in paragraph at lines 814--819
+ [23 <./obs_compa.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24 <./obs_compb.pdf>]
+Underfull \hbox (badness 1009) in paragraph at lines 837--842
 \T1/ntxrx/m/n/10 (2005), Struc-ture and func-tion of mi-cro-bial com-mu-ni-ties
  in the rhi-zo-sphere of 
  []
@@ -1022,11 +981,8 @@ Underfull \hbox (badness 1009) in paragraph at lines 814--819
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
-Underfull \hbox (badness 1102) in paragraph at lines 941--945
+ [25]
+Underfull \hbox (badness 1102) in paragraph at lines 964--968
 \T1/ntxrx/m/n/10 (2016), Un-der-stand-ing deep roots and their func-tions in ec
 osys-tems: an ad-vo- 
  []
@@ -1034,28 +990,35 @@ osys-tems: an ad-vo-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24]
+ [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25]
-Underfull \hbox (badness 1199) in paragraph at lines 1072--1078
+ [27]
+Underfull \hbox (badness 1199) in paragraph at lines 1095--1101
 []\T1/ntxrx/m/n/10 Zobitz, J. M., D. J. P. Moore, T. Quaife, B. H. Braswell, A.
  Berge-son, J. a. An- 
  []
 
-[26] (./agujournaltemplate.aux)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+[29] (./agujournaltemplate.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7460 strings out of 493117
- 105352 string characters out of 6135433
- 180511 words of memory out of 5000000
- 10695 multiletter control sequences out of 15000+600000
- 85996 words of font info for 148 fonts, out of 8000000 for 9000
+ 6250 strings out of 493117
+ 83931 string characters out of 6135433
+ 166777 words of memory out of 5000000
+ 9487 multiletter control sequences out of 15000+600000
+ 93815 words of font info for 168 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 59i,14n,94p,1927b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,14n,37p,1927b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2014/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/20
 14/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2014/tex
@@ -1073,10 +1036,10 @@ xlive/2014/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2
 dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on agujournaltemplate.pdf (26 pages, 655871 bytes).
+Output written on agujournaltemplate.pdf (29 pages, 1397164 bytes).
 PDF statistics:
- 694 PDF objects out of 1000 (max. 8388607)
+ 674 PDF objects out of 1000 (max. 8388607)
  238 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

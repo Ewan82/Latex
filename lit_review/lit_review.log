@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  15 NOV 2016 15:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  18 NOV 2016 12:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -393,10 +393,10 @@ Missing character: There is no “ in font cmr12!
 
 [3] [4]) [5] (./lit_review.aux) ) 
 Here is how much of TeX's memory you used:
- 4812 strings out of 493117
- 69708 string characters out of 6135433
- 140136 words of memory out of 5000000
- 8166 multiletter control sequences out of 15000+600000
+ 4817 strings out of 493117
+ 69784 string characters out of 6135433
+ 140474 words of memory out of 5000000
+ 8171 multiletter control sequences out of 15000+600000
  18471 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,6n,45p,1237b,239s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -410,7 +410,7 @@ msfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmtt12.pfb>
-Output written on lit_review.pdf (5 pages, 107345 bytes).
+Output written on lit_review.pdf (5 pages, 108238 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream

@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -39,6 +39,24 @@ A.~Fox, M.~Williams, A.~D. Richardson, D.~Cameron, J.~H. Gove, T.~Quaife,
   eddy covariance data.
 \newblock \emph{Agricultural and Forest Meteorology}, 149\penalty0
   (10):\penalty0 1597--1615, 2009.
+
+\bibitem[Kaminski et~al.(2013)Kaminski, Knorr, Sch\"{u}rmann, Scholze, Rayner,
+  Zaehle, Blessing, Dorigo, Gayler, Giering, Gobron, Grant, Heimann,
+  Hooker-Stroud, Houweling, Kato, Kattge, Kelley, Kemp, Koffi, K\"{o}stler,
+  Mathieu, Pinty, Reick, R\"{o}denbeck, Schnur, Scipal, Sebald, Stacke, {Van
+  Scheltinga}, Vossbeck, Widmann, and Ziehn]{Kaminski2013}
+T.~Kaminski, W.~Knorr, G.~Sch\"{u}rmann, M.~Scholze, P.~J. Rayner, S.~Zaehle,
+  S.~Blessing, W.~Dorigo, V.~Gayler, R.~Giering, N.~Gobron, J.~P. Grant,
+  M.~Heimann, a.~Hooker-Stroud, S.~Houweling, T.~Kato, J.~Kattge, D.~Kelley,
+  S.~Kemp, E.~N. Koffi, C.~K\"{o}stler, P.~P. Mathieu, B.~Pinty, C.~H. Reick,
+  C.~R\"{o}denbeck, R.~Schnur, K.~Scipal, C.~Sebald, T.~Stacke, a.~T. {Van
+  Scheltinga}, M.~Vossbeck, H.~Widmann, and T.~Ziehn.
+\newblock {The BETHY/JSBACH Carbon Cycle Data Assimilation System: Experiences
+  and challenges}.
+\newblock \emph{Journal of Geophysical Research: Biogeosciences}, 118\penalty0
+  (4):\penalty0 1414--1426, 2013.
+\newblock ISSN 21698961.
+\newblock \doi{10.1002/jgrg.20118}.
 
 \bibitem[Knorr and Heimann(2001)]{knorr2001uncertainties}
 W.~Knorr and M.~Heimann.

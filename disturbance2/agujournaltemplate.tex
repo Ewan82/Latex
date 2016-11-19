@@ -34,7 +34,7 @@
 
 \documentclass[draft,linenumbers]{agujournal}
 \drafttrue
-\usepackage{graphicx, pbox, subcaption, xcolor}
+\usepackage{graphicx, xcolor}
 
 %% For final version.
 % \documentclass{agujournal}
@@ -83,7 +83,7 @@
 
 % Example: \title{This is a test title}
 
-\title{Using data assimilation to understand the effect of disturbance on a managed woodland {\color{red} DRAFT}}
+\title{Using data assimilation to understand the effect of disturbance on the carbon dynamics of a managed woodland {\color{red} DRAFT}}
 
 %% ------------------------------------------------------------------------ %%
 %
@@ -114,8 +114,8 @@
 
 \affiliation{1}{Department of Meteorology, University of Reading, Reading, UK}
 \affiliation{2}{Department of Mathematics and Statistics, University of Reading, Reading, UK}
-\affiliation{1}{Centre for Sustainable Forestry and Climate Change, Forest Research, Alice Holt, Farnham, UK}
-\affiliation{1}{National Centre for Earth Observation, University of Reading, Reading, UK}
+\affiliation{3}{Centre for Sustainable Forestry and Climate Change, Forest Research, Alice Holt, Farnham, UK}
+\affiliation{4}{National Centre for Earth Observation, University of Reading, Reading, UK}
 
 %(repeat as many times as is necessary)
 
@@ -331,63 +331,73 @@ where \(\delta_{night}\) is the night length, expressed as \(\frac{\text{number 
 
 Using the prior model estimate specified in table~\ref{table:xbvars}, we run two data assimilation experiments for the years window of 2015. In the first experiment we assimilated all data available (as specified in section~\ref{sec:obs}) for the unthinned Eastern section of forest. In the second experiment we assimilate all data available for the thinned Western section of forest. Combining these two distinct sets of observations with our prior model using 4D-Var data assimilation allows us to retrieve two unique sets of parameter and initial state values, corresponding to the thinned and unthinned sections of the site. This allows us to judge the effect the thinning in 2014 had on the carbon dynamics of the forest in 2015. We do this by analysing the optimised parameter and initial state values for the thinned and unthinned sections of the forest and also considering the model predictions of different variables for each side post-disturbance. 
 
+\begin{table}[ht] 
+	\caption{Combination of observations used in data assimilation experiments.}
+\begin{center}
+	\begin{tabular}{| l | l | l | l |}
+	\hline
+	Experiment & NEE & LAI & C\(_{woo}\) \\ \hline
+	A & \(\times\) &  &  \\ \hline
+	B & \(\times\) & \(\times\) &  \\ \hline
+	C & \(\times\) & \(\times\) & \(\times\)  \\ \hline
+	\end{tabular}
+	\label{table:obs_da}
+\end{center} 
+\end{table}
+
 \section{Results} \label{sec:results}
 %Show plots of East and West after assimilation and the change in optimised parameters. Confident in results as we know that even assimilating a single year of data we can accurately describe the carbon dynamics of the site for a long time period (15 years) into the future from Pinnington et al 2016.
 
 In Figure~\ref{fig:obs_mod} we show the observations and model trajectories after assimilation for both thinned and unthinned sections of the forest site. We can see that we fit all the observations well after assimilation. We have confidence in our results as we know that even assimilating a single year of data we can accurately describe the carbon uptake of the site for a long time period (15 years) into the future \citep{Pinnington2016299}. From Figure~\ref{fig:nee_day} and \ref{fig:nee_night} the modified observation operators presented in section~\ref{sec:da} have allowed our model to represent both daytime and nighttime NEE well. 
 
+\begin{table}[ht] 
+	\caption{Total annual fluxes for 2015 after assimilation \((\text{g C m}^{-2})\).}
+\begin{center}
+	\begin{tabular}{| l | l | l | l |}
+	\hline
+	\multicolumn{4}{| c |}{Unthinned side} \\ \hline
+	 & Experiment A & Experiment B & Experiment C \\ \hline
+	NEE & \(-379\pm147\) & \(-425\pm156\) & \(-426\pm154\) \\ \hline
+	GPP & \(1648\pm193\) & \(2191\pm147\) & \(2193\pm141\) \\ \hline
+	RT & \(1267\pm186\) & \(1766\pm175\) & \(1767\pm176\) \\ \hline
+	\multicolumn{4}{| c |}{Thinned side} \\ \hline
+	 & Experiment A & Experiment B & Experiment C \\ \hline
+	NEE & \(-394\pm117\) & \(-421\pm111\) & \(-420\pm110\) \\ \hline
+	GPP & \(1976\pm153\) & \(1855\pm118\) & \(1856\pm119\) \\ \hline
+	RT & \(1582\pm162\) & \(1435\pm132\) & \(1436\pm132\) \\ \hline
+	\end{tabular}
+	\label{table:cwoo_obs}
+\end{center} 
+\end{table}
+
 From Figure~\ref{fig:lai} and \ref{fig:c_woo} the distinct difference in stand structure is clear with reduced LAI and woody carbon for the thinned area. The model predicted time of green-up and senescence in LAI is consistent with phenocam observations made by Forest Research at the site ({\color{red} maybe include phenocam plot for 2015 in sup. material?}). In Figure~\ref{fig:nee_day} we see that both model predicted and observed net carbon uptake of both the thinned and unthinned is very similar. The model predictions of NEE\(_{day}\) are overlapping for most of the 2015 window. However, in Figure~\ref{fig:nee_night} we see that our model predicts reduced reduced NEE\(_{night}\) for the thinned compared to unthinned, here NEE\(_{night}\) correspond to ecosystem respiration as no GPP occurs during the night.    
 
 \begin{figure}[ht]
     \centering
-    \begin{subfigure}[b]{0.49\textwidth}
-        \includegraphics[width=\textwidth]{nee_day.pdf}
-        \caption{NEE\(_{day}\)}
-        \label{fig:nee_day}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.49\textwidth}
-        \includegraphics[width=\textwidth]{nee_night.pdf}
-        \caption{NEE\(_{night}\)}
-        \label{fig:nee_night}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.49\textwidth}
-        \includegraphics[width=\textwidth]{lai.pdf}
-        \caption{Leaf area index}
-        \label{fig:lai}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.49\textwidth}
-        \includegraphics[width=\textwidth]{c_woo.pdf}
-        \caption{C\(_{woo}\)}
-        \label{fig:c_woo}
-    \end{subfigure}
-    \caption{2015 unthinned and thinned observations and model trajectories after assimilation. Blue line: model trajectory after assimilation of unthinned data, blue shading: uncertainty in model trajectory after assimilation (\(\pm\) 1 standard deviation), blue dots: unthinned observations with error bars, orange line: model trajectory after assimilation of thinned data, orange shading: uncertainty in model trajectory after assimilation (\(\pm\) 1 standard deviation), orange dots: thinned observations with error bars.} \label{fig:obs_mod}
+        \includegraphics[width=\textwidth]{obs_compc.pdf}
+    \caption{2015 unthinned and thinned side observations and model trajectories after assimilation for experiment C. Blue line: model trajectory after assimilation of unthinned data, blue shading: uncertainty in model trajectory after assimilation (\(\pm\) 1 standard deviation), blue dots: unthinned observations with error bars, orange line: model trajectory after assimilation of thinned data, orange shading: uncertainty in model trajectory after assimilation (\(\pm\) 1 standard deviation), orange dots: thinned observations with error bars.} \label{fig:obs_mod}
 \end{figure}
 
 In Figure~\ref{fig:mod} we show the model predicted GPP and ecosystem respiration (including its partitioning between autotrophic and heterotrophic) for both thinned and unthinned after data assimilation. Figure~\ref{fig:gpp} shows the model predicting a reduction in GPP following a reduction in leaf area for the thinned. In order to compensate for this reduced GPP, in Figure~\ref{fig:rt} we see the thinned is demonstrating reduced total ecosystem respiration, this allows the thinned to still do the same net carbon uptake as the unthinned (seen in Figure~\ref{fig:nee_day}), as net ecosystem carbon uptake = - GPP + ecosystem respiration. From Figure~\ref{fig:ra} and \ref{fig:rh} we see that heterotrophic respiration sees the greatest reduction compared to the unthinned, however autotrophic respiration is also reduced. 
 
 \begin{figure}[ht]
     \centering
-    \begin{subfigure}[b]{0.49\textwidth}
-        \includegraphics[width=\textwidth]{gpp.pdf}
-        \caption{GPP}
-        \label{fig:gpp}
-        \end{subfigure}
-     \begin{subfigure}[b]{0.49\textwidth}
-        \includegraphics[width=\textwidth]{rt.pdf}
-        \caption{Total ecosystem respiration}
-        \label{fig:rt}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.49\textwidth}
-        \includegraphics[width=\textwidth]{ra.pdf}
-        \caption{Autotrophic respiration}
-        \label{fig:ra}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.49\textwidth}
-        \includegraphics[width=\textwidth]{rh.pdf}
-        \caption{Heterotrophic respiration}
-        \label{fig:rh}
-    \end{subfigure}
-    \caption{2015 unthinned and thinned model trajectories after assimilation. Blue line: model trajectory after assimilation of unthinned data, blue shading: uncertainty in model trajectory after assimilation (\(\pm\) 1 standard deviation), orange line: model trajectory after assimilation of thinned data, orange shading: uncertainty in model trajectory after assimilation (\(\pm\) 1 standard deviation).} \label{fig:mod}
+        \includegraphics[width=\textwidth]{flux_compc.pdf}
+    \caption{2015 unthinned and thinned side model trajectories after assimilation for experiment C. Blue line: model trajectory after assimilation of unthinned data, blue shading: uncertainty in model trajectory after assimilation (\(\pm\) 1 standard deviation), orange line: model trajectory after assimilation of thinned data, orange shading: uncertainty in model trajectory after assimilation (\(\pm\) 1 standard deviation).} \label{fig:mod}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+        \includegraphics[width=\textwidth]{nee_cum_partc.pdf}
+    \caption{2015 unthinned and thinned side model trajectories for cumulative NEE and its partitioning after assimilation for experiment C. Solid line cumulative NEE, dotted line: cumulative ecosystem respiration, dashed line: cumulative GPP. Colour and shading has same meaning as in Figure~\ref{fig:obs_mod}} \label{fig:nee_part}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+        \includegraphics[width=\textwidth]{rt_part_c.pdf}
+    \caption{2015 unthinned and thinned side model trajectory for cumulative total ecosystem respiration and its partitioning after assimilation for experiment C.} \label{fig:nee_part}
 \end{figure}
 
 Figure~\ref{fig:xa_inc} shows the change in parameter and initial state values for thinned and unthinned after assimilating the 2015 data. It is important to note this is the difference when compared to our prior model estimate, which was found by assimilating only eddy covariance data from previous years, and a single observation of leaf mass per area estimated from Forest Research litter traps. We therefore expect changes in parameter and state values for both thinned and unthinned, as we are assimilating new data streams. This is particularly noticeable in the carbon pool state members in Figure~\ref{fig:xa_inc}. Constraints on the carbon pool state members are provided by the assimilated observations of woody biomass and coarse roots (\(C_{woo}\)), LAI and leaf mass per area (\(c_{lma}\)). LAI and \(c_{lma}\) give us a constraint on foliar carbon (\(C_{fol}\)) as LAI \(= \frac{C_{fol}}{c_{lma}} \). We can see the values for the model predicted carbon pools are as we might expect with the thinned having less carbon in all pools compared to the unthinned. For litter carbon (\(C_{lit}\)) it is possible that the input of brash and woody debris may compensate for the reduction in input of leaf litter on the thinned side. However, this woody debris is much less readily decomposed and so possibly has little impact in the year after thinning. We also see a large difference in the predicted soil carbon content (\(C_{som}\)) between the two model predictions. This is consistent with studies analysing soil carbon contents after felling \citep{Hernesmaa2005777}. 
@@ -397,7 +407,7 @@ For the parameters the biggest changes appear to be in the litter mineralisation
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{xa_inc.pdf}
+    \includegraphics[width=0.8\textwidth]{xa_incc.pdf}
     \caption{Normalised analysis (posterior model) increment \big($\frac{(\textbf{x}^a - \textbf{x}^b)}{\textbf{x}^b}$\big) for the East and West experiments. Explanation of parameter and state variable symbols in table~\ref{table:xbvars}.}
     \label{fig:xa_inc}
 \end{figure}
@@ -586,22 +596,35 @@ $C_{som}$ & Soil and organic carbon pool ($\text{g C m}^{-2}$) & $1.950\times 10
 \end{center} 
 \end{table}
 
-\section{Observation error covariance matrices}
+\section{Data assimilation experiment plots}
 
 \begin{figure}[ht]
     \centering
-    \begin{subfigure}[b]{0.49\textwidth}
-        \includegraphics[width=\textwidth]{_rmat_east.png}
-        \caption{Unthinned}
-        \label{fig:gpp}
-        \end{subfigure}
-     \begin{subfigure}[b]{0.49\textwidth}
-        \includegraphics[width=\textwidth]{_rmat_west.png}
-        \caption{Thinned}
-        \label{fig:rt}
-    \end{subfigure}
-    \caption{Observation error correlation matrices for thinned and unthinned data assimilation experiments. For more details see \citet{Pinnington2016299}} \label{fig:mod}
+        \includegraphics[width=\textwidth]{obs_compa.pdf}
+    \caption{2015 unthinned and thinned side observations and model trajectories after assimilation for experiment A. Blue line: model trajectory after assimilation of unthinned data, blue shading: uncertainty in model trajectory after assimilation (\(\pm\) 1 standard deviation), blue dots: unthinned observations with error bars, orange line: model trajectory after assimilation of thinned data, orange shading: uncertainty in model trajectory after assimilation (\(\pm\) 1 standard deviation), orange dots: thinned observations with error bars.} \label{fig:obs_moda}
 \end{figure}
+
+\begin{figure}[ht]
+    \centering
+        \includegraphics[width=\textwidth]{obs_compb.pdf}
+    \caption{2015 unthinned and thinned side observations and model trajectories after assimilation for experiment B. Blue line: model trajectory after assimilation of unthinned data, blue shading: uncertainty in model trajectory after assimilation (\(\pm\) 1 standard deviation), blue dots: unthinned observations with error bars, orange line: model trajectory after assimilation of thinned data, orange shading: uncertainty in model trajectory after assimilation (\(\pm\) 1 standard deviation), orange dots: thinned observations with error bars.} \label{fig:obs_modb}
+\end{figure}
+
+%\section{Observation error covariance matrices}
+%\begin{figure}[ht]
+%    \centering
+%    \begin{subfigure}[b]{0.49\textwidth}
+%        \includegraphics[width=\textwidth]{_rmat_east.png}
+%        \caption{Unthinned}
+%        \label{fig:gpp}
+%        \end{subfigure}
+%     \begin{subfigure}[b]{0.49\textwidth}
+%        \includegraphics[width=\textwidth]{_rmat_west.png}
+%        \caption{Thinned}
+%        \label{fig:rt}
+%    \end{subfigure}
+%    \caption{Observation error correlation matrices for thinned and unthinned data assimilation experiments. For more details see \citet{Pinnington2016299}} \label{fig:mod}
+%\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
