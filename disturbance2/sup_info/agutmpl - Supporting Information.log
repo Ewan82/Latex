@@ -1,0 +1,421 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  25 NOV 2016 14:49
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"agutmpl - Supporting Information.tex"
+(./agutmpl - Supporting Information.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(./agutexSI.cls
+
+
+ AGUTeX Journal Style, American Geophysical Union 
+ This version is dated Feb 9, 2008
+
+
+
+LaTeX Warning: You have requested document class `agutexSI',
+               but the document class provides `agutex'.
+
+Document Class: agutex 02/09/2008
+\c@chapter=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@figure=\count83
+\c@table=\count84
+\mathindent=\dimen102
+\abovefigcaptionskip=\skip41
+\abovetabcaptionskip=\skip42
+\abovetableskip=\skip43
+\belowtabcaptionskip=\dimen103
+\landscapebox=\box26
+\c@plate=\count85
+\savecurrtable=\box27
+\abovetabularskip=\skip44
+\belowtabularskip=\skip45
+\timing=\count86
+\hourcount=\count87
+\oldtime=\count88
+\totpages=\count89
+\belowtitleskip=\dimen104
+\abovesubtitleskip=\dimen105
+\belowsubtitleskip=\dimen106
+\aboveauthorskip=\dimen107
+\belowauthorskip=\dimen108
+\thanksnum=\count90
+\dothanks=\count91
+\thankscounter=\count92
+\titlethanksnum=\count93
+\dotitlethanks=\count94
+\titlethankscounter=\count95
+\thanksnum=\count96
+\dothanks=\count97
+\thankscounter=\count98
+\authorwidth=\dimen109
+\authorbaselineskip=\dimen110
+\aboveaffilskip=\dimen111
+\belowaffilskip=\dimen112
+\affilwidth=\dimen113
+\aboveabstractskip=\dimen114
+\belowabstractskip=\dimen115
+\belowabstractnameskip=\dimen116
+\abstractmargin=\dimen117
+\abovereceivedskip=\skip46
+\aboverevisedskip=\skip47
+\aboveacceptedskip=\skip48
+\abovepublishededskip=\skip49
+\barticle=\box28
+\thanksbox=\box29
+\titlethanksbox=\box30
+\c@appendnum=\count99
+\footnum=\count100
+\savefootnum=\count101
+\ackskip=\skip50
+\saveparskip=\dimen118
+\captionskip=\dimen119
+\PushOneColTopFig=\dimen120
+\PushOneColBotFig=\dimen121
+\PushOneColTopTab=\dimen122
+\PushOneColBotTab=\dimen123
+\PushTwoColTopFig=\dimen124
+\PushTwoColBotFig=\dimen125
+\PushTwoColTopTab=\dimen126
+\PushTwoColBotTab=\dimen127
+\intextfloatskip=\skip51
+\c@appfigure=\count102
+\c@apptable=\count103
+\c@appplate=\count104
+\checkforspace=\dimen128
+\savetopinsert=\box31
+\savebotinsert=\box32
+\secondsavetopinsert=\box33
+\secondsavebotinsert=\box34
+\firstcolbox=\box35
+\secondcolbox=\box36
+\thefirstbox=\box37
+\thesecondbox=\box38
+\firstcol=\dimen129
+\secondcol=\dimen130
+\checkheight=\dimen131
+\loopnum=\count105
+\firstcolsavefignum=\count106
+\footnotebox=\box39
+\ColUsed=\dimen132
+\FigSpace=\dimen133
+\testdblbotins=\box40
+\pageloopnum=\count107
+\endcolsavetopinsert=\box41
+\endcolsavebotinsert=\box42
+\testpagesize=\box43
+\savelastskip=\dimen134
+\partialpage=\box44
+\figandtabnumber=\count108
+\figandtabbox=\box45
+\pagefloatnumber=\count109
+\sizeoffloat=\box46
+\bogus=\count110
+\figinsert=\insert233
+\herebox=\box47
+\endfigbox=\box48
+\spanbox=\box49
+\dbltopins=\box50
+\dblbotins=\box51
+\dblbotskip=\skip52
+\dblfigandtabnumber=\count111
+\dblfigandtabbox=\box52
+\dblloopnum=\count112
+\savedblfigandtabnumber=\count113
+\dblspanherebox=\box53
+\bigpagenum=\count114
+\littlepagenum=\count115
+\wholepagenum=\count116
+\@cprtype=\count117
+\@slugcmmntwidth=\dimen135
+\affilnum=\count118
+\totalaffils=\count119
+\figcount=\count120
+\saveequation=\count121
+\c@currlett=\count122
+\notationwidth=\dimen136
+\betweennotationskip=\skip53
+\WidestEntry=\dimen137
+\premulticols=\dimen138
+\page@free=\dimen139
+\partial@page=\box54
+\multicoltolerance=\count123
+\doublecol@number=\count124
+\multicolbaselineskip=\skip54
+\c@collectmore=\count125
+\loopcount=\count126
+\fixdimen=\dimen140
+\c@unbalance=\count127
+\savedimen=\dimen141
+\savehsize=\dimen142
+\mycolumnwidth=\dimen143
+\saveparindent=\dimen144
+\saveparskip=\dimen145
+\abstractwidth=\dimen146
+\currlastnumber=\count128
+\altaffilbox=\box55
+\sectskip=\skip55
+\belowsectionskip=\skip56
+\subsectskip=\skip57
+\belowsubsectskip=\skip58
+\subsubsectskip=\skip59
+\belowsubsubsectskip=\skip60
+\c@subsubsubsection=\count129
+\captionwidth=\dimen147
+\widecaptionwidth=\dimen148
+\landscapecaptionwidth=\dimen149
+\@temptokenb=\toks14
+\beforeendskip=\skip61
+
+
+ JGRGA style option, October 1, 2001,
+ \documentclass[jgrga]{AGUTeX}
+ ``Journal of Geophysical Research'', 
+ Published by American Geophysical Union
+
+
+\titlesize=\dimen150
+LaTeX Info: Redefining \cite on input line 7539.
+\c@NAT@ctr=\count130
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count131
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+(./agutmpl - Supporting Information.aux)
+\openout1 = `"agutmpl - Supporting Information.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count132
+\scratchdimen=\dimen153
+\scratchbox=\box56
+\nofMPsegments=\count133
+\nofMParguments=\count134
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count135
+\MPscratchDim=\dimen154
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
+\everyMPtoPDFconversion=\toks17
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 193.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 193.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 193.
+
+[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+(./agutmpl - Supporting Information.bbl
+Missing character: There is no â in font cmti12!
+Missing character: There is no € in font cmti12!
+Missing character: There is no “ in font cmti12!
+) [2]
+<flux_compa.pdf, id=15, 925.05597pt x 635.97598pt>
+File: flux_compa.pdf Graphic file (type pdf)
+ <use flux_compa.pdf>
+Package pdftex.def Info: flux_compa.pdf used on input line 363.
+(pdftex.def)             Requested size: 480.0pt x 330.001pt.
+
+<cum_fluxa.pdf, id=16, 821.06377pt x 554.23326pt>
+File: cum_fluxa.pdf Graphic file (type pdf)
+ <use cum_fluxa.pdf>
+Package pdftex.def Info: cum_fluxa.pdf used on input line 370.
+(pdftex.def)             Requested size: 480.0pt x 324.01796pt.
+
+<obs_compb.pdf, id=17, 925.05597pt x 635.97598pt>
+File: obs_compb.pdf Graphic file (type pdf)
+ <use obs_compb.pdf>
+Package pdftex.def Info: obs_compb.pdf used on input line 378.
+(pdftex.def)             Requested size: 480.0pt x 330.001pt.
+
+<flux_compb.pdf, id=18, 925.05597pt x 635.97598pt>
+File: flux_compb.pdf Graphic file (type pdf)
+ <use flux_compb.pdf>
+Package pdftex.def Info: flux_compb.pdf used on input line 386.
+(pdftex.def)             Requested size: 480.0pt x 330.001pt.
+
+<cum_fluxb.pdf, id=19, 821.06377pt x 554.23326pt>
+File: cum_fluxb.pdf Graphic file (type pdf)
+ <use cum_fluxb.pdf>
+Package pdftex.def Info: cum_fluxb.pdf used on input line 393.
+(pdftex.def)             Requested size: 480.0pt x 324.01796pt.
+
+<flux_compc.pdf, id=20, 925.05597pt x 635.97598pt>
+File: flux_compc.pdf Graphic file (type pdf)
+ <use flux_compc.pdf>
+Package pdftex.def Info: flux_compc.pdf used on input line 400.
+(pdftex.def)             Requested size: 480.0pt x 330.001pt.
+
+<cum_fluxc.pdf, id=21, 821.06377pt x 554.23326pt>
+File: cum_fluxc.pdf Graphic file (type pdf)
+ <use cum_fluxc.pdf>
+Package pdftex.def Info: cum_fluxc.pdf used on input line 407.
+(pdftex.def)             Requested size: 480.0pt x 324.01796pt.
+
+<obs_compd.pdf, id=22, 925.05597pt x 635.97598pt>
+File: obs_compd.pdf Graphic file (type pdf)
+ <use obs_compd.pdf>
+Package pdftex.def Info: obs_compd.pdf used on input line 415.
+(pdftex.def)             Requested size: 480.0pt x 330.001pt.
+
+<flux_compd.pdf, id=23, 925.05597pt x 635.97598pt>
+File: flux_compd.pdf Graphic file (type pdf)
+ <use flux_compd.pdf>
+Package pdftex.def Info: flux_compd.pdf used on input line 423.
+(pdftex.def)             Requested size: 480.0pt x 330.001pt.
+
+<cum_fluxd.pdf, id=24, 821.06377pt x 554.23326pt>
+File: cum_fluxd.pdf Graphic file (type pdf)
+ <use cum_fluxd.pdf>
+Package pdftex.def Info: cum_fluxd.pdf used on input line 430.
+(pdftex.def)             Requested size: 480.0pt x 324.01796pt.
+
+<prior.pdf, id=25, 797.44427pt x 545.2032pt>
+File: prior.pdf Graphic file (type pdf)
+ <use prior.pdf>
+Package pdftex.def Info: prior.pdf used on input line 438.
+(pdftex.def)             Requested size: 480.0pt x 328.16434pt.
+
+<pheno_lai.pdf, id=26, 912.44435pt x 621.92555pt>
+File: pheno_lai.pdf Graphic file (type pdf)
+ <use pheno_lai.pdf>
+Package pdftex.def Info: pheno_lai.pdf used on input line 446.
+(pdftex.def)             Requested size: 480.0pt x 327.17061pt.
+
+<rmat_eastc.pdf, id=27, 631.56264pt x 553.25758pt>
+File: rmat_eastc.pdf Graphic file (type pdf)
+ <use rmat_eastc.pdf>
+Package pdftex.def Info: rmat_eastc.pdf used on input line 453.
+(pdftex.def)             Requested size: 360.0pt x 315.37698pt.
+
+<rmat_westc.pdf, id=28, 631.56264pt x 553.25758pt>
+File: rmat_westc.pdf Graphic file (type pdf)
+ <use rmat_westc.pdf>
+Package pdftex.def Info: rmat_westc.pdf used on input line 460.
+(pdftex.def)             Requested size: 360.0pt x 315.37698pt.
+
+[3 <./flux_compa.pdf>] [4 <./cum_fluxa.pdf>] [5 <./obs_compb.pdf>] [6 <./flux_c
+ompb.pdf>] [7 <./cum_fluxb.pdf>] [8 <./flux_compc.pdf>] [9 <./cum_fluxc.pdf>]
+[10 <./obs_compd.pdf>] [11 <./flux_compd.pdf>] [12 <./cum_fluxd.pdf>] [13 <./pr
+ior.pdf>] [14 <./pheno_lai.pdf>] [15 <./rmat_eastc.pdf>] [16 <./rmat_westc.pdf>
+] (./agutmpl - Supporting Information.aux) ) 
+Here is how much of TeX's memory you used:
+ 2444 strings out of 493117
+ 33207 string characters out of 6135433
+ 110936 words of memory out of 5000000
+ 5899 multiletter control sequences out of 15000+600000
+ 13317 words of font info for 46 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 37i,6n,26p,600b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "agutmpl - Supporting Information.pdf" (16 pages, 1256994 byt
+es).
+PDF statistics:
+ 959 PDF objects out of 1000 (max. 8388607)
+ 260 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+
