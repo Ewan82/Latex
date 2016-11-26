@@ -163,7 +163,7 @@
 %% \begin{abstract} starts the second page 
 
 \begin{abstract}
-The response of forests and terrestrial ecosystems to disturbance is an important process in the global carbon cycle in the context of a changing climate. In order to better understand ecosystem response to selective felling in a managed forest site we use the mathematical technique of data assimilation to combine a diverse set of observations with a mathematical model of ecosystem carbon balance. We develop new data assimilation techniques allowing for the assimilation of daytime and nighttime net ecosystem exchange observations with a daily time-step model. This allows for the assimilation of much otherwise neglected carbon flux information. The techniques allow us to estimate the effect of step-changes in ecosystem composition on the parameter and state variables in a modelled estimate of forest carbon balance. These techniques are applicable to other ecosystem models and data assimilation schemes. Previous statistical analyses of eddy covariance data at the study site had suggested that disturbance from selective felling (thinning) resulted in no significant change to the net carbon uptake of the ecosystem. Our results support this with a predicted net ecosystem carbon uptake for the year 2015 of \(426 \pm 154~\text{g C m}^{-2}\) for unthinned forest and \(420 \pm 110~\text{g C m}^{-2}\) for thinned forest. We show that this is likely due to reduced ecosystem respiration post-disturbance compensating for a reduction in gross primary productivity. This supports the theory of an upper limit of forest net carbon uptake due to the magnitude of ecosystem respiration scaling with gross primary productivity.  \end{abstract}
+The response of forests and terrestrial ecosystems to disturbance is an important process in the global carbon cycle in the context of a changing climate. In order to better understand ecosystem response to selective felling in a managed forest site we use the mathematical technique of data assimilation to combine a diverse set of observations with a mathematical model of ecosystem carbon balance. We develop new data assimilation techniques allowing for the assimilation of daytime and nighttime net ecosystem exchange observations with a daily time-step model. This allows for the assimilation of much otherwise neglected carbon flux information. The techniques allow us to estimate the effect of step-changes in ecosystem composition on the parameter and state variables in a modelled estimate of forest carbon balance. These techniques are applicable to other ecosystem models and data assimilation schemes. Previous statistical analyses of eddy covariance data at the study site had suggested that disturbance from selective felling (thinning) resulted in no significant change to the net carbon uptake of the ecosystem. Our results support this with a predicted net ecosystem carbon uptake for the year 2015 of \(426 \pm 116~\text{g C m}^{-2}\) for unthinned forest and \(420 \pm 78~\text{g C m}^{-2}\) for thinned forest. We show that this is likely due to reduced ecosystem respiration post-disturbance compensating for a reduction in gross primary productivity. This supports the theory of an upper limit of forest net carbon uptake due to the magnitude of ecosystem respiration scaling with gross primary productivity.  \end{abstract}
 
 
 %% ------------------------------------------------------------------------ %%
@@ -213,7 +213,7 @@ Data assimilation is a mathematical technique for combing observations with prio
 \subsection{\textcolor{red}{What does this paper do?}}
 In this paper we investigate the effect of thinning on the carbon dynamics of the Alice Holt flux site \citep{wilkinson2012inter}, a deciduous managed woodland, following an event in 2014, when one side of the site was thinned and the other side left unmanaged. 
 %During this thinning approximately 46\% of trees were removed from the studied area. In order to better understand the effect this thinning had on stand structure an intensive field campaign was undertaken in 2015 to measure leaf area index and also estimate woody biomass for both sides of the study site. The site has a flux tower positioned on the boundary between the thinned and unthinned forest. The eddy covariance record of NEE was split between the two sides using a flux footprint model. Previous statistical analysis of a thinning event in 2007 had suggested that there was no change in NEE between the thinned and unthinned sides of the forest post-disturbance \citep{wilkinson2015effects}.  
-We present new methods for the assimilation of daytime and nighttime NEE observations with a daily time-step model, in this case the Data Assimilation Linked Ecosystem Carbon (DALEC2) model \citep{Bloom2015}. These methods require no model modification. We combine all available observations for 2015 with prior model predictions to find two sets of optimised model parameter and initial state values, corresponding to thinned and unthinned sides of the forest. We then use these two versions of the model to seek an explanation for why the net uptake of carbon remains unchanged even after removing a large proportion of the trees from one side. We find a net ecosystem carbon uptake for the year 2015 of \(426 \pm 154~\text{g C m}^{-2}\) for the unthinned forest and \(420 \pm 110~\text{g C m}^{-2}\) for the thinned forest, with reduced ecosystem respiration for the thinned forest allowing for this unchanged net carbon uptake. The data assimilation techniques presented in this paper could be applied for similar analyses at other sites and provide a novel method to help elucidate the reasons behind ecosystem responses.      
+We present new methods for the assimilation of daytime and nighttime NEE observations with a daily time-step model, in this case the Data Assimilation Linked Ecosystem Carbon (DALEC2) model \citep{Bloom2015}. These methods require no model modification. We combine all available observations for 2015 with prior model predictions to find two sets of optimised model parameter and initial state values, corresponding to thinned and unthinned sides of the forest. We then use these two versions of the model to seek an explanation for why the net uptake of carbon remains unchanged even after removing a large proportion of the trees from one side. We find a net ecosystem carbon uptake for the year 2015 of \(426 \pm 116~\text{g C m}^{-2}\) for the unthinned forest and \(420 \pm 78~\text{g C m}^{-2}\) for the thinned forest, with reduced ecosystem respiration for the thinned forest allowing for this unchanged net carbon uptake. The data assimilation techniques presented in this paper could be applied for similar analyses at other sites and provide a novel method to help elucidate the reasons behind ecosystem responses.      
 
 \section{Observation and data assimilation methods}
 
@@ -221,7 +221,7 @@ We present new methods for the assimilation of daytime and nighttime NEE observa
 
 Alice Holt Forest is a research forest area managed by the UK Forestry Commission located in Hampshire, SE England. Forest Research has been continuously operating a $\text{CO}_{2}$ flux measurement tower in a portion of the forest, the Straits Inclosure, since 1998. The Straits Inclosure is a $90~\text{ha}$ area of deciduous broadleaved plantation woodland on a surface water gley soil, which has been managed for the past 80 years. The majority of the canopy trees are oak (\textit{Quercus robur} L.), with an understory of hazel (\textit{Corylus avellana} L.) and hawthorn (\textit{Crataegus monogyna} Jacq.), but there is a small area of conifers (\textit{Pinus nigra} J. F. Arnold) within the tower measurement footprint area depending on wind direction. Further details of the Straits Inclosure site and the measurement procedures are given in \citet{wilkinson2012inter}, together with analysis of stand-scale $30$ minute average net $\text{CO}_{2}$ fluxes (NEE) measured by standard eddy covariance methods from 1998-2011. 
 
-As part of the management regime, the Straits Inclosure is subject to thinning, whereby a proportion of trees are removed from the canopy in order to reduce competition and improve the quality of the final tree crop. At the Straits an intermediate thinning method is used with a portion of both subdominant and dominant trees being removed from the stand \citep{kerr2011thinning}. The whole of the stand was thinned in 1995. Subsequently the Eastern side of the Straits was thinned in 2007 and then the Western side in 2014. The flux tower at the site is situated on the boundary between these two sides, allowing for the use of a footprint model to split the flux record and analyse the effect of this disturbance on carbon fluxes at the site. In \citet{wilkinson2015effects} a statistical analysis of the eddy covariance flux record found that there was no significant effect on the net carbon uptake of the Eastern side after thinning in 2007. In this paper we focus on the effect of disturbance on the Western side after thinning in 2014. We therefore refer to the Western side as ``thinned'' and the Eastern side as ``unthinned''.   
+As part of the management regime, the Straits Inclosure is subject to thinning, whereby a proportion of trees are removed from the canopy in order to reduce competition and improve the quality of the final tree crop. At the Straits an intermediate thinning method is used with a portion of both subdominant and dominant trees being removed from the stand \citep{kerr2011thinning}. The whole of the stand was thinned in 1995. Subsequently the Eastern side of the Straits was thinned in 2007 and then the Western side in 2014. The flux tower at the site is situated on the boundary between these two sides, allowing for the use of a footprint model to split the flux record and analyse the effect of this disturbance on carbon fluxes at the site. In \citet{wilkinson2015effects} a statistical analysis of the eddy covariance flux record found that there was no significant effect on the net carbon uptake of the Eastern side after thinning in 2007. In this paper we focus on the effect of disturbance on the Western side after thinning in 2014. We therefore refer to the Western side as ``thinned'' forest and the Eastern side as ``unthinned'' forest.   
 
 \subsection{Observations} \label{sec:obs}
 
@@ -273,7 +273,7 @@ Forest Research also carry out their own mensuration studies at the site. One su
 \begin{center}
 	\begin{tabular}{| l | p{2cm} | p{2cm} | p{4.5cm} |}
 	\hline
-	Sector & Tree density (ha\(^{-1}\)) & Mean DBH (cm) & Estimated Woody biomass and coarse root carbon (g C m\(^{-2}\)) \\ \hline
+	Sector & Tree density (ha\(^{-1}\)) & Mean DBH (cm) & Estimated woody biomass and coarse root carbon (g C m\(^{-2}\)) \\ \hline
 	Unthinned (E) & 272 & 34.12 & 13130 \\ \hline
 	Thinned (W) & 225 & 32.85 & 9908 \\ \hline
 	\end{tabular}
@@ -330,8 +330,7 @@ where \(\delta_{night}\) is the night length, expressed as \(\frac{\text{number 
 
 %In this paper we have split the flux tower eddy covariance record using a footprint model. This means we have observations of NEE for both the West and East sides of the forest stand. By combining these two distinct sets of observations with our prior model using 4D-Var data assimilation allows us to retrieve two unique sets of parameter and initial state values, .
 
-Using the prior model estimate specified in table~\ref{table:xbvars}, we run three data assimilation experiments for the one year window of 2015 assimilating different combinations of observations, shown in table~\ref{table:obs_da}. This allows us to asses the relative levels of information from the different data streams and their impact on the model predicted effect of disturbance. The prior model was found by assimilating daytime and nighttime NEE, observations of leaf mass per area and LAI from 2012 and 2013 before the thinning occurred. We show the prior model prediction of daytime NEE in Figure~\ref{fig:prior_mod}, the prior model has a correlation coefficient of 0.96 in this case. For more information on the methods used to find this prior model see \citet{Pinnington2016299}.   
-
+Using the prior model estimate specified in table~\ref{table:xbvars}, we run three data assimilation experiments for the one year window of 2015 assimilating different combinations of observations, shown in table~\ref{table:obs_da}. This allows us to assess the relative levels of information from the different data streams and their impact on the model predicted effect of disturbance. The prior model was found by assimilating daytime and nighttime NEE, leaf mass per area and LAI observations from 2012 and 2013 before the thinning occurred, this is shown in table~\ref{table:xbvars}. For more information on the methods used to find this prior model see \citet{Pinnington2016299}.   
 
 In each experiment we run the assimilation for both the unthinned forest and the thinned forest. Combining the two distinct sets of observations for either side with our prior model using 4D-Var data assimilation. This allows us to retrieve two unique sets of parameter and initial state values, corresponding to the thinned and unthinned sections of the site. We are then able to judge the effect the thinning in 2014 had on the carbon dynamics of the forest in 2015. We do this by analysing the optimised parameter and initial state values for the thinned and unthinned forest and also considering the model predictions of different variables for each side post-disturbance. 
 
@@ -349,32 +348,12 @@ In each experiment we run the assimilation for both the unthinned forest and the
 \end{center} 
 \end{table}
 
-We expect that we will retrieve different estimates from each experiment, with our most confident estimate being when all observations types are assimilated together. This should allow us to see how much information each data stream provides us with and asses whether NEE data is enough alone to understand the effect of disturbance.
+We expect that we will retrieve different estimates from each experiment, with our most confident estimate being when all observations types are assimilated together. This allows us to see how much information each data stream provides us with and assess whether NEE data alone is enough to understand the effect of disturbance.
 
 \section{Results} \label{sec:results}
 %Show plots of East and West after assimilation and the change in optimised parameters. Confident in results as we know that even assimilating a single year of data we can accurately describe the carbon dynamics of the site for a long time period (15 years) into the future from Pinnington et al 2016.
 
-In Figure~\ref{fig:obs_mod} we show the observations and model trajectories after assimilation for both thinned and unthinned sections of the forest site. We can see that we fit all the observations well after assimilation. We have confidence in our results as we know that even assimilating a single year of data we can accurately describe the carbon uptake of the site for a long time period (15 years) into the future \citep{Pinnington2016299}. From Figure~\ref{fig:nee_day} and \ref{fig:nee_night} the modified observation operators presented in section~\ref{sec:da} have allowed our model to represent both daytime and nighttime NEE well. 
-
-\begin{table}[ht] 
-	\caption{Total annual fluxes for 2015 after assimilation \((\text{g C m}^{-2})\).}
-\begin{center}
-	\begin{tabular}{| l | l | l | l |}
-	\hline
-	\multicolumn{4}{| c |}{Unthinned side} \\ \hline
-	 & Experiment A & Experiment B & Experiment C \\ \hline
-	NEE & \(-379\pm147\) & \(-425\pm156\) & \(-426\pm154\) \\ \hline
-	GPP & \(1648\pm193\) & \(2191\pm147\) & \(2193\pm141\) \\ \hline
-	RT & \(1267\pm186\) & \(1766\pm175\) & \(1767\pm176\) \\ \hline
-	\multicolumn{4}{| c |}{Thinned side} \\ \hline
-	 & Experiment A & Experiment B & Experiment C \\ \hline
-	NEE & \(-394\pm117\) & \(-421\pm111\) & \(-420\pm110\) \\ \hline
-	GPP & \(1976\pm153\) & \(1855\pm118\) & \(1856\pm119\) \\ \hline
-	RT & \(1582\pm162\) & \(1435\pm132\) & \(1436\pm132\) \\ \hline
-	\end{tabular}
-	\label{table:cwoo_obs}
-\end{center} 
-\end{table}
+In Figure~\ref{fig:obscompa} and \ref{fig:obscompc} we show the observations and model trajectories after assimilation for  thinned and unthinned forest for experiment A and C respectively. We can see that we fit all the observations well after assimilation. We have confidence in our results as we know that even assimilating a single year of data we can accurately describe the carbon uptake of the site for a long time period (15 years) into the future \citep{Pinnington2016299}. From Figure~\ref{fig:nee_day} and \ref{fig:nee_night} the modified observation operators presented in section~\ref{sec:da} have allowed our model to represent both daytime and nighttime NEE well. 
 
 From Figure~\ref{fig:lai} and \ref{fig:c_woo} the distinct difference in stand structure is clear with reduced LAI and woody carbon for the thinned area. The model predicted time of green-up and senescence in LAI is consistent with phenocam observations made by Forest Research at the site ({\color{red} maybe include phenocam plot for 2015 in sup. material?}). In Figure~\ref{fig:nee_day} we see that both model predicted and observed net carbon uptake of both the thinned and unthinned is very similar. The model predictions of NEE\(_{day}\) are overlapping for most of the 2015 window. However, in Figure~\ref{fig:nee_night} we see that our model predicts reduced reduced NEE\(_{night}\) for the thinned compared to unthinned, here NEE\(_{night}\) correspond to ecosystem respiration as no GPP occurs during the night.    
 
@@ -396,6 +375,25 @@ From Figure~\ref{fig:lai} and \ref{fig:c_woo} the distinct difference in stand s
 In Figure~\ref{fig:mod} we show the model predicted GPP and ecosystem respiration (including its partitioning between autotrophic and heterotrophic) for both thinned and unthinned after data assimilation. Figure~\ref{fig:gpp} shows the model predicting a reduction in GPP following a reduction in leaf area for the thinned. In order to compensate for this reduced GPP, in Figure~\ref{fig:rt} we see the thinned is demonstrating reduced total ecosystem respiration, this allows the thinned to still do the same net carbon uptake as the unthinned (seen in Figure~\ref{fig:nee_day}), as net ecosystem carbon uptake = - GPP + ecosystem respiration. From Figure~\ref{fig:ra} and \ref{fig:rh} we see that heterotrophic respiration sees the greatest reduction compared to the unthinned, however autotrophic respiration is also reduced. 
 
 
+\begin{table}[ht] 
+	\caption{Total annual fluxes for 2015 after assimilation \((\text{g C m}^{-2})\).}
+\begin{center}
+	\begin{tabular}{| l | l | l | l |}
+	\hline
+	\multicolumn{4}{| c |}{Unthinned side} \\ \hline
+	 & Experiment A & Experiment B & Experiment C \\ \hline
+	NEE & \(-379\pm 99\) & \(-425\pm113\) & \(-426\pm116\) \\ \hline
+	GPP & \(1648\pm 159\) & \(2191\pm 87\) & \(2193\pm83\) \\ \hline
+	RT & \(1267\pm 150\) & \(1766\pm146\) & \(1767\pm146\) \\ \hline
+	\multicolumn{4}{| c |}{Thinned side} \\ \hline
+	 & Experiment A & Experiment B & Experiment C \\ \hline
+	NEE & \(-394\pm 81\) & \(-421\pm73\) & \(-420\pm78\) \\ \hline
+	GPP & \(1976\pm 112\) & \(1855\pm75\) & \(1856\pm80\) \\ \hline
+	RT & \(1582\pm 134\) & \(1435\pm100\) & \(1436\pm109\) \\ \hline
+	\end{tabular}
+	\label{table:cwoo_obs}
+\end{center} 
+\end{table}
 
 
 \begin{figure}[ht]
@@ -608,21 +606,6 @@ $C_{som}$ & Soil and organic carbon pool ($\text{g C m}^{-2}$) & $1.950\times 10
 \end{center} 
 \end{table}
 
-%\section{Observation error covariance matrices}
-%\begin{figure}[ht]
-%    \centering
-%    \begin{subfigure}[b]{0.49\textwidth}
-%        \includegraphics[width=\textwidth]{_rmat_east.png}
-%        \caption{Unthinned}
-%        \label{fig:gpp}
-%        \end{subfigure}
-%     \begin{subfigure}[b]{0.49\textwidth}
-%        \includegraphics[width=\textwidth]{_rmat_west.png}
-%        \caption{Thinned}
-%        \label{fig:rt}
-%    \end{subfigure}
-%    \caption{Observation error correlation matrices for thinned and unthinned data assimilation experiments. For more details see \citet{Pinnington2016299}} \label{fig:mod}
-%\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -692,6 +675,7 @@ $C_{som}$ & Soil and organic carbon pool ($\text{g C m}^{-2}$) & $1.950\times 10
 \acknowledgments
 This work was funded by the UK Natural Environment Research Council (NE/K00705X/1) with a CASE award from the UK Forestry Commission. This work was also partly funded by the National Centre for Earth Observation. We are grateful to Ian Craig for providing Forest Research mensuration estimates.
 
+\clearpage
 
 %% ------------------------------------------------------------------------ %%
 %% Citations
