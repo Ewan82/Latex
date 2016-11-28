@@ -166,7 +166,10 @@
 %\altaffiltext{5}{Dipartimento di Idraulica, Trasporti ed
 %Infrastrutture Civili, Politecnico di Torino, Turin, Italy.}
 
-\authors{Ewan M. Pinnington\altaffilmark{1}, Eric Casella\altaffilmark{3}, Sarah L. Dance\altaffilmark{1,2}, Amos S. Lawless\altaffilmark{1,2,4}, James I. L. Morison\altaffilmark{3}, Nancy K. Nichols\altaffilmark{1,2,4}, Matthew Wilkinson\altaffilmark{3}, Tristan L. Quaife\altaffilmark{1,4}}
+\authors{Ewan M. Pinnington,\altaffilmark{1}
+Eric Casella,\altaffilmark{3} Sarah L. Dance,\altaffilmark{1,2} Amos S. Lawless,\altaffilmark{1,2,4}
+James I. L. Morison,\altaffilmark{3} Nancy K. Nichols,\altaffilmark{1,2,4} Matthew Wilkinson,\altaffilmark{3}
+Tristan L. Quaife,\altaffilmark{1,4}}
 
 
 % \affiliation{1}{First Affiliation}
@@ -203,6 +206,7 @@
 \noindent\textbf{Contents of this file}
 %%%Remove or add items as needed%%%
 \begin{enumerate}
+\item Table S1
 \item Figures S1 to S12
 %if Tables are larger than 1 page, upload as separate excel file
 \end{enumerate}
@@ -215,7 +219,7 @@
 % 3. a general description of processing steps used;
 % 4. any known imperfections or anomalies in the data.
 
-In Figures S1-S10 we present extra plots from the three experiments outlined in the paper (A, B \& C), we also add plots for a fourth experiment (labelled experiment D here) where only LAI, leaf mass per area and woody biomass are assimilated with the DALEC2 model.
+In Figures S1-S10 we present extra plots from the three experiments outlined in the paper (A, B \& C), we also add plots for a fourth experiment (labelled experiment D here) where only LAI, leaf mass per area and woody biomass are assimilated with the DALEC2 model. The summary statistics for experiment D are also included in table~\ref{table:sum_stats}.
 
 In Figure S11 we show the prior model trajectory and observations of daytime NEE for 2012-2013, this is the period in which the prior model was calibrated.
 
@@ -231,7 +235,7 @@ Figure S12 shows phenocam observations of green fraction taken at the Alice Holt
 %%Enter Data Set, Movie, and Audio captions here
 %%EXAMPLE CAPTIONS
 
-%\noindent\textbf{Data Set S1.} %Type or paste caption here.
+%\noindent\textbf{Table S1.} %Type or paste caption here.
 %upload your dataset(s) to AGU's journal submission site and select "Supporting Information (SI)" as the file type. Following naming %convention: ds01.
 
 %Repeat for any additional Supporting data sets
@@ -463,6 +467,30 @@ Figure S12 shows phenocam observations of green fraction taken at the Alice Holt
 % ---------------
 % EXAMPLE TABLE
 %
+\begin{table}[ht] 
+\settablenum{S1}
+	\caption{Fit to observations after data assimilation for experiments.}
+\begin{center}
+	\begin{tabular}{| l | l | l | l | l | l | l | l}
+	\hline
+	\multicolumn{7}{| c |}{Unthinned side} \\ \hline
+	& \multicolumn{2}{| c |}{NEE\(_{day}\)} & \multicolumn{2}{| c |}{NEE\(_{night}\)} & LAI & \(C_{woo}\) \\ \hline
+	Exp. & RMSE & \(r^2\) & RMSE & \(r^2\) & RMSE & RMSE  \\ \hline
+	A & 0.61 & 0.97 & 0.83 & 0.31 & 2.16 & 6361  \\ \hline
+	B & 0.75 & 0.90 & 0.93 & 0.64 & 0.04 & 5987  \\ \hline
+	C & 0.75 & 0.90 & 0.93 & 0.64 & 0.04 & 0.16  \\ \hline
+	D & 1.22 & 0.74 & 1.00 & 0.89 & 0.0004 & 0.19  \\ \hline
+	\multicolumn{7}{| c |}{Thinned side} \\ \hline
+	& \multicolumn{2}{| c |}{NEE\(_{day}\)} & \multicolumn{2}{| c |}{NEE\(_{night}\)} & LAI & \(C_{woo}\) \\ \hline
+	Exp. & RMSE & \(r^2\) & RMSE & \(r^2\) & RMSE & RMSE  \\ \hline
+	A & 0.63 & 0.97 & 0.54 & 0.33 & 0.55 & 2505  \\ \hline
+	B & 0.63 & 0.97 & 0.56 & 0.27 & 0.04 & 2241  \\ \hline
+	C & 0.63 & 0.97 & 0.56 & 0.27 & 0.04 & 0.07  \\ \hline
+	D & 1.24 & 0.88 & 0.60 & 0.17 & 0.001 & 0.07  \\ \hline
+	\end{tabular}
+	\label{table:sum_stats}
+\end{center} 
+\end{table}
 %\begin{table}
 %\settablenum{S1} %%Change number for each table
 %\caption{Time of the Transition Between Phase 1 and Phase 2\tablenotemark{a}}
