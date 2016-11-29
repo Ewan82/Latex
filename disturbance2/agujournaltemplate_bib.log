@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  28 NOV 2016 20:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  29 NOV 2016 07:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -621,17 +621,13 @@ Overfull \hbox (10.30779pt too wide) in paragraph at lines 224--225
 is sub-ject to thin-ning, whereby 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5]
 LaTeX Font Info:    Font shape `T1/ntxrx/bx/it' will be
 (Font)              scaled to size 10.0pt on input line 230.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]
-<thinned.pdf, id=31, 845.1575pt x 597.23125pt>
+ [5]
+<thinned.pdf, id=28, 845.1575pt x 597.23125pt>
 File: thinned.pdf Graphic file (type pdf)
  <use thinned.pdf>
 Package pdftex.def Info: thinned.pdf used on input line 241.
@@ -644,7 +640,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--242
 rived LAI for the Straits In-clo-sure at 50m in-ter-vals along three
  []
 
-[7 <./thinned.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
 Underfull \hbox (badness 10000) in paragraph at lines 255--255
 []\T1/ntxrx/m/n/10 Tree den-sity
  []
@@ -660,7 +659,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 255--255
  []
 
 
-Underfull \vbox (badness 2564) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./thinned.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
 Underfull \hbox (badness 10000) in paragraph at lines 270--270
@@ -669,16 +671,13 @@ NEE$[]$ and NEE$[]$ for East and West sides of the Straits
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9]
 Overfull \hbox (1.67pt too wide) in paragraph at lines 287--288
 \T1/ntxrx/m/n/10 roots ($\OML/ntxmi/m/it/10 C[]$\T1/ntxrx/m/n/10 ), fresh leaf 
 and fine root lit-ter ($\OML/ntxmi/m/it/10 C[]$\T1/ntxrx/m/n/10 ) and soil or-g
 anic mat-ter and coarse woody 
  []
 
-<dalec2diag.pdf, id=49, 758.835pt x 453.695pt>
+[9] <dalec2diag.pdf, id=49, 758.835pt x 453.695pt>
 File: dalec2diag.pdf Graphic file (type pdf)
  <use dalec2diag.pdf>
 Package pdftex.def Info: dalec2diag.pdf used on input line 291.
@@ -695,7 +694,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--292
 -po-si-tion fluxes, blue ar-rows rep-re-sent res-pi-ra-tion fluxes
  []
 
-[10 <./dalec2diag.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <./dalec2diag.pdf>]
 Overfull \hbox (9.46918pt too wide) detected at line 316
 \OML/ntxmi/m/it/10 NEE[] \U/ntxmia/m/it/10 = \OMS/ntxsy/m/n/10 ^^@\OML/ntxmi/m/
 it/10 GPP[]\U/ntxmia/m/it/10 }\OML/ntxmi/m/it/10 C[]; \U/ntxmia/m/it/10 	~ ý \O
@@ -708,7 +710,10 @@ txmi/m/it/10 ^^N[]^^R[]C[]e[]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-[13] <obs_compa.pdf, id=70, 925.05597pt x 635.97598pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+<obs_compa.pdf, id=70, 925.05597pt x 635.97598pt>
 File: obs_compa.pdf Graphic file (type pdf)
  <use obs_compa.pdf>
 Package pdftex.def Info: obs_compa.pdf used on input line 366.
@@ -759,12 +764,9 @@ t to ob-ser-va-tions for the prior model and all ex-per-i-ments af-ter
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15 <./obs_compa.pdf>] <flux_part.pdf, id=170, 909.99403pt x 624.30199pt>
+<flux_part.pdf, id=75, 909.99403pt x 624.30199pt>
 File: flux_part.pdf Graphic file (type pdf)
-
-<use flux_part.pdf>
+ <use flux_part.pdf>
 Package pdftex.def Info: flux_part.pdf used on input line 424.
 (pdftex.def)             Requested size: 397.48499pt x 272.69324pt.
 
@@ -779,7 +781,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 425--425
  line: cu-mu-la-tive ecosys-tem res-pi-ra-tion, dashed line:
  []
 
-<resp_partc.pdf, id=171, 910.01143pt x 623.0375pt>
+<resp_partc.pdf, id=76, 910.01143pt x 623.0375pt>
 File: resp_partc.pdf Graphic file (type pdf)
  <use resp_partc.pdf>
 Package pdftex.def Info: resp_partc.pdf used on input line 431.
@@ -796,9 +798,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 432--432
 ing be-tween to-tal au-totrophic res-pi-ra-tion and het-erotrophic
  []
 
-<xa_incc.pdf, id=172, 940.12791pt x 408.61095pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./obs_compa.pdf>] <xa_incc.pdf, id=172, 940.12791pt x 408.61095pt>
 File: xa_incc.pdf Graphic file (type pdf)
- <use xa_incc.pdf>
+
+<use xa_incc.pdf>
 Package pdftex.def Info: xa_incc.pdf used on input line 439.
 (pdftex.def)             Requested size: 317.9892pt x 138.20262pt.
 
@@ -807,18 +813,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 440--440
 -y-sis (pos-te-rior model) in-cre-ment []$[]$[] for the un-thinned
  []
 
-[16 <./obs_compc.pdf>]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17]
-[18] [19 <./flux_part.pdf>] [20 <./resp_partc.pdf> <./xa_incc.pdf
+ [16 <./obs_compc.pdf>] [17] [18 <./flux_part.pdf>] [19 <./resp_partc.pdf> <./x
+a_incc.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./xa_incc.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21
+ [20
 
 ]
 Overfull \hbox (0.78526pt too wide) in paragraph at lines 453--454
@@ -829,10 +835,10 @@ ntxrx/m/n/10 [2012] showed a large 56% con-tri-bu-tion of au-totrophic
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
+ [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
+ [22]
 LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
 (Font)              scaled to size 7.0pt on input line 601.
 LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
@@ -863,18 +869,18 @@ Overfull \hbox (1.30273pt too wide) in paragraph at lines 699--701
 rch Coun-cil (NE/K00705X/1) 
  []
 
-[24] [25] (./agujournaltemplate_bib.bbl
+[23] [24] (./agujournaltemplate_bib.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26
+ [25
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27]
+ [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28]
+ [27]
 Underfull \hbox (badness 1102) in paragraph at lines 229--233
 \T1/ntxrx/m/n/10 (2016), Un-der-stand-ing deep roots and their func-tions in ec
 osys-tems: an ad-vo- 
@@ -883,16 +889,16 @@ osys-tems: an ad-vo-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29]
+ [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]
+ [29]
 Underfull \hbox (badness 1199) in paragraph at lines 360--366
 []\T1/ntxrx/m/n/10 Zobitz, J. M., D. J. P. Moore, T. Quaife, B. H. Braswell, A.
  Berge-son, J. a. An- 
  []
 
-) [31] (./agujournaltemplate_bib.aux)
+) [30] (./agujournaltemplate_bib.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -904,7 +910,7 @@ Here is how much of TeX's memory you used:
  9479 multiletter control sequences out of 15000+600000
  93815 words of font info for 168 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 41i,14n,37p,2340b,415s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,14n,37p,2340b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2014/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/20
 14/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2014/tex
@@ -922,10 +928,10 @@ xlive/2014/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2
 dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on agujournaltemplate_bib.pdf (31 pages, 1146017 bytes).
+Output written on agujournaltemplate_bib.pdf (30 pages, 1143892 bytes).
 PDF statistics:
- 559 PDF objects out of 1000 (max. 8388607)
- 206 compressed objects within 3 object streams
+ 555 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
