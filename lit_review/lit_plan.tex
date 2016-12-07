@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 \usepackage[sort]{natbib}
 \usepackage{bm,amsmath,bbm,amsfonts,nicefrac,latexsym,amsmath,amsfonts,amsbsy,amscd,amsxtra,amsgen,amsopn,bbm,amsthm,amssymb,graphicx}
 \usepackage{fancyhdr}
@@ -15,19 +15,68 @@
 
 \maketitle
 
+\section{Introduction}
+
+This chapter reviews recent efforts in using data assimilation with carbon cycle models in order to improve current estimates of ecosystem carbon balance.
+
+\section{Data assimilation methods}
+Overview of what DA is, combining obs and models in an optimal way to improve estimates of the state of a system.
+
+\subsection{Best Linear Unbiased Estimate}
+
+(BLUE) introduce basic concept of DA for a linear Gaussian time-invariant system... will use this in Info Con chapter
+
+\subsection{3D-Var}
+
+BLUE \(\rightarrow\) 3D-Var
+
+\subsection{Sequential and Monte-Carlo approaches}
+
+Brief overview of these methods.
+
+\subsection{4D-Var}
+
+Brief but inclusive of all notation need for results chapter on information content
+
+\section{Applications to the carbon cycle}
+
+DA for NWP is considered a state estimation problem as the physics of the problem are well understood and therefore parameterisations should not change over time. For the C cycle DA is more of a joint parameter and state estimation problem with the vast majority of studies using DA to estimate both parameter and state variables for a given system. Parameters governing land surface C uptake can change over time with developing forest and disturbance events.  
+
+\subsection{Site-level applications}
+
+Many MCMC routines, at the global scale these will become increasing difficult to implement due to computational expense
+
+\subsection{Global inversions}
+
+adjoints used for faster optimisation... also allows for finding posterior error distributions and propagating these to future estimates [Scholze]
+
+Current efforts use a stepwise approach to assimilate different distinct data streams... this has been shown to not be optimal [MacBean]
+
+\subsection{Issues faced in C cycle DA}
+
 \begin{itemize}
-\item Importance of forest ecosystems to the carbon cycle and negating human induced climate change. The increasing number of available observations relevant to understanding the carbon balance of forests.
+\item Equifinality: Many different combinations of parameters and states able to recreate assimilated obs.
 
-\item Many efforts made to combine observations with models to improve our understanding of forest ecosystems, currently not clear which observations provide the most information. Different types of data assimilation.
+\item Information content in obs: In order to reduce the problem of equifinality it is important to combine as many distinct data streams as possible, it is of great importance that we understand the information content in potential new data streams so that we can focus efforts on campaigns that will add the most information possible to DA schemes. Important to understand what measurements best compliment EC data.
 
-\item In NWP many efforts made to understand the information content in different sets of observations. Use data assimilation scheme to assess the impact of different observations.
+\item Representation of prior and observational errors: Current DA schemes take a very simple approach to defining errors. Improving the representation of error in DA schemes will also help reduce the problem of equifinality.  
+\end{itemize}
 
-\item Currently in forest carbon model data assimilation schemes correlations between observation errors and background estimate errors have been ignored. It has been shown in NWP that this can lead to lose of information and unrealistic estimates.
+\section{Conclusion} 
 
-\item Some more stuff!
+Many efforts and much progress being made in the field of C cycle DA. Currently there are areas that need addressing... the specification of errors, information content in available and possible new data streams and continued application of DA to new problems involving the C cycle are all important areas for progress...
 
+%\begin{itemize}
+%\item Importance of forest ecosystems to the carbon cycle and negating human induced climate change. The increasing number of available observations relevant to understanding the carbon balance of forests.
 
-\end{itemize} 
+%\item Many efforts made to combine observations with models to improve our understanding of forest ecosystems, currently not clear which observations provide the most information. Different types of data assimilation.
+
+%\item In NWP many efforts made to understand the information content in different sets of observations. Use data assimilation scheme to assess the impact of different observations.
+
+%\item Currently in forest carbon model data assimilation schemes correlations between observation errors and background estimate errors have been ignored. It has been shown in NWP that this can lead to lose of information and unrealistic estimates.
+
+%\item Some more stuff!
+%\end{itemize} 
 
 
 

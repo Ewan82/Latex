@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  3 NOV 2016 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  5 DEC 2016 10:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -185,6 +185,14 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen115
 \Gin@req@width=\dimen116
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 137.
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip54
 \f@ncyO@elh=\skip55
@@ -320,12 +328,12 @@ e
 * \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -348,67 +356,108 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 18.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [1
-
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<ipcc_fig6_1.jpg, id=14, 574.0647pt x 501.7947pt>
+)
+<ipcc_fig6_1.jpg, id=1, 574.0647pt x 501.7947pt>
 File: ipcc_fig6_1.jpg Graphic file (type jpg)
  <use ipcc_fig6_1.jpg>
-Package pdftex.def Info: ipcc_fig6_1.jpg used on input line 35.
-(pdftex.def)             Requested size: 281.85587pt x 246.37158pt.
+Package pdftex.def Info: ipcc_fig6_1.jpg used on input line 31.
+(pdftex.def)             Requested size: 234.8775pt x 205.30838pt.
+ [1
 
-[2 <./ipcc_fig6_1.jpg>] <ipcc_fig6_8.jpg, id=19, 1254.6875pt x 1806.75pt>
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<ipcc_fig6_8.jpg, id=14, 1254.6875pt x 1806.75pt>
 File: ipcc_fig6_8.jpg Graphic file (type jpg)
-
-<use ipcc_fig6_8.jpg>
-Package pdftex.def Info: ipcc_fig6_8.jpg used on input line 58.
+ <use ipcc_fig6_8.jpg>
+Package pdftex.def Info: ipcc_fig6_8.jpg used on input line 42.
 (pdftex.def)             Requested size: 234.8775pt x 338.21342pt.
- [3 <./ipcc_fig6_8.jpg>]
-<FluxNetworkMODIS_IGBP_10-2015.png, id=23, 1228.59pt x 794.97pt>
+
+[2 <./ipcc_fig6_1.jpg>] <flux.pdf, id=19, 626.2919pt x 646.40422pt>
+File: flux.pdf Graphic file (type pdf)
+
+<use flux.pdf>
+Package pdftex.def Info: flux.pdf used on input line 58.
+(pdftex.def)             Requested size: 234.8775pt x 242.4207pt.
+ [3 <./ipcc_fig6_8.jpg>] [4 <./flux.pdf>]
+<FluxNetworkMODIS_IGBP_10-2015.png, id=45, 1228.59pt x 794.97pt>
 File: FluxNetworkMODIS_IGBP_10-2015.png Graphic file (type png)
 
 <use FluxNetworkMODIS_IGBP_10-2015.png>
-Package pdftex.def Info: FluxNetworkMODIS_IGBP_10-2015.png used on input line 7
+Package pdftex.def Info: FluxNetworkMODIS_IGBP_10-2015.png used on input line 8
 6.
 (pdftex.def)             Requested size: 422.77664pt x 273.56139pt.
- [4 <./FluxNetworkMODIS_IGBP_10-2015.png (PNG copy)>] <ipcc_fig6_16.jpg, id=27,
+ [5 <./FluxNetworkMODIS_IGBP_10-2015.png (PNG copy)>] <ipcc_fig6_16.jpg, id=49,
  948.54375pt x 712.6625pt>
 File: ipcc_fig6_16.jpg Graphic file (type jpg)
 
 <use ipcc_fig6_16.jpg>
-Package pdftex.def Info: ipcc_fig6_16.jpg used on input line 91.
+Package pdftex.def Info: ipcc_fig6_16.jpg used on input line 101.
 (pdftex.def)             Requested size: 422.77664pt x 317.63947pt.
- [5 <./ipcc_fig6_16.jpg>] (./intro.bbl
-Underfull \hbox (badness 1178) in paragraph at lines 11--21
-[]\OT1/cmr/m/n/10.95 C. Ba-cour, P. Peylin, N. MacBean, P. J. Rayner, F. De-lag
-e, F. Cheval-lier, M. Weiss,
+ [6 <./ipcc_fig6_16.jpg>] (./intro.bbl [7] [8]
+Underfull \hbox (badness 2486) in paragraph at lines 178--184
+[]\OT1/cmr/m/n/12 S. Niu, Y. Luo, M. C. Di-etze, T. F. Keenan, Z. Shi, J. Li, a
+nd F. S. C.
  []
 
-[6] [7] [8]) [9] (./intro.aux) ) 
+
+Underfull \hbox (badness 6188) in paragraph at lines 178--184
+\OT1/cmr/m/n/12 Iii.  The role of data as-sim-i-la-tion in pre-dic-tive ecol-og
+y.  \OT1/cmr/m/it/12 Eco-sphere\OT1/cmr/m/n/12 , 5
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--184
+\OT1/cmr/m/n/12 (5):art65, 2014.  ISSN 2150-8925.  doi: 10.1890/ES13-00273.1.  
+URL
+ []
+
+[9]
+Underfull \hbox (badness 6708) in paragraph at lines 293--303
+[]\OT1/cmr/m/n/12 J. M. Zo-b-itz, D. J. P. Moore, T. Quaife, B. H. Braswell, A.
+ Berge-son,
+ []
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 293--303
+\OT1/cmr/m/n/12 J. a. An-thony, and R. K. Mon-son.  Joint data as-sim-i-la-tion
+ of satel-lite re-
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 293--303
+\OT1/cmr/m/n/12 a high-elevation sub-alpine for-est.  \OT1/cmr/m/it/12 Agri-cul
+-tural and For-est Me-te-o-rol-ogy\OT1/cmr/m/n/12 , 195-196:
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 293--303
+\OT1/cmr/m/n/12 73--88, 2014.  ISSN 01681923.  doi: 10.1016/j.agrformet.2014.04
+.011.  URL
+ []
+
+[10]) [11] (./intro.aux) ) 
 Here is how much of TeX's memory you used:
- 3788 strings out of 493117
- 51542 string characters out of 6135433
- 125755 words of memory out of 5000000
- 7152 multiletter control sequences out of 15000+600000
- 15365 words of font info for 59 fonts, out of 8000000 for 9000
+ 3855 strings out of 493117
+ 52507 string characters out of 6135433
+ 125667 words of memory out of 5000000
+ 7209 multiletter control sequences out of 15000+600000
+ 18471 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,43p,1409b,268s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmtt10.pfb>
-Output written on intro.pdf (9 pages, 5523897 bytes).
+ 38i,7n,43p,2049b,290s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mtt12.pfb>
+Output written on intro.pdf (11 pages, 5737893 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 104 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
