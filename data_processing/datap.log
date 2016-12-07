@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  7 DEC 2016 14:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  7 DEC 2016 16:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -386,48 +386,86 @@ File: straitsmap_threet_10m.png Graphic file (type png)
 <use straitsmap_threet_10m.png>
 Package pdftex.def Info: straitsmap_threet_10m.png used on input line 36.
 (pdftex.def)             Requested size: 469.75502pt x 241.92549pt.
+ <291E.jpg, id=4, 4047.12pt x 3035.34pt>
+File: 291E.jpg Graphic file (type jpg)
+
+<use 291E.jpg>
+Package pdftex.def Info: 291E.jpg used on input line 42.
+(pdftex.def)             Requested size: 375.80544pt x 281.82982pt.
  [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./AP1_2
-013.jpg>]
-<AH_PAR.pdf, id=13, 650.43pt x 539.01375pt>
+013.jpg>] [2 <./straitsmap_threet_10m.png> <./291E.jpg>]
+<AH_PAR.pdf, id=18, 650.43pt x 539.01375pt>
 File: AH_PAR.pdf Graphic file (type pdf)
  <use AH_PAR.pdf>
-Package pdftex.def Info: AH_PAR.pdf used on input line 46.
+Package pdftex.def Info: AH_PAR.pdf used on input line 52.
 (pdftex.def)             Requested size: 375.80544pt x 311.43561pt.
 
-<lai_cept.pdf, id=14, 845.1575pt x 597.23125pt>
+<lai_cept.pdf, id=19, 845.1575pt x 597.23125pt>
 File: lai_cept.pdf Graphic file (type pdf)
  <use lai_cept.pdf>
-Package pdftex.def Info: lai_cept.pdf used on input line 52.
+Package pdftex.def Info: lai_cept.pdf used on input line 58.
 (pdftex.def)             Requested size: 375.80544pt x 265.57114pt.
 
-<043exp2.jpg, id=15, 4769.82pt x 3179.88pt>
+<043exp2.jpg, id=20, 4769.82pt x 3179.88pt>
 File: 043exp2.jpg Graphic file (type jpg)
  <use 043exp2.jpg>
-Package pdftex.def Info: 043exp2.jpg used on input line 62.
+Package pdftex.def Info: 043exp2.jpg used on input line 68.
 (pdftex.def)             Requested size: 211.3883pt x 140.90498pt.
 
-<252exp1.jpg, id=16, 4769.82pt x 3179.88pt>
+<252exp1.jpg, id=21, 4769.82pt x 3179.88pt>
 File: 252exp1.jpg Graphic file (type jpg)
  <use 252exp1.jpg>
-Package pdftex.def Info: 252exp1.jpg used on input line 68.
+Package pdftex.def Info: 252exp1.jpg used on input line 74.
 (pdftex.def)             Requested size: 211.3883pt x 140.90498pt.
- [2 <./straitsmap_threet_10m.png>] [3 <./AH_PAR.pdf> <./lai_cept.pdf>] [4 <./04
-3exp2.jpg> <./252exp1.jpg>]
-No file datap.bbl.
-[5
 
-] (./datap.aux)
+<litter_trap.pdf, id=22, 845.1575pt x 597.23125pt>
+File: litter_trap.pdf Graphic file (type pdf)
+ <use litter_trap.pdf>
+Package pdftex.def Info: litter_trap.pdf used on input line 86.
+(pdftex.def)             Requested size: 375.80544pt x 265.57114pt.
+
+<thinned07.pdf, id=23, 951.34486pt x 531.81657pt>
+File: thinned07.pdf Graphic file (type pdf)
+ <use thinned07.pdf>
+Package pdftex.def Info: thinned07.pdf used on input line 95.
+(pdftex.def)             Requested size: 375.80544pt x 210.08553pt.
+
+<thinned14.pdf, id=24, 951.34486pt x 531.81657pt>
+File: thinned14.pdf Graphic file (type pdf)
+ <use thinned14.pdf>
+Package pdftex.def Info: thinned14.pdf used on input line 101.
+(pdftex.def)             Requested size: 375.80544pt x 210.08553pt.
+ [3
+
+ <./AH_PAR.pdf>] [4 <./lai_cept.pdf> <./043exp2.jpg> <./252exp1.jpg>] [5 <./lit
+ter_trap.pdf> <./thinned07.pdf>] [6 <./thinned14.pdf>]
+<dbh_me.pdf, id=142, 500.87125pt x 375.4025pt>
+File: dbh_me.pdf Graphic file (type pdf)
+ <use dbh_me.pdf>
+Package pdftex.def Info: dbh_me.pdf used on input line 109.
+(pdftex.def)             Requested size: 375.80544pt x 281.6772pt.
+
+<top_of_flux.pdf, id=143, 539.01375pt x 405.515pt>
+File: top_of_flux.pdf Graphic file (type pdf)
+ <use top_of_flux.pdf>
+Package pdftex.def Info: top_of_flux.pdf used on input line 117.
+(pdftex.def)             Requested size: 375.80544pt x 282.73239pt.
+
+No file datap.bbl.
+[7
+
+ <./dbh_me.pdf>] [8 <./top_of_flux.pdf>] (./datap.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4784 strings out of 493117
- 69015 string characters out of 6135433
- 136085 words of memory out of 5000000
- 8141 multiletter control sequences out of 15000+600000
+ 4820 strings out of 493117
+ 69586 string characters out of 6135433
+ 136134 words of memory out of 5000000
+ 8171 multiletter control sequences out of 15000+600000
  14851 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,7n,43p,594b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -438,10 +476,10 @@ usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
 local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
 al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on datap.pdf (5 pages, 13232039 bytes).
+Output written on datap.pdf (8 pages, 17510013 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 196 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
