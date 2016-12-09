@@ -4,7 +4,7 @@
 \usepackage{fancyhdr}
 \usepackage[margin=1.0in]{geometry}
 
-\title{Literature Review Plan}
+\title{Data assimilation with carbon cycle models}
 \author{Ewan Pinnington}
 
 \newtheorem{theorem}{Theorem}[section]
@@ -20,23 +20,31 @@
 This chapter reviews recent efforts in using data assimilation with carbon cycle models in order to improve current estimates of ecosystem carbon balance.
 
 \section{Data assimilation methods}
-Overview of what DA is, combining obs and models in an optimal way to improve estimates of the state of a system.
 
-\subsection{Best Linear Unbiased Estimate}
+Data assimilation provides techniques for combining observations and prior knowledge of a system in an optimal way to find a consistent solution referred to as the analysis. The prior knowledge of a system often takes the form of a numerical model and an initial guess of the model state/parameters. Many statistical methods have been developed for data assimilation. These methods can largely be categorised as either sequential or variational. Sequential algorithms solve the system of equations needed to find an optimal solution explicitly at each observation time. Variational methods solve the equations needed for an optimal solution implicitly by minimising a cost function for all available observations over some time window. This thesis is mainly concerned with the variational technique of four-dimensional variational data assimilation (4D-Var). The majority of applications of data assimilation with ecosystem carbon balance models have used other sequential and variational techniques. In the next sections we give a general introduction to data assimilation, then expand this to 4D-Var and finally we briefly discuss other data assimilation methods not directly used in this thesis but applicable to subsequent discussion. 
+
+\subsection{Introduction to data assimilation}
+
+We consider a system that can be described by a numerical model with a true model state \(\textbf{x}^{t} \in \mathbb{R}^{n}\). The initial guess to this model state (often referred to as the prior or background) \(\textbf{x}^{b} \in \mathbb{R}^{n}\) and observations of the system \(\textbf{y} \in \mathbb{R}^{m}\) will only be approximations to the true system state, such that
+\begin{equation}
+\textbf{x}^{b} = \textbf{x}^{t} + \bm{\epsilon}^{b},
+\end{equation} 
+\begin{equation}
+\textbf{y} = h(\textbf{x}^{t}) + \bm{\epsilon}^{o},
+\end{equation} 
+where \( \bm{\epsilon}^{b}\) and \( \bm{\epsilon}^{o}\) are the prior and observation errors respectively, and \(h: \mathbb{R}^n\rightarrow \mathbb{R}^{m}\) is the observation operator mapping the state to the observations. The errors in the prior and observations are assumed to be unbiased and mutually independent with know covariance matrices \(\textbf{B} = \mathbb{E}[\bm{\epsilon}^{b}(\bm{\epsilon}^{b})^{T}]\) and \(\textbf{R} = \mathbb{E}[\bm{\epsilon}^{o}(\bm{\epsilon}^{o})^{T}]\).  
 
 (BLUE) introduce basic concept of DA for a linear Gaussian time-invariant system... will use this in Info Con chapter
 
-\subsection{3D-Var}
-
 BLUE \(\rightarrow\) 3D-Var
-
-\subsection{Sequential and Monte-Carlo approaches}
-
-Brief overview of these methods.
 
 \subsection{4D-Var}
 
 *Brief* but inclusive of all notation need for results chapter on information content
+
+\subsection{Sequential and Monte-Carlo approaches}
+
+Brief overview of these methods.
 
 \section{Applications to the carbon cycle}
 
