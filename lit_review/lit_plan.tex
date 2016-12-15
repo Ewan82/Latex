@@ -21,22 +21,68 @@ This chapter reviews recent efforts in using data assimilation with carbon cycle
 
 \section{Data assimilation methods}
 
-Data assimilation provides techniques for combining observations and prior knowledge of a system in an optimal way to find a consistent solution referred to as the analysis. The prior knowledge of a system often takes the form of a numerical model and an initial guess of the model state/parameters. Many statistical methods have been developed for data assimilation. These methods can largely be categorised as either sequential or variational. Sequential algorithms solve the system of equations needed to find an optimal solution explicitly at each observation time. Variational methods solve the equations needed for an optimal solution implicitly by minimising a cost function for all available observations over some time window. This thesis is mainly concerned with the variational technique of four-dimensional variational data assimilation (4D-Var). The majority of applications of data assimilation with ecosystem carbon balance models have used other sequential and variational techniques. In the next sections we give a general introduction to data assimilation, then expand this to 4D-Var and finally we briefly discuss other data assimilation methods not directly used in this thesis but applicable to subsequent discussion. 
+Data assimilation provides techniques for combining observations and prior knowledge of a system in an optimal way to find a consistent solution referred to as the analysis. The prior knowledge of a system often takes the form of a numerical model and an initial guess of the model state/parameters. Many statistical methods have been developed for data assimilation. These methods can largely be categorised as either sequential or variational. Sequential algorithms solve the system of equations needed to find an optimal solution explicitly at each observation time. Variational methods solve the equations needed for an optimal solution implicitly by minimising a cost function for all available observations over some time window. This thesis is mainly concerned with the variational technique of four-dimensional variational data assimilation (4D-Var). In numerical weather prediction data assimilation has been predominately used for state estimation whilst keeping parameters fixed. This is because numerical weather prediction is mainly dependent on the initial state with model physics being well understood. Ecosystem carbon cycle models are more dependent on finding the correct set of parameters to describe the ecosystem of interest \citep{luo2015predictability}. We therefore discuss data assimilation for joint state and parameter estimation. In the next sections we give a general introduction to data assimilation, then expand this to 4D-Var and finally we briefly discuss other data assimilation methods not directly used in this thesis but applicable to subsequent discussion. 
 
 \subsection{Introduction to data assimilation}
 
-We consider a system that can be described by a numerical model with a true model state \(\textbf{x}^{t} \in \mathbb{R}^{n}\). The initial guess to this model state (often referred to as the prior or background) \(\textbf{x}^{b} \in \mathbb{R}^{n}\) and observations of the system \(\textbf{y} \in \mathbb{R}^{m}\) will only be approximations to the true system state, such that
+We consider a system that can be described by a numerical model with a true model state \(\textbf{z}^{t} \in \mathbb{R}^{n}\) and true parameters \(\textbf{p}^{t} \in \mathbb{R}^{q}\). We then define the true augmented state as
 \begin{equation}
-\textbf{x}^{b} = \textbf{x}^{t} + \bm{\epsilon}^{b},
+\textbf{x}^{t} =
+\begin{pmatrix}
+\textbf{p}^{t} \\
+\textbf{z}^{t}
+\end{pmatrix}
+\in \mathbb{R}^{q+n}.
+\end{equation}
+The initial guess to this model augmented state \(\textbf{x}^{b} \in \mathbb{R}^{q+n}\) (often referred to as the prior or background) and observations of the system \(\textbf{y} \in \mathbb{R}^{m}\) will only be approximations to the true system state, such that
+\begin{equation}
+\textbf{x}^{b} = \textbf{x}^{t} + \bm{\epsilon}^{b}, \label{eqn:xb}
 \end{equation} 
 \begin{equation}
-\textbf{y} = h(\textbf{x}^{t}) + \bm{\epsilon}^{o},
+\textbf{y} = h(\textbf{x}^{t}) + \bm{\epsilon}^{o}, \label{eqn:y}
 \end{equation} 
-where \( \bm{\epsilon}^{b}\) and \( \bm{\epsilon}^{o}\) are the prior and observation errors respectively, and \(h: \mathbb{R}^n\rightarrow \mathbb{R}^{m}\) is the observation operator mapping the state to the observations. The errors in the prior and observations are assumed to be unbiased and mutually independent with know covariance matrices \(\textbf{B} = \mathbb{E}[\bm{\epsilon}^{b}(\bm{\epsilon}^{b})^{T}]\) and \(\textbf{R} = \mathbb{E}[\bm{\epsilon}^{o}(\bm{\epsilon}^{o})^{T}]\).  
+where \( \bm{\epsilon}^{b}\) and \( \bm{\epsilon}^{o}\) are the prior and observation errors respectively, and \(h: \mathbb{R}^{q+n}\rightarrow \mathbb{R}^{m}\) is the observation operator (can be linear or non-linear) mapping the augmented state to the observations. The errors in the prior and observations are assumed to be unbiased and mutually independent with known covariance matrices \(\textbf{B} = \mathbb{E}[\bm{\epsilon}^{b}(\bm{\epsilon}^{b})^{T}]\) and \(\textbf{R} = \mathbb{E}[\bm{\epsilon}^{o}(\bm{\epsilon}^{o})^{T}]\).
 
-(BLUE) introduce basic concept of DA for a linear Gaussian time-invariant system... will use this in Info Con chapter
+The best estimate to \(\textbf{x}^{t}\) satisfying both equation~\eqref{eqn:xb} and \eqref{eqn:y} is often called the analysis or the maximum a posteriori estimate, here denoted \(\textbf{x}^{a}\). It is possible to derive this analysis by applying Bayesian methods to probability density functions. Bayes' theorem, first discussed in \citet{mr1763essay} but formalised by \citet{laplace1781memoire}, states that the posterior probability of event A given that event B occurs, is proportional to the prior probability of A multiplied by the probability of event B given that event A occurs, this can be expressed mathematically as
+\begin{equation}
+\mathbb{P}(A|B) \propto \mathbb{P}(A)\mathbb{P}(B|A). \label{eqn:bayes}
+\end{equation}
+For data assimilation event A represents the augmented state of the system \(\textbf{x}\) and event B the observations \(\textbf{y}\). Maximising the probability \(\mathbb{P}(A|B)\) is then equivalent to finding the augmented state that best represents the observations. 
 
-BLUE \(\rightarrow\) 3D-Var
+If we make the assumption of Gaussian probability density functions (pdf) with
+\begin{equation}
+\mathbb{P}^{b}(\textbf{x}) = \frac{1}{\sqrt{|2\pi\textbf{B}|}}\text{exp}\big(-\frac{1}{2}(\textbf{x}-\textbf{x}^{b})^{T}\textbf{B}^{-1}(\textbf{x}-\textbf{x}^{b})\big)
+\end{equation}
+and
+\begin{equation}
+\mathbb{P}^{o}(\textbf{y}|\textbf{x}) = \frac{1}{\sqrt{|2\pi\textbf{R}|}}\text{exp}\big(-\frac{1}{2}(\textbf{y}-h(\textbf{x}))^{T}\textbf{R}^{-1}(\textbf{y}-h(\textbf{x}))\big),
+\end{equation}
+where \(\mathbb{P}^{b}(\textbf{x})\) is the pdf for the prior and \(\mathbb{P}^{o}(\textbf{y}|\textbf{x})\) the pdf of the observations given the augmented state. Then from Bayes' theorem (equation~\eqref{eqn:bayes}) the posterior pdf for the augmented state
+\begin{equation}
+\begin{split}
+\mathbb{P}^{a}(\textbf{x}|\textbf{y}) &\propto \frac{1}{\sqrt{|2\pi\textbf{B}|}\sqrt{|2\pi\textbf{R}|}}\text{exp}\big(-\frac{1}{2}(\textbf{x}-\textbf{x}^{b})^{T}\textbf{B}^{-1}(\textbf{x}-\textbf{x}^{b})-\frac{1}{2}(\textbf{y}-h(\textbf{x}))^{T}\textbf{R}^{-1}(\textbf{y}-h(\textbf{x}))\big) \\
+&\propto \text{exp}\big(-\frac{1}{2}(\textbf{x}-\textbf{x}^{b})^{T}\textbf{B}^{-1}(\textbf{x}-\textbf{x}^{b})-\frac{1}{2}(\textbf{y}-h(\textbf{x}))^{T}\textbf{R}^{-1}(\textbf{y}-h(\textbf{x}))\big), \label{eqn:p_x_y}
+\end{split}
+\end{equation} 
+here we can ignore the constant multiplying the exponential function as it is independent of \textbf{x}. We want to maximise the probability of the augmented state \textbf{x} given the observations \textbf{y}, from equation~\eqref{eqn:p_x_y} we can see that to maximise \(\mathbb{P}^{a}(\textbf{x}|\textbf{y})\) we must maximise the terms in the exponent, this is equivalent to minimising the quadratic cost function 
+\begin{equation}
+J(\textbf{x}) = \frac{1}{2}(\textbf{x}-\textbf{x}^{b})^{T}\textbf{B}^{-1}(\textbf{x}-\textbf{x}^{b}) + \frac{1}{2}(\textbf{y}-h(\textbf{x}))^{T}\textbf{R}^{-1}(\textbf{y}-h(\textbf{x})). \label{eqn:3dvar}
+\end{equation}
+This is the cost function minimised in three-dimensional variational data assimilation (3D-Var), where the minimum is found using a descent algorithm evaluating equation~\eqref{eqn:3dvar} and its gradient \citep{courtier1998ecmwf}. We can approximate the minimum of \eqref{eqn:3dvar} by finding its gradient and setting it to zero to obtain the best linear unbiased estimate (BLUE) \citep{talagrand1997assimilation} where
+\begin{equation}
+\textbf{x}^{a} = \textbf{x}^{b} + \textbf{K}(\textbf{y} - h(\textbf{x}^{b})), \label{eqn:blue}
+\end{equation}
+\begin{equation}
+\textbf{K} = \textbf{B}\textbf{H}^{T}(\textbf{H}\textbf{B}\textbf{H}^{T}+\textbf{R})^{-1},
+\end{equation}
+where \textbf{K} is the Kalman gain matrix specifying the weight of the analysis increment and \(\textbf{H}=\frac{\partial h(\textbf{x})}{\partial \textbf{x}}\) is the linearised observation operator. We can also approximate the analysis error covariance matrix as
+\begin{equation}
+\textbf{A} = (\textbf{H}^{T}\textbf{R}^{-1}\textbf{H}+\textbf{B}^{-1})^{-1}, \label{eqn:a_cov}
+\end{equation}
+if \( h \) is linear then \eqref{eqn:blue} and \eqref{eqn:a_cov} are exact solutions.
+%(BLUE) introduce basic concept of DA for a linear Gaussian time-invariant system... will use this in Info Con chapter
+
+%BLUE \(\rightarrow\) 3D-Var
 
 \subsection{4D-Var}
 
@@ -45,6 +91,8 @@ BLUE \(\rightarrow\) 3D-Var
 \subsection{Sequential and Monte-Carlo approaches}
 
 Brief overview of these methods.
+
+Sequential algorithms approximate the BLUE formula to update the model trajectory at each observation time. 
 
 \section{Applications to the carbon cycle}
 
@@ -86,6 +134,7 @@ Many efforts and much progress being made in the field of C cycle DA. Currently 
 %\item Some more stuff!
 %\end{itemize} 
 
-
+\bibliographystyle{abbrvnat}
+\bibliography{../PhD}{}
 
 \end{document}
