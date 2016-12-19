@@ -86,7 +86,67 @@ if \( h \) is linear then \eqref{eqn:blue} and \eqref{eqn:a_cov} are exact solut
 
 \subsection{4D-Var}
 
-*Brief* but inclusive of all notation need for results chapter on information content
+%*Brief* but inclusive of all notation need for results chapter on information content
+4D-Var extends 3D-Var to allow for the assimilation of observations distributed throughout some time interval \(t_{0}\) to \(t_{N}\). In 4D-Var we minimise the cost function,
+
+\begin{equation}
+J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}\sum_{i=0}^{N}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i))^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i)),
+\end{equation}
+
+to obtain the analysis \(\textbf{x}_{a}\), subject to the strong constraint that the model states (\(\textbf{x}_0, \dots, \textbf{x}_N\)) must satisfy the model equations,
+
+\begin{equation}
+\textbf{x}_{i} = \textbf{m}_{i-1 \rightarrow i}(\textbf{x}_{i-1}), \label{eqn:nonlinmod}
+\end{equation}
+
+where 
+
+\begin{equation}
+J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_0))^{T}\hat{\textbf{R}}^{-1}(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_0)) \label{costfn}
+\end{equation}
+
+
+where,
+
+\begin{equation}
+\begin{split}
+\hat{\textbf{y}} &=
+\begin{pmatrix}
+\textbf{y}_0 \\
+\textbf{y}_1\\
+\vdots \\
+\textbf{y}_N
+\end{pmatrix},
+\hspace{1mm}
+\hat{\textbf{h}}(\textbf{x}_0)=
+\begin{pmatrix}
+\textbf{h}_0(\textbf{x}_0) \\
+\textbf{h}_1(\textbf{m}_{0\rightarrow 1}(\mathbf{x}_{0}))\\
+\vdots \\
+\textbf{h}_N(\textbf{m}_{0\rightarrow N}(\mathbf{x}_{0}))
+\end{pmatrix}, \\
+\hspace{1mm}
+\hat{\mathbf{R}} &=
+\begin{pmatrix}
+\mathbf{R}_{0, 0} & \mathbf{R}_{0, 1} & \dots & \mathbf{R}_{0, N} \\
+\mathbf{R}_{1, 0} & \mathbf{R}_{1, 1} & \dots & \mathbf{R}_{1, N} \\
+\vdots & \vdots & \ddots & \vdots \\
+\mathbf{R}_{N, 0} & \mathbf{R}_{N, 1} & \dots & \mathbf{R}_{N, N}
+\end{pmatrix}
+\hspace{1mm} \text{and} \hspace{3mm}
+\hat{\mathbf{H}}=
+\begin{pmatrix}
+\mathbf{H}_0 \\
+\mathbf{H}_1\mathbf{M}_0\\
+\vdots \\
+\mathbf{H}_N\mathbf{M}_{N,0}
+\end{pmatrix}.
+\end{split}
+\end{equation}
+
+\begin{equation}
+\textbf{A} = (\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}\hat{\textbf{H}}+\textbf{B}^{-1})^{-1}, \label{eqn:a_cov_4dvar}
+\end{equation}
 
 \subsection{Sequential and Monte-Carlo approaches}
 
