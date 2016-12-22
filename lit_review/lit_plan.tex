@@ -43,7 +43,7 @@ The initial guess to this model augmented state \(\textbf{x}^{b} \in \mathbb{R}^
 \end{equation} 
 where \( \bm{\epsilon}^{b}\) and \( \bm{\epsilon}^{o}\) are the prior and observation errors respectively, and \(h: \mathbb{R}^{q+n}\rightarrow \mathbb{R}^{m}\) is the observation operator (can be linear or non-linear) mapping the augmented state to the observations. The errors in the prior and observations are assumed to be unbiased and mutually independent with known covariance matrices \(\textbf{B} = \mathbb{E}[\bm{\epsilon}^{b}(\bm{\epsilon}^{b})^{T}]\) and \(\textbf{R} = \mathbb{E}[\bm{\epsilon}^{o}(\bm{\epsilon}^{o})^{T}]\).
 
-The best estimate to \(\textbf{x}^{t}\) satisfying both equation~\eqref{eqn:xb} and \eqref{eqn:y} is often called the analysis or the maximum a posteriori estimate, here denoted \(\textbf{x}^{a}\). It is possible to derive this analysis by applying Bayesian methods to probability density functions. Bayes' theorem, first discussed in \citet{mr1763essay} but formalised by \citet{laplace1781memoire}, states that the posterior probability of event A given that event B occurs, is proportional to the prior probability of A multiplied by the probability of event B given that event A occurs, this can be expressed mathematically as
+The best estimate to \(\textbf{x}^{t}\) satisfying both equation~\eqref{eqn:xb} and \eqref{eqn:y} is often called the analysis or the maximum a posteriori estimate, here denoted \(\textbf{x}^{a}\). It is possible to derive this analysis by applying Bayesian methods to probability density functions. Bayes' theorem, first discussed in \citet{bayes1763} but formalised by \citet{laplace1781memoire}, states that the posterior probability of event A given that event B occurs, is proportional to the prior probability of A multiplied by the probability of event B given that event A occurs, this can be expressed mathematically as
 \begin{equation}
 \mathbb{P}(A|B) \propto \mathbb{P}(A)\mathbb{P}(B|A). \label{eqn:bayes}
 \end{equation}
@@ -87,19 +87,19 @@ if \( h \) is linear then \eqref{eqn:blue} and \eqref{eqn:a_cov} are exact solut
 \subsection{4D-Var}
 
 %*Brief* but inclusive of all notation need for results chapter on information content
-4D-Var extends 3D-Var to allow for the assimilation of observations distributed throughout some time interval \(t_{0}\) to \(t_{N}\). In 4D-Var we minimise the cost function,
+4D-Var extends 3D-Var to allow for the assimilation of observations distributed throughout some time interval \(t_{0}\) to \(t_{N}\). \citet{Sasaki70somebasic} proposed a method for combining a time series of observations with a numerical model, this was then further developed for use in numerical weather prediction \citep{dimet1986variational}. In 4D-Var we minimise the cost function,
 
 \begin{equation}
-J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}\sum_{i=0}^{N}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i))^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i)),
+J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}\sum_{i=0}^{N}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i))^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i)), \label{eqn:4dvar_cost}
 \end{equation}
 
-to obtain the analysis \(\textbf{x}_{a}\), subject to the strong constraint that the model states (\(\textbf{x}_0, \dots, \textbf{x}_N\)) must satisfy the model equations,
+to obtain the analysis \(\textbf{x}^{a}_{0}\), valid at the initial time \(t_{0}\), subject to the strong constraint that the model states (\(\textbf{x}_0, \dots, \textbf{x}_N\)) must satisfy the model equations,
 
 \begin{equation}
 \textbf{x}_{i} = \textbf{m}_{i-1 \rightarrow i}(\textbf{x}_{i-1}), \label{eqn:nonlinmod}
 \end{equation}
 
-where 
+where \(\textbf{x}_{i}\) is the model augmented state at time \(t_i\), \(\textbf{m}_{i-1 \rightarrow i}\) is the possibly nonlinear augmented system model evolving \(\textbf{x}_{i-1}\) from time \(t_{i-1}\) to time \(t_i\), \(\textbf{y}_i\) is the vector of observations at time \(t_i\), and \(h_i\) is the observation operator at time \(t_i\). We can rewrite equation~\eqref{eqn:4dvar:cost} to avoid the sum notation as
 
 \begin{equation}
 J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_0))^{T}\hat{\textbf{R}}^{-1}(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_0)) \label{costfn}
@@ -109,8 +109,7 @@ J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\tex
 where,
 
 \begin{equation}
-\begin{split}
-\hat{\textbf{y}} &=
+\hat{\textbf{y}} =
 \begin{pmatrix}
 \textbf{y}_0 \\
 \textbf{y}_1\\
@@ -125,15 +124,21 @@ where,
 \vdots \\
 \textbf{h}_N(\textbf{m}_{0\rightarrow N}(\mathbf{x}_{0}))
 \end{pmatrix}, \\
-\hspace{1mm}
-\hat{\mathbf{R}} &=
+\hspace{1mm} \text{and} \hspace{3mm}
+\hat{\mathbf{R}} =
 \begin{pmatrix}
 \mathbf{R}_{0, 0} & \mathbf{R}_{0, 1} & \dots & \mathbf{R}_{0, N} \\
 \mathbf{R}_{1, 0} & \mathbf{R}_{1, 1} & \dots & \mathbf{R}_{1, N} \\
 \vdots & \vdots & \ddots & \vdots \\
 \mathbf{R}_{N, 0} & \mathbf{R}_{N, 1} & \dots & \mathbf{R}_{N, N}
-\end{pmatrix}
-\hspace{1mm} \text{and} \hspace{3mm}
+\end{pmatrix}.
+\end{equation}
+For 4D-Var we approximate the analysis error covariance matrix as
+\begin{equation}
+\textbf{A} = (\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}\hat{\textbf{H}}+\textbf{B}^{-1})^{-1}, \label{eqn:a_cov_4dvar}
+\end{equation}
+where \(\hat{\textbf{H}}\) is that observability matrix given by
+\begin{equation}
 \hat{\mathbf{H}}=
 \begin{pmatrix}
 \mathbf{H}_0 \\
@@ -141,13 +146,7 @@ where,
 \vdots \\
 \mathbf{H}_N\mathbf{M}_{N,0}
 \end{pmatrix}.
-\end{split}
 \end{equation}
-
-\begin{equation}
-\textbf{A} = (\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}\hat{\textbf{H}}+\textbf{B}^{-1})^{-1}, \label{eqn:a_cov_4dvar}
-\end{equation}
-
 \subsection{Sequential and Monte-Carlo approaches}
 
 Brief overview of these methods.
