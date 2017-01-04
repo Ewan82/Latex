@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{53}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -164,13 +164,6 @@ Kurz, W.~A., C.~Dymond, G.~Stinson, G.~Rampley, E.~Neilson, A.~Carroll,
   T.~Ebata, and L.~Safranyik (2008), Mountain pine beetle and forest carbon
   feedback to climate change, \textit{Nature}, \textit{452}(7190), 987--990.
 
-\bibitem[{\textit{Lawless}(2013)}]{lawless2013}
-Lawless, A.~S. (2013), Variational data assimilation for very large
-  environmental problems., in \textit{Large scale Inverse Problems:
-  Computational Methods and Applications in the Earth Sciences, Radon series on
-  Computational and Applied Mathematics}, edited by M.~J.~P. Cullen, M.~A.
-  Freitag, S.~Kindermann, and R.~Scheichl, pp. 55--90, De Gruyter.
-
 \bibitem[{\textit{Liu et~al.}(2011)\textit{Liu, Bond-Lamberty, Hicke, Vargas,
   Zhao, Chen, Edburg, Hu, Liu, McGuire, Xiao, Keane, Yuan, Tang, Luo, Potter,
   and Oeding}}]{JGRG:JGRG779}
@@ -187,13 +180,6 @@ Liu, S., B.~Bond-Lamberty, J.~A. Hicke, R.~Vargas, S.~Zhao, J.~Chen, S.~L.
 McKay, H., J.~Hudson, and R.~Hudson (2003), Woodfuel resource in britain,
   \textit{Forestry Commission Report}.
 
-\bibitem[{\textit{Mizunuma et~al.}(2013)\textit{Mizunuma, Wilkinson, L~Eaton,
-  Mencuccini, IL~Morison, and Grace}}]{mizunuma2013relationship}
-Mizunuma, T., M.~Wilkinson, E.~L~Eaton, M.~Mencuccini, J.~IL~Morison, and
-  J.~Grace (2013), The relationship between carbon dioxide uptake and canopy
-  colour from two camera systems in a deciduous forest in southern england,
-  \textit{Functional Ecology}, \textit{27}(1), 196--207.
-
 \bibitem[{\textit{Moore et~al.}(2013)\textit{Moore, Trahan, Wilkes, Quaife,
   Stephens, Elder, Desai, Negron, and Monson}}]{ELE:ELE12097}
 Moore, D. J.~P., N.~A. Trahan, P.~Wilkes, T.~Quaife, B.~B. Stephens, K.~Elder,
@@ -208,6 +194,19 @@ Moreaux, V., {\'E}.~Lamaud, A.~Bosc, J.-M. Bonnefond, B.~E. Medlyn, and
   over two young maritime pine stands (pinus pinaster ait.): effects of
   thinning and weeding in the early stage of tree growth, \textit{Tree
   physiology}, p. tpr048.
+
+\bibitem[{\textit{Morecroft et~al.}(2003)\textit{Morecroft, Stokes, and
+  Morison}}]{Morecroft2003}
+Morecroft, M.~D., V.~J. Stokes, and J.~I.~L. Morison (2003), Seasonal changes
+  in the photosynthetic capacity of canopy oak (quercus robur) leaves: the
+  impact of slow development on annual carbon uptake, \textit{International
+  Journal of Biometeorology}, \textit{47}(4), 221--226,
+  \doi{10.1007/s00484-003-0173-3}.
+
+\bibitem[{\textit{Navon}(1998)}]{navon1998practical}
+Navon, I. (1998), Practical and theoretical aspects of adjoint parameter
+  estimation and identifiability in meteorology and oceanography,
+  \textit{Dynamics of Atmospheres and Oceans}, \textit{27}(1), 55--79.
 
 \bibitem[{\textit{Niu et~al.}(2014)\textit{Niu, Luo, Dietze, Keenan, Shi, Li,
   and Iii}}]{Niu2014}
@@ -254,6 +253,13 @@ Raupach, M., P.~Rayner, D.~Barrett, R.~DeFries, M.~Heimann, D.~Ojima,
   carbon observation: methods, data requirements and data uncertainty
   specifications, \textit{Global Change Biology}, \textit{11}(3), 378--397.
 
+\bibitem[{\textit{Reich et~al.}(1991)\textit{Reich, Walters, and
+  Ellsworth}}]{reich1991leaf}
+Reich, P.~B., M.~B. Walters, and D.~S. Ellsworth (1991), Leaf age and season
+  influence the relationships between leaf nitrogen, leaf mass per area and
+  photosynthesis in maple and oak trees, \textit{Plant, Cell \& Environment},
+  \textit{14}(3), 251--259, \doi{10.1111/j.1365-3040.1991.tb01499.x}.
+
 \bibitem[{\textit{Rich et~al.}(1999)\textit{Rich, Wood, Vieglais, Burek, and
   Webb}}]{rich1999hemiview}
 Rich, P.~M., J.~Wood, D.~Vieglais, K.~Burek, and N.~Webb (1999), Hemiview user
@@ -282,6 +288,14 @@ Richardson, A.~D., M.~Williams, D.~Y. Hollinger, D.~J. Moore, D.~B. Dail, E.~A.
 \bibitem[{\textit{Running}(2008)}]{running2008ecosystem}
 Running, S.~W. (2008), Ecosystem disturbance, carbon, and climate,
   \textit{Science}, \textit{321}(5889), 652--653.
+
+\bibitem[{\textit{Saunders et~al.}(2012)\textit{Saunders, Tobin, Black, Gioria,
+  Nieuwenhuis, and Osborne}}]{Saunders20121}
+Saunders, M., B.~Tobin, K.~Black, M.~Gioria, M.~Nieuwenhuis, and B.~Osborne
+  (2012), Thinning effects on the net ecosystem carbon exchange of a sitka
+  spruce forest are temperature-dependent, \textit{Agricultural and Forest
+  Meteorology}, \textit{157}, 1 -- 10,
+  \doi{http://dx.doi.org/10.1016/j.agrformet.2012.01.008}.
 
 \bibitem[{\textit{Schimel and Weintraub}(2003)}]{schimel2003implications}
 Schimel, J.~P., and M.~N. Weintraub (2003), The implications of exoenzyme
@@ -335,6 +349,13 @@ Wilkinson, M., E.~Eaton, M.~Broadmeadow, and J.~Morison (2012), Inter-annual
 Wilkinson, M., P.~Crow, E.~Eaton, and J.~Morison (2015), Effects of management
   thinning on co\(_{2}\) exchange by a plantation oak woodland in south-eastern
   england., \textit{Biogeosciences Discussions}, \textit{12}(19).
+
+\bibitem[{\textit{Wilkinson et~al.}(2016)\textit{Wilkinson, Crow, Eaton, and
+  Morison}}]{wilkinson2016}
+Wilkinson, M., P.~Crow, E.~L. Eaton, and J.~I.~L. Morison (2016), Effects of
+  management thinning on co2 exchange by a plantation oak woodland in
+  south-eastern england, \textit{Biogeosciences}, \textit{13}(8), 2367--2378,
+  \doi{10.5194/bg-13-2367-2016}.
 
 \bibitem[{\textit{Williams et~al.}(1997)\textit{Williams, Rastetter, Fernandes,
   Goulden, Shaver, and Johnson}}]{williams1997predicting}

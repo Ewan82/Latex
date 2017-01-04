@@ -87,7 +87,7 @@ if \( h \) is linear then \eqref{eqn:blue} and \eqref{eqn:a_cov} are exact solut
 \subsection{4D-Var}
 
 %*Brief* but inclusive of all notation need for results chapter on information content
-4D-Var extends 3D-Var to allow for the assimilation of observations distributed throughout some time interval \(t_{0}\) to \(t_{N}\). \citet{Sasaki70somebasic} proposed a method for combining a time series of observations with a numerical model, this was then further developed for use in numerical weather prediction \citep{dimet1986variational}. In 4D-Var we minimise the cost function,
+4D-Var extends 3D-Var to allow for the assimilation of observations distributed throughout some time interval \(t_{0}\) to \(t_{N}\). \citet{Sasaki70somebasic} proposed a method for combining a time series of observations with a numerical model, which was then further developed for use in numerical weather prediction \citep{dimet1986variational}. In 4D-Var we minimise the cost function,
 
 \begin{equation}
 J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}\sum_{i=0}^{N}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i))^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i)), \label{eqn:4dvar_cost}
@@ -99,7 +99,7 @@ to obtain the analysis \(\textbf{x}^{a}_{0}\), valid at the initial time \(t_{0}
 \textbf{x}_{i} = \textbf{m}_{i-1 \rightarrow i}(\textbf{x}_{i-1}), \label{eqn:nonlinmod}
 \end{equation}
 
-where \(\textbf{x}_{i}\) is the model augmented state at time \(t_i\), \(\textbf{m}_{i-1 \rightarrow i}\) is the possibly nonlinear augmented system model evolving \(\textbf{x}_{i-1}\) from time \(t_{i-1}\) to time \(t_i\), \(\textbf{y}_i\) is the vector of observations at time \(t_i\), and \(h_i\) is the observation operator at time \(t_i\). We can rewrite equation~\eqref{eqn:4dvar:cost} to avoid the sum notation as
+where \(\textbf{x}_{i}\) is the model augmented state at time \(t_i\), \(\textbf{m}_{i-1 \rightarrow i}\) is the possibly nonlinear augmented system model evolving \(\textbf{x}_{i-1}\) from time \(t_{i-1}\) to time \(t_i\), \(\textbf{y}_i\) is the vector of observations at time \(t_i\), and \(h_i\) is the observation operator at time \(t_i\). We can rewrite equation~\eqref{eqn:4dvar_cost} to avoid the sum notation as
 
 \begin{equation}
 J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_0))^{T}\hat{\textbf{R}}^{-1}(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_0)) \label{costfn}
@@ -145,19 +145,27 @@ where \(\hat{\textbf{H}}\) is that observability matrix given by
 \mathbf{H}_1\mathbf{M}_0\\
 \vdots \\
 \mathbf{H}_N\mathbf{M}_{N,0}
-\end{pmatrix}.
+\end{pmatrix}
 \end{equation}
-\subsection{Sequential and Monte-Carlo approaches}
+with $\textbf{H}_i = \frac{\partial \textbf{h}_i(\textbf{x}_i)}{\partial\textbf{x}_i}$ the linearised observation operator and $\mathbf{M}_{i,0}=\mathbf{M}_{i-1}\mathbf{M}_{i-2}\cdots\mathbf{M}_0$ the tangent linear model with $\mathbf{M}_i=\frac{\partial \textbf{m}_{i-1\rightarrow i}(\textbf{x}_{i})}{\partial \textbf{x}_{i}}$. The tangent linear model can be difficult to implement, however using techniques such as automatic differentiation \citep{renaud1997automatic} can reduce the time taken to implement the derivative of a model. 
 
-Brief overview of these methods.
+\subsection{Sequential and Markov chain Monte Carlo approaches}
 
-Sequential algorithms approximate the BLUE formula to update the model trajectory at each observation time. 
+Markov chain Monte Carlo (MCMC) refers to a suite of related algorithms (Metropolis-Hastings, simulated annealing and Gibbs sampling), with the first MCMC method being the Metropolis algorithm \citep{metropolis1953equation}. These methods usually sample a cost function similar to the negation of the part of the 4D-Var cost function corresponding to the observation miss-match (second term in equation~\eqref{costfn}). As these methods use the negation of the cost function in equation~\eqref{costfn} they seek to find a global optimum for this cost function rather than a minimum. This is achieved by iteratively sampling the cost function, with each iteration of the parameter and state values being uniquely determined by the previously sampled parameter and state values. The output of the MCMC methods is a set of accepted parameter and state values from which analysis or posterior error covariances can be calculated. These methods are easy to implement and do not require the derivative of the model code. However, they come with high computational cost as they often require in the order of \(10^{6}\) model evaluations \citep{zobitz2011primer}, meaning these methods become infeasible for global implementations of more complex models. 
+
+Whereas variations and MCMC techniques assimilate all available observations over some time window at once, sequential algorithms update the model trajectory at each observation time. These algorithms approximate the BLUE formula in equation~\eqref{eqn:blue} whenever an observation is available. This means that parameter values can change over time and ... state and parameter analysis trajectories will become discontinuous if not using a `smoother'.  The first sequential method was the KF developed by Kalman REF. This was then extended to the EnKF where error covariance matrices are approximated with an ensemble REF this is due to...
+
+These methods are also easy to implement and blahblah however they have blahblah cons
+
+KEEP GOING TOMORROW FOOL
 
 \section{Applications to the carbon cycle}
 
 DA for NWP is considered a state estimation problem as the physics of the problem are well understood and therefore parameterisations should not change over time. For the C cycle DA is more of a joint parameter and state estimation problem with the vast majority of studies using DA to estimate both parameter and state variables for a given system. Parameters governing land surface C uptake can change over time with developing forest and disturbance events.  
 
 \subsection{Site-level applications}
+
+Chronological order?
 
 Many MCMC routines, at the global scale these will become increasing difficult to implement due to computational expense
 

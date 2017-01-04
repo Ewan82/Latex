@@ -4,44 +4,44 @@ The top-level auxiliary file: agujournaltemplate_bib.aux
 The style file: agufull08.bst
 Database file #1: ../PhD.bib.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 50 entries,
+You've used 53 entries,
             3076 wiz_defined-function locations,
-            1402 strings with 23881 characters,
-and the built_in function-call counts, 58454 in all, are:
-= -- 6055
-> -- 2724
-< -- 16
-+ -- 1081
-- -- 768
-* -- 3826
-:= -- 5774
-add.period$ -- 50
-call.type$ -- 50
-change.case$ -- 207
-chr.to.int$ -- 51
-cite$ -- 50
-duplicate$ -- 6364
-empty$ -- 3070
-format.name$ -- 920
-if$ -- 11608
+            1422 strings with 24448 characters,
+and the built_in function-call counts, 61534 in all, are:
+= -- 6435
+> -- 2805
+< -- 15
++ -- 1123
+- -- 790
+* -- 4022
+:= -- 6044
+add.period$ -- 53
+call.type$ -- 53
+change.case$ -- 219
+chr.to.int$ -- 54
+cite$ -- 53
+duplicate$ -- 6717
+empty$ -- 3232
+format.name$ -- 950
+if$ -- 12215
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 680
-newline$ -- 157
-num.names$ -- 201
-pop$ -- 2217
+missing$ -- 707
+newline$ -- 166
+num.names$ -- 212
+pop$ -- 2315
 preamble$ -- 1
-purify$ -- 156
+purify$ -- 165
 quote$ -- 0
-skip$ -- 3268
+skip$ -- 3486
 stack$ -- 0
-substring$ -- 2394
-swap$ -- 5453
-text.length$ -- 5
+substring$ -- 2544
+swap$ -- 5768
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 450
+type$ -- 477
 warning$ -- 0
-while$ -- 283
+while$ -- 298
 width$ -- 0
-write$ -- 573
+write$ -- 609

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  29 NOV 2016 09:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  3 JAN 2017 11:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -301,93 +301,88 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-(./agutmpl - Supporting Information.bbl
-Missing character: There is no â in font cmti12!
-Missing character: There is no € in font cmti12!
-Missing character: There is no “ in font cmti12!
-) [2]
-<flux_compa.pdf, id=15, 925.05597pt x 635.97598pt>
+[2] <flux_compa.pdf, id=15, 925.05597pt x 635.97598pt>
 File: flux_compa.pdf Graphic file (type pdf)
  <use flux_compa.pdf>
-Package pdftex.def Info: flux_compa.pdf used on input line 367.
+Package pdftex.def Info: flux_compa.pdf used on input line 392.
 (pdftex.def)             Requested size: 480.0pt x 330.001pt.
 
 <cum_fluxa.pdf, id=16, 821.06377pt x 554.23326pt>
 File: cum_fluxa.pdf Graphic file (type pdf)
  <use cum_fluxa.pdf>
-Package pdftex.def Info: cum_fluxa.pdf used on input line 374.
+Package pdftex.def Info: cum_fluxa.pdf used on input line 399.
 (pdftex.def)             Requested size: 480.0pt x 324.01796pt.
 
 <obs_compb.pdf, id=17, 925.05597pt x 635.97598pt>
 File: obs_compb.pdf Graphic file (type pdf)
  <use obs_compb.pdf>
-Package pdftex.def Info: obs_compb.pdf used on input line 382.
+Package pdftex.def Info: obs_compb.pdf used on input line 407.
 (pdftex.def)             Requested size: 480.0pt x 330.001pt.
 
 <flux_compb.pdf, id=18, 925.05597pt x 635.97598pt>
 File: flux_compb.pdf Graphic file (type pdf)
  <use flux_compb.pdf>
-Package pdftex.def Info: flux_compb.pdf used on input line 390.
+Package pdftex.def Info: flux_compb.pdf used on input line 415.
 (pdftex.def)             Requested size: 480.0pt x 330.001pt.
 
 <cum_fluxb.pdf, id=19, 821.06377pt x 554.23326pt>
 File: cum_fluxb.pdf Graphic file (type pdf)
  <use cum_fluxb.pdf>
-Package pdftex.def Info: cum_fluxb.pdf used on input line 397.
+Package pdftex.def Info: cum_fluxb.pdf used on input line 422.
 (pdftex.def)             Requested size: 480.0pt x 324.01796pt.
 
 <flux_compc.pdf, id=20, 925.05597pt x 635.97598pt>
 File: flux_compc.pdf Graphic file (type pdf)
  <use flux_compc.pdf>
-Package pdftex.def Info: flux_compc.pdf used on input line 404.
+Package pdftex.def Info: flux_compc.pdf used on input line 429.
 (pdftex.def)             Requested size: 480.0pt x 330.001pt.
 
 <cum_fluxc.pdf, id=21, 821.06377pt x 554.23326pt>
 File: cum_fluxc.pdf Graphic file (type pdf)
  <use cum_fluxc.pdf>
-Package pdftex.def Info: cum_fluxc.pdf used on input line 411.
+Package pdftex.def Info: cum_fluxc.pdf used on input line 436.
 (pdftex.def)             Requested size: 480.0pt x 324.01796pt.
 
 <obs_compd.pdf, id=22, 925.05597pt x 635.97598pt>
 File: obs_compd.pdf Graphic file (type pdf)
  <use obs_compd.pdf>
-Package pdftex.def Info: obs_compd.pdf used on input line 419.
+Package pdftex.def Info: obs_compd.pdf used on input line 444.
 (pdftex.def)             Requested size: 480.0pt x 330.001pt.
 
 <flux_compd.pdf, id=23, 925.05597pt x 635.97598pt>
 File: flux_compd.pdf Graphic file (type pdf)
  <use flux_compd.pdf>
-Package pdftex.def Info: flux_compd.pdf used on input line 427.
+Package pdftex.def Info: flux_compd.pdf used on input line 452.
 (pdftex.def)             Requested size: 480.0pt x 330.001pt.
 
 <cum_fluxd.pdf, id=24, 821.06377pt x 554.23326pt>
 File: cum_fluxd.pdf Graphic file (type pdf)
  <use cum_fluxd.pdf>
-Package pdftex.def Info: cum_fluxd.pdf used on input line 434.
+Package pdftex.def Info: cum_fluxd.pdf used on input line 459.
 (pdftex.def)             Requested size: 480.0pt x 324.01796pt.
 
 <prior.pdf, id=25, 797.44427pt x 545.2032pt>
 File: prior.pdf Graphic file (type pdf)
  <use prior.pdf>
-Package pdftex.def Info: prior.pdf used on input line 442.
+Package pdftex.def Info: prior.pdf used on input line 467.
 (pdftex.def)             Requested size: 480.0pt x 328.16434pt.
 
 <pheno_lai.pdf, id=26, 912.44435pt x 621.92555pt>
 File: pheno_lai.pdf Graphic file (type pdf)
  <use pheno_lai.pdf>
-Package pdftex.def Info: pheno_lai.pdf used on input line 450.
+Package pdftex.def Info: pheno_lai.pdf used on input line 475.
 (pdftex.def)             Requested size: 480.0pt x 327.17061pt.
 
 <rmat_eastc.pdf, id=27, 631.56264pt x 553.25758pt>
 File: rmat_eastc.pdf Graphic file (type pdf)
  <use rmat_eastc.pdf>
-Package pdftex.def Info: rmat_eastc.pdf used on input line 457.
+Package pdftex.def Info: rmat_eastc.pdf used on input line 482.
 (pdftex.def)             Requested size: 360.0pt x 315.37698pt.
 
 <rmat_westc.pdf, id=28, 631.56264pt x 553.25758pt>
 File: rmat_westc.pdf Graphic file (type pdf)
  <use rmat_westc.pdf>
-Package pdftex.def Info: rmat_westc.pdf used on input line 464.
+Package pdftex.def Info: rmat_westc.pdf used on input line 489.
 (pdftex.def)             Requested size: 360.0pt x 315.37698pt.
 
 [3 <./flux_compa.pdf>] [4 <./cum_fluxa.pdf>] [5 <./obs_compb.pdf>] [6 <./flux_c
@@ -396,8 +391,8 @@ ompb.pdf>] [7 <./cum_fluxb.pdf>] [8 <./flux_compc.pdf>] [9 <./cum_fluxc.pdf>]
 ior.pdf>] [14 <./pheno_lai.pdf>] [15 <./rmat_eastc.pdf>] [16 <./rmat_westc.pdf>
 ] (./agutmpl - Supporting Information.aux) ) 
 Here is how much of TeX's memory you used:
- 2445 strings out of 493117
- 33224 string characters out of 6135433
+ 2442 strings out of 493117
+ 33146 string characters out of 6135433
  116945 words of memory out of 5000000
  5900 multiletter control sequences out of 15000+600000
  13317 words of font info for 46 fonts, out of 8000000 for 9000
@@ -413,7 +408,7 @@ ype1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmtt12.pfb>
-Output written on "agutmpl - Supporting Information.pdf" (16 pages, 1275328 byt
+Output written on "agutmpl - Supporting Information.pdf" (16 pages, 1274991 byt
 es).
 PDF statistics:
  967 PDF objects out of 1000 (max. 8388607)
