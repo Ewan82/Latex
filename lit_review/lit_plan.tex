@@ -151,13 +151,10 @@ with $\textbf{H}_i = \frac{\partial \textbf{h}_i(\textbf{x}_i)}{\partial\textbf{
 
 \subsection{Sequential and Markov chain Monte Carlo approaches}
 
-Markov chain Monte Carlo (MCMC) refers to a suite of related algorithms (Metropolis-Hastings, simulated annealing and Gibbs sampling), with the first MCMC method being the Metropolis algorithm \citep{metropolis1953equation}. These methods usually sample a cost function similar to the negation of the part of the 4D-Var cost function corresponding to the observation miss-match (second term in equation~\eqref{costfn}). As these methods use the negation of the cost function in equation~\eqref{costfn} they seek to find a global optimum for this cost function rather than a minimum. This is achieved by iteratively sampling the cost function, with each iteration of the parameter and state values being uniquely determined by the previously sampled parameter and state values. The output of the MCMC methods is a set of accepted parameter and state values from which analysis or posterior error covariances can be calculated. These methods are easy to implement and do not require the derivative of the model code. However, they come with high computational cost as they often require in the order of \(10^{6}\) model evaluations \citep{zobitz2011primer}, meaning these methods become infeasible for global implementations of more complex models. 
+Markov chain Monte Carlo (MCMC) methods refer to a suite of related algorithms (Metropolis-Hastings, simulated annealing and Gibbs sampling), with the first MCMC method being the Metropolis algorithm \citep{metropolis1953equation}. These methods usually sample a cost function similar to the negation of the part of the 4D-Var cost function corresponding to the observation miss-match (second term in equation~\eqref{costfn}). As these methods use the negation of the cost function in equation~\eqref{costfn} they seek to find a global optimum for this cost function rather than a minimum. This is achieved by iteratively sampling the cost function, with each iteration of the parameter and state values being uniquely determined by the previously sampled parameter and state values. The output of the MCMC methods is a set of accepted parameter and state values from which analysis or posterior error covariances can be calculated. These methods are easy to implement and do not require the derivative of the model code. However, they come with high computational cost as they often require in the order of \(10^{6}\) model evaluations \citep{zobitz2011primer}, meaning these methods become infeasible for global implementations of more complex models. 
 
-Whereas variations and MCMC techniques assimilate all available observations over some time window at once, sequential algorithms update the model trajectory at each observation time. These algorithms approximate the BLUE formula in equation~\eqref{eqn:blue} whenever an observation is available. This means that parameter values can change over time and ... state and parameter analysis trajectories will become discontinuous if not using a `smoother'.  The first sequential method was the KF developed by Kalman REF. This was then extended to the EnKF where error covariance matrices are approximated with an ensemble REF this is due to...
+Whereas variational and MCMC techniques assimilate all available observations over some time window at once, sequential algorithms update the model trajectory at each observation time. These algorithms approximate the BLUE formula in equation~\eqref{eqn:blue} to update the model parameter and state values whenever an observation is available. This means that parameter values can change over time and state and parameter analysis trajectories will become discontinuous (unless using a sequential `smoother' method). The first sequential method was the Kalman Filter (KF) \citep{kalman1960}. The KF method requires the evolution of the error covariance matrix \textbf{B} through the time window as observations are assimilated. This becomes infeasible for large systems. The Ensemble Kalman Filter (EnKF) \citep{Evensen2003} was therefore developed to address this problem, the error covariance matrix for the state/parameters is approximated using an ensemble of state/parameter vectors therefore the evolution of the error covariance matrix \textbf{B} is avoided. These methods are also easy to implement, however, dependent on the complexity of the model, the ensemble size can be limited by computational cost, meaning that covariances can be subject to noise and techniques have to be employed to avoid this. The ensemble can also collapse on the same value after assimilating a number of observations, this can be avoided by adding random noise to the system [REF look at Sarahs DA notes]. 
 
-These methods are also easy to implement and blahblah however they have blahblah cons
-
-KEEP GOING TOMORROW FOOL
 
 \section{Applications to the carbon cycle}
 
@@ -169,18 +166,42 @@ Chronological order?
 
 Many MCMC routines, at the global scale these will become increasing difficult to implement due to computational expense
 
+Two of the first examples of combining site-level eddy covariance data with models of ecosystem carbon balance were using the DALEC and SIPNET models in Williams and Braswell respectively. In Williams flux obser are combined with... it is found that... Braswell use only obs of NEE fro flux tower in... using a MCMC technique they find...
+Both sipnet and DALEC have been used in many experiements combining a variety of obs relevent to C blaance of terrestrial ecosystems. 
+
+As data assimilation became more populat Trudinger et al 2007 conducted the Optimistion InterComparison (OptIC) project, in this study different researchers used a variety of ethods to... it was found that the method of DA did not matter much but respresentation of errors...
+A similar study was conducted using the DALEC model by Fox et al 2009... they found that...
+
+In Quaife 2008 satellite obs used... found... Maybe discuss more DALEC and sipnet papers here. As more obs were combined with models using DA it became clear that the quantity of NEE obs could result in overweighting in the DA algorithm when using obs made on much longer time-scales, to address this problem Richardson et al 2010...
+
+In 2015 DALEC2 model introduced...
+
+\begin{itemize}
+\item Mike Dietze papers, 
+\item Christian Beer 2010, 
+\item Yiqi Luo
+\end{itemize}
+
 \subsection{Global inversions}
 
-adjoints used for faster optimisation... also allows for finding posterior error distributions and propagating these to future estimates [Scholze]
+At a similar time to site implementations with flux tower data, variational techniques began to be used with obs of CO2 concentrations and sat obs of LAI. An early example of this was Rayner et al. 2005 with the BETHY model they used 4dvar stepwise automatic diff...
+adjoints used for faster optimisation... also allows for finding posterior error distributions and propagating these to future estimates [Scholze 2007]
+Current efforts use a stepwise approach to assimilate different distinct data streams... this has been shown to not be optimal [MacBean 2016]
 
-Current efforts use a stepwise approach to assimilate different distinct data streams... this has been shown to not be optimal [MacBean]
+Also talk about orchidee
+
+More recently site level obs have also been used in these global optimisations JULES Raoult 2016, ORCHIDEE, CCDAS...
+
+Although in these global inversions variational methods have been prevelant due to computational efficency in Bloom et al. 2016 MCMC techniques are used to find global DALEC2 map, this is possible are DALEC is a simple model which requies little computational cost to run, found that... results from this study could be usued as a set of prior model estimates for variational methods which may prove more feasible in the long term.
+
+ 
 
 \subsection{Issues faced in C cycle DA}
 
 \begin{itemize}
-\item Equifinality: Many different combinations of parameters and states able to recreate assimilated obs.
+\item Equifinality: Many different combinations of parameters and states able to recreate assimilated obs. Williams 2009
 
-\item Information content in obs: In order to reduce the problem of equifinality it is important to combine as many distinct data streams as possible, it is of great importance that we understand the information content in potential new data streams so that we can focus efforts on campaigns that will add the most information possible to DA schemes. Important to understand what measurements best compliment EC data.
+\item Information content in obs: In order to reduce the problem of equifinality it is important to combine as many distinct data streams as possible, it is of great importance that we understand the information content in potential new data streams so that we can focus efforts on campaigns that will add the most information possible to DA schemes. Important to understand what measurements best compliment EC data. Rayner 2010
 
 \item Representation of prior and observational errors: Current DA schemes take a very simple approach to defining errors. Improving the representation of error in DA schemes will also help reduce the problem of equifinality.  
 \end{itemize}
