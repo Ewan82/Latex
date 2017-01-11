@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,6 +12,23 @@ T.~Bayes and R.~Price.
   1763.
 \newblock ISSN 02607085.
 
+\bibitem[Bloom and Williams(2015)]{Bloom2015}
+A.~A. Bloom and M.~Williams.
+\newblock {Constraining ecosystem carbon dynamics in a data-limited world:
+  integrating ecological "common sense" in a model–data fusion framework}.
+\newblock \emph{Biogeosciences}, 12\penalty0 (5):\penalty0 1299--1315, 2015.
+\newblock ISSN 1726-4189.
+\newblock \doi{10.5194/bg-12-1299-2015}.
+\newblock URL \url{http://www.biogeosciences.net/12/1299/2015/}.
+
+\bibitem[Braswell et~al.(2005)Braswell, Sacks, Linder, and
+  Schimel]{braswell2005estimating}
+B.~H. Braswell, W.~J. Sacks, E.~Linder, and D.~S. Schimel.
+\newblock Estimating diurnal to annual ecosystem parameters by synthesis of a
+  carbon flux model with eddy covariance net ecosystem exchange observations.
+\newblock \emph{Global Change Biology}, 11\penalty0 (2):\penalty0 335--355,
+  2005.
+
 \bibitem[Courtier et~al.(1998)Courtier, Andersson, Heckley, Vasiljevic, Hamrud,
   Hollingsworth, Rabier, Fisher, and Pailleux]{courtier1998ecmwf}
 P.~Courtier, E.~Andersson, W.~Heckley, D.~Vasiljevic, M.~Hamrud,
@@ -20,6 +37,15 @@ P.~Courtier, E.~Andersson, W.~Heckley, D.~Vasiljevic, M.~Hamrud,
   assimilation (3d-var). i: Formulation.
 \newblock \emph{Quarterly Journal of the Royal Meteorological Society},
   124\penalty0 (550):\penalty0 1783--1807, 1998.
+
+\bibitem[Dietze et~al.(2013)Dietze, Lebauer, and Kooper]{Dietze2013}
+M.~C. Dietze, D.~S. Lebauer, and R.~Kooper.
+\newblock On improving the communication between models and data.
+\newblock \emph{Plant, Cell \& Environment}, 36\penalty0 (9):\penalty0
+  1575--1585, 2013.
+\newblock ISSN 1365-3040.
+\newblock \doi{10.1111/pce.12043}.
+\newblock URL \url{http://dx.doi.org/10.1111/pce.12043}.
 
 \bibitem[Dimet and Talagrand(1986)]{dimet1986variational}
 F.-X.~l. Dimet and O.~Talagrand.
@@ -37,11 +63,58 @@ G.~Evensen.
 \newblock ISSN 1616-7228.
 \newblock \doi{10.1007/s10236-003-0036-9}.
 
+\bibitem[Fox et~al.(2009)Fox, Williams, Richardson, Cameron, Gove, Quaife,
+  Ricciuto, Reichstein, Tomelleri, Trudinger, et~al.]{fox2009reflex}
+A.~Fox, M.~Williams, A.~D. Richardson, D.~Cameron, J.~H. Gove, T.~Quaife,
+  D.~Ricciuto, M.~Reichstein, E.~Tomelleri, C.~M. Trudinger, et~al.
+\newblock The reflex project: comparing different algorithms and
+  implementations for the inversion of a terrestrial ecosystem model against
+  eddy covariance data.
+\newblock \emph{Agricultural and Forest Meteorology}, 149\penalty0
+  (10):\penalty0 1597--1615, 2009.
+
 \bibitem[Kalman(1960)]{kalman1960}
 R.~E. Kalman.
 \newblock A new approach to linear filtering and prediction problems.
 \newblock \emph{Journal of Basic Engineering}, 82\penalty0 (1):\penalty0
   35--45, 03 1960.
+
+\bibitem[Keenan et~al.(2011)Keenan, Carbone, Reichstein, and
+  Richardson]{Keenan2011}
+T.~F. Keenan, M.~S. Carbone, M.~Reichstein, and A.~D. Richardson.
+\newblock The model--data fusion pitfall: assuming certainty in an uncertain
+  world.
+\newblock \emph{Oecologia}, 167\penalty0 (3):\penalty0 587, 2011.
+\newblock ISSN 1432-1939.
+\newblock \doi{10.1007/s00442-011-2106-x}.
+
+\bibitem[Keenan et~al.(2012)Keenan, Davidson, Moffat, Munger, and
+  Richardson]{Keenan2012}
+T.~F. Keenan, E.~Davidson, A.~M. Moffat, W.~Munger, and A.~D. Richardson.
+\newblock Using model-data fusion to interpret past trends, and quantify
+  uncertainties in future projections, of terrestrial ecosystem carbon cycling.
+\newblock \emph{Global Change Biology}, 18\penalty0 (8):\penalty0 2555--2569,
+  2012.
+\newblock ISSN 1365-2486.
+\newblock \doi{10.1111/j.1365-2486.2012.02684.x}.
+
+\bibitem[Keenan et~al.(2013)Keenan, Davidson, Munger, and
+  Richardson]{Keenan2013}
+T.~F. Keenan, E.~A. Davidson, J.~W. Munger, and A.~D. Richardson.
+\newblock Rate my data: quantifying the value of ecological data for the
+  development of models of the terrestrial carbon cycle.
+\newblock \emph{Ecological Applications}, 23\penalty0 (1):\penalty0 273--286,
+  2013.
+\newblock ISSN 1939-5582.
+\newblock \doi{10.1890/12-0747.1}.
+
+\bibitem[Knorr and Heimann(2001)]{knorr2001uncertainties}
+W.~Knorr and M.~Heimann.
+\newblock Uncertainties in global terrestrial biosphere modeling: 1. a
+  comprehensive sensitivity analysis with a new photosynthesis and energy
+  balance scheme.
+\newblock \emph{Global Biogeochemical Cycles}, 15\penalty0 (1):\penalty0
+  207--225, 2001.
 
 \bibitem[Laplace(1781)]{laplace1781memoire}
 P.~d. Laplace.
@@ -55,6 +128,14 @@ Y.~Luo, T.~F. Keenan, and M.~Smith.
 \newblock \emph{Global change biology}, 21\penalty0 (5):\penalty0 1737--1751,
   2015.
 
+\bibitem[MacBean et~al.(2016)MacBean, Peylin, Chevallier, Scholze, and
+  Sch{\"u}rmann]{macbean2016consistent}
+N.~MacBean, P.~Peylin, F.~Chevallier, M.~Scholze, and G.~Sch{\"u}rmann.
+\newblock Consistent assimilation of multiple data streams in a carbon cycle
+  data assimilation system.
+\newblock \emph{Geoscientific Model Development}, 9\penalty0 (10):\penalty0
+  3569, 2016.
+
 \bibitem[Metropolis et~al.(1953)Metropolis, Rosenbluth, Rosenbluth, Teller, and
   Teller]{metropolis1953equation}
 N.~Metropolis, A.~W. Rosenbluth, M.~N. Rosenbluth, A.~H. Teller, and E.~Teller.
@@ -62,15 +143,66 @@ N.~Metropolis, A.~W. Rosenbluth, M.~N. Rosenbluth, A.~H. Teller, and E.~Teller.
 \newblock \emph{The journal of chemical physics}, 21\penalty0 (6):\penalty0
   1087--1092, 1953.
 
+\bibitem[Moore et~al.(2008)Moore, Hu, Sacks, Schimel, and
+  Monson]{Moore20081467}
+D.~J. Moore, J.~Hu, W.~J. Sacks, D.~S. Schimel, and R.~K. Monson.
+\newblock Estimating transpiration and the sensitivity of carbon uptake to
+  water availability in a subalpine forest using a simple ecosystem process
+  model informed by measured net \{CO\(_2\)\} and \{H\(_2\)O\} fluxes.
+\newblock \emph{Agricultural and Forest Meteorology}, 148\penalty0
+  (10):\penalty0 1467 -- 1477, 2008.
+\newblock ISSN 0168-1923.
+\newblock \doi{http://dx.doi.org/10.1016/j.agrformet.2008.04.013}.
+
+\bibitem[Quaife et~al.(2008)Quaife, Lewis, {De Kauwe}, Williams, Law, Disney,
+  and Bowyer]{Quaife2008}
+T.~Quaife, P.~Lewis, M.~{De Kauwe}, M.~Williams, B.~E. Law, M.~Disney, and
+  P.~Bowyer.
+\newblock {Assimilating canopy reflectance data into an ecosystem model with an
+  Ensemble Kalman Filter}.
+\newblock \emph{Remote Sensing of Environment}, 112\penalty0 (4):\penalty0
+  1347--1364, 2008.
+\newblock ISSN 00344257.
+\newblock \doi{10.1016/j.rse.2007.05.020}.
+
+\bibitem[Rayner et~al.(2005)Rayner, Scholze, Knorr, Kaminski, Giering, and
+  Widmann]{rayner2005two}
+P.~Rayner, M.~Scholze, W.~Knorr, T.~Kaminski, R.~Giering, and H.~Widmann.
+\newblock Two decades of terrestrial carbon fluxes from a carbon cycle data
+  assimilation system (ccdas).
+\newblock \emph{Global Biogeochemical Cycles}, 19\penalty0 (2), 2005.
+
 \bibitem[Renaud(1997)]{renaud1997automatic}
 J.~Renaud.
 \newblock Automatic differentiation in robust optimization.
 \newblock \emph{AIAA journal}, 35\penalty0 (6):\penalty0 1072--1079, 1997.
 
+\bibitem[Richardson et~al.(2010)Richardson, Williams, Hollinger, Moore, Dail,
+  Davidson, Scott, Evans, Hughes, Lee, et~al.]{richardson2010estimating}
+A.~D. Richardson, M.~Williams, D.~Y. Hollinger, D.~J. Moore, D.~B. Dail, E.~A.
+  Davidson, N.~A. Scott, R.~S. Evans, H.~Hughes, J.~T. Lee, et~al.
+\newblock Estimating parameters of a forest ecosystem c model with measurements
+  of stocks and fluxes as joint constraints.
+\newblock \emph{Oecologia}, 164\penalty0 (1):\penalty0 25--40, 2010.
+
+\bibitem[Sacks et~al.(2007)Sacks, Schimel, and Monson]{Sacks2007}
+W.~J. Sacks, D.~S. Schimel, and R.~K. Monson.
+\newblock Coupling between carbon cycling and climate in a high-elevation,
+  subalpine forest: a model-data fusion analysis.
+\newblock \emph{Oecologia}, 151\penalty0 (1):\penalty0 54--68, 2007.
+\newblock ISSN 1432-1939.
+\newblock \doi{10.1007/s00442-006-0565-2}.
+
 \bibitem[Sasaki(1970)]{Sasaki70somebasic}
 Y.~Sasaki.
 \newblock Some basic formalisms in numerical variational analysis.
 \newblock \emph{Monthly Weather Review}, pages 875--883, 1970.
+
+\bibitem[Schwarz et~al.(1978)]{schwarz1978estimating}
+G.~Schwarz et~al.
+\newblock Estimating the dimension of a model.
+\newblock \emph{The annals of statistics}, 6\penalty0 (2):\penalty0 461--464,
+  1978.
 
 \bibitem[Talagrand(1997)]{talagrand1997assimilation}
 O.~Talagrand.
@@ -78,11 +210,48 @@ O.~Talagrand.
 \newblock \emph{Journal-Meteorological Society of Japan Series 2}, 75:\penalty0
   81--99, 1997.
 
+\bibitem[Trudinger et~al.(2007)Trudinger, Raupach, Rayner, Kattge, Liu, Pak,
+  Reichstein, Renzullo, Richardson, Roxburgh, et~al.]{trudinger2007optic}
+C.~M. Trudinger, M.~R. Raupach, P.~J. Rayner, J.~Kattge, Q.~Liu, B.~Pak,
+  M.~Reichstein, L.~Renzullo, A.~D. Richardson, S.~H. Roxburgh, et~al.
+\newblock Optic project: An intercomparison of optimization techniques for
+  parameter estimation in terrestrial biogeochemical models.
+\newblock \emph{Journal of Geophysical Research: Biogeosciences}, 112\penalty0
+  (G2), 2007.
+
+\bibitem[Williams et~al.(2005)Williams, Schwarz, Law, Irvine, and
+  Kurpius]{williams2005improved}
+M.~Williams, P.~A. Schwarz, B.~E. Law, J.~Irvine, and M.~R. Kurpius.
+\newblock An improved analysis of forest carbon dynamics using data
+  assimilation.
+\newblock \emph{Global Change Biology}, 11\penalty0 (1):\penalty0 89--105,
+  2005.
+
 \bibitem[Zobitz et~al.(2011)Zobitz, Desai, Moore, and
   Chadwick]{zobitz2011primer}
 J.~Zobitz, A.~Desai, D.~Moore, and M.~Chadwick.
 \newblock A primer for data assimilation with ecological models using markov
   chain monte carlo (mcmc).
 \newblock \emph{Oecologia}, 167\penalty0 (3):\penalty0 599--611, 2011.
+
+\bibitem[Zobitz et~al.(2014)Zobitz, Moore, Quaife, Braswell, Bergeson, Anthony,
+  and Monson]{zobitz2014joint}
+J.~Zobitz, D.~J. Moore, T.~Quaife, B.~H. Braswell, A.~Bergeson, J.~A. Anthony,
+  and R.~K. Monson.
+\newblock Joint data assimilation of satellite reflectance and net ecosystem
+  exchange data constrains ecosystem carbon fluxes at a high-elevation
+  subalpine forest.
+\newblock \emph{Agricultural and Forest Meteorology}, 195:\penalty0 73--88,
+  2014.
+
+\bibitem[Zobitz et~al.(2008)Zobitz, Moore, Sacks, Monson, Bowling, and
+  Schimel]{Zobitz2008}
+J.~M. Zobitz, D.~J.~P. Moore, W.~J. Sacks, R.~K. Monson, D.~R. Bowling, and
+  D.~S. Schimel.
+\newblock Integration of process-based soil respiration models with
+  whole-ecosystem co2 measurements.
+\newblock \emph{Ecosystems}, 11\penalty0 (2):\penalty0 250--269, 2008.
+\newblock ISSN 1435-0629.
+\newblock \doi{10.1007/s10021-007-9120-1}.
 
 \end{thebibliography}
