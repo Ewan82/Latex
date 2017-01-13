@@ -1,9 +1,23 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{44}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bacour et~al.(2015)Bacour, Peylin, MacBean, Rayner, Delage,
+  Chevallier, Weiss, Demarty, Santaren, Baret, Berveiller, Dufr\^{e}ne, and
+  Prunet]{Bacour2015}
+C.~Bacour, P.~Peylin, N.~MacBean, P.~J. Rayner, F.~Delage, F.~Chevallier,
+  M.~Weiss, J.~Demarty, D.~Santaren, F.~Baret, D.~Berveiller, E.~Dufr\^{e}ne,
+  and P.~Prunet.
+\newblock {Joint assimilation of eddy-covariance flux measurements and FAPAR
+  products over temperate forests within a process-oriented biosphere model}.
+\newblock \emph{Journal of Geophysical Research: Biogeosciences}, pages
+  n/a--n/a, 2015.
+\newblock ISSN 21698953.
+\newblock \doi{10.1002/2015JG002966}.
+\newblock URL \url{http://doi.wiley.com/10.1002/2015JG002966}.
 
 \bibitem[Bayes and Price(1763)]{bayes1763}
 T.~Bayes and R.~Price.
@@ -21,6 +35,14 @@ A.~A. Bloom and M.~Williams.
 \newblock \doi{10.5194/bg-12-1299-2015}.
 \newblock URL \url{http://www.biogeosciences.net/12/1299/2015/}.
 
+\bibitem[Bloom et~al.(2016)Bloom, Exbrayat, van~der Velde, Feng, and
+  Williams]{bloom2016decadal}
+A.~A. Bloom, J.-F. Exbrayat, I.~R. van~der Velde, L.~Feng, and M.~Williams.
+\newblock The decadal state of the terrestrial carbon cycle: Global retrievals
+  of terrestrial carbon allocation, pools, and residence times.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 113\penalty0
+  (5):\penalty0 1285--1290, 2016.
+
 \bibitem[Braswell et~al.(2005)Braswell, Sacks, Linder, and
   Schimel]{braswell2005estimating}
 B.~H. Braswell, W.~J. Sacks, E.~Linder, and D.~S. Schimel.
@@ -28,6 +50,18 @@ B.~H. Braswell, W.~J. Sacks, E.~Linder, and D.~S. Schimel.
   carbon flux model with eddy covariance net ecosystem exchange observations.
 \newblock \emph{Global Change Biology}, 11\penalty0 (2):\penalty0 335--355,
   2005.
+
+\bibitem[Carvalhais et~al.(2010)Carvalhais, Reichstein, Ciais, Collatz,
+  Mahecha, Montagnani, Papale, Rambal, and Seixas]{Carvalhais2010}
+N.~Carvalhais, M.~Reichstein, P.~Ciais, G.~J. Collatz, M.~D. Mahecha,
+  L.~Montagnani, D.~Papale, S.~Rambal, and J.~Seixas.
+\newblock Identification of vegetation and soil carbon pools out of equilibrium
+  in a process model via eddy covariance and biometric constraints.
+\newblock \emph{Global Change Biology}, 16\penalty0 (10):\penalty0 2813--2829,
+  2010.
+\newblock ISSN 1365-2486.
+\newblock \doi{10.1111/j.1365-2486.2010.02173.x}.
+\newblock URL \url{http://dx.doi.org/10.1111/j.1365-2486.2010.02173.x}.
 
 \bibitem[Courtier et~al.(1998)Courtier, Andersson, Heckley, Vasiljevic, Hamrud,
   Hollingsworth, Rabier, Fisher, and Pailleux]{courtier1998ecmwf}
@@ -37,6 +71,17 @@ P.~Courtier, E.~Andersson, W.~Heckley, D.~Vasiljevic, M.~Hamrud,
   assimilation (3d-var). i: Formulation.
 \newblock \emph{Quarterly Journal of the Royal Meteorological Society},
   124\penalty0 (550):\penalty0 1783--1807, 1998.
+
+\bibitem[Demarty et~al.(2007)Demarty, Chevallier, Friend, Viovy, Piao, and
+  Ciais]{Demarty2007}
+J.~Demarty, F.~Chevallier, A.~D. Friend, N.~Viovy, S.~Piao, and P.~Ciais.
+\newblock Assimilation of global modis leaf area index retrievals within a
+  terrestrial biosphere model.
+\newblock \emph{Geophysical Research Letters}, 34\penalty0 (15):\penalty0
+  n/a--n/a, 2007.
+\newblock ISSN 1944-8007.
+\newblock \doi{10.1029/2007GL030014}.
+\newblock L15402.
 
 \bibitem[Dietze et~al.(2013)Dietze, Lebauer, and Kooper]{Dietze2013}
 M.~C. Dietze, D.~S. Lebauer, and R.~Kooper.
@@ -79,6 +124,24 @@ R.~E. Kalman.
 \newblock \emph{Journal of Basic Engineering}, 82\penalty0 (1):\penalty0
   35--45, 03 1960.
 
+\bibitem[Kaminski et~al.(2013)Kaminski, Knorr, Sch\"{u}rmann, Scholze, Rayner,
+  Zaehle, Blessing, Dorigo, Gayler, Giering, Gobron, Grant, Heimann,
+  Hooker-Stroud, Houweling, Kato, Kattge, Kelley, Kemp, Koffi, K\"{o}stler,
+  Mathieu, Pinty, Reick, R\"{o}denbeck, Schnur, Scipal, Sebald, Stacke, {Van
+  Scheltinga}, Vossbeck, Widmann, and Ziehn]{Kaminski2013}
+T.~Kaminski, W.~Knorr, G.~Sch\"{u}rmann, M.~Scholze, P.~J. Rayner, S.~Zaehle,
+  S.~Blessing, W.~Dorigo, V.~Gayler, R.~Giering, N.~Gobron, J.~P. Grant,
+  M.~Heimann, a.~Hooker-Stroud, S.~Houweling, T.~Kato, J.~Kattge, D.~Kelley,
+  S.~Kemp, E.~N. Koffi, C.~K\"{o}stler, P.~P. Mathieu, B.~Pinty, C.~H. Reick,
+  C.~R\"{o}denbeck, R.~Schnur, K.~Scipal, C.~Sebald, T.~Stacke, a.~T. {Van
+  Scheltinga}, M.~Vossbeck, H.~Widmann, and T.~Ziehn.
+\newblock {The BETHY/JSBACH Carbon Cycle Data Assimilation System: Experiences
+  and challenges}.
+\newblock \emph{Journal of Geophysical Research: Biogeosciences}, 118\penalty0
+  (4):\penalty0 1414--1426, 2013.
+\newblock ISSN 21698961.
+\newblock \doi{10.1002/jgrg.20118}.
+
 \bibitem[Keenan et~al.(2011)Keenan, Carbone, Reichstein, and
   Richardson]{Keenan2011}
 T.~F. Keenan, M.~S. Carbone, M.~Reichstein, and A.~D. Richardson.
@@ -116,11 +179,40 @@ W.~Knorr and M.~Heimann.
 \newblock \emph{Global Biogeochemical Cycles}, 15\penalty0 (1):\penalty0
   207--225, 2001.
 
+\bibitem[Krinner et~al.(2005)Krinner, Viovy, de~Noblet-Ducoudr\'{e}, Og\'{e}e,
+  Polcher, Friedlingstein, Ciais, Sitch, and Prentice]{Krinner2005}
+G.~Krinner, N.~Viovy, N.~de~Noblet-Ducoudr\'{e}, J.~Og\'{e}e, J.~Polcher,
+  P.~Friedlingstein, P.~Ciais, S.~Sitch, and I.~C. Prentice.
+\newblock {A dynamic global vegetation model for studies of the coupled
+  atmosphere-biosphere system}.
+\newblock \emph{Global Biogeochemical Cycles}, 19\penalty0 (1):\penalty0 1--33,
+  2005.
+\newblock ISSN 08866236.
+\newblock \doi{10.1029/2003GB002199}.
+
+\bibitem[Kuppel et~al.(2012)Kuppel, Peylin, Chevallier, Bacour, Maignan, and
+  Richardson]{Kuppel2012}
+S.~Kuppel, P.~Peylin, F.~Chevallier, C.~Bacour, F.~Maignan, and A.~D.
+  Richardson.
+\newblock {Constraining a global ecosystem model with multi-site
+  eddy-covariance data}.
+\newblock \emph{Biogeosciences}, 9:\penalty0 3757--3776, 2012.
+\newblock \doi{10.5194/bg-9-3757-2012}.
+
 \bibitem[Laplace(1781)]{laplace1781memoire}
 P.~d. Laplace.
 \newblock M{\'e}moire sur les probabilit{\'e}s.
 \newblock \emph{M{\'e}moires de l'Acad{\'e}mie Royale des sciences de Paris},
   1778:\penalty0 227--332, 1781.
+
+\bibitem[Luo et~al.(2009)Luo, Weng, Wu, Gao, Zhou, and Zhang]{Luo2009}
+Y.~Luo, E.~Weng, X.~Wu, C.~Gao, X.~Zhou, and L.~Zhang.
+\newblock Parameter identifiability, constraint, and equifinality in data
+  assimilation with ecosystem models.
+\newblock \emph{Ecological Applications}, 19\penalty0 (3):\penalty0 571--574,
+  2009.
+\newblock ISSN 1939-5582.
+\newblock \doi{10.1890/08-0561.1}.
 
 \bibitem[Luo et~al.(2015)Luo, Keenan, and Smith]{luo2015predictability}
 Y.~Luo, T.~F. Keenan, and M.~Smith.
@@ -165,12 +257,34 @@ T.~Quaife, P.~Lewis, M.~{De Kauwe}, M.~Williams, B.~E. Law, M.~Disney, and
 \newblock ISSN 00344257.
 \newblock \doi{10.1016/j.rse.2007.05.020}.
 
+\bibitem[Raoult et~al.(2016)Raoult, Jupp, Cox, and Luke]{raoult2016land}
+N.~M. Raoult, T.~E. Jupp, P.~M. Cox, and C.~M. Luke.
+\newblock Land-surface parameter optimisation using data assimilation
+  techniques: the adjules system v1. 0.
+\newblock \emph{Geoscientific Model Development}, 9\penalty0 (8):\penalty0
+  2833, 2016.
+
+\bibitem[Raupach et~al.(2005)Raupach, Rayner, Barrett, DeFries, Heimann, Ojima,
+  Quegan, and Schmullius]{raupach2005model}
+M.~Raupach, P.~Rayner, D.~Barrett, R.~DeFries, M.~Heimann, D.~Ojima, S.~Quegan,
+  and C.~Schmullius.
+\newblock Model--data synthesis in terrestrial carbon observation: methods,
+  data requirements and data uncertainty specifications.
+\newblock \emph{Global Change Biology}, 11\penalty0 (3):\penalty0 378--397,
+  2005.
+
 \bibitem[Rayner et~al.(2005)Rayner, Scholze, Knorr, Kaminski, Giering, and
   Widmann]{rayner2005two}
 P.~Rayner, M.~Scholze, W.~Knorr, T.~Kaminski, R.~Giering, and H.~Widmann.
 \newblock Two decades of terrestrial carbon fluxes from a carbon cycle data
   assimilation system (ccdas).
 \newblock \emph{Global Biogeochemical Cycles}, 19\penalty0 (2), 2005.
+
+\bibitem[Rayner(2010)]{rayner2010current}
+P.~J. Rayner.
+\newblock The current state of carbon-cycle data assimilation.
+\newblock \emph{Current Opinion in Environmental Sustainability}, 2\penalty0
+  (4):\penalty0 289--296, 2010.
 
 \bibitem[Renaud(1997)]{renaud1997automatic}
 J.~Renaud.
@@ -197,6 +311,14 @@ W.~J. Sacks, D.~S. Schimel, and R.~K. Monson.
 Y.~Sasaki.
 \newblock Some basic formalisms in numerical variational analysis.
 \newblock \emph{Monthly Weather Review}, pages 875--883, 1970.
+
+\bibitem[Scholze et~al.(2007)Scholze, Kaminski, Rayner, Knorr, and
+  Giering]{scholze2007propagating}
+M.~Scholze, T.~Kaminski, P.~Rayner, W.~Knorr, and R.~Giering.
+\newblock Propagating uncertainty through prognostic carbon cycle data
+  assimilation system simulations.
+\newblock \emph{Journal of Geophysical Research: Atmospheres}, 112\penalty0
+  (D17), 2007.
 
 \bibitem[Schwarz et~al.(1978)]{schwarz1978estimating}
 G.~Schwarz et~al.
@@ -226,6 +348,13 @@ M.~Williams, P.~A. Schwarz, B.~E. Law, J.~Irvine, and M.~R. Kurpius.
   assimilation.
 \newblock \emph{Global Change Biology}, 11\penalty0 (1):\penalty0 89--105,
   2005.
+
+\bibitem[Wu et~al.(2009)Wu, Luo, Weng, White, Ma, and Zhou]{Wu01012009}
+X.~Wu, Y.~Luo, E.~Weng, L.~White, Y.~Ma, and X.~Zhou.
+\newblock Conditional inversion to estimate parameters from eddy-flux
+  observations.
+\newblock \emph{Journal of Plant Ecology}, 2009.
+\newblock \doi{10.1093/jpe/rtp005}.
 
 \bibitem[Zobitz et~al.(2011)Zobitz, Desai, Moore, and
   Chadwick]{zobitz2011primer}
