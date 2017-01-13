@@ -1,9 +1,17 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{46}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Anderson and Anderson(1999)]{andersonandanderson1999}
+J.~L. Anderson and S.~L. Anderson.
+\newblock A monte carlo implementation of the nonlinear filtering problem to
+  produce ensemble assimilations and forecasts.
+\newblock \emph{Monthly Weather Review}, 127\penalty0 (12):\penalty0
+  2741--2758, 1999.
+\newblock \doi{10.1175/1520-0493(1999)127<2741:AMCIOT>2.0.CO;2}.
 
 \bibitem[Bacour et~al.(2015)Bacour, Peylin, MacBean, Rayner, Delage,
   Chevallier, Weiss, Demarty, Santaren, Baret, Berveiller, Dufr\^{e}ne, and
@@ -117,6 +125,14 @@ A.~Fox, M.~Williams, A.~D. Richardson, D.~Cameron, J.~H. Gove, T.~Quaife,
   eddy covariance data.
 \newblock \emph{Agricultural and Forest Meteorology}, 149\penalty0
   (10):\penalty0 1597--1615, 2009.
+
+\bibitem[Hamill et~al.(2001)Hamill, Whitaker, and Snyder]{Hamill2001}
+T.~M. Hamill, J.~S. Whitaker, and C.~Snyder.
+\newblock Distance-dependent filtering of background error covariance estimates
+  in an ensemble kalman filter.
+\newblock \emph{Monthly Weather Review}, 129\penalty0 (11):\penalty0
+  2776--2790, 2001.
+\newblock \doi{10.1175/1520-0493(2001)129<2776:DDFOBE>2.0.CO;2}.
 
 \bibitem[Kalman(1960)]{kalman1960}
 R.~E. Kalman.
