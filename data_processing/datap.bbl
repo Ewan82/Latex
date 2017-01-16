@@ -1,0 +1,38 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Kerr and Haufe(2011)]{kerr2011thinning}
+G.~Kerr and J.~Haufe.
+\newblock Thinning practice: A silvicultural guide.
+\newblock \emph{Forestry Commission}, page~54, 2011.
+
+\bibitem[Pitman and Broadmeadow(2001)]{pitman2001leaf}
+R.~Pitman and M.~Broadmeadow.
+\newblock Leaf area, biomass and physiological parameterisation of ground
+  vegetation of lowland oak woodland.
+\newblock \emph{Forestry Commission, Edinburgh}, 2001.
+
+\bibitem[Schlich and Perr{\'e}e(1905)]{schlich1905working}
+S.~W. Schlich and W.~Perr{\'e}e.
+\newblock \emph{Working plan for the Alice Holt Forest}.
+\newblock HM Stationery Office, 1905.
+
+\bibitem[Wilkinson et~al.(2012)Wilkinson, Eaton, Broadmeadow, and
+  Morison]{wilkinson2012inter}
+M.~Wilkinson, E.~Eaton, M.~Broadmeadow, and J.~Morison.
+\newblock Inter-annual variation of carbon uptake by a plantation oak woodland
+  in south-eastern england.
+\newblock \emph{Biogeosciences}, 9\penalty0 (12):\penalty0 5373--5389, 2012.
+
+\bibitem[Wilkinson et~al.(2015)Wilkinson, Crow, Eaton, and
+  Morison]{wilkinson2015effects}
+M.~Wilkinson, P.~Crow, E.~Eaton, and J.~Morison.
+\newblock Effects of management thinning on co\(_{2}\) exchange by a plantation
+  oak woodland in south-eastern england.
+\newblock \emph{Biogeosciences Discussions}, 12\penalty0 (19), 2015.
+
+\end{thebibliography}

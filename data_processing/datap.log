@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  8 DEC 2016 12:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  16 JAN 2017 13:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -377,106 +377,105 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 <AP1_2013.jpg, id=1, 1194.864pt x 845.559pt>
 File: AP1_2013.jpg Graphic file (type jpg)
  <use AP1_2013.jpg>
-Package pdftex.def Info: AP1_2013.jpg used on input line 28.
+Package pdftex.def Info: AP1_2013.jpg used on input line 33.
 (pdftex.def)             Requested size: 375.80544pt x 265.93962pt.
+ [1
 
-<straitsmap_threet_10m.png, id=2, 1300.86pt x 669.9429pt>
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<straitsmap_threet_10m.png, id=13, 1300.86pt x 669.9429pt>
 File: straitsmap_threet_10m.png Graphic file (type png)
 
 <use straitsmap_threet_10m.png>
-Package pdftex.def Info: straitsmap_threet_10m.png used on input line 36.
+Package pdftex.def Info: straitsmap_threet_10m.png used on input line 41.
 (pdftex.def)             Requested size: 469.75502pt x 241.92549pt.
- <291E.jpg, id=4, 4047.12pt x 3035.34pt>
+ <291E.jpg, id=15, 4047.12pt x 3035.34pt>
 File: 291E.jpg Graphic file (type jpg)
 
 <use 291E.jpg>
-Package pdftex.def Info: 291E.jpg used on input line 42.
+Package pdftex.def Info: 291E.jpg used on input line 47.
 (pdftex.def)             Requested size: 375.80544pt x 281.82982pt.
- [1
-
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./AP1_2
-013.jpg>] [2 <./straitsmap_threet_10m.png> <./291E.jpg>]
-<AH_PAR.pdf, id=18, 650.43pt x 539.01375pt>
+ [2 <./AP1_2013.jpg>] [3 <./straitsmap_threet_10m.png> <./291E.jpg>] <AH_PAR.pd
+f, id=23, 650.43pt x 539.01375pt>
 File: AH_PAR.pdf Graphic file (type pdf)
  <use AH_PAR.pdf>
-Package pdftex.def Info: AH_PAR.pdf used on input line 52.
+Package pdftex.def Info: AH_PAR.pdf used on input line 57.
 (pdftex.def)             Requested size: 375.80544pt x 311.43561pt.
 
-<lai_cept.pdf, id=19, 845.1575pt x 597.23125pt>
+<lai_cept.pdf, id=24, 845.1575pt x 597.23125pt>
 File: lai_cept.pdf Graphic file (type pdf)
  <use lai_cept.pdf>
-Package pdftex.def Info: lai_cept.pdf used on input line 58.
+Package pdftex.def Info: lai_cept.pdf used on input line 63.
 (pdftex.def)             Requested size: 375.80544pt x 265.57114pt.
 
-<043exp2.jpg, id=20, 4769.82pt x 3179.88pt>
+<043exp2.jpg, id=25, 4769.82pt x 3179.88pt>
 File: 043exp2.jpg Graphic file (type jpg)
  <use 043exp2.jpg>
-Package pdftex.def Info: 043exp2.jpg used on input line 68.
+Package pdftex.def Info: 043exp2.jpg used on input line 73.
 (pdftex.def)             Requested size: 211.3883pt x 140.90498pt.
 
-<252exp1.jpg, id=21, 4769.82pt x 3179.88pt>
+<252exp1.jpg, id=26, 4769.82pt x 3179.88pt>
 File: 252exp1.jpg Graphic file (type jpg)
  <use 252exp1.jpg>
-Package pdftex.def Info: 252exp1.jpg used on input line 74.
+Package pdftex.def Info: 252exp1.jpg used on input line 79.
 (pdftex.def)             Requested size: 211.3883pt x 140.90498pt.
 
-<litter_trap.pdf, id=22, 845.1575pt x 597.23125pt>
+<litter_trap.pdf, id=27, 845.1575pt x 597.23125pt>
 File: litter_trap.pdf Graphic file (type pdf)
  <use litter_trap.pdf>
-Package pdftex.def Info: litter_trap.pdf used on input line 86.
+Package pdftex.def Info: litter_trap.pdf used on input line 91.
 (pdftex.def)             Requested size: 375.80544pt x 265.57114pt.
 
-<thinned07.pdf, id=23, 951.34486pt x 531.81657pt>
+<thinned07.pdf, id=28, 951.34486pt x 531.81657pt>
 File: thinned07.pdf Graphic file (type pdf)
  <use thinned07.pdf>
-Package pdftex.def Info: thinned07.pdf used on input line 95.
+Package pdftex.def Info: thinned07.pdf used on input line 100.
 (pdftex.def)             Requested size: 375.80544pt x 210.08553pt.
 
-<thinned14.pdf, id=24, 951.34486pt x 531.81657pt>
+<thinned14.pdf, id=29, 951.34486pt x 531.81657pt>
 File: thinned14.pdf Graphic file (type pdf)
  <use thinned14.pdf>
-Package pdftex.def Info: thinned14.pdf used on input line 101.
+Package pdftex.def Info: thinned14.pdf used on input line 106.
 (pdftex.def)             Requested size: 375.80544pt x 210.08553pt.
- [3
+ [4
 
- <./AH_PAR.pdf>] [4 <./lai_cept.pdf> <./043exp2.jpg> <./252exp1.jpg>] [5 <./lit
-ter_trap.pdf> <./thinned07.pdf>] [6 <./thinned14.pdf>]
-<dbh_me.pdf, id=142, 500.87125pt x 375.4025pt>
+ <./AH_PAR.pdf>] [5 <./lai_cept.pdf> <./043exp2.jpg> <./252exp1.jpg>] [6 <./lit
+ter_trap.pdf> <./thinned07.pdf>] [7 <./thinned14.pdf>]
+<dbh_me.pdf, id=147, 500.87125pt x 375.4025pt>
 File: dbh_me.pdf Graphic file (type pdf)
  <use dbh_me.pdf>
-Package pdftex.def Info: dbh_me.pdf used on input line 109.
+Package pdftex.def Info: dbh_me.pdf used on input line 114.
 (pdftex.def)             Requested size: 375.80544pt x 281.6772pt.
 
-<top_of_flux.pdf, id=143, 539.01375pt x 405.515pt>
+<top_of_flux.pdf, id=148, 539.01375pt x 405.515pt>
 File: top_of_flux.pdf Graphic file (type pdf)
  <use top_of_flux.pdf>
-Package pdftex.def Info: top_of_flux.pdf used on input line 117.
+Package pdftex.def Info: top_of_flux.pdf used on input line 122.
 (pdftex.def)             Requested size: 375.80544pt x 282.73239pt.
 
-No file datap.bbl.
-[7
+(./datap.bbl [8
 
- <./dbh_me.pdf>] [8 <./top_of_flux.pdf>] (./datap.aux) ) 
+ <./dbh_me.pdf>]) [9 <./top_of_flux.pdf>] (./datap.aux) ) 
 Here is how much of TeX's memory you used:
- 4820 strings out of 493117
- 69586 string characters out of 6135433
- 136143 words of memory out of 5000000
- 8171 multiletter control sequences out of 15000+600000
- 14851 words of font info for 57 fonts, out of 8000000 for 9000
+ 4843 strings out of 493117
+ 70030 string characters out of 6135433
+ 137404 words of memory out of 5000000
+ 8191 multiletter control sequences out of 15000+600000
+ 15197 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,43p,594b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on datap.pdf (8 pages, 17510058 bytes).
+ 42i,7n,43p,1376b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on datap.pdf (9 pages, 17532716 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
+ 203 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
