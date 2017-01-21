@@ -1,9 +1,24 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Br{\'e}da(2003)]{breda2003ground}
+N.~J. Br{\'e}da.
+\newblock Ground-based measurements of leaf area index: a review of methods,
+  instruments and current controversies.
+\newblock \emph{Journal of experimental botany}, 54\penalty0 (392):\penalty0
+  2403--2417, 2003.
+
+\bibitem[Dahdouh-Guebas and Koedam(2006)]{dahdouh2006empirical}
+F.~Dahdouh-Guebas and N.~Koedam.
+\newblock Empirical estimate of the reliability of the use of the point-centred
+  quarter method (pcqm): Solutions to ambiguous field situations and
+  description of the pcqm+ protocol.
+\newblock \emph{Forest Ecology and management}, 228\penalty0 (1):\penalty0
+  1--18, 2006.
 
 \bibitem[Fassnacht et~al.(1994)Fassnacht, Gower, Norman, and
   McMurtric]{fassnacht1994comparison}
@@ -13,16 +28,58 @@ K.~S. Fassnacht, S.~T. Gower, J.~M. Norman, and R.~E. McMurtric.
 \newblock \emph{Agricultural and Forest Meteorology}, 71\penalty0 (1):\penalty0
   183--207, 1994.
 
+\bibitem[Jonckheere et~al.(2004)Jonckheere, Fleck, Nackaerts, Muys, Coppin,
+  Weiss, and Baret]{Jonckheere2004}
+I.~Jonckheere, S.~Fleck, K.~Nackaerts, B.~Muys, P.~Coppin, M.~Weiss, and
+  F.~Baret.
+\newblock {Review of methods for in situ leaf area index determination Part I.
+  Theories, sensors and hemispherical photography}.
+\newblock \emph{Agricultural and Forest Meteorology}, 121\penalty0
+  (1-2):\penalty0 19--35, 2004.
+\newblock ISSN 01681923.
+\newblock \doi{10.1016/j.agrformet.2003.08.027}.
+
 \bibitem[Kerr and Haufe(2011)]{kerr2011thinning}
 G.~Kerr and J.~Haufe.
 \newblock Thinning practice: A silvicultural guide.
 \newblock \emph{Forestry Commission}, page~54, 2011.
+
+\bibitem[Kimmins(1973)]{kimmins1973some}
+J.~Kimmins.
+\newblock Some statistical aspects of sampling throughfall precipitation in
+  nutrient cycling studies in british columbian coastal forests.
+\newblock \emph{Ecology}, pages 1008--1019, 1973.
+
+\bibitem[McKay et~al.(2003)McKay, Hudson, and Hudson]{mckay2003woodfuel}
+H.~McKay, J.~Hudson, and R.~Hudson.
+\newblock Woodfuel resource in britain.
+\newblock \emph{Forestry Commission Report}, 2003.
+
+\bibitem[Norman and Jarvis(1975)]{norman1975photosynthesis}
+J.~Norman and P.~Jarvis.
+\newblock Photosynthesis in sitka spruce (picea sitchensis (bong.) carr.): V.
+  radiation penetration theory and a test case.
+\newblock \emph{Journal of Applied Ecology}, pages 839--878, 1975.
+
+\bibitem[Papale et~al.(2006)Papale, Reichstein, Aubinet, Canfora, Bernhofer,
+  Kutsch, Longdoz, Rambal, Valentini, Vesala, et~al.]{papale2006towards}
+D.~Papale, M.~Reichstein, M.~Aubinet, E.~Canfora, C.~Bernhofer, W.~Kutsch,
+  B.~Longdoz, S.~Rambal, R.~Valentini, T.~Vesala, et~al.
+\newblock Towards a standardized processing of net ecosystem exchange measured
+  with eddy covariance technique: algorithms and uncertainty estimation.
+\newblock \emph{Biogeosciences}, 3\penalty0 (4):\penalty0 571--583, 2006.
 
 \bibitem[Pitman and Broadmeadow(2001)]{pitman2001leaf}
 R.~Pitman and M.~Broadmeadow.
 \newblock Leaf area, biomass and physiological parameterisation of ground
   vegetation of lowland oak woodland.
 \newblock \emph{Forestry Commission, Edinburgh}, 2001.
+
+\bibitem[Rich et~al.(1999)Rich, Wood, Vieglais, Burek, and
+  Webb]{rich1999hemiview}
+P.~M. Rich, J.~Wood, D.~Vieglais, K.~Burek, and N.~Webb.
+\newblock Hemiview user manual, version 2.1.
+\newblock \emph{Delta-T Devices Ltd., Cambridge, UK}, 79, 1999.
 
 \bibitem[Schlich and Perr{\'e}e(1905)]{schlich1905working}
 S.~W. Schlich and W.~Perr{\'e}e.

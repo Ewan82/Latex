@@ -6,7 +6,7 @@
 \usepackage[section]{placeins}
 \bibliographystyle{abbrvnat}
 
-\title{Data chapter}
+\title{Data}
 \author{Ewan Pinnington}
 
 \newtheorem{theorem}{Theorem}[section]
@@ -37,7 +37,7 @@ As part of the management regime, the Straits Inclosure is subject to thinning, 
 
 \section{Establishment of sampling points}
 
-For this fieldwork transects were designed to join up existing mensuration plots where measurements of woody biomass are made by Forest Research. This would then allow for comparison with historic observations. In total 435 sampling points were marked at 10m intervals, these are shown in Figure~\ref{fig:transects}. Python was used to calculated the exact latitude and longitude of each sampling point for the 3 transects, these locations were then entered into a GPS unit. When establishing the transects fluorescent spray paint was used to mark trees closest to each sampling point as shown on the GPS (see Figure~\ref{fig:pink_tree}). As parts of the forest site were extremely dense with vegetation a pair of loppers were used to clear a path in some areas to allow for the construction of relatively straight transects. Having all transect points numbered and corresponding to a latitude and longitude value allowed for comparison between methods and the splitting of observations between different distinct sections of the forest site. 
+For this fieldwork transects were designed to join up existing mensuration plots where measurements of woody biomass are made by Forest Research. This allowed for comparison with historic observations. In total 435 sampling points were marked at 10m intervals, these are shown in Figure~\ref{fig:transects}. Python was used to calculated the exact latitude and longitude of each sampling point for the 3 transects, these locations were then entered into a GPS unit. When establishing the transects fluorescent spray paint was used to mark trees closest to each sampling point as shown on the GPS (see Figure~\ref{fig:pink_tree}). As parts of the forest site were extremely dense with vegetation a pair of loppers were used to clear a path in some areas to allow for the construction of relatively straight transects. Having all transect points numbered and corresponding to a latitude and longitude value allowed for comparison between methods and the splitting of observations between different distinct sections of the forest site. 
 
 
 \begin{figure}[ht]
@@ -54,11 +54,11 @@ For this fieldwork transects were designed to join up existing mensuration plots
 
 \section{Leaf area index observations}
 
-The Leaf Area Index (LAI) is an important variable in relation to the amount of CO2 an ecosystem can remove from the atmosphere through photosynthesis. LAI can be thought of as the area of leaves per unit area of ground. Three different methods were used to measure LAI along the three transects at different sampling intervals. 
+Leaf Area Index (LAI) is an important variable in relation to the amount of CO\(_2\) an ecosystem can remove from the atmosphere through photosynthesis. LAI is defined as the area of leaves per unit area of ground. Three different methods were used to find estimates for peak LAI (July - September) for the year 2015 along the three transects at different sampling intervals.
 
 \subsection{Ceptometer}
 
-A ceptometer and an additional Photosynthetically Active Radiation (PAR) sensor were used to measure LAI. Here we measure below canopy PAR using the ceptometer while logging above canopy PAR using a data logger and PAR sensor positioned outside the canopy. We can then calculate LAI using the above and below canopy readings and a set of equations relying on some assumptions \citep{fassnacht1994comparison}. The ceptometer represents the quickest method for estimating LAI, we therefore took readings with the ceptometer at every sampling point over two walks of the transects, giving us 870 observations in total.
+A Decagon LP-80 ceptometer and an additional Photosynthetically Active Radiation (PAR) sensor were used to measure LAI. Here we measure below canopy PAR using the ceptometer while logging above canopy PAR using a data logger and PAR sensor positioned outside the canopy. We can then calculate LAI using the above and below canopy readings and a set of equations relying on some assumptions \citep{fassnacht1994comparison}. The ceptometer represents the quickest method for estimating LAI, we therefore took readings with the ceptometer at every sampling point over two walks of the transects, giving us 870 observations in total.
 
 In order to be sure that the PAR readings from the ceptometer and external PAR sensor were consistent we had to calibrate the PAR sensor against the ceptometer. This was done by leaving both the PAR sensor and ceptometer out logging next to each other every 10 seconds for a day in the Alice Holt Research Station met square. We can then calibrate he output of the PAR sensor with that of the ceptometer as shown in Figure~\ref{fig:par_calib}. 
 
@@ -68,11 +68,11 @@ In order to be sure that the PAR readings from the ceptometer and external PAR s
     \caption{Calibration of above canopy Photosynthetically Active Radiation (PAR) sensor (measuring in mV) with LP-80 ceptometer measured PAR (\(\mu \text{mol}~\text{m}^{-2}~\text{s}^{-1} \)).} \label{fig:par_calib}
 \end{figure}
 
-Once the PAR sensor was calibrate measurements could be made along the transects. The PAR sensor positioned outside of the canopy was logged every 5 seconds using a Decagon DL2e data logger, at the start of every set of measurements the clock on the data logger and ceptometer were synchronised to ensure comparison of measurements made at the same time. After sampling the transects we had a set of above canopy and below canopy PAR readings corresponding to each sampling point for both walks of the transects. These readings were then used in the following equations to estimate LAI:
-
-EQUATIONS!!!
-
-We then took the mean of the two LAI observations at each point to give as an estimate to the peak LAI for the year 2015. We can see the LAI estimate for the Straits Inclosure in Figure~\ref{fig:cept_lai}. 
+Once the PAR sensor was calibrate measurements could be made along the transects. The PAR sensor positioned outside of the canopy was logged every 5 seconds using a Delta-T DL2e data logger, at the start of every set of measurements the clock on the data logger and ceptometer were synchronised to ensure comparison of measurements made at the same time. After sampling the transects we had a set of above canopy and below canopy PAR readings corresponding to each sampling point for both walks of the transects. We use the same calculation for LAI as given in the Decagon LP-80 manual. This is using a simple model of radiation transmission and scattering tested against the more complex model of \citet{norman1975photosynthesis}. The equation used to calculate LAI from the above and below canopy PAR readings is,
+\begin{equation}
+LAI = \frac{((1-\frac{1}{2K})f_b - 1)\text{ln}\tau}{A(1-0.47f_b)},
+\end{equation} 
+where \(K\) is the extinction coefficient, \(f_b\) is the beam fraction, \(\tau = \frac{\text{below canopy PAR}}{\text{above canopy PAR}}\) and \(A = 0.283 + 0.785a - 0.159 a^2\) (where a is the leaf absorptivity, assumed to be 0.9 by Decagon). We assume a spherical leaf angle distribution parameter, \(\chi = 1\), this means the extinction coefficient simplifies to \(K=\frac{1}{2\text{cos}\theta}\), where \(\theta\) is the solar zenith angle. We took the mean of the two LAI observations at each point to give as an estimate to the peak LAI for the year 2015. We can see the LAI estimate for the Straits Inclosure in Figure~\ref{fig:cept_lai}. 
 
 \begin{figure}[ht]
     \centering
@@ -80,7 +80,9 @@ We then took the mean of the two LAI observations at each point to give as an es
     \caption{Ceptometer derived LAI for Alice Holt.} \label{fig:cept_lai}
 \end{figure}
 
-\subsection{Hemispherical photographs}
+\subsection{Hemispherical photographs} \label{sec:hemi_photos}
+
+The next method used to measure LAI was hemispherical photography. Hemispherical photographs show a complete view of the sky in all directions, from these images we use the HemiView software \citep{rich1999hemiview} which calculates the proportion of visible sky as a function of sky direction (gap fraction) which it then uses to calculate LAI \citep{Jonckheere2004}. Hemispherical photographs were taken every 50m along the transects, giving a total of 89 images. It is important to that hemispherical photographs are taken in overcast conditions so that the sun does not obscure areas of leaf area. It is important to note that we did not remove tree trunks and branches from our calculation of LAI with HemiView so that we are actually calculating plant area index. The impacts of this assumption are discussed in section~\ref{sec:lai_comp}. In Figure~\ref{fig:hemiphotos} we show an example of two hemispherical photographs taken in different areas of the Straits Inclosure.
 
 \begin{figure}[ht]
 \centering
@@ -102,6 +104,10 @@ We then took the mean of the two LAI observations at each point to give as an es
 
 \subsection{Litter traps}
 
+Finally litter traps were used to find estimates to LAI and leaf mass per area. Here we placed litter traps under the canopy to catch leaf litter as it falls into a bag attached to the bottom of the trap. The bags were changed every week during the litter fall period and the litter sorted into species. Every week the litter was dried in an oven at $70^{\text{o}}\text{C}$ and weighed. This gave us the dry-weight of the leaf litter for the 2015 season. Towards the end of the season we scanned a subsample for each species of 100 leaves to find an area, we then dried and weighed each subsample, a relationship between dry-weight and leaf area was then be built (leaf mass per area) and used to infer the total LAI for each trap once the whole seasons litter has been collected. This method of LAI calculation is the most time consuming.  
+
+A total of six litter traps were established at points along the transects (positions shown in Figure~\ref{fig:lit_traps}) allowing for comparison with the other methods. The 6 litter traps are not enough to describe the LAI for the research site \citep{kimmins1973some}. We use these litter traps as a point of comparison and validation for the ceptometer and hemispherical photograph estimates of LAI made at the same locations and also for estimates to leaf mass per area. From our litter trap observations we find a leaf mass per area of 29~g~C~m\(^{-2}\) free soluble carbohydrates for both sides of the forest.
+
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{litter_trap.pdf}
@@ -109,23 +115,47 @@ We then took the mean of the two LAI observations at each point to give as an es
 \end{figure}
 
 
-\subsection{Comparison of methods}
+\subsection{Comparison of methods} \label{sec:lai_comp}
 
-Although the ceptometer is the fastest method to measure LAI it is also the most variable, being extremely sensitive to solar zenith angle and clear sky conditions. If the sun is low in the sky the radiation will pass through much more photosynthetically active material than if the sun is directly above head.
+In Figure~\ref{fig:lai_comp07} and \ref{fig:lai_comp14} we show a comparison of the different methods of estimating LAI for the unthinned and thinned forest respectively. We can see that in all cases LAI derived from the litter traps is always greater than LAI estimated from optical methods, this is expected from previous comparisons \citep{breda2003ground}.
+ 
+Although the ceptometer is the fastest method for measuring LAI it is also the most variable, being extremely sensitive to the solar zenith angle and clear sky conditions. If the sun is low in the sky the radiation will pass through much more photosynthetically active material than if the sun is directly above head, causing spikes in the LAI value. We can see that the LAI estimates from the hemispherical photographs are much less variable than the ceptometer. As discussed in section~\ref{sec:hemi_photos} the hemispherical estimate is actually of plant area index, as we have not removed trunks and branches from the gap fraction calculation. However, this does not appear to have a great impact on results as hemispherical photograph derived LAI is still the lowest estimate of all three. 
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{thinned07.pdf}
-    \caption{LAI comparison for unthinned forest.} \label{fig:lai_comp07}
+    \caption{LAI comparison for unthinned forest. Dots and solid line represent observations made at different points along transects, dotted lines represent the mean of the observations.} \label{fig:lai_comp07}
 \end{figure}
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{thinned14.pdf}
-    \caption{LAI comparison for thinned forest.} \label{fig:lai_comp14}
+    \caption{LAI comparison for thinned forest. Dots and solid line represent observations made at different points along transects, dotted lines represent the mean of the observations.} \label{fig:lai_comp14}
 \end{figure}
 
 \section{Point-centred quater observations}
+
+We used the method of Point-Centred Quarters (PCQ) \citep{dahdouh2006empirical} to determine an estimate of the woody biomass for both unthinned and thinned forest in the Straits Inclosure. The PCQ method is conducted at each sampling point as follows:
+\begin{itemize}
+\item Using a compass, map 4 regions from the central sampling point
+\item Measure the distance from the central sampling point to the nearest tree in each quarter
+\item Measure the Diameter at Breast Height (DBH) for each tree (shown in Figure~\ref{fig:dbh_me}) and record the species 
+\end{itemize}
+There were 114 points samples along the three transects, from these measurements we derived estimates to tree density and mean DBH for both thinned and unthinned sides of the forest. We then used allometric relationships between DBH and total above ground biomass and coarse root biomass, found in work carried out by Forest Research and in \citet{mckay2003woodfuel}. These relationships were as follows,
+\begin{equation}
+\text{above ground dry-mass} = 0.0678\times \overline{\text{DBH}}^{2.619}
+\end{equation}
+and
+\begin{equation}
+\text{below ground coarse root dry-mass} = 0.149\times \overline{\text{DBH}}^{2.12}.
+\end{equation}
+
+This gave us an estimate to the dry-mass in kilograms for the average tree in our sampling area. Assuming that half of all dry-mass is carbon we can find an estimate of total woody and coarse root carbon in g~C~m\(^{-2}\) using the equation,
+\begin{multline}
+\text{total woody and coarse root carbon} =  \\1000\times0.5\times(\text{above ground dry-mass} + \text{below ground coarse root dry-mass})\times \text{tree density}.
+\end{multline}
+
+Forest Research have carried out their own mensuration studies at the site, these have been conducted at the mensuration points shown in Figure~\ref{fig:transects}. As these plots are included in our transects this means that hopefully our measurements will be comparable with those from Forest Research.  
 
 \begin{figure}[ht]
     \centering
@@ -134,6 +164,10 @@ Although the ceptometer is the fastest method to measure LAI it is also the most
 \end{figure}
 
 \section{Flux tower observations and data processing}
+
+The Straits Inclosure flux tower provides half-hourly observations from January 1999 to December 2015. These consist of the NEE fluxes and meteorological driving data of temperature, irradiance and atmospheric CO\(_{2}\) concentration for use in the DALEC2 model. The NEE data was subject to \(u^*\) filtering (with a value of \(0.2~\text{m s}^{-1}\)) and quality control procedures as described by \citet{papale2006towards}, but was not gap-filled. The resultant half-hourly NEE dataset was then split between observations corresponding to the western thinned and eastern unthinned sides of the site using a flux-footprint model, see \citet{wilkinson2015effects} for more details.  
+
+To match the time-step of our model we computed daily NEE observations by taking the mean over the 48 measurements made each day, selecting only days where there is no missing data. As we have been strict on the quality control of the flux record and not used any gap filling, this presented a problem in terms of the number of daily NEE observations available. By further splitting the flux record between two sides we retrieved very few total daily observations of NEE for either side. In order to address this we computed day and nighttime NEE fluxes (NEE\(_{day}\) and NEE\(_{night}\) respectively) for use in data assimilation. We used a solar model to define whether NEE measurements were made at daytime or nighttime. We then took the mean over the half-hourly day or nighttime measurements, again only taking periods where there were no gaps in the data so that we were only considering true observations. This provided us with many more observations of NEE for assimilation, as seen in table~\ref{table:nee_obs}. Because we are averaging over shorter time periods we have a smaller probability of gaps and erroneous data. We see that we have more daytime NEE observations than nighttime, as we tend to have much more turbulent air mixing in daylight hours. In section~\ref{sec:da} we give details of how we relate these twice daily observations of NEE to a daily time-step model.     
 
 \begin{figure}[ht]
     \centering

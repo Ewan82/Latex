@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  18 JAN 2017 10:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  21 JAN 2017 11:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -408,77 +408,98 @@ File: lai_cept.pdf Graphic file (type pdf)
 Package pdftex.def Info: lai_cept.pdf used on input line 79.
 (pdftex.def)             Requested size: 375.80544pt x 265.57114pt.
 
-<043exp2.jpg, id=45, 4769.82pt x 3179.88pt>
+[5 <./lai_cept.pdf>] <043exp2.jpg, id=57, 4769.82pt x 3179.88pt>
 File: 043exp2.jpg Graphic file (type jpg)
- <use 043exp2.jpg>
-Package pdftex.def Info: 043exp2.jpg used on input line 89.
-(pdftex.def)             Requested size: 211.3883pt x 140.90498pt.
 
-<252exp1.jpg, id=46, 4769.82pt x 3179.88pt>
+<use 043exp2.jpg>
+Package pdftex.def Info: 043exp2.jpg used on input line 91.
+(pdftex.def)             Requested size: 211.3883pt x 140.90498pt.
+ <252exp1.jpg, id=58, 4769.82pt x 3179.88pt>
 File: 252exp1.jpg Graphic file (type jpg)
- <use 252exp1.jpg>
-Package pdftex.def Info: 252exp1.jpg used on input line 95.
+
+<use 252exp1.jpg>
+Package pdftex.def Info: 252exp1.jpg used on input line 97.
 (pdftex.def)             Requested size: 211.3883pt x 140.90498pt.
-
-<litter_trap.pdf, id=47, 845.1575pt x 597.23125pt>
+ <litter_trap.pdf, id=59, 845.1575pt x 597.23125pt>
 File: litter_trap.pdf Graphic file (type pdf)
- <use litter_trap.pdf>
-Package pdftex.def Info: litter_trap.pdf used on input line 107.
-(pdftex.def)             Requested size: 375.80544pt x 265.57114pt.
 
-<thinned07.pdf, id=48, 951.34486pt x 531.81657pt>
+<use litter_trap.pdf>
+Package pdftex.def Info: litter_trap.pdf used on input line 113.
+(pdftex.def)             Requested size: 375.80544pt x 265.57114pt.
+ [6 <./043exp2.jpg> <./252exp1.jpg>]
+<thinned07.pdf, id=63, 951.34486pt x 531.81657pt>
 File: thinned07.pdf Graphic file (type pdf)
  <use thinned07.pdf>
-Package pdftex.def Info: thinned07.pdf used on input line 118.
+Package pdftex.def Info: thinned07.pdf used on input line 126.
 (pdftex.def)             Requested size: 375.80544pt x 210.08553pt.
 
-<thinned14.pdf, id=49, 951.34486pt x 531.81657pt>
+<thinned14.pdf, id=64, 951.34486pt x 531.81657pt>
 File: thinned14.pdf Graphic file (type pdf)
  <use thinned14.pdf>
-Package pdftex.def Info: thinned14.pdf used on input line 124.
+Package pdftex.def Info: thinned14.pdf used on input line 132.
 (pdftex.def)             Requested size: 375.80544pt x 210.08553pt.
- [5 <./lai_cept.pdf>] [6 <./043exp2.jpg> <./252exp1.jpg> <./litter_trap.pdf>] [
-7 <./thinned07.pdf> <./thinned14.pdf
+ [7 <./litter_trap.pdf>] [8 <./thinned07.pdf> <./thinned14.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./thinned14.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
->] <dbh_me.pdf, id=150, 500.87125pt x 375.4025pt>
+>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 140.
+
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
+
+<dbh_me.pdf, id=154, 500.87125pt x 375.4025pt>
 File: dbh_me.pdf Graphic file (type pdf)
  <use dbh_me.pdf>
-Package pdftex.def Info: dbh_me.pdf used on input line 132.
+Package pdftex.def Info: dbh_me.pdf used on input line 162.
 (pdftex.def)             Requested size: 375.80544pt x 281.6772pt.
+ [9
 
-<top_of_flux.pdf, id=151, 539.01375pt x 405.515pt>
+]
+
+LaTeX Warning: Reference `table:nee_obs' on page 10 undefined on input line 170
+.
+
+
+LaTeX Warning: Reference `sec:da' on page 10 undefined on input line 170.
+
+<top_of_flux.pdf, id=158, 539.01375pt x 405.515pt>
 File: top_of_flux.pdf Graphic file (type pdf)
  <use top_of_flux.pdf>
-Package pdftex.def Info: top_of_flux.pdf used on input line 140.
+Package pdftex.def Info: top_of_flux.pdf used on input line 174.
 (pdftex.def)             Requested size: 375.80544pt x 282.73239pt.
 
-(./datap.bbl [8
+(./datap.bbl [10 <./dbh_me.pdf>] [11 <./top_of_flux.pdf>]) [12] (./datap.aux)
 
- <./dbh_me.pdf>]) [9 <./top_of_flux.pdf>] (./datap.aux) ) 
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4846 strings out of 493117
- 70124 string characters out of 6135433
- 138478 words of memory out of 5000000
- 8194 multiletter control sequences out of 15000+600000
+ 4891 strings out of 493117
+ 71089 string characters out of 6135433
+ 138980 words of memory out of 5000000
+ 8236 multiletter control sequences out of 15000+600000
  15197 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,43p,1521b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on datap.pdf (9 pages, 17546772 bytes).
+ 42i,9n,43p,1521b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on datap.pdf (12 pages, 17583821 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
+ 227 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
