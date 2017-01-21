@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  21 JAN 2017 11:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  21 JAN 2017 22:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -248,23 +248,26 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (/usr/local/texlive/2014/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
 \c@theorem=\count107
 
 (./datap.aux)
 \openout1 = `datap.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -360,146 +363,133 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 18.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 20.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<AP1_2013.jpg, id=14, 1194.864pt x 845.559pt>
+<AP1_2013.jpg, id=12, 1194.864pt x 845.559pt>
 File: AP1_2013.jpg Graphic file (type jpg)
  <use AP1_2013.jpg>
-Package pdftex.def Info: AP1_2013.jpg used on input line 34.
+Package pdftex.def Info: AP1_2013.jpg used on input line 36.
 (pdftex.def)             Requested size: 375.80544pt x 265.93962pt.
-
-<straitsmap_threet_10m.png, id=15, 1300.86pt x 669.9429pt>
+ [2]
+<straitsmap_threet_10m.png, id=18, 1300.86pt x 669.9429pt>
 File: straitsmap_threet_10m.png Graphic file (type png)
 
 <use straitsmap_threet_10m.png>
-Package pdftex.def Info: straitsmap_threet_10m.png used on input line 45.
+Package pdftex.def Info: straitsmap_threet_10m.png used on input line 47.
 (pdftex.def)             Requested size: 469.75502pt x 241.92549pt.
- <291E.jpg, id=17, 4047.12pt x 3035.34pt>
+ <291E.jpg, id=20, 4047.12pt x 3035.34pt>
 File: 291E.jpg Graphic file (type jpg)
 
 <use 291E.jpg>
-Package pdftex.def Info: 291E.jpg used on input line 51.
+Package pdftex.def Info: 291E.jpg used on input line 53.
 (pdftex.def)             Requested size: 375.80544pt x 281.82982pt.
- [2 <./AP1_2013.jpg>] [3 <./straitsmap_threet_10m.png> <./291E.jpg>] <AH_PAR.pd
-f, id=25, 650.43pt x 539.01375pt>
+ [3 <./AP1_2013.jpg>] [4 <./straitsmap_threet_10m.png> <./291E.jpg>] <AH_PAR.pd
+f, id=28, 650.43pt x 539.01375pt>
 File: AH_PAR.pdf Graphic file (type pdf)
  <use AH_PAR.pdf>
-Package pdftex.def Info: AH_PAR.pdf used on input line 67.
+Package pdftex.def Info: AH_PAR.pdf used on input line 69.
 (pdftex.def)             Requested size: 375.80544pt x 311.43561pt.
- [4
+ [5
 
- <./AH_PAR.pdf>] <lai_cept.pdf, id=44, 845.1575pt x 597.23125pt>
+]
+<lai_cept.pdf, id=32, 845.1575pt x 597.23125pt>
 File: lai_cept.pdf Graphic file (type pdf)
  <use lai_cept.pdf>
-Package pdftex.def Info: lai_cept.pdf used on input line 79.
+Package pdftex.def Info: lai_cept.pdf used on input line 81.
 (pdftex.def)             Requested size: 375.80544pt x 265.57114pt.
-
-[5 <./lai_cept.pdf>] <043exp2.jpg, id=57, 4769.82pt x 3179.88pt>
+ [6 <./AH_PAR.pdf>] <043exp2.jpg, id=52, 4769.82pt x 3179.88pt>
 File: 043exp2.jpg Graphic file (type jpg)
-
-<use 043exp2.jpg>
-Package pdftex.def Info: 043exp2.jpg used on input line 91.
+ <use 043exp2.jpg>
+Package pdftex.def Info: 043exp2.jpg used on input line 93.
 (pdftex.def)             Requested size: 211.3883pt x 140.90498pt.
- <252exp1.jpg, id=58, 4769.82pt x 3179.88pt>
+
+<252exp1.jpg, id=53, 4769.82pt x 3179.88pt>
 File: 252exp1.jpg Graphic file (type jpg)
-
-<use 252exp1.jpg>
-Package pdftex.def Info: 252exp1.jpg used on input line 97.
+ <use 252exp1.jpg>
+Package pdftex.def Info: 252exp1.jpg used on input line 99.
 (pdftex.def)             Requested size: 211.3883pt x 140.90498pt.
- <litter_trap.pdf, id=59, 845.1575pt x 597.23125pt>
+ [7 <./lai_cept.pdf>] <litter_trap.pdf, id=66, 845.1575pt x 597.23125pt>
 File: litter_trap.pdf Graphic file (type pdf)
-
-<use litter_trap.pdf>
-Package pdftex.def Info: litter_trap.pdf used on input line 113.
+ <use litter_trap.pdf>
+Package pdftex.def Info: litter_trap.pdf used on input line 115.
 (pdftex.def)             Requested size: 375.80544pt x 265.57114pt.
- [6 <./043exp2.jpg> <./252exp1.jpg>]
-<thinned07.pdf, id=63, 951.34486pt x 531.81657pt>
+
+[8 <./043exp2.jpg> <./252exp1.jpg>]
+<thinned07.pdf, id=70, 951.34486pt x 531.81657pt>
 File: thinned07.pdf Graphic file (type pdf)
  <use thinned07.pdf>
-Package pdftex.def Info: thinned07.pdf used on input line 126.
+Package pdftex.def Info: thinned07.pdf used on input line 128.
 (pdftex.def)             Requested size: 375.80544pt x 210.08553pt.
 
-<thinned14.pdf, id=64, 951.34486pt x 531.81657pt>
+<thinned14.pdf, id=71, 951.34486pt x 531.81657pt>
 File: thinned14.pdf Graphic file (type pdf)
  <use thinned14.pdf>
-Package pdftex.def Info: thinned14.pdf used on input line 132.
+Package pdftex.def Info: thinned14.pdf used on input line 134.
 (pdftex.def)             Requested size: 375.80544pt x 210.08553pt.
- [7 <./litter_trap.pdf>] [8 <./thinned07.pdf> <./thinned14.pdf
+ [9 <./litter_trap.pdf>] [10 <./thinned07.pdf> <./thinned14.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./thinned14.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
 >]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 140.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 142.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 142.
 
-<dbh_me.pdf, id=154, 500.87125pt x 375.4025pt>
+<dbh_me.pdf, id=160, 500.87125pt x 375.4025pt>
 File: dbh_me.pdf Graphic file (type pdf)
  <use dbh_me.pdf>
-Package pdftex.def Info: dbh_me.pdf used on input line 162.
+Package pdftex.def Info: dbh_me.pdf used on input line 164.
 (pdftex.def)             Requested size: 375.80544pt x 281.6772pt.
- [9
+ [11
 
-]
-
-LaTeX Warning: Reference `table:nee_obs' on page 10 undefined on input line 170
-.
-
-
-LaTeX Warning: Reference `sec:da' on page 10 undefined on input line 170.
-
-<top_of_flux.pdf, id=158, 539.01375pt x 405.515pt>
+] [12 <./dbh_me.pdf>] <top_of_flux.pdf, id=176, 539.01375pt x 405.515pt>
 File: top_of_flux.pdf Graphic file (type pdf)
- <use top_of_flux.pdf>
-Package pdftex.def Info: top_of_flux.pdf used on input line 174.
+
+<use top_of_flux.pdf>
+Package pdftex.def Info: top_of_flux.pdf used on input line 175.
 (pdftex.def)             Requested size: 375.80544pt x 282.73239pt.
-
-(./datap.bbl [10 <./dbh_me.pdf>] [11 <./top_of_flux.pdf>]) [12] (./datap.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+ (./datap.bbl [13 <./top_of_flux.pdf>] [14]) [15]
+(./datap.aux) ) 
 Here is how much of TeX's memory you used:
- 4891 strings out of 493117
- 71089 string characters out of 6135433
- 138980 words of memory out of 5000000
- 8236 multiletter control sequences out of 15000+600000
+ 4917 strings out of 493117
+ 71603 string characters out of 6135433
+ 138279 words of memory out of 5000000
+ 8258 multiletter control sequences out of 15000+600000
  15197 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,9n,43p,1521b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on datap.pdf (12 pages, 17583821 bytes).
+ 42i,9n,43p,1832b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
+.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on datap.pdf (15 pages, 17573943 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
+ 233 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
