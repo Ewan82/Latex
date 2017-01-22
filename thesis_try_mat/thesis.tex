@@ -1,0 +1,296 @@
+
+\documentclass[a4paper,oneside,titlepage,11pt]{report}
+
+%\includeonly{acknowledgements,abbreviations,introduction,eng_review,opt_review,lin_elast_finite_elements,min_comp_st_vol,buckling,analysis_eso,conclusion,appendix}
+%\includeonly{buckling,eng_review,opt_review,analysis_eso}
+%\includeonly{min_comp_st_vol}
+%\includeonly{acknowledgements}
+%\includeonly{eng_review}
+
+% this includes the baththesis package
+\usepackage{readingthesis}
+%\usepackage[latin1]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}%,amsxtra}
+\usepackage{graphicx}
+\usepackage{fancyhdr}   % does nice headers (not required)
+%\usepackage{subfig}
+%\usepackage{caption}
+%\usepackage{subcaption}
+%\usepackage[notref,notcite]{showkeys}
+%\usepackage{multibib}
+%\usepackage{float}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{shapes.geometric,arrows,automata,positioning}
+\usepackage{nomencl}
+\makenomenclature
+\usepackage[Glenn]{fncychap}
+%\usepackage[margin=0pt,font=small,labelfont=bf,textfont=it]{caption}
+
+%\usepackage{makeidx}	       % this package makes an index - it is not required!
+%\makeindex
+\usepackage[pdftex,pdfborder= 0 0 0,citecolor=black,linkcolor=black,colorlinks=true,bookmarksopen=true,plainpages=false,pdfpagelabels]{hyperref}
+\pagestyle{fancy}
+%\usepackage{algorithm}	% those two packages are helpful if you use a lot of algorithms in your thesis
+%\usepackage{algorithmic} 
+\usepackage{tabularx}
+\usepackage{ifthen}
+\usepackage{pgf}
+\usepackage{pgfplots}
+\usepackage{datetime}
+
+% From Dan Peak's thesis:
+%\usepackage{lscape}
+%,latexsym,flafter,afterpage,amssymb}
+%\usepackage[round]{natbib}
+%\usepackage{setspace}
+%\onehalfspacing
+%\usepackage[font=singlespacing,small,bf]{caption}
+%\usepackage[small,bf]{caption}
+\usepackage{array}
+\usepackage{subfigure} %, epsfig, amsmath,multirow,lscape}
+\usepackage{graphicx}
+%\usepackage{latexsym,flafter,afterpage,amssymb,color}
+%\usepackage[round]{natbibnew}
+\usepackage{natbib}
+%\usepackage{amssymb,amsmath}
+%\usepackage{subfigure}
+%\usepackage{amsthm}
+\usepackage{lineno}
+\usepackage{colortbl}
+%\usepackage{tikz}
+%\usepackage{pgfplots}
+\usepgfplotslibrary{colormaps,external}
+\usepackage{pgfkeys}
+\usetikzlibrary{calc,intersections,through,backgrounds,decorations.pathmorphing,decorations.pathreplacing, decorations.shapes}
+\usepackage{wrapfig}
+%\usepackage{float}
+\usepackage{comment}
+\usepackage{placeins}
+
+
+\theoremstyle{plain}
+
+\newtheorem{thm}{Theorem}[chapter]		% those commands are for numbering Theorems etc within the chapter
+\newtheorem{Example}[thm]{Example}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{Remark}[thm]{Remark}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{algo}[thm]{Algorithm}
+\newtheorem{Assumption}[thm]{Assumption}
+\newtheorem{Conjecture}[thm]{Conjecture}
+
+
+
+\newcommand{\D}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\bs}{\boldsymbol}
+\newcommand{\pd}{\partial}
+\newcommand{\var}{\operatorname{Var}}
+\newcommand{\cov}{\operatorname{Cov}}
+% headings 
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\fancyhead[EL,OL]{}
+\fancyhead[ER]{\sffamily\footnotesize\nouppercase{\rightmark}}
+\fancyhead[OR]{\sffamily\footnotesize\nouppercase{\leftmark}}
+
+\fancyfoot[EL,OR]{}
+\fancyfoot[EC,OC]{\sffamily\thepage}
+
+% spacing, choose whatever you want - the university regulations say single or onehalfspacing is okay, 
+% the default is single spacing
+
+\doublespacing
+%\onehalfspacing
+%\linespread{1.1}
+
+% this is the title, obviously
+
+\title{\sffamily\bfseries Understanding the information content in diverse observations of carbon stocks and fluxes for data assimilation and ecological modelling} 
+\author{\sffamily Ewan Mark Pinnington}
+\degree{\sffamily Doctor of Philosophy}
+\department{\sffamily Department of Meteorology}
+\degreemonthyear{\sffamily \monthname \ \the\year} \norestrictions
+\makeatletter \AtBeginDocument{	\hypersetup{pdftitle= {\@title \ - E. Pinnington PhD Thesis, University of Reading},pdfauthor= {\@author}}} \makeatother
+
+
+
+
+%\rfoot{
+%{\setlength{\unitlength}{1mm}\begin{picture}(0,0)\put(0,-33){\includegraphics[width=2cm]{/home/pab23/2012/apple/pics/\thepage.jpg}}\end{picture}}
+%}
+
+\fancypagestyle{plain}{%
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%\fancyfoot[EC,OC]{\sffamily\thepage}
+%\rfoot{
+%{\setlength{\unitlength}{1mm}\begin{picture}(0,0)\put(0,-33){\includegraphics[width=2cm]{/home/pab23/2012/apple/pics/\thepage.jpg}}\end{picture}}
+} %}
+
+\begin{document}
+\maketitle
+\clearpage
+
+\chapter*{Declaration}
+%%\chapter*{\vspace*{5pt}\centering \scshape Abstract}
+%\thispagestyle{headings}
+%%\thispagestyle{contents}%%
+
+\par
+I confirm that this is my own work and the use of all material from
+other sources has been properly and fully acknowledged.
+
+\vspace*{1cm}
+\hspace{3.75in} M. S. Lang
+
+\newpage
+%\thispagestyle{empty}
+%\hspace{1cm}
+%\clearpage
+
+% acknowledgements, in case you want to include them
+%\thispagestyle{empty}
+
+\pagenumbering{roman}
+\begin{abstract}
+%\input{abstract}
+\end{abstract}
+
+%\chapter*{Acknowledgements}
+\include{acknowledgements}
+\thispagestyle{empty}
+\clearpage
+\thispagestyle{empty}
+%\hspace{1cm}
+%\clearpage
+
+% list of figures
+%\pagenumbering{roman}
+{\sffamily\tableofcontents}
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+\clearpage
+\thispagestyle{plain}
+%\hspace{1cm}
+%\clearpage
+
+% list of tables
+\phantomsection
+\addcontentsline{toc}{section}{List of Tables}
+\listoftables
+\clearpage
+
+% list of algorithms
+%\phantomsection
+%\addcontentsline{toc}{section}{List of Algorithms}
+%\thispagestyle{plain}
+%\listofalgorithms
+
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{section}{Nomenclature}
+\thispagestyle{plain}
+
+\include{abbreviations}
+\printnomenclature[2cm]
+\thispagestyle{plain}
+\clearpage
+
+%\thispagestyle{empty}
+%\hspace{1cm}
+%\clearpage
+
+\pagenumbering{arabic}
+
+% now here it really starts
+
+\pagenumbering{arabic}
+
+\chapter{Introduction}		%Chapter title
+\label{ch01}			%Label for referencing
+\thispagestyle{headings}	%Style of first page of chapter
+\input{ch01_Introduction}	%LaTeX document that chapter is stored in
+
+\chapter{Data Assimilation Methods}
+\label{ch02}
+\thispagestyle{headings}
+\input{ch02_DAMethods}
+
+\chapter{Previous Methods of Parameter and Parameterisation Estimation}
+\label{ch03}
+\thispagestyle{headings}
+\input{ch03_PrevParEst}
+
+\chapter{Derivative based Parameter Estimation}
+\label{ch04}
+\thispagestyle{headings}
+\input{ch04_DerPE}
+
+\chapter{Parameterisation Estimation}
+\label{ch05}
+\thispagestyle{headings}
+\input{ch05_ParameterisationEst}
+
+\chapter{Conclusions and Future Work}
+\label{ch06}
+\thispagestyle{headings}
+\input{ch06_Conclusions}
+
+% general intro
+%\include{introduction}
+%
+%\include{eng_review}
+%
+%\include{lin_elast_finite_elements}
+%
+%\include{opt_review}
+%
+%\include{min_comp_st_vol}
+%
+%\include{buckling}
+%
+%\include{analysis_eso}
+%
+%\include{conclusion}
+%\clearpage
+%\thispagestyle{empty}
+%\hspace{1cm}
+%\clearpage
+
+\appendix
+
+\include{appendix}
+
+%\clearpage
+%\thispagestyle{empty}
+%\hspace{1cm}
+%\clearpage
+
+\cleardoublepage
+
+% this is if you have used bibtex, my bibfile is called documents.bib
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{plain}
+\bibliography{bibliography}
+%\bibliography{/home/phil/2012/latex/library}
+\clearpage
+% this is if you do an index (not required)
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Index}
+%\headsep 23pt
+%\printindex\thispagestyle{fancy}
+%\clearpage
+%\thispagestyle{empty}
+%\hspace{1cm}
+%\clearpage
+
+\end{document}

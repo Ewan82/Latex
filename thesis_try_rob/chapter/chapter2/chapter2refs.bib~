@@ -1,0 +1,1638 @@
+@book{ACIA,
+   title = {Arctic Climate Impact Assessment Executive Summary},
+   author = {ACIA},
+   publisher = {Cambridge University Press},
+   year = {2005}
+}
+
+@inbook{
+ani2007,
+   author = {Anisimov,
+   O.A. and Vaughan,
+   D.G. and Callaghan,
+   T.V. and Furgal, C.
+   and Marchant, H. and
+   Prowse, T.D. and H.,
+   Vilhj�lmsson and
+   Walsh, J.E.},
+   title = {Polar
+   regions (Arctic  and
+   Antarctic).},
+   booktitle = {Climate
+   Change 2007: Impacts,
+   Adaptation and
+   Vulnerability.
+   Contribution of
+   Working Group II to
+   the Fourth Assessment
+   Report of the
+   Intergovernmental
+   Panel on Climate
+   Change.},
+   editor = {Parry, M.L.
+   and Canziani, O.F.
+   and Palutikof, J.P.
+   and van der Linden,
+   P.J. and Hanson,
+   C.E.},
+   publisher =
+   {Cambridge University
+   Press},
+   address =
+   {Cambridge},
+   chapter = {15},
+   pages = {653-685},
+   year = {2007}
+}
+
+@article{
+baker1975,
+  title={Effect of observation time on mean temperature estimation.},
+  author={Baker, Donald G},
+  journal={Journal of Applied Meteorology},
+  volume={14},
+  pages={471-476},
+  year={1975}
+}
+
+@article{
+berry2009,
+  title={A new air-sea interaction gridded dataset from ICOADS with uncertainty estimates},
+  author={Berry, David I and Kent, Elizabeth C},
+  journal={Bulletin of the American Meteorological Society},
+  volume={90},
+  number={5},
+  pages={645-656},
+  year={2009}
+}
+
+
+@inbook{
+bindoff2007,
+   author = {Bindoff,
+   N.L. and Willebrand,
+   J. and Artale, V. and
+   Cazenave, A. and
+   Gregory, J. and
+   Gulev, S. and Hanawa,
+   K. and Le Qu�r�, C.
+   and Levitus, S. and
+   Nojiri, Y. and Shum,
+   C.K. and L.D., Talley
+   and Unnikrishnan,
+   A.},
+   title =
+   {Observations:
+   Oceanic Climate
+   Change  and Sea
+   Level.},
+   booktitle = {Climate
+   Change 2007: The
+   Physical Science
+   Basis. Contribution
+   of Working
+   Group I to the Fourth
+   Assessment Report of the
+   Intergovernmental Panel
+   on Climate Change},
+   editor = {Solomon, S.
+   and Qin, D. and
+   Manning, M. and Chen,
+   Z. and Marquis, M.
+   and Averyt, K.B. and
+   Tignor, M. and
+   Miller, H.L.},
+   publisher =
+   {Cambridge University
+   Press},
+   address = {Cambridge,
+   United Kingdom and
+   New York, NY, USA.},
+   chapter = {5},
+   year = {2007}
+}
+
+@misc{
+brigham2011,
+   author = {Brigham,
+   L.},
+   publisher={Nature},
+   title = {Marine
+   protection in the
+   Arctic cannot wait},
+   year = {2011},
+   note={$http://www.nature.com/news/2011/111012/full/478157a.html$}
+}
+
+@article{
+brohan2006,
+   author = {Brohan, P.
+   and Kennedy, J. J.
+   and Harris, I. and
+   Tett, S. F. B. and
+   Jones, P. D.},
+   title = {Uncertainty
+   estimates in regional
+   and global observed
+   temperature changes:
+   A new data set from
+   1850},
+   journal = {Journal of
+   Geophysical
+   Research-Atmospheres},
+   volume = {111},
+   number = {D12},
+   pages = {21},
+   year = {2006}
+}
+
+@article{
+bromwich2007,
+   author = {Bromwich,
+   D. H. and Fogt,
+   R. L. and Hodges,
+   K. I. and Walsh,
+   J. E.},
+   title = {A
+   tropospheric
+   assessment of the
+   ERA-40, NCEP, and
+   JRA-25 global
+   reanalyses in the
+   polar regions},
+   journal = {Journal of
+   Geophysical
+   Research-Atmospheres},
+   volume = {112},
+   number = {D10},
+   year = {2007}
+}
+
+@article{
+callaghan2011,
+  title={The changing face of Arctic snow cover: A synthesis of observed and projected changes},
+  author={Callaghan, Terry V and Johansson, Margareta and Brown, Ross D and Groisman, Pavel Ya and Labba, Niklas and Radionov, Vladimir and Barry, Roger G and Bulygina, Olga N and Essery, Richard LH and Frolov, DM and others},
+  journal={Ambio},
+  volume={40},
+  number={1},
+  pages={17-31},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{callendar1938,
+  title={The artificial production of carbon dioxide and its influence on temperature},
+  author={Callendar, Guy Stewart},
+  journal={Quarterly Journal of the Royal Meteorological Society},
+  volume={64},
+  number={275},
+  pages={223-240},
+  year={1938},
+  publisher={Wiley Online Library}
+}
+
+
+
+@article{
+cerveny2008,
+author = {Cerveny, Randall S. and Svoma, Bohumil M. and Balling, Robert C., Jr. and Vose, Russell S.},
+title = {Gregorian calendar bias in monthly temperature databases},
+journal = {Geophysical Research Letters},
+volume = {35},
+number = {19},
+year = {2008},
+type = {Journal Article}
+}
+
+@article{
+comiso2001,
+   author = {Comiso, J.
+   C.},
+   title =
+   {Satellite-observed
+   variability and trend
+   in sea-ice extent,
+   surface temperature,
+   albedo and clouds in
+   the Arctic},
+   journal = {Annals of
+   Glaciology, Vol 33},
+   volume = {33},
+   pages = {457-473},
+   year = {2001}
+}
+
+@article{
+comiso2002,
+   author = {Comiso, J.
+   C.},
+   title = {A rapidly
+   declining perennial
+   sea ice cover in the
+   Arctic},
+   journal =
+   {Geophysical Research
+   Letters},
+   volume = {29},
+   number = {20},
+   pages = {4},
+   year = {2002}
+}
+
+
+@article{
+comiso2003,
+   author = {Comiso, J.
+   C.},
+   title = {Warming
+   trends in the Arctic
+   from clear sky
+   satellite
+   observations},
+   journal = {Journal of
+   Climate},
+   volume = {16},
+   number = {21},
+   pages = {3498-3510},
+   year = {2003}
+}
+
+@article{
+comiso2006,
+  title={Arctic warming signals from satellite observations},
+  author={Comiso, Josefino C},
+  journal={Weather},
+  volume={61},
+  number={3},
+  pages={70-76},
+  year={2006},
+  publisher={Wiley Online Library}
+}
+
+
+@article{
+comiso2008,
+   author = {Comiso, J.
+   C. and Parkinson, C.
+   L. and Gersten, R.
+   and Stock, L.},
+   title = {Accelerated
+   decline in the Arctic
+   Sea ice cover},
+   journal =
+   {Geophysical Research
+   Letters},
+   volume = {35},
+   number = {1},
+   year = {2008}
+}
+
+@article{
+comiso2012,
+  title={Large decadal decline of the Arctic multiyear ice cover},
+  author={Comiso, Josefino C},
+  journal={Journal of Climate},
+  volume={25},
+  number={4},
+  pages={1176-1193},
+  year={2012}
+}
+
+
+@article{
+cowtan2013,
+    author = {Cowtan, K. and Way, R.},
+    title = {Coverage bias in the HadCRUT4 temperature series and its
+		impact on recent temperature trends.},
+    journal = {Accepted for the Quarterly Journal of the Royal Meteorological Society},
+    year = {2013}
+}
+
+@misc{
+cressey2011,
+   author = {Cressey,
+   D.},
+   publisher={Nature},
+   title = {Scientific
+   challenges in the
+   Arctic: Open
+   water},
+   year = {2011},
+   note={$www.nature.com/news/2011/111012/full/478174a.html$}
+}
+
+
+@article{
+curry1995,
+   author = {Curry, J.
+   A. and Schramm, J. L.
+   and Ebert, E. E.},
+   title = {SEA-ICE
+   ALBEDO CLIMATE
+   FEEDBACK MECHANISM},
+   journal = {Journal of
+   Climate},
+   volume = {8},
+   number = {2},
+   pages = {240-247},
+   year = {1995}
+}
+
+@article{donat2013,
+  title={Updated analyses of temperature and precipitation extreme indices since the beginning of the twentieth century: The HadEX2 dataset},
+  author={Donat, MG and Alexander, LV and Yang, H and Durre, I and Vose, R and Dunn, RJH and Willett, KM and Aguilar, E and Brunet, M and Caesar, J and others},
+  journal={Journal of Geophysical Research: Atmospheres},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+
+
+@article{
+fall2011,
+  title={Analysis of the impacts of station exposure on the US Historical Climatology Network temperatures and temperature trends},
+  author={Fall, Souleymane and Watts, Anthony and Nielsen-Gammon, John and Jones, Evan and Niyogi, Dev and Christy, John R and Pielke, Roger A},
+  journal={Journal of Geophysical Research: Atmospheres (1984-2012)},
+  volume={116},
+  number={D14},
+  year={2011},
+  publisher={Wiley Online Library}
+}
+
+@article{
+folland1995,
+  title={Correction of instrumental biases in historical sea surface temperature data},
+  author={Folland, CK and Parker, DE},
+  journal={Quarterly Journal of the Royal Meteorological Society},
+  volume={121},
+  number={522},
+  pages={319-367},
+  year={1995},
+  publisher={Wiley Online Library}
+}
+
+@article{
+folland2003,
+author = {Folland, C. K. and Salinger, M. J. and Jiang, N. and Rayner, N. A.},
+title = {Trends and variations in south pacific island and ocean surface temperatures},
+journal = {Journal of Climate},
+volume = {16},
+pages = {2859–2874},
+year = {2003}
+}
+
+
+@article{
+folland2001,
+author = {Folland, Chris K and Karl, Thomas R},
+title = {Recent rates of warming in marine environment meet controversy},
+journal = {Eos, Transactions American Geophysical Union},
+volume = {82},
+number = {40},
+pages = {453-461},
+year = {2001}
+}
+
+@article{
+francis2009,
+  title={Winter Northern Hemisphere weather patterns remember summer Arctic sea-ice extent},
+  author={Francis, Jennifer A and Chan, Weihan and Leathers, Daniel J and Miller, James R and Veron, Dana E},
+  journal={Geophysical Research Letters},
+  volume={36},
+  number={7},
+  pages={L07503},
+  year={2009},
+  publisher={American Geophysical Union}
+}
+
+
+@article{
+haggerty2003,
+author = {Haggerty, J. A. and Maslanik, J. A. and Curry, J. A.},
+title = {Heterogeneity of sea ice surface temperature at SHEBA from aircraft measurements},
+journal = {Journal of Geophysical Research-Oceans},
+volume = {108},
+number = {C10},
+year = {2003}
+}
+
+
+@article{
+hall2004,
+author = {Hall, D. K. and Key, J. R. and Casey, K. A. and Riggs, G. A. and Cavalieri, D. J.},
+title = {Sea ice surface temperature product from MODIS},
+journal = {IEEE Transactions on Geoscience and Remote Sensing},
+volume = {42},
+number = {5},
+pages = {1076-1087},
+year = {2004}
+}
+
+@article{
+hansen2001,
+   author = {Hansen, J.
+   and Ruedy, R. and
+   Sato, M. and Imhoff,
+   M. and Lawrence, W.
+   and Easterling, D.
+   and Peterson, T. and
+   Karl, T.},
+   title = {A closer
+   look at United States
+   and global surface
+   temperature change},
+   journal = {Journal of
+   Geophysical
+   Research-Atmospheres},
+   volume = {106},
+   number = {D20},
+   pages =
+   {23947-23963},
+   year = {2001}
+}
+
+@article{
+hansen2010,
+author = {Hansen, J. and Ruedy, R. and Sato, M. and Lo, K.},
+title = {GLOBAL SURFACE TEMPERATURE CHANGE},
+journal = {Reviews of Geophysics},
+volume = {48},
+year = {2010}
+}
+
+@article{hansen2012,
+  title={Perceptions of climate change: The new climate dice},
+  author={Hansen, James and Sato, Makiko and Ruedy, Reto},
+  journal={Procedings of the National Academy of Science},
+  volume={119},
+  pages={14726-14727},
+  year={2012}
+}
+
+@inbook{
+hartmann2013,
+   author = {Hartmann,
+   D.L. and Klein Tank, A.M.G and Rusticucci, M. and Alexander, L.V. and Bonnimann, S. and Charabi, Y.A. and Dentener, F.J. and Dlugokency, E.J. and Easterling, D.R. and Kaplan, A. and Soden, B.J. and Thorne, P.W. and Wild, M. and Panmao, Z.},
+   title =
+   {Observations: Atmosphere and Surface},
+   booktitle = {Climate
+   Change 2013: The
+   Physical Science
+   Basis.  Contribution
+   of Working Group I to
+   the Five Assessment
+   Report of the
+   Intergovernmental
+   Panel on Climate
+   Change},
+   publisher =
+   {Cambridge University
+   Press, 2013},
+   chapter = {2},
+   pages = {159-254},
+   year = {2013}
+}
+
+@article{hawkins2013,
+  title={On increasing global temperatures: 75 years after Callendar},
+  author={Hawkins, Ed and Jones, Phil and others},
+  journal={Quarterly Journal of the Royal Meteorological Society},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+
+
+@article{
+hinzman2005,
+  title={Evidence and implications of recent climate change in northern Alaska and other arctic regions},
+  author={Hinzman, Larry D and Bettez, Neil D and Bolton, W Robert and Chapin, F Stuart and Dyurgerov, Mark B and Fastie, Chris L and Griffith, Brad and Hollister, Robert D and Hope, Allen and Huntington, Henry P and others},
+  journal={Climatic Change},
+  volume={72},
+  number={3},
+  pages={251-298},
+  year={2005},
+  publisher={Springer}
+}
+
+@article{
+holland2003,
+   author = {Holland, M.
+   M. and Bitz, C. M.},
+   title = {Polar
+   amplification of
+   climate change in
+   coupled models},
+   journal = {Climate
+   Dynamics},
+   volume = {21},
+   number = {3-4},
+   pages = {221-232},
+   year = {2003}
+}
+
+@article{
+ishii2005,
+  title={Objective analyses of sea-surface temperature and marine meteorological variables for the 20th century using ICOADS and the Kobe collection},
+  author={Ishii, Masayoshi and Shouji, Akiko and Sugimoto, Satoshi and Matsumoto, Takanori},
+  journal={International journal of climatology},
+  volume={25},
+  number={7},
+  pages={865-879},
+  year={2005}
+}
+
+@article{
+jones2012,
+author = {Jones, P. D. and Lister, D. H. and Osborn, T. J. and Harpham, C. and Salmon, M. and Morice, C. P.},
+title = {Hemispheric and large-scale land-surface air temperature variations: An extensive revision and an update to 2010},
+journal = {Journal of Geophysical Research-Atmospheres},
+volume = {117},
+pages = {29},
+year = {2012}
+}
+
+@misc{
+jones2012b,
+author = {Jones, Phil},
+title = {RE: Arctic weather stations},
+month = {27th November 2012},
+year = {2012},
+type = {Personal Communication}
+}
+
+@article{
+kaplan1998,
+author = {Kaplan, A. and Cane, M. A. and Kushnir, Y. and Clement, A. C. and Blumenthal, M. B. and Rajagopalan, B.},
+title = {Analyses of global sea surface temperature 1856-1991},
+journal = {Journal of Geophysical Research-Oceans},
+volume = {103},
+number = {C9},
+pages = {18567-18589},
+year = {1998}
+}
+
+@article{
+karl1994,
+  title={Global and hemispheric temperature trends: Uncertainties related to inadequate spatial sampling},
+  author={Karl, Thomas R and Knight, Richard W and Christy, John R},
+  journal={Journal of Climate},
+  volume={7},
+  number={7},
+  pages={1144-1163},
+  year={1994}
+}
+
+@misc{
+kennedy2010,
+author = {Kennedy J.J., P.W. and Thorne, T.C. and Peterson, R.A. and Ruedy, P.A. and Stott, D.E. and Parker, S.A. and Good , H.A. and Titchner and Willett, K.M.},
+publisher={BAMS NCDC},
+title = {State of the Climate in 2009: How do we know the world has warmed?},
+volume = {91},
+number = {6},
+pages = {S26-S27},
+year = {2010}
+}
+
+@article{
+kennedy2011a,
+   author = {Kennedy, J.
+   J. and Rayner, N. A.
+   and Smith, R. O. and
+   Parker, D. E. and
+   Saunby, M.},
+   title = {Reassessing
+   biases and other
+   uncertainties in sea
+   surface temperature
+   observations measured
+   in situ since 1850:
+   1. Measurement and
+   sampling
+   uncertainties},
+   journal = {Journal of
+   Geophysical
+   Research-Atmospheres},
+   volume = {116},
+   year = {2011}
+}
+
+@article{
+kennedy2011b,
+   author = {Kennedy, J.
+   J. and Rayner, N. A.
+   and Smith, R. O. and
+   Parker, D. E. and
+   Saunby, M.},
+   title = {Reassessing
+   biases and other
+   uncertainties in sea
+   surface temperature
+   observations measured
+   in situ since 1850:
+   2. Biases and
+   homogenization},
+   journal = {Journal of
+   Geophysical
+   Research-Atmospheres},
+   volume = {116},
+   year = {2011}
+}
+
+@article{
+kennedy2011c,
+   author = {Kennedy, J.
+   and Morice, C. and
+   Parker, D.},
+   title = {Global and
+   regional climate in
+   2010},
+   journal = {Weather},
+   volume = {66},
+   number = {7},
+   pages = {188-194},
+   year = {2011}
+}
+
+@article{
+kent2006a,
+  title={Toward estimating climatic trends in SST. Part I: Methods of measurement},
+  author={Kent, Elizabeth C and Taylor, Peter K},
+  journal={Journal of Atmospheric and Oceanic Technology},
+  volume={23},
+  number={3},
+  pages={464-475},
+  year={2006}
+}
+
+@article{
+kent2006b,
+  title={Toward estimating climatic trends in SST. Part II: Random errors},
+  author={Kent, Elizabeth C and Challenor, Peter G},
+  journal={Journal of Atmospheric and Oceanic Technology},
+  volume={23},
+  number={3},
+  pages={476-486},
+  year={2006}
+}
+
+
+@article{
+kent2006c,
+  title={Toward estimating climatic trends in SST. Part III: Systematic biases},
+  author={Kent, Elizabeth C and Kaplan, Alexey},
+  journal={Journal of Atmospheric and Oceanic Technology},
+  volume={23},
+  number={3},
+  pages={487-500},
+  year={2006}
+}
+
+
+@article{
+kent2013,
+author = {Kent, E. C. and Rayner, N. A. and Berry, D. I. and Saunby, M. and Moat, B. I. and Kennedy, J. J. and Parker, D. E.},
+title = {Global analysis of night marine air temperature and its uncertainty since 1880: The HadNMAT2 data set},
+journal = {Journal of Geophysical Research-Atmospheres},
+volume = {118},
+number = {3},
+pages = {1281-1298},
+year = {2013}
+}
+
+@article{
+key1992,
+author = {Key, J. and Haefliger, M.},
+title = {ARCTIC ICE SURFACE-TEMPERATURE RETRIEVAL FROM AVHRR THERMAL CHANNELS},
+journal = {Journal of Geophysical Research-Atmospheres},
+volume = {97},
+number = {D5},
+pages = {5885-5893},
+year = {1992},
+}
+
+@article{
+key1994,
+author = {Key, J. and Maslanik, J. A. and Papakyriakou, T. and Serreze, M. C. and Schweiger, A. J.},
+title = {ON THE VALIDATION OF SATELLITE-DERIVED SEA-ICE SURFACE-TEMPERATURE},
+journal = {Arctic},
+volume = {47},
+number = {3},
+pages = {280-287},
+year = {1994},
+}
+
+@misc{
+kullerud2011,
+   author = {Kullerud,
+   L.},
+   publisher={Nature},
+   title =
+   {Sustainability: A
+   green Arctic},
+   year = {2011},
+   note={$http://www.nature.com/nature/journal/v478/n7368/full/478179a.html$}
+}
+
+@article{
+kwok2007,
+  title={Near zero replenishment of the Arctic multiyear sea ice cover at the end of 2005 summer},
+  author={Kwok, Ron},
+  journal={Geophysical research letters},
+  volume={34},
+  number={5},
+  pages={L05501},
+  year={2007},
+  publisher={American Geophysical Union}
+}
+
+@article{
+kwok2009,
+   author = {Kwok, R.
+   and Cunningham, G. F.
+   and Wensnahan, M. and
+   Rigor, I. and Zwally,
+   H. J. and Yi, D.},
+   title = {Thinning and
+   volume loss of the
+   Arctic Ocean sea ice
+   cover: 2003-2008},
+   journal = {Journal of
+   Geophysical
+   Research-Oceans},
+   volume = {114},
+   pages = {16},
+   year = {2009}
+}
+
+@article{
+lawrimore2011,
+author = {Lawrimore, J. H. and Menne, M. J. and Gleason, B. E. and Williams, C. N. and Wuertz, D. B. and Vose, R. S. and Rennie, J.},
+title = {An overview of the Global Historical Climatology Network monthly mean temperature data set, version 3},
+journal = {Journal of Geophysical Research-Atmospheres},
+volume = {116},
+year = {2011}
+}
+
+@inbook{
+lugina2005,
+author = {Lugina, K. M. and Groisman, P. Ya. and Vinnikov, Konstantin Ya. and Koknaeva, V. V. and Speranskaya, N. A.},
+title = {Monthly surface air temperature time series area-averaged over the 30-degree latitudinal belts of the globe, 1881-2004.},
+booktitle = {Trends: A Compendium of Data on Global Change.},
+publisher = {Oak Ridge National Laboratory, US Department of Energy},
+address = {Oak Ridge, TN},
+url = {http://cdiac.esd.ornl.gov/trends/temp/lugina/lugina.html},
+year = {2005},
+type = {Book Section}
+}
+
+@article{
+maslanik2007,
+   author = {Maslanik,
+   J. A. and Fowler, C.
+   and Stroeve, J. and
+   Drobot, S. and
+   Zwally, J. and Yi, D.
+   and Emery, W.},
+   title = {A younger,
+   thinner Arctic ice
+   cover: Increased
+   potential for rapid,
+   extensive sea-ice
+   loss},
+   journal =
+   {Geophysical Research
+   Letters},
+   volume = {34},
+   number = {24},
+   year = {2007}
+}
+
+@article{
+mcclelland2006,
+  title={A pan-arctic evaluation of changes in river discharge during the latter half of the 20th century},
+  author={McClelland, James W and D{\'e}ry, Stephen J and Peterson, Bruce J and Holmes, Robert M and Wood, Eric F},
+  journal={Geophysical Research Letters},
+  volume={33},
+  number={6},
+  year={2006},
+  publisher={Wiley Online Library}
+}
+
+
+@article{
+menne2009,
+author = {Menne, M. J. and Williams, C. N. and Vose, R. S.},
+title = {THE US HISTORICAL CLIMATOLOGY NETWORK MONTHLY TEMPERATURE DATA, VERSION 2},
+journal = {Bulletin of the American Meteorological Society},
+volume = {90},
+number = {7},
+pages = {993-1007},
+year = {2009}
+}
+
+@article{
+merchant2012,
+author = {Merchant, Christopher John and Embury, Owen and Rayner, Nick A and Berry, David I and Corlett, Gary and Lean, Katie and Veal, Karen L and Kent, Elizabeth C and Llewellyn-Jones, David and Remedios, John J},
+title = {A twenty-year independent record of sea surface temperature for climate from Along Track Scanning Radiometers},
+journal = {Journal of Geophysical Research: Oceans},
+volume = {117},
+number = {C12},
+year = {2012}
+}
+
+@article{miller2013,
+  title={Unprecedented recent summer warmth in Arctic Canada},
+  author={Miller, Gifford H and Lehman, Scott J and Refsnider, Kurt A and Southon, John R and Zhong, Yafang},
+  journal={Geophysical Research Letters},
+  volume={40},
+  number={21},
+  pages={5745-5751},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+
+
+@article{
+morice2012,
+author = {Morice, C. P. and Kennedy, J. J. and Rayner, N. A. and Jones, P. D.},
+title = {Quantifying uncertainties in global and regional temperature change using an ensemble of observational estimates: The HadCRUT4 data set},
+journal = {Journal of Geophysical Research-Atmospheres},
+volume = {117},
+year = {2012}
+}
+
+@article{
+muller2013,
+author = {Muller, R. A. and Curry, J. and Groom, D. and Jacobsen, R. and Perlmutter, S. and Rohde, R. and Rosenfeld, A. and Wickham, C. and Wurtele, J.},
+title = {Decadal Variations in the Global Atmospheric Land Temperatures},
+journal = {Journal of Geophysical Research-Atmospheres},
+volume = {118},
+number = {11},
+pages = {5280-5286},
+year = {2013}
+}
+
+@article{nghiem2007,
+  title={Rapid reduction of Arctic perennial sea ice},
+  author={Nghiem, SV and Rigor, IG and Perovich, DK and Clemente-Col{\'o}n, P and Weatherly, JW and Neumann, G},
+  journal={Geophysical Research Letters},
+  volume={34},
+  number={19},
+  year={2007},
+  publisher={Wiley Online Library}
+}
+
+@misc{
+NSIDC2012,
+   author = {NSIDC},
+   publisher = {NSIDC},
+   title = {Arctic sea ice falls below 4 million square kilometers},
+   year = {2012},
+   note = {$http://nsidc.org/arcticseaicenews/2012/09/arctic-sea-ice-falls-below-4-million-square-kilometers/$}
+}
+
+@misc{
+NSIDC2012b,
+   author = {NSIDC},
+   publisher = {NSIDC},
+   title = {Arctic sea ice extent settles at record seasonal minimum},
+   year = {2012},
+   note = {$http://nsidc.org/arcticseaicenews/2012/09/arctic-sea-ice-extent-settles-at-record-seasonal-minimum/$}
+}
+
+
+@misc{
+nsidc2013,
+author = {NSIDC},
+publisher = {NSIDC},
+title = {All About Sea Ice: Thermodynamics : Albedo},
+volume = {2013},
+number = {13th November},
+year = {2013},
+note = {$http://nsidc.org/cryosphere/seaice/processes/albedo.html$}
+}
+
+@article{
+overland1997,
+author = {Overland, J. E. and Adams, J. M. and Bond, N. A.},
+title = {Regional variation of winter temperatures in the Arctic},
+journal = {Journal of Climate},
+volume = {10},
+number = {5},
+year = {1997}
+}
+
+@article{
+overland2011,
+   author = {Overland,
+   J. E.},
+   title = {Potential
+   Arctic Change Through
+   Climate Amplification
+   Processes},
+   journal =
+   {Oceanography},
+   volume = {24},
+   number = {3},
+   pages = {176-185},
+   year = {2011}
+}
+
+@article{overland2013,
+  title={When will the summer arctic be nearly sea ice free?},
+  author={Overland, James E and Wang, Muyin},
+  journal={Geophysical Research Letters},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+
+
+@article{
+parker1994,
+  title={Effects of changing exposure of thermometers at land stations},
+  author={Parker, DE},
+  journal={International Journal of Climatology},
+  volume={14},
+  number={1},
+  pages={1-31},
+  year={1994},
+  publisher={Wiley Online Library}
+}
+
+@article{
+parker1995,
+author = {Parker, D. E. and Folland, C. K. and Jackson, M.},
+title = {Marine surface temperature: Observed variations and data requirements},
+journal = {Climatic Change},
+volume = {31},
+number = {2-4},
+pages = {559-600},
+year = {1995}
+}
+
+@article{
+parker2009,
+author = {Parker, David E. and Jones, Phil and Peterson, Thomas C. and Kennedy, John},
+title = {Comment on "Unresolved issues with the assessment of multidecadal global land surface temperature trends" by Roger A. Pielke Sr. et al},
+journal = {Journal of Geophysical Research-Atmospheres},
+volume = {114},
+year = {2009}
+}
+
+
+@article{
+parker2010,
+  title={Urban heat island effects on estimates of observed climate change},
+  author={Parker, David E},
+  journal={Wiley Interdisciplinary Reviews: Climate Change},
+  volume={1},
+  number={1},
+  pages={123-133},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{
+parkinson2013,
+author = {Parkinson, C. L. and Comiso, J. C.},
+title = {On the 2012 record low Arctic sea ice cover: Combined impact of preconditioning and an August storm},
+journal = {Geophysical Research Letters},
+volume = {40},
+number = {7},
+year = {2013},
+}
+
+@article{
+pielke2007,
+author = {Pielke, Roger A., Sr. and Davey, Christopher A. and Niyogi, Dev and Fall, Souleymane and Steinweg-Woods, Jesse and Hubbard, Ken and Lin, Xiaomao and Cai, Ming and Lim, Young-Kwon and Li, Hong and Nielsen-Gammon, John and Gallo, Kevin and Hale, Robert and Mahmood, Rezaul and Foster, Stuart and McNider, Richard T. and Blanken, Peter},
+title = {Unresolved issues with the assessment of multidecadal global land surface temperature trends},
+journal = {Journal of Geophysical Research-Atmospheres},
+volume = {112},
+number = {D24},
+year = {2007}
+}
+
+@article{
+pielke2009,
+author = {Pielke, Roger A., Sr. and Davey, Christopher A. and Niyogi, Dev and Fall, Souleymane and Steinweg-Woods, Jesse and Hubbard, Ken and Lin, Xiaomao and Cai, Ming and Lim, Young-Kwon and Li, Hong and Nielsen-Gammon, John and Gallo, Kevin and Hale, Robert and Mahmood, Rezaul and Foster, Stuart and McNider, Richard T. and Blanken, Peter},
+title = {Reply to comment by David E. Parker et al. on "Unresolved issues with the assessment of multidecadal global land surface temperature trends"},
+journal = {Journal of Geophysical Research-Atmospheres},
+volume = {114},
+year = {2009}
+}
+
+
+
+@article{
+polashenski2011,
+author = {POLASHENSKI, Chris and PEROVICH, Don and RICHTER-MENGE, Jackie and ELDER, Bruce},
+title = {Seasonal ice mass-balance buoys: adapting tools to the
+changing Arctic},
+journal = {Annals of Glaciology},
+volume = {52},
+number = {57},
+pages = {18-25},
+year = {2011},
+}
+
+@article{
+polyakov2002,
+author = {Polyakov, Igor V and Alekseev, Genrikh V and Bekryaev, Roman V and Bhatt, Uma and Colony, Roger L and Johnson, Mark A and Karklin, Valerii P and Makshtas, Alexander P and Walsh, David and Yulin, Alexander V},
+title = {Observationally based assessment of polar amplification of global warming},
+journal = {Geophysical Research Letters},
+volume = {29},
+number = {18},
+pages = {25-1-25-4},
+year = {2002},
+}
+
+@article{
+polyakov2003,
+author = {Polyakov, Igor V and Bekryaev, Roman V and Alekseev, Genrikh V and Bhatt, Uma S and Colony, Roger L and Johnson, Mark A and Maskshtas, Alexander P and Walsh, David},
+title = {Variability and trends of air temperature and pressure in the maritime Arctic, 1875-2000},
+journal = {Journal of Climate},
+volume = {16},
+number = {12},
+pages = {2067-2077},
+year = {2003},
+}
+
+@article{polyakov2012,
+  title={Recent changes of Arctic multiyear sea ice coverage and the likely causes},
+  author={Polyakov, Igor V and Walsh, John E and Kwok, Ronald},
+  journal={Bulletin of the American Meteorological Society},
+  volume={93},
+  number={2},
+  pages={145-151},
+  year={2012},
+  publisher={American Meteorological Society}
+}
+
+
+@inbook{
+przybylak2003,
+author = {Przybylak, R.},
+title = {Arctic Temperature},
+booktitle = {The Climate of the Arctic},
+publisher = {Kluwer Academic Publishers},
+address = {Dordrecht, The Netherlands},
+pages = {63-95},
+year = {2003}
+}
+
+@article{
+przybylak2007,
+author = {Przybylak, R.},
+title = {Recent air-temperature changes in the Arctic},
+journal = {Annals of Glaciology, Vol 46, 2007},
+volume = {46},
+pages = {316-324},
+year = {2007},
+}
+
+@article{
+przybylak2012,
+  title={Atmospheric pressure changes in the Arctic from 1801 to 1920},
+  author={Przybylak, Rajmund and Wyszy{\'n}ski, Przemys{\l}aw and V{\'\i}zi, Zsuzsanna and Jankowska, Joanna},
+  journal={International Journal of Climatology},
+  year={2012},
+  publisher={Wiley Online Library}
+}
+
+
+@article{
+rayner2003,
+   author = {Rayner, N.
+   A. and Parker, D. E.
+   and Horton, E. B. and
+   Folland, C. K. and
+   Alexander, L. V. and
+   Rowell, D. P. and
+   Kent, E. C. and
+   Kaplan, A.},
+   title = {Global
+   analyses of sea
+   surface temperature,
+   sea ice, and night
+   marine air
+   temperature since the
+   late nineteenth
+   century},
+   journal = {Journal of
+   Geophysical
+   Research-Atmospheres},
+   volume = {108},
+   number = {D14},
+   pages = {37},
+   year = {2003}
+}
+
+@article{
+rayner2006,
+   author = {Rayner, N.
+   A. and Brohan, P. and
+   Parker, D. E. and
+   Folland, C. K. and
+   Kennedy, J. J. and
+   Vanicek, M. and
+   Ansell, T. J. and
+   Tett, S. F. B.},
+   title = {Improved
+   analyses of changes
+   and uncertainties in
+   sea surface
+   temperature measured
+   in situ sice the
+   mid-nineteenth
+   century: The HadSST2
+   dataset},
+   journal = {Journal of
+   Climate},
+   volume = {19},
+   number = {3},
+   pages = {446-469},
+   year = {2006}
+}
+
+
+@article{
+richter2006,
+author = {Richter-Menge, Jacqueline A and Perovich, Donald K and Geiger, Cathleen and Elder, Bruce C and Claffey, Kerry},
+title = {Ice Mass Balance Buoy: An Instrument to Measure and Attribute Changes in Ice Thickness},
+journal = {Artic Sea Ice Thickness: Past, Present and Future},
+pages = {24},
+year={2006}
+}
+
+@article{
+rigor2000,
+author = {Rigor, I. G. and Colony, R. L. and Martin, S.},
+title = {Variations in surface air temperature observations in the Arctic, 1979-97},
+journal = {Journal of Climate},
+volume = {13},
+number = {5},
+  year = {2000}
+}
+
+@article{
+rohde2013a,
+author = {Rohde, R. and Muller, R.A.  and Jacobsen, R. and Muller, E. and Perlmutter, S. and Rosenfeld, A. and Wurtele, J. and Groom, D. and Wickham, C.},
+title = {A New Estimate of the Average Earth Surface Land Temperature Spanning 1753 to 2011},
+journal = {Geoinformatics \& Geostatistics: An Overview},
+year = {2013}
+}
+
+@techreport{
+rohde2013b,
+author = {Rohde, R},
+title = {Comparison of Berkeley Earth, NASA GISS, and 
+Hadley CRU averaging techniques on ideal synthetic data},
+year = {2013},
+INSTITUTION = {Berkeley Earth},
+note={$http://berkeleyearth.org/pdf/robert-rohde-memo.pdf$}
+}
+
+@article{
+rohde2013c,
+    author = {Rohde, R. and Muller, R.A.  and Jacobsen,
+    R.  and Perlmutter, S and Rosenfeld, A. and Wurtele,
+    J. and Curry, J. and Wickham, C. and Mosher, S.},
+    title = {Berkeley Earth
+    Temperature Averaging
+    Process},
+    journal = {Geoinformatics \& Geostatistics: An Overview},
+    year = {2013}
+}
+
+@article{
+rohde2013d,
+    author = {Muller, R.A. and Curry, J. and Groom, D. and Jacobsen,
+    R. and Perlmutter, S and Rohde, R. and Rosenfeld, A. and Wickham, C. and Wurtele,
+    J.},
+    title = {Decadal Variations in the Global Atmospheric Land Temperatures},
+    journal = {accepted for publication in JGR},
+    year = {2013}
+}
+
+@misc{
+rohdesupp,
+    author = {Rohde, R. and Muller, R.A.  and Jacobsen,
+    R.  and Perlmutter, S and Rosenfeld, A. and Wurtele,
+    J. and Groom, D. and Curry, J. and Wickham, C. },
+    title = {Berkeley Earth Temperature Averaging Process: A supplement on statistical and mathematical methods},
+    year = {2012},
+    publisher = {Berkeley Earth},
+    note = {$http://berkeleyearth.org/pdf/methods-paper-supplement$}
+}
+
+@article{
+rothrock2003,
+   author = {Rothrock,
+   D. A. and Zhang, J.
+   and Yu, Y.},
+   title = {The arctic
+   ice thickness anomaly
+   of the 1990s: A
+   consistent view from
+   observations and
+   models},
+   journal = {Journal of
+   Geophysical
+   Research-Oceans},
+   volume = {108},
+   number = {C3},
+   year = {2003}
+}
+
+@article{
+scambos2006,
+author = {Scambos, T. A. and Haran, T. M. and Massom, R.},
+title = {Validation of AVHRR and MODIS ice surface temperature products using in situ radiometers},
+journal = {Annals of Glaciology, Vol 44, 2006},
+volume = {44},
+pages = {345-351},
+year = {2006}
+}
+
+@article{
+screen2010,
+author = {Screen, James A and Simmonds, Ian},
+title = {The central role of diminishing sea ice in recent Arctic temperature amplification},
+journal = {Nature},
+volume = {464},
+number = {7293},
+pages = {1334-1337},
+year = {2010}
+}
+
+@article{
+serreze2003,
+   author = {Serreze, M.
+   C. and Maslanik, J.
+   A. and Scambos, T. A.
+   and Fetterer, F. and
+   Stroeve, J. and
+   Knowles, K. and
+   Fowler, C. and
+   Drobot, S. and Barry,
+   R. G. and Haran, T.
+   M.},
+   title = {A record
+   minimum arctic sea
+   ice extent and area
+   in 2002},
+   journal =
+   {Geophysical Research
+   Letters},
+   volume = {30},
+   number = {3},
+   pages = {4},
+   year = {2003}
+}
+
+@article{
+serreze2006,
+   author = {Serreze, M.
+   C. and Francis, J.
+   A.},
+   title = {The arctic
+   amplification
+   debate},
+   journal = {Climatic
+   Change},
+   volume = {76},
+   number = {3-4},
+   pages = {241-264},
+   year = {2006}
+}
+
+@article{
+serreze2009,
+  title={The emergence of surface-based Arctic amplification},
+  author={Serreze, MC and Barrett, AP and Stroeve, JC and Kindig, DN and Holland, MM},
+  journal={The Cryosphere},
+  volume={3},
+  number={1},
+  pages={11-19},
+  year={2009},
+  publisher={Copernicus GmbH}
+}
+
+@article{serreze2011,
+  title={Processes and impacts of Arctic amplification: A research synthesis},
+  author={Serreze, Mark C and Barry, Roger G},
+  journal={Global and Planetary Change},
+  volume={77},
+  number={1},
+  pages={85-96},
+  year={2011},
+  publisher={Elsevier}
+}
+
+@article{
+serreze2000,
+  title={Observational evidence of recent change in the northern high-latitude environment},
+  author={Serreze, MC and Walsh, JE and Chapin Iii, FS and Osterkamp, T and Dyurgerov, M and Romanovsky, V and Oechel, WC and Morison, J and Zhang, T and Barry, RG},
+  journal={Climatic Change},
+  volume={46},
+  number={1-2},
+  pages={159-207},
+  year={2000},
+  publisher={Springer}
+}
+
+@article{
+sitch2003,
+   author = {Sitch, S.
+   and Smith, B. and
+   Prentice, I. C. and
+   Arneth, A. and
+   Bondeau, A. and
+   Cramer, W. and
+   Kaplan, J. O. and
+   Levis, S. and Lucht,
+   W. and Sykes, M. T.
+   and Thonicke, K. and
+   Venevsky, S.},
+   title = {Evaluation
+   of ecosystem
+   dynamics, plant
+   geography and
+   terrestrial carbon
+   cycling in the LPJ
+   dynamic global
+   vegetation model},
+   journal = {Global
+   Change Biology},
+   volume = {9},
+   number = {2},
+   pages = {161-185},
+   year = {2003}
+}
+
+
+@article{
+sloan2003,
+   author = {Sloan, E.
+   D.},
+   title = {Fundamental
+   principles and
+   applications of
+   natural gas
+   hydrates},
+   journal = {Nature},
+   volume = {426},
+   number = {6964},
+   pages = {353-359},
+   year = {2003}
+}
+
+
+@article{
+smith2005,
+   author = {Smith, T.
+   M. and Reynolds, R.
+   W.},
+   title = {A global
+   merged land-air-sea
+   surface temperature
+   reconstruction based
+   on historical
+   observations
+   (1880-1997)},
+   journal = {Journal of
+   Climate},
+   volume = {18},
+   number = {12},
+   pages = {2021-2036},
+   year = {2005}
+}
+
+@article{
+smith2008,
+   author = {Smith, T.
+   M. and Reynolds, R.
+   W. and Peterson, T. C.
+   and Lawrimore J.},
+   title = {Improvements
+   to NOAA's Historical
+   Merged Land-Ocean
+   Surface Temperature
+   Analysis},
+   journal = {Journal of
+   Climate},
+   volume = {21},
+   number = {10},
+   pages = {2283-2296},
+   year = {2008}
+}
+
+@misc{
+stocker2013,
+   author = {Stocker, T.F. and Dahe, Q. and Plattner, G. and Alexander, L.V. and Allen, S.K. and Bindoff, N.L. and Breon, F. and Church, J.A. and Cubasch, U. and Emori, S. Forster, P. Friedlingstein, P. and Gillett, N. Gregory, J.M. Hartmann, D.L. and Jansen, E. Kirtman, B. Knutti, R. Kanikicharla, K.K. and Lemke, P. and Marotzke, J. and Masson-Delmotte, V. and Meehl, G.A. and Mokhov, I.I. and Piao, S. and Ramaswamy, V. and Randall, D. and Rhein, M. and Rojas, M. and Sabine, C. and Shindell, D. and Talley, L.D. and Vaughan, D.G. and Xie, S.},
+   title =
+   {Technical Summary of Climate
+   Change 2013: The
+   Physical Science
+   Basis.},
+   publisher =
+   {Cambridge University
+   Press, 2013},
+   year = {2013}
+}
+
+
+@article{
+tetzlaff2013,
+  title={The impact of heterogeneous surface temperatures on the 2-m air temperature over the Arctic Ocean under clear skies in spring},
+  author={Tetzlaff, Amelie and Kaleschke, Lars and L{\"u}pkes, Christof and Ament, Felix and Vihma, Timo},
+  journal={The Cryosphere},
+  volume={7},
+  number={1},
+  pages={153-166},
+  year={2013}
+}
+
+
+@book{
+thompson2006,
+author = {Thompson, R.D.},
+title = {Atmospheric Processes and Systems},
+publisher = {Routledge},
+chapter={4},
+address = {Abingdon, Oxon},
+year = {2006}
+}
+
+@article{
+thompson2008,
+author = {Thompson, David W. J. and Kennedy, John J. and Wallace, John M. and Jones, Phil D.},
+title = {A large discontinuity in the mid-twentieth century in observed global-mean surface temperature},
+journal = {Nature},
+volume = {453},
+number = {7195},
+pages = {646-U5},
+year = {2008}
+}
+
+
+@article {
+thorne2005,
+author = {Thorne, P. W. and Parker, D. E. and Christy, J. R. and Mears, C. A.},
+title = {Uncertainties in climate trends - Lessons from upper-air temperature records},
+journal = {Bulletin of the American Meteorological Society},
+volume = {86},
+year = {2005},
+pages = {1437}		
+}
+
+@article{
+thorne2011,
+author = {Thorne, Peter W and Willett, Kate M and Allan, Rob J and Bojinski, Stephan and Christy, John R and Fox, Nigel and Gilbert, Simon and Jolliffe, Ian and Kennedy, John J and Kent, Elizabeth},
+title = {Guiding the creation of a comprehensive surface temperature resource for twenty-first-century climate science},
+journal = {Bulletin of the American Meteorological Society},
+volume = {92},
+number = {11},
+pages = {ES40-ES47},
+year = {2011},
+}
+
+@inbook{
+trenberth2007,
+   author = {Trenberth,
+   K.E. and Jones, P.D.
+   and Ambenje, P. and
+   Bojariu, R. and
+   Easterling, D. and
+   Klein Tank, A. and
+   Parker, D. and
+   Rahimzadeh, F. and
+   Renwick, J.A. and
+   Rusticucci, M. and
+   B., Soden and Zhai,
+   P.},
+   title =
+   {Observations:
+   Surface and
+   Atmospheric Climate
+   Change.},
+   booktitle = {Climate
+   Change 2007: The
+   Physical Science
+   Basis.  Contribution
+   of Working Group I to
+   the Fourth Assessment
+   Report of the
+   Intergovernmental
+   Panel on Climate
+   Change},
+   publisher =
+   {Cambridge University
+   Press, 2007.},
+   chapter = {3},
+   pages = {235-336},
+   year = {2007}
+}
+
+@article{
+trewin2010,
+  title={Exposure, instrumentation, and observing practice effects on land temperature measurements},
+  author={Trewin, Blair},
+  journal={Wiley Interdisciplinary Reviews: Climate Change},
+  volume={1},
+  number={4},
+  pages={490-506},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{
+vincent2012,
+  title={A second generation of homogenized Canadian monthly surface air temperature for climate trend analysis},
+  author={Vincent, Lucie A and Wang, Xiaolan L and Milewska, Ewa J and Wan, Hui and Yang, Feng and Swail, Val},
+  journal={Journal of Geophysical Research: Atmospheres (1984-2012)},
+  volume={117},
+  number={D18},
+  year={2012},
+  publisher={Wiley Online Library}
+}
+
+
+@article{
+vose2012,
+author = {Vose, R. S. and Arndt, D. and Banzon, V. F. and Easterling, D. R. and Gleason, B. and Huang, B. Y. and Kearns, E. and Lawrimore, J. H. and Menne, M. J. and Peterson, T. C. and Reynolds, R. W. and Smith, T. M. and Williams, C. N. and Wuertz, D. B.},
+title = {NOAA'S MERGED LAND-OCEAN SURFACE TEMPERATURE ANALYSIS},
+journal = {Bulletin of the American Meteorological Society},
+volume = {93},
+number = {11},
+pages = {1677-1685},
+year = {2012}
+}
+
+@article{
+wang2005,
+   author = {Wang, X. J.
+   and Key, J. R.},
+   title = {Arctic
+   surface, cloud, and
+   radiation properties
+   based on the AVHRR
+   Polar Pathfinder
+   dataset. Part II:
+  Recent Trneds},
+   journal = {Journal of
+   Climate},
+   volume = {18},
+   number = {14},
+   pages = {2575-2593},
+   year = {2005}
+}
+
+@article{
+wang2009,
+   author = {Wang, M.
+   and Overland, J.
+   E.},
+   title = {A sea ice
+   free summer Arctic
+   within 30 years?},
+   journal = {Geophys.
+   Res. Lett.},
+   volume = {36},
+   number = {7},
+   pages = {L07502},
+   year = {2009}
+}
+
+
+@article{
+woodruff2011,
+author = {Woodruff, Scott D. and Worley, Steven J. and Lubker, Sandra J. and Ji, Zaihua and Freeman, J. Eric and Berry, David I. and Brohan, Philip and Kent, Elizabeth C. and Reynolds, Richard W. and Smith, Shawn R. and Wilkinson, Clive},
+title = {ICOADS Release 2.5: extensions and enhancements to the surface marine meteorological archive},
+journal = {International Journal of Climatology},
+volume = {31},
+number = {7},
+pages = {951-967},
+year = {2011}
+}
+
+@article{
+yu1995,
+author = {Yu, Y. and Rothrock, D. A. and Lindsay, R. W.},
+title = {ACCURACY OF SEA-ICE TEMPERATURE DERIVED FROM THE ADVANCED VERY HIGH-RESOLUTION RADIOMETER},
+journal = {Journal of Geophysical Research-Oceans},
+volume = {100},
+number = {C3},
+year = {1995}
+}
+
+@article{zhang2008,
+  title={Recent radical shifts of atmospheric circulations and rapid changes in Arctic climate system},
+  author={Zhang, Xiangdong and Sorteberg, Asgeir and Zhang, Jing and Gerdes, R{\"u}diger and Comiso, Josefino C},
+  journal={Geophysical Research Letters},
+  volume={35},
+  number={22},
+  pages={L22701},
+  year={2008},
+  publisher={American Geophysical Union}
+}
+

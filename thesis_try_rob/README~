@@ -1,0 +1,24 @@
+Template for a LaTeX PhD UoReading Thesis.
+====================================
+
+Author: Emma Dodd
+Mined bits from other latex templates
+
+This template setup allows you to produce:
+* a thesis that adheres to the UoR regulations
+  (at least my interpretations of them)
+* a nicely formatted pdf version of the same thesis
+* individual documents for each chapter
+
+
+The preface directory
+---------------------
+contains files for the preface.
+
+info directory
+---------------------
+contains pdf of submission guidelines.
+
+chapter directory
+---------------------
+contains folders for each chapter which will be included in the thesis.pdf document when you compile thesis.tex.

@@ -1,0 +1,13 @@
+%Chapter 5
+
+Insert Chapter here
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=33pc]{chapter/chapter5/ch5fig1} \\
+\caption{The locations of all meteorological stations in the CRUTEM4
+databank. Different markers are used to show the locations of the meteorological stations depending on whether they are above 53$^\circ$N or above 65$^\circ$N and whether they report a single temperature between 1950 and 2013.}
+\label{actfig01}
+\end{figure}
+%code is in CRUTEM4 station distribution 1979.ncl

@@ -1,0 +1,12 @@
+Chapter 2: Literature Review
+
+Insert Chapter here
+
+%Figure Example:
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[trim=5pc 20pc 5pc 20pc, clip=true, width=0.8\textwidth]{chapter/chapter2/ch2fig1}
+\caption{\small Annual anomalies of global land-surface air temperature ($^\circ$C), 1850 to 2005 from several datasets \citep{brohan2006, hansen2001, lugina2005, smith2005}. The smooth curves show decadal variations. Figure 3.1 from Climate Change 2007: The Physical Science Basis. Contribution of Working Group I to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change \citep{trenberth2007}.}
+\label{ch2fig1}
+\end{figure}

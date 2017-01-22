@@ -1,0 +1,26 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Hoskins and Hodges(2002)}]{Hoskins2002}
+Hoskins, B.~J. and K.~I. Hodges, 2002: {New Perspectives on the Northern
+  Hemisphere Winter Storm Tracks}. \textit{Journal of the Atmospheric
+  Sciences}, \textbf{59~(6)}, 1041--1061,
+  \doi{10.1175/1520-0469(2002)059<1041:NPOTNH>2.0.CO;2},
+  \urlprefix\url{http://journals.ametsoc.org/doi/abs/10.1175/1520-0469(2002)059<1041:NPOTNH>2.0.CO;2}.
+
+\bibitem[{Raible et~al.(2008)Raible, Della-Marta, Schwierz, Wernli, and
+  Blender}]{Raible2008}
+Raible, C.~C., P.~M. Della-Marta, C.~Schwierz, H.~Wernli, and R.~Blender, 2008:
+  {Northern Hemisphere Extratropical Cyclones: A Comparison of Detection and
+  Tracking Methods and Different Reanalyses}. \textit{Monthly Weather Review},
+  \textbf{136~(3)}, 880--897, \doi{10.1175/2007MWR2143.1},
+  \urlprefix\url{http://journals.ametsoc.org/doi/abs/10.1175/2007MWR2143.1}.
+
+\end{thebibliography}

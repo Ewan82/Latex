@@ -1,0 +1,23 @@
+%Title page
+
+\begin{titlepage}
+\begin{flushright}
+\begin{figure}[h]
+\begin{flushright}
+  \vspace{-2cm}
+\includegraphics[width=50mm]{preface/figures/reading_logo.pdf} %pdf for use with pdflatex
+\end{flushright}
+\end{figure}
+\end{flushright}
+\begin{flushleft}
+  \vspace{4cm}
+\Huge{\bf{Title}}\\ %title of PhD
+\huge{PhD in Atmosphere, Oceans and Climate} \\ %PhD course
+\Large{\bf{Department of Meteorology}}\\ %Department
+\vspace{2cm}
+\huge{Emma Dodd} \\ %name
+\Large{\bf{November 2014}}\\ %submission date
+\end{flushleft}
+\end{titlepage}
+
+

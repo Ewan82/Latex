@@ -1,0 +1,57 @@
+\input{preface/begin}  %format document
+
+%Title page and other preface elements
+\pagenumbering{roman}
+\include{preface/title}
+\include{preface/declaration}
+\include{preface/abstract}
+\include{preface/acknowledgements}
+\tableofcontents
+
+%Thesis start
+\pagenumbering{arabic}
+
+\chapter{Introduction}
+\label{chap:intro}
+\input{chapter/chapter1/introduction}
+
+\chapter{Thesis aims and outline}
+\label{chap:aims}
+\input{chapter/chapter2/aims}
+
+\chapter{Current state of data assimilation for the carbon cycle}
+\label{chap:litrev}
+\input{chapter/chapter3/chapter3}
+
+\chapter{Model and data}
+\label{chap:data}
+\input{chapter/chapter4/chapter4}
+
+\chapter{Information content in observations relevant to forest carbon balance}
+\label{chap:info_con}
+\input{chapter/chapter5/chapter5}
+
+\chapter{Investigating the role of prior and observation error correlations}
+\label{chap:error_corrs}
+\input{chapter/chapter6/chapter6}
+
+\chapter{Using data assimilation to understand the effect of disturbance of the carbon dynamics of the Alice Holt forest}
+\label{chap:disturbance}
+\input{chapter/chapter7/chapter7}
+
+%more chapters...
+
+\chapter{Conclusion}
+\label{chap:conclusion}
+\input{chapter/conclusion/conclusion}
+
+\newpage
+\addcontentsline{toc}{chapter}{Bibliography}
+\def\rightmark{Bibliography}
+\def\leftmark{Bibliography}
+\renewcommand*{\bibname}{\centerline{\Huge{\bfseries{\scshape{Bibliography}}}}}
+\bibliography{chapter/PhD}
+%\bibliography{chapter/chapter2/chapter2refs,chapter/chapter3/chapter3refs,chapter/chapter4/chapter4refs,chapter/chapter5/chapter5refs}
+\bibliographystyle{./ametsoc}
+
+\end{document}

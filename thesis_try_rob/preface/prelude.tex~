@@ -1,0 +1,73 @@
+%Title page
+
+\begin{titlepage}
+\begin{flushright}
+\begin{figure}[h]
+\begin{flushright}
+  \vspace{-2cm}
+\includegraphics[width=50mm]{preface/figures/reading_logo.pdf} %pdf for use with pdflatex
+\end{flushright}
+\end{figure}
+\end{flushright}
+\begin{flushleft}
+  \vspace{4cm}
+\Huge{\bf{Title}}\\ %title of PhD
+\huge{PhD in Atmosphere, Oceans and Climate} \\ %PhD course
+\Large{\bf{Department of Meteorology}}\\ %Department
+\vspace{2cm}
+\huge{Emma Dodd} \\ %name
+\Large{\bf{November 2014}}\\ %submission date
+\end{flushleft}
+\end{titlepage}
+
+\thispagestyle{empty}
+%---------------------------------------------------------------------------
+
+% Declaration
+
+\vspace{40mm}
+\chapter*{\centering \Large \vspace{-20mm}\Huge Declaration}
+\thispagestyle{headings}
+
+\par I confirm that this is my own work and the use of all material from other sources has been properly and fully acknowledged.
+
+\vspace*{2cm}
+- Robert Lee %\hspace{3.75in}
+
+\newpage
+\thispagestyle{empty}
+%----------------------------------------------------------------------------
+
+%The abstract.
+
+\chapter*{\centering \Large \vspace{-20mm}\Huge Abstract}
+\thispagestyle{headings}
+
+\input{chapter/abst}
+%\newpage
+%\thispagestyle{empty}
+%----------------------------------------------------------------------------
+%Acknowledgements
+\chapter*{\centering \Large \vspace{-20mm}\Huge Acknowledgements}
+\thispagestyle{headings}
+
+Acknowledgements go here.
+
+%I would like to thank the Natural Environment Research Council and Department of Meteorology for awarding me a PhD studentship award.
+
+I acknowledge the World Climate Research Programme's Working Group on Coupled Modelling, which is responsible for CMIP, and I thank the climate modeling groups (listed in Table \ref{tab:models} of this thesis) for producing and making available their model output. For CMIP the U.S. Department of Energy's Program for Climate Model Diagnosis and Intercomparison provides coordinating support and led development of software infrastructure in partnership with the Global Organization for Earth System Science Portals.
+
+GPCP Precipitation data provided by the NOAA/OAR/ESRL PSD, Boulder, Colorado, USA, from their Web site at http://www.esrl.noaa.gov/psd/
+
+
+\vspace{2cm}
+
+%- Robert Lee - December 2013
+
+\newpage
+\thispagestyle{empty}
+%----------------------------------------------------------------------------
+
+\tableofcontents
+
+%------------------------------------------------------------------------------

@@ -1,0 +1,73 @@
+\documentclass[11pt,a4paper,oneside]{mythesis_mtr}
+
+\usepackage{lscape}
+\usepackage[round]{natbib}
+%\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{mathptm}
+\usepackage{amsmath}
+\usepackage{latexsym,flafter,afterpage,amssymb,color}
+\usepackage{verbatim}
+\usepackage{rotating}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{subcaption}
+\doublespacing
+
+% Use Adobe Times Roman (for printing)
+%\renewcommand{\rmdefault}{ptm}
+\usepackage{palatino}
+%\usepackage{doublespace}
+
+% Multicolumns in tables, shading in tables,tables to appear over multiple pages
+\usepackage{multirow,colortbl,longtable}
+
+
+
+% Page setup
+\topmargin=-0.41in
+\textwidth=6.5in%6.5
+\textheight=9.8in
+\headsep=24pt
+\oddsidemargin=4mm
+\parindent=0.3in
+\parskip=0.1in
+
+\newlength{\rulewidth}
+\setlength{\rulewidth}{6.5in} % change to 150mm for printing on
+                  % gordon, 149 otherwise???
+
+\pagestyle{headings}
+
+\setcounter{secnumdepth}{5}              %Numbers subsubsections, and lower.
+\setcounter{tocdepth}{5}                 %Sets depth of toc to include subsubsections.
+
+
+
+% bibliography is in a folder
+%\newcommand{\BIB}{/home/swr06rsc/Documents/latex}
+\newcommand{\BIB}{..}
+
+% a bunch of useful shortcuts
+
+\newcommand{\deriv}[2]{\frac{d #1}{d #2}}
+\newcommand{\pderiv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\tderiv}[2]{\frac{D #1}{D #2}}
+\newcommand{\vect}[1]{{\bf #1}}
+\newcommand{\pd}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+
+%\textwidth=149mm
+
+\sloppy
+
+% 1.5 line spacing so my supervisor can scrawl all over it
+\renewcommand{\baselinestretch}{1.5}
+
+% Tell latex not to mind if 0.75 of a page is full of floats
+%\renewcommand{\floatpagefraction}{0.99}
+
+% Text to put in the header
+
+%\makeglossary
+
+\begin{document}

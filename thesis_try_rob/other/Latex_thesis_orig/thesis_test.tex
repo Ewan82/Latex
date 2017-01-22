@@ -1,0 +1,49 @@
+\input{begin}
+
+\pagenumbering{roman}
+\include{prelude}
+\pagenumbering{arabic}
+
+%\begin{document}
+
+\chapter{Introduction}
+\label{chap:intro}
+\thispagestyle{headings}
+\input{chapter/chapter1}
+
+\chapter{Method and Tools}
+\label{chap:method}
+\thispagestyle{headings}
+\input{chapter/chapter2}
+
+%\chapter{Extratropical storm track climatologies and CMIP5 multi-model ensemble biases}
+%\label{chap:chapter3}
+%\thispagestyle{headings}
+%\input{chapter/chapter3}
+
+%\chapter{Future projections}
+%\label{chap:chapter4}
+%\thispagestyle{headings}
+%\input{chapter/chapter4}
+
+%\chapter{Conclusions}
+%\label{chap:conclusions}
+%\thispagestyle{headings}
+%\input{chapter/chapter5}
+
+%\appendix
+%\chapter{CMIP5 models}
+%\label{chap:appendixA}
+%\thispagestyle{headings}
+%\def\rightmark{\appendixname \ \thechapter: \ Model list}
+%\input{appendix}
+
+\newpage
+\addcontentsline{toc}{chapter}{Bibliography}
+\def\rightmark{Bibliography}
+\def\leftmark{Bibliography}
+\renewcommand*{\bibname}{\centerline{\Huge{\bfseries{\scshape{Bibliography}}}}}
+\bibliography{./library}
+\bibliographystyle{./ametsoc}
+
+\end{document}

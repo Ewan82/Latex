@@ -1,0 +1,140 @@
+
+@article{
+cressie1990,
+    author = {Cressie, N.},
+    title = {The origins of kriging},
+    journal = {Mathematical Geology},
+    volume = {22},
+    number = {3},
+    pages = {239-252},
+    year = {1990}
+}
+
+
+@article{
+dee2011,
+    author = {Dee, D. P.
+    and Uppala, S. M. and
+    Simmons, A. J. and
+    Berrisford, P. and
+    Poli, P. and Kobayashi,
+    S. and Andrae, U. and
+    Balmaseda, M. A. and
+    Balsamo, G. and Bauer,
+    P. and Bechtold, P.
+    and Beljaars, A. C. M.
+    and van de Berg, L.
+    and Bidlot, J. and
+    Bormann, N. and Delsol,
+    C. and Dragani, R. and
+    Fuentes, M. and Geer, A.
+    J. and Haimberger, L.
+    and Healy, S. B. and
+    Hersbach, H. and Holm,
+    E. V. and Isaksen, L. and
+    Kallberg, P. and Koehler,
+    M. and Matricardi, M. and
+    McNally, A. P. and Monge-Sanz,
+    B. M. and Morcrette, J. J.
+    and Park, B. K. and Peubey,
+    C. and de Rosnay, P. and
+    Tavolato, C. and Thepaut,
+    J. N. and Vitart, F.},
+    title = {The ERA-Interim
+    reanalysis: configuration and
+    performance of the data
+    assimilation system},
+    journal = {Quarterly
+    Journal of the Royal
+    Meteorological Society},
+    volume = {137},
+    number = {656},
+    pages = {553-597},
+    year = {2011}
+}
+
+@misc{elder2013,
+  author = {Elder, B.},
+  date = {5th September 2013},
+  year={2013},
+  howpublished = {personal communication}
+}
+
+@article{
+inoue2009,
+    author = {Inoue, J. and
+    Enomoto, T. and Miyoshi,
+    T. and Yamane, S.},
+    title = {Impact of
+    observations from Arctic
+    drifting buoys on the
+    reanalysis of surface
+    fields},
+    journal = {Geophysical
+    Research Letters},
+    volume = {36},
+    year = {2009}
+}
+
+@article{
+jakobson2012,
+  title={Validation of atmospheric reanalyses over the central Arctic Ocean},
+  author={Jakobson, Erko and Vihma, Timo and Palo, Timo and Jakobson, Liisi and Keernik, Hannes and Jaagus, Jaak},
+  journal={Geophysical Research Letters},
+  volume={39},
+  number={10},
+  year={2012}
+}
+
+@article{
+jones2012,
+author = {Jones, P. D. and Lister, D. H. and Osborn, T. J. and Harpham, C. and Salmon, M. and Morice, C. P.},
+title = {Hemispheric and large-scale land-surface air temperature variations: An extensive revision and an update to 2010},
+journal = {Journal of Geophysical Research-Atmospheres},
+volume = {117},
+pages = {29},
+year = {2012}
+}
+
+
+@article{
+liu2008,
+    author = {Liu, J. and
+    Zhang, Z. and Hu, Y. and
+    Chen, L. and Dai, Y. and
+    Ren, X.},
+    title = {Assessment of
+    surface air temperature
+    over the Arctic Ocean in
+    reanalysis and IPCC AR4
+    model simulations with
+    IABP/POLES observations},
+    journal = {Journal of
+    Geophysical Research-Atmospheres},
+    volume = {113},
+    year = {2008}
+}
+
+@article{rigor2000,
+  title={Variations in Surface Air Temperature Observations in the Arctic, 1979-97.},
+  author={Rigor, Ignatius G and Colony, Roger L and Martin, Seelye},
+  journal={Journal of Climate},
+  volume={13},
+  number={5},
+  year={2000}
+}
+
+@article{
+thorne2010,
+    author = {Thorne, P. W. and
+    Vose, R. S.},
+    title = {REANALYSES SUITABLE
+    FOR CHARACTERIZING LONG-TERM
+    TRENDS Are They Really Achievable?},
+    journal = {Bulletin of the
+    American Meteorological Society},
+    volume = {91},
+    number = {3},
+    pages = {353-361},
+    year = {2010}
+}

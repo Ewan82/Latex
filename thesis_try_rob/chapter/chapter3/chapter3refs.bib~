@@ -1,0 +1,547 @@
+%Copy of references in Endnote Web group 'Thesis - ch3'
+
+@article{alexeev2012,
+  title={Vertical structure of recent Arctic warming from observed data and reanalysis products},
+  author={Alexeev, Vladimir A and Esau, Igor and Polyakov, Igor V and Byam, Sarah J and Sorokina, Svetlana},
+  journal={Climatic change},
+  volume={111},
+  number={2},
+  pages={215-239},
+  year={2012},
+  publisher={Springer}
+}
+
+
+@article{
+beesley2000,
+author = {Beesley, J. A. and Bretherton, C. S. and Jakob, C. and Andreas, E. L. and Intrieri, J. M. and Uttal, T. A.},
+title = {A comparison of cloud and boundary layer variables in the ECMWF forecast model with observations at Surface Heat Budget of the Arctic Ocean (SHEBA) ice camp},
+journal = {Journal of Geophysical Research-Atmospheres},
+volume = {105},
+number = {D10},
+pages = {12337-12349},
+year = {2000}
+}
+
+@article{bromwich2005,
+  title={Evaluation of the NCEP-NCAR and ECMWF 15-and 40-Yr Reanalyses Using Rawinsonde Data from Two Independent Arctic Field Experiments},
+  author={Bromwich, David H and Wang, Sheng-Hung},
+  journal={Monthly weather review},
+  volume={133},
+  number={12},
+  pages={3562-3578},
+  year={2005}
+}
+
+@article{bromwich2007,
+  title={A tropospheric assessment of the ERA-40, NCEP, and JRA-25 global reanalyses in the polar regions},
+  author={Bromwich, David H and Fogt, Ryan L and Hodges, Kevin I and Walsh, John E},
+  journal={Journal of Geophysical Research: Atmospheres (1984-2012)},
+  volume={112},
+  number={D10},
+  year={2007}
+}
+
+@article{bromwich2009,
+  title={Development and testing of polar weather research and forecasting model: 2. Arctic Ocean},
+  author={Bromwich, David H and Hines, Keith M and Bai, Le-Sheng},
+  journal={Journal of Geophysical Research: Atmospheres (1984-2012)},
+  volume={114},
+  number={D8},
+  year={2009},
+  publisher={Wiley Online Library}
+}
+
+
+@article{bromwich2010,
+  title={Arctic system reanalysis: Call for community involvement},
+  author={Bromwich, David and Kuo, Ying-Hwa and Serreze, Mark and Walsh, John and Bai, Le-Sheng and Barlage, Michael and Hines, Keith and Slater, Andrew},
+  journal={Eos, Transactions American Geophysical Union},
+  volume={91},
+  number={2},
+  pages={13},
+  year={2010}
+}
+
+@article{chung2013,
+  title={On the possibilities to use atmospheric reanalyses to evaluate the warming structure in the Arctic},
+  author={Chung, CE and Cha, H and Vihma, T and R{\"a}is{\"a}nen, P and Decremer, D},
+  journal={Atmospheric Chemistry and Physics},
+  volume={13},
+  number={22},
+  pages={11209-11219},
+  year={2013}
+}
+
+@article{compo2006,
+  title={Feasibility of a 100-year reanalysis using only surface pressure data},
+  author={Compo, Gilbert P and Whitaker, Jeffrey S and Sardeshmukh, Prashant D},
+  journal={Bulletin of the American Meteorological Society},
+  volume={87},
+  number={2},
+  pages={175-190},
+  year={2006}
+}
+
+@article{compo2011,
+  title={The twentieth century reanalysis project},
+  author={Compo, Gilbert P and Whitaker, Jeffrey S and Sardeshmukh, Prashant D and Matsui, N and Allan, RJ and Yin, X and Gleason, BE and Vose, RS and Rutledge, G and Bessemoulin, P and others},
+  journal={Quarterly Journal of the Royal Meteorological Society},
+  volume={137},
+  number={654},
+  pages={1-28},
+  year={2011}
+}
+
+@article{compo2013,
+  title={Independent confirmation of global land warming without the use of station temperatures},
+  author={Compo, Gilbert P and Sardeshmukh, Prashant D and Whitaker, Jeffrey S and Brohan, Philip and Jones, Philip D and McColl, Chesley},
+  journal={Geophysical Research Letters},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+
+
+@article{
+curry2002,
+author = {Curry, J. A. and Schramm, J. L. and Alam, A. and Reeder, R. and Arbetter, T. E. and Guest, P.},
+title = {Evaluation of data sets used to force sea ice models in the Arctic Ocean},
+journal = {Journal of Geophysical Research-Oceans},
+volume = {107},
+number = {C8},
+year = {2002}
+}
+
+@article{dee2009,
+  title={Variational bias correction of satellite radiance data in the ERA-Interim reanalysis},
+  author={Dee, DP and Uppala, S},
+  journal={Quarterly Journal of the Royal Meteorological Society},
+  volume={135},
+  number={644},
+  pages={1830-1841},
+  year={2009}
+}
+
+
+
+@article{dee2011,
+  title={Comments on “Reanalyses suitable for characterizing long-term trends”},
+  author={Dee, DP and K{\"a}ll{\'e}n, E and Simmons, AJ and Haimberger, L},
+  journal={Bulletin of the American Meteorological Society},
+  volume={92},
+  number={1},
+  pages={65-70},
+  year={2011}
+}
+
+@article{dee2011b,
+  title={The ERA-Interim reanalysis: Configuration and performance of the data assimilation system},
+author = {Dee, D. P.
+    and Uppala, S. M. and
+    Simmons, A. J. and
+    Berrisford, P. and
+    Poli, P. and Kobayashi,
+    S. and Andrae, U. and
+    Balmaseda, M. A. and
+    Balsamo, G. and Bauer,
+    P. and Bechtold, P.
+    and Beljaars, A. C. M.
+    and van de Berg, L.
+    and Bidlot, J. and
+    Bormann, N. and Delsol,
+    C. and Dragani, R. and
+    Fuentes, M. and Geer, A.
+    J. and Haimberger, L.
+    and Healy, S. B. and
+    Hersbach, H. and Holm,
+    E. V. and Isaksen, L. and
+    Kallberg, P. and Koehler,
+    M. and Matricardi, M. and
+    McNally, A. P. and Monge-Sanz,
+    B. M. and Morcrette, J. J.
+    and Park, B. K. and Peubey,
+    C. and de Rosnay, P. and
+    Tavolato, C. and Thepaut,
+    J. N. and Vitart, F.},
+  journal={Quarterly Journal of the Royal Meteorological Society},
+  volume={137},
+  number={656},
+  pages={553-597},
+  year={2011}
+}
+
+@article{ebita2011,
+  title={The Japanese 55-year Reanalysis “JRA-55”: An Interim Report},
+  author={Ebita, Ayataka and Kobayashi, Shinya and Ota, Yukinari and Moriya, Masami and Kumabe, Ryoji and Onogi, Kazutoshi and Harada, Yayoi and Yasui, Soichiro and Miyaoka, Kengo and Takahashi, Kiyotoshi and others},
+  journal={SOLA},
+  volume={7},
+  number={0},
+  pages={149-152},
+  year={2011},
+  publisher={J-STAGE}
+}
+
+
+@misc{
+ecmwf2008,
+    author = {ECMWF},
+    publisher= {ECMWF},
+    title = {ERA-Interim},
+    volume = {2012},
+    number = {30th April},
+    year = {2008},
+   note={$http://www.ecmwf.int/research/era/do/get/era-interim$}
+}
+
+@inbook{
+gibson1997,
+author = {Gibson, JK and Kallberg, P and Uppala, S},
+publisher={ECMWF},
+title = {ERA Description},
+booktitle = {ECMWF ERA-15 Project Report Series, No.1},
+address = {European Centre for Medium-Range Weather Forecasts, Shinfield, Reading, UK},
+url = {http://www.ecmwf.int/publications/},
+year = {1997}
+}
+
+@article{
+hansen1987,
+   author = {Hansen, J.
+   and Lebedeff, S.},
+   title = {GLOBAL
+   TRENDS OF MEASURED
+   SURFACE
+   AIR-TEMPERATURE},
+   journal = {Journal of
+   Geophysical
+   Research-Atmospheres},
+   volume = {92},
+   number = {D11},
+   pages =
+   {13345-13372},
+   year = {1987}
+}
+
+@article{hines2008,
+  title={Development and testing of Polar WRF},
+  author={Hines, Keith M and Bromwich, David H},
+  journal={Part I. Greenland Ice Sheet},
+  year={2008}
+}
+
+@article{hines2011,
+  title={Development and Testing of Polar WRF. Part III: Arctic Land},
+  author={Hines, Keith M and Bromwich, David H and Bai, Le-Sheng and Barlage, Michael and Slater, Andrew G},
+  journal={Journal of Climate},
+  volume={24},
+  number={1},
+  pages={26-48},
+  year={2011}
+}
+
+
+@article{inoue2009,
+  title={Impact of observations from Arctic drifting buoys on the reanalysis of surface fields},
+  author={Inoue, Jun and Enomoto, Takeshi and Miyoshi, Takemasa and Yamane, Shozo},
+  journal={Geophysical Research Letters},
+  volume={36},
+  number={8},
+  year={2009}
+}
+
+@article{
+jakobson2012,
+author = {Jakobson, Erko and Vihma, Timo and Palo, Timo and Jakobson, Liisi and Keernik, Hannes and Jaagus, Jaak},
+title = {Validation of atmospheric reanalyses over the central Arctic Ocean},
+journal = {Geophysical Research Letters},
+volume = {39},
+year = {2012}
+}
+
+@misc{
+jma2008,
+author = {JMA},
+publisher = {JMA},
+title = {About JCDAS},
+number = {4th November 2011},
+year = {2008},
+type = {Web Page},
+note={$http://jra.kishou.go.jp/JRA-25/AboutJCDAS_en.html$}
+}
+
+@article{kalnay1996,
+  title={The NCEP/NCAR 40-year reanalysis project},
+  author={Kalnay, Eugenia and Kanamitsu, Masao and Kistler, Robert and Collins, William and Deaven, D and Gandin, L and Iredell, Mo and Saha, Suranjana and White, Glenn and Woollen, John and others},
+  journal={Bulletin of the American meteorological Society},
+  volume={77},
+  number={3},
+  pages={437-471},
+  year={1996}
+}
+
+@article{kanamitsu2002,
+  title={Ncep-doe amip-ii reanalysis (r-2)},
+  author={Kanamitsu, Masao and Ebisuzaki, Wesley and Woollen, Jack and Yang, Shi-Keng and Hnilo, JJ and Fiorino, M and Potter, GL},
+  journal={Bulletin of the American Meteorological Society},
+  volume={83},
+  number={11},
+  pages={1631-1643},
+  year={2002}
+}
+
+@article{lindsay2014,
+  title={Evaluation of Seven Different Atmospheric Reanalysis Products in the Arctic*},
+  author={Lindsay, Ron and Wensnahan, Mark and Schweiger, A and Zhang, J},
+  journal={Journal of Climate},
+  volume={27},
+  number={7},
+  pages={2588-2606},
+  year={2014}
+}
+
+@article{liu2008,
+  title={Assessment of surface air temperature over the Arctic Ocean in reanalysis and IPCC AR4 model simulations with IABP/POLES observations},
+  author={Liu, Jiping and Zhang, Zhanhai and Hu, Yongyun and Chen, Liqi and Dai, Yongjiu and Ren, Xiaobo},
+  journal={Journal of Geophysical Research: Atmospheres (1984-2012)},
+  volume={113},
+  number={D10},
+  year={2008},
+  publisher={Wiley Online Library}
+}
+
+@article{
+luepkes2010,
+    author = {Luepkes, C. and Vihma, T. and Jakobson, E. and Koenig-Langlo, G. and Tetzlaff, A.},
+    title = {Meteorological observations from ship cruises during summer to the central Arctic: A comparison with reanalysis data},
+    journal = {Geophysical Research Letters},
+    volume = {37},
+    year = {2010}
+}
+
+@article{makshtas2007,
+  title={Atmospheric forcing validation for modeling the central Arctic},
+  author={Makshtas, A and Atkinson, D and Kulakov, M and Shutilin, S and Krishfield, R and Proshutinsky, Andrey},
+  journal={Geophysical Research Letters},
+  volume={34},
+  number={20},
+  pages={L20706},
+  year={2007},
+  publisher={American Geophysical Union}
+}
+
+
+
+@article{onogi2007,
+  title={The JRA-25 reanalysis},
+  author={Onogi, Kazutoshi and Tsutsui, Junichi and Koide, Hiroshi and Sakamoto, Masami and Kobayashi, Shinya and Hatsushika, Hiroaki and Matsumoto, Takanori and Yamazaki, Nobuo and KAMAHORI, Hirotaka and Takahashi, Kiyotoshi and others},
+  journal={気象集誌},
+  volume={85},
+  number={3},
+  pages={369-432},
+  year={2007},
+  publisher={J-STAGE}
+}
+
+@article{przybylak1997,
+  title={Spatial and temporal changes in extreme air temperatures in the Arctic over the period 1951-1990},
+  author={Przybylak, R.},
+  journal={International Journal of Climatology},
+  volume={17},
+  pages={615-634},
+  year={1997}
+}
+
+@inbook{
+przybylak2003,
+   author = {Przybylak,
+   R.},
+   publisher =
+   {Kluwer Academic Publishers},
+   address =
+   {Dordrecht, The Netherlands},
+   chapter = {4},
+   pages = {78-79},
+   year = {2003}
+}
+
+@misc{
+reana2013,
+    author = {Reanalyses.org},
+    publisher={Reanalyses.org},
+    title = {jra-references},
+    volume = {2013},
+    number = {November},
+    year = {2013},
+   note={$https://reanalyses.org/atmosphere/jra-references$}
+}
+
+@misc{
+reana2013b,
+    author = {Reanalyses.org},
+    publisher={Reanalyses.org},
+    title = {Overview of current atmospheric reanalyses},
+    volume = {2013},
+    number = {November},
+    year = {2013},
+   note={$http://reanalyses.org/atmosphere/overview-current-reanalyses$}
+}
+
+
+@article{rienecker2008,
+  title={The GEOS-5 data assimilation system-Documentation of Versions 5.0. 1, 5.1. 0, and 5.2. 0},
+  author={Rienecker, MM and Suarez, MJ and Todling, R and Bacmeister, J and Takacs, L and Liu, HC and Gu, W and Sienkiewicz, M and Koster, RD and Gelaro, R and others},
+  journal={NASA/TM-2008-104606 VOL27},
+  year={2008}
+}
+
+
+
+@article{rienecker2011,
+  title={MERRA: NASA's modern-era retrospective analysis for research and applications},
+  author={Rienecker, Michele M and Suarez, Max J and Gelaro, Ronald and Todling, Ricardo and Bacmeister, Julio and Liu, Emily and Bosilovich, Michael G and Schubert, Siegfried D and Takacs, Lawrence and Kim, Gi-Kong and others},
+  journal={Journal of Climate},
+  volume={24},
+  number={14},
+  pages={3624-3648},
+  year={2011}
+}
+
+@article{
+rigor2000,
+author = {Rigor, I. G. and Colony, R. L. and Martin, S.},
+title = {Variations in surface air temperature observations in the Arctic, 1979-97},
+journal = {Journal of Climate},
+volume = {13},
+number = {5},
+  year = {2000}
+}
+
+@article{
+rohde2013c,
+    author = {Rohde, R. and Muller, R.A.  and Jacobsen,
+    R.  and Perlmutter, S and Rosenfeld, A. and Wurtele,
+    J. and Curry, J. and Wickham, C. and Mosher, S.},
+    title = {Berkeley Earth
+    Temperature Averaging
+    Process},
+    journal = {Geoinformatics \& Geostatistics: An Overview},
+    year = {2013}
+}
+
+@misc{
+rohdesupp,
+    author = {Rohde, R. and Muller, R.A.  and Jacobsen,
+    R.  and Perlmutter, S and Rosenfeld, A. and Wurtele,
+    J. and Groom, D. and Curry, J. and Wickham, C. },
+    title = {Berkeley Earth Temperature Averaging Process: A supplement on statistical and mathematical methods},
+    year = {2012},
+    publisher = {Berkeley Earth},
+    note = {$http://berkeleyearth.org/pdf/methods-paper-supplement$}
+}
+
+@article{saha2006,
+  title={The NCEP climate forecast system},
+  author={Saha, S and Nadiga, S and Thiaw, C and Wang, J and Wang, W and Zhang, Q and Van den Dool, HM and Pan, H-L and Moorthi, S and Behringer, D and others},
+  journal={Journal of Climate},
+  volume={19},
+  number={15},
+  pages={3483-3517},
+  year={2006}
+}
+
+@article{saha2010,
+  title={The NCEP climate forecast system reanalysis},
+  author={Saha, Suranjana and Moorthi, Shrinivas and Pan, Hua-Lu and Wu, Xingren and Wang, Jiande and Nadiga, Sudhir and Tripp, Patrick and Kistler, Robert and Woollen, John and Behringer, David and others},
+  journal={Bulletin of the American Meteorological Society},
+  volume={91},
+  number={8},
+  pages={1015-1057},
+  year={2010},
+  publisher={American Meteorological Society}
+}
+
+@article{schubert1993,
+  title={An assimilated dataset for earth science applications},
+  author={Schubert, Siegfried D and Rood, Richard B and Pfaendtner, James},
+  journal={Bulletin of the American meteorological Society},
+  volume={74},
+  number={12},
+  pages={2331-2342},
+  year={1993}
+}
+
+@article{screen2011,
+  title={Erroneous Arctic temperature trends in the ERA-40 reanalysis: A closer look},
+  author={Screen, James A and Simmonds, Ian},
+  journal={Journal of Climate},
+  volume={24},
+  number={10},
+  pages={2620-2627},
+  year={2011}
+}
+
+@article{
+tastula2011,
+author = {Tastula, Esa-Matti and Vihma, Timo},
+title = {WRF Model Experiments on the Antarctic Atmosphere in Winter},
+journal = {Monthly Weather Review},
+volume = {139},
+number = {4},
+pages = {1279-1291},
+year = {2011}
+}
+
+@article{thorne2010,
+  title={Reanalyses suitable for characterizing long-term trends: Are they really achievable?},
+  author={Thorne, PW and Vose, RS},
+  journal={Bulletin of the American Meteorological Society},
+  volume={91},
+  number={3},
+  pages={353-361},
+  year={2010}
+}
+
+@article{uppala2005,
+  title={The ERA-40 re-analysisThe ERA-40 re-analysis},
+  author={Uppala, Sakari M and K{\aa}llberg, PW and Simmons, AJ and Andrae, U and Bechtold, V and Fiorino, M and Gibson, JK and Haseler, J and Hernandez, A and Kelly, GA and others},
+  journal={Quarterly Journal of the Royal Meteorological Society},
+  volume={131},
+  number={612},
+  pages={2961-3012},
+  year={2005},
+  publisher={Wiley Online Library}
+}
+
+@article{
+vihma2002,
+author = {Vihma, T. and Uotila, J. and Cheng, B. and Launiainen, J.},
+title = {Surface heat budget over the Weddell Sea: Buoy results and model comparisons},
+journal = {Journal of Geophysical Research-Oceans},
+volume = {107},
+number = {C2},
+year = {2002}
+}
+
+
+@article{wilson2011,
+  title={Evaluation of Polar WRF forecasts on the Arctic System Reanalysis domain: Surface and upper air analysis},
+  author={Wilson, Aaron B and Bromwich, David H and Hines, Keith M},
+  journal={Journal of Geophysical Research: Atmospheres (1984-2012)},
+  volume={116},
+  number={D11},
+  year={2011}
+}
+
+@article{wang2011,
+  title={An assessment of the surface climate in the NCEP climate forecast system reanalysis},
+  author={Wang, Wanqiu and Xie, Pingping and Yoo, Soo-Hyun and Xue, Yan and Kumar, Arun and Wu, Xingren},
+  journal={Climate dynamics},
+  volume={37},
+  number={7-8},
+  pages={1601-1620},
+  year={2011},
+  publisher={Springer}
+}
+
+
+

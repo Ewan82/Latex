@@ -1,0 +1,62 @@
+\begin{titlepage}
+\begin{flushright}
+\begin{figure}[h]
+\begin{flushright}
+  \vspace{-2cm}
+\includegraphics[width=50mm]{preface/figures/reading_logo.pdf} %pdf for use with pdflatex
+\end{flushright}
+\end{figure}
+\end{flushright}
+\begin{flushleft}
+  \vspace{4cm}
+\Huge{\bf{Title}}\\ %title of PhD
+\huge{PhD in Atmosphere, Oceans and Climate} \\ % PhD course
+\Large{\bf{Department of Meteorology}}\\ 
+\vspace{2cm}
+\huge{Emma Dodd} \\ %name
+\Large{\bf{November 2014}}\\ %submission date
+\end{flushleft}
+\end{titlepage}
+
+\thispagestyle{empty}
+%---------------------------------------------------------------------------
+
+% Declaration
+
+\vspace{40mm}
+\chapter*{\centering \Large \vspace{-20mm}\Huge Declaration}
+\thispagestyle{headings}
+
+\par I confirm that this is my own work and the use of all material from other sources has been properly and fully acknowledged.
+
+\vspace*{2cm}
+- Emma Dodd %\hspace{3.75in}  %name
+
+\newpage
+\thispagestyle{empty}
+%----------------------------------------------------------------------------
+
+%The abstract.
+
+\chapter*{\centering \Large \vspace{-20mm}\Huge Abstract}
+\thispagestyle{headings}
+
+\input{chapter/abst}
+%\newpage
+%\thispagestyle{empty}
+%----------------------------------------------------------------------------
+%Acknowledgements
+\chapter*{\centering \Large \vspace{-20mm}\Huge Acknowledgements}
+\thispagestyle{headings}
+
+Acknowledgements go here.
+
+\vspace{2cm}
+
+\newpage
+\thispagestyle{empty}
+%----------------------------------------------------------------------------
+
+\tableofcontents
+
+%------------------------------------------------------------------------------
