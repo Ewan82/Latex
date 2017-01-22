@@ -1,4 +1,4 @@
-\begin{thebibliography}{151}
+\begin{thebibliography}{179}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -60,6 +60,16 @@ Bauer, P., A.~Thorpe, and G.~Brunet, 2015: The quiet revolution of numerical
 Bayes, T. and R.~Price, 1763: An essay towards solving a problem in the
   doctrine of chances. \textit{Philosophical Transactions (1683-1775)},
   \textbf{53}, 370--418.
+
+\bibitem[{Bhupinderpal et~al.(2003)Bhupinderpal, Nordgren,
+  Ottosson~L{\"o}fvenius, H{\"o}gberg, Mellander, and
+  H{\"o}gberg}]{PCE:PCE1053}
+Bhupinderpal, S., A.~Nordgren, M.~Ottosson~L{\"o}fvenius, M.~N. H{\"o}gberg,
+  P.~E. Mellander, and P.~H{\"o}gberg, 2003: Tree root and soil heterotrophic
+  respiration as revealed by girdling of boreal scots pine forest: extending
+  observations beyond the first year. \textit{Plant, Cell \& Environment},
+  \textbf{26~(8)}, 1287--1296, \doi{10.1046/j.1365-3040.2003.01053.x},
+  \urlprefix\url{http://dx.doi.org/10.1046/j.1365-3040.2003.01053.x}.
 
 \bibitem[{Bloom et~al.(2016)Bloom, Exbrayat, van~der Velde, Feng, and
   Williams}]{bloom2016decadal}
@@ -198,11 +208,24 @@ Dietze, M.~C., D.~S. Lebauer, and R.~Kooper, 2013: On improving the
   \textbf{36~(9)}, 1575--1585, \doi{10.1111/pce.12043},
   \urlprefix\url{http://dx.doi.org/10.1111/pce.12043}.
 
+\bibitem[{Dijkstra and Cheng(2007)}]{ELE:ELE1095}
+Dijkstra, F.~A. and W.~Cheng, 2007: Interactions between soil and tree roots
+  accelerate long-term soil carbon decomposition. \textit{Ecology Letters},
+  \textbf{10~(11)}, 1046--1053, \doi{10.1111/j.1461-0248.2007.01095.x},
+  \urlprefix\url{http://dx.doi.org/10.1111/j.1461-0248.2007.01095.x}.
+
 \bibitem[{Dimet and Talagrand(1986)}]{dimet1986variational}
 Dimet, F.-X.~l. and O.~Talagrand, 1986: Variational algorithms for analysis and
   assimilation of meteorological observations: theoretical aspects.
   \textit{Tellus A}, \textbf{38A~(2)}, 97--110,
   \doi{10.1111/j.1600-0870.1986.tb00459.x}.
+
+\bibitem[{Dore et~al.(2012)Dore, Montes-Helu, Hart, Hungate, Koch, Moon,
+  Finkral, and Kolb}]{dore2012recovery}
+Dore, S., M.~Montes-Helu, S.~C. Hart, B.~A. Hungate, G.~W. Koch, J.~B. Moon,
+  A.~J. Finkral, and T.~E. Kolb, 2012: Recovery of ponderosa pine ecosystem
+  carbon and water fluxes from thinning and stand-replacing fire.
+  \textit{Global change biology}, \textbf{18~(10)}, 3171--3185.
 
 \bibitem[{Engelen and Stephens(2004)}]{engelen2004information}
 Engelen, R. and G.~Stephens, 2004: Information content of infrared satellite
@@ -279,6 +302,46 @@ Healy, S. and A.~White, 2005: {Use of discrete Fourier transforms in the 1D-Var
   Society}, \textbf{131~(605)}, 63--72, \doi{10.1256/qj.03.193},
   \urlprefix\url{http://doi.wiley.com/10.1256/qj.03.193}.
 
+\bibitem[{Heath et~al.(2005)Heath, Ayres, Possell, Bardgett, Black, Grant,
+  Ineson, and Kerstiens}]{heath2005rising}
+Heath, J., E.~Ayres, M.~Possell, R.~D. Bardgett, H.~I. Black, H.~Grant,
+  P.~Ineson, and G.~Kerstiens, 2005: Rising atmospheric co2 reduces
+  sequestration of root-derived soil carbon. \textit{Science},
+  \textbf{309~(5741)}, 1711--1713.
+
+\bibitem[{Heinemeyer et~al.(2012)Heinemeyer, Wilkinson, Vargas, Subke, Casella,
+  Morison, and Ineson}]{heinemeyer2012exploring}
+Heinemeyer, A., M.~Wilkinson, R.~Vargas, J.-A. Subke, E.~Casella, J.~I.
+  Morison, and P.~Ineson, 2012: Exploring the ``overflow tap'' theory: linking
+  forest soil co2 fluxes and individual mycorrhizosphere components to
+  photosynthesis. \textit{Biogeosciences}, \textbf{9~(1)}, 79--95.
+
+\bibitem[{Hernesmaa et~al.(2005)Hernesmaa, Björklöf, Kiikkilä, Fritze,
+  Haahtela, and Romantschuk}]{Hernesmaa2005777}
+Hernesmaa, A., K.~Björklöf, O.~Kiikkilä, H.~Fritze, K.~Haahtela, and
+  M.~Romantschuk, 2005: Structure and function of microbial communities in the
+  rhizosphere of scots pine after tree-felling. \textit{Soil Biology and
+  Biochemistry}, \textbf{37~(4)}, 777 -- 785,
+  \doi{http://dx.doi.org/10.1016/j.soilbio.2004.10.010},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0038071704003918}.
+
+\bibitem[{Hilker et~al.(2009)Hilker, Wulder, Coops, Linke, McDermid, Masek,
+  Gao, and White}]{hilker2009new}
+Hilker, T., M.~A. Wulder, N.~C. Coops, J.~Linke, G.~McDermid, J.~G. Masek,
+  F.~Gao, and J.~C. White, 2009: A new data fusion model for high spatial-and
+  temporal-resolution mapping of forest disturbance based on landsat and modis.
+  \textit{Remote Sensing of Environment}, \textbf{113~(8)}, 1613--1627.
+
+\bibitem[{H{\"o}gberg and Read(2006)}]{hogberg2006towards}
+H{\"o}gberg, P. and D.~J. Read, 2006: Towards a more plant physiological
+  perspective on soil ecology. \textit{Trends in Ecology \& Evolution},
+  \textbf{21~(10)}, 548--554.
+
+\bibitem[{H{\"o}gberg et~al.(2001)}]{hogberg2001large}
+H{\"o}gberg, P., et~al., 2001: Large-scale forest girdling shows that current
+  photosynthesis drives soil respiration. \textit{Nature}, \textbf{411~(6839)},
+  789--792.
+
 \bibitem[{Husch et~al.(2002)Husch, Beers, and Kershaw~Jr}]{husch2002forest}
 Husch, B., T.~W. Beers, and J.~A. Kershaw~Jr, 2002: \textit{Forest
   mensuration}. John Wiley \& Sons.
@@ -288,6 +351,13 @@ Jacquez, J.~A. and P.~Greif, 1985: {Numerical parameter identifiability and
   estimability: Integrating identifiability, estimability, and optimal sampling
   design}. \textit{Mathematical Biosciences}, \textbf{77~(1-2)}, 201--227,
   \doi{10.1016/0025-5564(85)90098-7}.
+
+\bibitem[{Janssens et~al.(2001)}]{GCB:GCB412}
+Janssens, I.~A., et~al., 2001: Productivity overshadows temperature in
+  determining soil and ecosystem respiration across european forests.
+  \textit{Global Change Biology}, \textbf{7~(3)}, 269--278,
+  \doi{10.1046/j.1365-2486.2001.00412.x},
+  \urlprefix\url{http://dx.doi.org/10.1046/j.1365-2486.2001.00412.x}.
 
 \bibitem[{J{\"a}rvinen et~al.(1999)J{\"a}rvinen, Andersson, and
   Bouttier}]{jarvinen1999variational}
@@ -339,6 +409,13 @@ Kaminski, T., et~al., 2013: {The BETHY/JSBACH Carbon Cycle Data Assimilation
   System: Experiences and challenges}. \textit{Journal of Geophysical Research:
   Biogeosciences}, \textbf{118~(4)}, 1414--1426, \doi{10.1002/jgrg.20118}.
 
+\bibitem[{Kantzas et~al.(2015)Kantzas, Quegan, and
+  Lomas}]{kantzas2015improving}
+Kantzas, E., S.~Quegan, and M.~Lomas, 2015: Improving the representation of
+  fire disturbance in dynamic vegetation models by assimilating satellite data:
+  a case study over the arctic. \textit{Geoscientific Model Development},
+  \textbf{8~(8)}, 2597--2609.
+
 \bibitem[{Keenan et~al.(2011)Keenan, Carbone, Reichstein, and
   Richardson}]{Keenan2011}
 Keenan, T.~F., M.~S. Carbone, M.~Reichstein, and A.~D. Richardson, 2011: The
@@ -386,6 +463,12 @@ Kuppel, S., P.~Peylin, F.~Chevallier, C.~Bacour, F.~Maignan, and A.~D.
   Richardson, 2012: {Constraining a global ecosystem model with multi-site
   eddy-covariance data}. \textit{Biogeosciences}, \textbf{9}, 3757--3776,
   \doi{10.5194/bg-9-3757-2012}.
+
+\bibitem[{Kurz et~al.(2008)Kurz, Dymond, Stinson, Rampley, Neilson, Carroll,
+  Ebata, and Safranyik}]{kurz2008mountain}
+Kurz, W.~A., C.~Dymond, G.~Stinson, G.~Rampley, E.~Neilson, A.~Carroll,
+  T.~Ebata, and L.~Safranyik, 2008: Mountain pine beetle and forest carbon
+  feedback to climate change. \textit{Nature}, \textbf{452~(7190)}, 987--990.
 
 \bibitem[{Laplace(1781)}]{laplace1781memoire}
 Laplace, P.~d., 1781: M{\'e}moire sur les probabilit{\'e}s.
@@ -451,6 +534,13 @@ Li, Y., I.~M. Navon, W.~Yang, X.~Zou, J.~R. Bates, S.~Moorthi, and R.~W.
 {LI-COR, Inc.}, 2015: \textit{EddyPro� 6 Help and User's Guide}. LI-COR, Inc.
   Lincoln, NE.
 
+\bibitem[{Liu et~al.(2011)}]{JGRG:JGRG779}
+Liu, S., et~al., 2011: Simulating the impacts of disturbances on forest carbon
+  cycling in north america: Processes, data, models, and challenges.
+  \textit{Journal of Geophysical Research: Biogeosciences}, \textbf{116~(G4)},
+  n/a--n/a, \doi{10.1029/2010JG001585},
+  \urlprefix\url{http://dx.doi.org/10.1029/2010JG001585}, g00K08.
+
 \bibitem[{Ljung(1998)}]{ljung1998system}
 Ljung, L., 1998: \textit{System Identification: Theory for the User}. Pearson
   Education.
@@ -510,6 +600,13 @@ Metropolis, N., A.~W. Rosenbluth, M.~N. Rosenbluth, A.~H. Teller, and
 Mitchell, J.~F., 1989: The greenhouse effect and climate change.
   \textit{Reviews of Geophysics}, \textbf{27~(1)}, 115--139.
 
+\bibitem[{Mizunuma et~al.(2013)Mizunuma, Wilkinson, L~Eaton, Mencuccini,
+  IL~Morison, and Grace}]{mizunuma2013relationship}
+Mizunuma, T., M.~Wilkinson, E.~L~Eaton, M.~Mencuccini, J.~IL~Morison, and
+  J.~Grace, 2013: The relationship between carbon dioxide uptake and canopy
+  colour from two camera systems in a deciduous forest in southern england.
+  \textit{Functional Ecology}, \textbf{27~(1)}, 196--207.
+
 \bibitem[{Moodey et~al.(2013)Moodey, Lawless, Potthast, and van
   Leeuwen}]{moodycycled4dvar}
 Moodey, A. J.~F., A.~S. Lawless, R.~W.~E. Potthast, and P.~J. van Leeuwen,
@@ -525,6 +622,26 @@ Moore, D.~J., J.~Hu, W.~J. Sacks, D.~S. Schimel, and R.~K. Monson, 2008:
   informed by measured net \{CO\(_2\)\} and \{H\(_2\)O\} fluxes.
   \textit{Agricultural and Forest Meteorology}, \textbf{148~(10)}, 1467 --
   1477, \doi{http://dx.doi.org/10.1016/j.agrformet.2008.04.013}.
+
+\bibitem[{Moore et~al.(2013)}]{ELE:ELE12097}
+Moore, D. J.~P., et~al., 2013: Persistent reduced ecosystem respiration after
+  insect disturbance in high elevation forests. \textit{Ecology Letters},
+  \textbf{16~(6)}, 731--737, \doi{10.1111/ele.12097},
+  \urlprefix\url{http://dx.doi.org/10.1111/ele.12097}.
+
+\bibitem[{Moreaux et~al.(2011)Moreaux, Lamaud, Bosc, Bonnefond, Medlyn, and
+  Loustau}]{moreaux2011paired}
+Moreaux, V., {\'E}.~Lamaud, A.~Bosc, J.-M. Bonnefond, B.~E. Medlyn, and
+  D.~Loustau, 2011: Paired comparison of water, energy and carbon exchanges
+  over two young maritime pine stands (pinus pinaster ait.): effects of
+  thinning and weeding in the early stage of tree growth. \textit{Tree
+  physiology}, tpr048.
+
+\bibitem[{Morecroft et~al.(2003)Morecroft, Stokes, and Morison}]{Morecroft2003}
+Morecroft, M.~D., V.~J. Stokes, and J.~I.~L. Morison, 2003: Seasonal changes in
+  the photosynthetic capacity of canopy oak (quercus robur) leaves: the impact
+  of slow development on annual carbon uptake. \textit{International Journal of
+  Biometeorology}, \textbf{47~(4)}, 221--226, \doi{10.1007/s00484-003-0173-3}.
 
 \bibitem[{Moss et~al.(2010)}]{moss2010next}
 Moss, R.~H., et~al., 2010: The next generation of scenarios for climate change
@@ -597,6 +714,23 @@ Papale, D., et~al., 2006{\natexlab{b}}: {Towards a standardized processing of
   and uncertainty estimation}. \textit{Biogeosciences}, \textbf{3~(4)},
   571--583, \doi{10.5194/bg-3-571-2006}.
 
+\bibitem[{Pierret et~al.(2016)Pierret, Maeght, Cl�ment, Montoroi, Hartmann, and
+  Gonkhamdee}]{Pierret01102016}
+Pierret, A., J.-L. Maeght, C.~Cl�ment, J.-P. Montoroi, C.~Hartmann, and
+  S.~Gonkhamdee, 2016: Understanding deep roots and their functions in
+  ecosystems: an advocacy for more unconventional research. \textit{Annals of
+  Botany}, \textbf{118~(4)}, 621--635, \doi{10.1093/aob/mcw130},
+  \eprint{http://aob.oxfordjournals.org/content/118/4/621.full.pdf+html}.
+
+\bibitem[{Pinnington et~al.(2016)Pinnington, Casella, Dance, Lawless, Morison,
+  Nichols, Wilkinson, and Quaife}]{Pinnington2016299}
+Pinnington, E.~M., E.~Casella, S.~L. Dance, A.~S. Lawless, J.~I. Morison, N.~K.
+  Nichols, M.~Wilkinson, and T.~L. Quaife, 2016: Investigating the role of
+  prior and observation error correlations in improving a model forecast of
+  forest carbon balance using four-dimensional variational data assimilation.
+  \textit{Agricultural and Forest Meteorology}, \textbf{228–229}, 299 -- 314,
+  \doi{http://dx.doi.org/10.1016/j.agrformet.2016.07.006}.
+
 \bibitem[{Pitman and Broadmeadow(2001)}]{pitman2001leaf}
 Pitman, R. and M.~Broadmeadow, 2001: Leaf area, biomass and physiological
   parameterisation of ground vegetation of lowland oak woodland.
@@ -646,6 +780,12 @@ Rayner, P.~J., 2010: The current state of carbon-cycle data assimilation.
   \textit{Current Opinion in Environmental Sustainability}, \textbf{2~(4)},
   289--296.
 
+\bibitem[{Reich et~al.(1991)Reich, Walters, and Ellsworth}]{reich1991leaf}
+Reich, P.~B., M.~B. Walters, and D.~S. Ellsworth, 1991: Leaf age and season
+  influence the relationships between leaf nitrogen, leaf mass per area and
+  photosynthesis in maple and oak trees. \textit{Plant, Cell \& Environment},
+  \textbf{14~(3)}, 251--259, \doi{10.1111/j.1365-3040.1991.tb01499.x}.
+
 \bibitem[{Renaud(1997)}]{renaud1997automatic}
 Renaud, J., 1997: Automatic differentiation in robust optimization.
   \textit{AIAA journal}, \textbf{35~(6)}, 1072--1079.
@@ -676,6 +816,10 @@ Rodgers, C.~D., 1998: Information content and optimisation of high spectral
 Rodgers, C.~D. et~al., 2000: \textit{Inverse methods for atmospheric sounding:
   Theory and practice}, Vol.~2. World scientific Singapore.
 
+\bibitem[{Running(2008)}]{running2008ecosystem}
+Running, S.~W., 2008: Ecosystem disturbance, carbon, and climate.
+  \textit{Science}, \textbf{321~(5889)}, 652--653.
+
 \bibitem[{Running et~al.(2004)Running, Nemani, Heinsch, Zhao, Reeves, and
   Hashimoto}]{running2004continuous}
 Running, S.~W., R.~R. Nemani, F.~A. Heinsch, M.~Zhao, M.~Reeves, and
@@ -693,8 +837,21 @@ Sacks, W.~J., D.~S. Schimel, and R.~K. Monson, 2007: Coupling between carbon
 Sasaki, Y., 1970: Some basic formalisms in numerical variational analysis.
   \textit{Monthly Weather Review}, 875--883.
 
+\bibitem[{Saunders et~al.(2012)Saunders, Tobin, Black, Gioria, Nieuwenhuis, and
+  Osborne}]{Saunders20121}
+Saunders, M., B.~Tobin, K.~Black, M.~Gioria, M.~Nieuwenhuis, and B.~Osborne,
+  2012: Thinning effects on the net ecosystem carbon exchange of a sitka spruce
+  forest are temperature-dependent. \textit{Agricultural and Forest
+  Meteorology}, \textbf{157}, 1 -- 10,
+  \doi{http://dx.doi.org/10.1016/j.agrformet.2012.01.008}.
+
 \bibitem[{Schimel(2013)}]{schimel2013climate}
 Schimel, D., 2013: \textit{Climate and ecosystems}. Princeton University Press.
+
+\bibitem[{Schimel and Weintraub(2003)}]{schimel2003implications}
+Schimel, J.~P. and M.~N. Weintraub, 2003: The implications of exoenzyme
+  activity on microbial carbon and nitrogen limitation in soil: a theoretical
+  model. \textit{Soil Biology and Biochemistry}, \textbf{35~(4)}, 549--563.
 
 \bibitem[{Schlich and Perr{\'e}e(1905)}]{schlich1905working}
 Schlich, S.~W. and W.~Perr{\'e}e, 1905: \textit{Working plan for the Alice Holt
@@ -722,6 +879,10 @@ Schwalm, C.~R., et~al., 2010: A model-data intercomparison of co2 exchange
 \bibitem[{Schwarz et~al.(1978)}]{schwarz1978estimating}
 Schwarz, G. et~al., 1978: Estimating the dimension of a model. \textit{The
   annals of statistics}, \textbf{6~(2)}, 461--464.
+
+\bibitem[{Seidl et~al.(2011)}]{seidl2011modelling}
+Seidl, R., et~al., 2011: Modelling natural disturbances in forest ecosystems: a
+  review. \textit{Ecological Modelling}, \textbf{222~(4)}, 903--924.
 
 \bibitem[{Singh et~al.(2013)Singh, Sandu, Jardak, Bowman, and
   Lee}]{singh2013practical}
@@ -767,11 +928,23 @@ Talagrand, O., 1997: Assimilation of observations, an introduction.
   \textit{Journal-Meteorological Society of Japan Series 2}, \textbf{75},
   81--99.
 
+\bibitem[{Talbot et~al.(2008)Talbot, Allison, and
+  Treseder}]{talbot2008decomposers}
+Talbot, J., S.~Allison, and K.~Treseder, 2008: Decomposers in disguise:
+  mycorrhizal fungi as regulators of soil c dynamics in ecosystems under global
+  change. \textit{Functional ecology}, \textbf{22~(6)}, 955--963.
+
 \bibitem[{Taylor(2001)}]{Taylor2001}
 Taylor, K.~E., 2001: {Summarizing multiple aspects of model performance in a
   single diagram}. \textit{Journal of Geophysical Research}, \textbf{106~(D7)},
   7183, \doi{10.1029/2000JD900719},
   \urlprefix\url{http://doi.wiley.com/10.1029/2000JD900719}.
+
+\bibitem[{Thornton et~al.(2002)}]{thornton2002modeling}
+Thornton, P., et~al., 2002: Modeling and measuring the effects of disturbance
+  history and climate on carbon and water budgets in evergreen needleleaf
+  forests. \textit{Agricultural and forest meteorology}, \textbf{113~(1)},
+  185--222.
 
 \bibitem[{Tremolet(2006)}]{Tremolet2006}
 Tremolet, Y., 2006: {Accounting for an imperfect model in 4D-Var}.
@@ -791,6 +964,10 @@ Verbeeck, H., P.~Peylin, C.~Bacour, D.~Bonal, K.~Steppe, and P.~Ciais, 2011:
   {Seasonal patterns of CO2 fluxes in Amazon forests: Fusion of eddy covariance
   data and the ORCHIDEE model}. \textit{Journal of Geophysical Research},
   \textbf{116~(G2)}, 1--19, \doi{10.1029/2010JG001544}.
+
+\bibitem[{Vesala et~al.(2005)}]{vesala2005effect}
+Vesala, T., et~al., 2005: Effect of thinning on surface fluxes in a boreal
+  forest. \textit{Global Biogeochemical Cycles}, \textbf{19~(2)}.
 
 \bibitem[{Wahba(1985)}]{wahba1985design}
 Wahba, G., 1985: Design criteria and eigensequence plots for satellite-computed
@@ -821,6 +998,14 @@ Weston, P., W.~Bell, and J.~Eyre, 2014: Accounting for correlated error in the
 Wilkinson, M., P.~Crow, E.~Eaton, and J.~Morison, 2015: Effects of management
   thinning on co\(_{2}\) exchange by a plantation oak woodland in south-eastern
   england. \textit{Biogeosciences Discussions}, \textbf{12~(19)}.
+
+\bibitem[{Wilkinson et~al.(2016)Wilkinson, Crow, Eaton, and
+  Morison}]{wilkinson2016}
+Wilkinson, M., P.~Crow, E.~L. Eaton, and J.~I.~L. Morison, 2016: Effects of
+  management thinning on co2 exchange by a plantation oak woodland in
+  south-eastern england. \textit{Biogeosciences}, \textbf{13~(8)}, 2367--2378,
+  \doi{10.5194/bg-13-2367-2016},
+  \urlprefix\url{http://www.biogeosciences.net/13/2367/2016/}.
 
 \bibitem[{Wilkinson et~al.(2012)Wilkinson, Eaton, Broadmeadow, and
   Morison}]{wilkinson2012inter}

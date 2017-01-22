@@ -76,5 +76,24 @@
 \contentsline {section}{\numberline {6.7}Acknowledgements}{97}
 \contentsline {section}{\numberline {6.8}Appendix}{98}
 \contentsline {chapter}{\numberline {7}Using data assimilation to understand the effect of disturbance of the carbon dynamics of the Alice Holt forest}{100}
-\contentsline {chapter}{\numberline {8}Conclusion}{101}
-\contentsline {chapter}{Bibliography}{102}
+\contentsline {section}{\numberline {7.1}Abstract}{100}
+\contentsline {section}{\numberline {7.2}Introduction}{101}
+\contentsline {section}{\numberline {7.3}Observation and data assimilation methods}{103}
+\contentsline {subsection}{\numberline {7.3.1}Alice Holt research forest}{103}
+\contentsline {subsection}{\numberline {7.3.2}Observations}{104}
+\contentsline {subsubsection}{\numberline {7.3.2.1}Leaf area index}{104}
+\contentsline {subsubsection}{\numberline {7.3.2.2}Woody biomass}{105}
+\contentsline {subsubsection}{\numberline {7.3.2.3}Flux tower eddy covariance}{106}
+\contentsline {subsection}{\numberline {7.3.3}Model and data assimilation}{108}
+\contentsline {subsubsection}{\numberline {7.3.3.1}DALEC2 ecosystem carbon model}{108}
+\contentsline {subsubsection}{\numberline {7.3.3.2}Data assimilation}{108}
+\contentsline {subsection}{\numberline {7.3.4}Experimental setup}{110}
+\contentsline {section}{\numberline {7.4}Results}{111}
+\contentsline {section}{\numberline {7.5}Discussion}{118}
+\contentsline {section}{\numberline {7.6}Conclusion}{120}
+\contentsline {section}{\numberline {7.7}acknowledgments}{121}
+\contentsline {section}{\numberline {7.8}Appendix}{121}
+\contentsline {subsection}{\numberline {7.8.1}DALEC2 equations}{121}
+\contentsline {section}{\numberline {7.9}Supplementary material}{122}
+\contentsline {chapter}{\numberline {8}Conclusion}{137}
+\contentsline {chapter}{Bibliography}{138}
