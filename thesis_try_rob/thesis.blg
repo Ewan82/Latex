@@ -3,54 +3,55 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: preface/title.aux
 A level-1 auxiliary file: preface/declaration.aux
+A level-1 auxiliary file: preface/publications.aux
 A level-1 auxiliary file: preface/abstract.aux
 A level-1 auxiliary file: preface/acknowledgements.aux
 The style file: ./ametsoc.bst
-Reallocated field_info (elt_size=4) to 10191 items from 5000.
-Database file #1: chapter/PhD.bib
+Reallocated field_info (elt_size=4) to 10220 items from 5000.
+Database file #1: ../PhD.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--missing publisher in Daley1992
 Warning--missing publisher in scipy2015
 Warning--missing publisher in fluxnetsite2013
-You've used 179 entries,
+You've used 180 entries,
             3486 wiz_defined-function locations,
-            1816 strings with 49997 characters,
-and the built_in function-call counts, 201845 in all, are:
-= -- 23740
-> -- 7068
+            1823 strings with 50187 characters,
+and the built_in function-call counts, 202846 in all, are:
+= -- 23815
+> -- 7165
 < -- 57
-+ -- 4092
-- -- 1747
-* -- 11051
-:= -- 20403
-add.period$ -- 358
-call.type$ -- 179
-change.case$ -- 1433
-chr.to.int$ -- 176
-cite$ -- 182
-duplicate$ -- 20569
-empty$ -- 10605
-format.name$ -- 2273
-if$ -- 41035
++ -- 4138
+- -- 1771
+* -- 11125
+:= -- 20535
+add.period$ -- 360
+call.type$ -- 180
+change.case$ -- 1447
+chr.to.int$ -- 177
+cite$ -- 183
+duplicate$ -- 20634
+empty$ -- 10650
+format.name$ -- 2300
+if$ -- 41240
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 1986
-newline$ -- 547
-num.names$ -- 718
-pop$ -- 8713
+missing$ -- 2001
+newline$ -- 550
+num.names$ -- 722
+pop$ -- 8768
 preamble$ -- 1
-purify$ -- 1260
+purify$ -- 1272
 quote$ -- 0
-skip$ -- 12441
+skip$ -- 12478
 stack$ -- 0
-substring$ -- 9491
-swap$ -- 17090
+substring$ -- 9504
+swap$ -- 17120
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1578
+type$ -- 1587
 warning$ -- 3
-while$ -- 977
+while$ -- 980
 width$ -- 0
-write$ -- 2065
+write$ -- 2076
 (There were 3 warnings)

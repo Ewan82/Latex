@@ -1,4 +1,4 @@
-\begin{thebibliography}{179}
+\begin{thebibliography}{180}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -730,6 +730,13 @@ Pinnington, E.~M., E.~Casella, S.~L. Dance, A.~S. Lawless, J.~I. Morison, N.~K.
   forest carbon balance using four-dimensional variational data assimilation.
   \textit{Agricultural and Forest Meteorology}, \textbf{228–229}, 299 -- 314,
   \doi{http://dx.doi.org/10.1016/j.agrformet.2016.07.006}.
+
+\bibitem[{Pinnington et~al.(2017)Pinnington, Casella, Dance, Lawless, Morison,
+  Nichols, Wilkinson, and Quaife}]{Pinnington2017}
+Pinnington, E.~M., E.~Casella, S.~L. Dance, A.~S. Lawless, J.~I. Morison, N.~K.
+  Nichols, M.~Wilkinson, and T.~L. Quaife, 2017: Using data assimilation to
+  understand the effect of disturbance on the carbon dynamics of a managed
+  woodland. \textit{JGR: Biogeosciences}, under review.
 
 \bibitem[{Pitman and Broadmeadow(2001)}]{pitman2001leaf}
 Pitman, R. and M.~Broadmeadow, 2001: Leaf area, biomass and physiological
