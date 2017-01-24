@@ -16,7 +16,7 @@ In this chapter we use meteorological driving data taken from the Metolious fore
 
 \subsection{The DALEC1 model} \label{chap5:sec:dalec1}
 
-The DALEC model is a simple process-based model describing the carbon balance of an evergreen forest ecosystem \cite{williams2005improved}. The model is constructed of five carbon pools (foliage ($C_f$), fine roots ($C_r$), woody stems and coarse roots ($C_w$), fresh leaf and fine root litter ($C_l$) and soil organic matter and coarse woody debris ($C_s$)) linked via fluxes. The gross primary production function ($GPP$) uses meteorological driving data and the site's leaf area index (a function of $C_f$) to calculate the total amount of carbon to be allocated at a daily time step.   
+The DALEC model is a simple process-based model describing the carbon balance of an evergreen forest ecosystem \cite{williams2005improved}. The model is constructed of five carbon pools (foliage ($C_{fol}$), fine roots ($C_{roo}$), woody stems and coarse roots ($C_{woo}$), fresh leaf and fine root litter ($C_{lit}$) and soil organic matter and coarse woody debris ($C_{som}$)) linked via fluxes. The Agregated Canopy Model (ACM) is used to calculate GPP as a function of meteorological driving data and the site's leaf area index (a function of $C_{fol}$), giving the total amount of carbon to be allocated at a daily time step.   
 
 \begin{figure}[ht]
     \centering
@@ -25,19 +25,20 @@ The DALEC model is a simple process-based model describing the carbon balance of
     \label{fig:DALEC_mod}
 \end{figure}
 
-The model equations for the carbon pools at day $t+1$ are as follows:
+The model equations for the carbon pools at day $i$ are as follows:
 
 \begin{align}
-C_f(t+1)&=(1-p_5)C_f(t)+p_3(1-p_2)GPP(C_f(t),\phi), \label{dalec1}
-\\C_r(t+1)&=(1-p_7)C_r(t)+p_4(1-p_3)(1-p_2)GPP(C_f(t),\phi), 
-\\C_w(t+1)&=(1-p_6)C_w(t)+(1-p_4)(1-p_3)(1-p_2)GPP(C_f(t),\phi), 
-\\C_l(t+1)&=(1-(p_1+p_8)T(t))C_l(t)+p_5C_f(t)+p_7C_r(t), 
-\\C_s(t+1)&=(1-p_9T(t))C_s+p_6C_w(t)+p_1T(t)C_l(t), \label{dalec5}
+GPP^{i} &= ACM(C_{fol}^{i-1}, c_{lma}, c_{eff}, \Psi) \label{GPP}
+\\C_{fol}^{i}&=C_{fol}^{i-1}+(1-f_{auto})f_{fol}GPP^{i}-\theta_{fol}C_{fol}^{i-1}, \label{dalec1}
+\\C_{roo}^{i}&=C_{roo}^{i-1}+(1-f_{auto})(1-f_{fol})(1-f_{lab})f_{roo}GPP^{i}-\theta_{roo}C_{roo}^{i-1}, 
+\\C_{woo}^{i}&=C_{woo}^{i-1}+(1-f_{auto})(1-f_{fol})(1-f_{lab})(1-f_{roo})GPP^{i}-\theta_{woo}C_{woo}^{i-1}, 
+\\C_{lit}^{i}&=C_{lit}^{i-1}+\theta_{roo}C_{roo}^{i-1}-(\theta_{lit}+\theta_{min})e^{\Theta T^{i-1}}C_{lit}^{i-1}, 
+\\C_{som}^{i}&=C_{som}^{i-1}+\theta_{woo}C_{woo}^{i-1}+\theta_{min}e^{\Theta T^{i-1}}C_{lit}^{i-1}-\theta_{som}e^{\Theta T^{i-1}}C_{som}^{i-1}, \label{dalec5}
 \end{align}
 
-where $T(t)=\frac{1}{2}exp(p_{10}T_m(t))$, $T_m$ is daily mean temperature, $p_1,\ldots,p_{10}$ are rate parameters and $\phi$ represents the meteorological driving data used in the $GPP$ function. The full details of this version of DALEC can be found in \cite{williams2005improved}. It is parameterized for data from a young pine stand in Ponderossa, Oregon. The model parameters and the equations used to calculate $GPP$ are included in the appendix. We now see how DALEC can be implemented in a four-dimensional variational data assimilation (4D-Var) framework.
+where $T^{i-1}$ is the daily mean temperature, $\Psi$ represents the meteorological driving data used in the $GPP$ function. Descriptions for each model parameter used in equations \eqref{GPP} to \eqref{dalec5} are shown in table~\ref{}. The full details of this version of DALEC can be found in \cite{williams2005improved}. It is parameterised for data from a young pine stand in Ponderossa, Oregon. The model parameters and the equations used to calculate $GPP$ are included in section~\ref{chap4:sec:ACM}. 
 
-\subsection{The Aggregated Canopy Model}
+\subsection{The Aggregated Canopy Model} \label{chap4:sec:ACM}
 The aggregated canopy model (ACM) is used in DALEC to calculate $GPP$. The ACM is a big-leaf, daily time-step model estimating photosynthesis as a function of foilar carbon, leaf mass per area, total daily irradiance, daily temperature values, day length and atmospheric CO\(_{2}\) concentration using the following equations,
 \begin{equation}
 LAI = \frac{C_f}{c_{lma}} 
@@ -317,7 +318,7 @@ f_{roo}(1-f_{fol})(1-f_{auto})\zeta^i & (1-\theta_{roo}) & 0 & 0 & 0 \\
 0 & 0 & \theta_{woo} & \theta_{min}\chi^{i-1} & (1-\theta_{som}\chi^{i-1}) \\
 \end{pmatrix}, \label{chap5:eqn:linmod}
 \end{multline}
-where \(\textbf{x}_{i}=(C_{fol}^{i}, C_{roo}^{i}, C_{woo}^{i}, C_{lit}^{i}, C_{som}^{i})^{T}\), \(\zeta^i = \partial GPP^{i}(C_{fol}^{i-1}, \Psi)/\partial C_{fol}^{i-1}\) and \(\chi^{i-1}=e^{\Theta T^{i-1}}\) with the parameters and symbols having the same meaning as in section~\ref{chap5:sec:dalec1}. 
+where \(\textbf{x}_{i}=(C_{fol}^{i}, C_{roo}^{i}, C_{woo}^{i}, C_{lit}^{i}, C_{som}^{i})^{T}\), \(\zeta^i = \partial GPP^{i}(C_{fol}^{i-1}, \Psi)/\partial C_{fol}^{i-1}\) and \(\chi^{i-1}=e^{\Theta T^{i-1}}\) with the parameters and symbols having the same meaning as in section~\ref{chap5:sec:dalec1}. We can see that the DALEC1 model is almost linear with respect to the state \(\textbf{x}_{i}\), with the only nonlinear term being the function calculating GPP which is dependant on \(C_{fol}\), this allowed the computation of the tangent linear model by hand. 
 
 We can use the linearised model with the linearised observation operator $\textbf{H}_{i}$ to form the matrix in equation~\eqref{chap5:eqn: hmat} and compute the observability for a specific set of observations over a finite window. We will need at least 5 observations of any type for the system to be observable as the state $\textbf{x}_0$ is of size 5 in the DALEC1 state estimation case. We first consider the observability for 5 observations of LAI. For DALEC1 LAI takes the form
 \begin{equation}
