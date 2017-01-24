@@ -18,35 +18,35 @@
 \contentsline {subsection}{\numberline {3.2.2}Global implementations}{22}
 \contentsline {subsection}{\numberline {3.2.3}Issues faced in carbon cycle data assimilation}{24}
 \contentsline {section}{\numberline {3.3}Summary}{25}
-\contentsline {chapter}{\numberline {4}Data}{26}
+\contentsline {chapter}{\numberline {4}Model and data}{26}
 \contentsline {section}{\numberline {4.1}Introduction}{26}
-\contentsline {section}{\numberline {4.2}Alice Holt research site}{26}
-\contentsline {section}{\numberline {4.3}Establishment of sampling points}{28}
-\contentsline {section}{\numberline {4.4}Leaf area index observations}{28}
-\contentsline {subsection}{\numberline {4.4.1}Ceptometer}{29}
-\contentsline {subsection}{\numberline {4.4.2}Hemispherical photographs}{31}
-\contentsline {subsection}{\numberline {4.4.3}Litter traps}{31}
-\contentsline {subsection}{\numberline {4.4.4}Comparison of methods}{32}
-\contentsline {section}{\numberline {4.5}Point-centred quater observations}{33}
-\contentsline {section}{\numberline {4.6}Flux tower observations and data processing}{35}
-\contentsline {chapter}{\numberline {5}Information content in observations relevant to forest carbon balance}{38}
-\contentsline {section}{\numberline {5.1}Introduction}{38}
-\contentsline {section}{\numberline {5.2}Background material}{40}
-\contentsline {subsection}{\numberline {5.2.1}Metolius forest site}{40}
-\contentsline {subsection}{\numberline {5.2.2}The DALEC1 model}{40}
-\contentsline {subsection}{\numberline {5.2.3}The Aggregated Canopy Model}{41}
-\contentsline {subsection}{\numberline {5.2.4}The DALEC2 model}{44}
-\contentsline {subsection}{\numberline {5.2.5}Observability}{45}
-\contentsline {subsection}{\numberline {5.2.6}Information content measures}{47}
-\contentsline {subsubsection}{\numberline {5.2.6.1}Sensitivity of analysis to observations}{48}
-\contentsline {subsubsection}{\numberline {5.2.6.2}Degrees of freedom for signal}{49}
-\contentsline {subsubsection}{\numberline {5.2.6.3}Shannon information content}{50}
-\contentsline {section}{\numberline {5.3}Results}{51}
-\contentsline {subsection}{\numberline {5.3.1}DALEC1 observability for state estimation}{51}
+\contentsline {subsection}{\numberline {4.1.1}The DALEC1 model}{26}
+\contentsline {subsection}{\numberline {4.1.2}The Aggregated Canopy Model}{28}
+\contentsline {subsection}{\numberline {4.1.3}The DALEC2 model}{30}
+\contentsline {section}{\numberline {4.2}Alice Holt research site}{31}
+\contentsline {section}{\numberline {4.3}Establishment of sampling points}{33}
+\contentsline {section}{\numberline {4.4}Leaf area index observations}{34}
+\contentsline {subsection}{\numberline {4.4.1}Ceptometer}{34}
+\contentsline {subsection}{\numberline {4.4.2}Hemispherical photographs}{36}
+\contentsline {subsection}{\numberline {4.4.3}Litter traps}{37}
+\contentsline {subsection}{\numberline {4.4.4}Comparison of methods}{38}
+\contentsline {section}{\numberline {4.5}Point-centred quater observations}{38}
+\contentsline {section}{\numberline {4.6}Flux tower observations and data processing}{40}
+\contentsline {chapter}{\numberline {5}Information content in observations relevant to forest carbon balance}{43}
+\contentsline {section}{\numberline {5.1}Introduction}{43}
+\contentsline {section}{\numberline {5.2}Background material}{45}
+\contentsline {subsection}{\numberline {5.2.1}Metolius forest site}{45}
+\contentsline {subsection}{\numberline {5.2.2}Observability}{45}
+\contentsline {subsection}{\numberline {5.2.3}Information content measures}{46}
+\contentsline {subsubsection}{\numberline {5.2.3.1}Sensitivity of analysis to observations}{48}
+\contentsline {subsubsection}{\numberline {5.2.3.2}Degrees of freedom for signal}{49}
+\contentsline {subsubsection}{\numberline {5.2.3.3}Shannon information content}{50}
+\contentsline {section}{\numberline {5.3}Results}{50}
+\contentsline {subsection}{\numberline {5.3.1}DALEC1 observability for state estimation}{50}
 \contentsline {subsection}{\numberline {5.3.2}DALEC2 observability for state and parameter estimation}{54}
-\contentsline {subsubsection}{\numberline {5.3.2.1}Observability for observations randomly distributed through time}{55}
-\contentsline {subsection}{\numberline {5.3.3}DALEC1 information content for state estimation}{57}
-\contentsline {subsubsection}{\numberline {5.3.3.1}Information content for a single observation}{57}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Observability for observations randomly distributed through time}{56}
+\contentsline {subsection}{\numberline {5.3.3}DALEC1 information content for state estimation}{58}
+\contentsline {subsubsection}{\numberline {5.3.3.1}Information content for a single observation}{58}
 \contentsline {subsubsection}{\numberline {5.3.3.2}Information content for observations at a single time}{62}
 \contentsline {subsubsection}{\numberline {5.3.3.3}Information content in successive observations}{64}
 \contentsline {subsubsection}{\numberline {5.3.3.4}Effect of time correlations between observation errors on information content}{66}
