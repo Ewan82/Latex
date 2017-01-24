@@ -5,9 +5,9 @@
 
 Data assimilation provides techniques for combining observations and prior knowledge of a system in an optimal way to find an improved estimate of the system. The prior knowledge of a system often takes the form of a numerical model and an initial guess of the model state/parameters. Many statistical methods have been developed for data assimilation. These methods can largely be categorised as either sequential or variational. Sequential algorithms solve the system of equations needed to find an optimal solution explicitly at each observation time. Variational methods solve the equations needed for an optimal solution implicitly by minimising a cost function for all available observations over some time window. This thesis is mainly concerned with the variational technique of four-dimensional variational data assimilation (4D-Var). 
 
-In numerical weather prediction data assimilation has been predominately used for state estimation whilst keeping parameters fixed. This is because numerical weather prediction is mainly dependent on the initial state with model physics being well understood. Ecosystem carbon cycle models are more dependent on finding the correct set of parameters to describe the ecosystem of interest \citep{luo2015predictability}. We therefore discuss data assimilation for joint state and parameter estimation. In the next sections (\ref{sec:intro_da} to \ref{sec:mcmc_seq}) we give a general introduction to data assimilation, then expand this to 4D-Var and finally we briefly discuss other data assimilation methods not directly used in this thesis but applicable to subsequent discussion. 
+In numerical weather prediction data assimilation has been predominately used for state estimation whilst keeping parameters fixed. This is because numerical weather prediction is mainly dependent on the initial state with model physics being well understood. Ecosystem carbon cycle models are more dependent on finding the correct set of parameters to describe the ecosystem of interest \citep{luo2015predictability}. We therefore discuss data assimilation for joint state and parameter estimation. In the next sections (\ref{chap3:sec:intro_da} to \ref{chap3:sec:mcmc_seq}) we give a general introduction to data assimilation, then expand this to 4D-Var and finally we briefly discuss other data assimilation methods not directly used in this thesis but applicable to subsequent discussion. 
 
-\subsection{Introduction to data assimilation} \label{sec:intro_da}
+\subsection{Introduction to data assimilation} \label{chap3:sec:intro_da}
 
 We consider a system that can be described by a numerical model with a true model state \(\textbf{z}^{t} \in \mathbb{R}^{n}\) and true parameters \(\textbf{p}^{t} \in \mathbb{R}^{q}\). We then define the true augmented state as
 \begin{equation}
@@ -20,16 +20,16 @@ We consider a system that can be described by a numerical model with a true mode
 \end{equation}
 The initial guess to this model augmented state \(\textbf{x}^{b} \in \mathbb{R}^{q+n}\) (often referred to as the prior or background) and observations of the system \(\textbf{y} \in \mathbb{R}^{m}\) will only be approximations to the true system state, such that
 \begin{equation}
-\textbf{x}^{b} = \textbf{x}^{t} + \bm{\epsilon}^{b}, \label{eqn:xb}
+\textbf{x}^{b} = \textbf{x}^{t} + \bm{\epsilon}^{b}, \label{chap3:eqn:xb}
 \end{equation} 
 \begin{equation}
-\textbf{y} = h(\textbf{x}^{t}) + \bm{\epsilon}^{o}, \label{eqn:y}
+\textbf{y} = h(\textbf{x}^{t}) + \bm{\epsilon}^{o}, \label{chap3:eqn:y}
 \end{equation} 
 where \( \bm{\epsilon}^{b}\) and \( \bm{\epsilon}^{o}\) are the prior and observation errors respectively, and \(h: \mathbb{R}^{q+n}\rightarrow \mathbb{R}^{m}\) is the observation operator (can be linear or non-linear) mapping the augmented state to the observations. The errors in the prior and observations are assumed to be unbiased and mutually independent with known covariance matrices \(\textbf{B} = \mathbb{E}[\bm{\epsilon}^{b}(\bm{\epsilon}^{b})^{T}]\) and \(\textbf{R} = \mathbb{E}[\bm{\epsilon}^{o}(\bm{\epsilon}^{o})^{T}]\).
 
-The best estimate to \(\textbf{x}^{t}\) satisfying both equation~\eqref{eqn:xb} and \eqref{eqn:y} is often called the analysis or the posterior estimate, here denoted \(\textbf{x}^{a}\). It is possible to derive this analysis by applying Bayesian methods to probability density functions. Bayes' theorem, first discussed in \citet{bayes1763} but formalised by \citet{laplace1781memoire}, states that the posterior probability of event A given that event B occurs, is proportional to the prior probability of A multiplied by the probability of event B given that event A occurs, this can be expressed mathematically as
+The best estimate to \(\textbf{x}^{t}\) satisfying both equation~\eqref{chap3:eqn:xb} and \eqref{chap3:eqn:y} is often called the analysis or the posterior estimate, here denoted \(\textbf{x}^{a}\). It is possible to derive this analysis by applying Bayesian methods to probability density functions. Bayes' theorem, first discussed in \citet{bayes1763} but formalised by \citet{laplace1781memoire}, states that the posterior probability of event A given that event B occurs, is proportional to the prior probability of A multiplied by the probability of event B given that event A occurs, this can be expressed mathematically as
 \begin{equation}
-\mathbb{P}(A|B) \propto \mathbb{P}(A)\mathbb{P}(B|A). \label{eqn:bayes}
+\mathbb{P}(A|B) \propto \mathbb{P}(A)\mathbb{P}(B|A). \label{chap3:eqn:bayes}
 \end{equation}
 For data assimilation event A represents the augmented state of the system \(\textbf{x}\) and event B the observations \(\textbf{y}\). Maximising the probability \(\mathbb{P}(A|B)\) is then equivalent to finding the augmented state that best represents the observations. 
 
@@ -41,29 +41,29 @@ and
 \begin{equation}
 \mathbb{P}^{o}(\textbf{y}|\textbf{x}) = \frac{1}{\sqrt{|2\pi\textbf{R}|}}\text{exp}\big(-\frac{1}{2}(\textbf{y}-h(\textbf{x}))^{T}\textbf{R}^{-1}(\textbf{y}-h(\textbf{x}))\big),
 \end{equation}
-where \(\mathbb{P}^{b}(\textbf{x})\) is the probability density function for the prior and \(\mathbb{P}^{o}(\textbf{y}|\textbf{x})\) the probability density function of the observations given the augmented state. Then from Bayes' theorem (equation~\eqref{eqn:bayes}) the posterior probability density function for the augmented state
+where \(\mathbb{P}^{b}(\textbf{x})\) is the probability density function for the prior and \(\mathbb{P}^{o}(\textbf{y}|\textbf{x})\) the probability density function of the observations given the augmented state. Then from Bayes' theorem (equation~\eqref{chap3:eqn:bayes}) the posterior probability density function for the augmented state
 \begin{equation}
 \begin{split}
 \mathbb{P}^{a}(\textbf{x}|\textbf{y}) &\propto \frac{1}{\sqrt{|2\pi\textbf{B}|}\sqrt{|2\pi\textbf{R}|}}\text{exp}\big(-\frac{1}{2}(\textbf{x}-\textbf{x}^{b})^{T}\textbf{B}^{-1}(\textbf{x}-\textbf{x}^{b})-\frac{1}{2}(\textbf{y}-h(\textbf{x}))^{T}\textbf{R}^{-1}(\textbf{y}-h(\textbf{x}))\big) \\
-&\propto \text{exp}\big(-\frac{1}{2}(\textbf{x}-\textbf{x}^{b})^{T}\textbf{B}^{-1}(\textbf{x}-\textbf{x}^{b})-\frac{1}{2}(\textbf{y}-h(\textbf{x}))^{T}\textbf{R}^{-1}(\textbf{y}-h(\textbf{x}))\big), \label{eqn:p_x_y}
+&\propto \text{exp}\big(-\frac{1}{2}(\textbf{x}-\textbf{x}^{b})^{T}\textbf{B}^{-1}(\textbf{x}-\textbf{x}^{b})-\frac{1}{2}(\textbf{y}-h(\textbf{x}))^{T}\textbf{R}^{-1}(\textbf{y}-h(\textbf{x}))\big), \label{chap3:eqn:p_x_y}
 \end{split}
 \end{equation} 
-here we can ignore the constant multiplying the exponential function as it is independent of \textbf{x}. We want to maximise the probability of the augmented state \textbf{x} given the observations \textbf{y}, from equation~\eqref{eqn:p_x_y} we can see that to maximise \(\mathbb{P}^{a}(\textbf{x}|\textbf{y})\) we must maximise the terms in the exponent, this is equivalent to minimising the quadratic cost function 
+here we can ignore the constant multiplying the exponential function as it is independent of \textbf{x}. We want to maximise the probability of the augmented state \textbf{x} given the observations \textbf{y}, from equation~\eqref{chap3:eqn:p_x_y} we can see that to maximise \(\mathbb{P}^{a}(\textbf{x}|\textbf{y})\) we must maximise the terms in the exponent, this is equivalent to minimising the quadratic cost function 
 \begin{equation}
-J(\textbf{x}) = \frac{1}{2}(\textbf{x}-\textbf{x}^{b})^{T}\textbf{B}^{-1}(\textbf{x}-\textbf{x}^{b}) + \frac{1}{2}(\textbf{y}-h(\textbf{x}))^{T}\textbf{R}^{-1}(\textbf{y}-h(\textbf{x})). \label{eqn:3dvar}
+J(\textbf{x}) = \frac{1}{2}(\textbf{x}-\textbf{x}^{b})^{T}\textbf{B}^{-1}(\textbf{x}-\textbf{x}^{b}) + \frac{1}{2}(\textbf{y}-h(\textbf{x}))^{T}\textbf{R}^{-1}(\textbf{y}-h(\textbf{x})). \label{chap3:eqn:3dvar}
 \end{equation}
-This is the cost function minimised in three-dimensional variational data assimilation (3D-Var), where the minimum is found using a descent algorithm evaluating equation~\eqref{eqn:3dvar} and its gradient \citep{courtier1998ecmwf}. We can approximate the minimum of \eqref{eqn:3dvar} by finding its gradient and setting it to zero to obtain the Best Linear Unbiased Estimate (BLUE) \citep{talagrand1997assimilation} where
+This is the cost function minimised in three-dimensional variational data assimilation (3D-Var), where the minimum is found using a descent algorithm evaluating equation~\eqref{chap3:eqn:3dvar} and its gradient \citep{courtier1998ecmwf}. We can approximate the minimum of \eqref{chap3:eqn:3dvar} by finding its gradient and setting it to zero to obtain the Best Linear Unbiased Estimate (BLUE) \citep{talagrand1997assimilation} where
 \begin{equation}
-\textbf{x}^{a} = \textbf{x}^{b} + \textbf{K}(\textbf{y} - h(\textbf{x}^{b})), \label{eqn:blue}
+\textbf{x}^{a} = \textbf{x}^{b} + \textbf{K}(\textbf{y} - h(\textbf{x}^{b})), \label{chap3:eqn:blue}
 \end{equation}
 \begin{equation}
 \textbf{K} = \textbf{B}\textbf{H}^{T}(\textbf{H}\textbf{B}\textbf{H}^{T}+\textbf{R})^{-1},
 \end{equation}
 where \textbf{K} is the Kalman gain matrix specifying the weight of the analysis increment and \(\textbf{H}=\frac{\partial h(\textbf{x})}{\partial \textbf{x}}\) is the linearised observation operator. We can also approximate the analysis error covariance matrix as
 \begin{equation}
-\textbf{A} = (\textbf{H}^{T}\textbf{R}^{-1}\textbf{H}+\textbf{B}^{-1})^{-1}, \label{eqn:a_cov}
+\textbf{A} = (\textbf{H}^{T}\textbf{R}^{-1}\textbf{H}+\textbf{B}^{-1})^{-1}, \label{chap3:eqn:a_cov}
 \end{equation}
-if \( h \) is linear then \eqref{eqn:blue} and \eqref{eqn:a_cov} are exact solutions.
+if \( h \) is linear then \eqref{chap3:eqn:blue} and \eqref{chap3:eqn:a_cov} are exact solutions.
 %(BLUE) introduce basic concept of DA for a linear Gaussian time-invariant system... will use this in Info Con chapter
 
 %BLUE \(\rightarrow\) 3D-Var
@@ -74,19 +74,19 @@ if \( h \) is linear then \eqref{eqn:blue} and \eqref{eqn:a_cov} are exact solut
 4D-Var extends 3D-Var to allow for the assimilation of observations distributed throughout some time interval \(t_{0}\) to \(t_{N}\). \citet{Sasaki70somebasic} proposed a method for combining a time series of observations with a numerical model, which was then further developed for use in numerical weather prediction \citep{dimet1986variational}. In 4D-Var we minimise the cost function,
 
 \begin{equation}
-J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}\sum_{i=0}^{N}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i))^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i)), \label{eqn:4dvar_cost}
+J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}\sum_{i=0}^{N}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i))^{T}\textbf{R}_{i}^{-1}(\textbf{y}_i-\textbf{h}_i(\textbf{x}_i)), \label{chap3:eqn:4dvar_cost}
 \end{equation}
 
 to obtain the analysis \(\textbf{x}^{a}_{0}\), valid at the initial time \(t_{0}\), subject to the strong constraint that the model states (\(\textbf{x}_0, \dots, \textbf{x}_N\)) must satisfy the model equations,
 
 \begin{equation}
-\textbf{x}_{i} = \textbf{m}_{i-1 \rightarrow i}(\textbf{x}_{i-1}), \label{eqn:nonlinmod}
+\textbf{x}_{i} = \textbf{m}_{i-1 \rightarrow i}(\textbf{x}_{i-1}), \label{chap3:eqn:nonlinmod}
 \end{equation}
 
-where \(\textbf{x}_{i}\) is the model augmented state at time \(t_i\), \(\textbf{m}_{i-1 \rightarrow i}\) is the possibly nonlinear augmented system model evolving \(\textbf{x}_{i-1}\) from time \(t_{i-1}\) to time \(t_i\), \(\textbf{y}_i\) is the vector of observations at time \(t_i\), and \(h_i\) is the observation operator at time \(t_i\). We can rewrite equation~\eqref{eqn:4dvar_cost} to avoid the sum notation as
+where \(\textbf{x}_{i}\) is the model augmented state at time \(t_i\), \(\textbf{m}_{i-1 \rightarrow i}\) is the possibly nonlinear augmented system model evolving \(\textbf{x}_{i-1}\) from time \(t_{i-1}\) to time \(t_i\), \(\textbf{y}_i\) is the vector of observations at time \(t_i\), and \(h_i\) is the observation operator at time \(t_i\). We can rewrite equation~\eqref{chap3:eqn:4dvar_cost} to avoid the sum notation as
 
 \begin{equation}
-J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_0))^{T}\hat{\textbf{R}}^{-1}(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_0)) \label{costfn}
+J(\textbf{x}_0) = \frac{1}{2}(\textbf{x}_0-\textbf{x}^b)^{T}\textbf{B}^{-1}(\textbf{x}_0-\textbf{x}^b)+\frac{1}{2}(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_0))^{T}\hat{\textbf{R}}^{-1}(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_0)) \label{chap3:costfn}
 \end{equation}
 
 
@@ -119,7 +119,7 @@ where,
 \end{equation}
 For 4D-Var we approximate the analysis error covariance matrix as
 \begin{equation}
-\textbf{A} = (\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}\hat{\textbf{H}}+\textbf{B}^{-1})^{-1}, \label{eqn:a_cov_4dvar}
+\textbf{A} = (\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}\hat{\textbf{H}}+\textbf{B}^{-1})^{-1}, \label{chap3:eqn:a_cov_4dvar}
 \end{equation}
 where \(\hat{\textbf{H}}\) is that observability matrix given by
 \begin{equation}
@@ -133,11 +133,11 @@ where \(\hat{\textbf{H}}\) is that observability matrix given by
 \end{equation}
 with $\textbf{H}_i = \frac{\partial \textbf{h}_i(\textbf{x}_i)}{\partial\textbf{x}_i}$ the linearised observation operator and $\mathbf{M}_{i,0}=\mathbf{M}_{i-1}\mathbf{M}_{i-2}\cdots\mathbf{M}_0$ the tangent linear model with $\mathbf{M}_i=\frac{\partial \textbf{m}_{i-1\rightarrow i}(\textbf{x}_{i})}{\partial \textbf{x}_{i}}$. The tangent linear model can be difficult to implement, however using techniques such as automatic differentiation \citep{renaud1997automatic} can reduce the time taken to implement the derivative of a model. 
 
-\subsection{Sequential and Markov chain Monte Carlo approaches} \label{sec:mcmc_seq}
+\subsection{Sequential and Markov chain Monte Carlo approaches} \label{chap3:sec:mcmc_seq}
 
-Markov chain Monte Carlo (MCMC) methods refer to a suite of related algorithms (Metropolis-Hastings, simulated annealing and Gibbs sampling), with one of the first MCMC methods being the Metropolis algorithm \citep{metropolis1953equation}. These methods sample a cost function measuring the model-data miss-match, usually similar to the negation of the second term in the 4D-Var cost function shown in equation~\eqref{costfn}. As these methods use the negation of the cost function in equation~\eqref{costfn} they seek to find a global optimum for this cost function, rather than a minimum. This is achieved by iteratively sampling the cost function, with each iteration of the parameter and state values being uniquely determined by the previously sampled parameter and state values. The output of the MCMC methods is a set of accepted parameter and state values from which analysis or posterior error covariances can be calculated. These methods are easy to implement and do not require the derivative of the model code. However, they come with high computational cost as they often require in the order of \(10^{6}\) model evaluations \citep{zobitz2011primer}, meaning these methods become infeasible for global implementations of more complex models. 
+Markov chain Monte Carlo (MCMC) methods refer to a suite of related algorithms (Metropolis-Hastings, simulated annealing and Gibbs sampling), with one of the first MCMC methods being the Metropolis algorithm \citep{metropolis1953equation}. These methods sample a cost function measuring the model-data miss-match, usually similar to the negation of the second term in the 4D-Var cost function shown in equation~\eqref{chap3:costfn}. As these methods use the negation of the cost function in equation~\eqref{chap3:costfn} they seek to find a global optimum for this cost function, rather than a minimum. This is achieved by iteratively sampling the cost function, with each iteration of the parameter and state values being uniquely determined by the previously sampled parameter and state values. The output of the MCMC methods is a set of accepted parameter and state values from which analysis or posterior error covariances can be calculated. These methods are easy to implement and do not require the derivative of the model code. However, they come with high computational cost as they often require in the order of \(10^{6}\) model evaluations \citep{zobitz2011primer}, meaning these methods become infeasible for global implementations of more complex models. 
 
-Whereas variational and MCMC techniques assimilate all available observations over some time window at once, sequential algorithms update the model trajectory at each observation time. These algorithms approximate the BLUE formula in equation~\eqref{eqn:blue} to update the model parameter and state values whenever an observation is available. This means that parameter values can change over time and state and parameter analysis trajectories will become discontinuous (unless using a sequential `smoother' method). The first sequential method was the Kalman Filter (KF) \citep{kalman1960}. The KF method requires the evolution of the error covariance matrix \textbf{B} through the time window as observations are assimilated. This becomes infeasible for large systems. The Ensemble Kalman Filter (EnKF) \citep{Evensen2003} was therefore developed to address this problem, the error covariance matrix for the state/parameters is approximated using an ensemble of state/parameter vectors, therefore the evolution of the error covariance matrix \textbf{B} is avoided. These methods are also easy to implement. However, dependent on the complexity of the model, the ensemble size can be limited by computational cost, meaning that covariances can be subject to noise. Techniques have been employed to avoid this \citep{Hamill2001}. The ensemble can also collapse on the same state/parameter values after assimilating a number of observations, this can be avoided by covariance inflation \citep{andersonandanderson1999}. 
+Whereas variational and MCMC techniques assimilate all available observations over some time window at once, sequential algorithms update the model trajectory at each observation time. These algorithms approximate the BLUE formula in equation~\eqref{chap3:eqn:blue} to update the model parameter and state values whenever an observation is available. This means that parameter values can change over time and state and parameter analysis trajectories will become discontinuous (unless using a sequential `smoother' method). The first sequential method was the Kalman Filter (KF) \citep{kalman1960}. The KF method requires the evolution of the error covariance matrix \textbf{B} through the time window as observations are assimilated. This becomes infeasible for large systems. The Ensemble Kalman Filter (EnKF) \citep{Evensen2003} was therefore developed to address this problem, the error covariance matrix for the state/parameters is approximated using an ensemble of state/parameter vectors, therefore the evolution of the error covariance matrix \textbf{B} is avoided. These methods are also easy to implement. However, dependent on the complexity of the model, the ensemble size can be limited by computational cost, meaning that covariances can be subject to noise. Techniques have been employed to avoid this \citep{Hamill2001}. The ensemble can also collapse on the same state/parameter values after assimilating a number of observations, this can be avoided by covariance inflation \citep{andersonandanderson1999}. 
 
 
 \section{Applications to the carbon cycle}
