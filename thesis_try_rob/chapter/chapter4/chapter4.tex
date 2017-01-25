@@ -44,11 +44,11 @@ $\theta_{roo}$ & Fine root carbon turnover rate (day$^{-1}$) & $2.48\times 10^{-
 $\theta_{lit}$ & Litter carbon turnover rate (day$^{-1}$) & $2.28\times 10^{-2}$ & $10^{-4} - 10^{-1}$ \\ \hline
 $\theta_{som}$ & Soil and organic carbon turnover rate (day$^{-1}$) & $2.65\times 10^{-6}$ & $10^{-7} - 10^{-3}$ \\ \hline
 $\Theta$ & Temperature dependance exponent factor & $4.147\times 10^{-2}$ & $0.018 - 0.08$ \\ \hline
-$C_{fol}$ & Foliar carbon pool ($\text{gCm}^{-2}$) & 58 & $10 - 1000$  \\ \hline
-$C_{roo}$ & Fine root carbon pool ($\text{gCm}^{-2}$) & 102 & $10 - 1000$   \\ \hline
-$C_{woo}$ & Above and below ground woody carbon pool ($\text{gCm}^{-2}$) & 770 & $100 - 10^{5}$  \\ \hline
-$C_{lit}$ & Litter carbon pool ($\text{gCm}^{-2}$) & 40 & $10 - 1000$   \\ \hline
-$C_{som}$ & Soil and organic carbon pool ($\text{gCm}^{-2}$) & 9897 & $100 - 2 \times 10^{5}$  \\ 
+$C_{fol}$ & Foliar carbon pool ($\text{g C m}^{-2}$) & 58 & $10 - 1000$  \\ \hline
+$C_{roo}$ & Fine root carbon pool ($\text{g C m}^{-2}$) & 102 & $10 - 1000$   \\ \hline
+$C_{woo}$ & Above and below ground woody carbon pool ($\text{g C m}^{-2}$) & 770 & $100 - 10^{5}$  \\ \hline
+$C_{lit}$ & Litter carbon pool ($\text{g C m}^{-2}$) & 40 & $10 - 1000$   \\ \hline
+$C_{som}$ & Soil and organic carbon pool ($\text{g C m}^{-2}$) & 9897 & $100 - 2 \times 10^{5}$  \\ 
 \hline
 \end{tabular}    
 \captionof{table}{Parameter and state values for DALEC1, optimised for Metolius forest, Oregon.} \label{chap5:table:D1params}
@@ -83,14 +83,14 @@ s = 24\arccos(-\tan(lat)\tan(\delta))/\pi,
 \begin{equation}
 GPP = \frac{E_0~I~g_c~(C_a-C_i)}{E_0~I + g_c~(C_a-C_i)}(a_2~s + a_5),
 \end{equation}
-where the symbols meanings are shown in table~\ref{chap5:table:acm} with $a_2,\dots ,a_{10}$ being set parameters (values shown in table~\ref{chap5:table:acm_params}). We use the values of the parameters given in \citet{fox2009reflex} as these parameters have been shown to accurately predict GPP for a number of temperate forest sites. The ACM model performs well when tested against other more complex models of photosynthesis \citep{williams1997predicting}. This model can also be driven with estimates of soil-leaf water potential difference and hydraulic resistance, however as Alice Holt is a well watered forest we can fix these parameters with values, \(\psi_d = -2.5\) and \(R_{tot} = 1\).
+where the symbols meanings are shown in table~\ref{chap5:table:acm} with $a_2,\dots ,a_{10}$ being set parameters (values shown in table~\ref{chap5:table:acm_params}). We use the values of the parameters given in \citet{fox2009reflex} as these parameters have been shown to accurately predict GPP for a number of temperate forest sites. The ACM model performs well when tested against other more complex models of photosynthesis \citep{williams1997predicting}. This model can also be driven with estimates of soil-leaf water potential difference and hydraulic resistance, this adds a limit to GPP when the ecosystem is under drought-stress, Alice Holt is a well watered forest so we assume no drought-stress and fix these parameters with values, \(\psi_d = -2.5\) and \(R_{tot} = 1\) \citet{fox2009reflex}.
 \begin{center}
 \begin{tabular}{| l | l |}
 \hline
 Symbol & Description \\ \hline
 $g_c$ & Canopy conductance $(\text{g C m}^{-2}~\text{day}^{-1})$ \\ \hline
 $\psi_d$ & Max soil-leaf water potential difference $(\text{MPa})$ \\ \hline
-$T_r$ & Daily temperature range $( ^{o}C)$ \\ \hline
+$T_r$ & Daily temperature range $( ^{o}\text{C})$ \\ \hline
 $R_{tot}$ & Total plant-soil hydraulic resistance $(\text{MPa}~\text{m}^2~\text{s}~\text{mmol}^{-1})$ \\ \hline
 $c_{lma}$ & Leaf mass per area $(\text{g C m}^{-2})$  \\ \hline
 $LAI$ & Leaf area index $(\text{m}^2~\text{m}^{-2})$ \\ \hline
@@ -172,13 +172,13 @@ $f_{lab}$ & Fraction of GPP allocated to labile carbon pool & $3.204\times 10^{-
 $c_{ronset}$ & Labile carbon release period (days) & $4.134\times 10^{1}$ & $1.405\times 10^{1}$ & $10 - 100$ \\ \hline
 $d_{fall}$ & Leaf fall day (day) & $2.205\times 10^{2}$ & $3.724\times 10^{1}$ & $1 - 365$ \\ \hline
 $c_{rfall}$ & Leaf-fall period (days) & $1.168\times 10^{2}$ & $2.259\times 10^{1}$ & $10 - 100$ \\ \hline
-$c_{lma}$ & Leaf mass per area ($\text{gCm}^{-2}$) & $1.285\times 10^{2}$ & $6.410\times 10^{1}$ & $10 - 400$ \\ \hline
-$C_{lab}$ & Labile carbon pool ($\text{gCm}^{-2}$) & $1.365\times 10^{2}$ & $6.626\times 10^{1}$ & $10 - 1000$ \\ \hline
-$C_{fol}$ & Foliar carbon pool ($\text{gCm}^{-2}$) & $6.864\times 10^{1}$ & $3.590\times 10^{1}$ & $10 - 1000$ \\ \hline
-$C_{roo}$ & Fine root carbon pool ($\text{gCm}^{-2}$) & $2.838\times 10^{2}$ & $2.193\times 10^{2}$ & $10 - 1000$ \\ \hline
-$C_{woo}$ & Above and below ground woody carbon pool ($\text{gCm}^{-2}$) & $6.506\times 10^{3}$ & $7.143\times 10^{3}$ & $100 - 10^{5}$ \\ \hline
-$C_{lit}$ & Litter carbon pool ($\text{gCm}^{-2}$) & $5.988\times 10^{2}$ & $5.450\times 10^{2}$ & $10 - 1000$ \\ \hline
-$C_{som}$ & Soil and organic carbon pool ($\text{gCm}^{-2}$) & $1.936\times 10^{3}$ & $1.276\times 10^{3}$ & $100 - 2 \times 10^{5}$  \\ \hline
+$c_{lma}$ & Leaf mass per area ($\text{g C m}^{-2}$) & $1.285\times 10^{2}$ & $6.410\times 10^{1}$ & $10 - 400$ \\ \hline
+$C_{lab}$ & Labile carbon pool ($\text{g C m}^{-2}$) & $1.365\times 10^{2}$ & $6.626\times 10^{1}$ & $10 - 1000$ \\ \hline
+$C_{fol}$ & Foliar carbon pool ($\text{g C m}^{-2}$) & $6.864\times 10^{1}$ & $3.590\times 10^{1}$ & $10 - 1000$ \\ \hline
+$C_{roo}$ & Fine root carbon pool ($\text{g C m}^{-2}$) & $2.838\times 10^{2}$ & $2.193\times 10^{2}$ & $10 - 1000$ \\ \hline
+$C_{woo}$ & Above and below ground woody carbon pool ($\text{g C m}^{-2}$) & $6.506\times 10^{3}$ & $7.143\times 10^{3}$ & $100 - 10^{5}$ \\ \hline
+$C_{lit}$ & Litter carbon pool ($\text{g C m}^{-2}$) & $5.988\times 10^{2}$ & $5.450\times 10^{2}$ & $10 - 1000$ \\ \hline
+$C_{som}$ & Soil and organic carbon pool ($\text{g C m}^{-2}$) & $1.936\times 10^{3}$ & $1.276\times 10^{3}$ & $100 - 2 \times 10^{5}$  \\ \hline
 	\end{tabular}
 	\caption{Parameter values and standard deviations for background vector used in experiments.}
 	\label{chap5:table:xbvars}
