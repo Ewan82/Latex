@@ -31,13 +31,21 @@ In chapter~\ref{chap:error_corrs} we implemented and tested a 4D-Var data assimi
 
 \section{Using data assimilation to understand the effect of disturbance on forest carbon dynamics}
 
-In chapter~\ref{chap:disturbance} we...
+In chapter~\ref{chap:disturbance} we again utilised the 4D-Var data assimilation scheme with DALEC2 outlined in chapter~\ref{chap:error_corrs} along with a set of observations taken on a fieldwork campaign to investigate the effect of selective felling on the carbon dynamics of the Alice Holt forest. We conducted a data-denial experiments using all the available observations to understand their effect on the modelled predicted effect of disturbance. We also propose novel observation operators allowing for the assimilation of daytime and nighttime NEE observations with a daily time-step model. The main results in this chapter were as follows:
+\begin{itemize}
+\item The proposed observation operators allow our model to accurately predict daytime and nighttime NEE and negate the need for any model modification. 
+\item We find no change to the net ecosystem carbon uptake after felling when approximately 46\% of trees were removed from the area of interest.
+\item Our most confident modelled estimate (when all available data is assimilated) suggests this unchanged carbon uptake is due to GPP being the main driver for both autotrophic and heterotrophic respiration, so that even with reduced GPP post-disturbance the same NEE can occur due to significant reductions in total ecosystem respiration. We find different conclusions if we base our conclusions solely on the assimilation of NEE observations, highlighting the need for caution not to over-interpret results when assimilating only this variable. 
+\end{itemize}
 
+\section{Future work}
 
+ROUGH DRAFT
 
- it is important to understand which observations provide the most information for constraining posterior model estimates. It is also imporant that we add the most information     
+The continued application of IC meausres is important to better understand where to base efforts in future observation campaigns. However, first it is maybe more important to improve both estimates of uncertainty for prior model and observational estimates and so that results from IC experiements can be as accurate as possible. It would also be interesting to use a more complex model of ecosystem carobn dynamics where we could judge the impact of more novel meausreents such as stem respiration or sap flow rate.
 
+We have shown that including a more sophisticated respresentation of error in data assimilation schemes can be of great benefit to results. It is imporant that we continue to improve the representation of uncertainty in data assimilation schemes. In relation to the experiments carried out in this thesis its is clear that a more diagnostic tool for the specification of observation erorr correlations is important. One possiblity for this would be to use a method such as the desrozier diagnostic to statistically estimate the error covariance structure for observations. In order to diagnose correlations in time the desroziers diagnostic would have to be expanded. This would be possible be re-writting it as...
 
-It was clear from the first results chapter that in order to better understand the information content in observatnios it is important to improve estimates and representations of uncertainty for both prior modelled estimates and observations.
+SHOW EQUATIONS HERE
 
-In the next chapter this is what we did...
+The results we find for the effect of disturbance are possible suprising however do support measurements based campaigns analysing soil microbial communities after felling has occured. This experiement would be good to carry out again after collecting a few more years of data to understand the revoery of leaf area and long term response to disturbance. If possible it would be extremely beneficial to also set up soil respiration chambers on both the thinned and unthinned sides of the forest to improve the constraint on constituent processes.
