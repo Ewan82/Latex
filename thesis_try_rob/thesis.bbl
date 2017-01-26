@@ -12,13 +12,13 @@
 Anderson, J.~L. and S.~L. Anderson, 1999: A monte carlo implementation of the
   nonlinear filtering problem to produce ensemble assimilations and forecasts.
   \textit{Monthly Weather Review}, \textbf{127~(12)}, 2741--2758,
-  \doi{10.1175/1520-0493(1999)127<2741:AMCIOT>2.0.CO;2}.
+  \doi{10.1175/1520-0493(1999)127\(<\)2741:AMCIOT\(>\)2.0.CO;2}.
 
 \bibitem[{Bacour et~al.(2015)}]{Bacour2015}
 Bacour, C., et~al., 2015: {Joint assimilation of eddy-covariance flux
   measurements and FAPAR products over temperate forests within a
   process-oriented biosphere model}. \textit{Journal of Geophysical Research:
-  Biogeosciences}, n/a--n/a, \doi{10.1002/2015JG002966}.
+  Biogeosciences}, \doi{10.1002/2015JG002966}.
 
 \bibitem[{Baldocchi(2008)}]{baldocchi2008turner}
 Baldocchi, D., 2008: Turner review no. 15.`breathing'of the terrestrial
@@ -78,14 +78,14 @@ Bloom, A.~A., J.-F. Exbrayat, I.~R. van~der Velde, L.~Feng, and M.~Williams,
 
 \bibitem[{Bloom and Williams(2015)}]{Bloom2015}
 Bloom, A.~A. and M.~Williams, 2015: {Constraining ecosystem carbon dynamics in
-  a data-limited world: integrating ecological "common sense" in a modelâ€“data
+  a data-limited world: integrating ecological ``common sense" in a model data
   fusion framework}. \textit{Biogeosciences}, \textbf{12~(5)}, 1299--1315,
   \doi{10.5194/bg-12-1299-2015}.
 
 \bibitem[{Bonavita et~al.(2015)Bonavita, Hólm, Isaksen, and Fisher}]{QJ:QJ2652}
 Bonavita, M., E.~Hólm, L.~Isaksen, and M.~Fisher, 2015: The evolution of the
   ecmwf hybrid data assimilation system. \textit{Quarterly Journal of the Royal
-  Meteorological Society}, n/a--n/a, \doi{10.1002/qj.2652}.
+  Meteorological Society}, \doi{10.1002/qj.2652}.
 
 \bibitem[{Booth et~al.(2012)}]{1748-9326-7-2-024002}
 Booth, B. B.~B., et~al., 2012: High sensitivity of future global warming to
@@ -161,7 +161,7 @@ Dahdouh-Guebas, F. and N.~Koedam, 2006: Empirical estimate of the reliability
 \bibitem[{Daley(1992)}]{Daley1992}
 Daley, R., 1992: {The Effect of Serially Correlated Observation and Model Error
   on Atmospheric Data Assimilation}. 164--177 pp.,
-  \doi{10.1175/1520-0493(1992)120<0164:TEOSCO>2.0.CO;2}.
+  \doi{10.1175/1520-0493(1992)120\(<\)0164:TEOSCO\(>\)2.0.CO;2}.
 
 \bibitem[{Dee et~al.(2011)}]{dee2011era}
 Dee, D., et~al., 2011: The era-interim reanalysis: Configuration and
@@ -282,7 +282,7 @@ Freitag, M.~A., N.~K. Nichols, and C.~J. Budd, 2010: {L1-regularisation for
 Hamill, T.~M., J.~S. Whitaker, and C.~Snyder, 2001: Distance-dependent
   filtering of background error covariance estimates in an ensemble kalman
   filter. \textit{Monthly Weather Review}, \textbf{129~(11)}, 2776--2790,
-  \doi{10.1175/1520-0493(2001)129<2776:DDFOBE>2.0.CO;2}.
+  \doi{10.1175/1520-0493(2001)129\(<\)2776:DDFOBE\(>\)2.0.CO;2}.
 
 \bibitem[{Healy and White(2005)}]{Healy2005}
 Healy, S. and A.~White, 2005: {Use of discrete Fourier transforms in the 1D-Var
@@ -640,7 +640,7 @@ Navon, I., 1998: Practical and theoretical aspects of adjoint parameter
 Navon, I.~M., X.~Zou, J.~Derber, and J.~Sela, 1992: {Variational Data
   Assimilation with an Adiabatic Version of the NMC Spectral Model}.
   \textit{Monthly Weather Review}, \textbf{120~(7)}, 1433--1446,
-  \doi{10.1175/1520-0493(1992)120<1433:VDAWAA>2.0.CO;2}.
+  \doi{10.1175/1520-0493(1992)120\(<\)1433:VDAWAA\(>\)2.0.CO;2}.
 
 \bibitem[{Niu et~al.(2014)Niu, Luo, Dietze, Keenan, Shi, Li, and Iii}]{Niu2014}
 Niu, S., Y.~Luo, M.~C. Dietze, T.~F. Keenan, Z.~Shi, J.~Li, and F.~S.~C. Iii,
@@ -675,7 +675,7 @@ Palmer, T., R.~Gelaro, J.~Barkmeijer, and R.~Buizza, 1998: Singular vectors,
   Sciences}, \textbf{55~(4)}, 633--653.
 
 \bibitem[{Pan et~al.(2011)}]{pan2011large}
-Pan, Y., et~al., 2011: A large and persistent carbon sink in the world?s
+Pan, Y., et~al., 2011: A large and persistent carbon sink in the world's
   forests. \textit{Science}, \textbf{333~(6045)}, 988--993.
 
 \bibitem[{Papale et~al.(2006{\natexlab{a}})}]{papale2006towards}
@@ -695,8 +695,7 @@ Papale, D., et~al., 2006{\natexlab{b}}: {Towards a standardized processing of
 Pierret, A., J.-L. Maeght, C.~Clément, J.-P. Montoroi, C.~Hartmann, and
   S.~Gonkhamdee, 2016: Understanding deep roots and their functions in
   ecosystems: an advocacy for more unconventional research. \textit{Annals of
-  Botany}, \textbf{118~(4)}, 621--635, \doi{10.1093/aob/mcw130},
-  \eprint{http://aob.oxfordjournals.org/content/118/4/621.full.pdf+html}.
+  Botany}, \textbf{118~(4)}, 621--635, \doi{10.1093/aob/mcw130}.
 
 \bibitem[{Pinnington et~al.(2016)Pinnington, Casella, Dance, Lawless, Morison,
   Nichols, Wilkinson, and Quaife}]{Pinnington2016299}
