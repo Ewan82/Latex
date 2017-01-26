@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  25 JAN 2017 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  26 JAN 2017 08:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1658,358 +1658,83 @@ c.pdf>]
 Chapter 7.
 (./chapter/conclusion/conclusion.tex [138
 
-] [139] [140]) [141] (./thesis.bbl
+] [139] [140]) [141] [142]
+(./thesis.bbl
 LaTeX Font Info:    Font shape `OT1/ppl/bx/sc' in size <24.88> not available
 (Font)              Font shape `OT1/ppl/b/sc' tried instead on input line 1.
-
-Underfull \hbox (badness 1831) in paragraph at lines 18--23
-\OT1/ppl/m/n/10.95 PAR prod-ucts over tem-per-ate forests within a process-orie
-nted bio-sphere model. \OT1/ppl/m/it/10.95 Jour-
- []
-
-
-Underfull \hbox (badness 2837) in paragraph at lines 18--23
-\OT1/ppl/m/it/10.95 nal of Geo-phys-i-cal Re-search: Bio-geo-sciences\OT1/ppl/m
-/n/10.95 , n/a--n/a, doi: 10.1002/2015JG002966, URL
- []
-
-
-Underfull \hbox (badness 1655) in paragraph at lines 32--37
-\OT1/ppl/m/it/10.95 cul-tural and For-est Me-te-o-rol-ogy\OT1/ppl/m/n/10.95 , \
-OT1/ppl/b/n/10.95 207\OT1/ppl/m/n/10.95 , 117--126, doi: 10.1016/j.agrformet.20
-15.03.010, URL
- []
-
-[142
+ [143
 
 ]
-Underfull \hbox (badness 2189) in paragraph at lines 67--73
-[]\OT1/ppl/m/n/10.95 Bhupinderpal, S., A. Nord-gren, M. Ot-tos-son L[]ofvenius,
- M. N. H[]ogberg, P. E. Mel-lan-
- []
-
-
-Underfull \hbox (badness 2582) in paragraph at lines 67--73
-\OT1/ppl/m/n/10.95 der, and P. H[]ogberg, 2003: Tree root and soil het-erotroph
-ic res-pi-ra-tion as re-vealed
- []
-
-
-Underfull \hbox (badness 1762) in paragraph at lines 67--73
-\OT1/ppl/m/n/10.95 by girdling of bo-real scots pine for-est: ex-tend-ing ob-se
-r-va-tions be-yond the first year.
- []
-
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no “ in font pplr7t!
-
-Underfull \hbox (badness 5359) in paragraph at lines 83--88
-[]\OT1/ppl/m/n/10.95 Bloom, A. A. and M. Williams, 2015: Con-strain-ing ecosys-
-tem car-bon dy-nam-ics in
- []
-
-
-Underfull \hbox (badness 6204) in paragraph at lines 83--88
-\OT1/ppl/m/n/10.95 a data-limited world: in-te-grat-ing eco-log-i-cal "com-mon 
-sense" in a mod-el-data fu-
- []
-
-
-Underfull \hbox (badness 2828) in paragraph at lines 83--88
-\OT1/ppl/m/n/10.95 sion frame-work. \OT1/ppl/m/it/10.95 Bio-geo-sciences\OT1/pp
-l/m/n/10.95 , \OT1/ppl/b/n/10.95 12 (5)\OT1/ppl/m/n/10.95 , 1299--1315, doi: 10
-.5194/bg-12-1299-2015, URL
- []
-
 Missing character: There is no ó in font pplr7t!
-[143]
-Underfull \hbox (badness 4913) in paragraph at lines 124--129
-[]\OT1/ppl/m/n/10.95 Carvalhais, N., et al., 2010: Iden-ti-fi-ca-tion of veg-e-
-ta-tion and soil car-bon pools out
- []
-
-
-Underfull \hbox (badness 5302) in paragraph at lines 124--129
-\OT1/ppl/m/n/10.95 of equi-lib-rium in a pro-cess model via eddy co-vari-ance a
-nd bio-met-ric con-straints.
- []
-
-
-Underfull \hbox (badness 3148) in paragraph at lines 124--129
-\OT1/ppl/m/it/10.95 Global Change Bi-ol-ogy\OT1/ppl/m/n/10.95 , \OT1/ppl/b/n/10
-.95 16 (10)\OT1/ppl/m/n/10.95 , 2813--2829, doi: 10.1111/j.1365-2486.2010.02173
-.x, URL
- []
-
-
-Underfull \hbox (badness 1546) in paragraph at lines 142--147
-\OT1/ppl/m/it/10.95 nal of the Royal Me-te-o-ro-log-i-cal So-ci-ety\OT1/ppl/m/n
-/10.95 , \OT1/ppl/b/n/10.95 139 (675)\OT1/ppl/m/n/10.95 , 1445--1461, doi: 10.1
-002/qj.2054, URL
- []
-
-[144] [145]
-Underfull \hbox (badness 3179) in paragraph at lines 270--274
-[]\OT1/ppl/m/n/10.95 Fowler, A. and P. Jan Van Leeuwen, 2012: Mea-sures of ob-s
-er-va-tion im-pact in non-
- []
-
-
-Underfull \hbox (badness 5681) in paragraph at lines 270--274
-\OT1/ppl/m/n/10.95 Gaussian data as-sim-i-la-tion. \OT1/ppl/m/it/10.95 Tel-lus 
-A\OT1/ppl/m/n/10.95 , \OT1/ppl/b/n/10.95 64 (0)\OT1/ppl/m/n/10.95 , doi: 10.340
-2/tel-lusa.v64i0.17192, URL
- []
-
-[146]
+ [144] [145] [146]
 Missing character: There is no Ã in font pplr7t!
 Missing character: There is no ¶ in font pplr7t!
 Missing character: There is no Ã in font pplr7t!
 Missing character: There is no ¶ in font pplr7t!
 Missing character: There is no Ã in font pplr7t!
 Missing character: There is no ¤ in font pplr7t!
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--327
-[]\OT1/ppl/m/n/10.95 Hernesmaa, A., K. Bjrklf, O. Ki-ikkil, H. Fritze, K. Haaht
-ela, and M. Ro-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--327
-\OT1/ppl/m/n/10.95 mantschuk, 2005: Struc-ture and func-tion of mi-cro-bial com
--mu-ni-ties in the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--327
-\OT1/ppl/m/n/10.95 rhi-zo-sphere of scots pine af-ter tree-felling. \OT1/ppl/m/
-it/10.95 Soil Bi-ol-ogy and Bio-chem-istry\OT1/ppl/m/n/10.95 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--327
-\OT1/ppl/b/n/10.95 37 (4)\OT1/ppl/m/n/10.95 , 777 -- 785, doi: http://dx.doi.or
-g/10.1016/j.soilbio.2004.10.010, URL
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 356--361
-[]\OT1/ppl/m/n/10.95 Janssens, I. A., et al., 2001: Pro-duc-tiv-ity over-shad-o
-ws tem-per-a-ture in de-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 356--361
-\OT1/ppl/m/n/10.95 ter-min-ing soil and ecosys-tem res-pi-ra-tion across eu-ro-
-pean forests. \OT1/ppl/m/it/10.95 Global
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 356--361
-\OT1/ppl/m/it/10.95 Change Bi-ol-ogy\OT1/ppl/m/n/10.95 , \OT1/ppl/b/n/10.95 7 (
-3)\OT1/ppl/m/n/10.95 , 269--278, doi: 10.1046/j.1365-2486.2001.00412.x, URL
- []
-
-[147]
-Underfull \hbox (badness 1442) in paragraph at lines 376--381
+ [147]
+Underfull \hbox (badness 1442) in paragraph at lines 361--366
 \OT1/ppl/m/n/10.95 Re-view of meth-ods for in situ leaf area in-dex de-ter-mi-n
 a-tion Part I. The-o-ries, sen-sors
  []
 
-[148] [149]
-Underfull \hbox (badness 2735) in paragraph at lines 526--532
-[]\OT1/ppl/m/n/10.95 Li, Y., I. M. Navon, W. Yang, X. Zou, J. R. Bates, S. Moor
--thi, and R. W. Hig-gins,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 526--532
-\OT1/ppl/m/n/10.95 1994: Four-Dimensional Vari-a-tional Data As-sim-i-la-tion E
-x-per-i-ments with a Mul-ti-
- []
-
-
-Underfull \hbox (badness 4765) in paragraph at lines 526--532
-\OT1/ppl/m/n/10.95 level Semi-Lagrangian Semi-Implicit Gen-eral Cir-cu-la-tion 
-Model. \OT1/ppl/m/it/10.95 Monthly Weather Re-
- []
-
-
-Underfull \hbox (badness 4416) in paragraph at lines 526--532
-\OT1/ppl/m/it/10.95 view\OT1/ppl/m/n/10.95 , \OT1/ppl/b/n/10.95 122 (5)\OT1/ppl
-/m/n/10.95 , 966--983, doi: 10.1175/1520-0493(1994)122<0966:FDVDAE>2.0.CO;2, UR
-L
- []
-
-
-Overfull \hbox (128.66182pt too wide) in paragraph at lines 526--532
-\OT1/pcr/m/n/10.95 http://journals.ametsoc.org/doi/abs/10.1175/1520-0493(1994)1
-22%3C0966:FDVDAE%3E2.0.CO%3B2\OT1/ppl/m/n/10.95 . 
- []
-
+[148] [149] [150]
 Missing character: There is no ® in font pplri7t!
-
-Underfull \hbox (badness 5231) in paragraph at lines 538--543
-[]\OT1/ppl/m/n/10.95 Liu, S., et al., 2011: Sim-u-lat-ing the im-pacts of dis-t
-ur-bances on for-est car-bon cy-
- []
-
-
-Underfull \hbox (badness 6204) in paragraph at lines 538--543
-\OT1/ppl/m/n/10.95 cling in north amer-ica: Pro-cesses, data, mod-els, and chal
--lenges. \OT1/ppl/m/it/10.95 Jour-nal of Geo-
- []
-
-
-Underfull \hbox (badness 2343) in paragraph at lines 538--543
-\OT1/ppl/m/it/10.95 phys-i-cal Re-search: Bio-geo-sciences\OT1/ppl/m/n/10.95 , 
-\OT1/ppl/b/n/10.95 116 (G4)\OT1/ppl/m/n/10.95 , n/a--n/a, doi: 10.1029/2010JG00
-1585, URL
- []
-
-[150] [151]
-Underfull \hbox (badness 4792) in paragraph at lines 661--666
-[]\OT1/ppl/m/n/10.95 Navon, I. M., X. Zou, J. Der-ber, and J. Sela, 1992: Vari-
-a-tional Data As-sim-i-la-tion
- []
-
-
-Underfull \hbox (badness 7168) in paragraph at lines 661--666
-\OT1/ppl/m/n/10.95 with an Adi-a-batic Ver-sion of the NMC Spec-tral Model. \OT
-1/ppl/m/it/10.95 Monthly Weather Re-view\OT1/ppl/m/n/10.95 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 661--666
-\OT1/ppl/b/n/10.95 120 (7)\OT1/ppl/m/n/10.95 , 1433--1446, doi: 10.1175/1520-04
-93(1992)120<1433:VDAWAA>2.0.CO;2, URL
- []
-
-
-Overfull \hbox (141.8018pt too wide) in paragraph at lines 661--666
-\OT1/pcr/m/n/10.95 http://journals.ametsoc.org/doi/abs/10.1175/1520-0493(1992)1
-20%3C1433%3AVDAWAA%3E2.0.CO%3B2\OT1/ppl/m/n/10.95 . 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--677
-[]\OT1/ppl/m/n/10.95 Nocedal, J. and S. J. Wright, 1999: \OT1/ppl/m/it/10.95 Nu
--mer-i-cal Op-ti-miza-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--677
-\OT1/ppl/m/it/10.95 tion\OT1/ppl/m/n/10.95 . Springer Sci-ence & Busi-ness Me-d
-ia, 198 pp., URL
- []
-
-
-Overfull \hbox (119.46382pt too wide) in paragraph at lines 674--677
-\OT1/pcr/m/n/10.95 http://books.google.co.uk/books/about/Numerical[]Optimizatio
-n.html?id=epc5fX0lqRIC&pgis=1\OT1/ppl/m/n/10.95 . 
- []
-
-[152]
+ [151] [152]
 Missing character: There is no é in font pplr7t!
 
-Underfull \hbox (badness 1472) in paragraph at lines 719--724
+Underfull \hbox (badness 1472) in paragraph at lines 695--700
 []\OT1/ppl/m/n/10.95 Pierret, A., J.-L. Maeght, C. Clment, J.-P. Mon-toroi, C. 
 Hart-mann, and S. Gonkhamdee,
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 719--724
+Underfull \hbox (badness 1127) in paragraph at lines 695--700
 \OT1/ppl/m/n/10.95 un-con-ven-tional re-search. \OT1/ppl/m/it/10.95 An-nals of 
 Botany\OT1/ppl/m/n/10.95 , \OT1/ppl/b/n/10.95 118 (4)\OT1/ppl/m/n/10.95 , 621--
 635, doi: 10.1093/aob/mcw130,
  []
 
+[153]
 Missing character: There is no â in font pplb7t!
 Missing character: There is no € in font pplb7t!
 Missing character: There is no “ in font pplb7t!
 
-Underfull \hbox (badness 1163) in paragraph at lines 727--733
+Underfull \hbox (badness 1163) in paragraph at lines 703--709
 []\OT1/ppl/m/n/10.95 Pinnington, E. M., E. Casella, S. L. Dance, A. S. Law-less
 , J. I. Mori-son, N. K. Nichols,
  []
 
-[153] [154]
-Underfull \hbox (badness 7667) in paragraph at lines 849--854
+[154]
+Underfull \hbox (badness 7667) in paragraph at lines 825--830
 []\OT1/ppl/m/n/10.95 Saunders, M., B. To-bin, K. Black, M. Gio-ria, M. Nieuwen-
 huis, and B. Os-borne,
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 849--854
+Underfull \hbox (badness 2142) in paragraph at lines 825--830
 \OT1/ppl/m/n/10.95 2012: Thin-ning ef-fects on the net ecosys-tem car-bon ex-ch
 ange of a sitka spruce for-
  []
 
 
-Underfull \hbox (badness 3354) in paragraph at lines 849--854
+Underfull \hbox (badness 3354) in paragraph at lines 825--830
 \OT1/ppl/m/n/10.95 est are temperature-dependent. \OT1/ppl/m/it/10.95 Agri-cul-
 tural and For-est Me-te-o-rol-ogy\OT1/ppl/m/n/10.95 , \OT1/ppl/b/n/10.95 157\OT
 1/ppl/m/n/10.95 , 1 -- 10, doi:
  []
 
-[155] [156]
-Underfull \hbox (badness 1033) in paragraph at lines 945--949
-[]\OT1/ppl/m/n/10.95 Taylor, K. E., 2001: Sum-ma-riz-ing mul-ti-ple as-pects of
- model per-for-mance in a sin-gle di-
- []
-
-
-Underfull \hbox (badness 1024) in paragraph at lines 945--949
-\OT1/ppl/m/n/10.95 a-gram. \OT1/ppl/m/it/10.95 Jour-nal of Geo-phys-i-cal Re-se
-arch\OT1/ppl/m/n/10.95 , \OT1/ppl/b/n/10.95 106 (D7)\OT1/ppl/m/n/10.95 , 7183, 
-doi: 10.1029/2000JD900719, URL
- []
-
-
-Underfull \hbox (badness 4699) in paragraph at lines 957--961
-[]\OT1/ppl/m/n/10.95 Tremolet, Y., 2006: Ac-count-ing for an im-per-fect model 
-in 4D-Var. \OT1/ppl/m/it/10.95 Quar-terly Jour-nal
- []
-
-
-Underfull \hbox (badness 3068) in paragraph at lines 957--961
-\OT1/ppl/m/it/10.95 of the Royal Me-te-o-ro-log-i-cal So-ci-ety\OT1/ppl/m/n/10.
-95 , \OT1/ppl/b/n/10.95 132 (621)\OT1/ppl/m/n/10.95 , 2483--2504, doi: 10.1256/
-qj.05.224, URL
- []
-
+[155] [156] [157]
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no   in font pplr7t!
-[157]
-Underfull \hbox (badness 3758) in paragraph at lines 993--997
-[]\OT1/ppl/m/n/10.95 Walter, S. F. and L. Lehmann, 2013: Al-go-rith-mic dif-fer
--en-ti-a-tion in Python with Al-
- []
-
-
-Underfull \hbox (badness 2334) in paragraph at lines 1011--1016
-[]\OT1/ppl/m/n/10.95 Wilkinson, M., P. Crow, E. L. Eaton, and J. I. L. Mori-son
-, 2016: Ef-fects of man-age-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1011--1016
-\OT1/ppl/m/n/10.95 ment thin-ning on co2 ex-change by a plan-ta-tion oak wood-l
-and in south-eastern
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1011--1016
-\OT1/ppl/m/n/10.95 eng-land. \OT1/ppl/m/it/10.95 Bio-geo-sciences\OT1/ppl/m/n/1
-0.95 , \OT1/ppl/b/n/10.95 13 (8)\OT1/ppl/m/n/10.95 , 2367--2378, doi: 10.5194/b
-g-13-2367-2016, URL
- []
-
-[158]) [159] (./thesis.aux (./preface/title.aux) (./preface/declaration.aux)
-(./preface/publications.aux) (./preface/abstract.aux)
-(./preface/acknowledgements.aux))
+ [158]) [159] (./thesis.aux (./preface/title.aux)
+(./preface/declaration.aux) (./preface/publications.aux)
+(./preface/abstract.aux) (./preface/acknowledgements.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2017,7 +1742,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  7074 strings out of 493117
  120601 string characters out of 6135433
- 230481 words of memory out of 5000000
+ 228732 words of memory out of 5000000
  10154 multiletter control sequences out of 15000+600000
  70086 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2040,7 +1765,7 @@ l/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loca
 l/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/
 2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (168 pages, 30179551 bytes).
+Output written on thesis.pdf (168 pages, 30174355 bytes).
 PDF statistics:
  3914 PDF objects out of 4296 (max. 8388607)
  1263 compressed objects within 13 object streams

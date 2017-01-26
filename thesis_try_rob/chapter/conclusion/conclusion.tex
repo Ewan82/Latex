@@ -40,12 +40,16 @@ In chapter~\ref{chap:disturbance} we again utilised the 4D-Var data assimilation
 
 \section{Future work}
 
-ROUGH DRAFT
+The continued application of information content measures is important to better understand where to base efforts in future observation campaigns. It is also important to improve estimates of uncertainty for both prior model predictions and observations. This will ensure that results from information content experiments can be as accurate as possible. It would also be interesting to use a more complex model of ecosystem carbon dynamics where we could judge the impact of more novel measurements such as stem respiration.
 
-The continued application of IC meausres is important to better understand where to base efforts in future observation campaigns. However, first it is maybe more important to improve both estimates of uncertainty for prior model and observational estimates and so that results from IC experiements can be as accurate as possible. It would also be interesting to use a more complex model of ecosystem carobn dynamics where we could judge the impact of more novel meausreents such as stem respiration or sap flow rate.
+We have shown that including a more sophisticated representation of error in data assimilation schemes can be of great benefit to results. more work in this area is important to improve the representation of uncertainty in data assimilation schemes. In relation to the experiments carried out in this thesis its is clear that a more diagnostic tool for the specification of observation error correlations is important. One possibility for this would be to use a method such as the \citet{desroziers2005diagnosis} diagnostic to statistically estimate the error covariance structure of assimilated observations. In order to diagnose correlations in time (similar to those specified in chapter~\ref{chap:error_corrs}) the \citet{desroziers2005diagnosis} diagnostic would have to be expanded. The \citet{desroziers2005diagnosis} diagnostic estimates the observation error covariance matrix as
+\begin{equation}
+\textbf{R} = \mathbb{E}[(\textbf{y}-\textbf{h}(\textbf{x}_a))(\textbf{y}-\textbf{h}(\textbf{x}_b))^{T}]
+\end{equation}
+this could be re-written as
+\begin{equation}
+\hat{\textbf{R}} = \mathbb{E}[(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_a))(\hat{\textbf{y}}-\hat{\textbf{h}}(\textbf{x}_b))^{T}]
+\end{equation}
+to estimate time correlations in the observation error covariance matrix. This would require that an ensemble of 4D-Var data assimilations were run with perturbed prior model estimates and perturbed observations. We could then retrieve a statistical estimate of the temporal correlation structure for the observation error covariance matrix. It will also be useful to test these new covariance matrices with included correlations at other research sites and with larger model implementations.
 
-We have shown that including a more sophisticated respresentation of error in data assimilation schemes can be of great benefit to results. It is imporant that we continue to improve the representation of uncertainty in data assimilation schemes. In relation to the experiments carried out in this thesis its is clear that a more diagnostic tool for the specification of observation erorr correlations is important. One possiblity for this would be to use a method such as the desrozier diagnostic to statistically estimate the error covariance structure for observations. In order to diagnose correlations in time the desroziers diagnostic would have to be expanded. This would be possible be re-writting it as...
-
-SHOW EQUATIONS HERE
-
-The results we find for the effect of disturbance are possible suprising however do support measurements based campaigns analysing soil microbial communities after felling has occured. This experiement would be good to carry out again after collecting a few more years of data to understand the revoery of leaf area and long term response to disturbance. If possible it would be extremely beneficial to also set up soil respiration chambers on both the thinned and unthinned sides of the forest to improve the constraint on constituent processes.
+The results we find for the effect of disturbance are possibly surprising however do support ecological measurement campaigns analysing soil microbial communities after selective felling events. This experiment would be good to carry out again after collecting a few more years of data to understand the recovery of leaf area and long term response of the Alice Holt forest to disturbance. If possible it would be extremely beneficial to also set up soil respiration chambers on both the thinned and unthinned sides of the forest to improve constraint on the constituent processes.

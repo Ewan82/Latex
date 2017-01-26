@@ -15,24 +15,24 @@ Warning--missing publisher in scipy2015
 Warning--missing publisher in fluxnetsite2013
 You've used 180 entries,
             3486 wiz_defined-function locations,
-            1823 strings with 50187 characters,
-and the built_in function-call counts, 202846 in all, are:
-= -- 23815
+            1792 strings with 48616 characters,
+and the built_in function-call counts, 202567 in all, are:
+= -- 23784
 > -- 7165
 < -- 57
 + -- 4138
 - -- 1771
-* -- 11125
-:= -- 20535
+* -- 11032
+:= -- 20504
 add.period$ -- 360
 call.type$ -- 180
 change.case$ -- 1447
 chr.to.int$ -- 177
 cite$ -- 183
-duplicate$ -- 20634
-empty$ -- 10650
+duplicate$ -- 20603
+empty$ -- 10619
 format.name$ -- 2300
-if$ -- 41240
+if$ -- 41178
 int.to.chr$ -- 4
 int.to.str$ -- 1
 missing$ -- 2001
@@ -42,7 +42,7 @@ pop$ -- 8768
 preamble$ -- 1
 purify$ -- 1272
 quote$ -- 0
-skip$ -- 12478
+skip$ -- 12509
 stack$ -- 0
 substring$ -- 9504
 swap$ -- 17120
@@ -53,5 +53,5 @@ type$ -- 1587
 warning$ -- 3
 while$ -- 980
 width$ -- 0
-write$ -- 2076
+write$ -- 2045
 (There were 3 warnings)

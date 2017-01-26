@@ -105,4 +105,4 @@
 \contentsline {section}{\numberline {7.2}Improving the representation of prior and observational errors in carbon cycle data assimilation}{139}
 \contentsline {section}{\numberline {7.3}Using data assimilation to understand the effect of disturbance on forest carbon dynamics}{140}
 \contentsline {section}{\numberline {7.4}Future work}{141}
-\contentsline {chapter}{Bibliography}{142}
+\contentsline {chapter}{Bibliography}{143}
