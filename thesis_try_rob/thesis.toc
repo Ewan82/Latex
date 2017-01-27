@@ -37,73 +37,73 @@
 \contentsline {subsection}{\numberline {3.2.5}Flux tower observations and data processing}{40}
 \contentsline {chapter}{\numberline {4}Information content in observations relevant to forest carbon balance}{42}
 \contentsline {section}{\numberline {4.1}Introduction}{42}
-\contentsline {section}{\numberline {4.2}Background material}{44}
-\contentsline {subsection}{\numberline {4.2.1}Metolius forest site}{44}
+\contentsline {section}{\numberline {4.2}Background material}{43}
+\contentsline {subsection}{\numberline {4.2.1}Metolius forest site}{43}
 \contentsline {subsection}{\numberline {4.2.2}Observability}{44}
 \contentsline {subsection}{\numberline {4.2.3}Information content measures}{45}
-\contentsline {subsubsection}{\numberline {4.2.3.1}Sensitivity of analysis to observations}{47}
-\contentsline {subsubsection}{\numberline {4.2.3.2}Degrees of freedom for signal}{48}
-\contentsline {subsubsection}{\numberline {4.2.3.3}Shannon information content}{49}
+\contentsline {subsubsection}{\numberline {4.2.3.1}Sensitivity of analysis to observations}{46}
+\contentsline {subsubsection}{\numberline {4.2.3.2}Degrees of freedom for signal}{47}
+\contentsline {subsubsection}{\numberline {4.2.3.3}Shannon information content}{48}
 \contentsline {section}{\numberline {4.3}Results}{49}
 \contentsline {subsection}{\numberline {4.3.1}DALEC1 observability for state estimation}{49}
-\contentsline {subsection}{\numberline {4.3.2}DALEC2 observability for state and parameter estimation}{53}
-\contentsline {subsubsection}{\numberline {4.3.2.1}Observability for observations randomly distributed through time}{55}
-\contentsline {subsection}{\numberline {4.3.3}DALEC1 information content for state estimation}{57}
-\contentsline {subsubsection}{\numberline {4.3.3.1}Information content for a single observation}{57}
+\contentsline {subsection}{\numberline {4.3.2}DALEC2 observability for state and parameter estimation}{52}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Observability for observations randomly distributed through time}{54}
+\contentsline {subsection}{\numberline {4.3.3}DALEC1 information content for state estimation}{56}
+\contentsline {subsubsection}{\numberline {4.3.3.1}Information content for a single observation}{56}
 \contentsline {subsubsection}{\numberline {4.3.3.2}Information content for observations at a single time}{61}
 \contentsline {subsubsection}{\numberline {4.3.3.3}Information content in successive observations}{63}
 \contentsline {subsubsection}{\numberline {4.3.3.4}Effect of time correlations between observation errors on information content}{65}
 \contentsline {subsection}{\numberline {4.3.4}DALEC2 information content for state and parameter estimation}{66}
 \contentsline {subsubsection}{\numberline {4.3.4.1}Information content in observations for DALEC2}{66}
-\contentsline {subsubsection}{\numberline {4.3.4.2}Effect of time correlations on observation information content}{70}
-\contentsline {section}{\numberline {4.4}Conclusions}{71}
-\contentsline {chapter}{\numberline {5}Investigating the role of prior and observation error correlations}{73}
-\contentsline {section}{\numberline {5.1}Abstract}{73}
-\contentsline {section}{\numberline {5.2}Introduction}{74}
-\contentsline {section}{\numberline {5.3}Model and Data Assimilation Methods}{78}
-\contentsline {subsection}{\numberline {5.3.1}Alice Holt research forest}{78}
-\contentsline {subsection}{\numberline {5.3.2}The DALEC2 model}{78}
-\contentsline {subsection}{\numberline {5.3.3}4D-Var}{80}
-\contentsline {subsection}{\numberline {5.3.4}Implementation and testing of 4D-Var system}{82}
-\contentsline {subsubsection}{\numberline {5.3.4.1}Test of tangent linear model}{83}
-\contentsline {subsubsection}{\numberline {5.3.4.2}Test of adjoint model}{85}
-\contentsline {subsubsection}{\numberline {5.3.4.3}Gradient test}{86}
-\contentsline {subsection}{\numberline {5.3.5}Including correlations in the background error covariance matrix}{87}
-\contentsline {subsection}{\numberline {5.3.6}Specifying serial correlations in the observation error covariance matrix}{88}
-\contentsline {section}{\numberline {5.4}Results}{90}
-\contentsline {subsection}{\numberline {5.4.1}Experiments}{90}
-\contentsline {subsection}{\numberline {5.4.2}Experiment A}{90}
-\contentsline {subsection}{\numberline {5.4.3}Experiment B}{92}
-\contentsline {subsection}{\numberline {5.4.4}Experiment C}{93}
-\contentsline {subsection}{\numberline {5.4.5}Experiment D}{94}
-\contentsline {subsection}{\numberline {5.4.6}Summary}{94}
-\contentsline {section}{\numberline {5.5}Discussion}{99}
-\contentsline {section}{\numberline {5.6}Conclusion}{104}
-\contentsline {section}{\numberline {5.7}Acknowledgements}{104}
-\contentsline {section}{\numberline {5.8}Appendix}{105}
-\contentsline {chapter}{\numberline {6}Using data assimilation to understand the effect of disturbance on the carbon dynamics of the Alice Holt forest}{107}
-\contentsline {section}{\numberline {6.1}Abstract}{107}
-\contentsline {section}{\numberline {6.2}Introduction}{108}
-\contentsline {section}{\numberline {6.3}Observation and data assimilation methods}{110}
-\contentsline {subsection}{\numberline {6.3.1}Alice Holt research forest}{110}
-\contentsline {subsection}{\numberline {6.3.2}Observations}{111}
-\contentsline {subsubsection}{\numberline {6.3.2.1}Leaf area index}{111}
-\contentsline {subsubsection}{\numberline {6.3.2.2}Woody biomass}{112}
-\contentsline {subsubsection}{\numberline {6.3.2.3}Flux tower eddy covariance}{113}
-\contentsline {subsection}{\numberline {6.3.3}Model and data assimilation}{115}
-\contentsline {subsubsection}{\numberline {6.3.3.1}DALEC2 ecosystem carbon model}{115}
-\contentsline {subsubsection}{\numberline {6.3.3.2}Data assimilation}{115}
-\contentsline {subsection}{\numberline {6.3.4}Experimental setup}{117}
-\contentsline {section}{\numberline {6.4}Results}{118}
-\contentsline {section}{\numberline {6.5}Discussion}{125}
-\contentsline {section}{\numberline {6.6}Conclusion}{127}
-\contentsline {section}{\numberline {6.7}Acknowledgments}{128}
-\contentsline {section}{\numberline {6.8}Appendix}{128}
-\contentsline {subsection}{\numberline {6.8.1}DALEC2 equations}{128}
-\contentsline {section}{\numberline {6.9}Supplementary material}{129}
-\contentsline {chapter}{\numberline {7}Conclusion}{138}
-\contentsline {section}{\numberline {7.1}Investigating the information content in distinct carbon balance observations}{139}
-\contentsline {section}{\numberline {7.2}Improving the representation of prior and observational errors in carbon cycle data assimilation}{139}
-\contentsline {section}{\numberline {7.3}Using data assimilation to understand the effect of disturbance on forest carbon dynamics}{140}
-\contentsline {section}{\numberline {7.4}Future work}{141}
-\contentsline {chapter}{Bibliography}{143}
+\contentsline {subsubsection}{\numberline {4.3.4.2}Effect of time correlations on observation information content}{69}
+\contentsline {section}{\numberline {4.4}Conclusions}{70}
+\contentsline {chapter}{\numberline {5}Investigating the role of prior and observation error correlations}{72}
+\contentsline {section}{\numberline {5.1}Abstract}{72}
+\contentsline {section}{\numberline {5.2}Introduction}{73}
+\contentsline {section}{\numberline {5.3}Model and Data Assimilation Methods}{77}
+\contentsline {subsection}{\numberline {5.3.1}Alice Holt research forest}{77}
+\contentsline {subsection}{\numberline {5.3.2}The DALEC2 model}{77}
+\contentsline {subsection}{\numberline {5.3.3}4D-Var}{79}
+\contentsline {subsection}{\numberline {5.3.4}Implementation and testing of 4D-Var system}{81}
+\contentsline {subsubsection}{\numberline {5.3.4.1}Test of tangent linear model}{82}
+\contentsline {subsubsection}{\numberline {5.3.4.2}Test of adjoint model}{84}
+\contentsline {subsubsection}{\numberline {5.3.4.3}Gradient test}{85}
+\contentsline {subsection}{\numberline {5.3.5}Including correlations in the background error covariance matrix}{86}
+\contentsline {subsection}{\numberline {5.3.6}Specifying serial correlations in the observation error covariance matrix}{87}
+\contentsline {section}{\numberline {5.4}Results}{89}
+\contentsline {subsection}{\numberline {5.4.1}Experiments}{89}
+\contentsline {subsection}{\numberline {5.4.2}Experiment A}{89}
+\contentsline {subsection}{\numberline {5.4.3}Experiment B}{91}
+\contentsline {subsection}{\numberline {5.4.4}Experiment C}{92}
+\contentsline {subsection}{\numberline {5.4.5}Experiment D}{93}
+\contentsline {subsection}{\numberline {5.4.6}Summary}{93}
+\contentsline {section}{\numberline {5.5}Discussion}{98}
+\contentsline {section}{\numberline {5.6}Conclusion}{103}
+\contentsline {section}{\numberline {5.7}Acknowledgements}{103}
+\contentsline {section}{\numberline {5.8}Appendix}{104}
+\contentsline {chapter}{\numberline {6}Using data assimilation to understand the effect of disturbance on the carbon dynamics of the Alice Holt forest}{106}
+\contentsline {section}{\numberline {6.1}Abstract}{106}
+\contentsline {section}{\numberline {6.2}Introduction}{107}
+\contentsline {section}{\numberline {6.3}Observation and data assimilation methods}{109}
+\contentsline {subsection}{\numberline {6.3.1}Alice Holt research forest}{109}
+\contentsline {subsection}{\numberline {6.3.2}Observations}{110}
+\contentsline {subsubsection}{\numberline {6.3.2.1}Leaf area index}{110}
+\contentsline {subsubsection}{\numberline {6.3.2.2}Woody biomass}{111}
+\contentsline {subsubsection}{\numberline {6.3.2.3}Flux tower eddy covariance}{112}
+\contentsline {subsection}{\numberline {6.3.3}Model and data assimilation}{114}
+\contentsline {subsubsection}{\numberline {6.3.3.1}DALEC2 ecosystem carbon model}{114}
+\contentsline {subsubsection}{\numberline {6.3.3.2}Data assimilation}{114}
+\contentsline {subsection}{\numberline {6.3.4}Experimental setup}{116}
+\contentsline {section}{\numberline {6.4}Results}{117}
+\contentsline {section}{\numberline {6.5}Discussion}{124}
+\contentsline {section}{\numberline {6.6}Conclusion}{126}
+\contentsline {section}{\numberline {6.7}Acknowledgments}{127}
+\contentsline {section}{\numberline {6.8}Appendix}{127}
+\contentsline {subsection}{\numberline {6.8.1}DALEC2 equations}{127}
+\contentsline {section}{\numberline {6.9}Supplementary material}{128}
+\contentsline {chapter}{\numberline {7}Conclusion}{137}
+\contentsline {section}{\numberline {7.1}Investigating the information content in distinct carbon balance observations}{138}
+\contentsline {section}{\numberline {7.2}Improving the representation of prior and observational errors in carbon cycle data assimilation}{138}
+\contentsline {section}{\numberline {7.3}Using data assimilation to understand the effect of disturbance on forest carbon dynamics}{139}
+\contentsline {section}{\numberline {7.4}Future work}{140}
+\contentsline {chapter}{Bibliography}{142}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  26 JAN 2017 21:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.29)  27 JAN 2017 09:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -792,20 +792,19 @@ Chapter 4.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10.95> not available
 (Font)              Font shape `OT1/ppl/b/it' tried instead on input line 27.
  [44] [45] [46] [47] [48] [49]
-[50]
 Underfull \hbox (badness 10000) detected at line 195
  []$[]  [] \OT1/ztmcm/m/n/10.95 = [] = [] \OML/ztmcm/m/it/10.95 ;$ []  
  []
 
-<chapter/chapter5/dalec1_obsrank.pdf, id=384, 433.62pt x 578.16pt>
+<chapter/chapter5/dalec1_obsrank.pdf, id=381, 433.62pt x 578.16pt>
 File: chapter/chapter5/dalec1_obsrank.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/dalec1_obsrank.pdf>
 Package pdftex.def Info: chapter/chapter5/dalec1_obsrank.pdf used on input line
  200.
 (pdftex.def)             Requested size: 234.87749pt x 313.17216pt.
- [51 <./chapter/chapter5/dalec1_obsrank.pdf>] [52]
-<chapter/chapter5/dalec2_obsrank.pdf, id=448, 433.62pt x 578.16pt>
+ [50] [51 <./chapter/chapter5/dalec1_obsrank.pdf>]
+<chapter/chapter5/dalec2_obsrank.pdf, id=444, 433.62pt x 578.16pt>
 File: chapter/chapter5/dalec2_obsrank.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/dalec2_obsrank.pdf>
@@ -821,7 +820,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 263.
 
-<chapter/chapter5/dalec2_obsrankcond.pdf, id=449, 433.62pt x 578.16pt>
+<chapter/chapter5/dalec2_obsrankcond.pdf, id=445, 433.62pt x 578.16pt>
 File: chapter/chapter5/dalec2_obsrankcond.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/dalec2_obsrankcond.pdf>
@@ -833,8 +832,8 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 275.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [53]
-<chapter/chapter5/dalec2_obsrankcvt.pdf, id=453, 433.62pt x 578.16pt>
+) [52]
+<chapter/chapter5/dalec2_obsrankcvt.pdf, id=450, 433.62pt x 578.16pt>
 File: chapter/chapter5/dalec2_obsrankcvt.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/dalec2_obsrankcvt.pdf>
@@ -842,19 +841,15 @@ Package pdftex.def Info: chapter/chapter5/dalec2_obsrankcvt.pdf used on input l
 ine 280.
 (pdftex.def)             Requested size: 187.89912pt x 250.53596pt.
 
-<chapter/chapter5/dalec2_obsrankcvtcond.pdf, id=454, 433.62pt x 578.16pt>
+<chapter/chapter5/dalec2_obsrankcvtcond.pdf, id=451, 433.62pt x 578.16pt>
 File: chapter/chapter5/dalec2_obsrankcvtcond.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/dalec2_obsrankcvtcond.pdf>
 Package pdftex.def Info: chapter/chapter5/dalec2_obsrankcvtcond.pdf used on inp
 ut line 285.
 (pdftex.def)             Requested size: 187.89912pt x 250.53596pt.
- [54 <./chapter/chapter5/dalec2_obsrank.pdf> <./chapter/chapter5/dalec2_obsrank
-cond.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter5/dalec2_obsrankcon
-d.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] <chapter/chapter5/dalec2_obsrankwind.pdf, id=524, 433.62pt x 578.16pt>
+ [53]
+<chapter/chapter5/dalec2_obsrankwind.pdf, id=456, 433.62pt x 578.16pt>
 File: chapter/chapter5/dalec2_obsrankwind.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/dalec2_obsrankwind.pdf>
@@ -862,20 +857,19 @@ Package pdftex.def Info: chapter/chapter5/dalec2_obsrankwind.pdf used on input
 line 302.
 (pdftex.def)             Requested size: 187.89912pt x 250.53596pt.
 
-<chapter/chapter5/dalec2_obsrankcondwind.pdf, id=525, 433.62pt x 578.16pt>
+<chapter/chapter5/dalec2_obsrankcondwind.pdf, id=457, 433.62pt x 578.16pt>
 File: chapter/chapter5/dalec2_obsrankcondwind.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/dalec2_obsrankcondwind.pdf>
 Package pdftex.def Info: chapter/chapter5/dalec2_obsrankcondwind.pdf used on in
 put line 307.
 (pdftex.def)             Requested size: 187.89912pt x 250.53596pt.
- [55 <./chapter/chapter5/dalec2_obsrankcvt.pdf> <./chapter/chapter5/dalec2_obsr
-ankcvtcond.pdf
+ [54 <./chapter/chapter5/dalec2_obsrank.pdf> <./chapter/chapter5/dalec2_obsrank
+cond.pdf
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter5/dalec2_obsrankcvt
-cond.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
-ge
->] <chapter/chapter5/dalec2_obsrankcvtwind.pdf, id=594, 433.62pt x 578.16pt>
+pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter5/dalec2_obsrankcon
+d.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] <chapter/chapter5/dalec2_obsrankcvtwind.pdf, id=526, 433.62pt x 578.16pt>
 File: chapter/chapter5/dalec2_obsrankcvtwind.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/dalec2_obsrankcvtwind.pdf>
@@ -883,15 +877,21 @@ Package pdftex.def Info: chapter/chapter5/dalec2_obsrankcvtwind.pdf used on inp
 ut line 324.
 (pdftex.def)             Requested size: 187.89912pt x 250.53596pt.
 
-<chapter/chapter5/dalec2_obsrankcondcvtwind.pdf, id=595, 433.62pt x 578.16pt>
+<chapter/chapter5/dalec2_obsrankcondcvtwind.pdf, id=527, 433.62pt x 578.16pt>
 File: chapter/chapter5/dalec2_obsrankcondcvtwind.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/dalec2_obsrankcondcvtwind.pdf>
 Package pdftex.def Info: chapter/chapter5/dalec2_obsrankcondcvtwind.pdf used on
  input line 329.
 (pdftex.def)             Requested size: 187.89912pt x 250.53596pt.
- [56 <./chapter/chapter5/dalec2_obsrankwind.pdf> <./chapter/chapter5/dalec2_obs
-rankcondwind.pdf
+ [55 <./chapter/chapter5/dalec2_obsrankcvt.pdf> <./chapter/chapter5/dalec2_obsr
+ankcvtcond.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter5/dalec2_obsrankcvt
+cond.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+>] [56 <./chapter/chapter5/dalec2_obsrankwind.pdf> <./chapter/chapter5/dalec2_o
+bsrankcondwind.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter5/dalec2_obsrankcon
 dwind.pdf): PDF inclusion: multiple pdfs with page group included in a single p
@@ -918,12 +918,12 @@ File: chapter/chapter5/oregon2007temp.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapter/chapter5/oregon2007temp.pdf used on input line
  426.
 (pdftex.def)             Requested size: 211.3883pt x 145.3301pt.
- [59] [60 <./chapter/chapter5/oregon2007SICnee.pdf> <./chapter/chapter5/oregon2
-007temp.pdf
+ [59 <./chapter/chapter5/oregon2007SICnee.pdf> <./chapter/chapter5/oregon2007te
+mp.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter5/oregon2007temp.pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
->] [61] [62] [63]
+>] [60] [61] [62] [63]
 <chapter/chapter5/sic_succ_cf.pdf, id=831, 925.05597pt x 635.97598pt>
 File: chapter/chapter5/sic_succ_cf.pdf Graphic file (type pdf)
 
@@ -939,8 +939,8 @@ File: chapter/chapter5/dfs_succ_cf.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapter/chapter5/dfs_succ_cf.pdf used on input line 58
 3.
 (pdftex.def)             Requested size: 211.3883pt x 145.3301pt.
- [64]
-<chapter/chapter5/sic_succ_nee.pdf, id=837, 821.71463pt x 602.73962pt>
+
+<chapter/chapter5/sic_succ_nee.pdf, id=833, 821.71463pt x 602.73962pt>
 File: chapter/chapter5/sic_succ_nee.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/sic_succ_nee.pdf>
@@ -948,34 +948,31 @@ Package pdftex.def Info: chapter/chapter5/sic_succ_nee.pdf used on input line 5
 96.
 (pdftex.def)             Requested size: 211.3883pt x 155.05313pt.
 
-<chapter/chapter5/dfs_succ_nee.pdf, id=838, 822.3263pt x 602.73962pt>
+<chapter/chapter5/dfs_succ_nee.pdf, id=834, 822.3263pt x 602.73962pt>
 File: chapter/chapter5/dfs_succ_nee.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/dfs_succ_nee.pdf>
 Package pdftex.def Info: chapter/chapter5/dfs_succ_nee.pdf used on input line 6
 01.
 (pdftex.def)             Requested size: 211.3883pt x 154.94276pt.
- [65 <./chapter/chapter5/sic_succ_cf.pdf> <./chapter/chapter5/dfs_succ_cf.pdf
+ [64 <./chapter/chapter5/sic_succ_cf.pdf> <./chapter/chapter5/dfs_succ_cf.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter5/dfs_succ_cf.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
-> <./chapter/chapter5/sic_succ_nee.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter5/sic_succ_nee.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./chapter/chapter5/dfs_succ_nee.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter5/dfs_succ_nee.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
->] <chapter/chapter5/sic_corr_D1_nee.pdf, id=981, 431.80353pt x 315.09375pt>
+>] <chapter/chapter5/sic_corr_D1_nee.pdf, id=920, 431.80353pt x 315.09375pt>
 File: chapter/chapter5/sic_corr_D1_nee.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/sic_corr_D1_nee.pdf>
 Package pdftex.def Info: chapter/chapter5/sic_corr_D1_nee.pdf used on input lin
 e 637.
 (pdftex.def)             Requested size: 234.87749pt x 171.39334pt.
- [66 <./chapter/chapter5/sic_corr_D1_nee.pdf>]
-<chapter/chapter5/oregon2007SICneeD2.pdf, id=1022, 925.05597pt x 635.97598pt>
+ [65 <./chapter/chapter5/sic_succ_nee.pdf> <./chapter/chapter5/dfs_succ_nee.pdf
+
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter5/dfs_succ_nee.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<chapter/chapter5/oregon2007SICneeD2.pdf, id=983, 925.05597pt x 635.97598pt>
 File: chapter/chapter5/oregon2007SICneeD2.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/oregon2007SICneeD2.pdf>
@@ -988,8 +985,8 @@ File: chapter/chapter5/oregon2007temp.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapter/chapter5/oregon2007temp.pdf used on input line
  659.
 (pdftex.def)             Requested size: 211.3883pt x 145.3301pt.
-
-<chapter/chapter5/inf_mat_sa.pdf, id=1023, 617.68382pt x 949.91447pt>
+ [66 <./chapter/chapter5/sic_corr_D1_nee.pdf>] <chapter/chapter5/inf_mat_sa.pdf
+, id=1024, 617.68382pt x 949.91447pt>
 File: chapter/chapter5/inf_mat_sa.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/inf_mat_sa.pdf>
@@ -997,34 +994,34 @@ Package pdftex.def Info: chapter/chapter5/inf_mat_sa.pdf used on input line 672
 .
 (pdftex.def)             Requested size: 216.09044pt x 332.3156pt.
 
-<chapter/chapter5/inf_mat_so.pdf, id=1024, 617.68382pt x 949.91447pt>
+<chapter/chapter5/inf_mat_so.pdf, id=1025, 617.68382pt x 949.91447pt>
 File: chapter/chapter5/inf_mat_so.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/inf_mat_so.pdf>
 Package pdftex.def Info: chapter/chapter5/inf_mat_so.pdf used on input line 677
 .
 (pdftex.def)             Requested size: 216.09044pt x 332.3156pt.
- [67 <./chapter/chapter5/oregon2007SICneeD2.pdf>] [68 <./chapter/chapter5/inf_m
-at_sa.pdf> <./chapter/chapter5/inf_mat_so.pdf
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter5/inf_mat_so.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
->] <chapter/chapter5/ah_pheno.pdf, id=1152, 925.05597pt x 635.97598pt>
+<chapter/chapter5/ah_pheno.pdf, id=1026, 925.05597pt x 635.97598pt>
 File: chapter/chapter5/ah_pheno.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/ah_pheno.pdf>
 Package pdftex.def Info: chapter/chapter5/ah_pheno.pdf used on input line 692.
 (pdftex.def)             Requested size: 211.3883pt x 145.3301pt.
 
-<chapter/chapter5/oregon_pheno.pdf, id=1153, 925.05597pt x 635.97598pt>
+<chapter/chapter5/oregon_pheno.pdf, id=1027, 925.05597pt x 635.97598pt>
 File: chapter/chapter5/oregon_pheno.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/oregon_pheno.pdf>
 Package pdftex.def Info: chapter/chapter5/oregon_pheno.pdf used on input line 6
 97.
 (pdftex.def)             Requested size: 211.3883pt x 145.3301pt.
+ [67 <./chapter/chapter5/oregon2007SICneeD2.pdf>] [68 <./chapter/chapter5/inf_m
+at_sa.pdf> <./chapter/chapter5/inf_mat_so.pdf
 
-<chapter/chapter5/sic_corr_D2_nee.pdf, id=1154, 851.85066pt x 603.66495pt>
+pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter5/inf_mat_so.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>] <chapter/chapter5/sic_corr_D2_nee.pdf, id=1155, 851.85066pt x 603.66495pt>
 File: chapter/chapter5/sic_corr_D2_nee.pdf Graphic file (type pdf)
 
 <use chapter/chapter5/sic_corr_D2_nee.pdf>
@@ -1035,19 +1032,19 @@ e 714.
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter5/oregon_pheno.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
->] [70 <./chapter/chapter5/sic_corr_D2_nee.pdf>]) [71] [72]
+>] [70 <./chapter/chapter5/sic_corr_D2_nee.pdf>]) [71]
 Chapter 5.
-(./chapter/chapter6/chapter6.tex [73
+(./chapter/chapter6/chapter6.tex [72
 
-] [74] [75] [76] [77]
-<chapter/chapter6/dalec2diag.pdf, id=1281, 758.835pt x 453.695pt>
+] [73] [74] [75] [76]
+<chapter/chapter6/dalec2diag.pdf, id=1279, 758.835pt x 453.695pt>
 File: chapter/chapter6/dalec2diag.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/dalec2diag.pdf>
 Package pdftex.def Info: chapter/chapter6/dalec2diag.pdf used on input line 41.
 
 (pdftex.def)             Requested size: 234.87749pt x 140.42938pt.
- [78] [79 <./chapter/chapter6/dalec2diag.pdf>] [80] [81] [82] [83]
+ [77] [78 <./chapter/chapter6/dalec2diag.pdf>] [79] [80] [81] [82]
 Package epstopdf Info: Source file: <chapter/chapter6/linmoderr.eps>
 (epstopdf)                    date: 2015-11-27 15:15:35
 (epstopdf)                    size: 63822 bytes
@@ -1060,7 +1057,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 185.
 Package epstopdf Info: Output file is already uptodate.
 
-<chapter/chapter6/linmoderr-eps-converted-to.pdf, id=1304, 847.165pt x 609.2762
+<chapter/chapter6/linmoderr-eps-converted-to.pdf, id=1302, 847.165pt x 609.2762
 5pt>
 File: chapter/chapter6/linmoderr-eps-converted-to.pdf Graphic file (type pdf)
  <use chapter/chapter6/linmoderr-eps-converted-to.pdf>
@@ -1079,7 +1076,7 @@ rlinmod-eps-converted-to.pdf chapter/chapter6/percenterrlinmod.eps>
 (epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
 
-<chapter/chapter6/percenterrlinmod-eps-converted-to.pdf, id=1305, 827.09pt x 58
+<chapter/chapter6/percenterrlinmod-eps-converted-to.pdf, id=1303, 827.09pt x 58
 5.18625pt>
 File: chapter/chapter6/percenterrlinmod-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1088,7 +1085,7 @@ Package pdftex.def Info: chapter/chapter6/percenterrlinmod-eps-converted-to.pdf
  used on input line 197.
 (pdftex.def)             Requested size: 234.87749pt x 166.18155pt.
 
-[84 <./chapter/chapter6/linmoderr-eps-converted-to.pdf>] [85 <./chapter/chapter
+[83 <./chapter/chapter6/linmoderr-eps-converted-to.pdf>] [84 <./chapter/chapter
 6/percenterrlinmod-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <chapter/chapter6/costone_cvt.eps>
 (epstopdf)                    date: 2015-11-27 15:56:45
@@ -1102,7 +1099,7 @@ vt-eps-converted-to.pdf chapter/chapter6/costone_cvt.eps>
 (epstopdf)             \includegraphics on input line 230.
 Package epstopdf Info: Output file is already uptodate.
 
-<chapter/chapter6/costone_cvt-eps-converted-to.pdf, id=1388, 861.2175pt x 607.2
+<chapter/chapter6/costone_cvt-eps-converted-to.pdf, id=1386, 861.2175pt x 607.2
 6875pt>
 File: chapter/chapter6/costone_cvt-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1122,22 +1119,22 @@ eps-converted-to.pdf chapter/chapter6/cost_cvt.eps>
 (epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
 
-<chapter/chapter6/cost_cvt-eps-converted-to.pdf, id=1389, 851.18pt x 609.27625p
+<chapter/chapter6/cost_cvt-eps-converted-to.pdf, id=1387, 851.18pt x 609.27625p
 t>
 File: chapter/chapter6/cost_cvt-eps-converted-to.pdf Graphic file (type pdf)
  <use chapter/chapter6/cost_cvt-eps-converted-to.pdf>
 Package pdftex.def Info: chapter/chapter6/cost_cvt-eps-converted-to.pdf used on
  input line 235.
 (pdftex.def)             Requested size: 230.18251pt x 164.7578pt.
- [86 <./chapter/chapter6/costone_cvt-eps-converted-to.pdf> <./chapter/chapter6/
-cost_cvt-eps-converted-to.pdf>] <chapter/chapter6/bedccor2.pdf, id=1448, 694.29
+ [85 <./chapter/chapter6/costone_cvt-eps-converted-to.pdf> <./chapter/chapter6/
+cost_cvt-eps-converted-to.pdf>] <chapter/chapter6/bedccor2.pdf, id=1446, 694.29
 388pt x 588.20503pt>
 File: chapter/chapter6/bedccor2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/bedccor2.pdf>
 Package pdftex.def Info: chapter/chapter6/bedccor2.pdf used on input line 261.
 (pdftex.def)             Requested size: 258.36667pt x 218.88898pt.
- [87] [88 <./chapter/chapter6/bedccor2.pdf>]
+ [86] [87 <./chapter/chapter6/bedccor2.pdf>]
 Package epstopdf Info: Source file: <chapter/chapter6/rcorcor.eps>
 (epstopdf)                    date: 2015-10-31 15:43:06
 (epstopdf)                    size: 943341 bytes
@@ -1150,43 +1147,43 @@ ps-converted-to.pdf chapter/chapter6/rcorcor.eps>
 (epstopdf)             \includegraphics on input line 283.
 Package epstopdf Info: Output file is already uptodate.
 
-<chapter/chapter6/rcorcor-eps-converted-to.pdf, id=1506, 628.3475pt x 553.06625
+<chapter/chapter6/rcorcor-eps-converted-to.pdf, id=1503, 628.3475pt x 553.06625
 pt>
 File: chapter/chapter6/rcorcor-eps-converted-to.pdf Graphic file (type pdf)
  <use chapter/chapter6/rcorcor-eps-converted-to.pdf>
 Package pdftex.def Info: chapter/chapter6/rcorcor-eps-converted-to.pdf used on 
 input line 283.
 (pdftex.def)             Requested size: 234.87749pt x 206.73264pt.
- [89 <./chapter/chapter6/rcorcor-eps-converted-to.pdf>] [90] [91] [92] [93]
-<chapter/chapter6/A4dvar2.pdf, id=1543, 822.31845pt x 602.44164pt>
+ [88 <./chapter/chapter6/rcorcor-eps-converted-to.pdf>] [89] [90] [91] [92]
+<chapter/chapter6/A4dvar2.pdf, id=1541, 822.31845pt x 602.44164pt>
 File: chapter/chapter6/A4dvar2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/A4dvar2.pdf>
 Package pdftex.def Info: chapter/chapter6/A4dvar2.pdf used on input line 343.
 (pdftex.def)             Requested size: 230.18251pt x 168.62735pt.
 
-<chapter/chapter6/B4dvar2.pdf, id=1544, 822.31845pt x 602.44164pt>
+<chapter/chapter6/B4dvar2.pdf, id=1542, 822.31845pt x 602.44164pt>
 File: chapter/chapter6/B4dvar2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/B4dvar2.pdf>
 Package pdftex.def Info: chapter/chapter6/B4dvar2.pdf used on input line 348.
 (pdftex.def)             Requested size: 230.18251pt x 168.62735pt.
 
-<chapter/chapter6/C4dvar2.pdf, id=1545, 822.31845pt x 602.44164pt>
+<chapter/chapter6/C4dvar2.pdf, id=1543, 822.31845pt x 602.44164pt>
 File: chapter/chapter6/C4dvar2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/C4dvar2.pdf>
 Package pdftex.def Info: chapter/chapter6/C4dvar2.pdf used on input line 353.
 (pdftex.def)             Requested size: 230.18251pt x 168.62735pt.
 
-<chapter/chapter6/D4dvar2.pdf, id=1546, 822.31845pt x 602.44164pt>
+<chapter/chapter6/D4dvar2.pdf, id=1544, 822.31845pt x 602.44164pt>
 File: chapter/chapter6/D4dvar2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/D4dvar2.pdf>
 Package pdftex.def Info: chapter/chapter6/D4dvar2.pdf used on input line 358.
 (pdftex.def)             Requested size: 230.18251pt x 168.62735pt.
 
-<chapter/chapter6/Abroke4dvar2.pdf, id=1547, 777.51103pt x 592.81258pt>
+<chapter/chapter6/Abroke4dvar2.pdf, id=1545, 777.51103pt x 592.81258pt>
 File: chapter/chapter6/Abroke4dvar2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/Abroke4dvar2.pdf>
@@ -1194,7 +1191,7 @@ Package pdftex.def Info: chapter/chapter6/Abroke4dvar2.pdf used on input line 3
 68.
 (pdftex.def)             Requested size: 230.18251pt x 175.50233pt.
 
-<chapter/chapter6/Bbroke4dvar2.pdf, id=1548, 777.51103pt x 592.81258pt>
+<chapter/chapter6/Bbroke4dvar2.pdf, id=1546, 777.51103pt x 592.81258pt>
 File: chapter/chapter6/Bbroke4dvar2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/Bbroke4dvar2.pdf>
@@ -1202,7 +1199,7 @@ Package pdftex.def Info: chapter/chapter6/Bbroke4dvar2.pdf used on input line 3
 73.
 (pdftex.def)             Requested size: 230.18251pt x 175.50233pt.
 
-<chapter/chapter6/Cbroke4dvar2.pdf, id=1549, 777.51103pt x 592.81258pt>
+<chapter/chapter6/Cbroke4dvar2.pdf, id=1547, 777.51103pt x 592.81258pt>
 File: chapter/chapter6/Cbroke4dvar2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/Cbroke4dvar2.pdf>
@@ -1210,7 +1207,7 @@ Package pdftex.def Info: chapter/chapter6/Cbroke4dvar2.pdf used on input line 3
 78.
 (pdftex.def)             Requested size: 230.18251pt x 175.50233pt.
 
-<chapter/chapter6/Dbroke4dvar2.pdf, id=1550, 777.51103pt x 592.81258pt>
+<chapter/chapter6/Dbroke4dvar2.pdf, id=1548, 777.51103pt x 592.81258pt>
 File: chapter/chapter6/Dbroke4dvar2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/Dbroke4dvar2.pdf>
@@ -1218,7 +1215,7 @@ Package pdftex.def Info: chapter/chapter6/Dbroke4dvar2.pdf used on input line 3
 83.
 (pdftex.def)             Requested size: 230.18251pt x 175.50233pt.
 
-<chapter/chapter6/Amoddat_resid.pdf, id=1551, 822.31845pt x 602.72394pt>
+<chapter/chapter6/Amoddat_resid.pdf, id=1549, 822.31845pt x 602.72394pt>
 File: chapter/chapter6/Amoddat_resid.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/Amoddat_resid.pdf>
@@ -1226,7 +1223,7 @@ Package pdftex.def Info: chapter/chapter6/Amoddat_resid.pdf used on input line
 393.
 (pdftex.def)             Requested size: 230.18251pt x 168.70636pt.
 
-<chapter/chapter6/Bmoddat_resid.pdf, id=1552, 822.31845pt x 602.72394pt>
+<chapter/chapter6/Bmoddat_resid.pdf, id=1550, 822.31845pt x 602.72394pt>
 File: chapter/chapter6/Bmoddat_resid.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/Bmoddat_resid.pdf>
@@ -1234,7 +1231,7 @@ Package pdftex.def Info: chapter/chapter6/Bmoddat_resid.pdf used on input line
 398.
 (pdftex.def)             Requested size: 230.18251pt x 168.70636pt.
 
-<chapter/chapter6/Cmoddat_resid.pdf, id=1553, 822.31845pt x 602.72394pt>
+<chapter/chapter6/Cmoddat_resid.pdf, id=1551, 822.31845pt x 602.72394pt>
 File: chapter/chapter6/Cmoddat_resid.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/Cmoddat_resid.pdf>
@@ -1242,7 +1239,7 @@ Package pdftex.def Info: chapter/chapter6/Cmoddat_resid.pdf used on input line
 403.
 (pdftex.def)             Requested size: 230.18251pt x 168.70636pt.
 
-<chapter/chapter6/Dmoddat_resid.pdf, id=1554, 822.31845pt x 602.72394pt>
+<chapter/chapter6/Dmoddat_resid.pdf, id=1552, 822.31845pt x 602.72394pt>
 File: chapter/chapter6/Dmoddat_resid.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/Dmoddat_resid.pdf>
@@ -1250,48 +1247,48 @@ Package pdftex.def Info: chapter/chapter6/Dmoddat_resid.pdf used on input line
 408.
 (pdftex.def)             Requested size: 230.18251pt x 168.70636pt.
 
-<chapter/chapter6/xbfscat2.pdf, id=1555, 677.09836pt x 678.0629pt>
+<chapter/chapter6/xbfscat2.pdf, id=1553, 677.09836pt x 678.0629pt>
 File: chapter/chapter6/xbfscat2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/xbfscat2.pdf>
 Package pdftex.def Info: chapter/chapter6/xbfscat2.pdf used on input line 418.
 (pdftex.def)             Requested size: 187.89912pt x 188.1595pt.
 
-<chapter/chapter6/Afscat2.pdf, id=1556, 677.09836pt x 678.0629pt>
+<chapter/chapter6/Afscat2.pdf, id=1554, 677.09836pt x 678.0629pt>
 File: chapter/chapter6/Afscat2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/Afscat2.pdf>
 Package pdftex.def Info: chapter/chapter6/Afscat2.pdf used on input line 423.
 (pdftex.def)             Requested size: 187.89912pt x 188.1595pt.
 
-<chapter/chapter6/Bfscat2.pdf, id=1557, 677.09836pt x 678.0629pt>
+<chapter/chapter6/Bfscat2.pdf, id=1555, 677.09836pt x 678.0629pt>
 File: chapter/chapter6/Bfscat2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/Bfscat2.pdf>
 Package pdftex.def Info: chapter/chapter6/Bfscat2.pdf used on input line 428.
 (pdftex.def)             Requested size: 187.89912pt x 188.1595pt.
 
-<chapter/chapter6/Cfscat2.pdf, id=1558, 677.09836pt x 678.0629pt>
+<chapter/chapter6/Cfscat2.pdf, id=1556, 677.09836pt x 678.0629pt>
 File: chapter/chapter6/Cfscat2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/Cfscat2.pdf>
 Package pdftex.def Info: chapter/chapter6/Cfscat2.pdf used on input line 433.
 (pdftex.def)             Requested size: 187.89912pt x 188.1595pt.
 
-<chapter/chapter6/Dfscat2.pdf, id=1559, 677.09836pt x 678.0629pt>
+<chapter/chapter6/Dfscat2.pdf, id=1557, 677.09836pt x 678.0629pt>
 File: chapter/chapter6/Dfscat2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/Dfscat2.pdf>
 Package pdftex.def Info: chapter/chapter6/Dfscat2.pdf used on input line 438.
 (pdftex.def)             Requested size: 187.89912pt x 188.1595pt.
 
-<chapter/chapter6/inccvt2.pdf, id=1560, 946.29156pt x 414.63345pt>
+<chapter/chapter6/inccvt2.pdf, id=1558, 946.29156pt x 414.63345pt>
 File: chapter/chapter6/inccvt2.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/inccvt2.pdf>
 Package pdftex.def Info: chapter/chapter6/inccvt2.pdf used on input line 447.
 (pdftex.def)             Requested size: 375.80542pt x 164.661pt.
- [94] [95 <./chapter/chapter6/A4dvar2.pdf> <./chapter/chapter6/B4dvar2.pdf
+ [93] [94 <./chapter/chapter6/A4dvar2.pdf> <./chapter/chapter6/B4dvar2.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter6/B4dvar2.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
@@ -1303,7 +1300,7 @@ pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter6/C4dvar2.pdf): PDF
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter6/D4dvar2.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
->] [96 <./chapter/chapter6/Abroke4dvar2.pdf> <./chapter/chapter6/Bbroke4dvar2.p
+>] [95 <./chapter/chapter6/Abroke4dvar2.pdf> <./chapter/chapter6/Bbroke4dvar2.p
 df
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter6/Bbroke4dvar2.pdf)
@@ -1316,7 +1313,7 @@ pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter6/Cbroke4dvar2.pdf)
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter6/Dbroke4dvar2.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
->] [97 <./chapter/chapter6/Amoddat_resid.pdf> <./chapter/chapter6/Bmoddat_resid
+>] [96 <./chapter/chapter6/Amoddat_resid.pdf> <./chapter/chapter6/Bmoddat_resid
 .pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter6/Bmoddat_resid.pdf
@@ -1329,7 +1326,7 @@ pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter6/Cmoddat_resid.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter6/Dmoddat_resid.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
->] [98 <./chapter/chapter6/xbfscat2.pdf> <./chapter/chapter6/Afscat2.pdf
+>] [97 <./chapter/chapter6/xbfscat2.pdf> <./chapter/chapter6/Afscat2.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter6/Afscat2.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
@@ -1345,21 +1342,21 @@ pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter6/Cfscat2.pdf): PDF
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter6/Dfscat2.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
->] <chapter/chapter6/td.pdf, id=2322, 754.82pt x 636.3775pt>
+>] <chapter/chapter6/td.pdf, id=2320, 754.82pt x 636.3775pt>
 File: chapter/chapter6/td.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/td.pdf>
 Package pdftex.def Info: chapter/chapter6/td.pdf used on input line 459.
 (pdftex.def)             Requested size: 230.18251pt x 194.06087pt.
 
-<chapter/chapter6/tdf.pdf, id=2323, 754.82pt x 636.3775pt>
+<chapter/chapter6/tdf.pdf, id=2321, 754.82pt x 636.3775pt>
 File: chapter/chapter6/tdf.pdf Graphic file (type pdf)
 
 <use chapter/chapter6/tdf.pdf>
 Package pdftex.def Info: chapter/chapter6/tdf.pdf used on input line 464.
 (pdftex.def)             Requested size: 230.18251pt x 194.06087pt.
- [99 <./chapter/chapter6/inccvt2.pdf>] [100 <./chapter/chapter6/td.pdf> <./chap
-ter/chapter6/tdf.pdf>] [101] [102] [103] [104]
+ [98 <./chapter/chapter6/inccvt2.pdf>] [99 <./chapter/chapter6/td.pdf> <./chapt
+er/chapter6/tdf.pdf>] [100] [101] [102] [103]
 Underfull \hbox (badness 10000) in paragraph at lines 533--533
 []|\OT1/ppl/m/n/8 Prior es-ti-
  []
@@ -1400,37 +1397,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 556--556
 []|\OT1/ppl/m/n/8 Soil and or-ganic car-bon pool
  []
 
-) [105] [106]
+) [104] [105]
 Chapter 6.
-(./chapter/chapter7/chapter7.tex [107
+(./chapter/chapter7/chapter7.tex [106
 
-] [108] [109] [110] [111]
-<chapter/chapter7/thinned.pdf, id=2442, 845.1575pt x 597.23125pt>
+] [107] [108] [109] [110]
+<chapter/chapter7/thinned.pdf, id=2440, 845.1575pt x 597.23125pt>
 File: chapter/chapter7/thinned.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/thinned.pdf>
 Package pdftex.def Info: chapter/chapter7/thinned.pdf used on input line 51.
 (pdftex.def)             Requested size: 375.80542pt x 265.57114pt.
- [112 <./chapter/chapter7/thinned.pdf>]
+ [111 <./chapter/chapter7/thinned.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 65--65
 []|\OT1/ppl/m/n/10.95 Tree den-
  []
 
-[113]
+[112]
 Underfull \hbox (badness 2293) in paragraph at lines 92--93
 []\OT1/ppl/m/n/10.95 The er-rors in ob-ser-va-tions of daily NEE were as-sumed 
 to be con-stant and set at
  []
 
-[114] <chapter/chapter7/dalec2diag.pdf, id=2459, 758.835pt x 453.695pt>
+[113] <chapter/chapter7/dalec2diag.pdf, id=2457, 758.835pt x 453.695pt>
 File: chapter/chapter7/dalec2diag.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/dalec2diag.pdf>
 Package pdftex.def Info: chapter/chapter7/dalec2diag.pdf used on input line 101
 .
 (pdftex.def)             Requested size: 281.85585pt x 168.51526pt.
- [115 <./chapter/chapter7/dalec2diag.pdf>] [116] [117] [118]
-<chapter/chapter7/obs_compa.pdf, id=2476, 925.05597pt x 635.97598pt>
+ [114 <./chapter/chapter7/dalec2diag.pdf>] [115] [116] [117]
+<chapter/chapter7/obs_compa.pdf, id=2473, 925.05597pt x 635.97598pt>
 File: chapter/chapter7/obs_compa.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/obs_compa.pdf>
@@ -1438,15 +1435,15 @@ Package pdftex.def Info: chapter/chapter7/obs_compa.pdf used on input line 173.
 
 (pdftex.def)             Requested size: 469.75499pt x 322.95575pt.
 
-<chapter/chapter7/obs_compc.pdf, id=2477, 925.05597pt x 635.97598pt>
+<chapter/chapter7/obs_compc.pdf, id=2474, 925.05597pt x 635.97598pt>
 File: chapter/chapter7/obs_compc.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/obs_compc.pdf>
 Package pdftex.def Info: chapter/chapter7/obs_compc.pdf used on input line 180.
 
 (pdftex.def)             Requested size: 469.75499pt x 322.95575pt.
- [119] [120 <./chapter/chapter7/obs_compa.pdf>] <chapter/chapter7/flux_part.pdf
-, id=2576, 909.99403pt x 624.30199pt>
+ [118] [119 <./chapter/chapter7/obs_compa.pdf>] <chapter/chapter7/flux_part.pdf
+, id=2574, 909.99403pt x 624.30199pt>
 File: chapter/chapter7/flux_part.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/flux_part.pdf>
@@ -1454,7 +1451,7 @@ Package pdftex.def Info: chapter/chapter7/flux_part.pdf used on input line 231.
 
 (pdftex.def)             Requested size: 469.75499pt x 322.27643pt.
 
-<chapter/chapter7/resp_partc.pdf, id=2577, 910.01143pt x 623.0375pt>
+<chapter/chapter7/resp_partc.pdf, id=2575, 910.01143pt x 623.0375pt>
 File: chapter/chapter7/resp_partc.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/resp_partc.pdf>
@@ -1462,21 +1459,21 @@ Package pdftex.def Info: chapter/chapter7/resp_partc.pdf used on input line 238
 .
 (pdftex.def)             Requested size: 469.75499pt x 321.61418pt.
 
-<chapter/chapter7/xa_incc.pdf, id=2578, 940.12791pt x 408.61095pt>
+<chapter/chapter7/xa_incc.pdf, id=2576, 940.12791pt x 408.61095pt>
 File: chapter/chapter7/xa_incc.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/xa_incc.pdf>
 Package pdftex.def Info: chapter/chapter7/xa_incc.pdf used on input line 246.
 (pdftex.def)             Requested size: 375.80542pt x 163.33548pt.
- [121 <./chapter/chapter7/obs_compc.pdf>]
-[122] [123 <./chapter/chapter7/flux_part.pdf>] [124 <./chapter/chapter7/resp_pa
+ [120 <./chapter/chapter7/obs_compc.pdf>]
+[121] [122 <./chapter/chapter7/flux_part.pdf>] [123 <./chapter/chapter7/resp_pa
 rtc.pdf> <./chapter/chapter7/xa_incc.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter7/xa_incc.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
->] [125
+>] [124
 
-] [126] [127]
+] [125] [126]
 Underfull \hbox (badness 10000) in paragraph at lines 315--315
 []|\OT1/ppl/m/n/8 Prior es-ti-
  []
@@ -1517,7 +1514,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--338
 []|\OT1/ppl/m/n/8 Soil and or-ganic car-bon pool
  []
 
-[128] <chapter/chapter7/flux_compa.pdf, id=2883, 925.05597pt x 635.97598pt>
+[127] <chapter/chapter7/flux_compa.pdf, id=2881, 925.05597pt x 635.97598pt>
 File: chapter/chapter7/flux_compa.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/flux_compa.pdf>
@@ -1525,7 +1522,7 @@ Package pdftex.def Info: chapter/chapter7/flux_compa.pdf used on input line 361
 .
 (pdftex.def)             Requested size: 360.0pt x 247.5056pt.
 
-<chapter/chapter7/cum_fluxa.pdf, id=2884, 821.06377pt x 554.23326pt>
+<chapter/chapter7/cum_fluxa.pdf, id=2882, 821.06377pt x 554.23326pt>
 File: chapter/chapter7/cum_fluxa.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/cum_fluxa.pdf>
@@ -1533,7 +1530,7 @@ Package pdftex.def Info: chapter/chapter7/cum_fluxa.pdf used on input line 367.
 
 (pdftex.def)             Requested size: 360.0pt x 243.00923pt.
 
-<chapter/chapter7/obs_compb.pdf, id=2885, 925.05597pt x 635.97598pt>
+<chapter/chapter7/obs_compb.pdf, id=2883, 925.05597pt x 635.97598pt>
 File: chapter/chapter7/obs_compb.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/obs_compb.pdf>
@@ -1541,7 +1538,7 @@ Package pdftex.def Info: chapter/chapter7/obs_compb.pdf used on input line 374.
 
 (pdftex.def)             Requested size: 360.0pt x 247.5056pt.
 
-<chapter/chapter7/flux_compb.pdf, id=2886, 925.05597pt x 635.97598pt>
+<chapter/chapter7/flux_compb.pdf, id=2884, 925.05597pt x 635.97598pt>
 File: chapter/chapter7/flux_compb.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/flux_compb.pdf>
@@ -1549,7 +1546,7 @@ Package pdftex.def Info: chapter/chapter7/flux_compb.pdf used on input line 381
 .
 (pdftex.def)             Requested size: 360.0pt x 247.5056pt.
 
-<chapter/chapter7/cum_fluxb.pdf, id=2887, 821.06377pt x 554.23326pt>
+<chapter/chapter7/cum_fluxb.pdf, id=2885, 821.06377pt x 554.23326pt>
 File: chapter/chapter7/cum_fluxb.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/cum_fluxb.pdf>
@@ -1557,7 +1554,7 @@ Package pdftex.def Info: chapter/chapter7/cum_fluxb.pdf used on input line 387.
 
 (pdftex.def)             Requested size: 360.0pt x 243.00923pt.
 
-<chapter/chapter7/flux_compc.pdf, id=2888, 925.05597pt x 635.97598pt>
+<chapter/chapter7/flux_compc.pdf, id=2886, 925.05597pt x 635.97598pt>
 File: chapter/chapter7/flux_compc.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/flux_compc.pdf>
@@ -1565,7 +1562,7 @@ Package pdftex.def Info: chapter/chapter7/flux_compc.pdf used on input line 393
 .
 (pdftex.def)             Requested size: 360.0pt x 247.5056pt.
 
-<chapter/chapter7/cum_fluxc.pdf, id=2889, 821.06377pt x 554.23326pt>
+<chapter/chapter7/cum_fluxc.pdf, id=2887, 821.06377pt x 554.23326pt>
 File: chapter/chapter7/cum_fluxc.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/cum_fluxc.pdf>
@@ -1573,7 +1570,7 @@ Package pdftex.def Info: chapter/chapter7/cum_fluxc.pdf used on input line 399.
 
 (pdftex.def)             Requested size: 360.0pt x 243.00923pt.
 
-<chapter/chapter7/obs_compd.pdf, id=2890, 925.05597pt x 635.97598pt>
+<chapter/chapter7/obs_compd.pdf, id=2888, 925.05597pt x 635.97598pt>
 File: chapter/chapter7/obs_compd.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/obs_compd.pdf>
@@ -1581,7 +1578,7 @@ Package pdftex.def Info: chapter/chapter7/obs_compd.pdf used on input line 406.
 
 (pdftex.def)             Requested size: 360.0pt x 247.5056pt.
 
-<chapter/chapter7/flux_compd.pdf, id=2891, 925.05597pt x 635.97598pt>
+<chapter/chapter7/flux_compd.pdf, id=2889, 925.05597pt x 635.97598pt>
 File: chapter/chapter7/flux_compd.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/flux_compd.pdf>
@@ -1589,7 +1586,7 @@ Package pdftex.def Info: chapter/chapter7/flux_compd.pdf used on input line 413
 .
 (pdftex.def)             Requested size: 360.0pt x 247.5056pt.
 
-<chapter/chapter7/cum_fluxd.pdf, id=2892, 821.06377pt x 554.23326pt>
+<chapter/chapter7/cum_fluxd.pdf, id=2890, 821.06377pt x 554.23326pt>
 File: chapter/chapter7/cum_fluxd.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/cum_fluxd.pdf>
@@ -1597,14 +1594,14 @@ Package pdftex.def Info: chapter/chapter7/cum_fluxd.pdf used on input line 419.
 
 (pdftex.def)             Requested size: 360.0pt x 243.00923pt.
 
-<chapter/chapter7/prior.pdf, id=2893, 797.44427pt x 545.2032pt>
+<chapter/chapter7/prior.pdf, id=2891, 797.44427pt x 545.2032pt>
 File: chapter/chapter7/prior.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/prior.pdf>
 Package pdftex.def Info: chapter/chapter7/prior.pdf used on input line 426.
 (pdftex.def)             Requested size: 360.0pt x 246.12117pt.
 
-<chapter/chapter7/pheno_lai.pdf, id=2894, 912.44435pt x 621.92555pt>
+<chapter/chapter7/pheno_lai.pdf, id=2892, 912.44435pt x 621.92555pt>
 File: chapter/chapter7/pheno_lai.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/pheno_lai.pdf>
@@ -1612,7 +1609,7 @@ Package pdftex.def Info: chapter/chapter7/pheno_lai.pdf used on input line 433.
 
 (pdftex.def)             Requested size: 360.0pt x 245.37794pt.
 
-<chapter/chapter7/rmat_eastc.pdf, id=2895, 631.56264pt x 553.25758pt>
+<chapter/chapter7/rmat_eastc.pdf, id=2893, 631.56264pt x 553.25758pt>
 File: chapter/chapter7/rmat_eastc.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/rmat_eastc.pdf>
@@ -1620,67 +1617,67 @@ Package pdftex.def Info: chapter/chapter7/rmat_eastc.pdf used on input line 439
 .
 (pdftex.def)             Requested size: 360.0pt x 315.37698pt.
 
-<chapter/chapter7/rmat_westc.pdf, id=2896, 631.56264pt x 553.25758pt>
+<chapter/chapter7/rmat_westc.pdf, id=2894, 631.56264pt x 553.25758pt>
 File: chapter/chapter7/rmat_westc.pdf Graphic file (type pdf)
 
 <use chapter/chapter7/rmat_westc.pdf>
 Package pdftex.def Info: chapter/chapter7/rmat_westc.pdf used on input line 445
 .
 (pdftex.def)             Requested size: 360.0pt x 315.37698pt.
-) [129] [130 <./chapter/chapter7/flux_compa.pdf> <./chapter/chapter7/cum_fluxa.
+) [128] [129 <./chapter/chapter7/flux_compa.pdf> <./chapter/chapter7/cum_fluxa.
 pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter7/cum_fluxa.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
->] [131 <./chapter/chapter7/obs_compb.pdf> <./chapter/chapter7/flux_compb.pdf
+>] [130 <./chapter/chapter7/obs_compb.pdf> <./chapter/chapter7/flux_compb.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter7/flux_compb.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
->] [132 <./chapter/chapter7/cum_fluxb.pdf> <./chapter/chapter7/flux_compc.pdf
+>] [131 <./chapter/chapter7/cum_fluxb.pdf> <./chapter/chapter7/flux_compc.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter7/flux_compc.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
->] [133 <./chapter/chapter7/cum_fluxc.pdf> <./chapter/chapter7/obs_compd.pdf
+>] [132 <./chapter/chapter7/cum_fluxc.pdf> <./chapter/chapter7/obs_compd.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter7/obs_compd.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
->] [134 <./chapter/chapter7/flux_compd.pdf> <./chapter/chapter7/cum_fluxd.pdf
+>] [133 <./chapter/chapter7/flux_compd.pdf> <./chapter/chapter7/cum_fluxd.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter7/cum_fluxd.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
->] [135 <./chapter/chapter7/prior.pdf> <./chapter/chapter7/pheno_lai.pdf
+>] [134 <./chapter/chapter7/prior.pdf> <./chapter/chapter7/pheno_lai.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./chapter/chapter7/pheno_lai.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
->] [136 <./chapter/chapter7/rmat_eastc.pdf>] [137 <./chapter/chapter7/rmat_west
+>] [135 <./chapter/chapter7/rmat_eastc.pdf>] [136 <./chapter/chapter7/rmat_west
 c.pdf>]
 Chapter 7.
-(./chapter/conclusion/conclusion.tex [138
+(./chapter/conclusion/conclusion.tex [137
 
-] [139] [140] [141]) [142]
+] [138] [139] [140]) [141]
 (./thesis.bbl
 LaTeX Font Info:    Font shape `OT1/ppl/bx/sc' in size <24.88> not available
 (Font)              Font shape `OT1/ppl/b/sc' tried instead on input line 1.
- [143
+ [142
 
 ]
 Missing character: There is no ó in font pplr7t!
- [144] [145] [146]
+ [143] [144] [145]
 Missing character: There is no Ã in font pplr7t!
 Missing character: There is no ¶ in font pplr7t!
 Missing character: There is no Ã in font pplr7t!
 Missing character: There is no ¶ in font pplr7t!
 Missing character: There is no Ã in font pplr7t!
 Missing character: There is no ¤ in font pplr7t!
- [147]
+ [146]
 Underfull \hbox (badness 1442) in paragraph at lines 361--366
 \OT1/ppl/m/n/10.95 Re-view of meth-ods for in situ leaf area in-dex de-ter-mi-n
 a-tion Part I. The-o-ries, sen-sors
  []
 
-[148] [149]
+[147] [148]
 Missing character: There is no ® in font pplri7t!
- [150] [151] [152]
+ [149] [150] [151]
 Missing character: There is no é in font pplr7t!
 Missing character: There is no â in font pplb7t!
 Missing character: There is no € in font pplb7t!
@@ -1691,7 +1688,7 @@ Underfull \hbox (badness 1163) in paragraph at lines 702--708
 , J. I. Mori-son, N. K. Nichols,
  []
 
-[153] [154]
+[152] [153]
 Underfull \hbox (badness 7667) in paragraph at lines 824--829
 []\OT1/ppl/m/n/10.95 Saunders, M., B. To-bin, K. Black, M. Gio-ria, M. Nieuwen-
 huis, and B. Os-borne,
@@ -1710,11 +1707,11 @@ tural and For-est Me-te-o-rol-ogy\OT1/ppl/m/n/10.95 , \OT1/ppl/b/n/10.95 157\OT
 1/ppl/m/n/10.95 , 1 -- 10, doi:
  []
 
-[155] [156]
+[154] [155]
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no   in font pplr7t!
- [157] [158]) [159] (./thesis.aux (./preface/title.aux)
+ [156] [157]) [158] (./thesis.aux (./preface/title.aux)
 (./preface/declaration.aux) (./preface/publications.aux)
 (./preface/abstract.aux) (./preface/acknowledgements.aux))
 
@@ -1724,7 +1721,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  7076 strings out of 493117
  120636 string characters out of 6135433
- 228693 words of memory out of 5000000
+ 228687 words of memory out of 5000000
  10156 multiletter control sequences out of 15000+600000
  70086 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1747,10 +1744,10 @@ l/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loca
 l/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/
 2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (168 pages, 30173267 bytes).
+Output written on thesis.pdf (167 pages, 30173764 bytes).
 PDF statistics:
- 3914 PDF objects out of 4296 (max. 8388607)
- 1263 compressed objects within 13 object streams
+ 3912 PDF objects out of 4296 (max. 8388607)
+ 1262 compressed objects within 13 object streams
  0 named destinations out of 1000 (max. 500000)
  451 words of extra memory for PDF output out of 10000 (max. 10000000)
 
