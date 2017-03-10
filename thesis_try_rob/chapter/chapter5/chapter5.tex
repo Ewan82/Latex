@@ -1,44 +1,41 @@
 %Chapter 5
 
 \section{Introduction}
-In data assimilation it is important to understand if the observations available to us provide us with enough information to find a meaningful description of our studied system. Measurements of forest carbon balance are now routinely made in forests across the world using micrometeorological techniques, with many other relevant observations such as leaf area index and standing biomass also available \citep{baldocchi2008turner}. Many efforts have been made to combine this data with models of forest carbon balance using data assimilation techniques in order to improve modelled estimates \citep{zobitz2011primer, fox2009reflex, richardson2010estimating, Quaife2008, Zobitz2014, Niu2014}. Currently, however, the relative levels of information from different data types is not well understood. 
+In data assimilation it is important to understand if the observations available to us provide us with enough information to find a meaningful description of our studied system. Measurements of forest carbon balance are now routinely made in forests across the world using micrometeorological techniques, with many other relevant observations such as leaf area index and standing biomass also available \citep{baldocchi2008turner}. Many efforts have been made to combine this data with models of forest carbon balance using data assimilation techniques in order to improve modelled estimates \citep{zobitz2011primer, fox2009reflex, richardson2010estimating, Quaife2008, Zobitz2014, Niu2014}. Currently, however, the relative levels of information from different data types are not well understood. 
 
-In numerical weather prediction many measures of observation information content have been defined \citep{Cardinali2004, rodgers2000inverse, fisher2003estimation}. These measures can be used to identify how information content might vary both temporally and spatially, when observations are made at different times or in different locations. It is not necessary to have made a physical observation in order to estimate its information content. It is enough to have an accurate estimate to the observation error at the specified time and location. It is therefore possible to use these measures to define target observations or design new observing systems \citep{palmer1998singular, eyre1990information}. Often we are required to know the derivative of our model in order to implement these measures. This can prove difficult to implement. However, techniques such as automatic-differentiation \citep{renaud1997automatic} can reduce the time taken to find the derivative of a model.  
+In numerical weather prediction many measures of observation information content have been defined (e.g. \citet{Cardinali2004, rodgers2000inverse, fisher2003estimation}). These measures can be used to identify how information content might vary both temporally and spatially, when observations are made at different times or in different locations. It is not necessary to have made a physical observation in order to estimate its information content. It is enough to have an accurate estimate of the observation operator and observation error at the specified time and location. It is therefore possible to use these measures to define target observations or design new observing systems \citep{palmer1998singular, eyre1990information}. Often we are required to know the derivative of our model in order to implement these measures. This can prove difficult to implement. However, techniques such as automatic-differentiation \citep{renaud1997automatic} can reduce the time taken to find the derivative of a model.  
 
-In this chapter we aim to analyse the information content in the observations used for assimilation with the Data Assimilation Linker Ecosystem Carbon (DALEC1 and DALEC2) models of ecosystem carbon balance. For DALEC1 we consider the state estimation case, as the state vector for DALEC1 is small (5 state members) this allows us to calculate the adjoint of the model by hand and consider the analytical representations of information content. For DALEC2 we consider the joint state and parameter estimation case, where the augmented state contains 23 members. The adjoint is no longer feasible to calculate by hand and automatic differentiation techniques are employed. For our experiments, we begin by considering the observability of our system given a set of observations. Observability is a mathematical concept from control theory. Applied to data assimilation a system is defined as observable if, for a given set of observations, we can uniquely define the initial state of our model. This allows us to determine if, from current observations used in carbon balance data assimilation, we have enough information to find a unique model state. In practice, we include a background term in our assimilation (see chapter~\ref{chap:litrev}, section~\ref{chap3:sec:intro_da}) to ensure we can always find a locally unique solution. However, it is informative to show that observations alone provide us with enough information to find a unique solution.
+In this chapter we aim to analyse the information content in the observations used for assimilation with the Data Assimilation Linked Ecosystem Carbon (DALEC1 and DALEC2) models of ecosystem carbon balance. For DALEC1 we consider the state estimation case. As the state vector for DALEC1 is small (5 elements) this allows us to calculate the adjoint of the model by hand and consider analytical representations of information content. For DALEC2 we consider the joint state and parameter estimation case, where the augmented state contains 23 members. The adjoint is no longer feasible to calculate by hand and automatic differentiation techniques are employed. 
+
+For our experiments, we begin by considering the observability of our system given a set of observations. Observability is a mathematical concept from control theory. In the context of data assimilation a system is defined as observable if, for a given set of observations, we can uniquely define the initial state of our model. This allows us to determine if, from current observations used in carbon balance data assimilation, we have enough information to find a unique model state. In practice, we include a background term in our assimilation (see chapter~\ref{chap:litrev}, section~\ref{chap3:sec:intro_da}) to ensure we can always find a locally unique solution. However, it is informative to understand if observations alone provide us with enough information to find a unique solution.
 
 We consider different information content measures applied to our system in order to show how the information content varies for the different observation types available to us for DALEC1. We then extend these results to the DALEC2 model and investigate how the same set of observations can have a different level of information depending on the type of ecosystem being observed. Using these measures also allows us to consider the effect on the information content in the observations of including error correlations in our data assimilation algorithm (further explored in chapter~\ref{chap:error_corrs}).
 
-\section{Background material}
+\section{Observability}
 
-\subsection{Metolius forest site} \label{chap5:sec:oregon}
-In this chapter we use meteorological driving data taken from the Metolious forest site, a temperate coniferous forest in Oregon, Northwestern US. The site has been studied extensively \citep{law2001carbon}, and has also been the subject of data assimilation studies \citep{williams2005improved, Quaife2008}. The site has a semi-arid climate with a dominant canopy of ponderosa pine (\textit{Pinus ponderosa}) and an understory of bitterbush (\textit{Purshia tridentata}) and manzanita (\textit{Arctostaphylos patula}) \citep{law2001estimation}. The forest stand was felled in 1978, having previously been a mature forest. It was then allowed to regrow naturally, with some areas of older growth forest still being left post-felling \citep{williams2005improved}.
-
-\subsection{Observability}
-
-Observability is a mathematical concept from control theory. A system is said to be observable if it is possible to determine the state by measuring only the output. The following definition is taken from \citet{barnett1985introduction}: for the linear time varying system defined as,
+Observability is a mathematical concept from control theory. A system is said to be observable if it is possible to determine the state by measuring only the output. The following definition is taken from \citet{barnett1985introduction}: the linear time varying system defined as,
 \begin{align}
-\dot{\textbf{x}} &= \textbf{A}(t)\textbf{x}(t) +\textbf{B}(t)\textbf{u}(t) \\
-\textbf{y} &= \textbf{C}(t)\textbf{x}(t)
+\textbf{x}_{i+1} &= \textbf{M}_{i}\textbf{x}_{i} \\
+\textbf{y}_{i} &= \textbf{H}_{i}\textbf{x}_{i}
 \end{align}
-where $\textbf{A}$ is $n \times n$, $\textbf{B}$ is $n \times m$ and $\textbf{C}$ is $r \times n$ is \textit{completely observable} if for any $t_0$ and any initial state $\textbf{x}(t_0) = \textbf{x}_0$ there exists a finite time $t_i > t_0$ such that knowledge of $\textbf{u}(t)$ and $\textbf{y}(t)$ for $t_0 \leq t \leq t_i$ suffices to uniquely determine $\textbf{x}_0$. There is no loss of generality in assuming $\textbf{u}(t)$ is identically zero throughout the whole interval; this is the case for data assimilation. So that in data assimilation our system is \textit{completely observable} if knowledge of the observations $\textbf{y}(t)$ allows us to uniquely determine the initial state $\textbf{x}_0$.
+where $\textbf{M}$ is $n \times n$ and $\textbf{H}$ is $m \times n$ is \textit{completely observable} if for any $t_0$ and any initial state $\textbf{x}_0$ there exists a finite time $t_N > t_0$ such that knowledge of $\textbf{y}_{i}$ for $t_0 \leq t_i \leq t_N$ is sufficient to uniquely determine $\textbf{x}_0$. In data assimilation our system is \textit{completely observable} if knowledge of the observations $\textbf{y}_{i}$ allows us to uniquely determine the initial state $\textbf{x}_0$.
 
 \begin{theorem} \label{chap5:thm:observable}
-When $\textbf{A}$, $\textbf{B}$ and $\textbf{C}$ are time-invariant the system is completely observable if and only if the $nr \times n$ observability matrix
+When $\textbf{M}$ and $\textbf{H}$ are time-invariant the system is completely observable if and only if the $nm \times n$ observability matrix
 \begin{equation}
 \mathbf{V}=
 \begin{pmatrix}
-\mathbf{C} \\
-\mathbf{C}\mathbf{A}\\
-\mathbf{C}\mathbf{A}^{2}\\
+\mathbf{H} \\
+\mathbf{H}\mathbf{M}\\
+\mathbf{H}\mathbf{M}^{2}\\
 \vdots \\
-\mathbf{C}\mathbf{A}^{n-1}
+\mathbf{H}\mathbf{M}^{n-1}
 \end{pmatrix}
 \end{equation}
 has rank $n$.
 \end{theorem}
 
-This result can be applied to the data assimilation problem \citep{johnson2005singular}, where for 4D-Var the observability matrix corresponds to
+This result can be applied to the time varying data assimilation problem \citep{johnson2005singular}, where for 4D-Var the observability matrix corresponds to
 \begin{equation}
 \hat{\mathbf{H}}=
 \begin{pmatrix}
@@ -50,53 +47,52 @@ This result can be applied to the data assimilation problem \citep{johnson2005si
 \end{equation}
 as defined in chapter~\ref{chap:litrev}, section~\ref{chap3:sec:4dvar}. In Appendix B of \citet{zou1992incomplete} it is shown that for the linear data assimilation problem it is possible to obtain a unique analysis state over a specific assimilation window with no background term if the rank of $\hat{\textbf{H}}$ is equal to $n$, the size of $\textbf{x}_0$. For the non-linear data assimilation problem the rank of $\hat{\textbf{H}}$ being equal to $n$ ensures a locally unique analysis can be found without including a background term. In practice the cost function for 4D-Var data assimilation typically contains a background term which regularises the problem and means that we always have a unique solution.
 
-\subsection{Information content measures} \label{chap5:sec:IC}%%%%%%%%%%%%%%%%%%%%%% 
+\section{Information content measures} \label{chap5:sec:IC}%%%%%%%%%%%%%%%%%%%%%% 
 
-In data assimilation we combine prior estimates with observations to improve our knowledge of the state of a system. In this process some observations will have a greater impact on our results than others. Many measures exist for understanding observation impact on the assimilation results.
-
-Information content measures have been used to quantify the different levels of information provided by observations in the development of satellite instruments \citep{stewart2008correlated, engelen2004information} and in operational data assimilation schemes \citep{fisher2003estimation, singh2013practical}. In \citet{Fowler2013} it is discussed that in these operational schemes information content measures have been used for
+Information content measures have been used to quantify the different levels of information provided by observations in the development of satellite instruments \citep{stewart2008correlated, engelen2004information} and in operational data assimilation schemes \citep{fisher2003estimation, singh2013practical}. According to \citet{Fowler2013} information content measures have been used for
 \begin{itemize}
 \item Removing observations with a lesser impact in order to improve the efficiency of the assimilation process \citep{rabier2002channel, singh2013practical, rodgers1998information}.
 \item Diagnosing erroneous observations and assumed statistics \citep{desroziers2009posteriori}.
 \item Improving data assimilation results by adding observations which theoretically have a high impact. This can mean defining target observations \citep{palmer1998singular} or even designing new observing systems \citep{wahba1985design, eyre1990information}. 
 \end{itemize}
 
-For the following measures the data assimilation problem is assumed to be Gaussian with a linear function mapping the state to  observation space (\textbf{H}), following the derivation from \citet{kalnay2003atmospheric} we have,
+For the following measures the data assimilation problem is assumed to be Gaussian with a linear function mapping the state to  observation space (\textbf{H}), from section~\ref{chap3:sec:intro_da} we have,
 \begin{equation}
-\textbf{x}_{a} = \textbf{x}_{b} + \textbf{K}(\textbf{y} - \textbf{H}\textbf{x}_{b}), \label{chap5:eqn:analysis}
+\textbf{x}^{a} = \textbf{x}^{b} + \textbf{K}(\textbf{y} - \textbf{H}\textbf{x}^{b}), \label{chap5:eqn:analysis}
 \end{equation}
 where $\textbf{K}$ is the Kalman gain matrix,
 \begin{equation}
-\textbf{K} = (\textbf{H}^{T}\textbf{R}^{-1}\textbf{H} + \textbf{B}^{-1})^{-1}\textbf{H}^{T}\textbf{R}^{-1}.
+\textbf{K} = \textbf{B}\textbf{H}^{T}(\textbf{H}\textbf{B}\textbf{H}^{T}+\textbf{R})^{-1}.
 \end{equation}
 In order to consider observations over a 4D-Var time window we rewrite equation~\eqref{chap5:eqn:analysis} as,
 \begin{equation}
-\textbf{x}_{a} = \textbf{x}_{b} + \hat{\textbf{K}}(\hat{\textbf{y}} - \hat{\textbf{H}}\textbf{x}_{b}),
+\textbf{x}^{a} = \textbf{x}^{b} + \hat{\textbf{K}}(\hat{\textbf{y}} - \hat{\textbf{H}}\textbf{x}^{b}),
 \end{equation}
-using the defined matrices in section~\ref{chap3:sec:4dvar}, with $\hat{\textbf{K}} = (\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}\hat{\textbf{H}} + \textbf{B}^{-1})^{-1}\hat{\textbf{H}}^{T}\hat{\textbf{R}}^{-1}.$ 
+using the defined matrices in section~\ref{chap3:sec:4dvar}, with $\hat{\textbf{K}} = \textbf{B}\hat{\textbf{H}}^{T}(\hat{\textbf{H}}\textbf{B}\hat{\textbf{H}}^{T}+\hat{\textbf{R}})^{-1},
+$ 
 
-Making the assumption of a linear and Gaussian data assimilation problem is clearly a limitation. These measures are therefore limited to a period where the forecast model remains reasonably linear. The implications of assuming Gaussian error statistics are discussed in \citet{Fowler2013}.
+Making the assumption of a linear and Gaussian data assimilation problem is clearly a limitation. These measures are therefore limited to a period where the forecast model remains reasonably linear. The implications of assuming Gaussian error statistics are discussed by \citet{Fowler2013}.
 
 %\citep{fisher2003estimation} **Reference about SIC and DFS being used in operational atmospheric DA.
 
 %\citep{singh2013practical} **Ref about using fischer mat, dfs and SIC for data pruning to produce similar results.
 
-\subsubsection{Sensitivity of analysis to observations} \label{chap5:sec:inf_mat}
+\subsection{Sensitivity of analysis to observations} \label{chap5:sec:inf_mat}
 
 The influence matrix measures the sensitivity of the analysis in observation space to the observations \citep{Cardinali2004} and is defined by,
 \begin{equation}
-\textbf{S} = \frac{\partial \textbf{H}\textbf{x}_{a}}{\partial \textbf{y}}. \label{chap5:eqn:inf_mat}
+\textbf{S} = \frac{\partial \textbf{H}\textbf{x}^{a}}{\partial \textbf{y}}. \label{chap5:eqn:inf_mat}
 \end{equation}
 From equation~\eqref{chap5:eqn:analysis} we see that,
 \begin{equation}
 \begin{split}
-\textbf{S} &= \frac{\partial \textbf{H}(\textbf{x}_{b} + \textbf{K}(\textbf{y} - \textbf{H}\textbf{x}_{b}))}{\partial \textbf{y}} \\
-	       &= \textbf{K}^{T}\textbf{H}^{T},
+\textbf{S} &= \frac{\partial \textbf{H}(\textbf{x}^{b} + \textbf{K}(\textbf{y} - \textbf{H}\textbf{x}^{b}))}{\partial \textbf{y}} \\
+	       &= \textbf{K}^{T}\textbf{H}^{T}.
 \end{split}
 \end{equation}
-here $\textbf{S}$ will be a $p \times p$ matrix, where $p$ is the number of observations. The diagonal elements of $\textbf{S}$ are $\textbf{S}_{i,i} = \frac{\partial (\textbf{H}\textbf{x}_{a})_{i}}{\partial \textbf{y}_{i}}$ and represent the `self-sensitivity' of the $i^{th}$ modelled observation to the $i^{th}$ observation. The off-diagonal elements of $\textbf{S}$ represent the `cross-sensitivity' and are given by $\textbf{S}_{i,j} = \frac{\partial (\textbf{H}\textbf{x}_{a})_{i}}{\partial \textbf{y}_{j}}$. If we wish to consider the influence matrix for observations over a 4D-Var time window we can re-write equation~\eqref{chap5:eqn:inf_mat} as,
+Here $\textbf{S}$ will be a $m \times m$ matrix, where $m$ is the number of observations. The diagonal elements of $\textbf{S}$ are $\textbf{S}_{i,i} = \frac{\partial (\textbf{H}\textbf{x}^{a})_{i}}{\partial \textbf{y}_{i}}$ and represent the `self-sensitivity' of the $i^{th}$ modelled observation to the $i^{th}$ observation. The off-diagonal elements of $\textbf{S}$ represent the `cross-sensitivity' and are given by $\textbf{S}_{i,j} = \frac{\partial (\textbf{H}\textbf{x}^{a})_{i}}{\partial \textbf{y}_{j}}$. If we wish to consider the influence matrix for observations over a 4D-Var time window we can re-write equation~\eqref{chap5:eqn:inf_mat} as,
 \begin{equation}
-\textbf{S} = \frac{\partial \hat{\textbf{H}}\textbf{x}_{a}}{\partial \hat{\textbf{y}}} = \hat{\textbf{K}}^{T}\hat{\textbf{H}}^{T}. \label{chap5:eqn:4dinf_mat}
+\textbf{S} = \frac{\partial \hat{\textbf{H}}\textbf{x}^{a}}{\partial \hat{\textbf{y}}} = \hat{\textbf{K}}^{T}\hat{\textbf{H}}^{T}. \label{chap5:eqn:4dinf_mat}
 \end{equation}
 The Kalman gain matrix $\hat{\textbf{K}}$ can be re-written as,
 \begin{equation}
@@ -112,18 +108,20 @@ Inserting equation~\eqref{chap5:eqn:analysis_kgain} into \eqref{chap5:eqn:4dinf_
  \end{equation}
 We can therefore see the sensitivity of the analysis to observations is inversely proportional to the observation error and proportional to the analysis error. This means that the most influential observations are those with the smallest error variance providing information about regions of state space with the largest prior error \citep{Cardinali2004}. It is possible to identify the observations that have the greatest influence over the length of the window by summing the absolute values of the columns of the influence matrix.
 
-\subsubsection{Degrees of freedom for signal} \label{chap5:DFSintro}%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Degrees of freedom for signal} \label{chap5:DFSintro}%%%%%%%%%%%%%%%%%%%%%%
 
-The degrees of freedom for signal ($dfs$) indicates the number of elements of the state that have been measured by the observations. If we consider a state vector $\textbf{x}$ with $n$ elements (or $n$ degrees of freedom) then the maximum value the $dfs$ could obtain would be $n$, in this case all elements of the state would have been measured. Conversely if $dfs = 0$ then no elements of the state would have been measured by our observations \citep{Fowler2013}.
+The degrees of freedom for signal ($dfs$) indicates the number of elements of the state that have been measured by the available observations. If we consider a state vector $\textbf{x}$ with $n$ elements (or $n$ degrees of freedom) then the maximum value the $dfs$ could obtain would be $n$, in this case all elements of the state would have been measured. Conversely if $dfs = 0$ then no elements of the state would have been measured by our observations \citep{Fowler2013}.
 
-For a symmetric positive definite prior and posterior error covariance matrices $\bf{B}$ and $\bf{A}$, we can define the degrees of freedom for signal by means of a transform $\textbf{L}$ that reduces the prior error covariance matrix, $\textbf{B}$ to the $n \times n$ identity \citep{fisher2003estimation}. Each diagonal element of the transformed matrix $\textbf{B}$ then corresponds to a single degree of freedom with the trace being equal to $n$, the total degrees of freedom. 
+For a symmetric positive definite prior and posterior error covariance matrices $\bf{B}$ and $\bf{A}$, we can define the degrees of freedom for signal by means of a transform $\textbf{L}$ that reduces the prior error covariance matrix, $\textbf{B}$ to the $n \times n$ identity \citep{fisher2003estimation}, such that \(\textbf{L}\textbf{B}\textbf{L}^{T} = \textbf{I}_{n \times n}\). Each diagonal element of the identity then corresponds to a single degree of freedom with the trace being equal to $n$, the total degrees of freedom. 
 
-The transform $\textbf{L}$ can also be represented by $\textbf{Q}^{T}\textbf{L}$, where $\textbf{Q}$ is an orthogonal matrix. So that $\textbf{Q}^{T}\textbf{L}\textbf{B}\textbf{L}^{T}\textbf{Q} = \textbf{Q}^{T}\textbf{Q} = \textbf{I}_{n \times n}$. By defining $\textbf{Q}$ to be the matrix of the eigenvectors of $\textbf{L}\textbf{A}\textbf{L}^{T}$, we reduce $\textbf{B}$ to the identity and $\textbf{L}\textbf{A}\textbf{L}^{T}$ to the diagonal matrix of its eigenvalues, $\bm{\Lambda}$. The eigenvalues $\lambda_{i}$ of $\textbf{L}\textbf{A}\textbf{L}^{T}$ can be interpreted as the fractional reduction in uncertainty for the $n$ state members. If an eigenvalue is close to zero the corresponding state member has been well observed, if it is close to one the corresponding state member has not been constrained by the assimilated observations \citep{stewart2008correlated}. We then define the degrees of freedom for signal as,
+The transform $\textbf{L}$ is not uniquely determined, since we can replace $\textbf{L}$ by $\textbf{Q}^{T}\textbf{L}$, where $\textbf{Q}$ is an orthogonal matrix. As \(\textbf{Q}\) is an orthogonal matrix $\textbf{Q}^{T}\textbf{L}\textbf{B}\textbf{L}^{T}\textbf{Q} = \textbf{Q}^{T}\textbf{Q} = \textbf{I}_{n \times n}$. By defining $\textbf{Q}$ to be the matrix of the eigenvectors of $\textbf{L}\textbf{A}\textbf{L}^{T}$, we reduce $\textbf{L}\textbf{A}\textbf{L}^{T}$ to the diagonal matrix of its eigenvalues, $\bm{\Lambda}$. The eigenvalues $\lambda_{i}$ of $\textbf{L}\textbf{A}\textbf{L}^{T}$ can be interpreted as the fractional reduction in uncertainty for the $n$ state members. If an eigenvalue of $\textbf{L}\textbf{A}\textbf{L}^{T}$ is close to zero the corresponding state member has been well observed, if it is close to one the corresponding state member has not been constrained by the assimilated observations \citep{stewart2008correlated}. We then define the degrees of freedom for signal as,
+\begin{equation}
+dfs = n - \sum_i \lambda_{i},
+\end{equation}
+this can be re-written in terms of the matrices $\bf{B}$ and $\bf{A}$ with
 \begin{equation}
 \begin{split}
-dfs & = \text{trace}(\textbf{Q}^{T}\textbf{L}\textbf{B}\textbf{L}^{T}\textbf{Q} - \textbf{Q}^{T}\textbf{L}\textbf{A}\textbf{L}^{T}\textbf{Q}) \\
-       & = \text{trace}(\mathbf{I}_{n\times n} - \bm{\Lambda}) \\
-       & = n - \text{trace}(\bm{\Lambda}) \\
+dfs & = n - \sum_i \lambda_{i} \\
        & = n - \text{trace}(\textbf{L}\textbf{A}\textbf{L}^{T}) \\
        & = n - \text{trace}(\mathbf{B}^{-1}\mathbf{A}). \label{chap5:eqn:dfs}
 \end{split}
@@ -134,9 +132,9 @@ dfs = \text{trace}(\textbf{S}) = \sum_{i} \lambda_{i},
 \end{equation}
 where $\lambda_{i}$ is the $i^{th}$ eigenvalue of $\textbf{S}$.
 
-\subsubsection{Shannon information content}%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Shannon information content}%%%%%%%%%%%%%%%%%%%%%%
 
-Shannon Information Content (SIC) is a measure of the reduction in entropy (uncertainty) given a set of observations. When a measurement is made, the entropy or uncertainty in our state decreases. The SIC of an observation is a measure of the factor by which the uncertainty decreases \citep{cover1991elements}. We can define this using the prior, $p(\textbf{x})$, and posterior, $p(\textbf{x}|\textbf{y})$, distributions. From \citet{rodgers2000inverse}, for the Gaussian case SIC unsprisingly becomes a function of the prior and posterior error covariance matrices with,
+Shannon Information Content (SIC) is a measure of the reduction in entropy (uncertainty) given a set of observations. When a measurement is made, the entropy or uncertainty in our state decreases. The SIC of an observation is a measure of the factor by which the uncertainty decreases \citep{cover1991elements}. We can define this using the prior, $p(\textbf{x})$, and posterior, $p(\textbf{x}|\textbf{y})$, distributions. From \citet{rodgers2000inverse}, for the Gaussian case SIC unsurprisingly becomes a function of the prior and posterior error covariance matrices with,
 \begin{equation}
 \text{SIC}=\frac{1}{2}\text{ln}\frac{| \bf{B} |}{| \bf{A} |}. \label{chap5:eqn:sic}
 \end{equation}
@@ -146,9 +144,12 @@ The SIC can also be defined in terms of the eigenvalues of the influence matrix 
 \end{equation}
 where $\lambda_{i}$ is the $i^{th}$ eigenvalue of $\textbf{S}$. In \citet{eyre1990information} using SIC is shown to be beneficial over solely measuring the change in error variances before and after assimilation as the SIC also uses information about the change in error covariances. This is also true for the $dfs$.   
 
-\section{Results}
+\section{Metolius forest site} \label{chap5:sec:oregon}
+In this chapter we use meteorological driving data taken from the Metolious forest site, a temperate coniferous forest in Oregon, Northwestern US. The site has been studied extensively \citep{law2001carbon}, and has also been the subject of data assimilation studies \citep{williams2005improved, Quaife2008}. The site has a semi-arid climate with a dominant canopy of ponderosa pine (\textit{Pinus ponderosa}) and an understory of bitterbush (\textit{Purshia tridentata}) and manzanita (\textit{Arctostaphylos patula}) \citep{law2001estimation}. The forest stand was felled in 1978, having previously been a mature forest. It was then allowed to regrow naturally, with some areas of older growth forest still being left post-felling \citep{williams2005improved}.
 
-\subsection{DALEC1 observability for state estimation} \label{chap5:sec:D1observability}
+\section{Observability results}
+
+\subsection{DALEC1 state estimation} \label{chap5:sec:D1observability}
 
 DALEC1 is the original version of the DALEC2 model introduced in section~\ref{chap5:sec:dalec2}. At the start of the PhD project work was undertaken with DALEC1 before the DALEC2 model was released. The version of DALEC1 used was an evergreen only model; further details of the model can be found in section~\ref{chap5:sec:dalec1} and \citet{williams2005improved}. 
 
@@ -163,7 +164,7 @@ f_{roo}(1-f_{fol})(1-f_{auto})\zeta^i & (1-\theta_{roo}) & 0 & 0 & 0 \\
 0 & 0 & \theta_{woo} & \theta_{min}\chi^{i-1} & (1-\theta_{som}\chi^{i-1}) \\
 \end{pmatrix}, \label{chap5:eqn:linmod}
 \end{multline}
-where \(\textbf{x}_{i}=(C_{fol}^{i}, C_{roo}^{i}, C_{woo}^{i}, C_{lit}^{i}, C_{som}^{i})^{T}\), \(\zeta^i = \partial GPP^{i}(C_{fol}^{i-1}, \Psi)/\partial C_{fol}^{i-1}\) and \(\chi^{i-1}=e^{\Theta T^{i-1}}\) with the parameters and symbols having the same meaning as in section~\ref{chap5:sec:dalec1}. We can see that the DALEC1 model is almost linear with respect to the state \(\textbf{x}_{i}\), with the only nonlinear term being the function calculating GPP which is dependant on \(C_{fol}\), this allowed the computation of the tangent linear model by hand. 
+where \(\textbf{x}_{i}=(C_{fol}^{i}, C_{roo}^{i}, C_{woo}^{i}, C_{lit}^{i}, C_{som}^{i})^{T}\), \(\zeta^i = \partial GPP^{i}(C_{fol}^{i-1}, \Psi)/\partial C_{fol}^{i-1}\) and \(\chi^{i-1}=e^{\Theta T^{i-1}}\) with the parameters and symbols having the same meaning as in section~\ref{chap5:sec:dalec1}. We can see that the DALEC1 model is almost linear with respect to the state \(\textbf{x}_{i}\), with the only nonlinear term being the function calculating GPP which is dependent on \(C_{fol}\), this allowed the computation of the tangent linear model by hand. 
 
 We can use the linearised model with the linearised observation operator $\textbf{H}_{i}$ to form the matrix in equation~\eqref{chap5:eqn: hmat} and compute the observability for a specific set of observations over a finite window. We will need at least 5 observations of any type for the system to be observable as the state $\textbf{x}_0$ is of size 5 in the DALEC1 state estimation case. We first consider the observability for 5 observations of LAI. For DALEC1 LAI takes the form
 \begin{equation}
@@ -202,9 +203,9 @@ so that no matter how many observations of LAI we add, our system will not be ob
     \label{chap5:fig:D1_observability}
 \end{figure}
 
-From figure~\ref{chap5:fig:D1_observability} we can see that our system is observable for 5 observations of the soil and organic matter carbon pool $C_{som}$. In figure~\ref{chap5:fig:D1_observability} we have shown results for the rank of  $\hat{\textbf{H}}$ when we have 5 observations in each case; this has also been tested with increasing numbers of observations being added to the system with the results from figure~\ref{chap5:fig:D1_observability} remaining unchanged. 
+In figure~\ref{chap5:fig:D1_observability} we have shown results for the rank of $\hat{\textbf{H}}$ when we have 5 observations in each case; this has also been tested with increasing numbers of observations being added to the system with the results remaining unchanged. We can see that our system is observable for 5 observations of the soil and organic matter carbon pool $C_{som}$.
 
-The system being observable for observations of $C_{som}$ physically makes sense as all the carbon in the system that is not respired to the atmosphere eventually ends up in the soil and organic matter carbon pool, $C_{som}$, so that by taking observations of this pool we observe all the others. In a similar way $\hat{\textbf{H}}$ is also full rank for observations of NEE and ground respiration. We can see from the form of these observations in DALEC1 that they both contain indirect observations of $C_{som}$ with NEE taking the form
+The system is observable for observations of $C_{som}$. This physically makes sense as all the carbon in the system, that is not respired to the atmosphere, eventually ends up in the soil and organic matter carbon pool ($C_{som}$). In a similar way $\hat{\textbf{H}}$ is also full rank for observations of NEE and ground respiration. We can see from the form of these observations in DALEC1 that they both contain indirect observations of $C_{som}$ with NEE taking the form
 \begin{equation}
 NEE^{i}=-(1-f_{auto})GPP^{i}(C_{fol}^{i-1}, \Psi) + \theta_{lit}C_{lit} e^{\Theta T^{i}} + \theta_{som}C_{som} e^{\Theta T^{i}} \label{chap5:eqn: D1_nee}
 \end{equation}
@@ -217,23 +218,23 @@ with a corresponding linearised observation operator
 \end{equation}
 and for ground respiration
 \begin{equation}
-G_{resp}^{i}=\frac{1}{3}f_{auto}GPP^{i}(C_{fol}^{i-1}, \Psi) + \theta_{lit}C_{lit} e^{\Theta T^{i}} + \theta_{som}C_{som} e^{\Theta T^{i}} \label{chap5:neeeqn}
+G_{resp}^{i}=\frac{1}{3}f_{auto}GPP^{i}(C_{fol}^{i-1}, \Psi) + \theta_{lit}C_{lit} e^{\Theta T^{i}} + \theta_{som}C_{som} e^{\Theta T^{i}}, \label{chap5:neeeqn}
 \end{equation}
-(here we have assumed the fraction of total autotrophic respiration from below ground to be $\frac{1}{3}$) with a corresponding linearised observation operator
+with a corresponding linearised observation operator
 \begin{equation}
 \textbf{H}_{i} = \frac{\partial G_{resp}^{i}}{\partial \textbf{x}_{i}} =
 \begin{pmatrix}
 \frac{1}{3}f_{auto}\zeta^i & 0 & 0 & \theta_{lit} e^{\Theta T^{i}} & \theta_{som} e^{\Theta T^{i}}
 \end{pmatrix}.
 \end{equation}
-At flux tower sites NEE is the most observed quantity, these results give us confidence that we can construct a unique solution when working with flux tower data. We will further explore the concept of observability for the joint parameter and state estimation case with DALEC2 in section~\ref{chap5:sec: D2_observability}. 
+Here we have assumed the fraction of total autotrophic respiration from below ground to be $\frac{1}{3}$. At flux tower sites, NEE is the most observed quantity. These results give us confidence that we can construct a unique solution when working with flux tower data. We will further explore the concept of observability for the joint parameter and state estimation case with DALEC2 in section~\ref{chap5:sec: D2_observability}. 
 
 %\FloatBarrier
-\subsection{DALEC2 observability for state and parameter estimation} \label{chap5:sec: D2_observability}
+\subsection{DALEC2 state and parameter estimation} \label{chap5:sec: D2_observability}
 
 For DALEC2 we perform joint parameter and state estimation and have an augmented state of size $n = 23$. The augmented state is made up of the 6 carbon pool state members and 17 model parameters as described in section~\ref{chap5:sec:dalec2}. As we are also estimating the parameters of DALEC2 the concept of observability for our system is closely linked to the concept of identifiability \citep{navon1998practical}. A system is identifiable if given observations of the state variables and knowledge of the model dynamics it is possible to obtain a unique deterministic set of model parameter values \citep{ljung1998system}. If a model parameter is not observable it will not be identifiable \citep{Jacquez1985}. It is therefore useful to compute the observability of the DALEC2 joint parameter and state estimation system.
 
-We compute observability in the same way as in section~\ref{chap5:sec:D1observability} by finding the rank of $\hat{\textbf{H}}$ for a given set of observations. For the state and parameter estimation case we cannot compute the observability of the system analytically, it is therefore important to check that the numerical calculation of the rank of $\hat{\textbf{H}}$ for DALEC1 is equal to the rank when calculated analytically. This will give us confidence that our implementation of the numeric rank is correct for DALEC2 when applied to a well-conditioned problem as the implementation is the same in both cases. We have tested our numeric implementation for the state estimation case with DALEC1 and find the same results for the rank of $\hat{\textbf{H}}$ as for the analytic case, as shown in table~\ref{chap5:table: a_n_h_D1}. We calculate the rank of the $\hat{\textbf{H}}$ matrix using a singular value decomposition (SVD) which can have issues if the condition number of $\hat{\textbf{H}}$ is large \citep{Paige1981}. This is a problem we encounter in the DALEC2 case when trying to calculate the rank of $\hat{\textbf{H}}$ directly.  
+We compute observability in the same way as in section~\ref{chap5:sec:D1observability} by finding the rank of $\hat{\textbf{H}}$ for a given set of observations. For the state and parameter estimation case we cannot compute the observability of the system analytically, it is therefore important to check that the numerical calculation of the rank of $\hat{\textbf{H}}$ for DALEC1 is equal to the rank when calculated analytically. This will give us confidence that our implementation of the numeric rank is correct for DALEC2 when applied to a well-conditioned problem as the implementation is the same in both cases. We have tested our numeric implementation for the state estimation case with DALEC1 and find the same results for the rank of $\hat{\textbf{H}}$ as for the analytic case, as shown in table~\ref{chap5:table: a_n_h_D1}. We calculate the rank of the $\hat{\textbf{H}}$ matrix using a singular value decomposition (SVD). If the condition number of $\hat{\textbf{H}}$ is large this calculation can become inaccurate \citep{Paige1981}. This is a problem we encounter in the DALEC2 case when trying to calculate the rank of $\hat{\textbf{H}}$ directly.  
 
 \begin{table}[ht] 
 \begin{center}
@@ -290,9 +291,7 @@ Figure~\ref{chap5:fig:D2_observability} highlights the problems we have calculat
     \label{chap5:fig:D2_cvtobservability}
 \end{figure}
 
-In order to address the problem of ill-conditioning of the $\hat{\textbf{H}}$ matrix we can instead calculate the rank of the control variable transform observability matrix, $\hat{\textbf{R}}^{-1/2}\hat{\textbf{H}}\textbf{D}^{1/2}$, where the symbols have the same meaning as in section~\ref{chap3:sec:4dvar}, with $\textbf{D} = diag(\textbf{B})$. The rank of $\hat{\textbf{R}}^{-1/2}\hat{\textbf{H}}\textbf{D}^{1/2}$ and $\hat{\textbf{H}}$ are the same since $\hat{\textbf{R}}$ and $\textbf{D}$ are both full rank matrices. The results using this new better conditioned matrix are shown in Figure~\ref{chap5:fig:D2_cvtobservability}. From Figure~\ref{chap5:fig:D2_observabilitycondcvt} we can see this matrix is much better conditioned than $\hat{\textbf{H}}$, and for 23 observations of NEE we now have an observable system. Although the condition numbers here are still large we can have more confidence in these results as we are working within the precision of the computer.
-
-\subsubsection{Observability for observations randomly distributed through time}
+In order to address the problem of ill-conditioning of the $\hat{\textbf{H}}$ matrix we can instead calculate the rank of a transformed observability matrix, $\hat{\textbf{R}}^{-1/2}\hat{\textbf{H}}\textbf{D}^{1/2}$, where the symbols have the same meaning as in section~\ref{chap3:sec:4dvar}, with $\textbf{D} = diag(\textbf{B})$. The rank of $\hat{\textbf{R}}^{-1/2}\hat{\textbf{H}}\textbf{D}^{1/2}$ and $\hat{\textbf{H}}$ are the same since $\hat{\textbf{R}}$ and $\textbf{D}$ are both full rank matrices. The results using this new better conditioned matrix are shown in Figure~\ref{chap5:fig:D2_cvtobservability}. From Figure~\ref{chap5:fig:D2_observabilitycondcvt} we can see this matrix is much better conditioned than $\hat{\textbf{H}}$, and for 23 observations of NEE we now have an observable system. Although the condition numbers here are still large we can have more confidence in these results as we are working within the precision of the computer.
 
 In the previous experiments we have considered increasing numbers of NEE observations taken on adjacent days. It is also useful to consider the observability of the system when we have a number of observations randomly distributed throughout a time window. This is more consistent with what we expect from the real data we have to work with.  
 
@@ -308,11 +307,11 @@ In the previous experiments we have considered increasing numbers of NEE observa
         \caption{Condition number of $\hat{\textbf{H}}$}
         \label{chap5:fig:D2_observabilitycondwind}
     \end{subfigure}
-    \caption{Observability of DALEC2 for a $\hat{\textbf{H}}$ with an increasing number of NEE observations randomly distributed through a 1 year assimilation window (left). Condition number for the $\hat{\textbf{H}}$ matrices (right).}
+    \caption{Observability of DALEC2 for a $\hat{\textbf{H}}$ with an increasing number of NEE observations randomly distributed through a 1 year assimilation window (left). Condition number for the $\hat{\textbf{H}}$ matrices (right). In this example we show results for one realisation of randomly distributed observations.}
     \label{chap5:fig:D2_observabilitywind}
 \end{figure}
 
-Figure~\ref{chap5:fig:D2_observabilitywind} shows the observability for an increasing number of observations distributed through a 1 year assimilation window. I this case we are using the matrix $\hat{\textbf{H}}$ and not the CVT observability matrix. In figure~\ref{chap5:fig:D2_observabilitywind} we see that having the observations randomly distributed throughout a 1 year assimilation window has improved the conditioning of $\hat{\textbf{H}}$ in comparison to figure~\ref{chap5:fig:D2_observability}. This is due to the observations being randomly distributed rather than adjacent. The rows of $\hat{\textbf{H}}$ are more distinct when being evolved to different times in the year by the tangent linear model rather than evolved to adjacent days only. However, we still have a rank deficient $\hat{\textbf{H}}$ for the 23 NEE observation case. From figure~\ref{chap5:fig:D2_observabilitycondwind} we see that this is the case where the condition number peaks. As we add more randomly distributed observations the condition number of $\hat{\textbf{H}}$ is reduced by an order of $10^{2}$ and we have a full rank $\hat{\textbf{H}}$. 
+Figure~\ref{chap5:fig:D2_observabilitywind} shows the observability for an increasing number of observations distributed through a 1 year assimilation window. In this case we are using the matrix $\hat{\textbf{H}}$ and not the transformed observability matrix. In figure~\ref{chap5:fig:D2_observabilitywind} we see that having the observations randomly distributed throughout a 1 year assimilation window has improved the conditioning of $\hat{\textbf{H}}$ in comparison to figure~\ref{chap5:fig:D2_observability}. This is due to the observations being randomly distributed rather than adjacent. The rows of $\hat{\textbf{H}}$ are more distinct when being evolved to different times in the year by the tangent linear model rather than evolved to adjacent days only. However, we still have a rank deficient $\hat{\textbf{H}}$ for the 23 NEE observation case. From figure~\ref{chap5:fig:D2_observabilitycondwind} we see that this is the case where the condition number peaks. As we add more randomly distributed observations the condition number of $\hat{\textbf{H}}$ is reduced by an order of $10^{2}$ and we have a full rank $\hat{\textbf{H}}$. 
 
 In figure~\ref{chap5:fig:D2_cvtobservabilitywind} we again see that using the CVT observability matrix has much improved the conditioning of the problem in comparison to figure~\ref{chap5:fig:D2_observabilitywind}. We now see that the DALEC2 system is observable when we have 23 observations of NEE randomly distributed throughout the 1 year assimilation window. We have more confidence that this is the case as the condition numbers for the CVT observability matrix are almost half the values of those for $\hat{\textbf{H}}$. We again see a similar pattern in figure~\ref{chap5:fig:D2_cvtobservabilitywind} for the condition numbers with a peak for 23 NEE observations and then a reduction of order $10^{2}$ when more observations are added. 
 
@@ -334,9 +333,8 @@ We have tested the observability of the system for observations of NEE when we h
     \label{chap5:fig:D2_cvtobservabilitywind}
 \end{figure}
 
-
-\subsection{DALEC1 information content for state estimation} \label{chap5:sec:D1_IC} %%%%%%%%%%%%%%%%%%% 
-\subsubsection{Information content for a single observation} \label{chap5:sec:info_con_single_time}
+\section{DALEC1 information content results} \label{chap5:sec:D1_IC} %%%%%%%%%%%%%%%%%%% 
+\subsection{Information content for a single observation} \label{chap5:sec:info_con_single_time}
 
 For the DALEC1 state estimation we can calculate the analytic representation of the information content measures discussed in section~\ref{chap5:sec:IC}. This will allow us to understand how the information content changes for differing numbers of observations, different observation types and the effect of including observation error correlations in the assimilation scheme, before moving onto work with the larger DALEC2 joint parameter and state estimation case. For these experiments the elements of the state vector have corresponding background standard deviations $ \sigma_{cfol, b}, \sigma_{croo, b}, \sigma_{cwoo, b}, \sigma_{clit, b}, \sigma_{csom, b}$. We then have
 \begin{equation}
@@ -456,7 +454,7 @@ For Figure~\ref{chap5:fig:sic_nee_oregon2007} we have used a numerical implement
 %\end{center} 
 \end{table}
 
-\subsubsection{Information content for observations at a single time}
+\subsection{Information content for observations at a single time}
 
 We next consider the SIC when we have more than one observation at a single time. Here we will investigate the representation of information content when assimilating an observation of NEE with an observation of a carbon pool state member. We begin with a single observation of NEE and an observation of \(C_{fol}\). We have the linearised observation operator,
 \begin{equation}
@@ -514,13 +512,13 @@ and
 0 & 0 & 1 & 0 & 0
 \end{pmatrix},
 \end{equation}
-we can see that these observations provide an orthogonal constraint to the observation of NEE. Neither of these pools are observed with a single observation of NEE. The information content being greater when assimilating \(C_{roo}\) or \(C_{woo}\) alongside NEE is therefore expected. 
+we can see that these observations provide an orthogonal constraint to the observation of NEE. Neither of these pools are observed with a single observation of NEE. We expect the information content will be greater when assimilating \(C_{roo}\) or \(C_{woo}\) alongside NEE. 
 
-In practice we cannot assume constant prior and observation errors across the different carbon pools. Root carbon is hard to measure accurately \citep{brown2002measuring}. However, woody biomass (\(C_{woo}\)) is regularly measured using mensuration \citep{husch2002forest} or point-centred quarter methods \citep{dahdouh2006empirical} at forest sites. Advancements in Light Detection And Ranging (LiDAR) scanning \citep{Lefsky199983} mean that we have increasingly more accurate observations of woody biomass. The European Space Agency BIOMASS mission \citep{le2011biomass} will also provide a much more abundant source of woody biomass measurements in the future. If we consider NEE to be the main observation currently used in ecosystem data assimilation, then the increasing number of available woody biomass measurements will benefit assimilation schemes greatly.
+In practice we cannot assume constant prior and observation errors across the different carbon pools. Root carbon is hard to measure accurately \citep{brown2002measuring}. However, woody biomass (\(C_{woo}\)) is regularly measured using  forest mensuration techniques such as the point-centred quarter method \citep{dahdouh2006empirical}. Advancements in Light Detection And Ranging (LiDAR) scanning \citep{Lefsky199983} mean that we have increasingly more accurate observations of woody biomass. The European Space Agency BIOMASS mission \citep{le2011biomass} will also provide a much more abundant source of woody biomass measurements in the future. If we consider NEE to be the main observation currently used in ecosystem data assimilation, then the increasing number of available woody biomass measurements will benefit assimilation schemes greatly.
 
-\subsubsection{Information content in successive observations} \label{chap5:sec:D1_succ_obs}
+\subsection{Information content in successive observations} \label{chap5:sec:D1_succ_obs}
 
-In section~\ref{chap5:sec:info_con_single_time} we investigate the information in observation for DALEC1 at a single time. In this section we will consider successive observations in time. It has been shown that the SIC in observations is additive with successive observations in time. The proof for this can be found in appendix A.1 of \citet{Fowler2012}. We can see this if we calculate the SIC for successive observations of foliar carbon, \(C_{fol}\). We have the linearised observation operator and observation error covariance matrix at time $t_i$,
+In section~\ref{chap5:sec:info_con_single_time} we investigate the information in observation for DALEC1 at a single time. In this section we will consider successive observations in time. It has been shown that the SIC in observations is additive with successive observations in time. The proof for this can be found in appendix A.1 of \citet{Fowler2012}. For DALEC1 we can see this if we calculate the SIC for successive observations of foliar carbon, \(C_{fol}\). We have the linearised observation operator and observation error covariance matrix at time $t_i$,
 \begin{equation}
 \mathbf{H}_{i} = \frac{\partial C_{fol}^{i}}{\partial \textbf{x}_i} = \begin{pmatrix}
 1 & 0 & 0 & 0 & 0
@@ -556,7 +554,7 @@ and
 \end{equation}
 We then have,
 \begin{equation}
-SIC = \frac{1}{2}\text{ln}\frac{\begin{vmatrix} \mathbf{B} \end{vmatrix}}{\begin{vmatrix} \mathbf{A} \end{vmatrix}} =\frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{cfol,b}^{2}}{\sigma_{cfol,o}^{2}}+\frac{\sigma_{cfol,b}^{2}\eta_0^{2}}{\sigma_{cfol,o}^{2}} \bigg), \label{chap5:eq:sic_2cfol}
+SIC = \frac{1}{2}\text{ln}\frac{| \mathbf{B} |}{| \mathbf{A}|} =\frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{cfol,b}^{2}}{\sigma_{cfol,o}^{2}}+\frac{\sigma_{cfol,b}^{2}\eta_0^{2}}{\sigma_{cfol,o}^{2}} \bigg), \label{chap5:eq:sic_2cfol}
 \end{equation}
 where $\eta_i=(1-\theta_{fol})+f_{fol}(1-f_{auto})\zeta^{i}$. We see this is similar to equation~\eqref{chap5:eqn:sicC} for the SIC of a single carbon pool observation but with an added term evolved by the linearised model. Here the second term is multiplied by \(\eta_{0}^2\) which is the square of the first element of the linearised model \(\mathbf{M}_0\). We can continue adding more observations at successive times. For three observations at successive times we have,
 \begin{equation}
@@ -568,7 +566,7 @@ SIC =\frac{1}{2}\text{ln} \bigg(1+\frac{\sigma_{cfol,b}^{2}}{\sigma_{cfol,o}^{2}
 \end{equation}
 Using a simple proof by induction we find that for \(n\) successive observations we have,
 \begin{equation}
-SIC\text{ for }n\text{ successive observations of }C_{fol} = \frac{1}{2}\text{ln}\bigg(1+\frac{\sigma_{cfol,b}^{2}}{\sigma_{cfol,o}^{2}}\big(1+\sum_{k=0}^{n-2}\prod_{i=0}^{k}\eta_i^{2}\big)\bigg)
+SIC\text{ for }n\text{ successive observations of }C_{fol} = \frac{1}{2}\text{ln}\bigg(1+\frac{\sigma_{cfol,b}^{2}}{\sigma_{cfol,o}^{2}}\big(1+\sum_{k=0}^{n-2}\prod_{i=0}^{k}\eta_i^{2}\big)\bigg).
 \end{equation}
 This demonstrates that SIC is additive for successive observations in time. In Figure~\ref{chap5:fig:ic_succ_cf} we have plotted the SIC and \(dfs\) for increasing numbers of observations of \(C_{fol}\), using a year of meteorological driving data from a pine stand in Oregon. We see that as successive observations are added the information content tends to a limit where we are adding no new information with extra observations of \(C_{fol}\). For \(dfs\) this limit is one as we are only observing a single degree of freedom so cannot constrain more than a single element of the state. For SIC we add a decreasing amount of information as observations are made further away from the initial state. We find similar results for all other carbon pools. This suggests making observations of any individual carbon pool for a forest site too often is not cost effective as after just a few observations the information you are adding to your system begins to decrease. 
 
@@ -606,9 +604,9 @@ In section~\ref{chap5:sec:info_con_single_time} it was shown that observations o
     \label{chap5:fig:ic_succ_nee}
 \end{figure}
 
-\subsubsection{Effect of time correlations between observation errors on information content}
+\subsection{Effect of time correlations between observation errors on information content}
 
-We can see the effect on the analytic representation of information content for two successive observations of NEE when including an off-diagonal correlation term in the matrix \(\hat{\mathbf{R}}\). So that \(\hat{\mathbf{R}} = \hat{\mathbf{D}}\mathbf{C}\hat{\mathbf{D}}^{\text{T}}\), where \(\hat{\mathbf{D}}\) is the diagonal matrix of observation standard deviations and \(\mathbf{C}\) is a correlation matrix of the same shape. We then have
+In this section we investigate the effect on the analytic representation of information content for two successive observations of NEE when including an off-diagonal correlation term in the matrix \(\hat{\mathbf{R}}\). So that \(\hat{\mathbf{R}} = \hat{\mathbf{D}}\mathbf{C}\hat{\mathbf{D}}^{\text{T}}\), where \(\hat{\mathbf{D}}\) is the diagonal matrix of observation standard deviations and \(\mathbf{C}\) is a correlation matrix of the same shape. We then have
 \begin{equation}
 \hat{\mathbf{R}} =  \hat{\mathbf{D}}\mathbf{C}\hat{\mathbf{D}}^{\text{T}} =
 \begin{pmatrix}
@@ -640,8 +638,8 @@ We have not shown the analytic representation for the SIC here as it is too larg
 \end{figure}
 Figure~\ref{chap5:fig:sic_corr_D1} shows that as the size of time correlation \(\rho\) approaches 1 the information content in the two observations of NEE decreases. This decrease in information content makes sense as including the correlation in time is decreasing the amount of independent information we are assimilating. This result is also seen in \citet{jarvinen1999variational} where including a serial correlations between observation errors is shown to reduce the weight given to the mean of the observations in the assimilation (equivalent to inflating the variance of the observations). The effect of including correlations in time between NEE observation errors is further explored in chapter~\ref{chap:error_corrs}.
 
-\subsection{DALEC2 information content for state and parameter estimation} \label{chap5:sec:D2_IC}%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Information content in observations for DALEC2}
+\section{DALEC2 information content results} \label{chap5:sec:D2_IC}%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Information content in observations for DALEC2}
 %SIC with D2 show same for single time, inf mat for evergreen and deciduous, difference in phenology has effect on info %content when model is involved successive obs less valuable than ones at start of the window. show col sums for inf mat.
 
 In this section we repeat and extend some of the results we have found for information content with the DALEC1 state estimation case in section \ref{chap5:sec:D1_IC} to the DALEC2 joint parameter and state estimation case. This means we now have an augmented state of 23 elements (17 parameters and 6 state variables) as opposed to just the 5 state members for DALEC1. For this reason we no longer examine the analytic representations of information content but instead consider the information content calculated numerically for DALEC2. 
@@ -702,11 +700,11 @@ For the deciduous site in figure~\ref{chap5:fig:ah_inf_mat} we have groups of ob
     \label{chap5:fig:D2_pheno}
 \end{figure}
 
-In order to further investigate these groups of high influence observations we show the phenology functions controlling the rate of leaf-on and leaf-off for the DALEC2 model in figure~\ref{chap5:fig:D2_pheno}. The description of phenology is the main difference between the more simplistic, evergreen only, DALEC1 and DALEC2 which can be parameterised for both deciduous and evergreen sites. It is logical that this is what is causing the difference in information content between the models and between the different sites. In figure~\ref{chap5:fig:D2_pheno} we see that the function controlling leaf-off for the deciduous site has a far larger peak than that of the evergreen site. This is expected as the deciduous site will drop all of its leaves at the end of the season. In both cases the forest puts most effort into putting on new leaves at the start of the growing season. This highlights the fact that the NEE for a deciduous site is highly controlled by phenology, as the forest cannot photosynthesise without leaves. Therefore the observations of NEE that help to constrain the phenology of the site should have a higher influence, as seen in figure~\ref{chap5:fig:ah_inf_mat}. Conversely for an evergreen site NEE is driven less by phenology and more by the climatic driving data. Seeing a greater relationship between temperature and information content  for an evergreen site consequently makes sense and this can be seen in figure~\ref{chap5:fig:oregon_inf_mat}.
+In order to further investigate these groups of high influence observations we show the phenology functions controlling the rate of leaf-on and leaf-off for the DALEC2 model in figure~\ref{chap5:fig:D2_pheno}. The description of phenology is the main difference between the more simplistic, evergreen only, DALEC1 and DALEC2 which can be parameterised for both deciduous and evergreen sites. This maybe what is causing the difference in information content between the models and between the different sites. In figure~\ref{chap5:fig:D2_pheno} we see that the function controlling leaf-off for the deciduous site has a far larger peak than that of the evergreen site. This is expected as the deciduous site will drop all of its leaves at the end of the season. In both cases the forest puts most effort into putting on new leaves at the start of the growing season. This highlights the fact that the NEE for a deciduous site is highly controlled by phenology, as the forest cannot photosynthesise without leaves. Therefore the observations of NEE that help to constrain the phenology of the site should have a higher influence, as seen in figure~\ref{chap5:fig:ah_inf_mat}. Conversely for an evergreen site NEE is driven less by phenology and more by the climatic driving data. Seeing a greater relationship between temperature and information content  for an evergreen site consequently makes sense and this can be seen in figure~\ref{chap5:fig:oregon_inf_mat}.
 
 
 
-\subsubsection{Effect of time correlations on observation information content}
+\subsection{Effect of time correlations on observation information content}
 
 In section~\ref{chap5:sec:D1_succ_obs} it was shown that, for the analytic DALEC1 case, when assimilating two successive observations of NEE the SIC decreased when including a correlation in time between NEE observation errors. It was noted that this was consistent with results found in \citet{jarvinen1999variational} where including correlations between observation errors in time reduced the weight of the observations in the assimilation. In figure~\ref{chap5:fig:sic_corr_D2} we repeat the experiment in section~\ref{chap5:sec:D1_succ_obs} but for the DALEC2 joint parameter and state estimation case with NEE observations for the year 1999 from the Alice Holt flux tower site, in order to verify that including a correlation in time reduces the information content in assimilated observations. 
 \begin{figure}[ht]
@@ -727,8 +725,8 @@ From figure~\ref{chap5:fig:sic_corr_D2} we see that we have similar results as i
 
 In this chapter we have investigated both the observability and information content for observations relevant to forest carbon balance. In section~\ref{chap5:sec:D1observability} and section~\ref{chap5:sec: D2_observability} we have shown that for both DALEC1 and DALEC2 we do have an observable system with the available observations, in this case NEE. An observable system here means that for data assimilation we can construct a locally unique solution from the observational information alone. 
 
-In section~\ref{chap5:sec:D1_IC} we have seen that for the DALEC1 evergreen case the information content in observations of NEE is largely dependent on temperature, with higher temperatures meaning higher information content. This is important for informing planned maintenance or down time at flux tower sites measuring NEE. This dependance of information content on temperature is also seen for observations of ground respiration and total ecosystem respiration. When assimilated at the same time as NEE we have found that most information is added when the additional observation provides an orthogonal constraint to that of NEE. This is the case for root carbon (\(C_{roo}\)) and woody biomass carbon (\(C_{woo}\)). The European Space Agency BIOMASS mission being launched soon should add valuable information to current data assimilation schemes. When using DALEC1 and assimilating successive observations in time it was shown that as observations are added further away from the initial state their impact is decreased. For two successive observations of NEE it was also shown that including a correlation in time between observation errors decreases the information content in the assimilated observations. This is consistent with results found in \citet{jarvinen1999variational} where including correlations between observation errors in time is shown to reduce the weight given to the mean of the observations in the assimilation.
+In section~\ref{chap5:sec:D1_IC} we have seen that for the DALEC1 evergreen case the information content in observations of NEE is largely dependent on temperature, with higher temperatures meaning higher information content. This is important for informing planned maintenance or down time at flux tower sites measuring NEE. This dependence of information content on temperature is also seen for observations of ground respiration and total ecosystem respiration. When assimilated at the same time as NEE we have found that most information is added when the additional observation provides an orthogonal constraint to that of NEE. This is the case for root carbon (\(C_{roo}\)) and woody biomass carbon (\(C_{woo}\)). The European Space Agency BIOMASS mission being launched soon should add valuable information to current data assimilation schemes. When using DALEC1 and assimilating successive observations in time it was shown that as observations are added further away in time from the initial state their impact is decreased. For two successive observations of NEE it was also shown that including a correlation in time between observation errors decreases the information content in the assimilated observations. This is consistent with results found in \citet{jarvinen1999variational} where including correlations between observation errors in time is shown to reduce the weight given to the mean of the observations in the assimilation.
 
 In section~\ref{chap5:sec:D2_IC} we again see the temperature dependence of information content in observations of NEE for DALEC2. However, for DALEC2 we also have varying information content based on the type of ecosystem we are observing. For a deciduous forest site, we see that the information content in observations of NEE is also strongly dependent on the time of growing season. Observations made at the time of leaf-on and leaf-off have higher influence on the results of the assimilation. Obviously, a deciduous ecosystems NEE is highly controlled by phenology, as the forest cannot photosynthesise without leaves. Therefore the observations of NEE that help to constrain the phenology of the site should have a higher influence. For an evergreen forest site we see much less dependence on phenology and have a greater relationship between temperature and information content. When including correlations in time between observation errors, we again see similar results as in section~\ref{chap5:sec:D1_IC}. An increasing correlation, \(\rho\), reduces the information content in the assimilated observations. 
 
-The information content in observations for data assimilation is strongly dependant on both the uncertainty in the observations and the uncertainty in prior model predictions. In order to further improve our understanding of which observations carry most influence in data assimilation schemes it is imperative that we improve current estimates and representations of observational and prior model errors.  
+The information content in observations for data assimilation is strongly dependent on both the uncertainty in the observations and the uncertainty in prior model predictions. In order to further improve our understanding of which observations carry most influence in data assimilation schemes it is imperative that we improve current estimates and representations of observational and prior model errors.  

@@ -1,4 +1,4 @@
-\begin{thebibliography}{180}
+\begin{thebibliography}{182}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -9,16 +9,20 @@
 \providecommand{\eprint}[2][]{\url{#2}}
 
 \bibitem[{Anderson and Anderson(1999)}]{andersonandanderson1999}
-Anderson, J.~L. and S.~L. Anderson, 1999: A monte carlo implementation of the
+Anderson, J.~L. and S.~L. Anderson, 1999: A {Monte Carlo} implementation of the
   nonlinear filtering problem to produce ensemble assimilations and forecasts.
   \textit{Monthly Weather Review}, \textbf{127~(12)}, 2741--2758,
   \doi{10.1175/1520-0493(1999)127\(<\)2741:AMCIOT\(>\)2.0.CO;2}.
 
-\bibitem[{Bacour et~al.(2015)}]{Bacour2015}
-Bacour, C., et~al., 2015: {Joint assimilation of eddy-covariance flux
-  measurements and FAPAR products over temperate forests within a
-  process-oriented biosphere model}. \textit{Journal of Geophysical Research:
-  Biogeosciences}, \doi{10.1002/2015JG002966}.
+\bibitem[{Bacour et~al.(2015)Bacour, Peylin, MacBean, Rayner, Delage,
+  Chevallier, Weiss, Demarty, Santaren, Baret, Berveiller, Dufr\^{e}ne, and
+  Prunet}]{Bacour2015}
+Bacour, C., P.~Peylin, N.~MacBean, P.~J. Rayner, F.~Delage, F.~Chevallier,
+  M.~Weiss, J.~Demarty, D.~Santaren, F.~Baret, D.~Berveiller, E.~Dufr\^{e}ne
+  and P.~Prunet, 2015: {Joint assimilation of eddy-covariance flux measurements
+  and FAPAR products over temperate forests within a process-oriented biosphere
+  model}. \textit{Journal of Geophysical Research: Biogeosciences},
+  \doi{10.1002/2015JG002966}.
 
 \bibitem[{Baldocchi(2008)}]{baldocchi2008turner}
 Baldocchi, D., 2008: Turner review no. 15.`breathing'of the terrestrial
@@ -26,18 +30,20 @@ Baldocchi, D., 2008: Turner review no. 15.`breathing'of the terrestrial
   measurement systems. \textit{Australian Journal of Botany}, \textbf{56~(1)},
   1--26.
 
+\bibitem[{Baldocchi et~al.(2001)Baldocchi, Falge, Gu, Olson, Hollinger,
+  Running, Anthoni, Bernhofer, Davis, Evans et~al.}]{baldocchi2001fluxnet}
+Baldocchi, D., E.~Falge, L.~Gu, R.~Olson, D.~Hollinger, S.~Running, P.~Anthoni,
+  C.~Bernhofer, K.~Davis, R.~Evans et~al., 2001: Fluxnet: A new tool to study
+  the temporal and spatial variability of ecosystem-scale carbon dioxide, water
+  vapor, and energy flux densities. \textit{Bulletin of the American
+  Meteorological Society}, \textbf{82~(11)}, 2415--2434.
+
 \bibitem[{Baldocchi et~al.(2015)Baldocchi, Sturtevant, and
   Contributors}]{Baldocchi2015}
-Baldocchi, D., C.~Sturtevant, and F.~Contributors, 2015: {Does day and night
+Baldocchi, D., C.~Sturtevant and F.~Contributors, 2015: {Does day and night
   sampling reduce spurious correlation between canopy photosynthesis and
   ecosystem respiration?} \textit{Agricultural and Forest Meteorology},
   \textbf{207}, 117--126, \doi{10.1016/j.agrformet.2015.03.010}.
-
-\bibitem[{Baldocchi et~al.(2001)}]{baldocchi2001fluxnet}
-Baldocchi, D., et~al., 2001: Fluxnet: A new tool to study the temporal and
-  spatial variability of ecosystem-scale carbon dioxide, water vapor, and
-  energy flux densities. \textit{Bulletin of the American Meteorological
-  Society}, \textbf{82~(11)}, 2415--2434.
 
 \bibitem[{Bannister(2008)}]{bannister2008review}
 Bannister, R.~N., 2008: A review of forecast error covariance statistics in
@@ -51,7 +57,7 @@ Barnett, S. and R.~Cameron, 1985: \textit{Introduction to Mathematical Control
   Press.
 
 \bibitem[{Bauer et~al.(2015)Bauer, Thorpe, and Brunet}]{bauer2015quiet}
-Bauer, P., A.~Thorpe, and G.~Brunet, 2015: The quiet revolution of numerical
+Bauer, P., A.~Thorpe and G.~Brunet, 2015: The quiet revolution of numerical
   weather prediction. \textit{Nature}, \textbf{525~(7567)}, 47--55.
 
 \bibitem[{Bayes and Price(1763)}]{bayes1763}
@@ -63,14 +69,14 @@ Bayes, T. and R.~Price, 1763: An essay towards solving a problem in the
   Ottosson~L{\"o}fvenius, H{\"o}gberg, Mellander, and
   H{\"o}gberg}]{PCE:PCE1053}
 Bhupinderpal, S., A.~Nordgren, M.~Ottosson~L{\"o}fvenius, M.~N. H{\"o}gberg,
-  P.~E. Mellander, and P.~H{\"o}gberg, 2003: Tree root and soil heterotrophic
+  P.~E. Mellander and P.~H{\"o}gberg, 2003: Tree root and soil heterotrophic
   respiration as revealed by girdling of boreal scots pine forest: extending
   observations beyond the first year. \textit{Plant, Cell \& Environment},
   \textbf{26~(8)}, 1287--1296, \doi{10.1046/j.1365-3040.2003.01053.x}.
 
 \bibitem[{Bloom et~al.(2016)Bloom, Exbrayat, van~der Velde, Feng, and
   Williams}]{bloom2016decadal}
-Bloom, A.~A., J.-F. Exbrayat, I.~R. van~der Velde, L.~Feng, and M.~Williams,
+Bloom, A.~A., J.-F. Exbrayat, I.~R. van~der Velde, L.~Feng and M.~Williams,
   2016: The decadal state of the terrestrial carbon cycle: Global retrievals of
   terrestrial carbon allocation, pools, and residence times.
   \textit{Proceedings of the National Academy of Sciences}, \textbf{113~(5)},
@@ -82,19 +88,22 @@ Bloom, A.~A. and M.~Williams, 2015: {Constraining ecosystem carbon dynamics in
   fusion framework}. \textit{Biogeosciences}, \textbf{12~(5)}, 1299--1315,
   \doi{10.5194/bg-12-1299-2015}.
 
-\bibitem[{Bonavita et~al.(2015)Bonavita, H�lm, Isaksen, and Fisher}]{QJ:QJ2652}
-Bonavita, M., E.~H�lm, L.~Isaksen, and M.~Fisher, 2015: The evolution of the
+\bibitem[{Bonavita et~al.(2015)Bonavita, H\'{o}lm, Isaksen, and
+  Fisher}]{QJ:QJ2652}
+Bonavita, M., E.~H\'{o}lm, L.~Isaksen and M.~Fisher, 2015: The evolution of the
   ecmwf hybrid data assimilation system. \textit{Quarterly Journal of the Royal
   Meteorological Society}, \doi{10.1002/qj.2652}.
 
-\bibitem[{Booth et~al.(2012)}]{1748-9326-7-2-024002}
-Booth, B. B.~B., et~al., 2012: High sensitivity of future global warming to
-  land carbon cycle processes. \textit{Environmental Research Letters},
-  \textbf{7~(2)}, 024\,002.
+\bibitem[{Booth et~al.(2012)Booth, Jones, Collins, Totterdell, Cox, Sitch,
+  Huntingford, Betts, Harris, and Lloyd}]{1748-9326-7-2-024002}
+Booth, B. B.~B., C.~D. Jones, M.~Collins, I.~J. Totterdell, P.~M. Cox,
+  S.~Sitch, C.~Huntingford, R.~A. Betts, G.~R. Harris and J.~Lloyd, 2012: High
+  sensitivity of future global warming to land carbon cycle processes.
+  \textit{Environmental Research Letters}, \textbf{7~(2)}, 024\,002.
 
 \bibitem[{Braswell et~al.(2005)Braswell, Sacks, Linder, and
   Schimel}]{braswell2005estimating}
-Braswell, B.~H., W.~J. Sacks, E.~Linder, and D.~S. Schimel, 2005: Estimating
+Braswell, B.~H., W.~J. Sacks, E.~Linder and D.~S. Schimel, 2005: Estimating
   diurnal to annual ecosystem parameters by synthesis of a carbon flux model
   with eddy covariance net ecosystem exchange observations. \textit{Global
   Change Biology}, \textbf{11~(2)}, 335--355.
@@ -110,45 +119,53 @@ Brown, S., 2002: Measuring carbon in forests: current status and future
 
 \bibitem[{Cardinali et~al.(2004)Cardinali, Pezzulli, and
   Andersson}]{Cardinali2004}
-Cardinali, C., S.~Pezzulli, and E.~Andersson, 2004: Influence-matrix diagnostic
+Cardinali, C., S.~Pezzulli and E.~Andersson, 2004: Influence-matrix diagnostic
   of a data assimilation system. \textit{Quarterly Journal of the Royal
   Meteorological Society}, \textbf{130~(603)}, 2767--2786,
   \doi{10.1256/qj.03.205}.
 
-\bibitem[{Carvalhais et~al.(2010)}]{Carvalhais2010}
-Carvalhais, N., et~al., 2010: Identification of vegetation and soil carbon
-  pools out of equilibrium in a process model via eddy covariance and biometric
-  constraints. \textit{Global Change Biology}, \textbf{16~(10)}, 2813--2829,
-  \doi{10.1111/j.1365-2486.2010.02173.x}.
+\bibitem[{Carvalhais et~al.(2010)Carvalhais, Reichstein, Ciais, Collatz,
+  Mahecha, Montagnani, Papale, Rambal, and Seixas}]{Carvalhais2010}
+Carvalhais, N., M.~Reichstein, P.~Ciais, G.~J. Collatz, M.~D. Mahecha,
+  L.~Montagnani, D.~Papale, S.~Rambal and J.~Seixas, 2010: Identification of
+  vegetation and soil carbon pools out of equilibrium in a process model via
+  eddy covariance and biometric constraints. \textit{Global Change Biology},
+  \textbf{16~(10)}, 2813--2829, \doi{10.1111/j.1365-2486.2010.02173.x}.
 
 \bibitem[{Chuter(2013)}]{Ann2013}
 Chuter, A.~M., 2013: {A Qualitative Analysis of the Data Assimilation Linked
   Ecosystem Carbon Model , DALEC}. Ph.D. thesis, University of Surry,
   Guildford.
 
-\bibitem[{Ciais et~al.(2014)}]{ciais2014carbon}
-Ciais, P., et~al., 2014: Carbon and other biogeochemical cycles.
-  \textit{Climate change 2013: the physical science basis. Contribution of
-  Working Group I to the Fifth Assessment Report of the Intergovernmental Panel
-  on Climate Change}, Cambridge University Press, 465--570.
+\bibitem[{Ciais et~al.(2014)Ciais, Sabine, Bala, Bopp, Brovkin, Canadell,
+  Chhabra, DeFries, Galloway, Heimann et~al.}]{ciais2014carbon}
+Ciais, P., C.~Sabine, G.~Bala, L.~Bopp, V.~Brovkin, J.~Canadell, A.~Chhabra,
+  R.~DeFries, J.~Galloway, M.~Heimann et~al., 2014: Carbon and other
+  biogeochemical cycles. \textit{Climate change 2013: the physical science
+  basis. Contribution of Working Group I to the Fifth Assessment Report of the
+  Intergovernmental Panel on Climate Change}, Cambridge University Press,
+  465--570.
 
 \bibitem[{Clayton et~al.(2013)Clayton, Lorenc, and Barker}]{QJ:QJ2054}
-Clayton, A.~M., A.~C. Lorenc, and D.~M. Barker, 2013: Operational
-  implementation of a hybrid ensemble/4d-var global data assimilation system at
-  the met office. \textit{Quarterly Journal of the Royal Meteorological
-  Society}, \textbf{139~(675)}, 1445--1461, \doi{10.1002/qj.2054}.
+Clayton, A.~M., A.~C. Lorenc and D.~M. Barker, 2013: Operational implementation
+  of a hybrid ensemble/4d-var global data assimilation system at the met
+  office. \textit{Quarterly Journal of the Royal Meteorological Society},
+  \textbf{139~(675)}, 1445--1461, \doi{10.1002/qj.2054}.
 
-\bibitem[{Courtier et~al.(1998)}]{courtier1998ecmwf}
-Courtier, P., et~al., 1998: The ecmwf implementation of three-dimensional
-  variational assimilation (3d-var). i: Formulation. \textit{Quarterly Journal
-  of the Royal Meteorological Society}, \textbf{124~(550)}, 1783--1807.
+\bibitem[{Courtier et~al.(1998)Courtier, Andersson, Heckley, Vasiljevic,
+  Hamrud, Hollingsworth, Rabier, Fisher, and Pailleux}]{courtier1998ecmwf}
+Courtier, P., E.~Andersson, W.~Heckley, D.~Vasiljevic, M.~Hamrud,
+  A.~Hollingsworth, F.~Rabier, M.~Fisher and J.~Pailleux, 1998: The ecmwf
+  implementation of three-dimensional variational assimilation (3d-var). i:
+  Formulation. \textit{Quarterly Journal of the Royal Meteorological Society},
+  \textbf{124~(550)}, 1783--1807.
 
 \bibitem[{Cover and Thomas(1991)}]{cover1991elements}
 Cover, T.~M. and J.~A. Thomas, 1991: Elements of information theory. new york:
   J. \textit{Wiley and Sons}, \textbf{5}, 5.
 
 \bibitem[{Cox et~al.(2000)Cox, Betts, Jones, Spall, and Totterdell}]{cox2000}
-Cox, P.~M., R.~A. Betts, C.~D. Jones, S.~A. Spall, and I.~J. Totterdell, 2000:
+Cox, P.~M., R.~A. Betts, C.~D. Jones, S.~A. Spall and I.~J. Totterdell, 2000:
   Acceleration of global warming due to carbon-cycle feedbacks in a coupled
   climate model. \textit{Nature}, \textbf{408~(6809)}, 184--187.
 
@@ -163,39 +180,42 @@ Daley, R., 1992: {The Effect of Serially Correlated Observation and Model Error
   on Atmospheric Data Assimilation}. 164--177 pp.,
   \doi{10.1175/1520-0493(1992)120\(<\)0164:TEOSCO\(>\)2.0.CO;2}.
 
-\bibitem[{Dee et~al.(2011)}]{dee2011era}
-Dee, D., et~al., 2011: The era-interim reanalysis: Configuration and
-  performance of the data assimilation system. \textit{Quarterly Journal of the
-  Royal Meteorological Society}, \textbf{137~(656)}, 553--597.
+\bibitem[{Dee et~al.(2011)Dee, Uppala, Simmons, Berrisford, Poli, Kobayashi,
+  Andrae, Balmaseda, Balsamo, Bauer et~al.}]{dee2011era}
+Dee, D., S.~Uppala, A.~Simmons, P.~Berrisford, P.~Poli, S.~Kobayashi,
+  U.~Andrae, M.~Balmaseda, G.~Balsamo, P.~Bauer et~al., 2011: The era-interim
+  reanalysis: Configuration and performance of the data assimilation system.
+  \textit{Quarterly Journal of the Royal Meteorological Society},
+  \textbf{137~(656)}, 553--597.
 
 \bibitem[{Delahaies et~al.(2013)Delahaies, Roulstone, and
   Nichols}]{delahaies2013regularization}
-Delahaies, S., I.~Roulstone, and N.~Nichols, 2013: A regularization of the
+Delahaies, S., I.~Roulstone and N.~Nichols, 2013: A regularization of the
   carbon cycle data-fusion problem. \textit{EGU General Assembly Conference
   Abstracts}, Vol.~15, 4087.
 
 \bibitem[{Demarty et~al.(2007)Demarty, Chevallier, Friend, Viovy, Piao, and
   Ciais}]{Demarty2007}
-Demarty, J., F.~Chevallier, A.~D. Friend, N.~Viovy, S.~Piao, and P.~Ciais,
-  2007: Assimilation of global modis leaf area index retrievals within a
-  terrestrial biosphere model. \textit{Geophysical Research Letters},
-  \textbf{34~(15)}, n/a--n/a, \doi{10.1029/2007GL030014}, l15402.
+Demarty, J., F.~Chevallier, A.~D. Friend, N.~Viovy, S.~Piao and P.~Ciais, 2007:
+  Assimilation of global modis leaf area index retrievals within a terrestrial
+  biosphere model. \textit{Geophysical Research Letters}, \textbf{34~(15)},
+  n/a--n/a, \doi{10.1029/2007GL030014}, l15402.
 
 \bibitem[{Desroziers et~al.(2009)Desroziers, Berre, Chabot, and
   Chapnik}]{desroziers2009posteriori}
-Desroziers, G., L.~Berre, V.~Chabot, and B.~Chapnik, 2009: A posteriori
+Desroziers, G., L.~Berre, V.~Chabot and B.~Chapnik, 2009: A posteriori
   diagnostics in an ensemble of perturbed analyses. \textit{Monthly Weather
   Review}, \textbf{137~(10)}, 3420--3436.
 
 \bibitem[{Desroziers et~al.(2005)Desroziers, Berre, Chapnik, and
   Poli}]{desroziers2005diagnosis}
-Desroziers, G., L.~Berre, B.~Chapnik, and P.~Poli, 2005: Diagnosis of
+Desroziers, G., L.~Berre, B.~Chapnik and P.~Poli, 2005: Diagnosis of
   observation, background and analysis-error statistics in observation space.
   \textit{Quarterly Journal of the Royal Meteorological Society},
   \textbf{131~(613)}, 3385--3396.
 
 \bibitem[{Dietze et~al.(2013)Dietze, Lebauer, and Kooper}]{Dietze2013}
-Dietze, M.~C., D.~S. Lebauer, and R.~Kooper, 2013: On improving the
+Dietze, M.~C., D.~S. Lebauer and R.~Kooper, 2013: On improving the
   communication between models and data. \textit{Plant, Cell \& Environment},
   \textbf{36~(9)}, 1575--1585, \doi{10.1111/pce.12043}.
 
@@ -204,16 +224,10 @@ Dijkstra, F.~A. and W.~Cheng, 2007: Interactions between soil and tree roots
   accelerate long-term soil carbon decomposition. \textit{Ecology Letters},
   \textbf{10~(11)}, 1046--1053, \doi{10.1111/j.1461-0248.2007.01095.x}.
 
-\bibitem[{Dimet and Talagrand(1986)}]{dimet1986variational}
-Dimet, F.-X.~l. and O.~Talagrand, 1986: Variational algorithms for analysis and
-  assimilation of meteorological observations: theoretical aspects.
-  \textit{Tellus A}, \textbf{38A~(2)}, 97--110,
-  \doi{10.1111/j.1600-0870.1986.tb00459.x}.
-
 \bibitem[{Dore et~al.(2012)Dore, Montes-Helu, Hart, Hungate, Koch, Moon,
   Finkral, and Kolb}]{dore2012recovery}
 Dore, S., M.~Montes-Helu, S.~C. Hart, B.~A. Hungate, G.~W. Koch, J.~B. Moon,
-  A.~J. Finkral, and T.~E. Kolb, 2012: Recovery of ponderosa pine ecosystem
+  A.~J. Finkral and T.~E. Kolb, 2012: Recovery of ponderosa pine ecosystem
   carbon and water fluxes from thinning and stand-replacing fire.
   \textit{Global change biology}, \textbf{18~(10)}, 3171--3185.
 
@@ -229,7 +243,7 @@ Evensen, G., 2003: The ensemble kalman filter: theoretical formulation and
 
 \bibitem[{Exbrayat et~al.(2015)Exbrayat, Smallman, Bloom, and
   Williams}]{Exbrayat2015}
-Exbrayat, J.-f., T.~L. Smallman, A.~A. Bloom, and M.~Williams, 2015: {Using a
+Exbrayat, J.-f., T.~L. Smallman, A.~A. Bloom and M.~Williams, 2015: {Using a
   data-assimilation system to assess the influence of fire on simulated carbon
   fluxes and plant traits for the Australian continent}. \textit{EGU General
   Assembly}, \textbf{17}, 6421.
@@ -246,7 +260,7 @@ Falkowski, P., et~al., 2000: The global carbon cycle: A test of our knowledge
 
 \bibitem[{Fassnacht et~al.(1994)Fassnacht, Gower, Norman, and
   McMurtric}]{fassnacht1994comparison}
-Fassnacht, K.~S., S.~T. Gower, J.~M. Norman, and R.~E. McMurtric, 1994: A
+Fassnacht, K.~S., S.~T. Gower, J.~M. Norman and R.~E. McMurtric, 1994: A
   comparison of optical and direct methods for estimating foliage surface area
   index in forests. \textit{Agricultural and Forest Meteorology},
   \textbf{71~(1)}, 183--207.
@@ -267,21 +281,23 @@ Fowler, A. and P.~J. {Van Leeuwen}, 2013: {Observation impact in data
   Series A: Dynamic Meteorology and Oceanography}, \textbf{65~(1)}, 1--16,
   \doi{10.3402/tellusa.v65i0.20035}.
 
-\bibitem[{Fox et~al.(2009)}]{fox2009reflex}
-Fox, A., et~al., 2009: The reflex project: comparing different algorithms and
-  implementations for the inversion of a terrestrial ecosystem model against
-  eddy covariance data. \textit{Agricultural and Forest Meteorology},
-  \textbf{149~(10)}, 1597--1615.
+\bibitem[{Fox et~al.(2009)Fox, Williams, Richardson, Cameron, Gove, Quaife,
+  Ricciuto, Reichstein, Tomelleri, Trudinger et~al.}]{fox2009reflex}
+Fox, A., M.~Williams, A.~D. Richardson, D.~Cameron, J.~H. Gove, T.~Quaife,
+  D.~Ricciuto, M.~Reichstein, E.~Tomelleri, C.~M. Trudinger et~al., 2009: The
+  reflex project: comparing different algorithms and implementations for the
+  inversion of a terrestrial ecosystem model against eddy covariance data.
+  \textit{Agricultural and Forest Meteorology}, \textbf{149~(10)}, 1597--1615.
 
 \bibitem[{Freitag et~al.(2010)Freitag, Nichols, and Budd}]{Freitag2010}
-Freitag, M.~A., N.~K. Nichols, and C.~J. Budd, 2010: {L1-regularisation for
+Freitag, M.~A., N.~K. Nichols and C.~J. Budd, 2010: {L1-regularisation for
   ill-posed problems in variational data assimilation}. \textit{Pamm},
   \textbf{10~(1)}, 665--668, \doi{10.1002/pamm.201010324}.
 
 \bibitem[{Hamill et~al.(2001)Hamill, Whitaker, and Snyder}]{Hamill2001}
-Hamill, T.~M., J.~S. Whitaker, and C.~Snyder, 2001: Distance-dependent
-  filtering of background error covariance estimates in an ensemble kalman
-  filter. \textit{Monthly Weather Review}, \textbf{129~(11)}, 2776--2790,
+Hamill, T.~M., J.~S. Whitaker and C.~Snyder, 2001: Distance-dependent filtering
+  of background error covariance estimates in an ensemble kalman filter.
+  \textit{Monthly Weather Review}, \textbf{129~(11)}, 2776--2790,
   \doi{10.1175/1520-0493(2001)129\(<\)2776:DDFOBE\(>\)2.0.CO;2}.
 
 \bibitem[{Healy and White(2005)}]{Healy2005}
@@ -292,20 +308,20 @@ Healy, S. and A.~White, 2005: {Use of discrete Fourier transforms in the 1D-Var
 \bibitem[{Heath et~al.(2005)Heath, Ayres, Possell, Bardgett, Black, Grant,
   Ineson, and Kerstiens}]{heath2005rising}
 Heath, J., E.~Ayres, M.~Possell, R.~D. Bardgett, H.~I. Black, H.~Grant,
-  P.~Ineson, and G.~Kerstiens, 2005: Rising atmospheric co2 reduces
+  P.~Ineson and G.~Kerstiens, 2005: Rising atmospheric {CO2} reduces
   sequestration of root-derived soil carbon. \textit{Science},
   \textbf{309~(5741)}, 1711--1713.
 
 \bibitem[{Heinemeyer et~al.(2012)Heinemeyer, Wilkinson, Vargas, Subke, Casella,
   Morison, and Ineson}]{heinemeyer2012exploring}
-Heinemeyer, A., M.~Wilkinson, R.~Vargas, J.-A. Subke, E.~Casella, J.~I.
-  Morison, and P.~Ineson, 2012: Exploring the ``overflow tap'' theory: linking
-  forest soil co2 fluxes and individual mycorrhizosphere components to
+Heinemeyer, A., M.~Wilkinson, R.~Vargas, J.-A. Subke, E.~Casella, J.~I. Morison
+  and P.~Ineson, 2012: Exploring the ``overflow tap'' theory: linking forest
+  soil {CO2} fluxes and individual mycorrhizosphere components to
   photosynthesis. \textit{Biogeosciences}, \textbf{9~(1)}, 79--95.
 
 \bibitem[{Hernesmaa et~al.(2005)Hernesmaa, Björklöf, Kiikkilä, Fritze,
   Haahtela, and Romantschuk}]{Hernesmaa2005777}
-Hernesmaa, A., K.~Björklöf, O.~Kiikkilä, H.~Fritze, K.~Haahtela, and
+Hernesmaa, A., K.~Björklöf, O.~Kiikkilä, H.~Fritze, K.~Haahtela and
   M.~Romantschuk, 2005: Structure and function of microbial communities in the
   rhizosphere of scots pine after tree-felling. \textit{Soil Biology and
   Biochemistry}, \textbf{37~(4)}, 777 -- 785,
@@ -314,23 +330,27 @@ Hernesmaa, A., K.~Björklöf, O.~Kiikkilä, H.~Fritze, K.~Haahtela, and
 \bibitem[{Hilker et~al.(2009)Hilker, Wulder, Coops, Linke, McDermid, Masek,
   Gao, and White}]{hilker2009new}
 Hilker, T., M.~A. Wulder, N.~C. Coops, J.~Linke, G.~McDermid, J.~G. Masek,
-  F.~Gao, and J.~C. White, 2009: A new data fusion model for high spatial-and
+  F.~Gao and J.~C. White, 2009: A new data fusion model for high spatial-and
   temporal-resolution mapping of forest disturbance based on landsat and modis.
   \textit{Remote Sensing of Environment}, \textbf{113~(8)}, 1613--1627.
+
+\bibitem[{H{\"o}gberg et~al.(2001)H{\"o}gberg, Nordgren, Buchmann, Taylor,
+  Ekblad, H{\"o}gberg, Nyberg, Ottosson-L{\"o}fvenius, and
+  Read}]{hogberg2001large}
+H{\"o}gberg, P., A.~Nordgren, N.~Buchmann, A.~F. Taylor, A.~Ekblad, M.~N.
+  H{\"o}gberg, G.~Nyberg, M.~Ottosson-L{\"o}fvenius and D.~J. Read, 2001:
+  Large-scale forest girdling shows that current photosynthesis drives soil
+  respiration. \textit{Nature}, \textbf{411~(6839)}, 789--792.
 
 \bibitem[{H{\"o}gberg and Read(2006)}]{hogberg2006towards}
 H{\"o}gberg, P. and D.~J. Read, 2006: Towards a more plant physiological
   perspective on soil ecology. \textit{Trends in Ecology \& Evolution},
   \textbf{21~(10)}, 548--554.
 
-\bibitem[{H{\"o}gberg et~al.(2001)}]{hogberg2001large}
-H{\"o}gberg, P., et~al., 2001: Large-scale forest girdling shows that current
-  photosynthesis drives soil respiration. \textit{Nature}, \textbf{411~(6839)},
-  789--792.
-
-\bibitem[{Husch et~al.(2002)Husch, Beers, and Kershaw~Jr}]{husch2002forest}
-Husch, B., T.~W. Beers, and J.~A. Kershaw~Jr, 2002: \textit{Forest
-  mensuration}. John Wiley \& Sons.
+\bibitem[{Howes et~al.(2017)Howes, Fowler, and Lawless}]{Howes2017}
+Howes, K.~E., A.~M. Fowler and A.~S. Lawless, 2017: Accounting for model error
+  in strong-constraint {4D-Var} data assimilation. \textit{Quarterly Journal of
+  the Royal Meteorological Society}, \doi{10.1002/qj.2996}, qJ-16-0244.R1.
 
 \bibitem[{Jacquez and Greif(1985)}]{Jacquez1985}
 Jacquez, J.~A. and P.~Greif, 1985: {Numerical parameter identifiability and
@@ -346,38 +366,41 @@ Janssens, I.~A., et~al., 2001: Productivity overshadows temperature in
 
 \bibitem[{J{\"a}rvinen et~al.(1999)J{\"a}rvinen, Andersson, and
   Bouttier}]{jarvinen1999variational}
-J{\"a}rvinen, H., E.~Andersson, and F.~Bouttier, 1999: Variational assimilation
+J{\"a}rvinen, H., E.~Andersson and F.~Bouttier, 1999: Variational assimilation
   of time sequences of surface observations with serially correlated errors.
   \textit{Tellus A}, \textbf{51~(4)}, 469--488.
 
 \bibitem[{Johnson et~al.(2005)Johnson, Hoskins, and
   Nichols}]{johnson2005singular}
-Johnson, C., B.~J. Hoskins, and N.~K. Nichols, 2005: A singular vector
+Johnson, C., B.~J. Hoskins and N.~K. Nichols, 2005: A singular vector
   perspective of 4d-var: Filtering and interpolation. \textit{Quarterly Journal
   of the Royal Meteorological Society}, \textbf{131~(605)}, 1--19.
 
 \bibitem[{Jonckheere et~al.(2004)Jonckheere, Fleck, Nackaerts, Muys, Coppin,
   Weiss, and Baret}]{Jonckheere2004}
-Jonckheere, I., S.~Fleck, K.~Nackaerts, B.~Muys, P.~Coppin, M.~Weiss, and
+Jonckheere, I., S.~Fleck, K.~Nackaerts, B.~Muys, P.~Coppin, M.~Weiss and
   F.~Baret, 2004: {Review of methods for in situ leaf area index determination
   Part I. Theories, sensors and hemispherical photography}.
   \textit{Agricultural and Forest Meteorology}, \textbf{121~(1-2)}, 19--35,
   \doi{10.1016/j.agrformet.2003.08.027}.
 
-\bibitem[{Jones et~al.(2013)}]{jones2013twenty}
-Jones, C., et~al., 2013: Twenty-first-century compatible co2 emissions and
-  airborne fraction simulated by cmip5 earth system models under four
-  representative concentration pathways. \textit{Journal of Climate},
-  \textbf{26~(13)}, 4398--4413.
+\bibitem[{Jones et~al.(2013)Jones, Robertson, Arora, Friedlingstein,
+  Shevliakova, Bopp, Brovkin, Hajima, Kato, Kawamiya et~al.}]{jones2013twenty}
+Jones, C., E.~Robertson, V.~Arora, P.~Friedlingstein, E.~Shevliakova, L.~Bopp,
+  V.~Brovkin, T.~Hajima, E.~Kato, M.~Kawamiya et~al., 2013:
+  Twenty-first-century compatible {CO\(_2\)} emissions and airborne fraction
+  simulated by {CMIP5} earth system models under four representative
+  concentration pathways. \textit{Journal of Climate}, \textbf{26~(13)},
+  4398--4413.
 
 \bibitem[{Jones et~al.(2001)Jones, Oliphant, Peterson et~al.}]{scipy2015}
-Jones, E., T.~Oliphant, P.~Peterson, et~al., 2001: {SciPy}: Open source
+Jones, E., T.~Oliphant, P.~Peterson et~al., 2001: {SciPy}: Open source
   scientific tools for {Python}. \urlprefix\url{http://www.scipy.org/},
   [Online; accessed 2015-12-04].
 
 \bibitem[{Joyner et~al.(2012)Joyner, \v{C}ert\'{\i}k, Meurer, and
   Granger}]{Joyner:2012:OSC:2110170.2110185}
-Joyner, D., O.~\v{C}ert\'{\i}k, A.~Meurer, and B.~E. Granger, 2012: Open source
+Joyner, D., O.~\v{C}ert\'{\i}k, A.~Meurer and B.~E. Granger, 2012: Open source
   computer algebra systems: Sympy. \textit{ACM Commun. Comput. Algebra},
   \textbf{45~(3/4)}, 225--234, \doi{10.1145/2110170.2110185}.
 
@@ -396,30 +419,30 @@ Kaminski, T., et~al., 2013: {The BETHY/JSBACH Carbon Cycle Data Assimilation
 
 \bibitem[{Kantzas et~al.(2015)Kantzas, Quegan, and
   Lomas}]{kantzas2015improving}
-Kantzas, E., S.~Quegan, and M.~Lomas, 2015: Improving the representation of
-  fire disturbance in dynamic vegetation models by assimilating satellite data:
-  a case study over the arctic. \textit{Geoscientific Model Development},
+Kantzas, E., S.~Quegan and M.~Lomas, 2015: Improving the representation of fire
+  disturbance in dynamic vegetation models by assimilating satellite data: a
+  case study over the arctic. \textit{Geoscientific Model Development},
   \textbf{8~(8)}, 2597--2609.
 
 \bibitem[{Keenan et~al.(2011)Keenan, Carbone, Reichstein, and
   Richardson}]{Keenan2011}
-Keenan, T.~F., M.~S. Carbone, M.~Reichstein, and A.~D. Richardson, 2011: The
+Keenan, T.~F., M.~S. Carbone, M.~Reichstein and A.~D. Richardson, 2011: The
   model--data fusion pitfall: assuming certainty in an uncertain world.
   \textit{Oecologia}, \textbf{167~(3)}, 587, \doi{10.1007/s00442-011-2106-x}.
 
 \bibitem[{Keenan et~al.(2012)Keenan, Davidson, Moffat, Munger, and
   Richardson}]{Keenan2012}
-Keenan, T.~F., E.~Davidson, A.~M. Moffat, W.~Munger, and A.~D. Richardson,
-  2012: Using model-data fusion to interpret past trends, and quantify
-  uncertainties in future projections, of terrestrial ecosystem carbon cycling.
+Keenan, T.~F., E.~Davidson, A.~M. Moffat, W.~Munger and A.~D. Richardson, 2012:
+  Using model-data fusion to interpret past trends, and quantify uncertainties
+  in future projections, of terrestrial ecosystem carbon cycling.
   \textit{Global Change Biology}, \textbf{18~(8)}, 2555--2569,
   \doi{10.1111/j.1365-2486.2012.02684.x}.
 
 \bibitem[{Keenan et~al.(2013)Keenan, Davidson, Munger, and
   Richardson}]{Keenan2013}
-Keenan, T.~F., E.~A. Davidson, J.~W. Munger, and A.~D. Richardson, 2013: Rate
-  my data: quantifying the value of ecological data for the development of
-  models of the terrestrial carbon cycle. \textit{Ecological Applications},
+Keenan, T.~F., E.~A. Davidson, J.~W. Munger and A.~D. Richardson, 2013: Rate my
+  data: quantifying the value of ecological data for the development of models
+  of the terrestrial carbon cycle. \textit{Ecological Applications},
   \textbf{23~(1)}, 273--286, \doi{10.1890/12-0747.1}.
 
 \bibitem[{Kerr and Haufe(2011)}]{kerr2011thinning}
@@ -437,14 +460,17 @@ Knorr, W. and M.~Heimann, 2001: Uncertainties in global terrestrial biosphere
   and energy balance scheme. \textit{Global Biogeochemical Cycles},
   \textbf{15~(1)}, 207--225.
 
-\bibitem[{Krinner et~al.(2005)}]{Krinner2005}
-Krinner, G., et~al., 2005: {A dynamic global vegetation model for studies of
-  the coupled atmosphere-biosphere system}. \textit{Global Biogeochemical
-  Cycles}, \textbf{19~(1)}, 1--33, \doi{10.1029/2003GB002199}.
+\bibitem[{Krinner et~al.(2005)Krinner, Viovy, de~Noblet-Ducoudr\'{e}, Og\'{e}e,
+  Polcher, Friedlingstein, Ciais, Sitch, and Prentice}]{Krinner2005}
+Krinner, G., N.~Viovy, N.~de~Noblet-Ducoudr\'{e}, J.~Og\'{e}e, J.~Polcher,
+  P.~Friedlingstein, P.~Ciais, S.~Sitch and I.~C. Prentice, 2005: {A dynamic
+  global vegetation model for studies of the coupled atmosphere-biosphere
+  system}. \textit{Global Biogeochemical Cycles}, \textbf{19~(1)}, 1--33,
+  \doi{10.1029/2003GB002199}.
 
 \bibitem[{Kuppel et~al.(2012)Kuppel, Peylin, Chevallier, Bacour, Maignan, and
   Richardson}]{Kuppel2012}
-Kuppel, S., P.~Peylin, F.~Chevallier, C.~Bacour, F.~Maignan, and A.~D.
+Kuppel, S., P.~Peylin, F.~Chevallier, C.~Bacour, F.~Maignan and A.~D.
   Richardson, 2012: {Constraining a global ecosystem model with multi-site
   eddy-covariance data}. \textit{Biogeosciences}, \textbf{9}, 3757--3776,
   \doi{10.5194/bg-9-3757-2012}.
@@ -452,7 +478,7 @@ Kuppel, S., P.~Peylin, F.~Chevallier, C.~Bacour, F.~Maignan, and A.~D.
 \bibitem[{Kurz et~al.(2008)Kurz, Dymond, Stinson, Rampley, Neilson, Carroll,
   Ebata, and Safranyik}]{kurz2008mountain}
 Kurz, W.~A., C.~Dymond, G.~Stinson, G.~Rampley, E.~Neilson, A.~Carroll,
-  T.~Ebata, and L.~Safranyik, 2008: Mountain pine beetle and forest carbon
+  T.~Ebata and L.~Safranyik, 2008: Mountain pine beetle and forest carbon
   feedback to climate change. \textit{Nature}, \textbf{452~(7190)}, 987--990.
 
 \bibitem[{Laplace(1781)}]{laplace1781memoire}
@@ -462,20 +488,20 @@ Laplace, P.~d., 1781: M{\'e}moire sur les probabilit{\'e}s.
 
 \bibitem[{Lasslop et~al.(2008)Lasslop, Reichstein, Kattge, and
   Papale}]{lasslop:hal-00297973}
-Lasslop, G., M.~Reichstein, J.~Kattge, and D.~Papale, 2008: {Influences of
+Lasslop, G., M.~Reichstein, J.~Kattge and D.~Papale, 2008: {Influences of
   observation errors in eddy flux data on inverse model parameter estimation}.
   \textit{{Biogeosciences Discussions}}, \textbf{5~(1)}, 751--785.
 
 \bibitem[{Law et~al.(2001{\natexlab{a}})Law, Thornton, Irvine, Anthoni, and
   Van~Tuyl}]{law2001carbon}
-Law, B., P.~Thornton, J.~Irvine, P.~Anthoni, and S.~Van~Tuyl,
+Law, B., P.~Thornton, J.~Irvine, P.~Anthoni and S.~Van~Tuyl,
   2001{\natexlab{a}}: Carbon storage and fluxes in ponderosa pine forests at
   different developmental stages. \textit{Global Change Biology},
   \textbf{7~(7)}, 755--777.
 
 \bibitem[{Law et~al.(2001{\natexlab{b}})Law, Van~Tuyl, Cescatti, and
   Baldocchi}]{law2001estimation}
-Law, B., S.~Van~Tuyl, A.~Cescatti, and D.~Baldocchi, 2001{\natexlab{b}}:
+Law, B., S.~Van~Tuyl, A.~Cescatti and D.~Baldocchi, 2001{\natexlab{b}}:
   Estimation of leaf area index in open-canopy ponderosa pine forests at
   different successional stages and management regimes in oregon.
   \textit{Agricultural and Forest Meteorology}, \textbf{108~(1)}, 1--14.
@@ -487,30 +513,43 @@ Lawless, A.~S., 2013: Variational data assimilation for very large
   and Applied Mathematics}, M.~J.~P. Cullen, M.~A. Freitag, S.~Kindermann, and
   R.~Scheichl, Eds., De Gruyter, 55--90.
 
-\bibitem[{Le~Qu{\'e}r{\'e} et~al.(2015)}]{le2015global}
-Le~Qu{\'e}r{\'e}, C., et~al., 2015: Global carbon budget 2015. \textit{Earth
-  System Science Data}, \textbf{7~(2)}, 349--396.
+\bibitem[{Le~Dimet and Talagrand(1986)}]{dimet1986variational}
+Le~Dimet, F.-X.~l. and O.~Talagrand, 1986: Variational algorithms for analysis
+  and assimilation of meteorological observations: theoretical aspects.
+  \textit{Tellus A}, \textbf{38A~(2)}, 97--110,
+  \doi{10.1111/j.1600-0870.1986.tb00459.x}.
 
-\bibitem[{Le~Toan et~al.(2011)}]{le2011biomass}
-Le~Toan, T., et~al., 2011: The biomass mission: Mapping global forest biomass
-  to better understand the terrestrial carbon cycle. \textit{Remote sensing of
-  environment}, \textbf{115~(11)}, 2850--2860.
+\bibitem[{Le~Qu{\'e}r{\'e} et~al.(2015)Le~Qu{\'e}r{\'e}, Moriarty, Andrew,
+  Canadell, Sitch, Korsbakken, Friedlingstein, Peters, Andres, Boden
+  et~al.}]{le2015global}
+Le~Qu{\'e}r{\'e}, C., R.~Moriarty, R.~M. Andrew, J.~G. Canadell, S.~Sitch,
+  J.~I. Korsbakken, P.~Friedlingstein, G.~P. Peters, R.~J. Andres, T.~Boden
+  et~al., 2015: Global carbon budget 2015. \textit{Earth System Science Data},
+  \textbf{7~(2)}, 349--396.
+
+\bibitem[{Le~Toan et~al.(2011)Le~Toan, Quegan, Davidson, Balzter, Paillou,
+  Papathanassiou, Plummer, Rocca, Saatchi, Shugart et~al.}]{le2011biomass}
+Le~Toan, T., S.~Quegan, M.~Davidson, H.~Balzter, P.~Paillou, K.~Papathanassiou,
+  S.~Plummer, F.~Rocca, S.~Saatchi, H.~Shugart et~al., 2011: The biomass
+  mission: Mapping global forest biomass to better understand the terrestrial
+  carbon cycle. \textit{Remote sensing of environment}, \textbf{115~(11)},
+  2850--2860.
 
 \bibitem[{Lefsky et~al.(1999)Lefsky, Harding, Cohen, Parker, and
   Shugart}]{Lefsky199983}
-Lefsky, M.~A., D.~Harding, W.~Cohen, G.~Parker, and H.~Shugart, 1999: Surface
+Lefsky, M.~A., D.~Harding, W.~Cohen, G.~Parker and H.~Shugart, 1999: Surface
   lidar remote sensing of basal area and biomass in deciduous forests of
-  eastern maryland, \{USA\}. \textit{Remote Sensing of Environment},
+  eastern {M}aryland, {USA}. \textit{Remote Sensing of Environment},
   \textbf{67~(1)}, 83 -- 98,
   \doi{http://dx.doi.org/10.1016/S0034-4257(98)00071-6}.
 
 \bibitem[{Li et~al.(1994)Li, Navon, Yang, Zou, Bates, Moorthi, and
   Higgins}]{Li1994}
-Li, Y., I.~M. Navon, W.~Yang, X.~Zou, J.~R. Bates, S.~Moorthi, and R.~W.
+Li, Y., I.~M. Navon, W.~Yang, X.~Zou, J.~R. Bates, S.~Moorthi and R.~W.
   Higgins, 1994: {Four-Dimensional Variational Data Assimilation Experiments
   with a Multilevel Semi-Lagrangian Semi-Implicit General Circulation Model}.
   \textit{Monthly Weather Review}, \textbf{122~(5)}, 966--983,
-  \doi{10.1175/1520-0493(1994)122<0966:FDVDAE>2.0.CO;2}.
+  \doi{10.1175/1520-0493(1994)122\(<\)0966:FDVDAE\(>\)2.0.CO;2}.
 
 \bibitem[{{LI-COR, Inc.}(2015)}]{eddypro}
 {LI-COR, Inc.}, 2015: \textit{EddyPro� 6 Help and User's Guide}. LI-COR, Inc.
@@ -527,55 +566,57 @@ Ljung, L., 1998: \textit{System Identification: Theory for the User}. Pearson
   Education.
 
 \bibitem[{Lorenc and Rawlins(2005)}]{lorenc2005does}
-Lorenc, A.~C. and F.~Rawlins, 2005: Why does 4d-var beat 3d-var?
+Lorenc, A.~C. and F.~Rawlins, 2005: Why does {4D-Var} beat {3D-Var}?
   \textit{Quarterly Journal of the Royal Meteorological Society},
   \textbf{131~(613)}, 3247--3257.
 
 \bibitem[{Luo et~al.(2015)Luo, Keenan, and Smith}]{luo2015predictability}
-Luo, Y., T.~F. Keenan, and M.~Smith, 2015: Predictability of the terrestrial
+Luo, Y., T.~F. Keenan and M.~Smith, 2015: Predictability of the terrestrial
   carbon cycle. \textit{Global change biology}, \textbf{21~(5)}, 1737--1751.
 
 \bibitem[{Luo et~al.(2009)Luo, Weng, Wu, Gao, Zhou, and Zhang}]{Luo2009}
-Luo, Y., E.~Weng, X.~Wu, C.~Gao, X.~Zhou, and L.~Zhang, 2009: Parameter
+Luo, Y., E.~Weng, X.~Wu, C.~Gao, X.~Zhou and L.~Zhang, 2009: Parameter
   identifiability, constraint, and equifinality in data assimilation with
   ecosystem models. \textit{Ecological Applications}, \textbf{19~(3)},
   571--574, \doi{10.1890/08-0561.1}.
 
-\bibitem[{L{\"u}thi et~al.(2008)}]{luthi2008high}
-L{\"u}thi, D., et~al., 2008: High-resolution carbon dioxide concentration
-  record 650,000--800,000 years before present. \textit{Nature},
-  \textbf{453~(7193)}, 379--382.
+\bibitem[{L{\"u}thi et~al.(2008)L{\"u}thi, Le~Floch, Bereiter, Blunier,
+  Barnola, Siegenthaler, Raynaud, Jouzel, Fischer, Kawamura
+  et~al.}]{luthi2008high}
+L{\"u}thi, D., M.~Le~Floch, B.~Bereiter, T.~Blunier, J.-M. Barnola,
+  U.~Siegenthaler, D.~Raynaud, J.~Jouzel, H.~Fischer, K.~Kawamura et~al., 2008:
+  High-resolution carbon dioxide concentration record 650,000--800,000 years
+  before present. \textit{Nature}, \textbf{453~(7193)}, 379--382.
 
 \bibitem[{MacBean et~al.(2016)MacBean, Peylin, Chevallier, Scholze, and
   Sch{\"u}rmann}]{macbean2016consistent}
-MacBean, N., P.~Peylin, F.~Chevallier, M.~Scholze, and G.~Sch{\"u}rmann, 2016:
+MacBean, N., P.~Peylin, F.~Chevallier, M.~Scholze and G.~Sch{\"u}rmann, 2016:
   Consistent assimilation of multiple data streams in a carbon cycle data
   assimilation system. \textit{Geoscientific Model Development},
   \textbf{9~(10)}, 3569.
 
 \bibitem[{McKay et~al.(2003)McKay, Hudson, and Hudson}]{mckay2003woodfuel}
-McKay, H., J.~Hudson, and R.~Hudson, 2003: Woodfuel resource in britain.
+McKay, H., J.~Hudson and R.~Hudson, 2003: Woodfuel resource in britain.
   \textit{Forestry Commission Report}.
 
 \bibitem[{Meir et~al.(2002)Meir, Kruijt, Broadmeadow, Barbosa, Kull, Carswell,
   Nobre, and Jarvis}]{meir2002acclimation}
-Meir, P., B.~Kruijt, M.~Broadmeadow, E.~Barbosa, O.~Kull, F.~Carswell,
-  A.~Nobre, and P.~Jarvis, 2002: Acclimation of photosynthetic capacity to
-  irradiance in tree canopies in relation to leaf nitrogen concentration and
-  leaf mass per unit area. \textit{Plant, Cell \& Environment},
-  \textbf{25~(3)}, 343--357.
+Meir, P., B.~Kruijt, M.~Broadmeadow, E.~Barbosa, O.~Kull, F.~Carswell, A.~Nobre
+  and P.~Jarvis, 2002: Acclimation of photosynthetic capacity to irradiance in
+  tree canopies in relation to leaf nitrogen concentration and leaf mass per
+  unit area. \textit{Plant, Cell \& Environment}, \textbf{25~(3)}, 343--357.
 
 \bibitem[{Mercado et~al.(2009)Mercado, Bellouin, Sitch, Boucher, Huntingford,
   Wild, and Cox}]{Mercadodiffuseradiation2009}
-Mercado, L.~M., N.~Bellouin, S.~Sitch, O.~Boucher, C.~Huntingford, M.~Wild, and
+Mercado, L.~M., N.~Bellouin, S.~Sitch, O.~Boucher, C.~Huntingford, M.~Wild and
   P.~M. Cox, 2009: Impact of changes in diffuse radiation on the global land
   carbon sink. \textit{Nature}, \textbf{458~(7241)}, 1014--1017.
 
 \bibitem[{Metropolis et~al.(1953)Metropolis, Rosenbluth, Rosenbluth, Teller,
   and Teller}]{metropolis1953equation}
-Metropolis, N., A.~W. Rosenbluth, M.~N. Rosenbluth, A.~H. Teller, and
-  E.~Teller, 1953: Equation of state calculations by fast computing machines.
-  \textit{The journal of chemical physics}, \textbf{21~(6)}, 1087--1092.
+Metropolis, N., A.~W. Rosenbluth, M.~N. Rosenbluth, A.~H. Teller and E.~Teller,
+  1953: Equation of state calculations by fast computing machines. \textit{The
+  journal of chemical physics}, \textbf{21~(6)}, 1087--1092.
 
 \bibitem[{Mitchell(1989)}]{mitchell1989greenhouse}
 Mitchell, J.~F., 1989: The greenhouse effect and climate change.
@@ -583,53 +624,60 @@ Mitchell, J.~F., 1989: The greenhouse effect and climate change.
 
 \bibitem[{Mizunuma et~al.(2013)Mizunuma, Wilkinson, L~Eaton, Mencuccini,
   IL~Morison, and Grace}]{mizunuma2013relationship}
-Mizunuma, T., M.~Wilkinson, E.~L~Eaton, M.~Mencuccini, J.~IL~Morison, and
+Mizunuma, T., M.~Wilkinson, E.~L~Eaton, M.~Mencuccini, J.~IL~Morison and
   J.~Grace, 2013: The relationship between carbon dioxide uptake and canopy
   colour from two camera systems in a deciduous forest in southern england.
   \textit{Functional Ecology}, \textbf{27~(1)}, 196--207.
 
 \bibitem[{Moodey et~al.(2013)Moodey, Lawless, Potthast, and van
   Leeuwen}]{moodycycled4dvar}
-Moodey, A. J.~F., A.~S. Lawless, R.~W.~E. Potthast, and P.~J. van Leeuwen,
-  2013: Nonlinear error dynamics for cycled data assimilation methods.
+Moodey, A. J.~F., A.~S. Lawless, R.~W.~E. Potthast and P.~J. van Leeuwen, 2013:
+  Nonlinear error dynamics for cycled data assimilation methods.
   \textit{Inverse Problems}, \textbf{29~(2)}, 025\,002.
 
 \bibitem[{Moore et~al.(2008)Moore, Hu, Sacks, Schimel, and
   Monson}]{Moore20081467}
-Moore, D.~J., J.~Hu, W.~J. Sacks, D.~S. Schimel, and R.~K. Monson, 2008:
+Moore, D.~J., J.~Hu, W.~J. Sacks, D.~S. Schimel and R.~K. Monson, 2008:
   Estimating transpiration and the sensitivity of carbon uptake to water
   availability in a subalpine forest using a simple ecosystem process model
-  informed by measured net \{CO\(_2\)\} and \{H\(_2\)O\} fluxes.
+  informed by measured net {CO\(_2\)} and {H\(_2\)O} fluxes.
   \textit{Agricultural and Forest Meteorology}, \textbf{148~(10)}, 1467 --
   1477, \doi{http://dx.doi.org/10.1016/j.agrformet.2008.04.013}.
 
-\bibitem[{Moore et~al.(2013)}]{ELE:ELE12097}
-Moore, D. J.~P., et~al., 2013: Persistent reduced ecosystem respiration after
-  insect disturbance in high elevation forests. \textit{Ecology Letters},
-  \textbf{16~(6)}, 731--737, \doi{10.1111/ele.12097}.
+\bibitem[{Moore et~al.(2013)Moore, Trahan, Wilkes, Quaife, Stephens, Elder,
+  Desai, Negron, and Monson}]{ELE:ELE12097}
+Moore, D. J.~P., N.~A. Trahan, P.~Wilkes, T.~Quaife, B.~B. Stephens, K.~Elder,
+  A.~R. Desai, J.~Negron and R.~K. Monson, 2013: Persistent reduced ecosystem
+  respiration after insect disturbance in high elevation forests.
+  \textit{Ecology Letters}, \textbf{16~(6)}, 731--737, \doi{10.1111/ele.12097}.
 
 \bibitem[{Moreaux et~al.(2011)Moreaux, Lamaud, Bosc, Bonnefond, Medlyn, and
   Loustau}]{moreaux2011paired}
-Moreaux, V., {\'E}.~Lamaud, A.~Bosc, J.-M. Bonnefond, B.~E. Medlyn, and
+Moreaux, V., {\'E}.~Lamaud, A.~Bosc, J.-M. Bonnefond, B.~E. Medlyn and
   D.~Loustau, 2011: Paired comparison of water, energy and carbon exchanges
   over two young maritime pine stands (pinus pinaster ait.): effects of
   thinning and weeding in the early stage of tree growth. \textit{Tree
   physiology}, tpr048.
 
 \bibitem[{Morecroft et~al.(2003)Morecroft, Stokes, and Morison}]{Morecroft2003}
-Morecroft, M.~D., V.~J. Stokes, and J.~I.~L. Morison, 2003: Seasonal changes in
+Morecroft, M.~D., V.~J. Stokes and J.~I.~L. Morison, 2003: Seasonal changes in
   the photosynthetic capacity of canopy oak (quercus robur) leaves: the impact
   of slow development on annual carbon uptake. \textit{International Journal of
   Biometeorology}, \textbf{47~(4)}, 221--226, \doi{10.1007/s00484-003-0173-3}.
 
-\bibitem[{Moss et~al.(2010)}]{moss2010next}
-Moss, R.~H., et~al., 2010: The next generation of scenarios for climate change
-  research and assessment. \textit{Nature}, \textbf{463~(7282)}, 747--756.
+\bibitem[{Moss et~al.(2010)Moss, Edmonds, Hibbard, Manning, Rose, Van~Vuuren,
+  Carter, Emori, Kainuma, Kram et~al.}]{moss2010next}
+Moss, R.~H., J.~A. Edmonds, K.~A. Hibbard, M.~R. Manning, S.~K. Rose, D.~P.
+  Van~Vuuren, T.~R. Carter, S.~Emori, M.~Kainuma, T.~Kram et~al., 2010: The
+  next generation of scenarios for climate change research and assessment.
+  \textit{Nature}, \textbf{463~(7282)}, 747--756.
 
-\bibitem[{Myneni et~al.(2002)}]{myneni2002global}
-Myneni, R., et~al., 2002: Global products of vegetation leaf area and fraction
-  absorbed par from year one of modis data. \textit{Remote sensing of
-  environment}, \textbf{83~(1)}, 214--231.
+\bibitem[{Myneni et~al.(2002)Myneni, Hoffman, Knyazikhin, Privette, Glassy,
+  Tian, Wang, Song, Zhang, Smith et~al.}]{myneni2002global}
+Myneni, R., S.~Hoffman, Y.~Knyazikhin, J.~Privette, J.~Glassy, Y.~Tian,
+  Y.~Wang, X.~Song, Y.~Zhang, G.~Smith et~al., 2002: Global products of
+  vegetation leaf area and fraction absorbed par from year one of modis data.
+  \textit{Remote sensing of environment}, \textbf{83~(1)}, 214--231.
 
 \bibitem[{Navon(1998)}]{navon1998practical}
 Navon, I., 1998: Practical and theoretical aspects of adjoint parameter
@@ -637,13 +685,13 @@ Navon, I., 1998: Practical and theoretical aspects of adjoint parameter
   \textit{Dynamics of Atmospheres and Oceans}, \textbf{27~(1)}, 55--79.
 
 \bibitem[{Navon et~al.(1992)Navon, Zou, Derber, and Sela}]{Navon1992}
-Navon, I.~M., X.~Zou, J.~Derber, and J.~Sela, 1992: {Variational Data
+Navon, I.~M., X.~Zou, J.~Derber and J.~Sela, 1992: {Variational Data
   Assimilation with an Adiabatic Version of the NMC Spectral Model}.
   \textit{Monthly Weather Review}, \textbf{120~(7)}, 1433--1446,
   \doi{10.1175/1520-0493(1992)120\(<\)1433:VDAWAA\(>\)2.0.CO;2}.
 
 \bibitem[{Niu et~al.(2014)Niu, Luo, Dietze, Keenan, Shi, Li, and Iii}]{Niu2014}
-Niu, S., Y.~Luo, M.~C. Dietze, T.~F. Keenan, Z.~Shi, J.~Li, and F.~S.~C. Iii,
+Niu, S., Y.~Luo, M.~C. Dietze, T.~F. Keenan, Z.~Shi, J.~Li and F.~S.~C. Iii,
   2014: {The role of data assimilation in predictive ecology}.
   \textit{Ecosphere}, \textbf{5~(5)}, art65, \doi{10.1890/ES13-00273.1}.
 
@@ -670,29 +718,39 @@ Paige, C., 1981: {Properties of numerical algorithms related to computing
 
 \bibitem[{Palmer et~al.(1998)Palmer, Gelaro, Barkmeijer, and
   Buizza}]{palmer1998singular}
-Palmer, T., R.~Gelaro, J.~Barkmeijer, and R.~Buizza, 1998: Singular vectors,
+Palmer, T., R.~Gelaro, J.~Barkmeijer and R.~Buizza, 1998: Singular vectors,
   metrics, and adaptive observations. \textit{Journal of the Atmospheric
   Sciences}, \textbf{55~(4)}, 633--653.
 
-\bibitem[{Pan et~al.(2011)}]{pan2011large}
-Pan, Y., et~al., 2011: A large and persistent carbon sink in the world's
-  forests. \textit{Science}, \textbf{333~(6045)}, 988--993.
+\bibitem[{Pan et~al.(2011)Pan, Birdsey, Fang, Houghton, Kauppi, Kurz, Phillips,
+  Shvidenko, Lewis, Canadell et~al.}]{pan2011large}
+Pan, Y., R.~A. Birdsey, J.~Fang, R.~Houghton, P.~E. Kauppi, W.~A. Kurz, O.~L.
+  Phillips, A.~Shvidenko, S.~L. Lewis, J.~G. Canadell et~al., 2011: A large and
+  persistent carbon sink in the world's forests. \textit{Science},
+  \textbf{333~(6045)}, 988--993.
 
-\bibitem[{Papale et~al.(2006{\natexlab{a}})}]{papale2006towards}
-Papale, D., et~al., 2006{\natexlab{a}}: Towards a standardized processing of
-  net ecosystem exchange measured with eddy covariance technique: algorithms
-  and uncertainty estimation. \textit{Biogeosciences}, \textbf{3~(4)},
-  571--583.
+\bibitem[{Papale et~al.(2006{\natexlab{a}})Papale, Reichstein, Aubinet,
+  Canfora, Bernhofer, Kutsch, Longdoz, Rambal, Valentini, Vesala, and
+  Yakir}]{Papale2006}
+Papale, D., M.~Reichstein, M.~Aubinet, E.~Canfora, C.~Bernhofer, W.~Kutsch,
+  B.~Longdoz, S.~Rambal, R.~Valentini, T.~Vesala and D.~Yakir,
+  2006{\natexlab{a}}: {Towards a standardized processing of Net Ecosystem
+  Exchange measured with eddy covariance technique: algorithms and uncertainty
+  estimation}. \textit{Biogeosciences}, \textbf{3~(4)}, 571--583,
+  \doi{10.5194/bg-3-571-2006}.
 
-\bibitem[{Papale et~al.(2006{\natexlab{b}})}]{Papale2006}
-Papale, D., et~al., 2006{\natexlab{b}}: {Towards a standardized processing of
-  Net Ecosystem Exchange measured with eddy covariance technique: algorithms
-  and uncertainty estimation}. \textit{Biogeosciences}, \textbf{3~(4)},
-  571--583, \doi{10.5194/bg-3-571-2006}.
+\bibitem[{Papale et~al.(2006{\natexlab{b}})Papale, Reichstein, Aubinet,
+  Canfora, Bernhofer, Kutsch, Longdoz, Rambal, Valentini, Vesala
+  et~al.}]{papale2006towards}
+Papale, D., M.~Reichstein, M.~Aubinet, E.~Canfora, C.~Bernhofer, W.~Kutsch,
+  B.~Longdoz, S.~Rambal, R.~Valentini, T.~Vesala et~al., 2006{\natexlab{b}}:
+  Towards a standardized processing of net ecosystem exchange measured with
+  eddy covariance technique: algorithms and uncertainty estimation.
+  \textit{Biogeosciences}, \textbf{3~(4)}, 571--583.
 
 \bibitem[{Pierret et~al.(2016)Pierret, Maeght, Cl�ment, Montoroi, Hartmann, and
   Gonkhamdee}]{Pierret01102016}
-Pierret, A., J.-L. Maeght, C.~Cl�ment, J.-P. Montoroi, C.~Hartmann, and
+Pierret, A., J.-L. Maeght, C.~Cl�ment, J.-P. Montoroi, C.~Hartmann and
   S.~Gonkhamdee, 2016: Understanding deep roots and their functions in
   ecosystems: an advocacy for more unconventional research. \textit{Annals of
   Botany}, \textbf{118~(4)}, 621--635, \doi{10.1093/aob/mcw130}.
@@ -700,16 +758,16 @@ Pierret, A., J.-L. Maeght, C.~Cl�ment, J.-P. Montoroi, C.~Hartmann, and
 \bibitem[{Pinnington et~al.(2016)Pinnington, Casella, Dance, Lawless, Morison,
   Nichols, Wilkinson, and Quaife}]{Pinnington2016299}
 Pinnington, E.~M., E.~Casella, S.~L. Dance, A.~S. Lawless, J.~I. Morison, N.~K.
-  Nichols, M.~Wilkinson, and T.~L. Quaife, 2016: Investigating the role of
-  prior and observation error correlations in improving a model forecast of
-  forest carbon balance using four-dimensional variational data assimilation.
+  Nichols, M.~Wilkinson and T.~L. Quaife, 2016: Investigating the role of prior
+  and observation error correlations in improving a model forecast of forest
+  carbon balance using four-dimensional variational data assimilation.
   \textit{Agricultural and Forest Meteorology}, \textbf{228–229}, 299 -- 314,
   \doi{http://dx.doi.org/10.1016/j.agrformet.2016.07.006}.
 
 \bibitem[{Pinnington et~al.(2017)Pinnington, Casella, Dance, Lawless, Morison,
   Nichols, Wilkinson, and Quaife}]{Pinnington2017}
 Pinnington, E.~M., E.~Casella, S.~L. Dance, A.~S. Lawless, J.~I. Morison, N.~K.
-  Nichols, M.~Wilkinson, and T.~L. Quaife, 2017: Using data assimilation to
+  Nichols, M.~Wilkinson and T.~L. Quaife, 2017: Using data assimilation to
   understand the effect of disturbance on the carbon dynamics of a managed
   woodland. \textit{JGR: Biogeosciences}, under review.
 
@@ -720,40 +778,40 @@ Pitman, R. and M.~Broadmeadow, 2001: Leaf area, biomass and physiological
 
 \bibitem[{Press et~al.(2007)Press, Teukolsky, Vetterling, and
   Flannery}]{press2007numerical}
-Press, W., S.~A. Teukolsky, W.~T. Vetterling, and B.~P. Flannery, 2007:
+Press, W., S.~A. Teukolsky, W.~T. Vetterling and B.~P. Flannery, 2007:
   \textit{Numerical Recipes 3rd Edition: The Art of Scientific Computing}.
   Cambridge University Press.
 
 \bibitem[{Quaife et~al.(2008)Quaife, Lewis, {De Kauwe}, Williams, Law, Disney,
   and Bowyer}]{Quaife2008}
-Quaife, T., P.~Lewis, M.~{De Kauwe}, M.~Williams, B.~E. Law, M.~Disney, and
+Quaife, T., P.~Lewis, M.~{De Kauwe}, M.~Williams, B.~E. Law, M.~Disney and
   P.~Bowyer, 2008: {Assimilating canopy reflectance data into an ecosystem
   model with an Ensemble Kalman Filter}. \textit{Remote Sensing of
   Environment}, \textbf{112~(4)}, 1347--1364, \doi{10.1016/j.rse.2007.05.020}.
 
 \bibitem[{Rabier et~al.(2002)Rabier, Fourri{\'e}, Chaf{\"a}i, and
   Prunet}]{rabier2002channel}
-Rabier, F., N.~Fourri{\'e}, D.~Chaf{\"a}i, and P.~Prunet, 2002: Channel
+Rabier, F., N.~Fourri{\'e}, D.~Chaf{\"a}i and P.~Prunet, 2002: Channel
   selection methods for infrared atmospheric sounding interferometer radiances.
   \textit{Quarterly Journal of the Royal Meteorological Society},
   \textbf{128~(581)}, 1011--1027.
 
 \bibitem[{Raoult et~al.(2016)Raoult, Jupp, Cox, and Luke}]{raoult2016land}
-Raoult, N.~M., T.~E. Jupp, P.~M. Cox, and C.~M. Luke, 2016: Land-surface
+Raoult, N.~M., T.~E. Jupp, P.~M. Cox and C.~M. Luke, 2016: Land-surface
   parameter optimisation using data assimilation techniques: the adjules system
   v1. 0. \textit{Geoscientific Model Development}, \textbf{9~(8)}, 2833.
 
 \bibitem[{Raupach et~al.(2005)Raupach, Rayner, Barrett, DeFries, Heimann,
   Ojima, Quegan, and Schmullius}]{raupach2005model}
-Raupach, M., P.~Rayner, D.~Barrett, R.~DeFries, M.~Heimann, D.~Ojima,
-  S.~Quegan, and C.~Schmullius, 2005: Model--data synthesis in terrestrial
-  carbon observation: methods, data requirements and data uncertainty
-  specifications. \textit{Global Change Biology}, \textbf{11~(3)}, 378--397.
+Raupach, M., P.~Rayner, D.~Barrett, R.~DeFries, M.~Heimann, D.~Ojima, S.~Quegan
+  and C.~Schmullius, 2005: Model--data synthesis in terrestrial carbon
+  observation: methods, data requirements and data uncertainty specifications.
+  \textit{Global Change Biology}, \textbf{11~(3)}, 378--397.
 
 \bibitem[{Rayner et~al.(2005)Rayner, Scholze, Knorr, Kaminski, Giering, and
   Widmann}]{rayner2005two}
-Rayner, P., M.~Scholze, W.~Knorr, T.~Kaminski, R.~Giering, and H.~Widmann,
-  2005: Two decades of terrestrial carbon fluxes from a carbon cycle data
+Rayner, P., M.~Scholze, W.~Knorr, T.~Kaminski, R.~Giering and H.~Widmann, 2005:
+  Two decades of terrestrial carbon fluxes from a carbon cycle data
   assimilation system (ccdas). \textit{Global Biogeochemical Cycles},
   \textbf{19~(2)}.
 
@@ -763,7 +821,7 @@ Rayner, P.~J., 2010: The current state of carbon-cycle data assimilation.
   289--296.
 
 \bibitem[{Reich et~al.(1991)Reich, Walters, and Ellsworth}]{reich1991leaf}
-Reich, P.~B., M.~B. Walters, and D.~S. Ellsworth, 1991: Leaf age and season
+Reich, P.~B., M.~B. Walters and D.~S. Ellsworth, 1991: Leaf age and season
   influence the relationships between leaf nitrogen, leaf mass per area and
   photosynthesis in maple and oak trees. \textit{Plant, Cell \& Environment},
   \textbf{14~(3)}, 251--259, \doi{10.1111/j.1365-3040.1991.tb01499.x}.
@@ -774,20 +832,27 @@ Renaud, J., 1997: Automatic differentiation in robust optimization.
 
 \bibitem[{Rich et~al.(1999)Rich, Wood, Vieglais, Burek, and
   Webb}]{rich1999hemiview}
-Rich, P.~M., J.~Wood, D.~Vieglais, K.~Burek, and N.~Webb, 1999: Hemiview user
+Rich, P.~M., J.~Wood, D.~Vieglais, K.~Burek and N.~Webb, 1999: Hemiview user
   manual, version 2.1. \textit{Delta-T Devices Ltd., Cambridge, UK},
   \textbf{79}.
 
-\bibitem[{Richardson et~al.(2008)}]{Richardson200838}
-Richardson, A.~D., et~al., 2008: Statistical properties of random \{CO2\} flux
-  measurement uncertainty inferred from model residuals. \textit{Agricultural
-  and Forest Meteorology}, \textbf{148~(1)}, 38 -- 50,
+\bibitem[{Richardson et~al.(2008)Richardson, Mahecha, Falge, Kattge, Moffat,
+  Papale, Reichstein, Stauch, Braswell, Churkina, Kruijt, and
+  Hollinger}]{Richardson200838}
+Richardson, A.~D., M.~D. Mahecha, E.~Falge, J.~Kattge, A.~M. Moffat, D.~Papale,
+  M.~Reichstein, V.~J. Stauch, B.~H. Braswell, G.~Churkina, B.~Kruijt and D.~Y.
+  Hollinger, 2008: Statistical properties of random {CO\(_2\)} flux measurement
+  uncertainty inferred from model residuals. \textit{Agricultural and Forest
+  Meteorology}, \textbf{148~(1)}, 38 -- 50,
   \doi{http://dx.doi.org/10.1016/j.agrformet.2007.09.001}.
 
-\bibitem[{Richardson et~al.(2010)}]{richardson2010estimating}
-Richardson, A.~D., et~al., 2010: Estimating parameters of a forest ecosystem c
-  model with measurements of stocks and fluxes as joint constraints.
-  \textit{Oecologia}, \textbf{164~(1)}, 25--40.
+\bibitem[{Richardson et~al.(2010)Richardson, Williams, Hollinger, Moore, Dail,
+  Davidson, Scott, Evans, Hughes, Lee et~al.}]{richardson2010estimating}
+Richardson, A.~D., M.~Williams, D.~Y. Hollinger, D.~J. Moore, D.~B. Dail, E.~A.
+  Davidson, N.~A. Scott, R.~S. Evans, H.~Hughes, J.~T. Lee et~al., 2010:
+  Estimating parameters of a forest ecosystem c model with measurements of
+  stocks and fluxes as joint constraints. \textit{Oecologia}, \textbf{164~(1)},
+  25--40.
 
 \bibitem[{Rodgers(1998)}]{rodgers1998information}
 Rodgers, C.~D., 1998: Information content and optimisation of high spectral
@@ -804,13 +869,13 @@ Running, S.~W., 2008: Ecosystem disturbance, carbon, and climate.
 
 \bibitem[{Running et~al.(2004)Running, Nemani, Heinsch, Zhao, Reeves, and
   Hashimoto}]{running2004continuous}
-Running, S.~W., R.~R. Nemani, F.~A. Heinsch, M.~Zhao, M.~Reeves, and
+Running, S.~W., R.~R. Nemani, F.~A. Heinsch, M.~Zhao, M.~Reeves and
   H.~Hashimoto, 2004: A continuous satellite-derived measure of global
   terrestrial primary production. \textit{Bioscience}, \textbf{54~(6)},
   547--560.
 
 \bibitem[{Sacks et~al.(2007)Sacks, Schimel, and Monson}]{Sacks2007}
-Sacks, W.~J., D.~S. Schimel, and R.~K. Monson, 2007: Coupling between carbon
+Sacks, W.~J., D.~S. Schimel and R.~K. Monson, 2007: Coupling between carbon
   cycling and climate in a high-elevation, subalpine forest: a model-data
   fusion analysis. \textit{Oecologia}, \textbf{151~(1)}, 54--68,
   \doi{10.1007/s00442-006-0565-2}.
@@ -821,7 +886,7 @@ Sasaki, Y., 1970: Some basic formalisms in numerical variational analysis.
 
 \bibitem[{Saunders et~al.(2012)Saunders, Tobin, Black, Gioria, Nieuwenhuis, and
   Osborne}]{Saunders20121}
-Saunders, M., B.~Tobin, K.~Black, M.~Gioria, M.~Nieuwenhuis, and B.~Osborne,
+Saunders, M., B.~Tobin, K.~Black, M.~Gioria, M.~Nieuwenhuis and B.~Osborne,
   2012: Thinning effects on the net ecosystem carbon exchange of a sitka spruce
   forest are temperature-dependent. \textit{Agricultural and Forest
   Meteorology}, \textbf{157}, 1 -- 10,
@@ -841,66 +906,74 @@ Schlich, S.~W. and W.~Perr{\'e}e, 1905: \textit{Working plan for the Alice Holt
 
 \bibitem[{Scholze et~al.(2007)Scholze, Kaminski, Rayner, Knorr, and
   Giering}]{scholze2007propagating}
-Scholze, M., T.~Kaminski, P.~Rayner, W.~Knorr, and R.~Giering, 2007:
-  Propagating uncertainty through prognostic carbon cycle data assimilation
-  system simulations. \textit{Journal of Geophysical Research: Atmospheres},
+Scholze, M., T.~Kaminski, P.~Rayner, W.~Knorr and R.~Giering, 2007: Propagating
+  uncertainty through prognostic carbon cycle data assimilation system
+  simulations. \textit{Journal of Geophysical Research: Atmospheres},
   \textbf{112~(D17)}.
 
 \bibitem[{Scholze et~al.(2006)Scholze, Knorr, Arnell, and
   Prentice}]{scholze2006climate}
-Scholze, M., W.~Knorr, N.~W. Arnell, and I.~C. Prentice, 2006: A climate-change
+Scholze, M., W.~Knorr, N.~W. Arnell and I.~C. Prentice, 2006: A climate-change
   risk analysis for world ecosystems. \textit{Proceedings of the National
   Academy of Sciences}, \textbf{103~(35)}, 13\,116--13\,120.
 
-\bibitem[{Schwalm et~al.(2010)}]{schwalm2010model}
-Schwalm, C.~R., et~al., 2010: A model-data intercomparison of co2 exchange
-  across north america: Results from the north american carbon program site
-  synthesis. \textit{Journal of Geophysical Research: Biogeosciences},
-  \textbf{115~(G3)}.
+\bibitem[{Schwalm et~al.(2010)Schwalm, Williams, Schaefer, Anderson, Arain,
+  Baker, Barr, Black, Chen, Chen et~al.}]{schwalm2010model}
+Schwalm, C.~R., C.~A. Williams, K.~Schaefer, R.~Anderson, M.~A. Arain,
+  I.~Baker, A.~Barr, T.~A. Black, G.~Chen, J.~M. Chen et~al., 2010: A
+  model-data intercomparison of {CO2} exchange across north america: Results
+  from the north american carbon program site synthesis. \textit{Journal of
+  Geophysical Research: Biogeosciences}, \textbf{115~(G3)}.
 
 \bibitem[{Schwarz et~al.(1978)}]{schwarz1978estimating}
 Schwarz, G. et~al., 1978: Estimating the dimension of a model. \textit{The
   annals of statistics}, \textbf{6~(2)}, 461--464.
 
-\bibitem[{Seidl et~al.(2011)}]{seidl2011modelling}
-Seidl, R., et~al., 2011: Modelling natural disturbances in forest ecosystems: a
-  review. \textit{Ecological Modelling}, \textbf{222~(4)}, 903--924.
+\bibitem[{Seidl et~al.(2011)Seidl, Fernandes, Fonseca, Gillet, J{\"o}nsson,
+  Mergani{\v{c}}ov{\'a}, Netherer, Arpaci, Bontemps, Bugmann
+  et~al.}]{seidl2011modelling}
+Seidl, R., P.~M. Fernandes, T.~F. Fonseca, F.~Gillet, A.~M. J{\"o}nsson,
+  K.~Mergani{\v{c}}ov{\'a}, S.~Netherer, A.~Arpaci, J.-D. Bontemps, H.~Bugmann
+  et~al., 2011: Modelling natural disturbances in forest ecosystems: a review.
+  \textit{Ecological Modelling}, \textbf{222~(4)}, 903--924.
 
 \bibitem[{Singh et~al.(2013)Singh, Sandu, Jardak, Bowman, and
   Lee}]{singh2013practical}
-Singh, K., A.~Sandu, M.~Jardak, K.~Bowman, and M.~Lee, 2013: A practical method
+Singh, K., A.~Sandu, M.~Jardak, K.~Bowman and M.~Lee, 2013: A practical method
   to estimate information content in the context of 4d-var data assimilation.
   \textit{SIAM/ASA Journal on Uncertainty Quantification}, \textbf{1~(1)},
   106--138.
 
-\bibitem[{Sitch et~al.(2008)}]{sitch2008evaluation}
-Sitch, S., et~al., 2008: Evaluation of the terrestrial carbon cycle, future
-  plant geography and climate-carbon cycle feedbacks using five dynamic global
-  vegetation models (dgvms). \textit{Global Change Biology}, \textbf{14~(9)},
-  2015--2039.
+\bibitem[{Sitch et~al.(2008)Sitch, Huntingford, Gedney, Levy, Lomas, Piao,
+  Betts, Ciais, Cox, Friedlingstein et~al.}]{sitch2008evaluation}
+Sitch, S., C.~Huntingford, N.~Gedney, P.~Levy, M.~Lomas, S.~Piao, R.~Betts,
+  P.~Ciais, P.~Cox, P.~Friedlingstein et~al., 2008: Evaluation of the
+  terrestrial carbon cycle, future plant geography and climate-carbon cycle
+  feedbacks using five dynamic global vegetation models (dgvms). \textit{Global
+  Change Biology}, \textbf{14~(9)}, 2015--2039.
 
 \bibitem[{Smith et~al.(2009)Smith, Dance, Baines, Nichols, and
   Scott}]{smith2009variational}
-Smith, P.~J., S.~L. Dance, M.~J. Baines, N.~K. Nichols, and T.~R. Scott, 2009:
+Smith, P.~J., S.~L. Dance, M.~J. Baines, N.~K. Nichols and T.~R. Scott, 2009:
   Variational data assimilation for parameter estimation: application to a
   simple morphodynamic model. \textit{Ocean Dynamics}, \textbf{59~(5)},
   697--708.
 
 \bibitem[{Smith et~al.(2011)Smith, Dance, and Nichols}]{Smith2011436}
-Smith, P.~J., S.~L. Dance, and N.~K. Nichols, 2011: A hybrid data assimilation
+Smith, P.~J., S.~L. Dance and N.~K. Nichols, 2011: A hybrid data assimilation
   scheme for model parameter estimation: Application to morphodynamic
   modelling. \textit{Computers \& Fluids}, \textbf{46~(1)}, 436 -- 441,
-  \doi{http://dx.doi.org/10.1016/j.compfluid.2011.01.010}, 10th \{ICFD\}
-  Conference Series on Numerical Methods for Fluid Dynamics (ICFD 2010).
+  \doi{http://dx.doi.org/10.1016/j.compfluid.2011.01.010}, 10th ICFD Conference
+  Series on Numerical Methods for Fluid Dynamics (ICFD 2010).
 
 \bibitem[{Stewart et~al.(2008)Stewart, Dance, and
   Nichols}]{stewart2008correlated}
-Stewart, L.~M., S.~Dance, and N.~Nichols, 2008: Correlated observation errors
-  in data assimilation. \textit{International journal for numerical methods in
+Stewart, L.~M., S.~Dance and N.~Nichols, 2008: Correlated observation errors in
+  data assimilation. \textit{International journal for numerical methods in
   fluids}, \textbf{56~(8)}, 1521--1527.
 
 \bibitem[{Stewart et~al.(2013)Stewart, Dance, and Nichols}]{Stewart2013}
-Stewart, L.~M., S.~L. Dance, and N.~K. Nichols, 2013: {Data assimilation with
+Stewart, L.~M., S.~L. Dance and N.~K. Nichols, 2013: {Data assimilation with
   correlated observation errors: Experiments with a 1-D shallow water model}.
   \textit{Tellus, Series A: Dynamic Meteorology and Oceanography},
   \textbf{65~(1)}, 1--14, \doi{10.3402/tellusa.v65i0.19546}.
@@ -912,7 +985,7 @@ Talagrand, O., 1997: Assimilation of observations, an introduction.
 
 \bibitem[{Talbot et~al.(2008)Talbot, Allison, and
   Treseder}]{talbot2008decomposers}
-Talbot, J., S.~Allison, and K.~Treseder, 2008: Decomposers in disguise:
+Talbot, J., S.~Allison and K.~Treseder, 2008: Decomposers in disguise:
   mycorrhizal fungi as regulators of soil c dynamics in ecosystems under global
   change. \textit{Functional ecology}, \textbf{22~(6)}, 955--963.
 
@@ -921,33 +994,40 @@ Taylor, K.~E., 2001: {Summarizing multiple aspects of model performance in a
   single diagram}. \textit{Journal of Geophysical Research}, \textbf{106~(D7)},
   7183, \doi{10.1029/2000JD900719}.
 
-\bibitem[{Thornton et~al.(2002)}]{thornton2002modeling}
-Thornton, P., et~al., 2002: Modeling and measuring the effects of disturbance
-  history and climate on carbon and water budgets in evergreen needleleaf
-  forests. \textit{Agricultural and forest meteorology}, \textbf{113~(1)},
-  185--222.
+\bibitem[{Thornton et~al.(2002)Thornton, Law, Gholz, Clark, Falge, Ellsworth,
+  Goldstein, Monson, Hollinger, Falk et~al.}]{thornton2002modeling}
+Thornton, P., B.~Law, H.~L. Gholz, K.~L. Clark, E.~Falge, D.~Ellsworth,
+  A.~Goldstein, R.~Monson, D.~Hollinger, M.~Falk et~al., 2002: Modeling and
+  measuring the effects of disturbance history and climate on carbon and water
+  budgets in evergreen needleleaf forests. \textit{Agricultural and forest
+  meteorology}, \textbf{113~(1)}, 185--222.
 
 \bibitem[{Tremolet(2006)}]{Tremolet2006}
 Tremolet, Y., 2006: {Accounting for an imperfect model in 4D-Var}.
   \textit{Quarterly Journal of the Royal Meteorological Society},
   \textbf{132~(621)}, 2483--2504, \doi{10.1256/qj.05.224}.
 
-\bibitem[{Trudinger et~al.(2007)}]{trudinger2007optic}
-Trudinger, C.~M., et~al., 2007: Optic project: An intercomparison of
-  optimization techniques for parameter estimation in terrestrial
-  biogeochemical models. \textit{Journal of Geophysical Research:
-  Biogeosciences}, \textbf{112~(G2)}.
+\bibitem[{Trudinger et~al.(2007)Trudinger, Raupach, Rayner, Kattge, Liu, Pak,
+  Reichstein, Renzullo, Richardson, Roxburgh et~al.}]{trudinger2007optic}
+Trudinger, C.~M., M.~R. Raupach, P.~J. Rayner, J.~Kattge, Q.~Liu, B.~Pak,
+  M.~Reichstein, L.~Renzullo, A.~D. Richardson, S.~H. Roxburgh et~al., 2007:
+  Optic project: An intercomparison of optimization techniques for parameter
+  estimation in terrestrial biogeochemical models. \textit{Journal of
+  Geophysical Research: Biogeosciences}, \textbf{112~(G2)}.
 
 \bibitem[{Verbeeck et~al.(2011)Verbeeck, Peylin, Bacour, Bonal, Steppe, and
   Ciais}]{Verbeeck2011}
-Verbeeck, H., P.~Peylin, C.~Bacour, D.~Bonal, K.~Steppe, and P.~Ciais, 2011:
+Verbeeck, H., P.~Peylin, C.~Bacour, D.~Bonal, K.~Steppe and P.~Ciais, 2011:
   {Seasonal patterns of CO2 fluxes in Amazon forests: Fusion of eddy covariance
   data and the ORCHIDEE model}. \textit{Journal of Geophysical Research},
   \textbf{116~(G2)}, 1--19, \doi{10.1029/2010JG001544}.
 
-\bibitem[{Vesala et~al.(2005)}]{vesala2005effect}
-Vesala, T., et~al., 2005: Effect of thinning on surface fluxes in a boreal
-  forest. \textit{Global Biogeochemical Cycles}, \textbf{19~(2)}.
+\bibitem[{Vesala et~al.(2005)Vesala, Suni, Rannik, Keronen, Markkanen, Sevanto,
+  Gr{\"o}nholm, Smolander, Kulmala, Ilvesniemi et~al.}]{vesala2005effect}
+Vesala, T., T.~Suni, {\"U}.~Rannik, P.~Keronen, T.~Markkanen, S.~Sevanto,
+  T.~Gr{\"o}nholm, S.~Smolander, M.~Kulmala, H.~Ilvesniemi et~al., 2005: Effect
+  of thinning on surface fluxes in a boreal forest. \textit{Global
+  Biogeochemical Cycles}, \textbf{19~(2)}.
 
 \bibitem[{Wahba(1985)}]{wahba1985design}
 Wahba, G., 1985: Design criteria and eigensequence plots for satellite-computed
@@ -956,7 +1036,7 @@ Wahba, G., 1985: Design criteria and eigensequence plots for satellite-computed
 
 \bibitem[{Waller et~al.(2014)Waller, Dance, Lawless, Nichols, and
   Eyre}]{Waller2014}
-Waller, J.~A., S.~L. Dance, A.~S. Lawless, N.~K. Nichols, and J.~R. Eyre, 2014:
+Waller, J.~A., S.~L. Dance, A.~S. Lawless, N.~K. Nichols and J.~R. Eyre, 2014:
   {Representativity error for temperature and humidity using the Met Office
   high-resolution model†}. \textit{Quarterly Journal of the Royal
   Meteorological Society}, \textbf{140~(681)}, 1189--1197,
@@ -968,65 +1048,82 @@ Walter, S.~F. and L.~Lehmann, 2013: {Algorithmic differentiation in Python with
   \doi{10.1016/j.jocs.2011.10.007}.
 
 \bibitem[{Weston et~al.(2014)Weston, Bell, and Eyre}]{weston2014accounting}
-Weston, P., W.~Bell, and J.~Eyre, 2014: Accounting for correlated error in the
+Weston, P., W.~Bell and J.~Eyre, 2014: Accounting for correlated error in the
   assimilation of high-resolution sounder data. \textit{Quarterly Journal of
   the Royal Meteorological Society}, \textbf{140~(685)}, 2420--2429.
 
 \bibitem[{Wilkinson et~al.(2015)Wilkinson, Crow, Eaton, and
   Morison}]{wilkinson2015effects}
-Wilkinson, M., P.~Crow, E.~Eaton, and J.~Morison, 2015: Effects of management
+Wilkinson, M., P.~Crow, E.~Eaton and J.~Morison, 2015: Effects of management
   thinning on co\(_{2}\) exchange by a plantation oak woodland in south-eastern
   england. \textit{Biogeosciences Discussions}, \textbf{12~(19)}.
 
 \bibitem[{Wilkinson et~al.(2016)Wilkinson, Crow, Eaton, and
   Morison}]{wilkinson2016}
-Wilkinson, M., P.~Crow, E.~L. Eaton, and J.~I.~L. Morison, 2016: Effects of
-  management thinning on co2 exchange by a plantation oak woodland in
+Wilkinson, M., P.~Crow, E.~L. Eaton and J.~I.~L. Morison, 2016: Effects of
+  management thinning on {CO\(_2\)} exchange by a plantation oak woodland in
   south-eastern england. \textit{Biogeosciences}, \textbf{13~(8)}, 2367--2378,
   \doi{10.5194/bg-13-2367-2016}.
 
 \bibitem[{Wilkinson et~al.(2012)Wilkinson, Eaton, Broadmeadow, and
   Morison}]{wilkinson2012inter}
-Wilkinson, M., E.~Eaton, M.~Broadmeadow, and J.~Morison, 2012: Inter-annual
+Wilkinson, M., E.~Eaton, M.~Broadmeadow and J.~Morison, 2012: Inter-annual
   variation of carbon uptake by a plantation oak woodland in south-eastern
   england. \textit{Biogeosciences}, \textbf{9~(12)}, 5373--5389.
 
 \bibitem[{Williams et~al.(1997)Williams, Rastetter, Fernandes, Goulden, Shaver,
   and Johnson}]{williams1997predicting}
-Williams, M., E.~B. Rastetter, D.~N. Fernandes, M.~L. Goulden, G.~R. Shaver,
-  and L.~C. Johnson, 1997: Predicting gross primary productivity in terrestrial
+Williams, M., E.~B. Rastetter, D.~N. Fernandes, M.~L. Goulden, G.~R. Shaver and
+  L.~C. Johnson, 1997: Predicting gross primary productivity in terrestrial
   ecosystems. \textit{Ecological Applications}, \textbf{7~(3)}, 882--894.
+
+\bibitem[{Williams et~al.(2009)Williams, Richardson, Reichstein, Stoy, Peylin,
+  Verbeeck, Carvalhais, Jung, Hollinger, Kattge et~al.}]{williams2009improving}
+Williams, M., A.~Richardson, M.~Reichstein, P.~Stoy, P.~Peylin, H.~Verbeeck,
+  N.~Carvalhais, M.~Jung, D.~Hollinger, J.~Kattge et~al., 2009: Improving land
+  surface models with fluxnet data. \textit{Biogeosciences}, \textbf{6~(7)},
+  1341--1359.
 
 \bibitem[{Williams et~al.(2005)Williams, Schwarz, Law, Irvine, and
   Kurpius}]{williams2005improved}
-Williams, M., P.~A. Schwarz, B.~E. Law, J.~Irvine, and M.~R. Kurpius, 2005: An
+Williams, M., P.~A. Schwarz, B.~E. Law, J.~Irvine and M.~R. Kurpius, 2005: An
   improved analysis of forest carbon dynamics using data assimilation.
   \textit{Global Change Biology}, \textbf{11~(1)}, 89--105.
 
-\bibitem[{Williams et~al.(2009)}]{williams2009improving}
-Williams, M., et~al., 2009: Improving land surface models with fluxnet data.
-  \textit{Biogeosciences}, \textbf{6~(7)}, 1341--1359.
-
 \bibitem[{Wu et~al.(2009)Wu, Luo, Weng, White, Ma, and Zhou}]{Wu01012009}
-Wu, X., Y.~Luo, E.~Weng, L.~White, Y.~Ma, and X.~Zhou, 2009: Conditional
+Wu, X., Y.~Luo, E.~Weng, L.~White, Y.~Ma and X.~Zhou, 2009: Conditional
   inversion to estimate parameters from eddy-flux observations. \textit{Journal
   of Plant Ecology}, \doi{10.1093/jpe/rtp005}.
 
-\bibitem[{Yuan et~al.(2007)}]{yuan2007deriving}
-Yuan, W., et~al., 2007: Deriving a light use efficiency model from eddy
-  covariance flux data for predicting daily gross primary production across
-  biomes. \textit{Agricultural and Forest Meteorology}, \textbf{143~(3)},
-  189--207.
+\bibitem[{Yuan et~al.(2007)Yuan, Liu, Zhou, Zhou, Tieszen, Baldocchi,
+  Bernhofer, Gholz, Goldstein, Goulden et~al.}]{yuan2007deriving}
+Yuan, W., S.~Liu, G.~Zhou, G.~Zhou, L.~L. Tieszen, D.~Baldocchi, C.~Bernhofer,
+  H.~Gholz, A.~H. Goldstein, M.~L. Goulden et~al., 2007: Deriving a light use
+  efficiency model from eddy covariance flux data for predicting daily gross
+  primary production across biomes. \textit{Agricultural and Forest
+  Meteorology}, \textbf{143~(3)}, 189--207.
+
+\bibitem[{Ziehn et~al.(2011)Ziehn, Scholze, and Knorr}]{ziehn2011}
+Ziehn, T., M.~Scholze and W.~Knorr, 2011: Development of an ensemble-adjoint
+  optimization approach to derive uncertainties in net carbon fluxes.
+  \textit{Geoscientific Model Development}, \textbf{4~(4)}, 1011--1018,
+  \doi{10.5194/gmd-4-1011-2011}.
+
+\bibitem[{Ziehn et~al.(2012)Ziehn, Scholze, and Knorr}]{ziehn2012}
+Ziehn, T., M.~Scholze and W.~Knorr, 2012: On the capability of monte carlo and
+  adjoint inversion techniques to derive posterior parameter uncertainties in
+  terrestrial ecosystem models. \textit{Global Biogeochemical Cycles},
+  \textbf{26~(3)}, n/a--n/a, \doi{10.1029/2011GB004185}, gB3025.
 
 \bibitem[{Zobitz et~al.(2011)Zobitz, Desai, Moore, and
   Chadwick}]{zobitz2011primer}
-Zobitz, J., A.~Desai, D.~Moore, and M.~Chadwick, 2011: A primer for data
+Zobitz, J., A.~Desai, D.~Moore and M.~Chadwick, 2011: A primer for data
   assimilation with ecological models using markov chain monte carlo (mcmc).
   \textit{Oecologia}, \textbf{167~(3)}, 599--611.
 
 \bibitem[{Zobitz et~al.(2014{\natexlab{a}})Zobitz, Moore, Quaife, Braswell,
   Bergeson, Anthony, and Monson}]{zobitz2014joint}
-Zobitz, J., D.~J. Moore, T.~Quaife, B.~H. Braswell, A.~Bergeson, J.~A. Anthony,
+Zobitz, J., D.~J. Moore, T.~Quaife, B.~H. Braswell, A.~Bergeson, J.~A. Anthony
   and R.~K. Monson, 2014{\natexlab{a}}: Joint data assimilation of satellite
   reflectance and net ecosystem exchange data constrains ecosystem carbon
   fluxes at a high-elevation subalpine forest. \textit{Agricultural and Forest
@@ -1035,7 +1132,7 @@ Zobitz, J., D.~J. Moore, T.~Quaife, B.~H. Braswell, A.~Bergeson, J.~A. Anthony,
 \bibitem[{Zobitz et~al.(2014{\natexlab{b}})Zobitz, Moore, Quaife, Braswell,
   Bergeson, Anthony, and Monson}]{Zobitz2014}
 Zobitz, J.~M., D.~J.~P. Moore, T.~Quaife, B.~H. Braswell, A.~Bergeson, J.~a.
-  Anthony, and R.~K. Monson, 2014{\natexlab{b}}: {Joint data assimilation of
+  Anthony and R.~K. Monson, 2014{\natexlab{b}}: {Joint data assimilation of
   satellite reflectance and net ecosystem exchange data constrains ecosystem
   carbon fluxes at a high-elevation subalpine forest}. \textit{Agricultural and
   Forest Meteorology}, \textbf{195-196}, 73--88,
@@ -1043,14 +1140,14 @@ Zobitz, J.~M., D.~J.~P. Moore, T.~Quaife, B.~H. Braswell, A.~Bergeson, J.~a.
 
 \bibitem[{Zobitz et~al.(2008)Zobitz, Moore, Sacks, Monson, Bowling, and
   Schimel}]{Zobitz2008}
-Zobitz, J.~M., D.~J.~P. Moore, W.~J. Sacks, R.~K. Monson, D.~R. Bowling, and
+Zobitz, J.~M., D.~J.~P. Moore, W.~J. Sacks, R.~K. Monson, D.~R. Bowling and
   D.~S. Schimel, 2008: Integration of process-based soil respiration models
-  with whole-ecosystem co2 measurements. \textit{Ecosystems}, \textbf{11~(2)},
-  250--269, \doi{10.1007/s10021-007-9120-1}.
+  with whole-ecosystem {CO\(_2\)} measurements. \textit{Ecosystems},
+  \textbf{11~(2)}, 250--269, \doi{10.1007/s10021-007-9120-1}.
 
 \bibitem[{Zou et~al.(1992)Zou, Navon, and Le~Dimet}]{zou1992incomplete}
-Zou, X., I.~Navon, and F.~Le~Dimet, 1992: Incomplete observations and control
-  of gravity waves in variational data assimilation. \textit{Tellus A},
+Zou, X., I.~Navon and F.~Le~Dimet, 1992: Incomplete observations and control of
+  gravity waves in variational data assimilation. \textit{Tellus A},
   \textbf{44~(4)}, 273--296.
 
 \end{thebibliography}

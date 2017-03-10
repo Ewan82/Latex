@@ -1,0 +1,411 @@
+\begin{thebibliography}{56}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Bhupinderpal et~al.}(2003)\textit{Bhupinderpal, Nordgren,
+  Ottosson~L{\"o}fvenius, H{\"o}gberg, Mellander, and
+  H{\"o}gberg}}]{PCE:PCE1053}
+Bhupinderpal, S., A.~Nordgren, M.~Ottosson~L{\"o}fvenius, M.~N. H{\"o}gberg,
+  P.~E. Mellander, and P.~H{\"o}gberg (2003), Tree root and soil heterotrophic
+  respiration as revealed by girdling of boreal scots pine forest: extending
+  observations beyond the first year, \textit{Plant, Cell \& Environment},
+  \textit{26}(8), 1287--1296, \doi{10.1046/j.1365-3040.2003.01053.x}.
+
+\bibitem[{\textit{Bloom and Williams}(2015)}]{Bloom2015}
+Bloom, A.~A., and M.~Williams (2015), {Constraining ecosystem carbon dynamics
+  in a data-limited world: integrating ecological ``common sense" in a model
+  data fusion framework}, \textit{Biogeosciences}, \textit{12}(5), 1299--1315,
+  \doi{10.5194/bg-12-1299-2015}.
+
+\bibitem[{\textit{Braswell et~al.}(2005)\textit{Braswell, Sacks, Linder, and
+  Schimel}}]{braswell2005estimating}
+Braswell, B.~H., W.~J. Sacks, E.~Linder, and D.~S. Schimel (2005), Estimating
+  diurnal to annual ecosystem parameters by synthesis of a carbon flux model
+  with eddy covariance net ecosystem exchange observations, \textit{Global
+  Change Biology}, \textit{11}(2), 335--355.
+
+\bibitem[{\textit{Br{\'e}da}(2003)}]{breda2003ground}
+Br{\'e}da, N.~J. (2003), Ground-based measurements of leaf area index: a review
+  of methods, instruments and current controversies, \textit{Journal of
+  experimental botany}, \textit{54}(392), 2403--2417.
+
+\bibitem[{\textit{Bréda et~al.}(1995)\textit{Bréda, Granier, and
+  Aussenac}}]{breda95thin}
+Bréda, N., A.~Granier, and G.~Aussenac (1995), Effects of thinning on soil and
+  tree water relations, transpiration and growth in an oak forest (quercus
+  petraea (matt.) liebl.), \textit{Tree Physiology}, \textit{15}(5), 295,
+  \doi{10.1093/treephys/15.5.295}.
+
+\bibitem[{\textit{Ciais et~al.}(2014)\textit{Ciais, Sabine, Bala, Bopp,
+  Brovkin, Canadell, Chhabra, DeFries, Galloway, Heimann
+  et~al.}}]{ciais2014carbon}
+Ciais, P., C.~Sabine, G.~Bala, L.~Bopp, V.~Brovkin, J.~Canadell, A.~Chhabra,
+  R.~DeFries, J.~Galloway, M.~Heimann, et~al. (2014), Carbon and other
+  biogeochemical cycles, in \textit{Climate change 2013: the physical science
+  basis. Contribution of Working Group I to the Fifth Assessment Report of the
+  Intergovernmental Panel on Climate Change}, pp. 465--570, Cambridge
+  University Press.
+
+\bibitem[{\textit{Dahdouh-Guebas and Koedam}(2006)}]{dahdouh2006empirical}
+Dahdouh-Guebas, F., and N.~Koedam (2006), Empirical estimate of the reliability
+  of the use of the point-centred quarter method (pcqm): Solutions to ambiguous
+  field situations and description of the pcqm+ protocol, \textit{Forest
+  Ecology and management}, \textit{228}(1), 1--18.
+
+\bibitem[{\textit{Dijkstra and Cheng}(2007)}]{ELE:ELE1095}
+Dijkstra, F.~A., and W.~Cheng (2007), Interactions between soil and tree roots
+  accelerate long-term soil carbon decomposition, \textit{Ecology Letters},
+  \textit{10}(11), 1046--1053, \doi{10.1111/j.1461-0248.2007.01095.x}.
+
+\bibitem[{\textit{Dore et~al.}(2012)\textit{Dore, Montes-Helu, Hart, Hungate,
+  Koch, Moon, Finkral, and Kolb}}]{dore2012recovery}
+Dore, S., M.~Montes-Helu, S.~C. Hart, B.~A. Hungate, G.~W. Koch, J.~B. Moon,
+  A.~J. Finkral, and T.~E. Kolb (2012), Recovery of ponderosa pine ecosystem
+  carbon and water fluxes from thinning and stand-replacing fire,
+  \textit{Global change biology}, \textit{18}(10), 3171--3185.
+
+\bibitem[{\textit{Fassnacht et~al.}(1994)\textit{Fassnacht, Gower, Norman, and
+  McMurtric}}]{fassnacht1994comparison}
+Fassnacht, K.~S., S.~T. Gower, J.~M. Norman, and R.~E. McMurtric (1994), A
+  comparison of optical and direct methods for estimating foliage surface area
+  index in forests, \textit{Agricultural and Forest Meteorology},
+  \textit{71}(1), 183--207.
+
+\bibitem[{\textit{Fox et~al.}(2009)\textit{Fox, Williams, Richardson, Cameron,
+  Gove, Quaife, Ricciuto, Reichstein, Tomelleri, Trudinger
+  et~al.}}]{fox2009reflex}
+Fox, A., M.~Williams, A.~D. Richardson, D.~Cameron, J.~H. Gove, T.~Quaife,
+  D.~Ricciuto, M.~Reichstein, E.~Tomelleri, C.~M. Trudinger, et~al. (2009), The
+  reflex project: comparing different algorithms and implementations for the
+  inversion of a terrestrial ecosystem model against eddy covariance data,
+  \textit{Agricultural and Forest Meteorology}, \textit{149}(10), 1597--1615.
+
+\bibitem[{\textit{Heath et~al.}(2005)\textit{Heath, Ayres, Possell, Bardgett,
+  Black, Grant, Ineson, and Kerstiens}}]{heath2005rising}
+Heath, J., E.~Ayres, M.~Possell, R.~D. Bardgett, H.~I. Black, H.~Grant,
+  P.~Ineson, and G.~Kerstiens (2005), Rising atmospheric {CO2} reduces
+  sequestration of root-derived soil carbon, \textit{Science},
+  \textit{309}(5741), 1711--1713.
+
+\bibitem[{\textit{Heinemeyer et~al.}(2012)\textit{Heinemeyer, Wilkinson,
+  Vargas, Subke, Casella, Morison, and Ineson}}]{heinemeyer2012exploring}
+Heinemeyer, A., M.~Wilkinson, R.~Vargas, J.-A. Subke, E.~Casella, J.~I.
+  Morison, and P.~Ineson (2012), Exploring the ``overflow tap'' theory: linking
+  forest soil {CO2} fluxes and individual mycorrhizosphere components to
+  photosynthesis, \textit{Biogeosciences}, \textit{9}(1), 79--95.
+
+\bibitem[{\textit{Hernesmaa et~al.}(2005)\textit{Hernesmaa, BjÃ¶rklÃ¶f,
+  KiikkilÃ¤, Fritze, Haahtela, and Romantschuk}}]{Hernesmaa2005777}
+Hernesmaa, A., K.~BjÃ¶rklÃ¶f, O.~KiikkilÃ¤, H.~Fritze, K.~Haahtela, and
+  M.~Romantschuk (2005), Structure and function of microbial communities in the
+  rhizosphere of scots pine after tree-felling, \textit{Soil Biology and
+  Biochemistry}, \textit{37}(4), 777 -- 785,
+  \doi{http://dx.doi.org/10.1016/j.soilbio.2004.10.010}.
+
+\bibitem[{\textit{Hilker et~al.}(2009)\textit{Hilker, Wulder, Coops, Linke,
+  McDermid, Masek, Gao, and White}}]{hilker2009new}
+Hilker, T., M.~A. Wulder, N.~C. Coops, J.~Linke, G.~McDermid, J.~G. Masek,
+  F.~Gao, and J.~C. White (2009), A new data fusion model for high spatial-and
+  temporal-resolution mapping of forest disturbance based on landsat and modis,
+  \textit{Remote Sensing of Environment}, \textit{113}(8), 1613--1627.
+
+\bibitem[{\textit{H{\"o}gberg and Read}(2006)}]{hogberg2006towards}
+H{\"o}gberg, P., and D.~J. Read (2006), Towards a more plant physiological
+  perspective on soil ecology, \textit{Trends in Ecology \& Evolution},
+  \textit{21}(10), 548--554.
+
+\bibitem[{\textit{H{\"o}gberg et~al.}(2001)\textit{H{\"o}gberg, Nordgren,
+  Buchmann, Taylor, Ekblad, H{\"o}gberg, Nyberg, Ottosson-L{\"o}fvenius, and
+  Read}}]{hogberg2001large}
+H{\"o}gberg, P., A.~Nordgren, N.~Buchmann, A.~F. Taylor, A.~Ekblad, M.~N.
+  H{\"o}gberg, G.~Nyberg, M.~Ottosson-L{\"o}fvenius, and D.~J. Read (2001),
+  Large-scale forest girdling shows that current photosynthesis drives soil
+  respiration, \textit{Nature}, \textit{411}(6839), 789--792.
+
+\bibitem[{\textit{Janssens et~al.}(2001)\textit{Janssens, Lankreijer,
+  Matteucci, Kowalski, Buchmann, Epron, Pilegaard, Kutsch, Longdoz, Grünwald,
+  Montagnani, Dore, Rebmann, Moors, Grelle, Rannik, Morgenstern, Oltchev,
+  Clement, Guðmundsson, Minerbi, Berbigier, Ibrom, Moncrieff, Aubinet,
+  Bernhofer, Jensen, Vesala, Granier, Schulze, Lindroth, Dolman, Jarvis,
+  Ceulemans, and Valentini}}]{GCB:GCB412}
+Janssens, I.~A., H.~Lankreijer, G.~Matteucci, A.~S. Kowalski, N.~Buchmann,
+  D.~Epron, K.~Pilegaard, W.~Kutsch, B.~Longdoz, T.~Grünwald, L.~Montagnani,
+  S.~Dore, C.~Rebmann, E.~J. Moors, A.~Grelle, Ü.~Rannik, K.~Morgenstern,
+  S.~Oltchev, R.~Clement, J.~Guðmundsson, S.~Minerbi, P.~Berbigier, A.~Ibrom,
+  J.~Moncrieff, M.~Aubinet, C.~Bernhofer, N.~O. Jensen, T.~Vesala, A.~Granier,
+  E.~D. Schulze, A.~Lindroth, A.~J. Dolman, P.~G. Jarvis, R.~Ceulemans, and
+  R.~Valentini (2001), Productivity overshadows temperature in determining soil
+  and ecosystem respiration across european forests, \textit{Global Change
+  Biology}, \textit{7}(3), 269--278, \doi{10.1046/j.1365-2486.2001.00412.x}.
+
+\bibitem[{\textit{Jonckheere et~al.}(2004)\textit{Jonckheere, Fleck, Nackaerts,
+  Muys, Coppin, Weiss, and Baret}}]{Jonckheere2004}
+Jonckheere, I., S.~Fleck, K.~Nackaerts, B.~Muys, P.~Coppin, M.~Weiss, and
+  F.~Baret (2004), {Review of methods for in situ leaf area index determination
+  Part I. Theories, sensors and hemispherical photography},
+  \textit{Agricultural and Forest Meteorology}, \textit{121}(1-2), 19--35,
+  \doi{10.1016/j.agrformet.2003.08.027}.
+
+\bibitem[{\textit{Kantzas et~al.}(2015)\textit{Kantzas, Quegan, and
+  Lomas}}]{kantzas2015improving}
+Kantzas, E., S.~Quegan, and M.~Lomas (2015), Improving the representation of
+  fire disturbance in dynamic vegetation models by assimilating satellite data:
+  a case study over the arctic, \textit{Geoscientific Model Development},
+  \textit{8}(8), 2597--2609.
+
+\bibitem[{\textit{Kerr and Haufe}(2011)}]{kerr2011thinning}
+Kerr, G., and J.~Haufe (2011), Thinning practice: A silvicultural guide,
+  \textit{Forestry Commission}, p.~54.
+
+\bibitem[{\textit{Kimmins}(1973)}]{kimmins1973some}
+Kimmins, J. (1973), Some statistical aspects of sampling throughfall
+  precipitation in nutrient cycling studies in british columbian coastal
+  forests, \textit{Ecology}, pp. 1008--1019.
+
+\bibitem[{\textit{Kurz et~al.}(2008)\textit{Kurz, Dymond, Stinson, Rampley,
+  Neilson, Carroll, Ebata, and Safranyik}}]{kurz2008mountain}
+Kurz, W.~A., C.~Dymond, G.~Stinson, G.~Rampley, E.~Neilson, A.~Carroll,
+  T.~Ebata, and L.~Safranyik (2008), Mountain pine beetle and forest carbon
+  feedback to climate change, \textit{Nature}, \textit{452}(7190), 987--990.
+
+\bibitem[{\textit{Liu et~al.}(2011)\textit{Liu, Bond-Lamberty, Hicke, Vargas,
+  Zhao, Chen, Edburg, Hu, Liu, McGuire, Xiao, Keane, Yuan, Tang, Luo, Potter,
+  and Oeding}}]{JGRG:JGRG779}
+Liu, S., B.~Bond-Lamberty, J.~A. Hicke, R.~Vargas, S.~Zhao, J.~Chen, S.~L.
+  Edburg, Y.~Hu, J.~Liu, A.~D. McGuire, J.~Xiao, R.~Keane, W.~Yuan, J.~Tang,
+  Y.~Luo, C.~Potter, and J.~Oeding (2011), Simulating the impacts of
+  disturbances on forest carbon cycling in north america: Processes, data,
+  models, and challenges, \textit{Journal of Geophysical Research:
+  Biogeosciences}, \textit{116}(G4), n/a--n/a, \doi{10.1029/2010JG001585},
+  g00K08.
+
+\bibitem[{\textit{Mart{\'\i}n-Benito et~al.}(2010)\textit{Mart{\'\i}n-Benito,
+  Del~R{\'\i}o, Heinrich, Helle, and Canellas}}]{martin2010response}
+Mart{\'\i}n-Benito, D., M.~Del~R{\'\i}o, I.~Heinrich, G.~Helle, and I.~Canellas
+  (2010), Response of climate-growth relationships and water use efficiency to
+  thinning in a pinus nigra afforestation, \textit{Forest Ecology and
+  Management}, \textit{259}(5), 967--975.
+
+\bibitem[{\textit{McKay et~al.}(2003)\textit{McKay, Hudson, and
+  Hudson}}]{mckay2003woodfuel}
+McKay, H., J.~Hudson, and R.~Hudson (2003), Woodfuel resource in britain,
+  \textit{Forestry Commission Report}.
+
+\bibitem[{\textit{Misson et~al.}(2005)\textit{Misson, Tang, Xu, McKay, and
+  Goldstein}}]{Misson2005207}
+Misson, L., J.~Tang, M.~Xu, M.~McKay, and A.~Goldstein (2005), Influences of
+  recovery from clear-cut, climate variability, and thinning on the carbon
+  balance of a young ponderosa pine plantation, \textit{Agricultural and Forest
+  Meteorology}, \textit{130}(3â€“4), 207 -- 222,
+  \doi{http://dx.doi.org/10.1016/j.agrformet.2005.04.001}.
+
+\bibitem[{\textit{Moore et~al.}(2013)\textit{Moore, Trahan, Wilkes, Quaife,
+  Stephens, Elder, Desai, Negron, and Monson}}]{ELE:ELE12097}
+Moore, D. J.~P., N.~A. Trahan, P.~Wilkes, T.~Quaife, B.~B. Stephens, K.~Elder,
+  A.~R. Desai, J.~Negron, and R.~K. Monson (2013), Persistent reduced ecosystem
+  respiration after insect disturbance in high elevation forests,
+  \textit{Ecology Letters}, \textit{16}(6), 731--737, \doi{10.1111/ele.12097}.
+
+\bibitem[{\textit{Moreaux et~al.}(2011)\textit{Moreaux, Lamaud, Bosc,
+  Bonnefond, Medlyn, and Loustau}}]{moreaux2011paired}
+Moreaux, V., {\'E}.~Lamaud, A.~Bosc, J.-M. Bonnefond, B.~E. Medlyn, and
+  D.~Loustau (2011), Paired comparison of water, energy and carbon exchanges
+  over two young maritime pine stands (pinus pinaster ait.): effects of
+  thinning and weeding in the early stage of tree growth, \textit{Tree
+  physiology}, p. tpr048.
+
+\bibitem[{\textit{Morecroft et~al.}(2003)\textit{Morecroft, Stokes, and
+  Morison}}]{Morecroft2003}
+Morecroft, M.~D., V.~J. Stokes, and J.~I.~L. Morison (2003), Seasonal changes
+  in the photosynthetic capacity of canopy oak (quercus robur) leaves: the
+  impact of slow development on annual carbon uptake, \textit{International
+  Journal of Biometeorology}, \textit{47}(4), 221--226,
+  \doi{10.1007/s00484-003-0173-3}.
+
+\bibitem[{\textit{Navon}(1998)}]{navon1998practical}
+Navon, I. (1998), Practical and theoretical aspects of adjoint parameter
+  estimation and identifiability in meteorology and oceanography,
+  \textit{Dynamics of Atmospheres and Oceans}, \textit{27}(1), 55--79.
+
+\bibitem[{\textit{Niu et~al.}(2014)\textit{Niu, Luo, Dietze, Keenan, Shi, Li,
+  and Iii}}]{Niu2014}
+Niu, S., Y.~Luo, M.~C. Dietze, T.~F. Keenan, Z.~Shi, J.~Li, and F.~S.~C. Iii
+  (2014), {The role of data assimilation in predictive ecology},
+  \textit{Ecosphere}, \textit{5}(5), art65, \doi{10.1890/ES13-00273.1}.
+
+\bibitem[{\textit{Papale et~al.}(2006)\textit{Papale, Reichstein, Aubinet,
+  Canfora, Bernhofer, Kutsch, Longdoz, Rambal, Valentini, Vesala
+  et~al.}}]{papale2006towards}
+Papale, D., M.~Reichstein, M.~Aubinet, E.~Canfora, C.~Bernhofer, W.~Kutsch,
+  B.~Longdoz, S.~Rambal, R.~Valentini, T.~Vesala, et~al. (2006), Towards a
+  standardized processing of net ecosystem exchange measured with eddy
+  covariance technique: algorithms and uncertainty estimation,
+  \textit{Biogeosciences}, \textit{3}(4), 571--583.
+
+\bibitem[{\textit{Pinnington et~al.}(2016)\textit{Pinnington, Casella, Dance,
+  Lawless, Morison, Nichols, Wilkinson, and Quaife}}]{Pinnington2016299}
+Pinnington, E.~M., E.~Casella, S.~L. Dance, A.~S. Lawless, J.~I. Morison, N.~K.
+  Nichols, M.~Wilkinson, and T.~L. Quaife (2016), Investigating the role of
+  prior and observation error correlations in improving a model forecast of
+  forest carbon balance using four-dimensional variational data assimilation,
+  \textit{Agricultural and Forest Meteorology}, \textit{228â€“229}, 299 -- 314,
+  \doi{http://dx.doi.org/10.1016/j.agrformet.2016.07.006}.
+
+\bibitem[{\textit{Quaife et~al.}(2008)\textit{Quaife, Lewis, {De Kauwe},
+  Williams, Law, Disney, and Bowyer}}]{Quaife2008}
+Quaife, T., P.~Lewis, M.~{De Kauwe}, M.~Williams, B.~E. Law, M.~Disney, and
+  P.~Bowyer (2008), {Assimilating canopy reflectance data into an ecosystem
+  model with an Ensemble Kalman Filter}, \textit{Remote Sensing of
+  Environment}, \textit{112}(4), 1347--1364, \doi{10.1016/j.rse.2007.05.020}.
+
+\bibitem[{\textit{Raupach et~al.}(2005)\textit{Raupach, Rayner, Barrett,
+  DeFries, Heimann, Ojima, Quegan, and Schmullius}}]{raupach2005model}
+Raupach, M., P.~Rayner, D.~Barrett, R.~DeFries, M.~Heimann, D.~Ojima,
+  S.~Quegan, and C.~Schmullius (2005), Model--data synthesis in terrestrial
+  carbon observation: methods, data requirements and data uncertainty
+  specifications, \textit{Global Change Biology}, \textit{11}(3), 378--397.
+
+\bibitem[{\textit{Reich et~al.}(1991)\textit{Reich, Walters, and
+  Ellsworth}}]{reich1991leaf}
+Reich, P.~B., M.~B. Walters, and D.~S. Ellsworth (1991), Leaf age and season
+  influence the relationships between leaf nitrogen, leaf mass per area and
+  photosynthesis in maple and oak trees, \textit{Plant, Cell \& Environment},
+  \textit{14}(3), 251--259, \doi{10.1111/j.1365-3040.1991.tb01499.x}.
+
+\bibitem[{\textit{Rich et~al.}(1999)\textit{Rich, Wood, Vieglais, Burek, and
+  Webb}}]{rich1999hemiview}
+Rich, P.~M., J.~Wood, D.~Vieglais, K.~Burek, and N.~Webb (1999), Hemiview user
+  manual, version 2.1, \textit{Delta-T Devices Ltd., Cambridge, UK},
+  \textit{79}.
+
+\bibitem[{\textit{Richardson et~al.}(2008)\textit{Richardson, Mahecha, Falge,
+  Kattge, Moffat, Papale, Reichstein, Stauch, Braswell, Churkina, Kruijt, and
+  Hollinger}}]{Richardson200838}
+Richardson, A.~D., M.~D. Mahecha, E.~Falge, J.~Kattge, A.~M. Moffat, D.~Papale,
+  M.~Reichstein, V.~J. Stauch, B.~H. Braswell, G.~Churkina, B.~Kruijt, and
+  D.~Y. Hollinger (2008), Statistical properties of random {CO\(_2\)} flux
+  measurement uncertainty inferred from model residuals, \textit{Agricultural
+  and Forest Meteorology}, \textit{148}(1), 38 -- 50,
+  \doi{http://dx.doi.org/10.1016/j.agrformet.2007.09.001}.
+
+\bibitem[{\textit{Richardson et~al.}(2010)\textit{Richardson, Williams,
+  Hollinger, Moore, Dail, Davidson, Scott, Evans, Hughes, Lee
+  et~al.}}]{richardson2010estimating}
+Richardson, A.~D., M.~Williams, D.~Y. Hollinger, D.~J. Moore, D.~B. Dail, E.~A.
+  Davidson, N.~A. Scott, R.~S. Evans, H.~Hughes, J.~T. Lee, et~al. (2010),
+  Estimating parameters of a forest ecosystem c model with measurements of
+  stocks and fluxes as joint constraints, \textit{Oecologia}, \textit{164}(1),
+  25--40.
+
+\bibitem[{\textit{Running}(2008)}]{running2008ecosystem}
+Running, S.~W. (2008), Ecosystem disturbance, carbon, and climate,
+  \textit{Science}, \textit{321}(5889), 652--653.
+
+\bibitem[{\textit{Saunders et~al.}(2012)\textit{Saunders, Tobin, Black, Gioria,
+  Nieuwenhuis, and Osborne}}]{Saunders20121}
+Saunders, M., B.~Tobin, K.~Black, M.~Gioria, M.~Nieuwenhuis, and B.~Osborne
+  (2012), Thinning effects on the net ecosystem carbon exchange of a sitka
+  spruce forest are temperature-dependent, \textit{Agricultural and Forest
+  Meteorology}, \textit{157}, 1 -- 10,
+  \doi{http://dx.doi.org/10.1016/j.agrformet.2012.01.008}.
+
+\bibitem[{\textit{Schimel and Weintraub}(2003)}]{schimel2003implications}
+Schimel, J.~P., and M.~N. Weintraub (2003), The implications of exoenzyme
+  activity on microbial carbon and nitrogen limitation in soil: a theoretical
+  model, \textit{Soil Biology and Biochemistry}, \textit{35}(4), 549--563.
+
+\bibitem[{\textit{Seidl et~al.}(2011)\textit{Seidl, Fernandes, Fonseca, Gillet,
+  J{\"o}nsson, Mergani{\v{c}}ov{\'a}, Netherer, Arpaci, Bontemps, Bugmann
+  et~al.}}]{seidl2011modelling}
+Seidl, R., P.~M. Fernandes, T.~F. Fonseca, F.~Gillet, A.~M. J{\"o}nsson,
+  K.~Mergani{\v{c}}ov{\'a}, S.~Netherer, A.~Arpaci, J.-D. Bontemps, H.~Bugmann,
+  et~al. (2011), Modelling natural disturbances in forest ecosystems: a review,
+  \textit{Ecological Modelling}, \textit{222}(4), 903--924.
+
+\bibitem[{\textit{Sitch et~al.}(2008)\textit{Sitch, Huntingford, Gedney, Levy,
+  Lomas, Piao, Betts, Ciais, Cox, Friedlingstein et~al.}}]{sitch2008evaluation}
+Sitch, S., C.~Huntingford, N.~Gedney, P.~Levy, M.~Lomas, S.~Piao, R.~Betts,
+  P.~Ciais, P.~Cox, P.~Friedlingstein, et~al. (2008), Evaluation of the
+  terrestrial carbon cycle, future plant geography and climate-carbon cycle
+  feedbacks using five dynamic global vegetation models (dgvms), \textit{Global
+  Change Biology}, \textit{14}(9), 2015--2039.
+
+\bibitem[{\textit{Talbot et~al.}(2008)\textit{Talbot, Allison, and
+  Treseder}}]{talbot2008decomposers}
+Talbot, J., S.~Allison, and K.~Treseder (2008), Decomposers in disguise:
+  mycorrhizal fungi as regulators of soil c dynamics in ecosystems under global
+  change, \textit{Functional ecology}, \textit{22}(6), 955--963.
+
+\bibitem[{\textit{Thornton et~al.}(2002)\textit{Thornton, Law, Gholz, Clark,
+  Falge, Ellsworth, Goldstein, Monson, Hollinger, Falk
+  et~al.}}]{thornton2002modeling}
+Thornton, P., B.~Law, H.~L. Gholz, K.~L. Clark, E.~Falge, D.~Ellsworth,
+  A.~Goldstein, R.~Monson, D.~Hollinger, M.~Falk, et~al. (2002), Modeling and
+  measuring the effects of disturbance history and climate on carbon and water
+  budgets in evergreen needleleaf forests, \textit{Agricultural and forest
+  meteorology}, \textit{113}(1), 185--222.
+
+\bibitem[{\textit{Tremolet}(2006)}]{Tremolet2006}
+Tremolet, Y. (2006), {Accounting for an imperfect model in 4D-Var},
+  \textit{Quarterly Journal of the Royal Meteorological Society},
+  \textit{132}(621), 2483--2504, \doi{10.1256/qj.05.224}.
+
+\bibitem[{\textit{Vesala et~al.}(2005)\textit{Vesala, Suni, Rannik, Keronen,
+  Markkanen, Sevanto, Gr{\"o}nholm, Smolander, Kulmala, Ilvesniemi
+  et~al.}}]{vesala2005effect}
+Vesala, T., T.~Suni, {\"U}.~Rannik, P.~Keronen, T.~Markkanen, S.~Sevanto,
+  T.~Gr{\"o}nholm, S.~Smolander, M.~Kulmala, H.~Ilvesniemi, et~al. (2005),
+  Effect of thinning on surface fluxes in a boreal forest, \textit{Global
+  Biogeochemical Cycles}, \textit{19}(2).
+
+\bibitem[{\textit{Wilkinson et~al.}(2012)\textit{Wilkinson, Eaton, Broadmeadow,
+  and Morison}}]{wilkinson2012inter}
+Wilkinson, M., E.~Eaton, M.~Broadmeadow, and J.~Morison (2012), Inter-annual
+  variation of carbon uptake by a plantation oak woodland in south-eastern
+  england, \textit{Biogeosciences}, \textit{9}(12), 5373--5389.
+
+\bibitem[{\textit{Wilkinson et~al.}(2015)\textit{Wilkinson, Crow, Eaton, and
+  Morison}}]{wilkinson2015effects}
+Wilkinson, M., P.~Crow, E.~Eaton, and J.~Morison (2015), Effects of management
+  thinning on co\(_{2}\) exchange by a plantation oak woodland in south-eastern
+  england., \textit{Biogeosciences Discussions}, \textit{12}(19).
+
+\bibitem[{\textit{Wilkinson et~al.}(2016)\textit{Wilkinson, Crow, Eaton, and
+  Morison}}]{wilkinson2016}
+Wilkinson, M., P.~Crow, E.~L. Eaton, and J.~I.~L. Morison (2016), Effects of
+  management thinning on {CO\(_2\)} exchange by a plantation oak woodland in
+  south-eastern england, \textit{Biogeosciences}, \textit{13}(8), 2367--2378,
+  \doi{10.5194/bg-13-2367-2016}.
+
+\bibitem[{\textit{Williams et~al.}(1997)\textit{Williams, Rastetter, Fernandes,
+  Goulden, Shaver, and Johnson}}]{williams1997predicting}
+Williams, M., E.~B. Rastetter, D.~N. Fernandes, M.~L. Goulden, G.~R. Shaver,
+  and L.~C. Johnson (1997), Predicting gross primary productivity in
+  terrestrial ecosystems, \textit{Ecological Applications}, \textit{7}(3),
+  882--894.
+
+\bibitem[{\textit{Williams et~al.}(2005)\textit{Williams, Schwarz, Law, Irvine,
+  and Kurpius}}]{williams2005improved}
+Williams, M., P.~A. Schwarz, B.~E. Law, J.~Irvine, and M.~R. Kurpius (2005), An
+  improved analysis of forest carbon dynamics using data assimilation,
+  \textit{Global Change Biology}, \textit{11}(1), 89--105.
+
+\bibitem[{\textit{Zobitz et~al.}(2011)\textit{Zobitz, Desai, Moore, and
+  Chadwick}}]{zobitz2011primer}
+Zobitz, J., A.~Desai, D.~Moore, and M.~Chadwick (2011), A primer for data
+  assimilation with ecological models using markov chain monte carlo (mcmc),
+  \textit{Oecologia}, \textit{167}(3), 599--611.
+
+\bibitem[{\textit{Zobitz et~al.}(2014)\textit{Zobitz, Moore, Quaife, Braswell,
+  Bergeson, Anthony, and Monson}}]{Zobitz2014}
+Zobitz, J.~M., D.~J.~P. Moore, T.~Quaife, B.~H. Braswell, A.~Bergeson, J.~a.
+  Anthony, and R.~K. Monson (2014), {Joint data assimilation of satellite
+  reflectance and net ecosystem exchange data constrains ecosystem carbon
+  fluxes at a high-elevation subalpine forest}, \textit{Agricultural and Forest
+  Meteorology}, \textit{195-196}, 73--88,
+  \doi{10.1016/j.agrformet.2014.04.011}.
+
+\end{thebibliography}

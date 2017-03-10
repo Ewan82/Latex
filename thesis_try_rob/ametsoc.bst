@@ -449,7 +449,7 @@ FUNCTION {format.names}
         {
           nameptr #1
           #1 + =
-          numnames #8
+          numnames #14
           > and
             { "others" 't :=
               #1 'namesleft := }
@@ -462,7 +462,7 @@ FUNCTION {format.names}
                 { 't := }
                 { pop$ }
               if$
-              numnames #2 >
+              numnames #14 >
                 { "," * }
                 'skip$
               if$
@@ -618,7 +618,7 @@ FUNCTION {format.full.names}
         {
           nameptr #1
           #1 + =
-          numnames #8
+          numnames #14
           > and
             { "others" 't :=
               #1 'namesleft := }
@@ -1543,7 +1543,7 @@ FUNCTION {sort.format.names}
         {
           nameptr #1
           #1 + =
-          numnames #8
+          numnames #14
           > and
             { "others" 't :=
               #1 'namesleft := }

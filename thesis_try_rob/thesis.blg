@@ -7,51 +7,51 @@ A level-1 auxiliary file: preface/publications.aux
 A level-1 auxiliary file: preface/abstract.aux
 A level-1 auxiliary file: preface/acknowledgements.aux
 The style file: ./ametsoc.bst
-Reallocated field_info (elt_size=4) to 10220 items from 5000.
+Reallocated field_info (elt_size=4) to 10278 items from 5000.
 Database file #1: ../PhD.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--missing publisher in Daley1992
 Warning--missing publisher in scipy2015
 Warning--missing publisher in fluxnetsite2013
-You've used 180 entries,
+You've used 182 entries,
             3486 wiz_defined-function locations,
-            1791 strings with 48586 characters,
-and the built_in function-call counts, 201223 in all, are:
-= -- 23559
-> -- 7165
+            1802 strings with 49050 characters,
+and the built_in function-call counts, 223998 in all, are:
+= -- 25199
+> -- 10392
 < -- 57
-+ -- 4138
-- -- 1771
-* -- 10994
-:= -- 20435
-add.period$ -- 360
-call.type$ -- 180
-change.case$ -- 1447
-chr.to.int$ -- 177
-cite$ -- 183
-duplicate$ -- 20433
-empty$ -- 10568
-format.name$ -- 2300
-if$ -- 40882
++ -- 5750
+- -- 2575
+* -- 12665
+:= -- 22895
+add.period$ -- 364
+call.type$ -- 182
+change.case$ -- 1737
+chr.to.int$ -- 179
+cite$ -- 185
+duplicate$ -- 21499
+empty$ -- 10955
+format.name$ -- 3110
+if$ -- 45607
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 1999
-newline$ -- 550
-num.names$ -- 722
-pop$ -- 8767
+missing$ -- 2284
+newline$ -- 556
+num.names$ -- 730
+pop$ -- 10163
 preamble$ -- 1
-purify$ -- 1272
+purify$ -- 1557
 quote$ -- 0
-skip$ -- 12323
+skip$ -- 13430
 stack$ -- 0
-substring$ -- 9392
-swap$ -- 16937
+substring$ -- 9528
+swap$ -- 17727
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1587
+type$ -- 1608
 warning$ -- 3
-while$ -- 972
+while$ -- 984
 width$ -- 0
-write$ -- 2042
+write$ -- 2069
 (There were 3 warnings)
